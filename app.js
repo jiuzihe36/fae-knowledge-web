@@ -114,6 +114,7 @@
         "<td>" + esc(text(item.package)) + "</td>",
         "<td>" + esc(text(item.logic_type)) + "</td>",
         "<td>" + esc(text(item.voltage)) + "</td>",
+        "<td>" + esc(text(item.package_size)) + "</td>",
         '<td class="source">' + esc(text(item.source_label)) + "</td>"
       ].join("");
       return tr;
@@ -145,6 +146,7 @@
       metaItem("封装", item.package),
       metaItem("逻辑类型", item.logic_type),
       metaItem("工作电压", item.voltage),
+      metaItem("封装尺寸", item.package_size),
       metaItem("出处", item.source_label)
     ].join("");
 
