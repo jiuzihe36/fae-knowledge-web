@@ -328,6 +328,23 @@ input[type="search"]:focus, select:focus {
   min-width: 0;
 }
 
+.pin-wrap {
+  padding: 0 22px 8px;
+}
+
+.pin-box {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.pin-box img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .detail-grid h3 {
   font-size: 13px;
   color: var(--muted);
