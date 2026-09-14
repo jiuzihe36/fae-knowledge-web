@@ -151,7 +151,7 @@
     const pinImg = document.getElementById("pinImg");
     if (item.pin_image) {
       pinWrap.classList.remove("hidden");
-      pinImg.src = item.pin_image;
+      pinImg.src = new URL(item.pin_image, document.baseURI).href;
       pinImg.alt = `${item.model} pin diagram`;
     } else {
       pinWrap.classList.add("hidden");
