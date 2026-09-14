@@ -1,6 +1,6 @@
 [
   {
-    "id": 3757,
+    "id": 4696,
     "model": "EL3157",
     "family": "逻辑芯片",
     "series": "EL",
@@ -117,7 +117,7 @@
     ]
   },
   {
-    "id": 3759,
+    "id": 4698,
     "model": "EL3157GV",
     "family": "逻辑芯片",
     "series": "EL",
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "id": 3758,
+    "id": 4697,
     "model": "EL3157GW",
     "family": "逻辑芯片",
     "series": "EL",
@@ -680,7 +680,7 @@
     ]
   },
   {
-    "id": 3760,
+    "id": 4699,
     "model": "EM74AHC1G00",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -847,7 +847,7 @@
     ]
   },
   {
-    "id": 3766,
+    "id": 4705,
     "model": "EM74AHC1G00DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -1014,7 +1014,7 @@
     ]
   },
   {
-    "id": 3762,
+    "id": 4701,
     "model": "EM74AHC1G00GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -1181,7 +1181,7 @@
     ]
   },
   {
-    "id": 3764,
+    "id": 4703,
     "model": "EM74AHC1G00GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -1348,7 +1348,7 @@
     ]
   },
   {
-    "id": 3768,
+    "id": 4707,
     "model": "EM74AHC1G02",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -1515,7 +1515,7 @@
     ]
   },
   {
-    "id": 3774,
+    "id": 4713,
     "model": "EM74AHC1G02DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -1682,7 +1682,7 @@
     ]
   },
   {
-    "id": 3770,
+    "id": 4709,
     "model": "EM74AHC1G02GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -1849,7 +1849,7 @@
     ]
   },
   {
-    "id": 3772,
+    "id": 4711,
     "model": "EM74AHC1G02GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -2016,7 +2016,7 @@
     ]
   },
   {
-    "id": 3776,
+    "id": 4715,
     "model": "EM74AHC1G04",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -2178,7 +2178,7 @@
     ]
   },
   {
-    "id": 3784,
+    "id": 4723,
     "model": "EM74AHC1G04DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -2345,7 +2345,7 @@
     ]
   },
   {
-    "id": 3780,
+    "id": 4719,
     "model": "EM74AHC1G04GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -2512,7 +2512,7 @@
     ]
   },
   {
-    "id": 3782,
+    "id": 4721,
     "model": "EM74AHC1G04GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -2679,7 +2679,7 @@
     ]
   },
   {
-    "id": 3786,
+    "id": 4725,
     "model": "EM74AHC1G06",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -2806,7 +2806,7 @@
     ]
   },
   {
-    "id": 3792,
+    "id": 4731,
     "model": "EM74AHC1G06DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -2938,7 +2938,7 @@
     ]
   },
   {
-    "id": 3788,
+    "id": 4727,
     "model": "EM74AHC1G06GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -3070,7 +3070,7 @@
     ]
   },
   {
-    "id": 3790,
+    "id": 4729,
     "model": "EM74AHC1G06GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -3202,7 +3202,7 @@
     ]
   },
   {
-    "id": 3794,
+    "id": 4733,
     "model": "EM74AHC1G07",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -3329,7 +3329,7 @@
     ]
   },
   {
-    "id": 3800,
+    "id": 4739,
     "model": "EM74AHC1G07DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -3461,7 +3461,7 @@
     ]
   },
   {
-    "id": 3796,
+    "id": 4735,
     "model": "EM74AHC1G07GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -3593,7 +3593,7 @@
     ]
   },
   {
-    "id": 3798,
+    "id": 4737,
     "model": "EM74AHC1G07GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -3725,7 +3725,7 @@
     ]
   },
   {
-    "id": 3802,
+    "id": 4741,
     "model": "EM74AHC1G08",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -3922,7 +3922,7 @@
     ]
   },
   {
-    "id": 3808,
+    "id": 4747,
     "model": "EM74AHC1G08DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -4119,7 +4119,7 @@
     ]
   },
   {
-    "id": 3804,
+    "id": 4743,
     "model": "EM74AHC1G08GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -4316,7 +4316,7 @@
     ]
   },
   {
-    "id": 3806,
+    "id": 4745,
     "model": "EM74AHC1G08GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -4513,7 +4513,7 @@
     ]
   },
   {
-    "id": 3810,
+    "id": 4749,
     "model": "EM74AHC1G09",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -4645,7 +4645,7 @@
     ]
   },
   {
-    "id": 3816,
+    "id": 4755,
     "model": "EM74AHC1G09DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -4777,7 +4777,7 @@
     ]
   },
   {
-    "id": 3812,
+    "id": 4751,
     "model": "EM74AHC1G09GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -4909,7 +4909,7 @@
     ]
   },
   {
-    "id": 3814,
+    "id": 4753,
     "model": "EM74AHC1G09GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -5041,7 +5041,7 @@
     ]
   },
   {
-    "id": 3818,
+    "id": 4757,
     "model": "EM74AHC1G11",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -5203,7 +5203,7 @@
     ]
   },
   {
-    "id": 3820,
+    "id": 4759,
     "model": "EM74AHC1G11GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -5370,7 +5370,7 @@
     ]
   },
   {
-    "id": 3822,
+    "id": 4761,
     "model": "EM74AHC1G11GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -5537,7 +5537,7 @@
     ]
   },
   {
-    "id": 3824,
+    "id": 4763,
     "model": "EM74AHC1G125",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -5739,7 +5739,7 @@
     ]
   },
   {
-    "id": 3830,
+    "id": 4769,
     "model": "EM74AHC1G125DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -5946,7 +5946,7 @@
     ]
   },
   {
-    "id": 3826,
+    "id": 4765,
     "model": "EM74AHC1G125GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -6153,7 +6153,7 @@
     ]
   },
   {
-    "id": 3828,
+    "id": 4767,
     "model": "EM74AHC1G125GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -6360,7 +6360,7 @@
     ]
   },
   {
-    "id": 3832,
+    "id": 4771,
     "model": "EM74AHC1G126",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -6562,7 +6562,7 @@
     ]
   },
   {
-    "id": 3838,
+    "id": 4777,
     "model": "EM74AHC1G126DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -6769,7 +6769,7 @@
     ]
   },
   {
-    "id": 3834,
+    "id": 4773,
     "model": "EM74AHC1G126GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -6976,7 +6976,7 @@
     ]
   },
   {
-    "id": 3836,
+    "id": 4775,
     "model": "EM74AHC1G126GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -7183,7 +7183,7 @@
     ]
   },
   {
-    "id": 3840,
+    "id": 4779,
     "model": "EM74AHC1G14",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -7310,7 +7310,7 @@
     ]
   },
   {
-    "id": 3846,
+    "id": 4785,
     "model": "EM74AHC1G14DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -7442,7 +7442,7 @@
     ]
   },
   {
-    "id": 3842,
+    "id": 4781,
     "model": "EM74AHC1G14GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -7574,7 +7574,7 @@
     ]
   },
   {
-    "id": 3844,
+    "id": 4783,
     "model": "EM74AHC1G14GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -7706,7 +7706,7 @@
     ]
   },
   {
-    "id": 3848,
+    "id": 4787,
     "model": "EM74AHC1G16",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -7868,7 +7868,7 @@
     ]
   },
   {
-    "id": 3854,
+    "id": 4793,
     "model": "EM74AHC1G16DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -8035,7 +8035,7 @@
     ]
   },
   {
-    "id": 3850,
+    "id": 4789,
     "model": "EM74AHC1G16GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -8202,7 +8202,7 @@
     ]
   },
   {
-    "id": 3852,
+    "id": 4791,
     "model": "EM74AHC1G16GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -8369,7 +8369,7 @@
     ]
   },
   {
-    "id": 3856,
+    "id": 4795,
     "model": "EM74AHC1G17",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -8486,7 +8486,7 @@
     ]
   },
   {
-    "id": 3862,
+    "id": 4801,
     "model": "EM74AHC1G17DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -8608,7 +8608,7 @@
     ]
   },
   {
-    "id": 3858,
+    "id": 4797,
     "model": "EM74AHC1G17GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -8730,7 +8730,7 @@
     ]
   },
   {
-    "id": 3860,
+    "id": 4799,
     "model": "EM74AHC1G17GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -8852,7 +8852,7 @@
     ]
   },
   {
-    "id": 3864,
+    "id": 4803,
     "model": "EM74AHC1G240",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -9019,7 +9019,7 @@
     ]
   },
   {
-    "id": 3866,
+    "id": 4805,
     "model": "EM74AHC1G240GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -9191,7 +9191,7 @@
     ]
   },
   {
-    "id": 3868,
+    "id": 4807,
     "model": "EM74AHC1G240GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -9363,7 +9363,7 @@
     ]
   },
   {
-    "id": 3870,
+    "id": 4809,
     "model": "EM74AHC1G32",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -9530,7 +9530,7 @@
     ]
   },
   {
-    "id": 3878,
+    "id": 4817,
     "model": "EM74AHC1G32DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -9697,7 +9697,7 @@
     ]
   },
   {
-    "id": 3874,
+    "id": 4813,
     "model": "EM74AHC1G32GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -9864,7 +9864,7 @@
     ]
   },
   {
-    "id": 3876,
+    "id": 4815,
     "model": "EM74AHC1G32GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -10031,7 +10031,7 @@
     ]
   },
   {
-    "id": 3880,
+    "id": 4819,
     "model": "EM74AHC1G332",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -10193,7 +10193,7 @@
     ]
   },
   {
-    "id": 3882,
+    "id": 4821,
     "model": "EM74AHC1G332GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -10360,7 +10360,7 @@
     ]
   },
   {
-    "id": 3884,
+    "id": 4823,
     "model": "EM74AHC1G332GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -10527,7 +10527,7 @@
     ]
   },
   {
-    "id": 3886,
+    "id": 4825,
     "model": "EM74AHC2G04",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -10684,7 +10684,7 @@
     ]
   },
   {
-    "id": 3892,
+    "id": 4831,
     "model": "EM74AHC2G04DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -10846,7 +10846,7 @@
     ]
   },
   {
-    "id": 3888,
+    "id": 4827,
     "model": "EM74AHC2G04GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -11008,7 +11008,7 @@
     ]
   },
   {
-    "id": 3890,
+    "id": 4829,
     "model": "EM74AHC2G04GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -11170,7 +11170,7 @@
     ]
   },
   {
-    "id": 3894,
+    "id": 4833,
     "model": "EM74AHC2G14",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -11287,7 +11287,7 @@
     ]
   },
   {
-    "id": 3900,
+    "id": 4839,
     "model": "EM74AHC2G14DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -11409,7 +11409,7 @@
     ]
   },
   {
-    "id": 3896,
+    "id": 4835,
     "model": "EM74AHC2G14GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -11531,7 +11531,7 @@
     ]
   },
   {
-    "id": 3898,
+    "id": 4837,
     "model": "EM74AHC2G14GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -11653,7 +11653,7 @@
     ]
   },
   {
-    "id": 3902,
+    "id": 4841,
     "model": "EM74AHC2G16",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -11815,7 +11815,7 @@
     ]
   },
   {
-    "id": 3908,
+    "id": 4847,
     "model": "EM74AHC2G16DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -11982,7 +11982,7 @@
     ]
   },
   {
-    "id": 3904,
+    "id": 4843,
     "model": "EM74AHC2G16GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -12149,7 +12149,7 @@
     ]
   },
   {
-    "id": 3906,
+    "id": 4845,
     "model": "EM74AHC2G16GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -12316,7 +12316,7 @@
     ]
   },
   {
-    "id": 3910,
+    "id": 4849,
     "model": "EM74AHC2G34",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -12478,7 +12478,7 @@
     ]
   },
   {
-    "id": 3916,
+    "id": 4855,
     "model": "EM74AHC2G34DRL",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -12645,7 +12645,7 @@
     ]
   },
   {
-    "id": 3912,
+    "id": 4851,
     "model": "EM74AHC2G34GV",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -12812,7 +12812,7 @@
     ]
   },
   {
-    "id": 3914,
+    "id": 4853,
     "model": "EM74AHC2G34GW",
     "family": "逻辑芯片",
     "series": "74AHC",
@@ -13146,7 +13146,7 @@
     ]
   },
   {
-    "id": 3761,
+    "id": 4700,
     "model": "EM74AHCT1G00",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -13313,7 +13313,7 @@
     ]
   },
   {
-    "id": 3767,
+    "id": 4706,
     "model": "EM74AHCT1G00DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -13480,7 +13480,7 @@
     ]
   },
   {
-    "id": 3763,
+    "id": 4702,
     "model": "EM74AHCT1G00GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -13647,7 +13647,7 @@
     ]
   },
   {
-    "id": 3765,
+    "id": 4704,
     "model": "EM74AHCT1G00GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -13814,7 +13814,7 @@
     ]
   },
   {
-    "id": 3769,
+    "id": 4708,
     "model": "EM74AHCT1G02",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -13981,7 +13981,7 @@
     ]
   },
   {
-    "id": 3775,
+    "id": 4714,
     "model": "EM74AHCT1G02DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -14148,7 +14148,7 @@
     ]
   },
   {
-    "id": 3771,
+    "id": 4710,
     "model": "EM74AHCT1G02GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -14315,7 +14315,7 @@
     ]
   },
   {
-    "id": 3773,
+    "id": 4712,
     "model": "EM74AHCT1G02GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -14482,7 +14482,7 @@
     ]
   },
   {
-    "id": 3777,
+    "id": 4716,
     "model": "EM74AHCT1G04",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -14644,7 +14644,7 @@
     ]
   },
   {
-    "id": 3785,
+    "id": 4724,
     "model": "EM74AHCT1G04DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -14811,7 +14811,7 @@
     ]
   },
   {
-    "id": 3781,
+    "id": 4720,
     "model": "EM74AHCT1G04GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -14978,7 +14978,7 @@
     ]
   },
   {
-    "id": 3783,
+    "id": 4722,
     "model": "EM74AHCT1G04GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -15145,7 +15145,7 @@
     ]
   },
   {
-    "id": 3787,
+    "id": 4726,
     "model": "EM74AHCT1G06",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -15272,7 +15272,7 @@
     ]
   },
   {
-    "id": 3793,
+    "id": 4732,
     "model": "EM74AHCT1G06DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -15404,7 +15404,7 @@
     ]
   },
   {
-    "id": 3789,
+    "id": 4728,
     "model": "EM74AHCT1G06GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -15536,7 +15536,7 @@
     ]
   },
   {
-    "id": 3791,
+    "id": 4730,
     "model": "EM74AHCT1G06GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -15668,7 +15668,7 @@
     ]
   },
   {
-    "id": 3795,
+    "id": 4734,
     "model": "EM74AHCT1G07",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -15795,7 +15795,7 @@
     ]
   },
   {
-    "id": 3801,
+    "id": 4740,
     "model": "EM74AHCT1G07DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -15927,7 +15927,7 @@
     ]
   },
   {
-    "id": 3797,
+    "id": 4736,
     "model": "EM74AHCT1G07GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -16059,7 +16059,7 @@
     ]
   },
   {
-    "id": 3799,
+    "id": 4738,
     "model": "EM74AHCT1G07GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -16191,7 +16191,7 @@
     ]
   },
   {
-    "id": 3803,
+    "id": 4742,
     "model": "EM74AHCT1G08",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -16388,7 +16388,7 @@
     ]
   },
   {
-    "id": 3809,
+    "id": 4748,
     "model": "EM74AHCT1G08DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -16585,7 +16585,7 @@
     ]
   },
   {
-    "id": 3805,
+    "id": 4744,
     "model": "EM74AHCT1G08GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -16782,7 +16782,7 @@
     ]
   },
   {
-    "id": 3807,
+    "id": 4746,
     "model": "EM74AHCT1G08GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -16979,7 +16979,7 @@
     ]
   },
   {
-    "id": 3811,
+    "id": 4750,
     "model": "EM74AHCT1G09",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -17111,7 +17111,7 @@
     ]
   },
   {
-    "id": 3817,
+    "id": 4756,
     "model": "EM74AHCT1G09DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -17243,7 +17243,7 @@
     ]
   },
   {
-    "id": 3813,
+    "id": 4752,
     "model": "EM74AHCT1G09GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -17375,7 +17375,7 @@
     ]
   },
   {
-    "id": 3815,
+    "id": 4754,
     "model": "EM74AHCT1G09GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -17507,7 +17507,7 @@
     ]
   },
   {
-    "id": 3819,
+    "id": 4758,
     "model": "EM74AHCT1G11",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -17669,7 +17669,7 @@
     ]
   },
   {
-    "id": 3821,
+    "id": 4760,
     "model": "EM74AHCT1G11GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -17836,7 +17836,7 @@
     ]
   },
   {
-    "id": 3823,
+    "id": 4762,
     "model": "EM74AHCT1G11GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -18003,7 +18003,7 @@
     ]
   },
   {
-    "id": 3825,
+    "id": 4764,
     "model": "EM74AHCT1G125",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -18205,7 +18205,7 @@
     ]
   },
   {
-    "id": 3831,
+    "id": 4770,
     "model": "EM74AHCT1G125DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -18412,7 +18412,7 @@
     ]
   },
   {
-    "id": 3827,
+    "id": 4766,
     "model": "EM74AHCT1G125GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -18619,7 +18619,7 @@
     ]
   },
   {
-    "id": 3829,
+    "id": 4768,
     "model": "EM74AHCT1G125GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -18826,7 +18826,7 @@
     ]
   },
   {
-    "id": 3833,
+    "id": 4772,
     "model": "EM74AHCT1G126",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -19028,7 +19028,7 @@
     ]
   },
   {
-    "id": 3839,
+    "id": 4778,
     "model": "EM74AHCT1G126DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -19235,7 +19235,7 @@
     ]
   },
   {
-    "id": 3835,
+    "id": 4774,
     "model": "EM74AHCT1G126GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -19442,7 +19442,7 @@
     ]
   },
   {
-    "id": 3837,
+    "id": 4776,
     "model": "EM74AHCT1G126GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -19649,7 +19649,7 @@
     ]
   },
   {
-    "id": 3841,
+    "id": 4780,
     "model": "EM74AHCT1G14",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -19776,7 +19776,7 @@
     ]
   },
   {
-    "id": 3847,
+    "id": 4786,
     "model": "EM74AHCT1G14DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -19908,7 +19908,7 @@
     ]
   },
   {
-    "id": 3843,
+    "id": 4782,
     "model": "EM74AHCT1G14GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -20040,7 +20040,7 @@
     ]
   },
   {
-    "id": 3845,
+    "id": 4784,
     "model": "EM74AHCT1G14GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -20172,7 +20172,7 @@
     ]
   },
   {
-    "id": 3849,
+    "id": 4788,
     "model": "EM74AHCT1G16",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -20334,7 +20334,7 @@
     ]
   },
   {
-    "id": 3855,
+    "id": 4794,
     "model": "EM74AHCT1G16DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -20501,7 +20501,7 @@
     ]
   },
   {
-    "id": 3851,
+    "id": 4790,
     "model": "EM74AHCT1G16GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -20668,7 +20668,7 @@
     ]
   },
   {
-    "id": 3853,
+    "id": 4792,
     "model": "EM74AHCT1G16GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -20835,7 +20835,7 @@
     ]
   },
   {
-    "id": 3857,
+    "id": 4796,
     "model": "EM74AHCT1G17",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -20952,7 +20952,7 @@
     ]
   },
   {
-    "id": 3863,
+    "id": 4802,
     "model": "EM74AHCT1G17DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -21074,7 +21074,7 @@
     ]
   },
   {
-    "id": 3859,
+    "id": 4798,
     "model": "EM74AHCT1G17GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -21196,7 +21196,7 @@
     ]
   },
   {
-    "id": 3861,
+    "id": 4800,
     "model": "EM74AHCT1G17GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -21318,7 +21318,7 @@
     ]
   },
   {
-    "id": 3865,
+    "id": 4804,
     "model": "EM74AHCT1G240",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -21485,7 +21485,7 @@
     ]
   },
   {
-    "id": 3867,
+    "id": 4806,
     "model": "EM74AHCT1G240GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -21657,7 +21657,7 @@
     ]
   },
   {
-    "id": 3869,
+    "id": 4808,
     "model": "EM74AHCT1G240GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -21829,7 +21829,7 @@
     ]
   },
   {
-    "id": 3871,
+    "id": 4810,
     "model": "EM74AHCT1G32",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -21996,7 +21996,7 @@
     ]
   },
   {
-    "id": 3879,
+    "id": 4818,
     "model": "EM74AHCT1G32DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -22163,7 +22163,7 @@
     ]
   },
   {
-    "id": 3875,
+    "id": 4814,
     "model": "EM74AHCT1G32GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -22330,7 +22330,7 @@
     ]
   },
   {
-    "id": 3877,
+    "id": 4816,
     "model": "EM74AHCT1G32GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -22497,7 +22497,7 @@
     ]
   },
   {
-    "id": 3881,
+    "id": 4820,
     "model": "EM74AHCT1G332",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -22659,7 +22659,7 @@
     ]
   },
   {
-    "id": 3883,
+    "id": 4822,
     "model": "EM74AHCT1G332GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -22826,7 +22826,7 @@
     ]
   },
   {
-    "id": 3885,
+    "id": 4824,
     "model": "EM74AHCT1G332GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -22993,7 +22993,7 @@
     ]
   },
   {
-    "id": 3887,
+    "id": 4826,
     "model": "EM74AHCT2G04",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -23150,7 +23150,7 @@
     ]
   },
   {
-    "id": 3893,
+    "id": 4832,
     "model": "EM74AHCT2G04DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -23312,7 +23312,7 @@
     ]
   },
   {
-    "id": 3889,
+    "id": 4828,
     "model": "EM74AHCT2G04GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -23474,7 +23474,7 @@
     ]
   },
   {
-    "id": 3891,
+    "id": 4830,
     "model": "EM74AHCT2G04GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -23636,7 +23636,7 @@
     ]
   },
   {
-    "id": 3895,
+    "id": 4834,
     "model": "EM74AHCT2G14",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -23753,7 +23753,7 @@
     ]
   },
   {
-    "id": 3901,
+    "id": 4840,
     "model": "EM74AHCT2G14DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -23875,7 +23875,7 @@
     ]
   },
   {
-    "id": 3897,
+    "id": 4836,
     "model": "EM74AHCT2G14GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -23997,7 +23997,7 @@
     ]
   },
   {
-    "id": 3899,
+    "id": 4838,
     "model": "EM74AHCT2G14GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -24119,7 +24119,7 @@
     ]
   },
   {
-    "id": 3903,
+    "id": 4842,
     "model": "EM74AHCT2G16",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -24281,7 +24281,7 @@
     ]
   },
   {
-    "id": 3909,
+    "id": 4848,
     "model": "EM74AHCT2G16DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -24448,7 +24448,7 @@
     ]
   },
   {
-    "id": 3905,
+    "id": 4844,
     "model": "EM74AHCT2G16GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -24615,7 +24615,7 @@
     ]
   },
   {
-    "id": 3907,
+    "id": 4846,
     "model": "EM74AHCT2G16GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -24782,7 +24782,7 @@
     ]
   },
   {
-    "id": 3911,
+    "id": 4850,
     "model": "EM74AHCT2G34",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -24944,7 +24944,7 @@
     ]
   },
   {
-    "id": 3917,
+    "id": 4856,
     "model": "EM74AHCT2G34DRL",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -25111,7 +25111,7 @@
     ]
   },
   {
-    "id": 3913,
+    "id": 4852,
     "model": "EM74AHCT2G34GV",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -25278,7 +25278,7 @@
     ]
   },
   {
-    "id": 3915,
+    "id": 4854,
     "model": "EM74AHCT2G34GW",
     "family": "逻辑芯片",
     "series": "74AHCT",
@@ -25445,7 +25445,7 @@
     ]
   },
   {
-    "id": 3918,
+    "id": 4857,
     "model": "EM74AUP1G07",
     "family": "逻辑芯片",
     "series": "74",
@@ -25617,7 +25617,7 @@
     ]
   },
   {
-    "id": 3922,
+    "id": 4861,
     "model": "EM74AUP1G07GM",
     "family": "逻辑芯片",
     "series": "74",
@@ -25794,7 +25794,7 @@
     ]
   },
   {
-    "id": 3921,
+    "id": 4860,
     "model": "EM74AUP1G07GS",
     "family": "逻辑芯片",
     "series": "74",
@@ -25971,7 +25971,7 @@
     ]
   },
   {
-    "id": 3919,
+    "id": 4858,
     "model": "EM74AUP1G07GV",
     "family": "逻辑芯片",
     "series": "74",
@@ -26148,7 +26148,7 @@
     ]
   },
   {
-    "id": 3920,
+    "id": 4859,
     "model": "EM74AUP1G07GW",
     "family": "逻辑芯片",
     "series": "74",
@@ -26325,7 +26325,7 @@
     ]
   },
   {
-    "id": 3923,
+    "id": 4862,
     "model": "EM74AUP1G07GX",
     "family": "逻辑芯片",
     "series": "74",
@@ -26502,7 +26502,7 @@
     ]
   },
   {
-    "id": 3924,
+    "id": 4863,
     "model": "EM74CBT3257",
     "family": "逻辑芯片",
     "series": "74",
@@ -26614,7 +26614,7 @@
     ]
   },
   {
-    "id": 3925,
+    "id": 4864,
     "model": "EM74CBT3257D",
     "family": "逻辑芯片",
     "series": "74",
@@ -26731,7 +26731,7 @@
     ]
   },
   {
-    "id": 3926,
+    "id": 4865,
     "model": "EM74CBT3257PW",
     "family": "逻辑芯片",
     "series": "74",
@@ -26848,7 +26848,7 @@
     ]
   },
   {
-    "id": 3927,
+    "id": 4866,
     "model": "EM74CBTLV3125",
     "family": "逻辑芯片",
     "series": "74",
@@ -26970,7 +26970,7 @@
     ]
   },
   {
-    "id": 3928,
+    "id": 4867,
     "model": "EM74CBTLV3125D",
     "family": "逻辑芯片",
     "series": "74",
@@ -27097,7 +27097,7 @@
     ]
   },
   {
-    "id": 3929,
+    "id": 4868,
     "model": "EM74CBTLV3125PW",
     "family": "逻辑芯片",
     "series": "74",
@@ -27224,7 +27224,7 @@
     ]
   },
   {
-    "id": 3930,
+    "id": 4869,
     "model": "EM74CBTLV3126",
     "family": "逻辑芯片",
     "series": "74",
@@ -27346,7 +27346,7 @@
     ]
   },
   {
-    "id": 3931,
+    "id": 4870,
     "model": "EM74CBTLV3126D",
     "family": "逻辑芯片",
     "series": "74",
@@ -27473,7 +27473,7 @@
     ]
   },
   {
-    "id": 3932,
+    "id": 4871,
     "model": "EM74CBTLV3126PW",
     "family": "逻辑芯片",
     "series": "74",
@@ -27600,7 +27600,7 @@
     ]
   },
   {
-    "id": 3933,
+    "id": 4872,
     "model": "EM74CBTLV3253",
     "family": "逻辑芯片",
     "series": "74",
@@ -27727,7 +27727,7 @@
     ]
   },
   {
-    "id": 3934,
+    "id": 4873,
     "model": "EM74CBTLV3253D",
     "family": "逻辑芯片",
     "series": "74",
@@ -27859,7 +27859,7 @@
     ]
   },
   {
-    "id": 3935,
+    "id": 4874,
     "model": "EM74CBTLV3253PW",
     "family": "逻辑芯片",
     "series": "74",
@@ -27991,7 +27991,7 @@
     ]
   },
   {
-    "id": 3936,
+    "id": 4875,
     "model": "EM74CBTLV3257",
     "family": "逻辑芯片",
     "series": "74",
@@ -28118,7 +28118,7 @@
     ]
   },
   {
-    "id": 3937,
+    "id": 4876,
     "model": "EM74CBTLV3257D",
     "family": "逻辑芯片",
     "series": "74",
@@ -28250,7 +28250,7 @@
     ]
   },
   {
-    "id": 3938,
+    "id": 4877,
     "model": "EM74CBTLV3257PW",
     "family": "逻辑芯片",
     "series": "74",
@@ -28382,7 +28382,7 @@
     ]
   },
   {
-    "id": 4024,
+    "id": 4963,
     "model": "EM74HC00",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -28544,7 +28544,7 @@
     ]
   },
   {
-    "id": 4026,
+    "id": 4965,
     "model": "EM74HC00D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -28711,7 +28711,7 @@
     ]
   },
   {
-    "id": 4028,
+    "id": 4967,
     "model": "EM74HC00PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -28878,7 +28878,7 @@
     ]
   },
   {
-    "id": 4030,
+    "id": 4969,
     "model": "EM74HC02",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -29040,7 +29040,7 @@
     ]
   },
   {
-    "id": 4033,
+    "id": 4972,
     "model": "EM74HC02D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -29207,7 +29207,7 @@
     ]
   },
   {
-    "id": 4035,
+    "id": 4974,
     "model": "EM74HC02PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -29374,7 +29374,7 @@
     ]
   },
   {
-    "id": 4037,
+    "id": 4976,
     "model": "EM74HC03",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -29511,7 +29511,7 @@
     ]
   },
   {
-    "id": 4040,
+    "id": 4979,
     "model": "EM74HC03D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -29653,7 +29653,7 @@
     ]
   },
   {
-    "id": 4042,
+    "id": 4981,
     "model": "EM74HC03PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -29795,7 +29795,7 @@
     ]
   },
   {
-    "id": 4044,
+    "id": 4983,
     "model": "EM74HC04",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -29957,7 +29957,7 @@
     ]
   },
   {
-    "id": 4046,
+    "id": 4985,
     "model": "EM74HC04D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -30124,7 +30124,7 @@
     ]
   },
   {
-    "id": 4048,
+    "id": 4987,
     "model": "EM74HC04PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -30291,7 +30291,7 @@
     ]
   },
   {
-    "id": 4050,
+    "id": 4989,
     "model": "EM74HC05",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -30428,7 +30428,7 @@
     ]
   },
   {
-    "id": 4052,
+    "id": 4991,
     "model": "EM74HC05D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -30570,7 +30570,7 @@
     ]
   },
   {
-    "id": 4054,
+    "id": 4993,
     "model": "EM74HC05PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -30712,7 +30712,7 @@
     ]
   },
   {
-    "id": 4056,
+    "id": 4995,
     "model": "EM74HC06",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -30849,7 +30849,7 @@
     ]
   },
   {
-    "id": 4058,
+    "id": 4997,
     "model": "EM74HC06D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -30991,7 +30991,7 @@
     ]
   },
   {
-    "id": 4060,
+    "id": 4999,
     "model": "EM74HC06PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -31133,7 +31133,7 @@
     ]
   },
   {
-    "id": 4062,
+    "id": 5001,
     "model": "EM74HC07",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -31270,7 +31270,7 @@
     ]
   },
   {
-    "id": 4064,
+    "id": 5003,
     "model": "EM74HC07D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -31412,7 +31412,7 @@
     ]
   },
   {
-    "id": 4066,
+    "id": 5005,
     "model": "EM74HC07PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -31554,7 +31554,7 @@
     ]
   },
   {
-    "id": 4068,
+    "id": 5007,
     "model": "EM74HC08",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -31716,7 +31716,7 @@
     ]
   },
   {
-    "id": 4071,
+    "id": 5010,
     "model": "EM74HC08D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -31883,7 +31883,7 @@
     ]
   },
   {
-    "id": 4073,
+    "id": 5012,
     "model": "EM74HC08PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -32050,7 +32050,7 @@
     ]
   },
   {
-    "id": 4075,
+    "id": 5014,
     "model": "EM74HC09",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -32202,7 +32202,7 @@
     ]
   },
   {
-    "id": 4077,
+    "id": 5016,
     "model": "EM74HC09D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -32359,7 +32359,7 @@
     ]
   },
   {
-    "id": 4079,
+    "id": 5018,
     "model": "EM74HC09PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -32516,7 +32516,7 @@
     ]
   },
   {
-    "id": 4081,
+    "id": 5020,
     "model": "EM74HC10",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -32678,7 +32678,7 @@
     ]
   },
   {
-    "id": 4084,
+    "id": 5023,
     "model": "EM74HC10D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -32845,7 +32845,7 @@
     ]
   },
   {
-    "id": 4086,
+    "id": 5025,
     "model": "EM74HC10PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -33012,7 +33012,7 @@
     ]
   },
   {
-    "id": 4088,
+    "id": 5027,
     "model": "EM74HC11",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -33174,7 +33174,7 @@
     ]
   },
   {
-    "id": 4091,
+    "id": 5030,
     "model": "EM74HC11D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -33341,7 +33341,7 @@
     ]
   },
   {
-    "id": 4093,
+    "id": 5032,
     "model": "EM74HC11PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -33508,7 +33508,7 @@
     ]
   },
   {
-    "id": 4095,
+    "id": 5034,
     "model": "EM74HC125",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -33670,7 +33670,7 @@
     ]
   },
   {
-    "id": 4097,
+    "id": 5036,
     "model": "EM74HC125D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -33837,7 +33837,7 @@
     ]
   },
   {
-    "id": 4099,
+    "id": 5038,
     "model": "EM74HC125PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -34004,7 +34004,7 @@
     ]
   },
   {
-    "id": 4101,
+    "id": 5040,
     "model": "EM74HC126",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -34166,7 +34166,7 @@
     ]
   },
   {
-    "id": 4103,
+    "id": 5042,
     "model": "EM74HC126D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -34333,7 +34333,7 @@
     ]
   },
   {
-    "id": 4105,
+    "id": 5044,
     "model": "EM74HC126PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -34500,7 +34500,7 @@
     ]
   },
   {
-    "id": 4107,
+    "id": 5046,
     "model": "EM74HC132",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -34622,7 +34622,7 @@
     ]
   },
   {
-    "id": 4109,
+    "id": 5048,
     "model": "EM74HC132D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -34749,7 +34749,7 @@
     ]
   },
   {
-    "id": 4111,
+    "id": 5050,
     "model": "EM74HC132PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -34876,7 +34876,7 @@
     ]
   },
   {
-    "id": 4113,
+    "id": 5052,
     "model": "EM74HC138",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -35028,7 +35028,7 @@
     ]
   },
   {
-    "id": 4115,
+    "id": 5054,
     "model": "EM74HC138D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -35185,7 +35185,7 @@
     ]
   },
   {
-    "id": 4117,
+    "id": 5056,
     "model": "EM74HC138PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -35342,7 +35342,7 @@
     ]
   },
   {
-    "id": 4119,
+    "id": 5058,
     "model": "EM74HC14",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -35464,7 +35464,7 @@
     ]
   },
   {
-    "id": 4121,
+    "id": 5060,
     "model": "EM74HC14D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -35591,7 +35591,7 @@
     ]
   },
   {
-    "id": 4123,
+    "id": 5062,
     "model": "EM74HC14PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -35718,7 +35718,7 @@
     ]
   },
   {
-    "id": 3942,
+    "id": 4881,
     "model": "EM74HC164",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -35825,7 +35825,7 @@
     ]
   },
   {
-    "id": 3939,
+    "id": 4878,
     "model": "EM74HC164A",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -35937,7 +35937,7 @@
     ]
   },
   {
-    "id": 3940,
+    "id": 4879,
     "model": "EM74HC164AD",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -36054,7 +36054,7 @@
     ]
   },
   {
-    "id": 3941,
+    "id": 4880,
     "model": "EM74HC164APW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -36171,7 +36171,7 @@
     ]
   },
   {
-    "id": 3943,
+    "id": 4882,
     "model": "EM74HC164D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -36283,7 +36283,7 @@
     ]
   },
   {
-    "id": 3944,
+    "id": 4883,
     "model": "EM74HC164PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -36395,7 +36395,7 @@
     ]
   },
   {
-    "id": 3945,
+    "id": 4884,
     "model": "EM74HC165A",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -36507,7 +36507,7 @@
     ]
   },
   {
-    "id": 3946,
+    "id": 4885,
     "model": "EM74HC165AD",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -36624,7 +36624,7 @@
     ]
   },
   {
-    "id": 3947,
+    "id": 4886,
     "model": "EM74HC165APW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -36741,7 +36741,7 @@
     ]
   },
   {
-    "id": 4125,
+    "id": 5064,
     "model": "EM74HC166",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -36908,7 +36908,7 @@
     ]
   },
   {
-    "id": 4128,
+    "id": 5067,
     "model": "EM74HC166D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -37080,7 +37080,7 @@
     ]
   },
   {
-    "id": 4130,
+    "id": 5069,
     "model": "EM74HC166PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -37252,7 +37252,7 @@
     ]
   },
   {
-    "id": 4132,
+    "id": 5071,
     "model": "EM74HC174",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -37399,7 +37399,7 @@
     ]
   },
   {
-    "id": 4134,
+    "id": 5073,
     "model": "EM74HC174D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -37551,7 +37551,7 @@
     ]
   },
   {
-    "id": 4136,
+    "id": 5075,
     "model": "EM74HC174PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -37703,7 +37703,7 @@
     ]
   },
   {
-    "id": 4138,
+    "id": 5077,
     "model": "EM74HC20",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -37865,7 +37865,7 @@
     ]
   },
   {
-    "id": 4141,
+    "id": 5080,
     "model": "EM74HC20D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -38032,7 +38032,7 @@
     ]
   },
   {
-    "id": 4143,
+    "id": 5082,
     "model": "EM74HC20PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -38199,7 +38199,7 @@
     ]
   },
   {
-    "id": 4145,
+    "id": 5084,
     "model": "EM74HC21",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -38361,7 +38361,7 @@
     ]
   },
   {
-    "id": 4148,
+    "id": 5087,
     "model": "EM74HC21D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -38528,7 +38528,7 @@
     ]
   },
   {
-    "id": 4150,
+    "id": 5089,
     "model": "EM74HC21PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -38695,7 +38695,7 @@
     ]
   },
   {
-    "id": 4152,
+    "id": 5091,
     "model": "EM74HC240",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -38882,7 +38882,7 @@
     ]
   },
   {
-    "id": 4154,
+    "id": 5093,
     "model": "EM74HC240D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -39074,7 +39074,7 @@
     ]
   },
   {
-    "id": 4156,
+    "id": 5095,
     "model": "EM74HC240PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -39266,7 +39266,7 @@
     ]
   },
   {
-    "id": 4158,
+    "id": 5097,
     "model": "EM74HC244",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -39438,7 +39438,7 @@
     ]
   },
   {
-    "id": 4160,
+    "id": 5099,
     "model": "EM74HC244D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -39615,7 +39615,7 @@
     ]
   },
   {
-    "id": 4162,
+    "id": 5101,
     "model": "EM74HC244PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -39792,7 +39792,7 @@
     ]
   },
   {
-    "id": 4164,
+    "id": 5103,
     "model": "EM74HC245",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -39969,7 +39969,7 @@
     ]
   },
   {
-    "id": 4166,
+    "id": 5105,
     "model": "EM74HC245D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -40151,7 +40151,7 @@
     ]
   },
   {
-    "id": 4168,
+    "id": 5107,
     "model": "EM74HC245PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -40333,7 +40333,7 @@
     ]
   },
   {
-    "id": 4170,
+    "id": 5109,
     "model": "EM74HC259",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -40505,7 +40505,7 @@
     ]
   },
   {
-    "id": 4172,
+    "id": 5111,
     "model": "EM74HC259D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -40682,7 +40682,7 @@
     ]
   },
   {
-    "id": 4174,
+    "id": 5113,
     "model": "EM74HC259PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -40859,7 +40859,7 @@
     ]
   },
   {
-    "id": 4176,
+    "id": 5115,
     "model": "EM74HC266",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -40996,7 +40996,7 @@
     ]
   },
   {
-    "id": 4178,
+    "id": 5117,
     "model": "EM74HC266D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -41138,7 +41138,7 @@
     ]
   },
   {
-    "id": 4180,
+    "id": 5119,
     "model": "EM74HC266PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -41280,7 +41280,7 @@
     ]
   },
   {
-    "id": 4182,
+    "id": 5121,
     "model": "EM74HC27",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -41442,7 +41442,7 @@
     ]
   },
   {
-    "id": 4185,
+    "id": 5124,
     "model": "EM74HC27D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -41609,7 +41609,7 @@
     ]
   },
   {
-    "id": 4187,
+    "id": 5126,
     "model": "EM74HC27PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -41776,7 +41776,7 @@
     ]
   },
   {
-    "id": 4189,
+    "id": 5128,
     "model": "EM74HC32",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -41938,7 +41938,7 @@
     ]
   },
   {
-    "id": 4191,
+    "id": 5130,
     "model": "EM74HC32D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -42105,7 +42105,7 @@
     ]
   },
   {
-    "id": 4193,
+    "id": 5132,
     "model": "EM74HC32PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -42272,7 +42272,7 @@
     ]
   },
   {
-    "id": 4195,
+    "id": 5134,
     "model": "EM74HC365",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -42434,7 +42434,7 @@
     ]
   },
   {
-    "id": 4197,
+    "id": 5136,
     "model": "EM74HC365D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -42601,7 +42601,7 @@
     ]
   },
   {
-    "id": 4199,
+    "id": 5138,
     "model": "EM74HC365PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -42768,7 +42768,7 @@
     ]
   },
   {
-    "id": 4201,
+    "id": 5140,
     "model": "EM74HC366",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -42930,7 +42930,7 @@
     ]
   },
   {
-    "id": 4204,
+    "id": 5143,
     "model": "EM74HC366D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -43097,7 +43097,7 @@
     ]
   },
   {
-    "id": 4206,
+    "id": 5145,
     "model": "EM74HC366PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -43264,7 +43264,7 @@
     ]
   },
   {
-    "id": 4208,
+    "id": 5147,
     "model": "EM74HC367",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -43426,7 +43426,7 @@
     ]
   },
   {
-    "id": 4210,
+    "id": 5149,
     "model": "EM74HC367D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -43593,7 +43593,7 @@
     ]
   },
   {
-    "id": 4212,
+    "id": 5151,
     "model": "EM74HC367PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -43760,7 +43760,7 @@
     ]
   },
   {
-    "id": 4214,
+    "id": 5153,
     "model": "EM74HC368",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -43922,7 +43922,7 @@
     ]
   },
   {
-    "id": 4217,
+    "id": 5156,
     "model": "EM74HC368D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -44089,7 +44089,7 @@
     ]
   },
   {
-    "id": 4219,
+    "id": 5158,
     "model": "EM74HC368PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -44256,7 +44256,7 @@
     ]
   },
   {
-    "id": 4221,
+    "id": 5160,
     "model": "EM74HC4002",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -44418,7 +44418,7 @@
     ]
   },
   {
-    "id": 4223,
+    "id": 5162,
     "model": "EM74HC4002D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -44585,7 +44585,7 @@
     ]
   },
   {
-    "id": 4225,
+    "id": 5164,
     "model": "EM74HC4002PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -44752,7 +44752,7 @@
     ]
   },
   {
-    "id": 4227,
+    "id": 5166,
     "model": "EM74HC4075",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -44914,7 +44914,7 @@
     ]
   },
   {
-    "id": 4229,
+    "id": 5168,
     "model": "EM74HC4075D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -45081,7 +45081,7 @@
     ]
   },
   {
-    "id": 4231,
+    "id": 5170,
     "model": "EM74HC4075PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -45248,7 +45248,7 @@
     ]
   },
   {
-    "id": 4233,
+    "id": 5172,
     "model": "EM74HC4094",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -45425,7 +45425,7 @@
     ]
   },
   {
-    "id": 4235,
+    "id": 5174,
     "model": "EM74HC4094D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -45602,7 +45602,7 @@
     ]
   },
   {
-    "id": 4237,
+    "id": 5176,
     "model": "EM74HC4094PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -45779,7 +45779,7 @@
     ]
   },
   {
-    "id": 4239,
+    "id": 5178,
     "model": "EM74HC540",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -45966,7 +45966,7 @@
     ]
   },
   {
-    "id": 4241,
+    "id": 5180,
     "model": "EM74HC540D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -46158,7 +46158,7 @@
     ]
   },
   {
-    "id": 4243,
+    "id": 5182,
     "model": "EM74HC540PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -46350,7 +46350,7 @@
     ]
   },
   {
-    "id": 4245,
+    "id": 5184,
     "model": "EM74HC541",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -46517,7 +46517,7 @@
     ]
   },
   {
-    "id": 4247,
+    "id": 5186,
     "model": "EM74HC541D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -46689,7 +46689,7 @@
     ]
   },
   {
-    "id": 4249,
+    "id": 5188,
     "model": "EM74HC541PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -46861,7 +46861,7 @@
     ]
   },
   {
-    "id": 4251,
+    "id": 5190,
     "model": "EM74HC573",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -47013,7 +47013,7 @@
     ]
   },
   {
-    "id": 4253,
+    "id": 5192,
     "model": "EM74HC573D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -47170,7 +47170,7 @@
     ]
   },
   {
-    "id": 4255,
+    "id": 5194,
     "model": "EM74HC573PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -47327,7 +47327,7 @@
     ]
   },
   {
-    "id": 4257,
+    "id": 5196,
     "model": "EM74HC574",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -47489,7 +47489,7 @@
     ]
   },
   {
-    "id": 4259,
+    "id": 5198,
     "model": "EM74HC574D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -47656,7 +47656,7 @@
     ]
   },
   {
-    "id": 4263,
+    "id": 5202,
     "model": "EM74HC574DB",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -47823,7 +47823,7 @@
     ]
   },
   {
-    "id": 4261,
+    "id": 5200,
     "model": "EM74HC574PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -47990,7 +47990,7 @@
     ]
   },
   {
-    "id": 3948,
+    "id": 4887,
     "model": "EM74HC594",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -48137,7 +48137,7 @@
     ]
   },
   {
-    "id": 3949,
+    "id": 4888,
     "model": "EM74HC594D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -48284,7 +48284,7 @@
     ]
   },
   {
-    "id": 3950,
+    "id": 4889,
     "model": "EM74HC594PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -48431,7 +48431,7 @@
     ]
   },
   {
-    "id": 3951,
+    "id": 4890,
     "model": "EM74HC595A",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -48588,7 +48588,7 @@
     ]
   },
   {
-    "id": 3952,
+    "id": 4891,
     "model": "EM74HC595AD",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -48750,7 +48750,7 @@
     ]
   },
   {
-    "id": 3953,
+    "id": 4892,
     "model": "EM74HC595APW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -49408,7 +49408,7 @@
     ]
   },
   {
-    "id": 4277,
+    "id": 5216,
     "model": "EM74HC7001",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -49530,7 +49530,7 @@
     ]
   },
   {
-    "id": 4279,
+    "id": 5218,
     "model": "EM74HC7001D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -49657,7 +49657,7 @@
     ]
   },
   {
-    "id": 4281,
+    "id": 5220,
     "model": "EM74HC7001PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -49784,7 +49784,7 @@
     ]
   },
   {
-    "id": 4283,
+    "id": 5222,
     "model": "EM74HC7002",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -49906,7 +49906,7 @@
     ]
   },
   {
-    "id": 4285,
+    "id": 5224,
     "model": "EM74HC7002D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -50033,7 +50033,7 @@
     ]
   },
   {
-    "id": 4287,
+    "id": 5226,
     "model": "EM74HC7002PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -50160,7 +50160,7 @@
     ]
   },
   {
-    "id": 4289,
+    "id": 5228,
     "model": "EM74HC7032",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -50282,7 +50282,7 @@
     ]
   },
   {
-    "id": 4291,
+    "id": 5230,
     "model": "EM74HC7032D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -50409,7 +50409,7 @@
     ]
   },
   {
-    "id": 4293,
+    "id": 5232,
     "model": "EM74HC7032PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -50536,7 +50536,7 @@
     ]
   },
   {
-    "id": 4295,
+    "id": 5234,
     "model": "EM74HC7266",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -50698,7 +50698,7 @@
     ]
   },
   {
-    "id": 4297,
+    "id": 5236,
     "model": "EM74HC7266D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -50865,7 +50865,7 @@
     ]
   },
   {
-    "id": 4299,
+    "id": 5238,
     "model": "EM74HC7266PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -51032,7 +51032,7 @@
     ]
   },
   {
-    "id": 4301,
+    "id": 5240,
     "model": "EM74HC74",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -51159,7 +51159,7 @@
     ]
   },
   {
-    "id": 4303,
+    "id": 5242,
     "model": "EM74HC74D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -51291,7 +51291,7 @@
     ]
   },
   {
-    "id": 4305,
+    "id": 5244,
     "model": "EM74HC74PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -51423,7 +51423,7 @@
     ]
   },
   {
-    "id": 4307,
+    "id": 5246,
     "model": "EM74HC86",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -51585,7 +51585,7 @@
     ]
   },
   {
-    "id": 4309,
+    "id": 5248,
     "model": "EM74HC86D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -51752,7 +51752,7 @@
     ]
   },
   {
-    "id": 4311,
+    "id": 5250,
     "model": "EM74HC86PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -51919,7 +51919,7 @@
     ]
   },
   {
-    "id": 3954,
+    "id": 4893,
     "model": "EM74HCS00",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -51996,7 +51996,7 @@
     ]
   },
   {
-    "id": 3955,
+    "id": 4894,
     "model": "EM74HCS00D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -52078,7 +52078,7 @@
     ]
   },
   {
-    "id": 3956,
+    "id": 4895,
     "model": "EM74HCS00PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -52160,7 +52160,7 @@
     ]
   },
   {
-    "id": 3957,
+    "id": 4896,
     "model": "EM74HCS02",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -52237,7 +52237,7 @@
     ]
   },
   {
-    "id": 3958,
+    "id": 4897,
     "model": "EM74HCS02D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -52319,7 +52319,7 @@
     ]
   },
   {
-    "id": 3959,
+    "id": 4898,
     "model": "EM74HCS02PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -52401,7 +52401,7 @@
     ]
   },
   {
-    "id": 3960,
+    "id": 4899,
     "model": "EM74HCS03",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -52458,7 +52458,7 @@
     ]
   },
   {
-    "id": 3961,
+    "id": 4900,
     "model": "EM74HCS03D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -52520,7 +52520,7 @@
     ]
   },
   {
-    "id": 3962,
+    "id": 4901,
     "model": "EM74HCS03PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -52582,7 +52582,7 @@
     ]
   },
   {
-    "id": 3963,
+    "id": 4902,
     "model": "EM74HCS04",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -52659,7 +52659,7 @@
     ]
   },
   {
-    "id": 3964,
+    "id": 4903,
     "model": "EM74HCS04D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -52741,7 +52741,7 @@
     ]
   },
   {
-    "id": 3965,
+    "id": 4904,
     "model": "EM74HCS04PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -52823,7 +52823,7 @@
     ]
   },
   {
-    "id": 3966,
+    "id": 4905,
     "model": "EM74HCS05",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -52880,7 +52880,7 @@
     ]
   },
   {
-    "id": 3967,
+    "id": 4906,
     "model": "EM74HCS05D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -52942,7 +52942,7 @@
     ]
   },
   {
-    "id": 3968,
+    "id": 4907,
     "model": "EM74HCS05PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -53004,7 +53004,7 @@
     ]
   },
   {
-    "id": 3969,
+    "id": 4908,
     "model": "EM74HCS08",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -53081,7 +53081,7 @@
     ]
   },
   {
-    "id": 3970,
+    "id": 4909,
     "model": "EM74HCS08D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -53163,7 +53163,7 @@
     ]
   },
   {
-    "id": 3971,
+    "id": 4910,
     "model": "EM74HCS08PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -53245,7 +53245,7 @@
     ]
   },
   {
-    "id": 3972,
+    "id": 4911,
     "model": "EM74HCS09",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -53302,7 +53302,7 @@
     ]
   },
   {
-    "id": 3973,
+    "id": 4912,
     "model": "EM74HCS09D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -53364,7 +53364,7 @@
     ]
   },
   {
-    "id": 3974,
+    "id": 4913,
     "model": "EM74HCS09PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -53426,7 +53426,7 @@
     ]
   },
   {
-    "id": 3975,
+    "id": 4914,
     "model": "EM74HCS10",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -53503,7 +53503,7 @@
     ]
   },
   {
-    "id": 3976,
+    "id": 4915,
     "model": "EM74HCS10D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -53585,7 +53585,7 @@
     ]
   },
   {
-    "id": 3977,
+    "id": 4916,
     "model": "EM74HCS10PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -53667,7 +53667,7 @@
     ]
   },
   {
-    "id": 3978,
+    "id": 4917,
     "model": "EM74HCS11",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -53744,7 +53744,7 @@
     ]
   },
   {
-    "id": 3979,
+    "id": 4918,
     "model": "EM74HCS11D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -53826,7 +53826,7 @@
     ]
   },
   {
-    "id": 3980,
+    "id": 4919,
     "model": "EM74HCS11PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -53908,7 +53908,7 @@
     ]
   },
   {
-    "id": 3981,
+    "id": 4920,
     "model": "EM74HCS125",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -53985,7 +53985,7 @@
     ]
   },
   {
-    "id": 3982,
+    "id": 4921,
     "model": "EM74HCS125D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -54067,7 +54067,7 @@
     ]
   },
   {
-    "id": 3983,
+    "id": 4922,
     "model": "EM74HCS125PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -54149,7 +54149,7 @@
     ]
   },
   {
-    "id": 3984,
+    "id": 4923,
     "model": "EM74HCS126",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -54226,7 +54226,7 @@
     ]
   },
   {
-    "id": 3985,
+    "id": 4924,
     "model": "EM74HCS126D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -54308,7 +54308,7 @@
     ]
   },
   {
-    "id": 3986,
+    "id": 4925,
     "model": "EM74HCS126PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -54390,7 +54390,7 @@
     ]
   },
   {
-    "id": 3987,
+    "id": 4926,
     "model": "EM74HCS20",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -54467,7 +54467,7 @@
     ]
   },
   {
-    "id": 3988,
+    "id": 4927,
     "model": "EM74HCS20D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -54549,7 +54549,7 @@
     ]
   },
   {
-    "id": 3989,
+    "id": 4928,
     "model": "EM74HCS20PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -54631,7 +54631,7 @@
     ]
   },
   {
-    "id": 3990,
+    "id": 4929,
     "model": "EM74HCS21",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -54708,7 +54708,7 @@
     ]
   },
   {
-    "id": 3991,
+    "id": 4930,
     "model": "EM74HCS21D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -54790,7 +54790,7 @@
     ]
   },
   {
-    "id": 3992,
+    "id": 4931,
     "model": "EM74HCS21PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -54872,7 +54872,7 @@
     ]
   },
   {
-    "id": 3993,
+    "id": 4932,
     "model": "EM74HCS266",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -54929,7 +54929,7 @@
     ]
   },
   {
-    "id": 3994,
+    "id": 4933,
     "model": "EM74HCS266D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -54991,7 +54991,7 @@
     ]
   },
   {
-    "id": 3995,
+    "id": 4934,
     "model": "EM74HCS266PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -55053,7 +55053,7 @@
     ]
   },
   {
-    "id": 3996,
+    "id": 4935,
     "model": "EM74HCS27",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -55130,7 +55130,7 @@
     ]
   },
   {
-    "id": 3997,
+    "id": 4936,
     "model": "EM74HCS27D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -55212,7 +55212,7 @@
     ]
   },
   {
-    "id": 3998,
+    "id": 4937,
     "model": "EM74HCS27PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -55294,7 +55294,7 @@
     ]
   },
   {
-    "id": 3999,
+    "id": 4938,
     "model": "EM74HCS32",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -55371,7 +55371,7 @@
     ]
   },
   {
-    "id": 4000,
+    "id": 4939,
     "model": "EM74HCS32D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -55453,7 +55453,7 @@
     ]
   },
   {
-    "id": 4001,
+    "id": 4940,
     "model": "EM74HCS32PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -55535,7 +55535,7 @@
     ]
   },
   {
-    "id": 4002,
+    "id": 4941,
     "model": "EM74HCS365",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -55612,7 +55612,7 @@
     ]
   },
   {
-    "id": 4003,
+    "id": 4942,
     "model": "EM74HCS365D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -55694,7 +55694,7 @@
     ]
   },
   {
-    "id": 4004,
+    "id": 4943,
     "model": "EM74HCS365PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -55776,7 +55776,7 @@
     ]
   },
   {
-    "id": 4005,
+    "id": 4944,
     "model": "EM74HCS367",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -55858,7 +55858,7 @@
     ]
   },
   {
-    "id": 4006,
+    "id": 4945,
     "model": "EM74HCS367D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -55940,7 +55940,7 @@
     ]
   },
   {
-    "id": 4007,
+    "id": 4946,
     "model": "EM74HCS367PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -56022,7 +56022,7 @@
     ]
   },
   {
-    "id": 4008,
+    "id": 4947,
     "model": "EM74HCS4075",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -56099,7 +56099,7 @@
     ]
   },
   {
-    "id": 4009,
+    "id": 4948,
     "model": "EM74HCS4075D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -56181,7 +56181,7 @@
     ]
   },
   {
-    "id": 4010,
+    "id": 4949,
     "model": "EM74HCS4075PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -56263,7 +56263,7 @@
     ]
   },
   {
-    "id": 4011,
+    "id": 4950,
     "model": "EM74HCS7266",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -56340,7 +56340,7 @@
     ]
   },
   {
-    "id": 4012,
+    "id": 4951,
     "model": "EM74HCS7266D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -56422,7 +56422,7 @@
     ]
   },
   {
-    "id": 4013,
+    "id": 4952,
     "model": "EM74HCS7266PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -56504,7 +56504,7 @@
     ]
   },
   {
-    "id": 4014,
+    "id": 4953,
     "model": "EM74HCS86",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -56581,7 +56581,7 @@
     ]
   },
   {
-    "id": 4015,
+    "id": 4954,
     "model": "EM74HCS86D",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -56663,7 +56663,7 @@
     ]
   },
   {
-    "id": 4016,
+    "id": 4955,
     "model": "EM74HCS86PW",
     "family": "逻辑芯片",
     "series": "74HC",
@@ -56745,7 +56745,7 @@
     ]
   },
   {
-    "id": 4025,
+    "id": 4964,
     "model": "EM74HCT00",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -56907,7 +56907,7 @@
     ]
   },
   {
-    "id": 4027,
+    "id": 4966,
     "model": "EM74HCT00D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -57074,7 +57074,7 @@
     ]
   },
   {
-    "id": 4029,
+    "id": 4968,
     "model": "EM74HCT00PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -57241,7 +57241,7 @@
     ]
   },
   {
-    "id": 4031,
+    "id": 4970,
     "model": "EM74HCT02",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -57403,7 +57403,7 @@
     ]
   },
   {
-    "id": 4034,
+    "id": 4973,
     "model": "EM74HCT02D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -57570,7 +57570,7 @@
     ]
   },
   {
-    "id": 4036,
+    "id": 4975,
     "model": "EM74HCT02PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -57737,7 +57737,7 @@
     ]
   },
   {
-    "id": 4038,
+    "id": 4977,
     "model": "EM74HCT03",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -57874,7 +57874,7 @@
     ]
   },
   {
-    "id": 4041,
+    "id": 4980,
     "model": "EM74HCT03D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -58016,7 +58016,7 @@
     ]
   },
   {
-    "id": 4043,
+    "id": 4982,
     "model": "EM74HCT03PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -58158,7 +58158,7 @@
     ]
   },
   {
-    "id": 4045,
+    "id": 4984,
     "model": "EM74HCT04",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -58320,7 +58320,7 @@
     ]
   },
   {
-    "id": 4047,
+    "id": 4986,
     "model": "EM74HCT04D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -58487,7 +58487,7 @@
     ]
   },
   {
-    "id": 4049,
+    "id": 4988,
     "model": "EM74HCT04PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -58654,7 +58654,7 @@
     ]
   },
   {
-    "id": 4051,
+    "id": 4990,
     "model": "EM74HCT05",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -58791,7 +58791,7 @@
     ]
   },
   {
-    "id": 4053,
+    "id": 4992,
     "model": "EM74HCT05D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -58933,7 +58933,7 @@
     ]
   },
   {
-    "id": 4055,
+    "id": 4994,
     "model": "EM74HCT05PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -59075,7 +59075,7 @@
     ]
   },
   {
-    "id": 4057,
+    "id": 4996,
     "model": "EM74HCT06",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -59212,7 +59212,7 @@
     ]
   },
   {
-    "id": 4059,
+    "id": 4998,
     "model": "EM74HCT06D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -59354,7 +59354,7 @@
     ]
   },
   {
-    "id": 4061,
+    "id": 5000,
     "model": "EM74HCT06PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -59496,7 +59496,7 @@
     ]
   },
   {
-    "id": 4063,
+    "id": 5002,
     "model": "EM74HCT07",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -59633,7 +59633,7 @@
     ]
   },
   {
-    "id": 4065,
+    "id": 5004,
     "model": "EM74HCT07D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -59775,7 +59775,7 @@
     ]
   },
   {
-    "id": 4067,
+    "id": 5006,
     "model": "EM74HCT07PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -59917,7 +59917,7 @@
     ]
   },
   {
-    "id": 4069,
+    "id": 5008,
     "model": "EM74HCT08",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -60079,7 +60079,7 @@
     ]
   },
   {
-    "id": 4072,
+    "id": 5011,
     "model": "EM74HCT08D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -60246,7 +60246,7 @@
     ]
   },
   {
-    "id": 4074,
+    "id": 5013,
     "model": "EM74HCT08PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -60413,7 +60413,7 @@
     ]
   },
   {
-    "id": 4076,
+    "id": 5015,
     "model": "EM74HCT09",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -60565,7 +60565,7 @@
     ]
   },
   {
-    "id": 4078,
+    "id": 5017,
     "model": "EM74HCT09D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -60722,7 +60722,7 @@
     ]
   },
   {
-    "id": 4080,
+    "id": 5019,
     "model": "EM74HCT09PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -60879,7 +60879,7 @@
     ]
   },
   {
-    "id": 4082,
+    "id": 5021,
     "model": "EM74HCT10",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -61041,7 +61041,7 @@
     ]
   },
   {
-    "id": 4085,
+    "id": 5024,
     "model": "EM74HCT10D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -61208,7 +61208,7 @@
     ]
   },
   {
-    "id": 4087,
+    "id": 5026,
     "model": "EM74HCT10PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -61375,7 +61375,7 @@
     ]
   },
   {
-    "id": 4089,
+    "id": 5028,
     "model": "EM74HCT11",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -61537,7 +61537,7 @@
     ]
   },
   {
-    "id": 4092,
+    "id": 5031,
     "model": "EM74HCT11D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -61704,7 +61704,7 @@
     ]
   },
   {
-    "id": 4094,
+    "id": 5033,
     "model": "EM74HCT11PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -61871,7 +61871,7 @@
     ]
   },
   {
-    "id": 4096,
+    "id": 5035,
     "model": "EM74HCT125",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -62033,7 +62033,7 @@
     ]
   },
   {
-    "id": 4098,
+    "id": 5037,
     "model": "EM74HCT125D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -62200,7 +62200,7 @@
     ]
   },
   {
-    "id": 4100,
+    "id": 5039,
     "model": "EM74HCT125PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -62367,7 +62367,7 @@
     ]
   },
   {
-    "id": 4102,
+    "id": 5041,
     "model": "EM74HCT126",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -62529,7 +62529,7 @@
     ]
   },
   {
-    "id": 4104,
+    "id": 5043,
     "model": "EM74HCT126D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -62696,7 +62696,7 @@
     ]
   },
   {
-    "id": 4106,
+    "id": 5045,
     "model": "EM74HCT126PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -62863,7 +62863,7 @@
     ]
   },
   {
-    "id": 4108,
+    "id": 5047,
     "model": "EM74HCT132",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -62985,7 +62985,7 @@
     ]
   },
   {
-    "id": 4110,
+    "id": 5049,
     "model": "EM74HCT132D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -63112,7 +63112,7 @@
     ]
   },
   {
-    "id": 4112,
+    "id": 5051,
     "model": "EM74HCT132PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -63239,7 +63239,7 @@
     ]
   },
   {
-    "id": 4114,
+    "id": 5053,
     "model": "EM74HCT138",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -63391,7 +63391,7 @@
     ]
   },
   {
-    "id": 4116,
+    "id": 5055,
     "model": "EM74HCT138D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -63548,7 +63548,7 @@
     ]
   },
   {
-    "id": 4118,
+    "id": 5057,
     "model": "EM74HCT138PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -63705,7 +63705,7 @@
     ]
   },
   {
-    "id": 4120,
+    "id": 5059,
     "model": "EM74HCT14",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -63827,7 +63827,7 @@
     ]
   },
   {
-    "id": 4122,
+    "id": 5061,
     "model": "EM74HCT14D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -63954,7 +63954,7 @@
     ]
   },
   {
-    "id": 4124,
+    "id": 5063,
     "model": "EM74HCT14PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -64081,7 +64081,7 @@
     ]
   },
   {
-    "id": 4017,
+    "id": 4956,
     "model": "EM74HCT164",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -64153,7 +64153,7 @@
     ]
   },
   {
-    "id": 4018,
+    "id": 4957,
     "model": "EM74HCT164D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -64230,7 +64230,7 @@
     ]
   },
   {
-    "id": 4019,
+    "id": 4958,
     "model": "EM74HCT164PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -64307,7 +64307,7 @@
     ]
   },
   {
-    "id": 4126,
+    "id": 5065,
     "model": "EM74HCT166",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -64474,7 +64474,7 @@
     ]
   },
   {
-    "id": 4129,
+    "id": 5068,
     "model": "EM74HCT166D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -64646,7 +64646,7 @@
     ]
   },
   {
-    "id": 4131,
+    "id": 5070,
     "model": "EM74HCT166PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -64818,7 +64818,7 @@
     ]
   },
   {
-    "id": 4133,
+    "id": 5072,
     "model": "EM74HCT174",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -64965,7 +64965,7 @@
     ]
   },
   {
-    "id": 4135,
+    "id": 5074,
     "model": "EM74HCT174D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -65117,7 +65117,7 @@
     ]
   },
   {
-    "id": 4137,
+    "id": 5076,
     "model": "EM74HCT174PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -65269,7 +65269,7 @@
     ]
   },
   {
-    "id": 4139,
+    "id": 5078,
     "model": "EM74HCT20",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -65431,7 +65431,7 @@
     ]
   },
   {
-    "id": 4142,
+    "id": 5081,
     "model": "EM74HCT20D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -65598,7 +65598,7 @@
     ]
   },
   {
-    "id": 4144,
+    "id": 5083,
     "model": "EM74HCT20PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -65765,7 +65765,7 @@
     ]
   },
   {
-    "id": 4146,
+    "id": 5085,
     "model": "EM74HCT21",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -65927,7 +65927,7 @@
     ]
   },
   {
-    "id": 4149,
+    "id": 5088,
     "model": "EM74HCT21D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -66094,7 +66094,7 @@
     ]
   },
   {
-    "id": 4151,
+    "id": 5090,
     "model": "EM74HCT21PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -66261,7 +66261,7 @@
     ]
   },
   {
-    "id": 4153,
+    "id": 5092,
     "model": "EM74HCT240",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -66448,7 +66448,7 @@
     ]
   },
   {
-    "id": 4155,
+    "id": 5094,
     "model": "EM74HCT240D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -66640,7 +66640,7 @@
     ]
   },
   {
-    "id": 4157,
+    "id": 5096,
     "model": "EM74HCT240PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -66832,7 +66832,7 @@
     ]
   },
   {
-    "id": 4159,
+    "id": 5098,
     "model": "EM74HCT244",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -67004,7 +67004,7 @@
     ]
   },
   {
-    "id": 4161,
+    "id": 5100,
     "model": "EM74HCT244D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -67181,14 +67181,14 @@
     ]
   },
   {
-    "id": 4163,
+    "id": 5102,
     "model": "EM74HCT244PW",
     "family": "逻辑芯片",
     "series": "74HCT",
     "function": "缓冲器",
     "description": "EM74HCT244PW HCT244□",
-    "package": null,
-    "package_size": null,
+    "package": "TSSOP-20L",
+    "package_size": "body width 4.4 mm",
     "voltage": "4.5 V to 5.5 V",
     "logic_type": "CMOS",
     "temp_range": null,
@@ -67358,7 +67358,7 @@
     ]
   },
   {
-    "id": 4165,
+    "id": 5104,
     "model": "EM74HCT245",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -67535,7 +67535,7 @@
     ]
   },
   {
-    "id": 4167,
+    "id": 5106,
     "model": "EM74HCT245D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -67717,7 +67717,7 @@
     ]
   },
   {
-    "id": 4169,
+    "id": 5108,
     "model": "EM74HCT245PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -67899,7 +67899,7 @@
     ]
   },
   {
-    "id": 4171,
+    "id": 5110,
     "model": "EM74HCT259",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -68071,7 +68071,7 @@
     ]
   },
   {
-    "id": 4173,
+    "id": 5112,
     "model": "EM74HCT259D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -68248,7 +68248,7 @@
     ]
   },
   {
-    "id": 4175,
+    "id": 5114,
     "model": "EM74HCT259PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -68425,7 +68425,7 @@
     ]
   },
   {
-    "id": 4177,
+    "id": 5116,
     "model": "EM74HCT266",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -68562,7 +68562,7 @@
     ]
   },
   {
-    "id": 4179,
+    "id": 5118,
     "model": "EM74HCT266D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -68704,7 +68704,7 @@
     ]
   },
   {
-    "id": 4181,
+    "id": 5120,
     "model": "EM74HCT266PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -68846,7 +68846,7 @@
     ]
   },
   {
-    "id": 4183,
+    "id": 5122,
     "model": "EM74HCT27",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -69008,7 +69008,7 @@
     ]
   },
   {
-    "id": 4186,
+    "id": 5125,
     "model": "EM74HCT27D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -69175,7 +69175,7 @@
     ]
   },
   {
-    "id": 4188,
+    "id": 5127,
     "model": "EM74HCT27PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -69342,7 +69342,7 @@
     ]
   },
   {
-    "id": 4190,
+    "id": 5129,
     "model": "EM74HCT32",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -69504,7 +69504,7 @@
     ]
   },
   {
-    "id": 4192,
+    "id": 5131,
     "model": "EM74HCT32D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -69671,7 +69671,7 @@
     ]
   },
   {
-    "id": 4194,
+    "id": 5133,
     "model": "EM74HCT32PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -69838,7 +69838,7 @@
     ]
   },
   {
-    "id": 4196,
+    "id": 5135,
     "model": "EM74HCT365",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -70000,7 +70000,7 @@
     ]
   },
   {
-    "id": 4198,
+    "id": 5137,
     "model": "EM74HCT365D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -70167,7 +70167,7 @@
     ]
   },
   {
-    "id": 4200,
+    "id": 5139,
     "model": "EM74HCT365PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -70334,7 +70334,7 @@
     ]
   },
   {
-    "id": 4202,
+    "id": 5141,
     "model": "EM74HCT366",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -70496,7 +70496,7 @@
     ]
   },
   {
-    "id": 4205,
+    "id": 5144,
     "model": "EM74HCT366D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -70663,7 +70663,7 @@
     ]
   },
   {
-    "id": 4207,
+    "id": 5146,
     "model": "EM74HCT366PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -70830,7 +70830,7 @@
     ]
   },
   {
-    "id": 4209,
+    "id": 5148,
     "model": "EM74HCT367",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -70992,7 +70992,7 @@
     ]
   },
   {
-    "id": 4211,
+    "id": 5150,
     "model": "EM74HCT367D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -71159,7 +71159,7 @@
     ]
   },
   {
-    "id": 4213,
+    "id": 5152,
     "model": "EM74HCT367PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -71326,7 +71326,7 @@
     ]
   },
   {
-    "id": 4215,
+    "id": 5154,
     "model": "EM74HCT368",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -71488,7 +71488,7 @@
     ]
   },
   {
-    "id": 4218,
+    "id": 5157,
     "model": "EM74HCT368D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -71655,7 +71655,7 @@
     ]
   },
   {
-    "id": 4220,
+    "id": 5159,
     "model": "EM74HCT368PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -71822,7 +71822,7 @@
     ]
   },
   {
-    "id": 4222,
+    "id": 5161,
     "model": "EM74HCT4002",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -71984,7 +71984,7 @@
     ]
   },
   {
-    "id": 4224,
+    "id": 5163,
     "model": "EM74HCT4002D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -72151,7 +72151,7 @@
     ]
   },
   {
-    "id": 4226,
+    "id": 5165,
     "model": "EM74HCT4002PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -72318,7 +72318,7 @@
     ]
   },
   {
-    "id": 4228,
+    "id": 5167,
     "model": "EM74HCT4075",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -72480,7 +72480,7 @@
     ]
   },
   {
-    "id": 4230,
+    "id": 5169,
     "model": "EM74HCT4075D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -72647,7 +72647,7 @@
     ]
   },
   {
-    "id": 4232,
+    "id": 5171,
     "model": "EM74HCT4075PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -72814,7 +72814,7 @@
     ]
   },
   {
-    "id": 4234,
+    "id": 5173,
     "model": "EM74HCT4094",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -72991,7 +72991,7 @@
     ]
   },
   {
-    "id": 4236,
+    "id": 5175,
     "model": "EM74HCT4094D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -73168,7 +73168,7 @@
     ]
   },
   {
-    "id": 4238,
+    "id": 5177,
     "model": "EM74HCT4094PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -73345,7 +73345,7 @@
     ]
   },
   {
-    "id": 4240,
+    "id": 5179,
     "model": "EM74HCT540",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -73532,7 +73532,7 @@
     ]
   },
   {
-    "id": 4242,
+    "id": 5181,
     "model": "EM74HCT540D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -73724,7 +73724,7 @@
     ]
   },
   {
-    "id": 4244,
+    "id": 5183,
     "model": "EM74HCT540PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -73916,7 +73916,7 @@
     ]
   },
   {
-    "id": 4246,
+    "id": 5185,
     "model": "EM74HCT541",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -74083,7 +74083,7 @@
     ]
   },
   {
-    "id": 4248,
+    "id": 5187,
     "model": "EM74HCT541D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -74255,7 +74255,7 @@
     ]
   },
   {
-    "id": 4250,
+    "id": 5189,
     "model": "EM74HCT541PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -74427,7 +74427,7 @@
     ]
   },
   {
-    "id": 4252,
+    "id": 5191,
     "model": "EM74HCT573",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -74579,7 +74579,7 @@
     ]
   },
   {
-    "id": 4254,
+    "id": 5193,
     "model": "EM74HCT573D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -74736,7 +74736,7 @@
     ]
   },
   {
-    "id": 4256,
+    "id": 5195,
     "model": "EM74HCT573PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -74893,7 +74893,7 @@
     ]
   },
   {
-    "id": 4258,
+    "id": 5197,
     "model": "EM74HCT574",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -75055,7 +75055,7 @@
     ]
   },
   {
-    "id": 4260,
+    "id": 5199,
     "model": "EM74HCT574D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -75222,7 +75222,7 @@
     ]
   },
   {
-    "id": 4264,
+    "id": 5203,
     "model": "EM74HCT574DB",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -75389,7 +75389,7 @@
     ]
   },
   {
-    "id": 4262,
+    "id": 5201,
     "model": "EM74HCT574PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -75556,7 +75556,7 @@
     ]
   },
   {
-    "id": 4020,
+    "id": 4959,
     "model": "EM74HCT595",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -75678,7 +75678,7 @@
     ]
   },
   {
-    "id": 4021,
+    "id": 4960,
     "model": "EM74HCT595D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -75805,7 +75805,7 @@
     ]
   },
   {
-    "id": 4023,
+    "id": 4962,
     "model": "EM74HCT595DB",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -75932,7 +75932,7 @@
     ]
   },
   {
-    "id": 4022,
+    "id": 4961,
     "model": "EM74HCT595PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -76555,7 +76555,7 @@
     ]
   },
   {
-    "id": 4278,
+    "id": 5217,
     "model": "EM74HCT7001",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -76677,7 +76677,7 @@
     ]
   },
   {
-    "id": 4280,
+    "id": 5219,
     "model": "EM74HCT7001D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -76804,7 +76804,7 @@
     ]
   },
   {
-    "id": 4282,
+    "id": 5221,
     "model": "EM74HCT7001PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -76931,7 +76931,7 @@
     ]
   },
   {
-    "id": 4284,
+    "id": 5223,
     "model": "EM74HCT7002",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -77053,7 +77053,7 @@
     ]
   },
   {
-    "id": 4286,
+    "id": 5225,
     "model": "EM74HCT7002D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -77180,7 +77180,7 @@
     ]
   },
   {
-    "id": 4288,
+    "id": 5227,
     "model": "EM74HCT7002PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -77307,7 +77307,7 @@
     ]
   },
   {
-    "id": 4290,
+    "id": 5229,
     "model": "EM74HCT7032",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -77429,7 +77429,7 @@
     ]
   },
   {
-    "id": 4292,
+    "id": 5231,
     "model": "EM74HCT7032D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -77556,7 +77556,7 @@
     ]
   },
   {
-    "id": 4294,
+    "id": 5233,
     "model": "EM74HCT7032PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -77683,7 +77683,7 @@
     ]
   },
   {
-    "id": 4296,
+    "id": 5235,
     "model": "EM74HCT7266",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -77845,7 +77845,7 @@
     ]
   },
   {
-    "id": 4298,
+    "id": 5237,
     "model": "EM74HCT7266D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -78012,7 +78012,7 @@
     ]
   },
   {
-    "id": 4300,
+    "id": 5239,
     "model": "EM74HCT7266PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -78179,7 +78179,7 @@
     ]
   },
   {
-    "id": 4302,
+    "id": 5241,
     "model": "EM74HCT74",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -78306,7 +78306,7 @@
     ]
   },
   {
-    "id": 4304,
+    "id": 5243,
     "model": "EM74HCT74D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -78438,7 +78438,7 @@
     ]
   },
   {
-    "id": 4306,
+    "id": 5245,
     "model": "EM74HCT74PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -78570,7 +78570,7 @@
     ]
   },
   {
-    "id": 4308,
+    "id": 5247,
     "model": "EM74HCT86",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -78732,7 +78732,7 @@
     ]
   },
   {
-    "id": 4310,
+    "id": 5249,
     "model": "EM74HCT86D",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -78899,7 +78899,7 @@
     ]
   },
   {
-    "id": 4312,
+    "id": 5251,
     "model": "EM74HCT86PW",
     "family": "逻辑芯片",
     "series": "74HCT",
@@ -79066,7 +79066,7 @@
     ]
   },
   {
-    "id": 4313,
+    "id": 5252,
     "model": "EM74LV1T00",
     "family": "逻辑芯片",
     "series": "74",
@@ -79318,7 +79318,7 @@
     ]
   },
   {
-    "id": 4314,
+    "id": 5253,
     "model": "EM74LV1T00GV",
     "family": "逻辑芯片",
     "series": "74",
@@ -79575,7 +79575,7 @@
     ]
   },
   {
-    "id": 4315,
+    "id": 5254,
     "model": "EM74LV1T00GW",
     "family": "逻辑芯片",
     "series": "74",
@@ -79832,7 +79832,7 @@
     ]
   },
   {
-    "id": 4316,
+    "id": 5255,
     "model": "EM74LV1T00GX",
     "family": "逻辑芯片",
     "series": "74",
@@ -80089,7 +80089,7 @@
     ]
   },
   {
-    "id": 4317,
+    "id": 5256,
     "model": "EM74LV1T02",
     "family": "逻辑芯片",
     "series": "74",
@@ -80341,7 +80341,7 @@
     ]
   },
   {
-    "id": 4318,
+    "id": 5257,
     "model": "EM74LV1T02GV",
     "family": "逻辑芯片",
     "series": "74",
@@ -80598,7 +80598,7 @@
     ]
   },
   {
-    "id": 4319,
+    "id": 5258,
     "model": "EM74LV1T02GW",
     "family": "逻辑芯片",
     "series": "74",
@@ -80855,7 +80855,7 @@
     ]
   },
   {
-    "id": 4320,
+    "id": 5259,
     "model": "EM74LV1T02GX",
     "family": "逻辑芯片",
     "series": "74",
@@ -81112,7 +81112,7 @@
     ]
   },
   {
-    "id": 4321,
+    "id": 5260,
     "model": "EM74LV1T04",
     "family": "逻辑芯片",
     "series": "74",
@@ -81364,7 +81364,7 @@
     ]
   },
   {
-    "id": 4322,
+    "id": 5261,
     "model": "EM74LV1T04GV",
     "family": "逻辑芯片",
     "series": "74",
@@ -81621,7 +81621,7 @@
     ]
   },
   {
-    "id": 4323,
+    "id": 5262,
     "model": "EM74LV1T04GW",
     "family": "逻辑芯片",
     "series": "74",
@@ -81878,7 +81878,7 @@
     ]
   },
   {
-    "id": 4324,
+    "id": 5263,
     "model": "EM74LV1T04GX",
     "family": "逻辑芯片",
     "series": "74",
@@ -82135,7 +82135,7 @@
     ]
   },
   {
-    "id": 4325,
+    "id": 5264,
     "model": "EM74LV1T08",
     "family": "逻辑芯片",
     "series": "74",
@@ -82397,7 +82397,7 @@
     ]
   },
   {
-    "id": 4326,
+    "id": 5265,
     "model": "EM74LV1T08GV",
     "family": "逻辑芯片",
     "series": "74",
@@ -82664,7 +82664,7 @@
     ]
   },
   {
-    "id": 4327,
+    "id": 5266,
     "model": "EM74LV1T08GW",
     "family": "逻辑芯片",
     "series": "74",
@@ -82931,7 +82931,7 @@
     ]
   },
   {
-    "id": 4328,
+    "id": 5267,
     "model": "EM74LV1T08GX",
     "family": "逻辑芯片",
     "series": "74",
@@ -83198,7 +83198,7 @@
     ]
   },
   {
-    "id": 4329,
+    "id": 5268,
     "model": "EM74LV1T125",
     "family": "逻辑芯片",
     "series": "74",
@@ -83465,7 +83465,7 @@
     ]
   },
   {
-    "id": 4330,
+    "id": 5269,
     "model": "EM74LV1T125GV",
     "family": "逻辑芯片",
     "series": "74",
@@ -83737,7 +83737,7 @@
     ]
   },
   {
-    "id": 4331,
+    "id": 5270,
     "model": "EM74LV1T125GW",
     "family": "逻辑芯片",
     "series": "74",
@@ -84009,7 +84009,7 @@
     ]
   },
   {
-    "id": 4332,
+    "id": 5271,
     "model": "EM74LV1T125GX",
     "family": "逻辑芯片",
     "series": "74",
@@ -84281,7 +84281,7 @@
     ]
   },
   {
-    "id": 4333,
+    "id": 5272,
     "model": "EM74LV1T126",
     "family": "逻辑芯片",
     "series": "74",
@@ -84538,7 +84538,7 @@
     ]
   },
   {
-    "id": 4334,
+    "id": 5273,
     "model": "EM74LV1T126GV",
     "family": "逻辑芯片",
     "series": "74",
@@ -84800,7 +84800,7 @@
     ]
   },
   {
-    "id": 4335,
+    "id": 5274,
     "model": "EM74LV1T126GW",
     "family": "逻辑芯片",
     "series": "74",
@@ -85062,7 +85062,7 @@
     ]
   },
   {
-    "id": 4336,
+    "id": 5275,
     "model": "EM74LV1T126GX",
     "family": "逻辑芯片",
     "series": "74",
@@ -85324,7 +85324,7 @@
     ]
   },
   {
-    "id": 4337,
+    "id": 5276,
     "model": "EM74LV1T32",
     "family": "逻辑芯片",
     "series": "74",
@@ -85576,7 +85576,7 @@
     ]
   },
   {
-    "id": 4338,
+    "id": 5277,
     "model": "EM74LV1T32GV",
     "family": "逻辑芯片",
     "series": "74",
@@ -85833,7 +85833,7 @@
     ]
   },
   {
-    "id": 4339,
+    "id": 5278,
     "model": "EM74LV1T32GW",
     "family": "逻辑芯片",
     "series": "74",
@@ -86090,7 +86090,7 @@
     ]
   },
   {
-    "id": 4340,
+    "id": 5279,
     "model": "EM74LV1T32GX",
     "family": "逻辑芯片",
     "series": "74",
@@ -86347,7 +86347,7 @@
     ]
   },
   {
-    "id": 4341,
+    "id": 5280,
     "model": "EM74LV1T34",
     "family": "逻辑芯片",
     "series": "74",
@@ -86609,7 +86609,7 @@
     ]
   },
   {
-    "id": 4342,
+    "id": 5281,
     "model": "EM74LV1T34GV",
     "family": "逻辑芯片",
     "series": "74",
@@ -86876,7 +86876,7 @@
     ]
   },
   {
-    "id": 4343,
+    "id": 5282,
     "model": "EM74LV1T34GW",
     "family": "逻辑芯片",
     "series": "74",
@@ -87143,7 +87143,7 @@
     ]
   },
   {
-    "id": 4344,
+    "id": 5283,
     "model": "EM74LV1T34GX",
     "family": "逻辑芯片",
     "series": "74",
@@ -87410,7 +87410,7 @@
     ]
   },
   {
-    "id": 4345,
+    "id": 5284,
     "model": "EM74LV1T86",
     "family": "逻辑芯片",
     "series": "74",
@@ -87662,7 +87662,7 @@
     ]
   },
   {
-    "id": 4349,
+    "id": 5288,
     "model": "EM74LV1T86GM",
     "family": "逻辑芯片",
     "series": "74",
@@ -87919,7 +87919,7 @@
     ]
   },
   {
-    "id": 4346,
+    "id": 5285,
     "model": "EM74LV1T86GV",
     "family": "逻辑芯片",
     "series": "74",
@@ -88176,7 +88176,7 @@
     ]
   },
   {
-    "id": 4347,
+    "id": 5286,
     "model": "EM74LV1T86GW",
     "family": "逻辑芯片",
     "series": "74",
@@ -88433,7 +88433,7 @@
     ]
   },
   {
-    "id": 4348,
+    "id": 5287,
     "model": "EM74LV1T86GX",
     "family": "逻辑芯片",
     "series": "74",
@@ -88690,7 +88690,7 @@
     ]
   },
   {
-    "id": 4350,
+    "id": 5289,
     "model": "EM74LV1T87",
     "family": "逻辑芯片",
     "series": "74",
@@ -88942,7 +88942,7 @@
     ]
   },
   {
-    "id": 4351,
+    "id": 5290,
     "model": "EM74LV1T87GV",
     "family": "逻辑芯片",
     "series": "74",
@@ -89199,7 +89199,7 @@
     ]
   },
   {
-    "id": 4352,
+    "id": 5291,
     "model": "EM74LV1T87GW",
     "family": "逻辑芯片",
     "series": "74",
@@ -89456,7 +89456,7 @@
     ]
   },
   {
-    "id": 4353,
+    "id": 5292,
     "model": "EM74LV1T87GX",
     "family": "逻辑芯片",
     "series": "74",
@@ -89713,7 +89713,7 @@
     ]
   },
   {
-    "id": 4529,
+    "id": 5468,
     "model": "EM74LVC",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -89880,7 +89880,7 @@
     ]
   },
   {
-    "id": 4354,
+    "id": 5293,
     "model": "EM74LVC00A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -90137,7 +90137,7 @@
     ]
   },
   {
-    "id": 4355,
+    "id": 5294,
     "model": "EM74LVC00AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -90399,7 +90399,7 @@
     ]
   },
   {
-    "id": 4356,
+    "id": 5295,
     "model": "EM74LVC00APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -90661,7 +90661,7 @@
     ]
   },
   {
-    "id": 4357,
+    "id": 5296,
     "model": "EM74LVC02A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -90918,7 +90918,7 @@
     ]
   },
   {
-    "id": 4358,
+    "id": 5297,
     "model": "EM74LVC02AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -91180,7 +91180,7 @@
     ]
   },
   {
-    "id": 4359,
+    "id": 5298,
     "model": "EM74LVC02APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -91442,7 +91442,7 @@
     ]
   },
   {
-    "id": 4360,
+    "id": 5299,
     "model": "EM74LVC04A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -91699,7 +91699,7 @@
     ]
   },
   {
-    "id": 4361,
+    "id": 5300,
     "model": "EM74LVC04AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -91961,7 +91961,7 @@
     ]
   },
   {
-    "id": 4362,
+    "id": 5301,
     "model": "EM74LVC04APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -92223,7 +92223,7 @@
     ]
   },
   {
-    "id": 4363,
+    "id": 5302,
     "model": "EM74LVC06A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -92445,7 +92445,7 @@
     ]
   },
   {
-    "id": 4364,
+    "id": 5303,
     "model": "EM74LVC06AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -92672,7 +92672,7 @@
     ]
   },
   {
-    "id": 4365,
+    "id": 5304,
     "model": "EM74LVC06APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -92899,7 +92899,7 @@
     ]
   },
   {
-    "id": 4366,
+    "id": 5305,
     "model": "EM74LVC07A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -93121,7 +93121,7 @@
     ]
   },
   {
-    "id": 4367,
+    "id": 5306,
     "model": "EM74LVC07AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -93348,7 +93348,7 @@
     ]
   },
   {
-    "id": 4368,
+    "id": 5307,
     "model": "EM74LVC07APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -93575,7 +93575,7 @@
     ]
   },
   {
-    "id": 4369,
+    "id": 5308,
     "model": "EM74LVC08A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -93862,14 +93862,14 @@
     ]
   },
   {
-    "id": 4370,
+    "id": 5309,
     "model": "EM74LVC08AD",
     "family": "逻辑芯片",
     "series": "74LVC",
     "function": "逻辑门",
     "description": "XYYWW SOP-14L plastic small outline package; 14 leads;",
     "package": "SOP-14L",
-    "package_size": "body width 3.9 mm",
+    "package_size": "3.5 mm × 0.8 mm",
     "voltage": "1.2 V to 5.5 V",
     "logic_type": "CMOS",
     "temp_range": null,
@@ -94154,14 +94154,14 @@
     ]
   },
   {
-    "id": 4371,
+    "id": 5310,
     "model": "EM74LVC08APW",
     "family": "逻辑芯片",
     "series": "74LVC",
     "function": "逻辑门",
     "description": "XYYWW TSSOP-14L plastic thin shrink small outline package;",
     "package": "QFN3",
-    "package_size": "body width 4.4 mm",
+    "package_size": "3.5 mm × 0.8 mm",
     "voltage": "1.2 V to 5.5 V",
     "logic_type": "CMOS",
     "temp_range": null,
@@ -94446,14 +94446,14 @@
     ]
   },
   {
-    "id": 4372,
+    "id": 5311,
     "model": "EM74LVC08ARGY",
     "family": "逻辑芯片",
     "series": "74LVC",
     "function": "逻辑门",
     "description": "XYYWW QFN3.5x3.5-14L plastic quad flat no-lead package;",
     "package": "QFN3",
-    "package_size": "body width 4.4 mm",
+    "package_size": "3.5 mm × 0.8 mm",
     "voltage": "1.2 V to 5.5 V",
     "logic_type": "CMOS",
     "temp_range": null,
@@ -94738,7 +94738,7 @@
     ]
   },
   {
-    "id": 4373,
+    "id": 5312,
     "model": "EM74LVC10A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -94995,7 +94995,7 @@
     ]
   },
   {
-    "id": 4374,
+    "id": 5313,
     "model": "EM74LVC10AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -95257,7 +95257,7 @@
     ]
   },
   {
-    "id": 4375,
+    "id": 5314,
     "model": "EM74LVC10APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -95519,7 +95519,7 @@
     ]
   },
   {
-    "id": 4376,
+    "id": 5315,
     "model": "EM74LVC11",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -95776,7 +95776,7 @@
     ]
   },
   {
-    "id": 4377,
+    "id": 5316,
     "model": "EM74LVC11D",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -96038,7 +96038,7 @@
     ]
   },
   {
-    "id": 4378,
+    "id": 5317,
     "model": "EM74LVC11PW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -96300,7 +96300,7 @@
     ]
   },
   {
-    "id": 4379,
+    "id": 5318,
     "model": "EM74LVC125A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -96547,7 +96547,7 @@
     ]
   },
   {
-    "id": 4380,
+    "id": 5319,
     "model": "EM74LVC125AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -96799,7 +96799,7 @@
     ]
   },
   {
-    "id": 4381,
+    "id": 5320,
     "model": "EM74LVC125APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -97051,7 +97051,7 @@
     ]
   },
   {
-    "id": 4382,
+    "id": 5321,
     "model": "EM74LVC126A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -97328,7 +97328,7 @@
     ]
   },
   {
-    "id": 4383,
+    "id": 5322,
     "model": "EM74LVC126AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -97610,7 +97610,7 @@
     ]
   },
   {
-    "id": 4384,
+    "id": 5323,
     "model": "EM74LVC126APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -97892,7 +97892,7 @@
     ]
   },
   {
-    "id": 4385,
+    "id": 5324,
     "model": "EM74LVC132A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -98084,7 +98084,7 @@
     ]
   },
   {
-    "id": 4386,
+    "id": 5325,
     "model": "EM74LVC132AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -98281,7 +98281,7 @@
     ]
   },
   {
-    "id": 4387,
+    "id": 5326,
     "model": "EM74LVC132APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -98478,7 +98478,7 @@
     ]
   },
   {
-    "id": 4388,
+    "id": 5327,
     "model": "EM74LVC14A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -98675,7 +98675,7 @@
     ]
   },
   {
-    "id": 4389,
+    "id": 5328,
     "model": "EM74LVC14AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -98877,7 +98877,7 @@
     ]
   },
   {
-    "id": 4390,
+    "id": 5329,
     "model": "EM74LVC14APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -99079,7 +99079,7 @@
     ]
   },
   {
-    "id": 4391,
+    "id": 5330,
     "model": "EM74LVC1G00",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -99266,7 +99266,7 @@
     ]
   },
   {
-    "id": 4395,
+    "id": 5334,
     "model": "EM74LVC1G00GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -99458,7 +99458,7 @@
     ]
   },
   {
-    "id": 4394,
+    "id": 5333,
     "model": "EM74LVC1G00GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -99650,7 +99650,7 @@
     ]
   },
   {
-    "id": 4392,
+    "id": 5331,
     "model": "EM74LVC1G00GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -99842,7 +99842,7 @@
     ]
   },
   {
-    "id": 4393,
+    "id": 5332,
     "model": "EM74LVC1G00GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -100034,7 +100034,7 @@
     ]
   },
   {
-    "id": 4396,
+    "id": 5335,
     "model": "EM74LVC1G00GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -100226,7 +100226,7 @@
     ]
   },
   {
-    "id": 4397,
+    "id": 5336,
     "model": "EM74LVC1G02",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -100433,7 +100433,7 @@
     ]
   },
   {
-    "id": 4401,
+    "id": 5340,
     "model": "EM74LVC1G02GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -100645,7 +100645,7 @@
     ]
   },
   {
-    "id": 4400,
+    "id": 5339,
     "model": "EM74LVC1G02GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -100857,7 +100857,7 @@
     ]
   },
   {
-    "id": 4398,
+    "id": 5337,
     "model": "EM74LVC1G02GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -101069,7 +101069,7 @@
     ]
   },
   {
-    "id": 4399,
+    "id": 5338,
     "model": "EM74LVC1G02GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -101281,7 +101281,7 @@
     ]
   },
   {
-    "id": 4402,
+    "id": 5341,
     "model": "EM74LVC1G02GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -101493,7 +101493,7 @@
     ]
   },
   {
-    "id": 4403,
+    "id": 5342,
     "model": "EM74LVC1G04",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -101725,7 +101725,7 @@
     ]
   },
   {
-    "id": 4407,
+    "id": 5346,
     "model": "EM74LVC1G04GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -101962,7 +101962,7 @@
     ]
   },
   {
-    "id": 4406,
+    "id": 5345,
     "model": "EM74LVC1G04GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -102199,7 +102199,7 @@
     ]
   },
   {
-    "id": 4404,
+    "id": 5343,
     "model": "EM74LVC1G04GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -102436,7 +102436,7 @@
     ]
   },
   {
-    "id": 4405,
+    "id": 5344,
     "model": "EM74LVC1G04GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -102673,7 +102673,7 @@
     ]
   },
   {
-    "id": 4408,
+    "id": 5347,
     "model": "EM74LVC1G04GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -102916,8 +102916,8 @@
     "series": "74LVC",
     "function": "反相器",
     "description": "Inverter with open-drain output",
-    "package": null,
-    "package_size": null,
+    "package": "SOT23-6L/SOT363/DFN6L",
+    "package_size": "SOT23-6L 2.92 mm × 1.6 mm; SOT363 2.1 mm × 1.25 mm; DFN6L 1 mm × 1 mm",
     "voltage": "1.65 V to 2.7 V",
     "logic_type": "CMOS",
     "temp_range": null,
@@ -103087,7 +103087,7 @@
     ]
   },
   {
-    "id": 4414,
+    "id": 5353,
     "model": "EM74LVC1G06GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -103269,7 +103269,7 @@
     ]
   },
   {
-    "id": 4413,
+    "id": 5352,
     "model": "EM74LVC1G06GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -103451,7 +103451,7 @@
     ]
   },
   {
-    "id": 4411,
+    "id": 5350,
     "model": "EM74LVC1G06GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -103633,7 +103633,7 @@
     ]
   },
   {
-    "id": 4412,
+    "id": 5351,
     "model": "EM74LVC1G06GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -103815,7 +103815,7 @@
     ]
   },
   {
-    "id": 4415,
+    "id": 5354,
     "model": "EM74LVC1G06GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -103997,7 +103997,7 @@
     ]
   },
   {
-    "id": 4416,
+    "id": 5355,
     "model": "EM74LVC1G07",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -104159,7 +104159,7 @@
     ]
   },
   {
-    "id": 4420,
+    "id": 5359,
     "model": "EM74LVC1G07GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -104326,7 +104326,7 @@
     ]
   },
   {
-    "id": 4419,
+    "id": 5358,
     "model": "EM74LVC1G07GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -104493,7 +104493,7 @@
     ]
   },
   {
-    "id": 4417,
+    "id": 5356,
     "model": "EM74LVC1G07GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -104660,7 +104660,7 @@
     ]
   },
   {
-    "id": 4418,
+    "id": 5357,
     "model": "EM74LVC1G07GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -104827,7 +104827,7 @@
     ]
   },
   {
-    "id": 4421,
+    "id": 5360,
     "model": "EM74LVC1G07GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -105201,7 +105201,7 @@
     ]
   },
   {
-    "id": 4426,
+    "id": 5365,
     "model": "EM74LVC1G08GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -105413,7 +105413,7 @@
     ]
   },
   {
-    "id": 4425,
+    "id": 5364,
     "model": "EM74LVC1G08GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -105625,7 +105625,7 @@
     ]
   },
   {
-    "id": 4423,
+    "id": 5362,
     "model": "EM74LVC1G08GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -105837,7 +105837,7 @@
     ]
   },
   {
-    "id": 4424,
+    "id": 5363,
     "model": "EM74LVC1G08GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -106049,7 +106049,7 @@
     ]
   },
   {
-    "id": 4427,
+    "id": 5366,
     "model": "EM74LVC1G08GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -106261,7 +106261,7 @@
     ]
   },
   {
-    "id": 4428,
+    "id": 5367,
     "model": "EM74LVC1G09",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -106438,7 +106438,7 @@
     ]
   },
   {
-    "id": 4432,
+    "id": 5371,
     "model": "EM74LVC1G09GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -106620,7 +106620,7 @@
     ]
   },
   {
-    "id": 4431,
+    "id": 5370,
     "model": "EM74LVC1G09GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -106802,7 +106802,7 @@
     ]
   },
   {
-    "id": 4429,
+    "id": 5368,
     "model": "EM74LVC1G09GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -106984,7 +106984,7 @@
     ]
   },
   {
-    "id": 4430,
+    "id": 5369,
     "model": "EM74LVC1G09GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -107166,7 +107166,7 @@
     ]
   },
   {
-    "id": 4433,
+    "id": 5372,
     "model": "EM74LVC1G09GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -107348,7 +107348,7 @@
     ]
   },
   {
-    "id": 4434,
+    "id": 5373,
     "model": "EM74LVC1G10",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -107555,7 +107555,7 @@
     ]
   },
   {
-    "id": 4438,
+    "id": 5377,
     "model": "EM74LVC1G10GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -107767,7 +107767,7 @@
     ]
   },
   {
-    "id": 4437,
+    "id": 5376,
     "model": "EM74LVC1G10GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -107979,7 +107979,7 @@
     ]
   },
   {
-    "id": 4435,
+    "id": 5374,
     "model": "EM74LVC1G10GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -108191,7 +108191,7 @@
     ]
   },
   {
-    "id": 4436,
+    "id": 5375,
     "model": "EM74LVC1G10GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -108403,7 +108403,7 @@
     ]
   },
   {
-    "id": 4439,
+    "id": 5378,
     "model": "EM74LVC1G11",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -108610,7 +108610,7 @@
     ]
   },
   {
-    "id": 4443,
+    "id": 5382,
     "model": "EM74LVC1G11GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -108822,7 +108822,7 @@
     ]
   },
   {
-    "id": 4442,
+    "id": 5381,
     "model": "EM74LVC1G11GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -109034,7 +109034,7 @@
     ]
   },
   {
-    "id": 4440,
+    "id": 5379,
     "model": "EM74LVC1G11GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -109246,7 +109246,7 @@
     ]
   },
   {
-    "id": 4441,
+    "id": 5380,
     "model": "EM74LVC1G11GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -109458,7 +109458,7 @@
     ]
   },
   {
-    "id": 4444,
+    "id": 5383,
     "model": "EM74LVC1G125",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -109670,7 +109670,7 @@
     ]
   },
   {
-    "id": 4448,
+    "id": 5387,
     "model": "EM74LVC1G125GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -109887,7 +109887,7 @@
     ]
   },
   {
-    "id": 4447,
+    "id": 5386,
     "model": "EM74LVC1G125GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -110104,7 +110104,7 @@
     ]
   },
   {
-    "id": 4445,
+    "id": 5384,
     "model": "EM74LVC1G125GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -110321,7 +110321,7 @@
     ]
   },
   {
-    "id": 4446,
+    "id": 5385,
     "model": "EM74LVC1G125GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -110538,7 +110538,7 @@
     ]
   },
   {
-    "id": 4449,
+    "id": 5388,
     "model": "EM74LVC1G125GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -110755,7 +110755,7 @@
     ]
   },
   {
-    "id": 4450,
+    "id": 5389,
     "model": "EM74LVC1G126",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -110967,7 +110967,7 @@
     ]
   },
   {
-    "id": 4454,
+    "id": 5393,
     "model": "EM74LVC1G126GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -111184,7 +111184,7 @@
     ]
   },
   {
-    "id": 4453,
+    "id": 5392,
     "model": "EM74LVC1G126GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -111401,7 +111401,7 @@
     ]
   },
   {
-    "id": 4451,
+    "id": 5390,
     "model": "EM74LVC1G126GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -111618,7 +111618,7 @@
     ]
   },
   {
-    "id": 4452,
+    "id": 5391,
     "model": "EM74LVC1G126GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -111835,7 +111835,7 @@
     ]
   },
   {
-    "id": 4455,
+    "id": 5394,
     "model": "EM74LVC1G126GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -112052,7 +112052,7 @@
     ]
   },
   {
-    "id": 4456,
+    "id": 5395,
     "model": "EM74LVC1G132",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -112209,7 +112209,7 @@
     ]
   },
   {
-    "id": 4460,
+    "id": 5399,
     "model": "EM74LVC1G132GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -112371,7 +112371,7 @@
     ]
   },
   {
-    "id": 4459,
+    "id": 5398,
     "model": "EM74LVC1G132GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -112533,7 +112533,7 @@
     ]
   },
   {
-    "id": 4457,
+    "id": 5396,
     "model": "EM74LVC1G132GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -112695,7 +112695,7 @@
     ]
   },
   {
-    "id": 4458,
+    "id": 5397,
     "model": "EM74LVC1G132GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -112857,7 +112857,7 @@
     ]
   },
   {
-    "id": 4461,
+    "id": 5400,
     "model": "EM74LVC1G132GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -113019,7 +113019,7 @@
     ]
   },
   {
-    "id": 4462,
+    "id": 5401,
     "model": "EM74LVC1G14",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -113176,7 +113176,7 @@
     ]
   },
   {
-    "id": 4466,
+    "id": 5405,
     "model": "EM74LVC1G14GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -113338,7 +113338,7 @@
     ]
   },
   {
-    "id": 4465,
+    "id": 5404,
     "model": "EM74LVC1G14GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -113500,7 +113500,7 @@
     ]
   },
   {
-    "id": 4463,
+    "id": 5402,
     "model": "EM74LVC1G14GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -113662,7 +113662,7 @@
     ]
   },
   {
-    "id": 4464,
+    "id": 5403,
     "model": "EM74LVC1G14GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -113824,7 +113824,7 @@
     ]
   },
   {
-    "id": 4467,
+    "id": 5406,
     "model": "EM74LVC1G14GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -113986,7 +113986,7 @@
     ]
   },
   {
-    "id": 4468,
+    "id": 5407,
     "model": "EM74LVC1G16",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -114193,7 +114193,7 @@
     ]
   },
   {
-    "id": 4472,
+    "id": 5411,
     "model": "EM74LVC1G16GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -114405,7 +114405,7 @@
     ]
   },
   {
-    "id": 4471,
+    "id": 5410,
     "model": "EM74LVC1G16GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -114617,7 +114617,7 @@
     ]
   },
   {
-    "id": 4469,
+    "id": 5408,
     "model": "EM74LVC1G16GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -114829,7 +114829,7 @@
     ]
   },
   {
-    "id": 4470,
+    "id": 5409,
     "model": "EM74LVC1G16GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -115041,7 +115041,7 @@
     ]
   },
   {
-    "id": 4473,
+    "id": 5412,
     "model": "EM74LVC1G16GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -115253,7 +115253,7 @@
     ]
   },
   {
-    "id": 4474,
+    "id": 5413,
     "model": "EM74LVC1G17",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -115410,7 +115410,7 @@
     ]
   },
   {
-    "id": 4478,
+    "id": 5417,
     "model": "EM74LVC1G17GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -115572,7 +115572,7 @@
     ]
   },
   {
-    "id": 4477,
+    "id": 5416,
     "model": "EM74LVC1G17GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -115734,7 +115734,7 @@
     ]
   },
   {
-    "id": 4475,
+    "id": 5414,
     "model": "EM74LVC1G17GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -115896,7 +115896,7 @@
     ]
   },
   {
-    "id": 4476,
+    "id": 5415,
     "model": "EM74LVC1G17GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -116058,7 +116058,7 @@
     ]
   },
   {
-    "id": 4479,
+    "id": 5418,
     "model": "EM74LVC1G17GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -116220,14 +116220,14 @@
     ]
   },
   {
-    "id": 4480,
+    "id": 5419,
     "model": "EM74LVC1G17GX2",
     "family": "逻辑芯片",
     "series": "74LVC",
     "function": null,
     "description": "Modifications: • Deleted type number EM74LVC1G17GX2 and EM74LVC1G17YZV.",
-    "package": null,
-    "package_size": null,
+    "package": "X2SON",
+    "package_size": "0.8 mm × 0.8 mm; 0.4 mm height",
     "voltage": "1.65 V to 5.5 V",
     "logic_type": "CMOS",
     "temp_range": null,
@@ -116397,14 +116397,14 @@
     ]
   },
   {
-    "id": 4481,
+    "id": 5420,
     "model": "EM74LVC1G17YZV",
     "family": "逻辑芯片",
     "series": "74LVC",
     "function": null,
     "description": "Modifications: • Deleted type number EM74LVC1G17GX2 and EM74LVC1G17YZV.",
-    "package": null,
-    "package_size": null,
+    "package": "X2SON/DFN",
+    "package_size": "1.45 mm × 1 mm; 0.6 mm height",
     "voltage": "1.65 V to 5.5 V",
     "logic_type": "CMOS",
     "temp_range": null,
@@ -116574,7 +116574,7 @@
     ]
   },
   {
-    "id": 4482,
+    "id": 5421,
     "model": "EM74LVC1G240",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -116786,7 +116786,7 @@
     ]
   },
   {
-    "id": 4486,
+    "id": 5425,
     "model": "EM74LVC1G240GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -117003,7 +117003,7 @@
     ]
   },
   {
-    "id": 4485,
+    "id": 5424,
     "model": "EM74LVC1G240GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -117220,7 +117220,7 @@
     ]
   },
   {
-    "id": 4483,
+    "id": 5422,
     "model": "EM74LVC1G240GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -117437,7 +117437,7 @@
     ]
   },
   {
-    "id": 4484,
+    "id": 5423,
     "model": "EM74LVC1G240GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -117654,7 +117654,7 @@
     ]
   },
   {
-    "id": 4487,
+    "id": 5426,
     "model": "EM74LVC1G240GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -117871,7 +117871,7 @@
     ]
   },
   {
-    "id": 4488,
+    "id": 5427,
     "model": "EM74LVC1G27",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -118078,7 +118078,7 @@
     ]
   },
   {
-    "id": 4492,
+    "id": 5431,
     "model": "EM74LVC1G27GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -118290,7 +118290,7 @@
     ]
   },
   {
-    "id": 4491,
+    "id": 5430,
     "model": "EM74LVC1G27GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -118502,7 +118502,7 @@
     ]
   },
   {
-    "id": 4489,
+    "id": 5428,
     "model": "EM74LVC1G27GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -118714,7 +118714,7 @@
     ]
   },
   {
-    "id": 4490,
+    "id": 5429,
     "model": "EM74LVC1G27GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -118926,7 +118926,7 @@
     ]
   },
   {
-    "id": 4493,
+    "id": 5432,
     "model": "EM74LVC1G32",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -119133,7 +119133,7 @@
     ]
   },
   {
-    "id": 4497,
+    "id": 5436,
     "model": "EM74LVC1G32GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -119345,7 +119345,7 @@
     ]
   },
   {
-    "id": 4496,
+    "id": 5435,
     "model": "EM74LVC1G32GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -119557,7 +119557,7 @@
     ]
   },
   {
-    "id": 4494,
+    "id": 5433,
     "model": "EM74LVC1G32GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -119769,7 +119769,7 @@
     ]
   },
   {
-    "id": 4495,
+    "id": 5434,
     "model": "EM74LVC1G32GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -119981,7 +119981,7 @@
     ]
   },
   {
-    "id": 4498,
+    "id": 5437,
     "model": "EM74LVC1G32GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -120193,7 +120193,7 @@
     ]
   },
   {
-    "id": 4499,
+    "id": 5438,
     "model": "EM74LVC1G332",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -120400,7 +120400,7 @@
     ]
   },
   {
-    "id": 4503,
+    "id": 5442,
     "model": "EM74LVC1G332GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -120612,7 +120612,7 @@
     ]
   },
   {
-    "id": 4502,
+    "id": 5441,
     "model": "EM74LVC1G332GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -120824,7 +120824,7 @@
     ]
   },
   {
-    "id": 4500,
+    "id": 5439,
     "model": "EM74LVC1G332GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -121036,7 +121036,7 @@
     ]
   },
   {
-    "id": 4501,
+    "id": 5440,
     "model": "EM74LVC1G332GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -121248,7 +121248,7 @@
     ]
   },
   {
-    "id": 4504,
+    "id": 5443,
     "model": "EM74LVC1G34",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -121455,7 +121455,7 @@
     ]
   },
   {
-    "id": 4508,
+    "id": 5447,
     "model": "EM74LVC1G34GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -121667,7 +121667,7 @@
     ]
   },
   {
-    "id": 4507,
+    "id": 5446,
     "model": "EM74LVC1G34GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -121879,7 +121879,7 @@
     ]
   },
   {
-    "id": 4505,
+    "id": 5444,
     "model": "EM74LVC1G34GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -122091,7 +122091,7 @@
     ]
   },
   {
-    "id": 4506,
+    "id": 5445,
     "model": "EM74LVC1G34GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -122303,7 +122303,7 @@
     ]
   },
   {
-    "id": 4509,
+    "id": 5448,
     "model": "EM74LVC1G34GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -122515,7 +122515,7 @@
     ]
   },
   {
-    "id": 4510,
+    "id": 5449,
     "model": "EM74LVC1G38",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -122692,7 +122692,7 @@
     ]
   },
   {
-    "id": 4514,
+    "id": 5453,
     "model": "EM74LVC1G38GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -122874,7 +122874,7 @@
     ]
   },
   {
-    "id": 4513,
+    "id": 5452,
     "model": "EM74LVC1G38GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -123056,7 +123056,7 @@
     ]
   },
   {
-    "id": 4511,
+    "id": 5450,
     "model": "EM74LVC1G38GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -123238,7 +123238,7 @@
     ]
   },
   {
-    "id": 4512,
+    "id": 5451,
     "model": "EM74LVC1G38GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -123420,7 +123420,7 @@
     ]
   },
   {
-    "id": 4515,
+    "id": 5454,
     "model": "EM74LVC1G38GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -123602,7 +123602,7 @@
     ]
   },
   {
-    "id": 4516,
+    "id": 5455,
     "model": "EM74LVC1G57",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -123779,7 +123779,7 @@
     ]
   },
   {
-    "id": 4517,
+    "id": 5456,
     "model": "EM74LVC1G57GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -123961,7 +123961,7 @@
     ]
   },
   {
-    "id": 4518,
+    "id": 5457,
     "model": "EM74LVC1G57GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -124143,7 +124143,7 @@
     ]
   },
   {
-    "id": 4519,
+    "id": 5458,
     "model": "EM74LVC1G58",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -124320,7 +124320,7 @@
     ]
   },
   {
-    "id": 4520,
+    "id": 5459,
     "model": "EM74LVC1G58GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -124502,7 +124502,7 @@
     ]
   },
   {
-    "id": 4521,
+    "id": 5460,
     "model": "EM74LVC1G58GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -124684,7 +124684,7 @@
     ]
   },
   {
-    "id": 4522,
+    "id": 5461,
     "model": "EM74LVC1G86",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -124871,7 +124871,7 @@
     ]
   },
   {
-    "id": 4526,
+    "id": 5465,
     "model": "EM74LVC1G86GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -125063,7 +125063,7 @@
     ]
   },
   {
-    "id": 4525,
+    "id": 5464,
     "model": "EM74LVC1G86GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -125255,7 +125255,7 @@
     ]
   },
   {
-    "id": 4523,
+    "id": 5462,
     "model": "EM74LVC1G86GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -125447,7 +125447,7 @@
     ]
   },
   {
-    "id": 4524,
+    "id": 5463,
     "model": "EM74LVC1G86GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -125639,7 +125639,7 @@
     ]
   },
   {
-    "id": 4527,
+    "id": 5466,
     "model": "EM74LVC1G86GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -125831,7 +125831,7 @@
     ]
   },
   {
-    "id": 4528,
+    "id": 5467,
     "model": "EM74LVC1G97",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -125998,7 +125998,7 @@
     ]
   },
   {
-    "id": 4530,
+    "id": 5469,
     "model": "EM74LVC1G97GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -126170,7 +126170,7 @@
     ]
   },
   {
-    "id": 4531,
+    "id": 5470,
     "model": "EM74LVC1G97GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -126342,7 +126342,7 @@
     ]
   },
   {
-    "id": 4532,
+    "id": 5471,
     "model": "EM74LVC1GU04",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -126524,7 +126524,7 @@
     ]
   },
   {
-    "id": 4536,
+    "id": 5475,
     "model": "EM74LVC1GU04GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -126711,7 +126711,7 @@
     ]
   },
   {
-    "id": 4535,
+    "id": 5474,
     "model": "EM74LVC1GU04GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -126898,7 +126898,7 @@
     ]
   },
   {
-    "id": 4533,
+    "id": 5472,
     "model": "EM74LVC1GU04GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -127085,7 +127085,7 @@
     ]
   },
   {
-    "id": 4534,
+    "id": 5473,
     "model": "EM74LVC1GU04GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -127272,7 +127272,7 @@
     ]
   },
   {
-    "id": 4537,
+    "id": 5476,
     "model": "EM74LVC1GU04GX",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -127459,7 +127459,7 @@
     ]
   },
   {
-    "id": 4599,
+    "id": 5538,
     "model": "EM74LVC244A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -127756,7 +127756,7 @@
     ]
   },
   {
-    "id": 4601,
+    "id": 5540,
     "model": "EM74LVC244AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -128058,7 +128058,7 @@
     ]
   },
   {
-    "id": 4605,
+    "id": 5544,
     "model": "EM74LVC244ADB",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -128360,7 +128360,7 @@
     ]
   },
   {
-    "id": 4603,
+    "id": 5542,
     "model": "EM74LVC244APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -128662,7 +128662,7 @@
     ]
   },
   {
-    "id": 4607,
+    "id": 5546,
     "model": "EM74LVC245A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -128974,7 +128974,7 @@
     ]
   },
   {
-    "id": 4609,
+    "id": 5548,
     "model": "EM74LVC245AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -129291,7 +129291,7 @@
     ]
   },
   {
-    "id": 4611,
+    "id": 5550,
     "model": "EM74LVC245APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -129608,7 +129608,7 @@
     ]
   },
   {
-    "id": 4538,
+    "id": 5477,
     "model": "EM74LVC2G04",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -129840,7 +129840,7 @@
     ]
   },
   {
-    "id": 4541,
+    "id": 5480,
     "model": "EM74LVC2G04DRL",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -130077,7 +130077,7 @@
     ]
   },
   {
-    "id": 4543,
+    "id": 5482,
     "model": "EM74LVC2G04GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -130314,7 +130314,7 @@
     ]
   },
   {
-    "id": 4542,
+    "id": 5481,
     "model": "EM74LVC2G04GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -130551,7 +130551,7 @@
     ]
   },
   {
-    "id": 4539,
+    "id": 5478,
     "model": "EM74LVC2G04GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -130788,7 +130788,7 @@
     ]
   },
   {
-    "id": 4540,
+    "id": 5479,
     "model": "EM74LVC2G04GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -131025,7 +131025,7 @@
     ]
   },
   {
-    "id": 4544,
+    "id": 5483,
     "model": "EM74LVC2G06",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -131202,7 +131202,7 @@
     ]
   },
   {
-    "id": 4548,
+    "id": 5487,
     "model": "EM74LVC2G06GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -131384,7 +131384,7 @@
     ]
   },
   {
-    "id": 4547,
+    "id": 5486,
     "model": "EM74LVC2G06GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -131566,7 +131566,7 @@
     ]
   },
   {
-    "id": 4545,
+    "id": 5484,
     "model": "EM74LVC2G06GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -131748,7 +131748,7 @@
     ]
   },
   {
-    "id": 4546,
+    "id": 5485,
     "model": "EM74LVC2G06GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -131930,7 +131930,7 @@
     ]
   },
   {
-    "id": 4550,
+    "id": 5489,
     "model": "EM74LVC2G07",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -132107,7 +132107,7 @@
     ]
   },
   {
-    "id": 4554,
+    "id": 5493,
     "model": "EM74LVC2G07GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -132289,7 +132289,7 @@
     ]
   },
   {
-    "id": 4553,
+    "id": 5492,
     "model": "EM74LVC2G07GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -132471,7 +132471,7 @@
     ]
   },
   {
-    "id": 4551,
+    "id": 5490,
     "model": "EM74LVC2G07GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -132653,7 +132653,7 @@
     ]
   },
   {
-    "id": 4552,
+    "id": 5491,
     "model": "EM74LVC2G07GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -132835,7 +132835,7 @@
     ]
   },
   {
-    "id": 4555,
+    "id": 5494,
     "model": "EM74LVC2G14",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -132992,7 +132992,7 @@
     ]
   },
   {
-    "id": 4559,
+    "id": 5498,
     "model": "EM74LVC2G14GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -133154,7 +133154,7 @@
     ]
   },
   {
-    "id": 4558,
+    "id": 5497,
     "model": "EM74LVC2G14GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -133316,7 +133316,7 @@
     ]
   },
   {
-    "id": 4556,
+    "id": 5495,
     "model": "EM74LVC2G14GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -133478,7 +133478,7 @@
     ]
   },
   {
-    "id": 4557,
+    "id": 5496,
     "model": "EM74LVC2G14GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -133640,7 +133640,7 @@
     ]
   },
   {
-    "id": 4560,
+    "id": 5499,
     "model": "EM74LVC2G16",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -133847,7 +133847,7 @@
     ]
   },
   {
-    "id": 4564,
+    "id": 5503,
     "model": "EM74LVC2G16GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -134059,7 +134059,7 @@
     ]
   },
   {
-    "id": 4563,
+    "id": 5502,
     "model": "EM74LVC2G16GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -134271,7 +134271,7 @@
     ]
   },
   {
-    "id": 4561,
+    "id": 5500,
     "model": "EM74LVC2G16GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -134483,7 +134483,7 @@
     ]
   },
   {
-    "id": 4562,
+    "id": 5501,
     "model": "EM74LVC2G16GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -134695,7 +134695,7 @@
     ]
   },
   {
-    "id": 4565,
+    "id": 5504,
     "model": "EM74LVC2G17",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -134852,7 +134852,7 @@
     ]
   },
   {
-    "id": 4569,
+    "id": 5508,
     "model": "EM74LVC2G17GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -135014,7 +135014,7 @@
     ]
   },
   {
-    "id": 4568,
+    "id": 5507,
     "model": "EM74LVC2G17GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -135176,7 +135176,7 @@
     ]
   },
   {
-    "id": 4566,
+    "id": 5505,
     "model": "EM74LVC2G17GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -135338,7 +135338,7 @@
     ]
   },
   {
-    "id": 4567,
+    "id": 5506,
     "model": "EM74LVC2G17GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -135500,7 +135500,7 @@
     ]
   },
   {
-    "id": 4570,
+    "id": 5509,
     "model": "EM74LVC2G34",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -135707,7 +135707,7 @@
     ]
   },
   {
-    "id": 4574,
+    "id": 5513,
     "model": "EM74LVC2G34GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -135919,7 +135919,7 @@
     ]
   },
   {
-    "id": 4573,
+    "id": 5512,
     "model": "EM74LVC2G34GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -136131,7 +136131,7 @@
     ]
   },
   {
-    "id": 4571,
+    "id": 5510,
     "model": "EM74LVC2G34GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -136343,7 +136343,7 @@
     ]
   },
   {
-    "id": 4572,
+    "id": 5511,
     "model": "EM74LVC2G34GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -136555,7 +136555,7 @@
     ]
   },
   {
-    "id": 4575,
+    "id": 5514,
     "model": "EM74LVC2GU04",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -136742,7 +136742,7 @@
     ]
   },
   {
-    "id": 4579,
+    "id": 5518,
     "model": "EM74LVC2GU04GM",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -136929,7 +136929,7 @@
     ]
   },
   {
-    "id": 4578,
+    "id": 5517,
     "model": "EM74LVC2GU04GS",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -137116,7 +137116,7 @@
     ]
   },
   {
-    "id": 4576,
+    "id": 5515,
     "model": "EM74LVC2GU04GV",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -137303,7 +137303,7 @@
     ]
   },
   {
-    "id": 4577,
+    "id": 5516,
     "model": "EM74LVC2GU04GW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -137490,7 +137490,7 @@
     ]
   },
   {
-    "id": 4580,
+    "id": 5519,
     "model": "EM74LVC32A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -137757,7 +137757,7 @@
     ]
   },
   {
-    "id": 4581,
+    "id": 5520,
     "model": "EM74LVC32AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -138029,7 +138029,7 @@
     ]
   },
   {
-    "id": 4582,
+    "id": 5521,
     "model": "EM74LVC32APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -138301,14 +138301,14 @@
     ]
   },
   {
-    "id": 4585,
+    "id": 5524,
     "model": "EM74LVC4245",
     "family": "逻辑芯片",
     "series": "74LVC",
     "function": "收发器",
     "description": "Octal dual supply translating transceiver; 3-state",
-    "package": null,
-    "package_size": null,
+    "package": "TSSOP-24L",
+    "package_size": "body width 4.4 mm",
     "voltage": "1.5 V to 5.5 V",
     "logic_type": "CMOS",
     "temp_range": null,
@@ -138448,7 +138448,7 @@
     ]
   },
   {
-    "id": 4583,
+    "id": 5522,
     "model": "EM74LVC4245A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -138735,7 +138735,7 @@
     ]
   },
   {
-    "id": 4584,
+    "id": 5523,
     "model": "EM74LVC4245APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -139027,7 +139027,7 @@
     ]
   },
   {
-    "id": 4586,
+    "id": 5525,
     "model": "EM74LVC4245PW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -139179,7 +139179,7 @@
     ]
   },
   {
-    "id": 4587,
+    "id": 5526,
     "model": "EM74LVC540A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -139436,7 +139436,7 @@
     ]
   },
   {
-    "id": 4588,
+    "id": 5527,
     "model": "EM74LVC540AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -139698,7 +139698,7 @@
     ]
   },
   {
-    "id": 4589,
+    "id": 5528,
     "model": "EM74LVC540APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -139960,7 +139960,7 @@
     ]
   },
   {
-    "id": 4590,
+    "id": 5529,
     "model": "EM74LVC541A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -140217,7 +140217,7 @@
     ]
   },
   {
-    "id": 4591,
+    "id": 5530,
     "model": "EM74LVC541AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -140479,7 +140479,7 @@
     ]
   },
   {
-    "id": 4592,
+    "id": 5531,
     "model": "EM74LVC541APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -140741,7 +140741,7 @@
     ]
   },
   {
-    "id": 4593,
+    "id": 5532,
     "model": "EM74LVC74A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -140963,7 +140963,7 @@
     ]
   },
   {
-    "id": 4594,
+    "id": 5533,
     "model": "EM74LVC74AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -141190,7 +141190,7 @@
     ]
   },
   {
-    "id": 4595,
+    "id": 5534,
     "model": "EM74LVC74APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -141417,7 +141417,7 @@
     ]
   },
   {
-    "id": 4596,
+    "id": 5535,
     "model": "EM74LVC86A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -141674,7 +141674,7 @@
     ]
   },
   {
-    "id": 4597,
+    "id": 5536,
     "model": "EM74LVC86AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -141936,7 +141936,7 @@
     ]
   },
   {
-    "id": 4598,
+    "id": 5537,
     "model": "EM74LVC86APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -142198,7 +142198,7 @@
     ]
   },
   {
-    "id": 4613,
+    "id": 5552,
     "model": "EM74LVC8T245",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -142510,7 +142510,7 @@
     ]
   },
   {
-    "id": 4615,
+    "id": 5554,
     "model": "EM74LVC8T245PW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -142827,7 +142827,7 @@
     ]
   },
   {
-    "id": 4600,
+    "id": 5539,
     "model": "EM74LVCH244A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -143124,7 +143124,7 @@
     ]
   },
   {
-    "id": 4602,
+    "id": 5541,
     "model": "EM74LVCH244AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -143426,7 +143426,7 @@
     ]
   },
   {
-    "id": 4606,
+    "id": 5545,
     "model": "EM74LVCH244ADB",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -143728,7 +143728,7 @@
     ]
   },
   {
-    "id": 4604,
+    "id": 5543,
     "model": "EM74LVCH244APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -144030,7 +144030,7 @@
     ]
   },
   {
-    "id": 4608,
+    "id": 5547,
     "model": "EM74LVCH245A",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -144342,7 +144342,7 @@
     ]
   },
   {
-    "id": 4610,
+    "id": 5549,
     "model": "EM74LVCH245AD",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -144659,7 +144659,7 @@
     ]
   },
   {
-    "id": 4612,
+    "id": 5551,
     "model": "EM74LVCH245APW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -144976,7 +144976,7 @@
     ]
   },
   {
-    "id": 4614,
+    "id": 5553,
     "model": "EM74LVCH8T245",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -145288,7 +145288,7 @@
     ]
   },
   {
-    "id": 4616,
+    "id": 5555,
     "model": "EM74LVCH8T245PW",
     "family": "逻辑芯片",
     "series": "74LVC",
@@ -145722,14 +145722,14 @@
     ]
   },
   {
-    "id": 4618,
+    "id": 5557,
     "model": "EMS23157-Q100",
     "family": "逻辑芯片",
     "series": "EMS",
     "function": "模拟开关",
     "description": "Low Voltage and High Speed Dual SPDT Analog Switch with True Isolation",
-    "package": null,
-    "package_size": null,
+    "package": "MSOP-10L",
+    "package_size": "3.0 mm × 3.0 mm; 1.1 mm height",
     "voltage": "1.5 V to 5.5 V",
     "logic_type": "TTL",
     "temp_range": null,
@@ -145839,7 +145839,7 @@
     ]
   },
   {
-    "id": 4621,
+    "id": 5560,
     "model": "EMS23157MS",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -145961,7 +145961,7 @@
     ]
   },
   {
-    "id": 4619,
+    "id": 5558,
     "model": "EMS23157MS-Q100",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -146078,7 +146078,7 @@
     ]
   },
   {
-    "id": 4622,
+    "id": 5561,
     "model": "EMS2750",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -146190,7 +146190,7 @@
     ]
   },
   {
-    "id": 4623,
+    "id": 5562,
     "model": "EMS2750RSW",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -146419,14 +146419,14 @@
     ]
   },
   {
-    "id": 4625,
+    "id": 5564,
     "model": "EMS3157-Q100",
     "family": "逻辑芯片",
     "series": "EMS",
     "function": "模拟开关",
     "description": "Low Voltage and High Speed SPDT Analog Switch with True Isolation",
-    "package": null,
-    "package_size": null,
+    "package": "SOT363",
+    "package_size": "2.1 mm × 1.25 mm; 1.1 mm height",
     "voltage": "1.5 V to 5.5 V",
     "logic_type": "TTL",
     "temp_range": null,
@@ -147019,7 +147019,7 @@
     ]
   },
   {
-    "id": 4626,
+    "id": 5565,
     "model": "EMS3157GW-Q100",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -147156,7 +147156,7 @@
     ]
   },
   {
-    "id": 4637,
+    "id": 5576,
     "model": "EMS3157GX3",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -147273,7 +147273,7 @@
     ]
   },
   {
-    "id": 4638,
+    "id": 5577,
     "model": "EMS3218",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -147315,7 +147315,7 @@
     ]
   },
   {
-    "id": 4639,
+    "id": 5578,
     "model": "EMS3218DRB",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -147357,7 +147357,7 @@
     ]
   },
   {
-    "id": 4640,
+    "id": 5579,
     "model": "EMS3412",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -147848,7 +147848,7 @@
     ]
   },
   {
-    "id": 4645,
+    "id": 5584,
     "model": "EMS3518",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -147864,7 +147864,7 @@
     "specs": []
   },
   {
-    "id": 4646,
+    "id": 5585,
     "model": "EMS3518DRB",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -147880,7 +147880,7 @@
     "specs": []
   },
   {
-    "id": 4647,
+    "id": 5586,
     "model": "EMS3550",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -147997,7 +147997,7 @@
     ]
   },
   {
-    "id": 4648,
+    "id": 5587,
     "model": "EMS3550UD",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -148114,7 +148114,7 @@
     ]
   },
   {
-    "id": 4649,
+    "id": 5588,
     "model": "EMS3550YFC",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -148231,7 +148231,7 @@
     ]
   },
   {
-    "id": 4650,
+    "id": 5589,
     "model": "EMS3580",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -148268,7 +148268,7 @@
     ]
   },
   {
-    "id": 4651,
+    "id": 5590,
     "model": "EMS3580RSV",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -148305,7 +148305,7 @@
     ]
   },
   {
-    "id": 4652,
+    "id": 5591,
     "model": "EMS3900",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -148422,7 +148422,7 @@
     ]
   },
   {
-    "id": 4653,
+    "id": 5592,
     "model": "EMS3900RSW",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -148539,7 +148539,7 @@
     ]
   },
   {
-    "id": 4654,
+    "id": 5593,
     "model": "EMS3902",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -148661,7 +148661,7 @@
     ]
   },
   {
-    "id": 4656,
+    "id": 5595,
     "model": "EMS3902MS",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -148778,7 +148778,7 @@
     ]
   },
   {
-    "id": 4655,
+    "id": 5594,
     "model": "EMS3902RSW",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -148895,7 +148895,7 @@
     ]
   },
   {
-    "id": 4657,
+    "id": 5596,
     "model": "EMS3905",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -149012,7 +149012,7 @@
     ]
   },
   {
-    "id": 4659,
+    "id": 5598,
     "model": "EMS3905DRC",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -149134,7 +149134,7 @@
     ]
   },
   {
-    "id": 4658,
+    "id": 5597,
     "model": "EMS3905MS",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -149256,7 +149256,7 @@
     ]
   },
   {
-    "id": 4660,
+    "id": 5599,
     "model": "EMS3905RSW",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -149378,7 +149378,7 @@
     ]
   },
   {
-    "id": 4661,
+    "id": 5600,
     "model": "EMS4000",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -149515,7 +149515,7 @@
     ]
   },
   {
-    "id": 4664,
+    "id": 5603,
     "model": "EMS4000DRC",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -149657,7 +149657,7 @@
     ]
   },
   {
-    "id": 4665,
+    "id": 5604,
     "model": "EMS4000MS",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -149886,7 +149886,7 @@
     ]
   },
   {
-    "id": 4662,
+    "id": 5601,
     "model": "EMS4000RSW",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -150028,7 +150028,7 @@
     ]
   },
   {
-    "id": 4666,
+    "id": 5605,
     "model": "EMS4002",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -150145,7 +150145,7 @@
     ]
   },
   {
-    "id": 4669,
+    "id": 5608,
     "model": "EMS4002DRC",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -150267,7 +150267,7 @@
     ]
   },
   {
-    "id": 4670,
+    "id": 5609,
     "model": "EMS4002MS",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -150389,7 +150389,7 @@
     ]
   },
   {
-    "id": 4668,
+    "id": 5607,
     "model": "EMS4002RSE",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -150511,7 +150511,7 @@
     ]
   },
   {
-    "id": 4667,
+    "id": 5606,
     "model": "EMS4002RSW",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -150633,7 +150633,7 @@
     ]
   },
   {
-    "id": 4671,
+    "id": 5610,
     "model": "EMS4100",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -150720,7 +150720,7 @@
     ]
   },
   {
-    "id": 4673,
+    "id": 5612,
     "model": "EMS4100N",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -150812,7 +150812,7 @@
     ]
   },
   {
-    "id": 4672,
+    "id": 5611,
     "model": "EMS4100Q",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -150904,7 +150904,7 @@
     ]
   },
   {
-    "id": 4675,
+    "id": 5614,
     "model": "EMS4310",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -151001,14 +151001,14 @@
     ]
   },
   {
-    "id": 4676,
+    "id": 5615,
     "model": "EMS4320",
     "family": "逻辑芯片",
     "series": "EMS",
     "function": "多路复用器",
     "description": "USB2.0 Hi-Speed and HiFi Audio/UART Switches with Negative Swing Capability",
     "package": "QFN1",
-    "package_size": null,
+    "package_size": "1.4 mm × 1.8 mm; 0.6 mm height",
     "voltage": "13V",
     "logic_type": null,
     "temp_range": null,
@@ -151017,14 +151017,14 @@
     "specs": []
   },
   {
-    "id": 4677,
+    "id": 5616,
     "model": "EMS4320RSW",
     "family": "逻辑芯片",
     "series": "EMS",
     "function": null,
     "description": "EMS4320RSW QFN1.4×1.8-10L Quad Flat No-leads Package, 10 pins; body width",
     "package": "QFN1",
-    "package_size": null,
+    "package_size": "1.4 mm × 1.8 mm; 0.6 mm height",
     "voltage": "2.5 V to 5.5 V",
     "logic_type": null,
     "temp_range": null,
@@ -151033,14 +151033,14 @@
     "specs": []
   },
   {
-    "id": 4678,
+    "id": 5617,
     "model": "EMS4321",
     "family": "逻辑芯片",
     "series": "EMS",
     "function": "多路复用器",
     "description": "USB2.0 Hi-Speed and HiFi Audio/UART Switches with Negative Swing Capability",
     "package": "QFN1",
-    "package_size": null,
+    "package_size": "1.4 mm × 1.8 mm; 0.6 mm height",
     "voltage": "13V",
     "logic_type": null,
     "temp_range": null,
@@ -151049,14 +151049,14 @@
     "specs": []
   },
   {
-    "id": 4679,
+    "id": 5618,
     "model": "EMS4321RSW",
     "family": "逻辑芯片",
     "series": "EMS",
     "function": null,
     "description": "EMS4321RSW QFN1.4×1.8-10L Quad Flat No-leads Package, 10 pins; body width",
     "package": "QFN1",
-    "package_size": null,
+    "package_size": "1.4 mm × 1.8 mm; 0.6 mm height",
     "voltage": "2.5 V to 5.5 V",
     "logic_type": null,
     "temp_range": null,
@@ -151065,7 +151065,7 @@
     "specs": []
   },
   {
-    "id": 4680,
+    "id": 5619,
     "model": "EMS4422",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -151137,7 +151137,7 @@
     ]
   },
   {
-    "id": 4681,
+    "id": 5620,
     "model": "EMS4422RSB",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -151216,7 +151216,7 @@
     "function": "模拟开关",
     "description": "USB Type-C Analog Audio Switch with Protection Function, Moisture and Audio Jack Detection",
     "package": null,
-    "package_size": null,
+    "package_size": "2 mm × 2 mm; 0.586 mm height",
     "voltage": "4.4 V to 5 V",
     "logic_type": null,
     "temp_range": null,
@@ -151225,7 +151225,7 @@
     "specs": []
   },
   {
-    "id": 4684,
+    "id": 5623,
     "model": "EMS4567",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -151342,7 +151342,7 @@
     ]
   },
   {
-    "id": 4685,
+    "id": 5624,
     "model": "EMS4567RSV",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -151459,7 +151459,7 @@
     ]
   },
   {
-    "id": 4686,
+    "id": 5625,
     "model": "EMS4735",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -151571,7 +151571,7 @@
     ]
   },
   {
-    "id": 4687,
+    "id": 5626,
     "model": "EMS4735Q",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -151688,7 +151688,7 @@
     ]
   },
   {
-    "id": 4688,
+    "id": 5627,
     "model": "EMS4798",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -151770,7 +151770,7 @@
     ]
   },
   {
-    "id": 4689,
+    "id": 5628,
     "model": "EMS4798YFG",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -151857,7 +151857,7 @@
     ]
   },
   {
-    "id": 4690,
+    "id": 5629,
     "model": "EMS4899",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -151969,7 +151969,7 @@
     ]
   },
   {
-    "id": 4691,
+    "id": 5630,
     "model": "EMS4899UD",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -152086,7 +152086,7 @@
     ]
   },
   {
-    "id": 4692,
+    "id": 5631,
     "model": "EMS7227",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -152278,7 +152278,7 @@
     ]
   },
   {
-    "id": 4694,
+    "id": 5633,
     "model": "EMS7227MS",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -152480,7 +152480,7 @@
     ]
   },
   {
-    "id": 4693,
+    "id": 5632,
     "model": "EMS7227RSW",
     "family": "逻辑芯片",
     "series": "EMS",
@@ -152682,7 +152682,7 @@
     ]
   },
   {
-    "id": 4695,
+    "id": 5634,
     "model": "XS0104",
     "family": "逻辑芯片",
     "series": "XS",
