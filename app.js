@@ -147,6 +147,17 @@
       metaItem("工作电压", item.voltage),
       metaItem("封装尺寸", item.package_size)
     ].join("");
+    const pinWrap = document.getElementById("pinWrap");
+    const pinImg = document.getElementById("pinImg");
+    if (item.pin_image) {
+      pinWrap.classList.remove("hidden");
+      pinImg.src = item.pin_image;
+      pinImg.alt = `${item.model} pin diagram`;
+    } else {
+      pinWrap.classList.add("hidden");
+      pinImg.src = "";
+      pinImg.alt = "Pin diagram";
+    }
 
     const specs = Array.isArray(item.specs) ? item.specs : [];
     el.specTable.innerHTML = "";
