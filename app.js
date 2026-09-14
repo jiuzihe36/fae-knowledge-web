@@ -114,8 +114,7 @@
         "<td>" + esc(text(item.package)) + "</td>",
         "<td>" + esc(text(item.logic_type)) + "</td>",
         "<td>" + esc(text(item.voltage)) + "</td>",
-        "<td>" + esc(text(item.package_size)) + "</td>",
-        '<td class="source">' + esc(text(item.source_label)) + "</td>"
+        "<td>" + esc(text(item.package_size)) + "</td>"
       ].join("");
       return tr;
     });
@@ -146,8 +145,7 @@
       metaItem("封装", item.package),
       metaItem("逻辑类型", item.logic_type),
       metaItem("工作电压", item.voltage),
-      metaItem("封装尺寸", item.package_size),
-      metaItem("出处", item.source_label)
+      metaItem("封装尺寸", item.package_size)
     ].join("");
 
     const specs = Array.isArray(item.specs) ? item.specs : [];
@@ -157,8 +155,7 @@
       const row = document.createElement("tr");
       row.innerHTML = [
         "<td>" + esc(spec.param) + "</td>",
-        "<td><strong>" + esc(spec.value) + "</strong></td>",
-        "<td>" + esc(text(spec.source_label)) + "</td>"
+        "<td><strong>" + esc(spec.value) + "</strong></td>"
       ].join("");
       el.specTable.appendChild(row);
     });
