@@ -365,12 +365,6 @@ input[type="search"]:focus, select:focus {
   word-break: break-word;
 }
 
-.spec-table td:nth-child(3) {
-  color: var(--muted);
-  word-break: break-word;
-  max-width: 140px;
-}
-
 .related {
   display: flex;
   flex-direction: column;
