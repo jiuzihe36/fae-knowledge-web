@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>芯祥 FAE 型号速查</title>
+  <link rel="stylesheet" href="./style.css?v=20260914b">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">XS</div>
+      <div>
+        <h1>芯祥 FAE 型号速查</h1>
+        <p id="meta">正在加载数据...</p>
+      </div>
+    </div>
+    <div class="topstats">
+      <span id="statModels">-</span>
+      <span>型号</span>
+      <span id="statSpecs">-</span>
+      <span>参数</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="filters">
+      <input id="q" type="search" placeholder="搜索型号 / 功能 / 封装 / 参数" autocomplete="off">
+      <label>功能
+        <select id="fFunction"></select>
+      </label>
+      <label>系列
+        <select id="fSeries"></select>
+      </label>
+      <label>封装
+        <select id="fPackage"></select>
+      </label>
+      <label>逻辑类型
+        <select id="fLogic"></select>
+      </label>
+      <div class="filter-actions">
+        <button id="clearBtn" type="button">清除筛选</button>
+        <span id="resultCount">0</span>
+      </div>
+    </aside>
+
+    <section class="list">
+      <table class="model-table">
+        <thead>
+          <tr>
+            <th>型号</th>
+            <th>功能</th>
+            <th>系列</th>
+            <th>封装</th>
+            <th>逻辑类型</th>
+            <th>电压</th>
+            <th>封装尺寸</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+      <div id="empty" class="empty hidden">没有匹配记录</div>
+    </section>
+  </main>
+
+  <div id="detail" class="drawer hidden" aria-hidden="true">
+    <div class="drawer-backdrop" data-close></div>
+    <section class="drawer-panel" role="dialog" aria-modal="true">
+      <div class="drawer-head">
+        <div>
+          <h2 id="detailModel"></h2>
+          <p id="detailDesc"></p>
+        </div>
+        <button id="closeDetail" type="button" aria-label="关闭">×</button>
+      </div>
+      <div id="detailMeta" class="meta-grid"></div>
+      <div id="pinWrap" class="pin-wrap hidden">
+        <h3>引脚图</h3>
+        <div class="pin-box"><img id="pinImg" src="" alt="Pin diagram"></div>
+      </div>
+      <div class="detail-grid">
+        <section>
+          <h3>电气参数</h3>
+          <div class="spec-scroll">
+            <table id="specTable" class="spec-table">
+              <thead>
+                <tr><th>参数</th><th>数值</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <div id="specEmpty" class="empty hidden">无参数</div>
+          </div>
+        </section>
+        <aside>
+          <h3>同文档型号</h3>
+          <div id="relatedDoc" class="related"></div>
+          <h3>同功能型号</h3>
+          <div id="relatedFunc" class="related"></div>
+        </aside>
+      </div>
+    </section>
+  </div>
+
+  <script src="./app.js?v=20260914b"></script>
+</body>
+</html>
