@@ -131126,22 +131126,22 @@
    },
    {
     "param": "VCC | VCC supply voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS3580_Product_DS_V1.0.pdf"
    },
    {
     "param": "VCC | VCC supply voltage",
-    "value": "3.0 4.5 V",
+    "value": "min=3.0; max=4.5 V",
     "source_label": "EMS3580_Product_DS_V1.0.pdf"
    },
    {
     "param": "VCC | VIN digital control input voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS3580_Product_DS_V1.0.pdf"
    },
    {
     "param": "VCC | VIS analog input/output voltage (L1, L2, R1, R2, L, R)",
-    "value": "-4.0 4.0 V",
+    "value": "min=-4.0; max=4.0 V",
     "source_label": "EMS3580_Product_DS_V1.0.pdf"
    },
    {
@@ -131295,22 +131295,22 @@
    },
    {
     "param": "VCC | VCC supply voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS3580_Product_DS_V1.0.pdf"
    },
    {
     "param": "VCC | VCC supply voltage",
-    "value": "3.0 4.5 V",
+    "value": "min=3.0; max=4.5 V",
     "source_label": "EMS3580_Product_DS_V1.0.pdf"
    },
    {
     "param": "VCC | VIN digital control input voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS3580_Product_DS_V1.0.pdf"
    },
    {
     "param": "VCC | VIS analog input/output voltage (L1, L2, R1, R2, L, R)",
-    "value": "-4.0 4.0 V",
+    "value": "min=-4.0; max=4.0 V",
     "source_label": "EMS3580_Product_DS_V1.0.pdf"
    },
    {
@@ -132337,12 +132337,12 @@
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "BBM | EN̅̅̅̅ switches from High to Low",
+    "param": "BBM | EN̅ switches from High to Low",
     "value": "80 ns",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "BBM | EN̅̅̅̅ switches from Low to High",
+    "param": "BBM | EN̅ switches from Low to High",
     "value": "100 ns",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
@@ -132368,12 +132368,12 @@
    },
    {
     "param": "BW | Signal Power = 0 dBm",
-    "value": "0.9 1 GHz",
+    "value": "min=0.9; max=1 GHz",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "COFF | COFF off capacitance VDD = VIS = 3.3 V, EN̅̅̅̅ =",
-    "value": "1 4 pF",
+    "param": "COFF | COFF off capacitance VDD = VIS = 3.3 V, EN̅ =",
+    "value": "min=1; max=4 pF",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132382,8 +132382,8 @@
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "CON | CON on capacitance VDD = VIS = 3.3 V, EN̅̅̅̅ =",
-    "value": "0 4 pF",
+    "param": "CON | CON on capacitance VDD = VIS = 3.3 V, EN̅ =",
+    "value": "min=0; max=4 pF",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132392,63 +132392,63 @@
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "IDD IDD supply current | EN̅̅̅̅ = 3.5 V VDD = 3.5 V",
-    "value": "10 18 uA",
+    "param": "IDD IDD supply current | EN̅ = 3.5 V VDD = 3.5 V",
+    "value": "min=10; max=18 uA",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "IDD | EN̅̅̅̅ = 0 V VDD = 3.5 V",
-    "value": "42 60 uA",
+    "param": "IDD | EN̅ = 0 V VDD = 3.5 V",
+    "value": "min=42; max=60 uA",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "ILEAK | ILEAK OFF leakage current VC0+/- = 6 V VL0+/- = VL1+/- = 0 V",
-    "value": "52 90 uA",
+    "value": "min=52; max=90 uA",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.2 0.4 Ω",
+    "value": "min=0.2; max=0.4 Ω",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "RFLAT ΔRON RON matching between | channels [2] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.1 0.5 Ω",
+    "value": "min=0.1; max=0.5 Ω",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "RON | RON on-resistance VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "10 13 Ω",
+    "value": "min=10; max=13 Ω",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VDD supply voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VDD supply voltage operating",
-    "value": "2.5 4.5 V",
+    "value": "min=2.5; max=4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VDD supply voltage range",
-    "value": "2.5 3.3 4.5 V",
+    "value": "min=2.5; max=3.3 4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "0 4.5 V",
+    "value": "min=0; max=4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VFP | VFP OVP lockout threshold V C0+/- Rising Edge",
-    "value": "4.6 4.9 5.2 V",
+    "value": "min=4.6; max=4.9 5.2 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132463,7 +132463,7 @@
    },
    {
     "param": "VHYS | tFP OVP response time 10 V shorts to C0+/- with RL = 1 kΩ",
-    "value": "200 300 ns",
+    "value": "min=200; max=300 ns",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132473,12 +132473,12 @@
    },
    {
     "param": "VIH | VIH control input logic high",
-    "value": "1.6 4.5 V",
+    "value": "min=1.6; max=4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VIL | VIL control input logic low",
-    "value": "0 0.5 V",
+    "value": "min=0; max=0.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132518,12 +132518,12 @@
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "BBM | EN̅̅̅̅ switches from High to Low",
+    "param": "BBM | EN̅ switches from High to Low",
     "value": "80 ns",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "BBM | EN̅̅̅̅ switches from Low to High",
+    "param": "BBM | EN̅ switches from Low to High",
     "value": "100 ns",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
@@ -132549,12 +132549,12 @@
    },
    {
     "param": "BW | Signal Power = 0 dBm",
-    "value": "0.9 1 GHz",
+    "value": "min=0.9; max=1 GHz",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "COFF | COFF off capacitance VDD = VIS = 3.3 V, EN̅̅̅̅ =",
-    "value": "1 4 pF",
+    "param": "COFF | COFF off capacitance VDD = VIS = 3.3 V, EN̅ =",
+    "value": "min=1; max=4 pF",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132563,8 +132563,8 @@
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "CON | CON on capacitance VDD = VIS = 3.3 V, EN̅̅̅̅ =",
-    "value": "0 4 pF",
+    "param": "CON | CON on capacitance VDD = VIS = 3.3 V, EN̅ =",
+    "value": "min=0; max=4 pF",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132573,18 +132573,18 @@
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "IDD IDD supply current | EN̅̅̅̅ = 3.5 V VDD = 3.5 V",
-    "value": "10 18 uA",
+    "param": "IDD IDD supply current | EN̅ = 3.5 V VDD = 3.5 V",
+    "value": "min=10; max=18 uA",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "IDD | EN̅̅̅̅ = 0 V VDD = 3.5 V",
-    "value": "42 60 uA",
+    "param": "IDD | EN̅ = 0 V VDD = 3.5 V",
+    "value": "min=42; max=60 uA",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "ILEAK | ILEAK OFF leakage current VC0+/- = 6 V VL0+/- = VL1+/- = 0 V",
-    "value": "52 90 uA",
+    "value": "min=52; max=90 uA",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132594,47 +132594,47 @@
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.2 0.4 Ω",
+    "value": "min=0.2; max=0.4 Ω",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "RFLAT ΔRON RON matching between | channels [2] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.1 0.5 Ω",
+    "value": "min=0.1; max=0.5 Ω",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "RON | RON on-resistance VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "10 13 Ω",
+    "value": "min=10; max=13 Ω",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VDD supply voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VDD supply voltage operating",
-    "value": "2.5 4.5 V",
+    "value": "min=2.5; max=4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VDD supply voltage range",
-    "value": "2.5 3.3 4.5 V",
+    "value": "min=2.5; max=3.3 4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "0 4.5 V",
+    "value": "min=0; max=4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VFP | VFP OVP lockout threshold V C0+/- Rising Edge",
-    "value": "4.6 4.9 5.2 V",
+    "value": "min=4.6; max=4.9 5.2 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132649,7 +132649,7 @@
    },
    {
     "param": "VHYS | tFP OVP response time 10 V shorts to C0+/- with RL = 1 kΩ",
-    "value": "200 300 ns",
+    "value": "min=200; max=300 ns",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132659,12 +132659,12 @@
    },
    {
     "param": "VIH | VIH control input logic high",
-    "value": "1.6 4.5 V",
+    "value": "min=1.6; max=4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VIL | VIL control input logic low",
-    "value": "0 0.5 V",
+    "value": "min=0; max=0.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132706,12 +132706,12 @@
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "BBM | EN̅̅̅̅ switches from High to Low",
+    "param": "BBM | EN̅ switches from High to Low",
     "value": "80 ns",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "BBM | EN̅̅̅̅ switches from Low to High",
+    "param": "BBM | EN̅ switches from Low to High",
     "value": "100 ns",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
@@ -132737,12 +132737,12 @@
    },
    {
     "param": "BW | Signal Power = 0 dBm",
-    "value": "0.9 1 GHz",
+    "value": "min=0.9; max=1 GHz",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "COFF | COFF off capacitance VDD = VIS = 3.3 V, EN̅̅̅̅ =",
-    "value": "1 4 pF",
+    "param": "COFF | COFF off capacitance VDD = VIS = 3.3 V, EN̅ =",
+    "value": "min=1; max=4 pF",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132751,8 +132751,8 @@
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "CON | CON on capacitance VDD = VIS = 3.3 V, EN̅̅̅̅ =",
-    "value": "0 4 pF",
+    "param": "CON | CON on capacitance VDD = VIS = 3.3 V, EN̅ =",
+    "value": "min=0; max=4 pF",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132761,18 +132761,18 @@
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "IDD IDD supply current | EN̅̅̅̅ = 3.5 V VDD = 3.5 V",
-    "value": "10 18 uA",
+    "param": "IDD IDD supply current | EN̅ = 3.5 V VDD = 3.5 V",
+    "value": "min=10; max=18 uA",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "IDD | EN̅̅̅̅ = 0 V VDD = 3.5 V",
-    "value": "42 60 uA",
+    "param": "IDD | EN̅ = 0 V VDD = 3.5 V",
+    "value": "min=42; max=60 uA",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "ILEAK | ILEAK OFF leakage current VC0+/- = 6 V VL0+/- = VL1+/- = 0 V",
-    "value": "52 90 uA",
+    "value": "min=52; max=90 uA",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132782,47 +132782,47 @@
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.2 0.4 Ω",
+    "value": "min=0.2; max=0.4 Ω",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "RFLAT ΔRON RON matching between | channels [2] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.1 0.5 Ω",
+    "value": "min=0.1; max=0.5 Ω",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "RON | RON on-resistance VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "10 13 Ω",
+    "value": "min=10; max=13 Ω",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VDD supply voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VDD supply voltage operating",
-    "value": "2.5 4.5 V",
+    "value": "min=2.5; max=4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VDD supply voltage range",
-    "value": "2.5 3.3 4.5 V",
+    "value": "min=2.5; max=3.3 4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "0 4.5 V",
+    "value": "min=0; max=4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VFP | VFP OVP lockout threshold V C0+/- Rising Edge",
-    "value": "4.6 4.9 5.2 V",
+    "value": "min=4.6; max=4.9 5.2 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132837,7 +132837,7 @@
    },
    {
     "param": "VHYS | tFP OVP response time 10 V shorts to C0+/- with RL = 1 kΩ",
-    "value": "200 300 ns",
+    "value": "min=200; max=300 ns",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -132847,12 +132847,12 @@
    },
    {
     "param": "VIH | VIH control input logic high",
-    "value": "1.6 4.5 V",
+    "value": "min=1.6; max=4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VIL | VIL control input logic low",
-    "value": "0 0.5 V",
+    "value": "min=0; max=0.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -133072,12 +133072,12 @@
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "BBM | EN̅̅̅̅ switches from High to Low",
+    "param": "BBM | EN̅ switches from High to Low",
     "value": "80 ns",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "BBM | EN̅̅̅̅ switches from Low to High",
+    "param": "BBM | EN̅ switches from Low to High",
     "value": "100 ns",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
@@ -133103,12 +133103,12 @@
    },
    {
     "param": "BW | Signal Power = 0 dBm",
-    "value": "0.9 1 GHz",
+    "value": "min=0.9; max=1 GHz",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "COFF | COFF off capacitance VDD = VIS = 3.3 V, EN̅̅̅̅ =",
-    "value": "1 4 pF",
+    "param": "COFF | COFF off capacitance VDD = VIS = 3.3 V, EN̅ =",
+    "value": "min=1; max=4 pF",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -133117,8 +133117,8 @@
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "CON | CON on capacitance VDD = VIS = 3.3 V, EN̅̅̅̅ =",
-    "value": "0 4 pF",
+    "param": "CON | CON on capacitance VDD = VIS = 3.3 V, EN̅ =",
+    "value": "min=0; max=4 pF",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -133127,18 +133127,18 @@
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "IDD IDD supply current | EN̅̅̅̅ = 3.5 V VDD = 3.5 V",
-    "value": "10 18 uA",
+    "param": "IDD IDD supply current | EN̅ = 3.5 V VDD = 3.5 V",
+    "value": "min=10; max=18 uA",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
-    "param": "IDD | EN̅̅̅̅ = 0 V VDD = 3.5 V",
-    "value": "42 60 uA",
+    "param": "IDD | EN̅ = 0 V VDD = 3.5 V",
+    "value": "min=42; max=60 uA",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "ILEAK | ILEAK OFF leakage current VC0+/- = 6 V VL0+/- = VL1+/- = 0 V",
-    "value": "52 90 uA",
+    "value": "min=52; max=90 uA",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -133148,47 +133148,47 @@
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.2 0.4 Ω",
+    "value": "min=0.2; max=0.4 Ω",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "RFLAT ΔRON RON matching between | channels [2] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.1 0.5 Ω",
+    "value": "min=0.1; max=0.5 Ω",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "RON | RON on-resistance VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "10 13 Ω",
+    "value": "min=10; max=13 Ω",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VDD supply voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VDD supply voltage operating",
-    "value": "2.5 4.5 V",
+    "value": "min=2.5; max=4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VDD supply voltage range",
-    "value": "2.5 3.3 4.5 V",
+    "value": "min=2.5; max=3.3 4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "0 4.5 V",
+    "value": "min=0; max=4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VFP | VFP OVP lockout threshold V C0+/- Rising Edge",
-    "value": "4.6 4.9 5.2 V",
+    "value": "min=4.6; max=4.9 5.2 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -133203,7 +133203,7 @@
    },
    {
     "param": "VHYS | tFP OVP response time 10 V shorts to C0+/- with RL = 1 kΩ",
-    "value": "200 300 ns",
+    "value": "min=200; max=300 ns",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -133213,12 +133213,12 @@
    },
    {
     "param": "VIH | VIH control input logic high",
-    "value": "1.6 4.5 V",
+    "value": "min=1.6; max=4.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
     "param": "VIL | VIL control input logic low",
-    "value": "0 0.5 V",
+    "value": "min=0; max=0.5 V",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    },
    {
@@ -133291,7 +133291,7 @@
    },
    {
     "param": "COFF | COFF off capacitance VDD = VIS = 3.3 V, EN���� =",
-    "value": "1 3.5 pF",
+    "value": "min=1; max=3.5 pF",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133301,7 +133301,7 @@
    },
    {
     "param": "CON | CON on capacitance VDD = VIS = 3.3 V, EN���� =",
-    "value": "0 4 pF",
+    "value": "min=0; max=4 pF",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133311,62 +133311,62 @@
    },
    {
     "param": "IDD IDD supply current | EN���� = 3.5 V VDD = 3.5 V",
-    "value": "0.3 2 uA",
+    "value": "min=0.3; max=2 uA",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "IDD | EN���� = 0 V VDD = 3.5 V",
-    "value": "20 40 uA",
+    "value": "min=20; max=40 uA",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "ILEAK | ILEAK OFF leakage current VC0+/- = 6 V VL0+/- = VL1+/- = 0 V",
-    "value": "3.5 6 uA",
+    "value": "min=3.5; max=6 uA",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.1 0.5 Ω",
+    "value": "min=0.1; max=0.5 Ω",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "RFLAT ΔRON RON matching between | channels [2] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.1 0.5 Ω",
+    "value": "min=0.1; max=0.5 Ω",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "RON | RON on-resistance VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "8.5 10 Ω",
+    "value": "min=8.5; max=10 Ω",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage operating",
-    "value": "2.5 4.5 V",
+    "value": "min=2.5; max=4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage range",
-    "value": "2.5 3.3 4.5 V",
+    "value": "min=2.5; max=3.3 4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "0 4.5 V",
+    "value": "min=0; max=4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VFP | VFP OVP lockout threshold V C0+/- Rising Edge",
-    "value": "4.6 4.9 5.2 V",
+    "value": "min=4.6; max=4.9 5.2 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133381,7 +133381,7 @@
    },
    {
     "param": "VHYS | tFP OVP response time 10 V shorts to C0+/- with RL = 1 kΩ",
-    "value": "330 450 ns",
+    "value": "min=330; max=450 ns",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133391,12 +133391,12 @@
    },
    {
     "param": "VIH | VIH control input logic high",
-    "value": "1.6 4.5 V",
+    "value": "min=1.6; max=4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VIL | VIL control input logic low",
-    "value": "0 0.5 V",
+    "value": "min=0; max=0.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133467,7 +133467,7 @@
    },
    {
     "param": "COFF | COFF off capacitance VDD = VIS = 3.3 V, EN���� =",
-    "value": "1 3.5 pF",
+    "value": "min=1; max=3.5 pF",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133477,7 +133477,7 @@
    },
    {
     "param": "CON | CON on capacitance VDD = VIS = 3.3 V, EN���� =",
-    "value": "0 4 pF",
+    "value": "min=0; max=4 pF",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133487,17 +133487,17 @@
    },
    {
     "param": "IDD IDD supply current | EN���� = 3.5 V VDD = 3.5 V",
-    "value": "0.3 2 uA",
+    "value": "min=0.3; max=2 uA",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "IDD | EN���� = 0 V VDD = 3.5 V",
-    "value": "20 40 uA",
+    "value": "min=20; max=40 uA",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "ILEAK | ILEAK OFF leakage current VC0+/- = 6 V VL0+/- = VL1+/- = 0 V",
-    "value": "3.5 6 uA",
+    "value": "min=3.5; max=6 uA",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133507,47 +133507,47 @@
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.1 0.5 Ω",
+    "value": "min=0.1; max=0.5 Ω",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "RFLAT ΔRON RON matching between | channels [2] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.1 0.5 Ω",
+    "value": "min=0.1; max=0.5 Ω",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "RON | RON on-resistance VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "8.5 10 Ω",
+    "value": "min=8.5; max=10 Ω",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage operating",
-    "value": "2.5 4.5 V",
+    "value": "min=2.5; max=4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage range",
-    "value": "2.5 3.3 4.5 V",
+    "value": "min=2.5; max=3.3 4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "0 4.5 V",
+    "value": "min=0; max=4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VFP | VFP OVP lockout threshold V C0+/- Rising Edge",
-    "value": "4.6 4.9 5.2 V",
+    "value": "min=4.6; max=4.9 5.2 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133562,7 +133562,7 @@
    },
    {
     "param": "VHYS | tFP OVP response time 10 V shorts to C0+/- with RL = 1 kΩ",
-    "value": "330 450 ns",
+    "value": "min=330; max=450 ns",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133572,12 +133572,12 @@
    },
    {
     "param": "VIH | VIH control input logic high",
-    "value": "1.6 4.5 V",
+    "value": "min=1.6; max=4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VIL | VIL control input logic low",
-    "value": "0 0.5 V",
+    "value": "min=0; max=0.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133650,7 +133650,7 @@
    },
    {
     "param": "COFF | COFF off capacitance VDD = VIS = 3.3 V, EN���� =",
-    "value": "1 3.5 pF",
+    "value": "min=1; max=3.5 pF",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133660,7 +133660,7 @@
    },
    {
     "param": "CON | CON on capacitance VDD = VIS = 3.3 V, EN���� =",
-    "value": "0 4 pF",
+    "value": "min=0; max=4 pF",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133670,17 +133670,17 @@
    },
    {
     "param": "IDD IDD supply current | EN���� = 3.5 V VDD = 3.5 V",
-    "value": "0.3 2 uA",
+    "value": "min=0.3; max=2 uA",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "IDD | EN���� = 0 V VDD = 3.5 V",
-    "value": "20 40 uA",
+    "value": "min=20; max=40 uA",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "ILEAK | ILEAK OFF leakage current VC0+/- = 6 V VL0+/- = VL1+/- = 0 V",
-    "value": "3.5 6 uA",
+    "value": "min=3.5; max=6 uA",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133690,47 +133690,47 @@
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.1 0.5 Ω",
+    "value": "min=0.1; max=0.5 Ω",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "RFLAT ΔRON RON matching between | channels [2] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.1 0.5 Ω",
+    "value": "min=0.1; max=0.5 Ω",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "RON | RON on-resistance VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "8.5 10 Ω",
+    "value": "min=8.5; max=10 Ω",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage operating",
-    "value": "2.5 4.5 V",
+    "value": "min=2.5; max=4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage range",
-    "value": "2.5 3.3 4.5 V",
+    "value": "min=2.5; max=3.3 4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "0 4.5 V",
+    "value": "min=0; max=4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VFP | VFP OVP lockout threshold V C0+/- Rising Edge",
-    "value": "4.6 4.9 5.2 V",
+    "value": "min=4.6; max=4.9 5.2 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133745,7 +133745,7 @@
    },
    {
     "param": "VHYS | tFP OVP response time 10 V shorts to C0+/- with RL = 1 kΩ",
-    "value": "330 450 ns",
+    "value": "min=330; max=450 ns",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133755,12 +133755,12 @@
    },
    {
     "param": "VIH | VIH control input logic high",
-    "value": "1.6 4.5 V",
+    "value": "min=1.6; max=4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VIL | VIL control input logic low",
-    "value": "0 0.5 V",
+    "value": "min=0; max=0.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133833,7 +133833,7 @@
    },
    {
     "param": "COFF | COFF off capacitance VDD = VIS = 3.3 V, EN���� =",
-    "value": "1 3.5 pF",
+    "value": "min=1; max=3.5 pF",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133843,7 +133843,7 @@
    },
    {
     "param": "CON | CON on capacitance VDD = VIS = 3.3 V, EN���� =",
-    "value": "0 4 pF",
+    "value": "min=0; max=4 pF",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133853,17 +133853,17 @@
    },
    {
     "param": "IDD IDD supply current | EN���� = 3.5 V VDD = 3.5 V",
-    "value": "0.3 2 uA",
+    "value": "min=0.3; max=2 uA",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "IDD | EN���� = 0 V VDD = 3.5 V",
-    "value": "20 40 uA",
+    "value": "min=20; max=40 uA",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "ILEAK | ILEAK OFF leakage current VC0+/- = 6 V VL0+/- = VL1+/- = 0 V",
-    "value": "3.5 6 uA",
+    "value": "min=3.5; max=6 uA",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133873,47 +133873,47 @@
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.1 0.5 Ω",
+    "value": "min=0.1; max=0.5 Ω",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "RFLAT ΔRON RON matching between | channels [2] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.1 0.5 Ω",
+    "value": "min=0.1; max=0.5 Ω",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "RON | RON on-resistance VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "8.5 10 Ω",
+    "value": "min=8.5; max=10 Ω",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage operating",
-    "value": "2.5 4.5 V",
+    "value": "min=2.5; max=4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage range",
-    "value": "2.5 3.3 4.5 V",
+    "value": "min=2.5; max=3.3 4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "0 4.5 V",
+    "value": "min=0; max=4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VFP | VFP OVP lockout threshold V C0+/- Rising Edge",
-    "value": "4.6 4.9 5.2 V",
+    "value": "min=4.6; max=4.9 5.2 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133928,7 +133928,7 @@
    },
    {
     "param": "VHYS | tFP OVP response time 10 V shorts to C0+/- with RL = 1 kΩ",
-    "value": "330 450 ns",
+    "value": "min=330; max=450 ns",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -133938,12 +133938,12 @@
    },
    {
     "param": "VIH | VIH control input logic high",
-    "value": "1.6 4.5 V",
+    "value": "min=1.6; max=4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VIL | VIL control input logic low",
-    "value": "0 0.5 V",
+    "value": "min=0; max=0.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -134016,7 +134016,7 @@
    },
    {
     "param": "COFF | COFF off capacitance VDD = VIS = 3.3 V, EN���� =",
-    "value": "1 3.5 pF",
+    "value": "min=1; max=3.5 pF",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -134026,7 +134026,7 @@
    },
    {
     "param": "CON | CON on capacitance VDD = VIS = 3.3 V, EN���� =",
-    "value": "0 4 pF",
+    "value": "min=0; max=4 pF",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -134036,17 +134036,17 @@
    },
    {
     "param": "IDD IDD supply current | EN���� = 3.5 V VDD = 3.5 V",
-    "value": "0.3 2 uA",
+    "value": "min=0.3; max=2 uA",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "IDD | EN���� = 0 V VDD = 3.5 V",
-    "value": "20 40 uA",
+    "value": "min=20; max=40 uA",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "ILEAK | ILEAK OFF leakage current VC0+/- = 6 V VL0+/- = VL1+/- = 0 V",
-    "value": "3.5 6 uA",
+    "value": "min=3.5; max=6 uA",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -134056,47 +134056,47 @@
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.1 0.5 Ω",
+    "value": "min=0.1; max=0.5 Ω",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "RFLAT ΔRON RON matching between | channels [2] VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "0.1 0.5 Ω",
+    "value": "min=0.1; max=0.5 Ω",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "RON | RON on-resistance VIS = 0 V to 0.4 V IOUT = 8 mA",
-    "value": "8.5 10 Ω",
+    "value": "min=8.5; max=10 Ω",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage operating",
-    "value": "2.5 4.5 V",
+    "value": "min=2.5; max=4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage range",
-    "value": "2.5 3.3 4.5 V",
+    "value": "min=2.5; max=3.3 4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VIN control input voltage",
-    "value": "0 4.5 V",
+    "value": "min=0; max=4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VFP | VFP OVP lockout threshold V C0+/- Rising Edge",
-    "value": "4.6 4.9 5.2 V",
+    "value": "min=4.6; max=4.9 5.2 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -134111,7 +134111,7 @@
    },
    {
     "param": "VHYS | tFP OVP response time 10 V shorts to C0+/- with RL = 1 kΩ",
-    "value": "330 450 ns",
+    "value": "min=330; max=450 ns",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -134121,12 +134121,12 @@
    },
    {
     "param": "VIH | VIH control input logic high",
-    "value": "1.6 4.5 V",
+    "value": "min=1.6; max=4.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
     "param": "VIL | VIL control input logic low",
-    "value": "0 0.5 V",
+    "value": "min=0; max=0.5 V",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    },
    {
@@ -134954,42 +134954,42 @@
   "specs": [
    {
     "param": "VCC | VCC Supply voltage",
-    "value": "3 4.5 V",
+    "value": "min=3; max=4.5 V",
     "source_label": "EMS4485_Draft_DS_V0.9.pdf"
    },
    {
     "param": "VCC | VCC Supply voltage from VCC",
-    "value": "-0.5 5.5 V",
+    "value": "min=-0.5; max=5.5 V",
     "source_label": "EMS4485_Draft_DS_V0.9.pdf"
    },
    {
     "param": "VCC | VCC_IN VCC_IN, to GND",
-    "value": "-0.5 20 V",
+    "value": "min=-0.5; max=20 V",
     "source_label": "EMS4485_Draft_DS_V0.9.pdf"
    },
    {
     "param": "VCC | VSW_Audio VL to GND, VR to GND",
-    "value": "-3.3 5.5 V",
+    "value": "min=-3.3; max=5.5 V",
     "source_label": "EMS4485_Draft_DS_V0.9.pdf"
    },
    {
     "param": "VCC | VSW_C VDP_R to GND, VDN_L to GND",
-    "value": "-3.3 16 V",
+    "value": "min=-3.3; max=16 V",
     "source_label": "EMS4485_Draft_DS_V0.9.pdf"
    },
    {
     "param": "VCC | VSW_UART VDP2 to GND, VDN2 to GND",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4485_Draft_DS_V0.9.pdf"
    },
    {
     "param": "VCC | VSW_USB VDP1 to GND, VDN1 to GND",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4485_Draft_DS_V0.9.pdf"
    },
    {
     "param": "VCC | to GND",
-    "value": "0 5 V",
+    "value": "min=0; max=5 V",
     "source_label": "EMS4485_Draft_DS_V0.9.pdf"
    },
    {
@@ -135048,62 +135048,62 @@
    },
    {
     "param": "RFLAT | IA = 10 mA",
-    "value": "0.2 0.5 Ω",
+    "value": "min=0.2; max=0.5 Ω",
     "source_label": "EMS4567_Product_DS_V1.0.pdf"
    },
    {
     "param": "RFLAT | IA = 10 mA",
-    "value": "0.25 0.5 Ω",
+    "value": "min=0.25; max=0.5 Ω",
     "source_label": "EMS4567_Product_DS_V1.0.pdf"
    },
    {
     "param": "RFLAT | IA = 10 mA",
-    "value": "0.3 0.5 Ω",
+    "value": "min=0.3; max=0.5 Ω",
     "source_label": "EMS4567_Product_DS_V1.0.pdf"
    },
    {
     "param": "RFLAT | IA = 10 mA",
-    "value": "0.1 0.2 Ω",
+    "value": "min=0.1; max=0.2 Ω",
     "source_label": "EMS4567_Product_DS_V1.0.pdf"
    },
    {
     "param": "RON | IA = 10 mA",
-    "value": "3.4 4.0 Ω",
+    "value": "min=3.4; max=4.0 Ω",
     "source_label": "EMS4567_Product_DS_V1.0.pdf"
    },
    {
     "param": "RON | IA = 10 mA",
-    "value": "2.4 3.0 Ω",
+    "value": "min=2.4; max=3.0 Ω",
     "source_label": "EMS4567_Product_DS_V1.0.pdf"
    },
    {
     "param": "RON | IA = 10 mA",
-    "value": "1.9 2.5 Ω",
+    "value": "min=1.9; max=2.5 Ω",
     "source_label": "EMS4567_Product_DS_V1.0.pdf"
    },
    {
     "param": "VCC | VA signal input voltage",
-    "value": "-0.3 6.5 V",
+    "value": "min=-0.3; max=6.5 V",
     "source_label": "EMS4567_Product_DS_V1.0.pdf"
    },
    {
     "param": "VCC | VCC supply voltage",
-    "value": "-0.3 6.5 V",
+    "value": "min=-0.3; max=6.5 V",
     "source_label": "EMS4567_Product_DS_V1.0.pdf"
    },
    {
     "param": "VCC | VCC supply voltage",
-    "value": "1.5 5.5 V",
+    "value": "min=1.5; max=5.5 V",
     "source_label": "EMS4567_Product_DS_V1.0.pdf"
    },
    {
     "param": "VCC | VIN control Input Voltage",
-    "value": "-0.3 6.5 V",
+    "value": "min=-0.3; max=6.5 V",
     "source_label": "EMS4567_Product_DS_V1.0.pdf"
    },
    {
     "param": "VCC | VIN control input voltage",
-    "value": "0 5.5 V",
+    "value": "min=0; max=5.5 V",
     "source_label": "EMS4567_Product_DS_V1.0.pdf"
    },
    {
@@ -135313,7 +135313,7 @@
    },
    {
     "param": "VDD SELECT = Low or SELECT = High (after detection)",
-    "value": "0.1 1 uA",
+    "value": "min=0.1; max=1 uA",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    },
    {
@@ -135328,22 +135328,22 @@
    },
    {
     "param": "VDD | VDD supply voltage",
-    "value": "-0.3 6 V",
+    "value": "min=-0.3; max=6 V",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage operating",
-    "value": "2.6 5 V",
+    "value": "min=2.6; max=5 V",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage range",
-    "value": "2.6 5 V",
+    "value": "min=2.6; max=5 V",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD ≥ 3.3 V",
-    "value": "0 3.3 V",
+    "value": "min=0; max=3.3 V",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    },
    {
@@ -135353,12 +135353,12 @@
    },
    {
     "param": "VDD | VIO voltage on SELECT, MICP, RING2, SLEEVE",
-    "value": "0 3.3 V",
+    "value": "min=0; max=3.3 V",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VIO voltage range on SELECT, MICP, RING2, SLEEVE",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    },
    {
@@ -135403,7 +135403,7 @@
    },
    {
     "param": "VDD SELECT = Low or SELECT = High (after detection)",
-    "value": "0.1 1 uA",
+    "value": "min=0.1; max=1 uA",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    },
    {
@@ -135418,22 +135418,22 @@
    },
    {
     "param": "VDD | VDD supply voltage",
-    "value": "-0.3 6 V",
+    "value": "min=-0.3; max=6 V",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage operating",
-    "value": "2.6 5 V",
+    "value": "min=2.6; max=5 V",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD supply voltage range",
-    "value": "2.6 5 V",
+    "value": "min=2.6; max=5 V",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VDD ≥ 3.3 V",
-    "value": "0 3.3 V",
+    "value": "min=0; max=3.3 V",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    },
    {
@@ -135443,12 +135443,12 @@
    },
    {
     "param": "VDD | VIO voltage on SELECT, MICP, RING2, SLEEVE",
-    "value": "0 3.3 V",
+    "value": "min=0; max=3.3 V",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    },
    {
     "param": "VDD | VIO voltage range on SELECT, MICP, RING2, SLEEVE",
-    "value": "-0.3 5.5 V",
+    "value": "min=-0.3; max=5.5 V",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    },
    {
@@ -135626,17 +135626,17 @@
    },
    {
     "param": "COFF tOFF Turn-off time S, OE to output | VCC = 2.4 V, VSW = 0.8 V, CL = 5 pF, RL = 50 Ω",
-    "value": "15 25 ns",
+    "value": "min=15; max=25 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "COFF tON Turn-on time S, OE to output | VCC = 2.4 V, VSW = 0.8 V, CL = 5 pF, RL = 50 Ω",
-    "value": "24 40 ns",
+    "value": "min=24; max=40 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "COFF | CL = 5 pF, RL = 50 Ω",
-    "value": "13 30 ns",
+    "value": "min=13; max=30 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -135646,7 +135646,7 @@
    },
    {
     "param": "COFF | VCC = 3.0 to 3.6V, VSW=0.8V,CL=5pF,RL=50Ω",
-    "value": "12 35 ns",
+    "value": "min=12; max=35 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -135656,12 +135656,12 @@
    },
    {
     "param": "IOFF IOFF Power-off leakage current | (All I/O Ports) VCC = 0 V, VSW = 0 V to 4.3 V",
-    "value": "-2.0 2.0 μA",
+    "value": "min=-2.0; max=2.0 μA",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "IOZ | HSD1n, HSD2n ≤ 3.6 V",
-    "value": "-2.0 2.0 μA",
+    "value": "min=-2.0; max=2.0 μA",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -135681,17 +135681,17 @@
    },
    {
     "param": "VCC | CL = 5 pF, RL = 50 Ω",
-    "value": "2.0 10 ns",
+    "value": "min=2.0; max=10 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "VCC | CL = 5 pF, RL = 50 Ω",
-    "value": "2.0 6.5 ns",
+    "value": "min=2.0; max=6.5 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "VCC | ICC Quiescent supply current VCC = 4.3 V, VCNTRL = 0 or VCC, IOUT=",
-    "value": "0 1 μA",
+    "value": "min=0; max=1 μA",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -135711,12 +135711,12 @@
    },
    {
     "param": "VCC | VCC = 2.4 V, VSW = 0.4 V, ION = -8 mA",
-    "value": "4.5 7.5 Ω",
+    "value": "min=4.5; max=7.5 Ω",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "VCC | VCC = 3.0 V, VSW = 0.4 V, ION = -8 mA",
-    "value": "3.5 6.5 Ω",
+    "value": "min=3.5; max=6.5 Ω",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -135726,22 +135726,22 @@
    },
    {
     "param": "VCC | VCC Supply voltage",
-    "value": "-0.5 5.6 V",
+    "value": "min=-0.5; max=5.6 V",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "VCC | VCC Supply voltage operating",
-    "value": "2.4 4.4 V",
+    "value": "min=2.4; max=4.4 V",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "VCC | VSW DC switch I/O voltage (VCC = 0V)",
-    "value": "-0.5 5.25 V",
+    "value": "min=-0.5; max=5.25 V",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "VCC | VSW Switch I/O voltage",
-    "value": "-0.5 4.5 V",
+    "value": "min=-0.5; max=4.5 V",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -135766,7 +135766,7 @@
    },
    {
     "param": "VIL | IIN Control input leakage VSW = 0 to VCC, VCC = 0 to 4.3 V",
-    "value": "-1.0 1.0 μA",
+    "value": "min=-1.0; max=1.0 μA",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -135830,17 +135830,17 @@
    },
    {
     "param": "COFF tOFF Turn-off time S, OE to output | VCC = 2.4 V, VSW = 0.8 V, CL = 5 pF, RL = 50 Ω",
-    "value": "15 25 ns",
+    "value": "min=15; max=25 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "COFF tON Turn-on time S, OE to output | VCC = 2.4 V, VSW = 0.8 V, CL = 5 pF, RL = 50 Ω",
-    "value": "24 40 ns",
+    "value": "min=24; max=40 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "COFF | CL = 5 pF, RL = 50 Ω",
-    "value": "13 30 ns",
+    "value": "min=13; max=30 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -135850,7 +135850,7 @@
    },
    {
     "param": "COFF | VCC = 3.0 to 3.6V, VSW=0.8V,CL=5pF,RL=50Ω",
-    "value": "12 35 ns",
+    "value": "min=12; max=35 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -135860,12 +135860,12 @@
    },
    {
     "param": "IOFF IOFF Power-off leakage current | (All I/O Ports) VCC = 0 V, VSW = 0 V to 4.3 V",
-    "value": "-2.0 2.0 μA",
+    "value": "min=-2.0; max=2.0 μA",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "IOZ | HSD1n, HSD2n ≤ 3.6 V",
-    "value": "-2.0 2.0 μA",
+    "value": "min=-2.0; max=2.0 μA",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -135885,17 +135885,17 @@
    },
    {
     "param": "VCC | CL = 5 pF, RL = 50 Ω",
-    "value": "2.0 10 ns",
+    "value": "min=2.0; max=10 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "VCC | CL = 5 pF, RL = 50 Ω",
-    "value": "2.0 6.5 ns",
+    "value": "min=2.0; max=6.5 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "VCC | ICC Quiescent supply current VCC = 4.3 V, VCNTRL = 0 or VCC, IOUT=",
-    "value": "0 1 μA",
+    "value": "min=0; max=1 μA",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -135915,12 +135915,12 @@
    },
    {
     "param": "VCC | VCC = 2.4 V, VSW = 0.4 V, ION = -8 mA",
-    "value": "4.5 7.5 Ω",
+    "value": "min=4.5; max=7.5 Ω",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "VCC | VCC = 3.0 V, VSW = 0.4 V, ION = -8 mA",
-    "value": "3.5 6.5 Ω",
+    "value": "min=3.5; max=6.5 Ω",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -135930,22 +135930,22 @@
    },
    {
     "param": "VCC | VCC Supply voltage",
-    "value": "-0.5 5.6 V",
+    "value": "min=-0.5; max=5.6 V",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "VCC | VCC Supply voltage operating",
-    "value": "2.4 4.4 V",
+    "value": "min=2.4; max=4.4 V",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "VCC | VSW DC switch I/O voltage (VCC = 0V)",
-    "value": "-0.5 5.25 V",
+    "value": "min=-0.5; max=5.25 V",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
     "param": "VCC | VSW Switch I/O voltage",
-    "value": "-0.5 4.5 V",
+    "value": "min=-0.5; max=4.5 V",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -135970,7 +135970,7 @@
    },
    {
     "param": "VIL | IIN Control input leakage VSW = 0 to VCC, VCC = 0 to 4.3 V",
-    "value": "-1.0 1.0 μA",
+    "value": "min=-1.0; max=1.0 μA",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
