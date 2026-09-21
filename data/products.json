@@ -2195,8 +2195,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -2382,8 +2382,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -2569,8 +2569,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -2756,8 +2756,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -2943,8 +2943,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -3130,8 +3130,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -3896,8 +3896,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -4083,8 +4083,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -4270,8 +4270,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -12884,8 +12884,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -13071,8 +13071,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -13258,8 +13258,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -13445,8 +13445,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -13632,8 +13632,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -13819,8 +13819,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -14585,8 +14585,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -14772,8 +14772,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -14959,8 +14959,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I IH IL O CC V = 5.5 VCC",
-    "value": "max=±2.5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±2.5 μA",
     "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -21878,8 +21878,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; I IH IL V = 0 V to 3.6 V;V = 3.6 V O CC",
-    "value": "max=±0.5",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; V = 3.6 V O CC] max=±0.5",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -21890,8 +21890,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI OFF additional power-off leakage current | V = 0 V to 0.2 V ; CC V or V = 0V to 3.6 V I O",
-    "value": "max=±0.6 μA",
+    "param": "ΔI OFF additional power-off leakage current",
+    "value": "[V = 0 V to 0.2 V; CC V or V = 0V to 3.6 V I O] max=±0.6 μA",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22029,8 +22029,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; I IH IL V = 0 V to 3.6 V;V = 3.6 V O CC",
-    "value": "max=±0.5",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; V = 3.6 V O CC] max=±0.5",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22041,8 +22041,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI OFF additional power-off leakage current | V = 0 V to 0.2 V ; CC V or V = 0V to 3.6 V I O",
-    "value": "max=±0.6 μA",
+    "param": "ΔI OFF additional power-off leakage current",
+    "value": "[V = 0 V to 0.2 V; CC V or V = 0V to 3.6 V I O] max=±0.6 μA",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22180,8 +22180,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; I IH IL V = 0 V to 3.6 V;V = 3.6 V O CC",
-    "value": "max=±0.5",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; V = 3.6 V O CC] max=±0.5",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22192,8 +22192,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI OFF additional power-off leakage current | V = 0 V to 0.2 V ; CC V or V = 0V to 3.6 V I O",
-    "value": "max=±0.6 μA",
+    "param": "ΔI OFF additional power-off leakage current",
+    "value": "[V = 0 V to 0.2 V; CC V or V = 0V to 3.6 V I O] max=±0.6 μA",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22331,8 +22331,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; I IH IL V = 0 V to 3.6 V;V = 3.6 V O CC",
-    "value": "max=±0.5",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; V = 3.6 V O CC] max=±0.5",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22343,8 +22343,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI OFF additional power-off leakage current | V = 0 V to 0.2 V ; CC V or V = 0V to 3.6 V I O",
-    "value": "max=±0.6 μA",
+    "param": "ΔI OFF additional power-off leakage current",
+    "value": "[V = 0 V to 0.2 V; CC V or V = 0V to 3.6 V I O] max=±0.6 μA",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22482,8 +22482,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; I IH IL V = 0 V to 3.6 V;V = 3.6 V O CC",
-    "value": "max=±0.5",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; V = 3.6 V O CC] max=±0.5",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22494,8 +22494,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI OFF additional power-off leakage current | V = 0 V to 0.2 V ; CC V or V = 0V to 3.6 V I O",
-    "value": "max=±0.6 μA",
+    "param": "ΔI OFF additional power-off leakage current",
+    "value": "[V = 0 V to 0.2 V; CC V or V = 0V to 3.6 V I O] max=±0.6 μA",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -23155,14 +23155,14 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 3.6 V ; CC V = V or GND ; V = V I CC SW CC or GND ; I = 0 A ; O",
-    "value": "max=10 μA",
+    "param": "I CC supply current",
+    "value": "[V = 3.6 V; CC V = V or GND; V = V I CC SW CC or GND; I = 0 A; O] max=10 μA",
     "source_label": "EM74CBTLV3125_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | pin nOE ; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC",
-    "value": "max=300 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[pin nOE; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC] max=300 μA",
     "source_label": "EM74CBTLV3125_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -23276,14 +23276,14 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 3.6 V ; CC V = V or GND ; V = V I CC SW CC or GND ; I = 0 A ; O",
-    "value": "max=10 μA",
+    "param": "I CC supply current",
+    "value": "[V = 3.6 V; CC V = V or GND; V = V I CC SW CC or GND; I = 0 A; O] max=10 μA",
     "source_label": "EM74CBTLV3125_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | pin nOE ; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC",
-    "value": "max=300 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[pin nOE; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC] max=300 μA",
     "source_label": "EM74CBTLV3125_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -23397,14 +23397,14 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 3.6 V ; CC V = V or GND ; V = V I CC SW CC or GND ; I = 0 A ; O",
-    "value": "max=10 μA",
+    "param": "I CC supply current",
+    "value": "[V = 3.6 V; CC V = V or GND; V = V I CC SW CC or GND; I = 0 A; O] max=10 μA",
     "source_label": "EM74CBTLV3126_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | pin nOE ; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC",
-    "value": "max=300 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[pin nOE; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC] max=300 μA",
     "source_label": "EM74CBTLV3126_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -23518,14 +23518,14 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 3.6 V ; CC V = V or GND ; V = V I CC SW CC or GND ; I = 0 A ; O",
-    "value": "max=10 μA",
+    "param": "I CC supply current",
+    "value": "[V = 3.6 V; CC V = V or GND; V = V I CC SW CC or GND; I = 0 A; O] max=10 μA",
     "source_label": "EM74CBTLV3126_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | pin nOE ; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC",
-    "value": "max=300 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[pin nOE; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC] max=300 μA",
     "source_label": "EM74CBTLV3126_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -23639,14 +23639,14 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 3.6 V ; CC V = V or GND ; I CC V = V or GND ; I = 0 A ; SW CC O",
-    "value": "max=10 μA",
+    "param": "I CC supply current",
+    "value": "[V = 3.6 V; CC V = V or GND; I CC V = V or GND; I = 0 A; SW CC O] max=10 μA",
     "source_label": "EM74CBTLV3253_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | pin nOE, Sn; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC",
-    "value": "max=300 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[pin nOE, Sn; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC] max=300 μA",
     "source_label": "EM74CBTLV3253_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -23784,14 +23784,14 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 3.6 V ; CC V = V or GND ; I CC V = V or GND ; I = 0 A ; SW CC O",
-    "value": "max=10 μA",
+    "param": "I CC supply current",
+    "value": "[V = 3.6 V; CC V = V or GND; I CC V = V or GND; I = 0 A; SW CC O] max=10 μA",
     "source_label": "EM74CBTLV3253_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | pin nOE, Sn; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC",
-    "value": "max=300 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[pin nOE, Sn; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC] max=300 μA",
     "source_label": "EM74CBTLV3253_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -23929,14 +23929,14 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 3.6 V ; CC V = V or GND ; I CC V = V or GND ; I = 0 A ; SW CC O",
-    "value": "max=10 μA",
+    "param": "I CC supply current",
+    "value": "[V = 3.6 V; CC V = V or GND; I CC V = V or GND; I = 0 A; SW CC O] max=10 μA",
     "source_label": "EM74CBTLV3253_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | pin nOE, Sn; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC",
-    "value": "max=300 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[pin nOE, Sn; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC] max=300 μA",
     "source_label": "EM74CBTLV3253_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -24074,14 +24074,14 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 3.6 V ; CC V = V or GND ; V = V I CC SW CC or GND ; I = 0 A ; O",
-    "value": "max=10 μA",
+    "param": "I CC supply current",
+    "value": "[V = 3.6 V; CC V = V or GND; V = V I CC SW CC or GND; I = 0 A; O] max=10 μA",
     "source_label": "EM74CBTLV3257_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | pin OE, S; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC",
-    "value": "max=300 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[pin OE, S; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC] max=300 μA",
     "source_label": "EM74CBTLV3257_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -24219,14 +24219,14 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 3.6 V ; CC V = V or GND ; V = V I CC SW CC or GND ; I = 0 A ; O",
-    "value": "max=10 μA",
+    "param": "I CC supply current",
+    "value": "[V = 3.6 V; CC V = V or GND; V = V I CC SW CC or GND; I = 0 A; O] max=10 μA",
     "source_label": "EM74CBTLV3257_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | pin OE, S; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC",
-    "value": "max=300 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[pin OE, S; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC] max=300 μA",
     "source_label": "EM74CBTLV3257_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -24364,14 +24364,14 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 3.6 V ; CC V = V or GND ; V = V I CC SW CC or GND ; I = 0 A ; O",
-    "value": "max=10 μA",
+    "param": "I CC supply current",
+    "value": "[V = 3.6 V; CC V = V or GND; V = V I CC SW CC or GND; I = 0 A; O] max=10 μA",
     "source_label": "EM74CBTLV3257_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | pin OE, S; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC",
-    "value": "max=300 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[pin OE, S; V = 3.6 V; [2] CC V = V - 0.6 V; I CC V = GND or V SW CC] max=300 μA",
     "source_label": "EM74CBTLV3257_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -29667,8 +29667,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -29757,8 +29757,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -29932,8 +29932,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -30022,8 +30022,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -30197,8 +30197,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -30287,8 +30287,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -30462,8 +30462,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -30552,8 +30552,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -31185,8 +31185,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 50pF ; f = 1 MHz ; L V = GND to V [3] I CC",
-    "value": "typ=20 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 50pF; f = 1 MHz; L V = GND to V [3] I CC] typ=20 pF",
     "source_label": "EM74HC_HCT138_Product_DS_V1.0.pdf",
     "kind": "动态"
    }
@@ -31444,8 +31444,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 50pF ; f = 1 MHz ; L V = GND to V [3] I CC",
-    "value": "typ=20 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 50pF; f = 1 MHz; L V = GND to V [3] I CC] typ=20 pF",
     "source_label": "EM74HC_HCT138_Product_DS_V1.0.pdf",
     "kind": "动态"
    }
@@ -36130,8 +36130,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT240_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -36401,8 +36401,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT240_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -36672,8 +36672,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT244_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -36943,8 +36943,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT244_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -37214,8 +37214,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT245_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -37485,8 +37485,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT245_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -39694,8 +39694,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -39784,8 +39784,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -39959,8 +39959,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -40049,8 +40049,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -40224,8 +40224,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -40314,8 +40314,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -40489,8 +40489,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -40579,8 +40579,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -40754,8 +40754,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -40844,8 +40844,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -41019,8 +41019,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -41109,8 +41109,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -41284,8 +41284,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -41374,8 +41374,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -41549,8 +41549,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -41639,8 +41639,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -42778,8 +42778,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V =6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT4094_Draft_DS_V0.9.pdf",
     "kind": "静态"
    },
@@ -43073,8 +43073,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V =6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT4094_Draft_DS_V0.9.pdf",
     "kind": "静态"
    },
@@ -43368,8 +43368,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT540_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -43639,8 +43639,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT540_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -43910,8 +43910,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT541_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -44181,8 +44181,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT541_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -46854,8 +46854,8 @@
     "kind": "动态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC595A_Product_DS_V1.1.pdf",
     "kind": "动态"
    },
@@ -47130,8 +47130,8 @@
     "kind": "动态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC595A_Product_DS_V1.1.pdf",
     "kind": "动态"
    },
@@ -47406,8 +47406,8 @@
     "kind": "动态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC595A_Product_DS_V1.1.pdf",
     "kind": "动态"
    },
@@ -50808,8 +50808,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS00_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -50977,8 +50977,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS00_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -51146,8 +51146,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS02_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -51315,8 +51315,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS02_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -51406,8 +51406,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I T+ T- O CC V = 6.0 VCC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- O CC V = 6.0 VCC] max=±5 μA",
     "source_label": "EM74HCS03_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -51460,8 +51460,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=6 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=6 pF",
     "source_label": "EM74HCS03_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -51551,8 +51551,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I T+ T- O CC V = 6.0 VCC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- O CC V = 6.0 VCC] max=±5 μA",
     "source_label": "EM74HCS03_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -51605,8 +51605,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=6 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=6 pF",
     "source_label": "EM74HCS03_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -51774,8 +51774,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS04_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -51943,8 +51943,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS04_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -52034,8 +52034,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I T+ T- O CC V = 6.0 VCC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- O CC V = 6.0 VCC] max=±5 μA",
     "source_label": "EM74HCS05_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -52088,8 +52088,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=6 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=6 pF",
     "source_label": "EM74HCS05_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -52179,8 +52179,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I T+ T- O CC V = 6.0 VCC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- O CC V = 6.0 VCC] max=±5 μA",
     "source_label": "EM74HCS05_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -52233,8 +52233,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=6 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=6 pF",
     "source_label": "EM74HCS05_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -52402,8 +52402,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=6 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=6 pF",
     "source_label": "EM74HCS08_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -52571,8 +52571,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=6 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=6 pF",
     "source_label": "EM74HCS08_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -52662,8 +52662,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I T+ T- O CC V = 6.0 VCC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- O CC V = 6.0 VCC] max=±5 μA",
     "source_label": "EM74HCS09_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -52716,8 +52716,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=6 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=6 pF",
     "source_label": "EM74HCS09_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -52807,8 +52807,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I T+ T- O CC V = 6.0 VCC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- O CC V = 6.0 VCC] max=±5 μA",
     "source_label": "EM74HCS09_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -52861,8 +52861,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=6 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=6 pF",
     "source_label": "EM74HCS09_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -53030,8 +53030,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS10_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -53199,8 +53199,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS10_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -53368,8 +53368,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS11_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -53537,8 +53537,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS11_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -53658,8 +53658,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I T+ T- CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- CC V = V or GND O CC] max=±5 μA",
     "source_label": "EM74HCS125_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -53748,8 +53748,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HCS125_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -53869,8 +53869,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I T+ T- CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- CC V = V or GND O CC] max=±5 μA",
     "source_label": "EM74HCS125_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -53959,8 +53959,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HCS125_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -54080,8 +54080,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I T+ T- CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- CC V = V or GND O CC] max=±5 μA",
     "source_label": "EM74HCS126_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -54170,8 +54170,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HCS126_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -54291,8 +54291,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I T+ T- CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- CC V = V or GND O CC] max=±5 μA",
     "source_label": "EM74HCS126_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -54381,8 +54381,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HCS126_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -54550,8 +54550,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS20_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -54719,8 +54719,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS20_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -54888,8 +54888,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS21_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -55057,8 +55057,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS21_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -55148,8 +55148,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I T+ T- O CC V = 6.0 VCC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- O CC V = 6.0 VCC] max=±5 μA",
     "source_label": "EM74HCS266_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -55202,8 +55202,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS266_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -55292,8 +55292,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = V or GND; I T+ T- O CC V = 6.0 VCC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- O CC V = 6.0 VCC] max=±5 μA",
     "source_label": "EM74HCS266_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -55346,8 +55346,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS266_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -55514,8 +55514,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS27_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -55683,8 +55683,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS27_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -55852,8 +55852,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS32_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -56021,8 +56021,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS32_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -56142,8 +56142,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I T+ T- CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- CC V = V or GND O CC] max=±5 μA",
     "source_label": "EM74HCS365_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -56232,8 +56232,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HCS365_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -56353,8 +56353,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I T+ T- CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- CC V = V or GND O CC] max=±5 μA",
     "source_label": "EM74HCS365_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -56443,8 +56443,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HCS365_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -56564,8 +56564,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I T+ T- CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- CC V = V or GND O CC] max=±5 μA",
     "source_label": "EM74HCS367_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -56654,8 +56654,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HCS367_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -56775,8 +56775,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I T+ T- CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL; I T+ T- CC V = V or GND O CC] max=±5 μA",
     "source_label": "EM74HCS367_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -56865,8 +56865,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HCS367_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -57034,8 +57034,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS4075_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -57203,8 +57203,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS4075_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -57372,8 +57372,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS7266_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -57540,8 +57540,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS7266_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -57708,8 +57708,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS86_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -57877,8 +57877,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [3] I CC] typ=18 pF",
     "source_label": "EM74HCS86_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -63114,8 +63114,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -63204,8 +63204,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -63379,8 +63379,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -63469,8 +63469,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -63644,8 +63644,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -63734,8 +63734,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -63909,8 +63909,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -63999,8 +63999,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -64632,8 +64632,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 50pF ; f = 1 MHz ; L V = GND to V [3] I CC",
-    "value": "typ=20 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 50pF; f = 1 MHz; L V = GND to V [3] I CC] typ=20 pF",
     "source_label": "EM74HC_HCT138_Product_DS_V1.0.pdf",
     "kind": "动态"
    }
@@ -64891,8 +64891,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 50pF ; f = 1 MHz ; L V = GND to V [3] I CC",
-    "value": "typ=20 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 50pF; f = 1 MHz; L V = GND to V [3] I CC] typ=20 pF",
     "source_label": "EM74HC_HCT138_Product_DS_V1.0.pdf",
     "kind": "动态"
    }
@@ -65374,8 +65374,8 @@
     "kind": "静态"
    },
    {
-    "param": "∆I CC additional supply current | per input pin; V = V - 2.1 V; IO = 0 A; I CC other inputs at V or GND; CC V = 4.5 V to 5.5 VCC",
-    "value": "max=300 μA",
+    "param": "∆I CC additional supply current",
+    "value": "[per input pin; V = V - 2.1 V; IO = 0 A; I CC other inputs at V or GND; CC V = 4.5 V to 5.5 VCC] max=300 μA",
     "source_label": "EM74HCT164_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -65537,8 +65537,8 @@
     "kind": "静态"
    },
    {
-    "param": "∆I CC additional supply current | per input pin; V = V - 2.1 V; IO = 0 A; I CC other inputs at V or GND; CC V = 4.5 V to 5.5 VCC",
-    "value": "max=300 μA",
+    "param": "∆I CC additional supply current",
+    "value": "[per input pin; V = V - 2.1 V; IO = 0 A; I CC other inputs at V or GND; CC V = 4.5 V to 5.5 VCC] max=300 μA",
     "source_label": "EM74HCT164_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -67898,8 +67898,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT240_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -68169,8 +68169,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT240_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -68440,8 +68440,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT244_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -68711,8 +68711,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT244_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -68982,8 +68982,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT245_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -69253,8 +69253,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT245_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -71462,8 +71462,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -71552,8 +71552,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -71727,8 +71727,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -71817,8 +71817,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -71992,8 +71992,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -72082,8 +72082,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -72257,8 +72257,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -72347,8 +72347,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -72522,8 +72522,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -72612,8 +72612,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -72787,8 +72787,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -72877,8 +72877,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -73052,8 +73052,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -73142,8 +73142,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -73317,8 +73317,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -73407,8 +73407,8 @@
     "kind": "动态"
    },
    {
-    "param": "C PD power dissipation capacitance | C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC",
-    "value": "typ=18 pF",
+    "param": "C PD power dissipation capacitance",
+    "value": "[C = 15 pF; f = 1 MHz; L V = GND to V [5] I CC] typ=18 pF",
     "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf",
     "kind": "动态"
    }
@@ -74546,8 +74546,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V =6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT4094_Draft_DS_V0.9.pdf",
     "kind": "静态"
    },
@@ -74841,8 +74841,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V =6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT4094_Draft_DS_V0.9.pdf",
     "kind": "静态"
    },
@@ -75136,8 +75136,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT540_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -75407,8 +75407,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT540_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -75678,8 +75678,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT541_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -75949,8 +75949,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 6.0 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HC_HCT541_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -77773,8 +77773,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 5.5 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HCT595_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -77785,8 +77785,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | per pin ; V = V - 2.1 V; I = 0 I CC O A; other inputs at V or GND; CC V = 4.5 V to 5.5 VCC",
-    "value": "max=450 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per pin; V = V - 2.1 V; I = 0 I CC O A; other inputs at V or GND; CC V = 4.5 V to 5.5 VCC] max=450 μA",
     "source_label": "EM74HCT595_Product_DS_V1.1.pdf",
     "kind": "静态"
    }
@@ -77940,8 +77940,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 5.5 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HCT595_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -77952,8 +77952,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | per pin ; V = V - 2.1 V; I = 0 I CC O A; other inputs at V or GND; CC V = 4.5 V to 5.5 VCC",
-    "value": "max=450 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per pin; V = V - 2.1 V; I = 0 I CC O A; other inputs at V or GND; CC V = 4.5 V to 5.5 VCC] max=450 μA",
     "source_label": "EM74HCT595_Product_DS_V1.1.pdf",
     "kind": "静态"
    }
@@ -78107,8 +78107,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 5.5 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HCT595_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -78119,8 +78119,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | per pin ; V = V - 2.1 V; I = 0 I CC O A; other inputs at V or GND; CC V = 4.5 V to 5.5 VCC",
-    "value": "max=450 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per pin; V = V - 2.1 V; I = 0 I CC O A; other inputs at V or GND; CC V = 4.5 V to 5.5 VCC] max=450 μA",
     "source_label": "EM74HCT595_Product_DS_V1.1.pdf",
     "kind": "静态"
    }
@@ -78276,8 +78276,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V = 5.5 V ; I IH IL CC V = V or GND O CC",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74HCT595_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -78288,8 +78288,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | per pin ; V = V - 2.1 V; I = 0 I CC O A; other inputs at V or GND; CC V = 4.5 V to 5.5 VCC",
-    "value": "max=450 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per pin; V = V - 2.1 V; I = 0 I CC O A; other inputs at V or GND; CC V = 4.5 V to 5.5 VCC] max=450 μA",
     "source_label": "EM74HCT595_Product_DS_V1.1.pdf",
     "kind": "静态"
    }
@@ -89760,8 +89760,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V ; V = 5.5 V or GND ; I IH O V = 1.65 V to 5.5 VCC",
-    "value": "max=±10 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[V = V; V = 5.5 V or GND; I IH O V = 1.65 V to 5.5 VCC] max=±10 μA",
     "source_label": "EM74LVC06A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -89953,8 +89953,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V ; V = 5.5 V or GND ; I IH O V = 1.65 V to 5.5 VCC",
-    "value": "max=±10 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[V = V; V = 5.5 V or GND; I IH O V = 1.65 V to 5.5 VCC] max=±10 μA",
     "source_label": "EM74LVC06A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -90146,8 +90146,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V ; V = 5.5 V or GND; I IH O V = 1.65 V to 5.5 VCC",
-    "value": "max=±10 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[V = V; V = 5.5 V or GND; I IH O V = 1.65 V to 5.5 VCC] max=±10 μA",
     "source_label": "EM74LVC07A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -90339,8 +90339,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V ; V = 5.5 V or GND; I IH O V = 1.65 V to 5.5 VCC",
-    "value": "max=±10 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[V = V; V = 5.5 V or GND; I IH O V = 1.65 V to 5.5 VCC] max=±10 μA",
     "source_label": "EM74LVC07A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91895,8 +91895,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V =5.5V ; I IH IL CC V = 5.5V or GND O",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
     "kind": "动态"
    },
@@ -91913,8 +91913,8 @@
     "kind": "动态"
    },
    {
-    "param": "ΔI CC additional supply current | per input pin ; V = 2.3V to 5.5V ; CC V = V -0.6V ; I = 0A I CC O",
-    "value": "max=500 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per input pin; V = 2.3V to 5.5V; CC V = V -0.6V; I = 0A I CC O] max=500 μA",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
     "kind": "动态"
    },
@@ -92130,8 +92130,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V =5.5V ; I IH IL CC V = 5.5V or GND O",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
     "kind": "动态"
    },
@@ -92148,8 +92148,8 @@
     "kind": "动态"
    },
    {
-    "param": "ΔI CC additional supply current | per input pin ; V = 2.3V to 5.5V ; CC V = V -0.6V ; I = 0A I CC O",
-    "value": "max=500 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per input pin; V = 2.3V to 5.5V; CC V = V -0.6V; I = 0A I CC O] max=500 μA",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
     "kind": "动态"
    },
@@ -92365,8 +92365,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V =5.5V ; I IH IL CC V = 5.5V or GND O",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
     "kind": "动态"
    },
@@ -92383,8 +92383,8 @@
     "kind": "动态"
    },
    {
-    "param": "ΔI CC additional supply current | per input pin ; V = 2.3V to 5.5V ; CC V = V -0.6V ; I = 0A I CC O",
-    "value": "max=500 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per input pin; V = 2.3V to 5.5V; CC V = V -0.6V; I = 0A I CC O] max=500 μA",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
     "kind": "动态"
    },
@@ -92600,8 +92600,8 @@
     "kind": "静态"
    },
    {
-    "param": "I OZ OFF-state output current | V = V or V ; V =5.5V ; I IH IL CC V = 5.5V or GND O",
-    "value": "max=±5 μA",
+    "param": "I OZ OFF-state output current",
+    "value": "[VI = VIH or VIL] max=±5 μA",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
     "kind": "动态"
    },
@@ -92618,8 +92618,8 @@
     "kind": "动态"
    },
    {
-    "param": "ΔI CC additional supply current | per input pin ; V = 2.3V to 5.5V ; CC V = V -0.6V ; I = 0A I CC O",
-    "value": "max=500 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per input pin; V = 2.3V to 5.5V; CC V = V -0.6V; I = 0A I CC O] max=500 μA",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
     "kind": "动态"
    },
@@ -92787,8 +92787,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | per input pin ; V = 2.3V to 5.5V ; CC V = V -0.6V ; I = 0A I CC O",
-    "value": "max=500 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per input pin; V = 2.3V to 5.5V; CC V = V -0.6V; I = 0A I CC O] max=500 μA",
     "source_label": "EM74LVC132A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -92938,8 +92938,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | per input pin ; V = 2.3V to 5.5V ; CC V = V -0.6V ; I = 0A I CC O",
-    "value": "max=500 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per input pin; V = 2.3V to 5.5V; CC V = V -0.6V; I = 0A I CC O] max=500 μA",
     "source_label": "EM74LVC132A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -93089,8 +93089,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | per input pin ; V = 2.3V to 5.5V ; CC V = V -0.6V ; I = 0A I CC O",
-    "value": "max=500 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per input pin; V = 2.3V to 5.5V; CC V = V -0.6V; I = 0A I CC O] max=500 μA",
     "source_label": "EM74LVC14A_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -93240,8 +93240,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | per input pin ; V = 2.3V to 5.5V ; CC V = V -0.6V ; I = 0A I CC O",
-    "value": "max=500 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per input pin; V = 2.3V to 5.5V; CC V = V -0.6V; I = 0A I CC O] max=500 μA",
     "source_label": "EM74LVC14A_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -106567,8 +106567,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | per pin ; V = 2.3V to 5.5V ; CC V = V -0.6V ; I = 0A I CC O",
-    "value": "max=500 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per pin; V = 2.3V to 5.5V; CC V = V -0.6V; I = 0A I CC O] max=500 μA",
     "source_label": "EM74LVC1G57_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -106712,8 +106712,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | per pin ; V = 2.3V to 5.5V ; CC V = V -0.6V ; I = 0A I CC O",
-    "value": "max=500 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per pin; V = 2.3V to 5.5V; CC V = V -0.6V; I = 0A I CC O] max=500 μA",
     "source_label": "EM74LVC1G57_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -107764,8 +107764,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | per pin ; V = 2.3V to 5.5V ; CC V = V -0.6V ; I = 0A I CC O",
-    "value": "max=500 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per pin; V = 2.3V to 5.5V; CC V = V -0.6V; I = 0A I CC O] max=500 μA",
     "source_label": "EM74LVC1G97_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -107909,8 +107909,8 @@
     "kind": "静态"
    },
    {
-    "param": "ΔI CC additional supply current | per pin ; V = 2.3V to 5.5V ; CC V = V -0.6V ; I = 0A I CC O",
-    "value": "max=500 μA",
+    "param": "ΔI CC additional supply current",
+    "value": "[per pin; V = 2.3V to 5.5V; CC V = V -0.6V; I = 0A I CC O] max=500 μA",
     "source_label": "EM74LVC1G97_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -120641,8 +120641,8 @@
     "source_label": "EMS3518_Product_DS_V1.0.pdf"
    },
    {
-    "param": "COFF AC Electronics Characteristics THD+N Total harmonic distortion | plus noise VSW = 0.7 VRMS , f = 1 kHz @ RL = 32 Ω -",
-    "value": "102 dB",
+    "param": "COFF AC Electronics Characteristics THD+N Total harmonic distortion",
+    "value": "[plus noise VSW = 0.7 VRMS , f = 1 kHz @ RL = 32 Ω -] 102 dB",
     "source_label": "EMS3518_Product_DS_V1.0.pdf"
    },
    {
@@ -125788,8 +125788,8 @@
   "source_label": "EMS7227_Draft_DS_V0.1.pdf",
   "specs": [
    {
-    "param": "BW tSK(P) Skew of opposite transitions | of the same output VCC = 3.3 V, RL = 50 Ω, CL = 5 pF",
-    "value": "20 ps",
+    "param": "BW tSK(P) Skew of opposite transitions",
+    "value": "[of the same output VCC = 3.3 V, RL = 50 Ω, CL = 5 pF] 20 ps",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -125808,13 +125808,13 @@
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
-    "param": "COFF tOFF Turn-off time S, OE to output | VCC = 2.4 V, VSW = 0.8 V, CL = 5 pF, RL = 50 Ω",
-    "value": "min=15; max=25 ns",
+    "param": "COFF tOFF Turn-off time S, OE to output",
+    "value": "[VCC = 2.4 V, VSW = 0.8 V, CL = 5 pF, RL = 50 Ω] min=15; max=25 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
-    "param": "COFF tON Turn-on time S, OE to output | VCC = 2.4 V, VSW = 0.8 V, CL = 5 pF, RL = 50 Ω",
-    "value": "min=24; max=40 ns",
+    "param": "COFF tON Turn-on time S, OE to output",
+    "value": "[VCC = 2.4 V, VSW = 0.8 V, CL = 5 pF, RL = 50 Ω] min=24; max=40 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -125838,8 +125838,8 @@
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
-    "param": "IOFF IOFF Power-off leakage current | (All I/O Ports) VCC = 0 V, VSW = 0 V to 4.3 V",
-    "value": "min=-2.0; max=2.0 μA",
+    "param": "IOFF IOFF Power-off leakage current",
+    "value": "[(All I/O Ports) VCC = 0 V, VSW = 0 V to 4.3 V] min=-2.0; max=2.0 μA",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -125858,8 +125858,8 @@
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
-    "param": "VCC ICCT Increase in ICC current per control voltage and VCC | VCC = 4.3 V, VCNTRL = 2.6 V",
-    "value": "10 μA",
+    "param": "VCC ICCT Increase in ICC current per control voltage and VCC",
+    "value": "[VCC = 4.3 V, VCNTRL = 2.6 V] 10 μA",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -125958,8 +125958,8 @@
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
-    "param": "XTALK XTALK Non-Adjacent channel | crosstalk VCC = 3.0 to 3.6 V, RL = 50 Ω, f = 240 MHz",
-    "value": "-45 dB",
+    "param": "XTALK XTALK Non-Adjacent channel",
+    "value": "[crosstalk VCC = 3.0 to 3.6 V, RL = 50 Ω, f = 240 MHz] -45 dB",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    }
   ],
@@ -125995,8 +125995,8 @@
   "source_label": "EMS7227_Draft_DS_V0.1.pdf",
   "specs": [
    {
-    "param": "BW tSK(P) Skew of opposite transitions | of the same output VCC = 3.3 V, RL = 50 Ω, CL = 5 pF",
-    "value": "20 ps",
+    "param": "BW tSK(P) Skew of opposite transitions",
+    "value": "[of the same output VCC = 3.3 V, RL = 50 Ω, CL = 5 pF] 20 ps",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -126015,13 +126015,13 @@
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
-    "param": "COFF tOFF Turn-off time S, OE to output | VCC = 2.4 V, VSW = 0.8 V, CL = 5 pF, RL = 50 Ω",
-    "value": "min=15; max=25 ns",
+    "param": "COFF tOFF Turn-off time S, OE to output",
+    "value": "[VCC = 2.4 V, VSW = 0.8 V, CL = 5 pF, RL = 50 Ω] min=15; max=25 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
-    "param": "COFF tON Turn-on time S, OE to output | VCC = 2.4 V, VSW = 0.8 V, CL = 5 pF, RL = 50 Ω",
-    "value": "min=24; max=40 ns",
+    "param": "COFF tON Turn-on time S, OE to output",
+    "value": "[VCC = 2.4 V, VSW = 0.8 V, CL = 5 pF, RL = 50 Ω] min=24; max=40 ns",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -126045,8 +126045,8 @@
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
-    "param": "IOFF IOFF Power-off leakage current | (All I/O Ports) VCC = 0 V, VSW = 0 V to 4.3 V",
-    "value": "min=-2.0; max=2.0 μA",
+    "param": "IOFF IOFF Power-off leakage current",
+    "value": "[(All I/O Ports) VCC = 0 V, VSW = 0 V to 4.3 V] min=-2.0; max=2.0 μA",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -126065,8 +126065,8 @@
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
-    "param": "VCC ICCT Increase in ICC current per control voltage and VCC | VCC = 4.3 V, VCNTRL = 2.6 V",
-    "value": "10 μA",
+    "param": "VCC ICCT Increase in ICC current per control voltage and VCC",
+    "value": "[VCC = 4.3 V, VCNTRL = 2.6 V] 10 μA",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
@@ -126165,8 +126165,8 @@
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    },
    {
-    "param": "XTALK XTALK Non-Adjacent channel | crosstalk VCC = 3.0 to 3.6 V, RL = 50 Ω, f = 240 MHz",
-    "value": "-45 dB",
+    "param": "XTALK XTALK Non-Adjacent channel",
+    "value": "[crosstalk VCC = 3.0 to 3.6 V, RL = 50 Ω, f = 240 MHz] -45 dB",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    }
   ],
