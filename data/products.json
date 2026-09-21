@@ -9125,7 +9125,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 5.5VCC",
+    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 5.5×VCC",
     "value": "max=10 μA",
     "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf",
     "kind": "静态"
@@ -9312,7 +9312,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 5.5VCC",
+    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 5.5×VCC",
     "value": "max=10 μA",
     "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf",
     "kind": "静态"
@@ -9499,7 +9499,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 5.5VCC",
+    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 5.5×VCC",
     "value": "max=10 μA",
     "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf",
     "kind": "静态"
@@ -19814,7 +19814,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 5.5VCC",
+    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 5.5×VCC",
     "value": "max=10 μA",
     "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf",
     "kind": "静态"
@@ -20001,7 +20001,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 5.5VCC",
+    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 5.5×VCC",
     "value": "max=10 μA",
     "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf",
     "kind": "静态"
@@ -20188,7 +20188,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 5.5VCC",
+    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 5.5×VCC",
     "value": "max=10 μA",
     "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf",
     "kind": "静态"
@@ -21777,13 +21777,13 @@
   "specs": [
    {
     "param": "V IH HIGH-level input voltage | V = 0.8 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V IH HIGH-level input voltage | V = 0.9 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -21801,13 +21801,13 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 0.8 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V IL LOW-level input voltage | V = 0.9 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -21831,7 +21831,7 @@
    },
    {
     "param": "V OL LOW-level output voltage | I = 1.1 mA; V = 1.1 V O CC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -21896,7 +21896,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 0.8 V to 3.6VCC",
+    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 0.8 V to 3.6×VCC",
     "value": "max=0.9 μA",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
@@ -21928,13 +21928,13 @@
   "specs": [
    {
     "param": "V IH HIGH-level input voltage | V = 0.8 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V IH HIGH-level input voltage | V = 0.9 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -21952,13 +21952,13 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 0.8 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V IL LOW-level input voltage | V = 0.9 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -21982,7 +21982,7 @@
    },
    {
     "param": "V OL LOW-level output voltage | I = 1.1 mA; V = 1.1 V O CC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22047,7 +22047,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 0.8 V to 3.6VCC",
+    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 0.8 V to 3.6×VCC",
     "value": "max=0.9 μA",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
@@ -22079,13 +22079,13 @@
   "specs": [
    {
     "param": "V IH HIGH-level input voltage | V = 0.8 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V IH HIGH-level input voltage | V = 0.9 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22103,13 +22103,13 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 0.8 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V IL LOW-level input voltage | V = 0.9 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22133,7 +22133,7 @@
    },
    {
     "param": "V OL LOW-level output voltage | I = 1.1 mA; V = 1.1 V O CC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22198,7 +22198,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 0.8 V to 3.6VCC",
+    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 0.8 V to 3.6×VCC",
     "value": "max=0.9 μA",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
@@ -22230,13 +22230,13 @@
   "specs": [
    {
     "param": "V IH HIGH-level input voltage | V = 0.8 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V IH HIGH-level input voltage | V = 0.9 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22254,13 +22254,13 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 0.8 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V IL LOW-level input voltage | V = 0.9 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22284,7 +22284,7 @@
    },
    {
     "param": "V OL LOW-level output voltage | I = 1.1 mA; V = 1.1 V O CC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22349,7 +22349,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 0.8 V to 3.6VCC",
+    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 0.8 V to 3.6×VCC",
     "value": "max=0.9 μA",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
@@ -22381,13 +22381,13 @@
   "specs": [
    {
     "param": "V IH HIGH-level input voltage | V = 0.8 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V IH HIGH-level input voltage | V = 0.9 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22405,13 +22405,13 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 0.8 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V IL LOW-level input voltage | V = 0.9 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22435,7 +22435,7 @@
    },
    {
     "param": "V OL LOW-level output voltage | I = 1.1 mA; V = 1.1 V O CC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
    },
@@ -22500,7 +22500,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 0.8 V to 3.6VCC",
+    "param": "I CC supply current | V = V or GND ; I = 0A ; I CC O V = 0.8 V to 3.6×VCC",
     "value": "max=0.9 μA",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
     "kind": "静态"
@@ -88507,7 +88507,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC00A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -88525,7 +88525,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC00A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -88537,7 +88537,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC00A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -88555,7 +88555,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC00A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -88700,7 +88700,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC00A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -88718,7 +88718,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC00A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -88730,7 +88730,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC00A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -88748,7 +88748,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC00A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -88893,7 +88893,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC02A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -88911,7 +88911,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC02A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -88923,7 +88923,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC02A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -88941,7 +88941,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC02A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -89086,7 +89086,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC02A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -89104,7 +89104,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC02A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -89116,7 +89116,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC02A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -89134,7 +89134,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC02A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -89279,7 +89279,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC04A_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -89297,7 +89297,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC04A_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -89309,7 +89309,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC04A_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -89327,7 +89327,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC04A_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -89472,7 +89472,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC04A_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -89490,7 +89490,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC04A_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -89502,7 +89502,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC04A_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -89520,7 +89520,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC04A_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
@@ -89665,7 +89665,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC06A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -89683,7 +89683,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC06A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -89695,7 +89695,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC06A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -89713,7 +89713,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC06A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -89858,7 +89858,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC06A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -89876,7 +89876,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC06A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -89888,7 +89888,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC06A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -89906,7 +89906,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC06A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -90051,7 +90051,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC07A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -90069,7 +90069,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC07A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -90081,7 +90081,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC07A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -90099,7 +90099,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC07A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -90244,7 +90244,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC07A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -90262,7 +90262,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC07A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -90274,7 +90274,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC07A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -90292,7 +90292,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC07A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -90437,7 +90437,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -90455,7 +90455,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -90467,7 +90467,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -90485,7 +90485,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -90630,7 +90630,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -90648,7 +90648,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -90660,7 +90660,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -90678,7 +90678,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -90823,7 +90823,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -90841,7 +90841,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -90853,7 +90853,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -90871,7 +90871,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -91016,7 +91016,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC10A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91034,7 +91034,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC10A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91046,7 +91046,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC10A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91064,7 +91064,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC10A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91203,7 +91203,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC10A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91221,7 +91221,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC10A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91233,7 +91233,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC10A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91251,7 +91251,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC10A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91390,7 +91390,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC11_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91408,7 +91408,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC11_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91420,7 +91420,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC11_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91438,7 +91438,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC11_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91577,7 +91577,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC11_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91595,7 +91595,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC11_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91607,7 +91607,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC11_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91625,7 +91625,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC11_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -91764,7 +91764,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -91782,7 +91782,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -91794,7 +91794,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -91812,7 +91812,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -91907,7 +91907,7 @@
     "kind": "动态"
    },
    {
-    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5VCC",
+    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5×VCC",
     "value": "max=10 μA",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
     "kind": "动态"
@@ -91999,7 +91999,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -92017,7 +92017,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -92029,7 +92029,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -92047,7 +92047,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -92142,7 +92142,7 @@
     "kind": "动态"
    },
    {
-    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5VCC",
+    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5×VCC",
     "value": "max=10 μA",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
     "kind": "动态"
@@ -92234,7 +92234,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -92252,7 +92252,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -92264,7 +92264,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -92282,7 +92282,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -92377,7 +92377,7 @@
     "kind": "动态"
    },
    {
-    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5VCC",
+    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5×VCC",
     "value": "max=10 μA",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
     "kind": "动态"
@@ -92469,7 +92469,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -92487,7 +92487,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -92499,7 +92499,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -92517,7 +92517,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -92612,7 +92612,7 @@
     "kind": "动态"
    },
    {
-    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5VCC",
+    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5×VCC",
     "value": "max=10 μA",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
     "kind": "动态"
@@ -92781,7 +92781,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5VCC",
+    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5×VCC",
     "value": "max=10 μA",
     "source_label": "EM74LVC132A_Product_DS_V1.1.pdf",
     "kind": "静态"
@@ -92932,7 +92932,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5VCC",
+    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5×VCC",
     "value": "max=10 μA",
     "source_label": "EM74LVC132A_Product_DS_V1.1.pdf",
     "kind": "静态"
@@ -93083,7 +93083,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5VCC",
+    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5×VCC",
     "value": "max=10 μA",
     "source_label": "EM74LVC14A_Product_DS_V1.2.pdf",
     "kind": "静态"
@@ -93234,7 +93234,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5VCC",
+    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 1.65V to 5.5×VCC",
     "value": "max=10 μA",
     "source_label": "EM74LVC14A_Product_DS_V1.2.pdf",
     "kind": "静态"
@@ -106561,7 +106561,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 5.5VCC",
+    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 5.5×VCC",
     "value": "max=4 μA",
     "source_label": "EM74LVC1G57_Product_DS_V1.1.pdf",
     "kind": "静态"
@@ -106706,7 +106706,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 5.5VCC",
+    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 5.5×VCC",
     "value": "max=4 μA",
     "source_label": "EM74LVC1G57_Product_DS_V1.1.pdf",
     "kind": "静态"
@@ -107758,7 +107758,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 5.5VCC",
+    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 5.5×VCC",
     "value": "max=4 μA",
     "source_label": "EM74LVC1G97_Product_DS_V1.1.pdf",
     "kind": "静态"
@@ -107903,7 +107903,7 @@
     "kind": "静态"
    },
    {
-    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 5.5VCC",
+    "param": "I CC supply current | V = 5.5V or GND ; I = 0A ; I O V = 5.5×VCC",
     "value": "max=4 μA",
     "source_label": "EM74LVC1G97_Product_DS_V1.1.pdf",
     "kind": "静态"
@@ -108576,7 +108576,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -108594,7 +108594,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -108606,7 +108606,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -108624,7 +108624,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -108817,7 +108817,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -108835,7 +108835,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -108847,7 +108847,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -108865,7 +108865,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -109058,7 +109058,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -109076,7 +109076,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -109088,7 +109088,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -109106,7 +109106,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -109299,7 +109299,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -109317,7 +109317,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -109329,7 +109329,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -109347,7 +109347,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -109528,7 +109528,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -109546,7 +109546,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -109558,7 +109558,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -109576,7 +109576,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -114002,7 +114002,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC32A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -114020,7 +114020,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC32A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -114032,7 +114032,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC32A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -114050,7 +114050,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC32A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -114195,7 +114195,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC32A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -114213,7 +114213,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC32A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -114225,7 +114225,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC32A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -114243,7 +114243,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC32A_Product_DS_V1.3.pdf",
     "kind": "静态"
    },
@@ -114616,122 +114616,122 @@
   "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
   "specs": [
    {
-    "param": "V IH HIGH-level input voltage | V = 1.2 V CCI",
-    "value": "min=0.8V CCI V",
+    "param": "V IH HIGH-level input voltage | V = 1.2 VCCI",
+    "value": "min=0.8×VCCI V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 V CCI",
-    "value": "min=0.65V CCI V",
+    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 VCCI",
+    "value": "min=0.65×VCCI V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "min=1.7 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "min=2.2 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "min=0.7V CCI V",
+    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "min=0.7×VCCI V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 1.2 V CCI",
-    "value": "min=0.8VCC(A) V",
+    "param": "V IH HIGH-level input voltage | V = 1.2 VCCI",
+    "value": "min=0.8×VCC(A) V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 V CCI",
-    "value": "min=0.65VCC(A) V",
+    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 VCCI",
+    "value": "min=0.65×VCC(A) V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "min=1.7 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "min=2.0 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "min=0.7VCC(A) V",
+    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "min=0.7×VCC(A) V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.2 V CCI",
-    "value": "max=0.2V CCI V",
+    "param": "V IL LOW-level input voltage | V = 1.2 VCCI",
+    "value": "max=0.2×VCCI V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 V CCI",
-    "value": "max=0.35 V CCI V",
+    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 VCCI",
+    "value": "max=0.35 VCCI V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "max=0.7 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "max=0.8 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "max=0.3V CCI V",
+    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "max=0.3×VCCI V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.2 V CCI",
-    "value": "max=0.2VCC(A) V",
+    "param": "V IL LOW-level input voltage | V = 1.2 VCCI",
+    "value": "max=0.2×VCC(A) V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 V CCI",
+    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 VCCI",
     "value": "max=0.35 VCC(A) V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "max=0.7 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "max=0.8 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "max=0.3VCC(A) V",
+    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "max=0.3×VCC(A) V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    }
@@ -114761,122 +114761,122 @@
   "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
   "specs": [
    {
-    "param": "V IH HIGH-level input voltage | V = 1.2 V CCI",
-    "value": "min=0.8V CCI V",
+    "param": "V IH HIGH-level input voltage | V = 1.2 VCCI",
+    "value": "min=0.8×VCCI V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 V CCI",
-    "value": "min=0.65V CCI V",
+    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 VCCI",
+    "value": "min=0.65×VCCI V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "min=1.7 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "min=2.2 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "min=0.7V CCI V",
+    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "min=0.7×VCCI V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 1.2 V CCI",
-    "value": "min=0.8VCC(A) V",
+    "param": "V IH HIGH-level input voltage | V = 1.2 VCCI",
+    "value": "min=0.8×VCC(A) V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 V CCI",
-    "value": "min=0.65VCC(A) V",
+    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 VCCI",
+    "value": "min=0.65×VCC(A) V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "min=1.7 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "min=2.0 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "min=0.7VCC(A) V",
+    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "min=0.7×VCC(A) V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.2 V CCI",
-    "value": "max=0.2V CCI V",
+    "param": "V IL LOW-level input voltage | V = 1.2 VCCI",
+    "value": "max=0.2×VCCI V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 V CCI",
-    "value": "max=0.35 V CCI V",
+    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 VCCI",
+    "value": "max=0.35 VCCI V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "max=0.7 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "max=0.8 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "max=0.3V CCI V",
+    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "max=0.3×VCCI V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.2 V CCI",
-    "value": "max=0.2VCC(A) V",
+    "param": "V IL LOW-level input voltage | V = 1.2 VCCI",
+    "value": "max=0.2×VCC(A) V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 V CCI",
+    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 VCCI",
     "value": "max=0.35 VCC(A) V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "max=0.7 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "max=0.8 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "max=0.3VCC(A) V",
+    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "max=0.3×VCC(A) V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
     "kind": "静态"
    }
@@ -115148,7 +115148,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC540A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -115166,7 +115166,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC540A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -115178,7 +115178,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC540A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -115196,7 +115196,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC540A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -115383,7 +115383,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC540A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -115401,7 +115401,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC540A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -115413,7 +115413,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC540A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -115431,7 +115431,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC540A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -115618,7 +115618,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC541A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -115636,7 +115636,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC541A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -115648,7 +115648,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC541A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -115666,7 +115666,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC541A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -115853,7 +115853,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC541A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -115871,7 +115871,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC541A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -115883,7 +115883,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC541A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -115901,7 +115901,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC541A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -116088,7 +116088,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC74A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116106,7 +116106,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC74A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116118,7 +116118,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC74A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116136,7 +116136,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC74A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116329,7 +116329,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC74A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116347,7 +116347,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC74A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116359,7 +116359,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC74A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116377,7 +116377,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC74A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116570,7 +116570,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC86A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116588,7 +116588,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC86A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116600,7 +116600,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC86A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116618,7 +116618,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC86A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116763,7 +116763,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC86A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116781,7 +116781,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC86A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116793,7 +116793,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC86A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116811,7 +116811,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC86A_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -116949,122 +116949,122 @@
   "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
   "specs": [
    {
-    "param": "V IH HIGH-level input voltage | V = 1.2 V CCI",
-    "value": "min=0.8V CCI V",
+    "param": "V IH HIGH-level input voltage | V = 1.2 VCCI",
+    "value": "min=0.8×VCCI V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 V CCI",
-    "value": "min=0.65V CCI V",
+    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 VCCI",
+    "value": "min=0.65×VCCI V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "min=1.7 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "min=2.2 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "min=0.7V CCI V",
+    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "min=0.7×VCCI V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 1.2 V CCI",
-    "value": "min=0.8VCC(A) V",
+    "param": "V IH HIGH-level input voltage | V = 1.2 VCCI",
+    "value": "min=0.8×VCC(A) V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 V CCI",
-    "value": "min=0.65VCC(A) V",
+    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 VCCI",
+    "value": "min=0.65×VCC(A) V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "min=1.7 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "min=2.0 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "min=0.7VCC(A) V",
+    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "min=0.7×VCC(A) V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.2 V CCI",
-    "value": "max=0.2V CCI V",
+    "param": "V IL LOW-level input voltage | V = 1.2 VCCI",
+    "value": "max=0.2×VCCI V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 V CCI",
-    "value": "max=0.35 V CCI V",
+    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 VCCI",
+    "value": "max=0.35 VCCI V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "max=0.7 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "max=0.8 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "max=0.3V CCI V",
+    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "max=0.3×VCCI V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.2 V CCI",
-    "value": "max=0.2VCC(A) V",
+    "param": "V IL LOW-level input voltage | V = 1.2 VCCI",
+    "value": "max=0.2×VCC(A) V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 V CCI",
+    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 VCCI",
     "value": "max=0.35 VCC(A) V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "max=0.7 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "max=0.8 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "max=0.3VCC(A) V",
+    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "max=0.3×VCC(A) V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    }
@@ -117101,7 +117101,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -117119,7 +117119,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -117131,7 +117131,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -117149,7 +117149,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -117342,7 +117342,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -117360,7 +117360,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -117372,7 +117372,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -117390,7 +117390,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -117583,7 +117583,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -117601,7 +117601,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -117613,7 +117613,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -117631,7 +117631,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -117824,7 +117824,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -117842,7 +117842,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -117854,7 +117854,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -117872,7 +117872,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -118053,7 +118053,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "min=0.65VCC V",
+    "value": "min=0.65×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -118071,7 +118071,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "min=0.7VCC V",
+    "value": "min=0.7×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -118083,7 +118083,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 1.65 V to 1.95 VCC",
-    "value": "max=0.35VCC V",
+    "value": "max=0.35×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -118101,7 +118101,7 @@
    },
    {
     "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCC",
-    "value": "max=0.3VCC V",
+    "value": "max=0.3×VCC V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -118275,122 +118275,122 @@
   "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
   "specs": [
    {
-    "param": "V IH HIGH-level input voltage | V = 1.2 V CCI",
-    "value": "min=0.8V CCI V",
+    "param": "V IH HIGH-level input voltage | V = 1.2 VCCI",
+    "value": "min=0.8×VCCI V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 V CCI",
-    "value": "min=0.65V CCI V",
+    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 VCCI",
+    "value": "min=0.65×VCCI V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "min=1.7 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "min=2.2 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "min=0.7V CCI V",
+    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "min=0.7×VCCI V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 1.2 V CCI",
-    "value": "min=0.8VCC(A) V",
+    "param": "V IH HIGH-level input voltage | V = 1.2 VCCI",
+    "value": "min=0.8×VCC(A) V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 V CCI",
-    "value": "min=0.65VCC(A) V",
+    "param": "V IH HIGH-level input voltage | V = 1.4 V to 1.95 VCCI",
+    "value": "min=0.65×VCC(A) V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "min=1.7 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IH HIGH-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "min=2.0 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "min=0.7VCC(A) V",
+    "param": "V IH HIGH-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "min=0.7×VCC(A) V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.2 V CCI",
-    "value": "max=0.2V CCI V",
+    "param": "V IL LOW-level input voltage | V = 1.2 VCCI",
+    "value": "max=0.2×VCCI V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 V CCI",
-    "value": "max=0.35 V CCI V",
+    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 VCCI",
+    "value": "max=0.35 VCCI V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "max=0.7 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "max=0.8 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "max=0.3V CCI V",
+    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "max=0.3×VCCI V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.2 V CCI",
-    "value": "max=0.2VCC(A) V",
+    "param": "V IL LOW-level input voltage | V = 1.2 VCCI",
+    "value": "max=0.2×VCC(A) V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 V CCI",
+    "param": "V IL LOW-level input voltage | V = 1.4 V to 1.95 VCCI",
     "value": "max=0.35 VCC(A) V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 V CCI",
+    "param": "V IL LOW-level input voltage | V = 2.3 V to 2.7 VCCI",
     "value": "max=0.7 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 V CCI",
+    "param": "V IL LOW-level input voltage | V = 3 V to 3.6 VCCI",
     "value": "max=0.8 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    },
    {
-    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 V CCI",
-    "value": "max=0.3VCC(A) V",
+    "param": "V IL LOW-level input voltage | V = 4.5 V to 5.5 VCCI",
+    "value": "max=0.3×VCC(A) V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
     "kind": "静态"
    }
@@ -126221,7 +126221,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.65VCC(A); max=VCC(A) V",
+    "value": "min=0.65×VCC(A); max=VCC(A) V",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -126233,30 +126233,30 @@
    },
    {
     "param": "V IL LOW-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0; max=0.35VCC(A) V",
+    "value": "min=0; max=0.35×VCC(A) V",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(A) V",
+    "value": "min=0.67×VCC(A) V",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(B) V",
+    "value": "min=0.67×VCC(B) V",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
-    "param": " | enabled",
+    "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
     "kind": "动态"
    },
    {
-    "param": " | disabled",
+    "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
     "kind": "动态"
@@ -126306,7 +126306,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.65VCC(A); max=VCC(A) V",
+    "value": "min=0.65×VCC(A); max=VCC(A) V",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -126318,30 +126318,30 @@
    },
    {
     "param": "V IL LOW-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0; max=0.35VCC(A) V",
+    "value": "min=0; max=0.35×VCC(A) V",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(A) V",
+    "value": "min=0.67×VCC(A) V",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(B) V",
+    "value": "min=0.67×VCC(B) V",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
-    "param": " | enabled",
+    "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
     "kind": "动态"
    },
    {
-    "param": " | disabled",
+    "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
     "kind": "动态"
@@ -126391,7 +126391,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.65VCC(A); max=VCC(A) V",
+    "value": "min=0.65×VCC(A); max=VCC(A) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -126403,30 +126403,30 @@
    },
    {
     "param": "V IL LOW-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0; max=0.35VCC(A) V",
+    "value": "min=0; max=0.35×VCC(A) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(A) V",
+    "value": "min=0.67×VCC(A) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(B) V",
+    "value": "min=0.67×VCC(B) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
    {
-    "param": " | enabled",
+    "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "动态"
    },
    {
-    "param": " | disabled",
+    "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "动态"
@@ -126476,7 +126476,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.65VCC(A); max=VCC(A) V",
+    "value": "min=0.65×VCC(A); max=VCC(A) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -126488,30 +126488,30 @@
    },
    {
     "param": "V IL LOW-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0; max=0.35VCC(A) V",
+    "value": "min=0; max=0.35×VCC(A) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(A) V",
+    "value": "min=0.67×VCC(A) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(B) V",
+    "value": "min=0.67×VCC(B) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
    {
-    "param": " | enabled",
+    "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "动态"
    },
    {
-    "param": " | disabled",
+    "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "动态"
@@ -126561,7 +126561,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.65VCC(A); max=VCC(A) V",
+    "value": "min=0.65×VCC(A); max=VCC(A) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -126573,30 +126573,30 @@
    },
    {
     "param": "V IL LOW-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0; max=0.35VCC(A) V",
+    "value": "min=0; max=0.35×VCC(A) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(A) V",
+    "value": "min=0.67×VCC(A) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(B) V",
+    "value": "min=0.67×VCC(B) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
    {
-    "param": " | enabled",
+    "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "动态"
    },
    {
-    "param": " | disabled",
+    "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "动态"
@@ -126646,7 +126646,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.65VCC(A); max=VCC(A) V",
+    "value": "min=0.65×VCC(A); max=VCC(A) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
@@ -126658,30 +126658,30 @@
    },
    {
     "param": "V IL LOW-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0; max=0.35VCC(A) V",
+    "value": "min=0; max=0.35×VCC(A) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(A) V",
+    "value": "min=0.67×VCC(A) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(B) V",
+    "value": "min=0.67×VCC(B) V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "静态"
    },
    {
-    "param": " | enabled",
+    "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "动态"
    },
    {
-    "param": " | disabled",
+    "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
     "kind": "动态"
@@ -126731,7 +126731,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.65VCC(A); max=VCC(A) V",
+    "value": "min=0.65×VCC(A); max=VCC(A) V",
     "source_label": "EXS0106_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -126743,30 +126743,30 @@
    },
    {
     "param": "V IL LOW-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0; max=0.35VCC(A) V",
+    "value": "min=0; max=0.35×VCC(A) V",
     "source_label": "EXS0106_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(A) V",
+    "value": "min=0.67×VCC(A) V",
     "source_label": "EXS0106_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(B) V",
+    "value": "min=0.67×VCC(B) V",
     "source_label": "EXS0106_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
-    "param": " | enabled",
+    "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0106_Product_DS_V1.0.pdf",
     "kind": "动态"
    },
    {
-    "param": " | disabled",
+    "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0106_Product_DS_V1.0.pdf",
     "kind": "动态"
@@ -126816,7 +126816,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.65VCC(A); max=VCC(A) V",
+    "value": "min=0.65×VCC(A); max=VCC(A) V",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -126828,30 +126828,30 @@
    },
    {
     "param": "V IL LOW-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0; max=0.35VCC(A) V",
+    "value": "min=0; max=0.35×VCC(A) V",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(A) V",
+    "value": "min=0.67×VCC(A) V",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(B) V",
+    "value": "min=0.67×VCC(B) V",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
-    "param": " | enabled",
+    "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
     "kind": "动态"
    },
    {
-    "param": " | disabled",
+    "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
     "kind": "动态"
@@ -126901,7 +126901,7 @@
    },
    {
     "param": "V IH HIGH-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.65VCC(A); max=VCC(A) V",
+    "value": "min=0.65×VCC(A); max=VCC(A) V",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
@@ -126913,30 +126913,30 @@
    },
    {
     "param": "V IL LOW-level input voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0; max=0.35VCC(A) V",
+    "value": "min=0; max=0.35×VCC(A) V",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(A) V",
+    "value": "min=0.67×VCC(A) V",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
     "param": "V OH HIGH-level output voltage | VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
-    "value": "min=0.67VCC(B) V",
+    "value": "min=0.67×VCC(B) V",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
     "kind": "静态"
    },
    {
-    "param": " | enabled",
+    "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
     "kind": "动态"
    },
    {
-    "param": " | disabled",
+    "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
     "kind": "动态"
