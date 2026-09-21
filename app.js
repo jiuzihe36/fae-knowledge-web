@@ -150,7 +150,7 @@
       metaItem("逻辑类型", item.logic_type),
       metaItem("工作电压", item.voltage),
       metaItem("封装尺寸", item.package_size),
-      dsUrl ? '<div class="meta-item"><div class="label">规格书</div><div class="value"><a href="' + esc(dsUrl) + '" target="_blank" rel="noopener">📄 下载 PDF</a></div></div>' : ""
+      dsUrl ? '<div class="meta-item"><div class="label">规格书</div><div class="value"><a href="' + esc(dsUrl) + '" target="_blank" rel="noopener">👁 查看</a> · <a href="' + esc(dsUrl.replace("/datasheets/", "/datasheets_view/")) + '" target="_blank" rel="noopener">👁 快速查看</a> · <a href="' + esc(dsUrl) + '" download>⬇ 下载原版</a></div></div>' : ""
     ].join("");
     const pinWrap = document.getElementById("pinWrap");
     const pinImg = document.getElementById("pinImg");
