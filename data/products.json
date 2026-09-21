@@ -481,7 +481,7 @@
  },
  {
   "id": 9,
-  "model": "EM74",
+  "model": "EM74HC368",
   "family": "逻辑芯片",
   "series": "74",
   "function": "缓冲器",
@@ -695,7 +695,7 @@
  },
  {
   "id": 961,
-  "model": "EM74AHC",
+  "model": "EM74AHC1G32",
   "family": "逻辑芯片",
   "series": "74AHC",
   "function": "逻辑门",
@@ -18517,7 +18517,7 @@
  },
  {
   "id": 962,
-  "model": "EM74AHCT",
+  "model": "EM74AHCT1G32",
   "family": "逻辑芯片",
   "series": "74AHCT",
   "function": "逻辑门",
@@ -132068,7 +132068,7 @@
  },
  {
   "id": 10163,
-  "model": "EM74LVC",
+  "model": "EM74LVC1G97",
   "family": "逻辑芯片",
   "series": "74LVC",
   "function": "逻辑门",
