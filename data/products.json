@@ -11,7 +11,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/196.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 196,
   "source_label": "EL3157_Product_DS_V1.1.pdf",
   "specs": [
@@ -204,7 +204,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/196.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 196,
   "source_label": "EL3157_Product_DS_V1.1.pdf",
   "specs": [
@@ -397,7 +397,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/84.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 84,
   "source_label": "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf",
   "specs": [
@@ -578,7 +578,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/84.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 84,
   "source_label": "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf",
   "specs": [
@@ -759,7 +759,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/84.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 84,
   "source_label": "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf",
   "specs": [
@@ -940,7 +940,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/72.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 72,
   "source_label": "EM74AHC_AHCT1G02_Product_DS_V1.1.pdf",
   "specs": [
@@ -1121,7 +1121,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/72.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 72,
   "source_label": "EM74AHC_AHCT1G02_Product_DS_V1.1.pdf",
   "specs": [
@@ -1302,7 +1302,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/72.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 72,
   "source_label": "EM74AHC_AHCT1G02_Product_DS_V1.1.pdf",
   "specs": [
@@ -1483,7 +1483,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/94.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 94,
   "source_label": "EM74AHC_AHCT1G04_Product_DS_V1.3.pdf",
   "specs": [
@@ -1664,7 +1664,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/94.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 94,
   "source_label": "EM74AHC_AHCT1G04_Product_DS_V1.3.pdf",
   "specs": [
@@ -1845,7 +1845,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/94.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 94,
   "source_label": "EM74AHC_AHCT1G04_Product_DS_V1.3.pdf",
   "specs": [
@@ -2026,7 +2026,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/86.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 86,
   "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -2207,7 +2207,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/86.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 86,
   "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -2388,7 +2388,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/86.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 86,
   "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -2569,7 +2569,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/96.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 96,
   "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf",
   "specs": [
@@ -2750,7 +2750,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/96.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 96,
   "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf",
   "specs": [
@@ -2931,7 +2931,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/96.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 96,
   "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf",
   "specs": [
@@ -3112,7 +3112,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/168.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 168,
   "source_label": "EM74AHC_AHCT1G08_Product_DS_V1.5.pdf",
   "specs": [
@@ -3299,7 +3299,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/168.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 168,
   "source_label": "EM74AHC_AHCT1G08_Product_DS_V1.5.pdf",
   "specs": [
@@ -3486,7 +3486,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/168.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 168,
   "source_label": "EM74AHC_AHCT1G08_Product_DS_V1.5.pdf",
   "specs": [
@@ -3673,7 +3673,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/138.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 138,
   "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf",
   "specs": [
@@ -3854,7 +3854,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/138.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 138,
   "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf",
   "specs": [
@@ -4035,7 +4035,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/138.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 138,
   "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf",
   "specs": [
@@ -4216,7 +4216,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/122.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 122,
   "source_label": "EM74AHC_AHCT1G11_Product_DS_V1.1.pdf",
   "specs": [
@@ -4397,7 +4397,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/122.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 122,
   "source_label": "EM74AHC_AHCT1G11_Product_DS_V1.1.pdf",
   "specs": [
@@ -4578,7 +4578,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/43.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 43,
   "source_label": "EM74AHC_AHCT1G125_Product_DS_V1.3.pdf",
   "specs": [
@@ -4819,7 +4819,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/43.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 43,
   "source_label": "EM74AHC_AHCT1G125_Product_DS_V1.3.pdf",
   "specs": [
@@ -5060,7 +5060,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/43.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 43,
   "source_label": "EM74AHC_AHCT1G125_Product_DS_V1.3.pdf",
   "specs": [
@@ -5301,7 +5301,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/32.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 32,
   "source_label": "EM74AHC_AHCT1G126_Product_DS_V1.3.pdf",
   "specs": [
@@ -5542,7 +5542,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/32.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 32,
   "source_label": "EM74AHC_AHCT1G126_Product_DS_V1.3.pdf",
   "specs": [
@@ -5783,7 +5783,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/32.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 32,
   "source_label": "EM74AHC_AHCT1G126_Product_DS_V1.3.pdf",
   "specs": [
@@ -6024,7 +6024,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/152.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 152,
   "source_label": "EM74AHC_AHCT1G14_Product_DS_V1.2.pdf",
   "specs": [
@@ -6157,7 +6157,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/152.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 152,
   "source_label": "EM74AHC_AHCT1G14_Product_DS_V1.2.pdf",
   "specs": [
@@ -6290,7 +6290,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/152.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 152,
   "source_label": "EM74AHC_AHCT1G14_Product_DS_V1.2.pdf",
   "specs": [
@@ -6423,7 +6423,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/161.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 161,
   "source_label": "EM74AHC_AHCT1G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -6604,7 +6604,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/161.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 161,
   "source_label": "EM74AHC_AHCT1G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -6785,7 +6785,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/161.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 161,
   "source_label": "EM74AHC_AHCT1G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -6966,7 +6966,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/145.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 145,
   "source_label": "EM74AHC_AHCT1G17_Product_DS_V1.2.pdf",
   "specs": [
@@ -7099,7 +7099,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/145.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 145,
   "source_label": "EM74AHC_AHCT1G17_Product_DS_V1.2.pdf",
   "specs": [
@@ -7232,7 +7232,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/145.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 145,
   "source_label": "EM74AHC_AHCT1G17_Product_DS_V1.2.pdf",
   "specs": [
@@ -7365,7 +7365,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/16.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 16,
   "source_label": "EM74AHC_AHCT1G240_Product_DS_V1.0.pdf",
   "specs": [
@@ -7588,7 +7588,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/16.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 16,
   "source_label": "EM74AHC_AHCT1G240_Product_DS_V1.0.pdf",
   "specs": [
@@ -7811,7 +7811,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/53.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 53,
   "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf",
   "specs": [
@@ -7992,7 +7992,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/53.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 53,
   "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf",
   "specs": [
@@ -8173,7 +8173,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/53.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 53,
   "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf",
   "specs": [
@@ -8354,7 +8354,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/7.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 7,
   "source_label": "EM74AHC_AHCT1G332_Product_DS_V1.1.pdf",
   "specs": [
@@ -8535,7 +8535,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/7.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 7,
   "source_label": "EM74AHC_AHCT1G332_Product_DS_V1.1.pdf",
   "specs": [
@@ -8716,7 +8716,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/76.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 76,
   "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf",
   "specs": [
@@ -8897,7 +8897,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/76.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 76,
   "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf",
   "specs": [
@@ -9078,7 +9078,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/76.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 76,
   "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf",
   "specs": [
@@ -9259,7 +9259,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/134.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 134,
   "source_label": "EM74AHC_AHCT2G14_Product_DS_V1.1.pdf",
   "specs": [
@@ -9392,7 +9392,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/134.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 134,
   "source_label": "EM74AHC_AHCT2G14_Product_DS_V1.1.pdf",
   "specs": [
@@ -9525,7 +9525,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/134.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 134,
   "source_label": "EM74AHC_AHCT2G14_Product_DS_V1.1.pdf",
   "specs": [
@@ -9658,7 +9658,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/116.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 116,
   "source_label": "EM74AHC_AHCT2G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -9839,7 +9839,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/116.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 116,
   "source_label": "EM74AHC_AHCT2G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -10020,7 +10020,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/116.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 116,
   "source_label": "EM74AHC_AHCT2G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -10201,7 +10201,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/57.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 57,
   "source_label": "EM74AHC_AHCT2G34_Product_DS_V1.1.pdf",
   "specs": [
@@ -10382,7 +10382,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/57.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 57,
   "source_label": "EM74AHC_AHCT2G34_Product_DS_V1.1.pdf",
   "specs": [
@@ -10563,7 +10563,7 @@
   "voltage": "2 V to 5.5 V",
   "pin_image": "./pins/57.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 57,
   "source_label": "EM74AHC_AHCT2G34_Product_DS_V1.1.pdf",
   "specs": [
@@ -10744,7 +10744,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/84.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 84,
   "source_label": "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf",
   "specs": [
@@ -10925,7 +10925,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/84.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 84,
   "source_label": "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf",
   "specs": [
@@ -11106,7 +11106,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/84.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 84,
   "source_label": "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf",
   "specs": [
@@ -11287,7 +11287,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/72.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 72,
   "source_label": "EM74AHC_AHCT1G02_Product_DS_V1.1.pdf",
   "specs": [
@@ -11468,7 +11468,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/72.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 72,
   "source_label": "EM74AHC_AHCT1G02_Product_DS_V1.1.pdf",
   "specs": [
@@ -11649,7 +11649,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/72.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 72,
   "source_label": "EM74AHC_AHCT1G02_Product_DS_V1.1.pdf",
   "specs": [
@@ -11830,7 +11830,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/94.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 94,
   "source_label": "EM74AHC_AHCT1G04_Product_DS_V1.3.pdf",
   "specs": [
@@ -12011,7 +12011,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/94.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 94,
   "source_label": "EM74AHC_AHCT1G04_Product_DS_V1.3.pdf",
   "specs": [
@@ -12192,7 +12192,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/94.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 94,
   "source_label": "EM74AHC_AHCT1G04_Product_DS_V1.3.pdf",
   "specs": [
@@ -12373,7 +12373,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/86.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 86,
   "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -12554,7 +12554,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/86.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 86,
   "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -12735,7 +12735,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/86.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 86,
   "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -12916,7 +12916,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/96.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 96,
   "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf",
   "specs": [
@@ -13097,7 +13097,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/96.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 96,
   "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf",
   "specs": [
@@ -13278,7 +13278,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/96.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 96,
   "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf",
   "specs": [
@@ -13459,7 +13459,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/168.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 168,
   "source_label": "EM74AHC_AHCT1G08_Product_DS_V1.5.pdf",
   "specs": [
@@ -13646,7 +13646,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/168.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 168,
   "source_label": "EM74AHC_AHCT1G08_Product_DS_V1.5.pdf",
   "specs": [
@@ -13833,7 +13833,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/168.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 168,
   "source_label": "EM74AHC_AHCT1G08_Product_DS_V1.5.pdf",
   "specs": [
@@ -14020,7 +14020,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/138.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 138,
   "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf",
   "specs": [
@@ -14201,7 +14201,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/138.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 138,
   "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf",
   "specs": [
@@ -14382,7 +14382,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/138.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 138,
   "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf",
   "specs": [
@@ -14563,7 +14563,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/122.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 122,
   "source_label": "EM74AHC_AHCT1G11_Product_DS_V1.1.pdf",
   "specs": [
@@ -14744,7 +14744,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/122.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 122,
   "source_label": "EM74AHC_AHCT1G11_Product_DS_V1.1.pdf",
   "specs": [
@@ -14925,7 +14925,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/43.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 43,
   "source_label": "EM74AHC_AHCT1G125_Product_DS_V1.3.pdf",
   "specs": [
@@ -15166,7 +15166,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/43.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 43,
   "source_label": "EM74AHC_AHCT1G125_Product_DS_V1.3.pdf",
   "specs": [
@@ -15407,7 +15407,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/43.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 43,
   "source_label": "EM74AHC_AHCT1G125_Product_DS_V1.3.pdf",
   "specs": [
@@ -15648,7 +15648,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/32.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 32,
   "source_label": "EM74AHC_AHCT1G126_Product_DS_V1.3.pdf",
   "specs": [
@@ -15889,7 +15889,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/32.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 32,
   "source_label": "EM74AHC_AHCT1G126_Product_DS_V1.3.pdf",
   "specs": [
@@ -16130,7 +16130,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/32.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 32,
   "source_label": "EM74AHC_AHCT1G126_Product_DS_V1.3.pdf",
   "specs": [
@@ -16371,7 +16371,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/152.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 152,
   "source_label": "EM74AHC_AHCT1G14_Product_DS_V1.2.pdf",
   "specs": [
@@ -16504,7 +16504,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/152.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 152,
   "source_label": "EM74AHC_AHCT1G14_Product_DS_V1.2.pdf",
   "specs": [
@@ -16637,7 +16637,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/152.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 152,
   "source_label": "EM74AHC_AHCT1G14_Product_DS_V1.2.pdf",
   "specs": [
@@ -16770,7 +16770,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/161.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 161,
   "source_label": "EM74AHC_AHCT1G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -16951,7 +16951,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/161.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 161,
   "source_label": "EM74AHC_AHCT1G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -17132,7 +17132,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/161.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 161,
   "source_label": "EM74AHC_AHCT1G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -17313,7 +17313,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/145.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 145,
   "source_label": "EM74AHC_AHCT1G17_Product_DS_V1.2.pdf",
   "specs": [
@@ -17446,7 +17446,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/145.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 145,
   "source_label": "EM74AHC_AHCT1G17_Product_DS_V1.2.pdf",
   "specs": [
@@ -17579,7 +17579,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/145.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 145,
   "source_label": "EM74AHC_AHCT1G17_Product_DS_V1.2.pdf",
   "specs": [
@@ -17712,7 +17712,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/16.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 16,
   "source_label": "EM74AHC_AHCT1G240_Product_DS_V1.0.pdf",
   "specs": [
@@ -17935,7 +17935,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/16.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 16,
   "source_label": "EM74AHC_AHCT1G240_Product_DS_V1.0.pdf",
   "specs": [
@@ -18158,7 +18158,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/53.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 53,
   "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf",
   "specs": [
@@ -18339,7 +18339,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/53.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 53,
   "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf",
   "specs": [
@@ -18520,7 +18520,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/53.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 53,
   "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf",
   "specs": [
@@ -18701,7 +18701,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/7.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 7,
   "source_label": "EM74AHC_AHCT1G332_Product_DS_V1.1.pdf",
   "specs": [
@@ -18882,7 +18882,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/7.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 7,
   "source_label": "EM74AHC_AHCT1G332_Product_DS_V1.1.pdf",
   "specs": [
@@ -19063,7 +19063,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/76.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 76,
   "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf",
   "specs": [
@@ -19244,7 +19244,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/76.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 76,
   "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf",
   "specs": [
@@ -19425,7 +19425,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/76.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 76,
   "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf",
   "specs": [
@@ -19606,7 +19606,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/134.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 134,
   "source_label": "EM74AHC_AHCT2G14_Product_DS_V1.1.pdf",
   "specs": [
@@ -19739,7 +19739,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/134.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 134,
   "source_label": "EM74AHC_AHCT2G14_Product_DS_V1.1.pdf",
   "specs": [
@@ -19872,7 +19872,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/134.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 134,
   "source_label": "EM74AHC_AHCT2G14_Product_DS_V1.1.pdf",
   "specs": [
@@ -20005,7 +20005,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/116.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 116,
   "source_label": "EM74AHC_AHCT2G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -20186,7 +20186,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/116.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 116,
   "source_label": "EM74AHC_AHCT2G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -20367,7 +20367,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/116.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 116,
   "source_label": "EM74AHC_AHCT2G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -20548,7 +20548,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/57.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 57,
   "source_label": "EM74AHC_AHCT2G34_Product_DS_V1.1.pdf",
   "specs": [
@@ -20729,7 +20729,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/57.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 57,
   "source_label": "EM74AHC_AHCT2G34_Product_DS_V1.1.pdf",
   "specs": [
@@ -20910,7 +20910,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/57.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 57,
   "source_label": "EM74AHC_AHCT2G34_Product_DS_V1.1.pdf",
   "specs": [
@@ -21091,7 +21091,7 @@
   "voltage": "0.8 V to 3.6 V",
   "pin_image": "./pins/77.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 77,
   "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
   "specs": [
@@ -21236,7 +21236,7 @@
   "voltage": "0.8 V to 3.6 V",
   "pin_image": "./pins/77.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 77,
   "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
   "specs": [
@@ -21381,7 +21381,7 @@
   "voltage": "0.8 V to 3.6 V",
   "pin_image": "./pins/77.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 77,
   "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
   "specs": [
@@ -21526,7 +21526,7 @@
   "voltage": "0.8 V to 3.6 V",
   "pin_image": "./pins/77.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 77,
   "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
   "specs": [
@@ -21671,7 +21671,7 @@
   "voltage": "0.8 V to 3.6 V",
   "pin_image": "./pins/77.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 77,
   "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf",
   "specs": [
@@ -21816,7 +21816,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/181.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 181,
   "source_label": "EM74CBT3257_Product_DS_V1.0.pdf",
   "specs": [
@@ -22009,7 +22009,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/181.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 181,
   "source_label": "EM74CBT3257_Product_DS_V1.0.pdf",
   "specs": [
@@ -22202,7 +22202,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/181.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 181,
   "source_label": "EM74CBT3257_Product_DS_V1.0.pdf",
   "specs": [
@@ -22395,7 +22395,7 @@
   "voltage": "2.3 V to 3.6 V",
   "pin_image": "./pins/137.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 137,
   "source_label": "EM74CBTLV3125_Product_DS_V1.0.pdf",
   "specs": [
@@ -22510,7 +22510,7 @@
   "voltage": "2.3 V to 3.6 V",
   "pin_image": "./pins/137.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 137,
   "source_label": "EM74CBTLV3125_Product_DS_V1.0.pdf",
   "specs": [
@@ -22625,7 +22625,7 @@
   "voltage": "2.3 V to 3.6 V",
   "pin_image": "./pins/119.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 119,
   "source_label": "EM74CBTLV3126_Product_DS_V1.0.pdf",
   "specs": [
@@ -22740,7 +22740,7 @@
   "voltage": "2.3 V to 3.6 V",
   "pin_image": "./pins/119.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 119,
   "source_label": "EM74CBTLV3126_Product_DS_V1.0.pdf",
   "specs": [
@@ -22855,7 +22855,7 @@
   "voltage": "2.3 V to 3.6 V",
   "pin_image": "./pins/163.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 163,
   "source_label": "EM74CBTLV3253_Product_DS_V1.0.pdf",
   "specs": [
@@ -22994,7 +22994,7 @@
   "voltage": "2.3 V to 3.6 V",
   "pin_image": "./pins/163.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 163,
   "source_label": "EM74CBTLV3253_Product_DS_V1.0.pdf",
   "specs": [
@@ -23133,7 +23133,7 @@
   "voltage": "2.3 V to 3.6 V",
   "pin_image": "./pins/163.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 163,
   "source_label": "EM74CBTLV3253_Product_DS_V1.0.pdf",
   "specs": [
@@ -23272,7 +23272,7 @@
   "voltage": "2.3 V to 3.6 V",
   "pin_image": "./pins/135.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 135,
   "source_label": "EM74CBTLV3257_Product_DS_V1.0.pdf",
   "specs": [
@@ -23411,7 +23411,7 @@
   "voltage": "2.3 V to 3.6 V",
   "pin_image": "./pins/135.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 135,
   "source_label": "EM74CBTLV3257_Product_DS_V1.0.pdf",
   "specs": [
@@ -23550,7 +23550,7 @@
   "voltage": "2.3 V to 3.6 V",
   "pin_image": "./pins/135.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 135,
   "source_label": "EM74CBTLV3257_Product_DS_V1.0.pdf",
   "specs": [
@@ -23689,7 +23689,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/98.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 98,
   "source_label": "EM74HC_HCT00_Product_DS_V1.1.pdf",
   "specs": [
@@ -23924,7 +23924,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/98.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 98,
   "source_label": "EM74HC_HCT00_Product_DS_V1.1.pdf",
   "specs": [
@@ -24159,7 +24159,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/97.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 97,
   "source_label": "EM74HC_HCT02_Product_DS_V1.2.pdf",
   "specs": [
@@ -24394,7 +24394,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/97.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 97,
   "source_label": "EM74HC_HCT02_Product_DS_V1.2.pdf",
   "specs": [
@@ -24629,7 +24629,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/100.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 100,
   "source_label": "EM74HC_HCT03_Product_DS_V1.1.pdf",
   "specs": [
@@ -24840,7 +24840,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/100.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 100,
   "source_label": "EM74HC_HCT03_Product_DS_V1.1.pdf",
   "specs": [
@@ -25051,7 +25051,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/60.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 60,
   "source_label": "EM74HC_HCT04_Product_DS_V1.1.pdf",
   "specs": [
@@ -25286,7 +25286,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/60.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 60,
   "source_label": "EM74HC_HCT04_Product_DS_V1.1.pdf",
   "specs": [
@@ -25521,7 +25521,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/70.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 70,
   "source_label": "EM74HC_HCT05_Product_DS_V1.1.pdf",
   "specs": [
@@ -25732,7 +25732,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/70.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 70,
   "source_label": "EM74HC_HCT05_Product_DS_V1.1.pdf",
   "specs": [
@@ -25943,7 +25943,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/79.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 79,
   "source_label": "EM74HC_HCT06_Product_DS_V1.1.pdf",
   "specs": [
@@ -26154,7 +26154,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/79.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 79,
   "source_label": "EM74HC_HCT06_Product_DS_V1.1.pdf",
   "specs": [
@@ -26365,7 +26365,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/85.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 85,
   "source_label": "EM74HC_HCT07_Product_DS_V1.1.pdf",
   "specs": [
@@ -26576,7 +26576,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/85.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 85,
   "source_label": "EM74HC_HCT07_Product_DS_V1.1.pdf",
   "specs": [
@@ -26787,7 +26787,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/159.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 159,
   "source_label": "EM74HC_HCT08_Product_DS_V1.1.pdf",
   "specs": [
@@ -27022,7 +27022,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/159.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 159,
   "source_label": "EM74HC_HCT08_Product_DS_V1.1.pdf",
   "specs": [
@@ -27257,7 +27257,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/156.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 156,
   "source_label": "EM74HC_HCT09_Product_DS_V1.0.pdf",
   "specs": [
@@ -27468,7 +27468,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/156.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 156,
   "source_label": "EM74HC_HCT09_Product_DS_V1.0.pdf",
   "specs": [
@@ -27679,7 +27679,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/164.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 164,
   "source_label": "EM74HC_HCT10_Product_DS_V1.1.pdf",
   "specs": [
@@ -27914,7 +27914,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/164.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 164,
   "source_label": "EM74HC_HCT10_Product_DS_V1.1.pdf",
   "specs": [
@@ -28149,7 +28149,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/151.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 151,
   "source_label": "EM74HC_HCT11_Product_DS_V1.1.pdf",
   "specs": [
@@ -28384,7 +28384,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/151.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 151,
   "source_label": "EM74HC_HCT11_Product_DS_V1.1.pdf",
   "specs": [
@@ -28619,7 +28619,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/124.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 124,
   "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf",
   "specs": [
@@ -28878,7 +28878,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/124.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 124,
   "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf",
   "specs": [
@@ -29137,7 +29137,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/132.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 132,
   "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf",
   "specs": [
@@ -29396,7 +29396,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/132.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 132,
   "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf",
   "specs": [
@@ -29655,7 +29655,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/110.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 110,
   "source_label": "EM74HC_HCT132_Product_DS_V1.2.pdf",
   "specs": [
@@ -29836,7 +29836,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/110.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 110,
   "source_label": "EM74HC_HCT132_Product_DS_V1.2.pdf",
   "specs": [
@@ -30017,7 +30017,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/147.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 147,
   "source_label": "EM74HC_HCT138_Product_DS_V1.0.pdf",
   "specs": [
@@ -30270,7 +30270,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/147.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 147,
   "source_label": "EM74HC_HCT138_Product_DS_V1.0.pdf",
   "specs": [
@@ -30523,7 +30523,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/143.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 143,
   "source_label": "EM74HC_HCT14_Product_DS_V1.4.pdf",
   "specs": [
@@ -30704,7 +30704,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/143.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 143,
   "source_label": "EM74HC_HCT14_Product_DS_V1.4.pdf",
   "specs": [
@@ -30885,7 +30885,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/146.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 146,
   "source_label": "EM74HC164A_Product_DS_V1.1.pdf",
   "specs": [
@@ -31162,7 +31162,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/146.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 146,
   "source_label": "EM74HC164A_Product_DS_V1.1.pdf",
   "specs": [
@@ -31439,7 +31439,7 @@
   "voltage": "2.5 V to 6 V",
   "pin_image": "./pins/33.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 33,
   "source_label": "EM74HC164_Product_DS_V1.2.pdf",
   "specs": [
@@ -31728,7 +31728,7 @@
   "voltage": "2.5 V to 6 V",
   "pin_image": "./pins/33.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 33,
   "source_label": "EM74HC164_Product_DS_V1.2.pdf",
   "specs": [
@@ -32017,7 +32017,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/108.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 108,
   "source_label": "EM74HC165A_Product_DS_V1.1.pdf",
   "specs": [
@@ -32294,7 +32294,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/108.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 108,
   "source_label": "EM74HC165A_Product_DS_V1.1.pdf",
   "specs": [
@@ -32571,7 +32571,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/108.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 108,
   "source_label": "EM74HC165A_Product_DS_V1.1.pdf",
   "specs": [
@@ -32848,7 +32848,7 @@
   "voltage": "2.8 V to 6 V",
   "pin_image": "./pins/65.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 65,
   "source_label": "EM74HC_HCT166_Product_DS_V1.0.pdf",
   "specs": [
@@ -33125,7 +33125,7 @@
   "voltage": "2.8 V to 6 V",
   "pin_image": "./pins/65.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 65,
   "source_label": "EM74HC_HCT166_Product_DS_V1.0.pdf",
   "specs": [
@@ -33402,7 +33402,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/121.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 121,
   "source_label": "EM74HC_HCT174_Product_DS_V1.0.pdf",
   "specs": [
@@ -33697,7 +33697,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/121.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 121,
   "source_label": "EM74HC_HCT174_Product_DS_V1.0.pdf",
   "specs": [
@@ -33992,7 +33992,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/3.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 3,
   "source_label": "EM74HC_HCT20_Product_DS_V1.1.pdf",
   "specs": [
@@ -34227,7 +34227,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/3.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 3,
   "source_label": "EM74HC_HCT20_Product_DS_V1.1.pdf",
   "specs": [
@@ -34462,7 +34462,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/6.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 6,
   "source_label": "EM74HC_HCT21_Product_DS_V1.1.pdf",
   "specs": [
@@ -34697,7 +34697,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/6.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 6,
   "source_label": "EM74HC_HCT21_Product_DS_V1.1.pdf",
   "specs": [
@@ -34932,7 +34932,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/87.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 87,
   "source_label": "EM74HC_HCT240_Product_DS_V1.1.pdf",
   "specs": [
@@ -35197,7 +35197,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/87.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 87,
   "source_label": "EM74HC_HCT240_Product_DS_V1.1.pdf",
   "specs": [
@@ -35462,7 +35462,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/74.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 74,
   "source_label": "EM74HC_HCT244_Product_DS_V1.3.pdf",
   "specs": [
@@ -35727,7 +35727,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/74.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 74,
   "source_label": "EM74HC_HCT244_Product_DS_V1.3.pdf",
   "specs": [
@@ -35992,7 +35992,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/63.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 63,
   "source_label": "EM74HC_HCT245_Product_DS_V1.1.pdf",
   "specs": [
@@ -36257,7 +36257,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/63.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 63,
   "source_label": "EM74HC_HCT245_Product_DS_V1.1.pdf",
   "specs": [
@@ -36522,7 +36522,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/95.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 95,
   "source_label": "EM74HC_HCT259_Product_DS_V1.0.pdf",
   "specs": [
@@ -36787,7 +36787,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/95.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 95,
   "source_label": "EM74HC_HCT259_Product_DS_V1.0.pdf",
   "specs": [
@@ -37052,7 +37052,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/24.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 24,
   "source_label": "EM74HC_HCT266_Product_DS_V1.1.pdf",
   "specs": [
@@ -37263,7 +37263,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/24.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 24,
   "source_label": "EM74HC_HCT266_Product_DS_V1.1.pdf",
   "specs": [
@@ -37474,7 +37474,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/21.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 21,
   "source_label": "EM74HC_HCT27_Product_DS_V1.1.pdf",
   "specs": [
@@ -37709,7 +37709,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/21.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 21,
   "source_label": "EM74HC_HCT27_Product_DS_V1.1.pdf",
   "specs": [
@@ -37944,7 +37944,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/29.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 29,
   "source_label": "EM74HC_HCT32_Product_DS_V1.1.pdf",
   "specs": [
@@ -38179,7 +38179,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/29.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 29,
   "source_label": "EM74HC_HCT32_Product_DS_V1.1.pdf",
   "specs": [
@@ -38414,7 +38414,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/113.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 113,
   "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf",
   "specs": [
@@ -38673,7 +38673,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/113.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 113,
   "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf",
   "specs": [
@@ -38932,7 +38932,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/90.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 90,
   "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf",
   "specs": [
@@ -39191,7 +39191,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/90.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 90,
   "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf",
   "specs": [
@@ -39450,7 +39450,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/93.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 93,
   "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf",
   "specs": [
@@ -39709,7 +39709,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/93.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 93,
   "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf",
   "specs": [
@@ -39968,7 +39968,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/118.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 118,
   "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf",
   "specs": [
@@ -40227,7 +40227,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/118.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 118,
   "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf",
   "specs": [
@@ -40486,7 +40486,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/47.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 47,
   "source_label": "EM74HC_HCT4002_Product_DS_V1.1.pdf",
   "specs": [
@@ -40721,7 +40721,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/47.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 47,
   "source_label": "EM74HC_HCT4002_Product_DS_V1.1.pdf",
   "specs": [
@@ -40956,7 +40956,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/162.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 162,
   "source_label": "EM74HC_HCT4075_Product_DS_V1.1.pdf",
   "specs": [
@@ -41191,7 +41191,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/162.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 162,
   "source_label": "EM74HC_HCT4075_Product_DS_V1.1.pdf",
   "specs": [
@@ -41426,7 +41426,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/105.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 105,
   "source_label": "EM74HC_HCT4094_Draft_DS_V0.9.pdf",
   "specs": [
@@ -41715,7 +41715,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/105.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 105,
   "source_label": "EM74HC_HCT4094_Draft_DS_V0.9.pdf",
   "specs": [
@@ -42004,7 +42004,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/37.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 37,
   "source_label": "EM74HC_HCT540_Product_DS_V1.1.pdf",
   "specs": [
@@ -42269,7 +42269,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/37.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 37,
   "source_label": "EM74HC_HCT540_Product_DS_V1.1.pdf",
   "specs": [
@@ -42534,7 +42534,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/34.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 34,
   "source_label": "EM74HC_HCT541_Product_DS_V1.1.pdf",
   "specs": [
@@ -42799,7 +42799,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/34.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 34,
   "source_label": "EM74HC_HCT541_Product_DS_V1.1.pdf",
   "specs": [
@@ -43064,7 +43064,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/91.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 91,
   "source_label": "EM74HC_HCT573_Product_DS_V1.0.pdf",
   "specs": [
@@ -43383,7 +43383,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/91.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 91,
   "source_label": "EM74HC_HCT573_Product_DS_V1.0.pdf",
   "specs": [
@@ -43702,7 +43702,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/81.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 81,
   "source_label": "EM74HC_HCT574_Product_DS_V1.0.pdf",
   "specs": [
@@ -44003,7 +44003,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/81.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 81,
   "source_label": "EM74HC_HCT574_Product_DS_V1.0.pdf",
   "specs": [
@@ -44304,7 +44304,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/81.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 81,
   "source_label": "EM74HC_HCT574_Product_DS_V1.0.pdf",
   "specs": [
@@ -44605,7 +44605,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/123.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 123,
   "source_label": "EM74HC594_Draft_DS_V0.9.pdf",
   "specs": [
@@ -44870,7 +44870,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/123.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 123,
   "source_label": "EM74HC594_Draft_DS_V0.9.pdf",
   "specs": [
@@ -45135,7 +45135,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/123.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 123,
   "source_label": "EM74HC594_Draft_DS_V0.9.pdf",
   "specs": [
@@ -45400,7 +45400,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/49.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 49,
   "source_label": "EM74HC595A_Product_DS_V1.1.pdf",
   "specs": [
@@ -45671,7 +45671,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/49.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 49,
   "source_label": "EM74HC595A_Product_DS_V1.1.pdf",
   "specs": [
@@ -45942,7 +45942,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/49.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 49,
   "source_label": "EM74HC595A_Product_DS_V1.1.pdf",
   "specs": [
@@ -46213,7 +46213,7 @@
   "voltage": "2.8 V to 6 V",
   "pin_image": "./pins/127.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 127,
   "source_label": "EM74HC_HCT597_Product_DS_V1.1.pdf",
   "specs": [
@@ -46508,7 +46508,7 @@
   "voltage": "2.8 V to 6 V",
   "pin_image": "./pins/127.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 127,
   "source_label": "EM74HC_HCT597_Product_DS_V1.1.pdf",
   "specs": [
@@ -46803,7 +46803,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/35.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 35,
   "source_label": "EM74HC_HCT7001_Product_DS_V1.1.pdf",
   "specs": [
@@ -46984,7 +46984,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/35.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 35,
   "source_label": "EM74HC_HCT7001_Product_DS_V1.1.pdf",
   "specs": [
@@ -47165,7 +47165,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/39.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 39,
   "source_label": "EM74HC_HCT7002_Product_DS_V1.1.pdf",
   "specs": [
@@ -47346,7 +47346,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/39.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 39,
   "source_label": "EM74HC_HCT7002_Product_DS_V1.1.pdf",
   "specs": [
@@ -47527,7 +47527,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/99.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 99,
   "source_label": "EM74HC_HCT7032_Product_DS_V1.1.pdf",
   "specs": [
@@ -47708,7 +47708,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/99.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 99,
   "source_label": "EM74HC_HCT7032_Product_DS_V1.1.pdf",
   "specs": [
@@ -47889,7 +47889,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/88.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 88,
   "source_label": "EM74HC_HCT7266_Product_DS_V1.1.pdf",
   "specs": [
@@ -48124,7 +48124,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/88.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 88,
   "source_label": "EM74HC_HCT7266_Product_DS_V1.1.pdf",
   "specs": [
@@ -48359,7 +48359,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/23.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 23,
   "source_label": "EM74HC_HCT74_Product_DS_V1.2.pdf",
   "specs": [
@@ -48588,7 +48588,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/23.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 23,
   "source_label": "EM74HC_HCT74_Product_DS_V1.2.pdf",
   "specs": [
@@ -48817,7 +48817,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/19.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 19,
   "source_label": "EM74HC_HCT86_Product_DS_V1.1.pdf",
   "specs": [
@@ -49052,7 +49052,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/19.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 19,
   "source_label": "EM74HC_HCT86_Product_DS_V1.1.pdf",
   "specs": [
@@ -49287,7 +49287,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/139.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 139,
   "source_label": "EM74HCS00_Product_DS_V1.1.pdf",
   "specs": [
@@ -49450,7 +49450,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/139.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 139,
   "source_label": "EM74HCS00_Product_DS_V1.1.pdf",
   "specs": [
@@ -49613,7 +49613,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/125.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 125,
   "source_label": "EM74HCS02_Product_DS_V1.1.pdf",
   "specs": [
@@ -49776,7 +49776,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/125.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 125,
   "source_label": "EM74HCS02_Product_DS_V1.1.pdf",
   "specs": [
@@ -49939,7 +49939,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/115.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 115,
   "source_label": "EM74HCS03_Product_DS_V1.1.pdf",
   "specs": [
@@ -50078,7 +50078,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/115.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 115,
   "source_label": "EM74HCS03_Product_DS_V1.1.pdf",
   "specs": [
@@ -50217,7 +50217,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/150.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 150,
   "source_label": "EM74HCS04_Product_DS_V1.1.pdf",
   "specs": [
@@ -50380,7 +50380,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/150.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 150,
   "source_label": "EM74HCS04_Product_DS_V1.1.pdf",
   "specs": [
@@ -50543,7 +50543,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/165.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 165,
   "source_label": "EM74HCS05_Product_DS_V1.1.pdf",
   "specs": [
@@ -50682,7 +50682,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/165.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 165,
   "source_label": "EM74HCS05_Product_DS_V1.1.pdf",
   "specs": [
@@ -50821,7 +50821,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/67.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 67,
   "source_label": "EM74HCS08_Product_DS_V1.1.pdf",
   "specs": [
@@ -50984,7 +50984,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/67.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 67,
   "source_label": "EM74HCS08_Product_DS_V1.1.pdf",
   "specs": [
@@ -51147,7 +51147,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/71.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 71,
   "source_label": "EM74HCS09_Product_DS_V1.1.pdf",
   "specs": [
@@ -51286,7 +51286,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/71.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 71,
   "source_label": "EM74HCS09_Product_DS_V1.1.pdf",
   "specs": [
@@ -51425,7 +51425,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/69.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 69,
   "source_label": "EM74HCS10_Product_DS_V1.1.pdf",
   "specs": [
@@ -51588,7 +51588,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/69.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 69,
   "source_label": "EM74HCS10_Product_DS_V1.1.pdf",
   "specs": [
@@ -51751,7 +51751,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/61.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 61,
   "source_label": "EM74HCS11_Product_DS_V1.1.pdf",
   "specs": [
@@ -51914,7 +51914,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/61.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 61,
   "source_label": "EM74HCS11_Product_DS_V1.1.pdf",
   "specs": [
@@ -52077,7 +52077,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/68.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 68,
   "source_label": "EM74HCS125_Product_DS_V1.1.pdf",
   "specs": [
@@ -52282,7 +52282,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/68.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 68,
   "source_label": "EM74HCS125_Product_DS_V1.1.pdf",
   "specs": [
@@ -52487,7 +52487,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/83.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 83,
   "source_label": "EM74HCS126_Product_DS_V1.1.pdf",
   "specs": [
@@ -52692,7 +52692,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/83.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 83,
   "source_label": "EM74HCS126_Product_DS_V1.1.pdf",
   "specs": [
@@ -52897,7 +52897,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/52.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 52,
   "source_label": "EM74HCS20_Product_DS_V1.1.pdf",
   "specs": [
@@ -53060,7 +53060,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/52.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 52,
   "source_label": "EM74HCS20_Product_DS_V1.1.pdf",
   "specs": [
@@ -53223,7 +53223,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/56.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 56,
   "source_label": "EM74HCS21_Product_DS_V1.1.pdf",
   "specs": [
@@ -53386,7 +53386,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/56.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 56,
   "source_label": "EM74HCS21_Product_DS_V1.1.pdf",
   "specs": [
@@ -53549,7 +53549,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/58.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 58,
   "source_label": "EM74HCS266_Product_DS_V1.1.pdf",
   "specs": [
@@ -53688,7 +53688,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/58.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 58,
   "source_label": "EM74HCS266_Product_DS_V1.1.pdf",
   "specs": [
@@ -53827,7 +53827,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/31.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 31,
   "source_label": "EM74HCS27_Product_DS_V1.1.pdf",
   "specs": [
@@ -53990,7 +53990,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/31.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 31,
   "source_label": "EM74HCS27_Product_DS_V1.1.pdf",
   "specs": [
@@ -54153,7 +54153,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/20.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 20,
   "source_label": "EM74HCS32_Product_DS_V1.1.pdf",
   "specs": [
@@ -54316,7 +54316,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/20.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 20,
   "source_label": "EM74HCS32_Product_DS_V1.1.pdf",
   "specs": [
@@ -54479,7 +54479,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/153.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 153,
   "source_label": "EM74HCS365_Product_DS_V1.1.pdf",
   "specs": [
@@ -54684,7 +54684,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/153.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 153,
   "source_label": "EM74HCS365_Product_DS_V1.1.pdf",
   "specs": [
@@ -54889,7 +54889,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/142.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 142,
   "source_label": "EM74HCS367_Product_DS_V1.1.pdf",
   "specs": [
@@ -55094,7 +55094,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/142.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 142,
   "source_label": "EM74HCS367_Product_DS_V1.1.pdf",
   "specs": [
@@ -55299,7 +55299,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/42.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 42,
   "source_label": "EM74HCS4075_Product_DS_V1.1.pdf",
   "specs": [
@@ -55462,7 +55462,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/42.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 42,
   "source_label": "EM74HCS4075_Product_DS_V1.1.pdf",
   "specs": [
@@ -55625,7 +55625,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/1.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 1,
   "source_label": "EM74HCS7266_Product_DS_V1.1.pdf",
   "specs": [
@@ -55788,7 +55788,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/1.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 1,
   "source_label": "EM74HCS7266_Product_DS_V1.1.pdf",
   "specs": [
@@ -55951,7 +55951,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/45.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 45,
   "source_label": "EM74HCS86_Product_DS_V1.1.pdf",
   "specs": [
@@ -56114,7 +56114,7 @@
   "voltage": "2 V to 6 V",
   "pin_image": "./pins/45.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 45,
   "source_label": "EM74HCS86_Product_DS_V1.1.pdf",
   "specs": [
@@ -56277,7 +56277,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/98.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 98,
   "source_label": "EM74HC_HCT00_Product_DS_V1.1.pdf",
   "specs": [
@@ -56512,7 +56512,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/98.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 98,
   "source_label": "EM74HC_HCT00_Product_DS_V1.1.pdf",
   "specs": [
@@ -56747,7 +56747,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/97.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 97,
   "source_label": "EM74HC_HCT02_Product_DS_V1.2.pdf",
   "specs": [
@@ -56982,7 +56982,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/97.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 97,
   "source_label": "EM74HC_HCT02_Product_DS_V1.2.pdf",
   "specs": [
@@ -57217,7 +57217,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/100.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 100,
   "source_label": "EM74HC_HCT03_Product_DS_V1.1.pdf",
   "specs": [
@@ -57428,7 +57428,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/100.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 100,
   "source_label": "EM74HC_HCT03_Product_DS_V1.1.pdf",
   "specs": [
@@ -57639,7 +57639,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/60.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 60,
   "source_label": "EM74HC_HCT04_Product_DS_V1.1.pdf",
   "specs": [
@@ -57874,7 +57874,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/60.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 60,
   "source_label": "EM74HC_HCT04_Product_DS_V1.1.pdf",
   "specs": [
@@ -58109,7 +58109,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/70.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 70,
   "source_label": "EM74HC_HCT05_Product_DS_V1.1.pdf",
   "specs": [
@@ -58320,7 +58320,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/70.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 70,
   "source_label": "EM74HC_HCT05_Product_DS_V1.1.pdf",
   "specs": [
@@ -58531,7 +58531,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/79.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 79,
   "source_label": "EM74HC_HCT06_Product_DS_V1.1.pdf",
   "specs": [
@@ -58742,7 +58742,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/79.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 79,
   "source_label": "EM74HC_HCT06_Product_DS_V1.1.pdf",
   "specs": [
@@ -58953,7 +58953,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/85.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 85,
   "source_label": "EM74HC_HCT07_Product_DS_V1.1.pdf",
   "specs": [
@@ -59164,7 +59164,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/85.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 85,
   "source_label": "EM74HC_HCT07_Product_DS_V1.1.pdf",
   "specs": [
@@ -59375,7 +59375,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/159.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 159,
   "source_label": "EM74HC_HCT08_Product_DS_V1.1.pdf",
   "specs": [
@@ -59610,7 +59610,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/159.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 159,
   "source_label": "EM74HC_HCT08_Product_DS_V1.1.pdf",
   "specs": [
@@ -59845,7 +59845,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/156.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 156,
   "source_label": "EM74HC_HCT09_Product_DS_V1.0.pdf",
   "specs": [
@@ -60056,7 +60056,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/156.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 156,
   "source_label": "EM74HC_HCT09_Product_DS_V1.0.pdf",
   "specs": [
@@ -60267,7 +60267,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/164.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 164,
   "source_label": "EM74HC_HCT10_Product_DS_V1.1.pdf",
   "specs": [
@@ -60502,7 +60502,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/164.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 164,
   "source_label": "EM74HC_HCT10_Product_DS_V1.1.pdf",
   "specs": [
@@ -60737,7 +60737,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/151.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 151,
   "source_label": "EM74HC_HCT11_Product_DS_V1.1.pdf",
   "specs": [
@@ -60972,7 +60972,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/151.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 151,
   "source_label": "EM74HC_HCT11_Product_DS_V1.1.pdf",
   "specs": [
@@ -61207,7 +61207,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/124.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 124,
   "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf",
   "specs": [
@@ -61466,7 +61466,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/124.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 124,
   "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf",
   "specs": [
@@ -61725,7 +61725,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/132.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 132,
   "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf",
   "specs": [
@@ -61984,7 +61984,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/132.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 132,
   "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf",
   "specs": [
@@ -62243,7 +62243,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/110.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 110,
   "source_label": "EM74HC_HCT132_Product_DS_V1.2.pdf",
   "specs": [
@@ -62424,7 +62424,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/110.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 110,
   "source_label": "EM74HC_HCT132_Product_DS_V1.2.pdf",
   "specs": [
@@ -62605,7 +62605,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/147.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 147,
   "source_label": "EM74HC_HCT138_Product_DS_V1.0.pdf",
   "specs": [
@@ -62858,7 +62858,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/147.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 147,
   "source_label": "EM74HC_HCT138_Product_DS_V1.0.pdf",
   "specs": [
@@ -63111,7 +63111,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/143.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 143,
   "source_label": "EM74HC_HCT14_Product_DS_V1.4.pdf",
   "specs": [
@@ -63292,7 +63292,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/143.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 143,
   "source_label": "EM74HC_HCT14_Product_DS_V1.4.pdf",
   "specs": [
@@ -63473,7 +63473,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/129.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 129,
   "source_label": "EM74HCT164_Product_DS_V1.0.pdf",
   "specs": [
@@ -63630,7 +63630,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/129.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 129,
   "source_label": "EM74HCT164_Product_DS_V1.0.pdf",
   "specs": [
@@ -63787,7 +63787,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/65.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 65,
   "source_label": "EM74HC_HCT166_Product_DS_V1.0.pdf",
   "specs": [
@@ -64064,7 +64064,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/65.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 65,
   "source_label": "EM74HC_HCT166_Product_DS_V1.0.pdf",
   "specs": [
@@ -64341,7 +64341,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/121.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 121,
   "source_label": "EM74HC_HCT174_Product_DS_V1.0.pdf",
   "specs": [
@@ -64636,7 +64636,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/121.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 121,
   "source_label": "EM74HC_HCT174_Product_DS_V1.0.pdf",
   "specs": [
@@ -64931,7 +64931,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/3.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 3,
   "source_label": "EM74HC_HCT20_Product_DS_V1.1.pdf",
   "specs": [
@@ -65166,7 +65166,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/3.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 3,
   "source_label": "EM74HC_HCT20_Product_DS_V1.1.pdf",
   "specs": [
@@ -65401,7 +65401,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/6.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 6,
   "source_label": "EM74HC_HCT21_Product_DS_V1.1.pdf",
   "specs": [
@@ -65636,7 +65636,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/6.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 6,
   "source_label": "EM74HC_HCT21_Product_DS_V1.1.pdf",
   "specs": [
@@ -65871,7 +65871,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/87.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 87,
   "source_label": "EM74HC_HCT240_Product_DS_V1.1.pdf",
   "specs": [
@@ -66136,7 +66136,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/87.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 87,
   "source_label": "EM74HC_HCT240_Product_DS_V1.1.pdf",
   "specs": [
@@ -66401,7 +66401,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/74.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 74,
   "source_label": "EM74HC_HCT244_Product_DS_V1.3.pdf",
   "specs": [
@@ -66666,7 +66666,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/74.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 74,
   "source_label": "EM74HC_HCT244_Product_DS_V1.3.pdf",
   "specs": [
@@ -66931,7 +66931,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/63.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 63,
   "source_label": "EM74HC_HCT245_Product_DS_V1.1.pdf",
   "specs": [
@@ -67196,7 +67196,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/63.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 63,
   "source_label": "EM74HC_HCT245_Product_DS_V1.1.pdf",
   "specs": [
@@ -67461,7 +67461,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/95.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 95,
   "source_label": "EM74HC_HCT259_Product_DS_V1.0.pdf",
   "specs": [
@@ -67726,7 +67726,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/95.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 95,
   "source_label": "EM74HC_HCT259_Product_DS_V1.0.pdf",
   "specs": [
@@ -67991,7 +67991,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/24.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 24,
   "source_label": "EM74HC_HCT266_Product_DS_V1.1.pdf",
   "specs": [
@@ -68202,7 +68202,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/24.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 24,
   "source_label": "EM74HC_HCT266_Product_DS_V1.1.pdf",
   "specs": [
@@ -68413,7 +68413,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/21.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 21,
   "source_label": "EM74HC_HCT27_Product_DS_V1.1.pdf",
   "specs": [
@@ -68648,7 +68648,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/21.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 21,
   "source_label": "EM74HC_HCT27_Product_DS_V1.1.pdf",
   "specs": [
@@ -68883,7 +68883,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/29.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 29,
   "source_label": "EM74HC_HCT32_Product_DS_V1.1.pdf",
   "specs": [
@@ -69118,7 +69118,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/29.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 29,
   "source_label": "EM74HC_HCT32_Product_DS_V1.1.pdf",
   "specs": [
@@ -69353,7 +69353,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/113.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 113,
   "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf",
   "specs": [
@@ -69612,7 +69612,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/113.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 113,
   "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf",
   "specs": [
@@ -69871,7 +69871,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/90.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 90,
   "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf",
   "specs": [
@@ -70130,7 +70130,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/90.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 90,
   "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf",
   "specs": [
@@ -70389,7 +70389,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/93.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 93,
   "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf",
   "specs": [
@@ -70648,7 +70648,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/93.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 93,
   "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf",
   "specs": [
@@ -70907,7 +70907,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/118.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 118,
   "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf",
   "specs": [
@@ -71166,7 +71166,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/118.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 118,
   "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf",
   "specs": [
@@ -71425,7 +71425,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/47.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 47,
   "source_label": "EM74HC_HCT4002_Product_DS_V1.1.pdf",
   "specs": [
@@ -71660,7 +71660,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/47.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 47,
   "source_label": "EM74HC_HCT4002_Product_DS_V1.1.pdf",
   "specs": [
@@ -71895,7 +71895,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/162.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 162,
   "source_label": "EM74HC_HCT4075_Product_DS_V1.1.pdf",
   "specs": [
@@ -72130,7 +72130,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/162.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 162,
   "source_label": "EM74HC_HCT4075_Product_DS_V1.1.pdf",
   "specs": [
@@ -72365,7 +72365,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/105.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 105,
   "source_label": "EM74HC_HCT4094_Draft_DS_V0.9.pdf",
   "specs": [
@@ -72654,7 +72654,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/105.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 105,
   "source_label": "EM74HC_HCT4094_Draft_DS_V0.9.pdf",
   "specs": [
@@ -72943,7 +72943,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/37.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 37,
   "source_label": "EM74HC_HCT540_Product_DS_V1.1.pdf",
   "specs": [
@@ -73208,7 +73208,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/37.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 37,
   "source_label": "EM74HC_HCT540_Product_DS_V1.1.pdf",
   "specs": [
@@ -73473,7 +73473,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/34.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 34,
   "source_label": "EM74HC_HCT541_Product_DS_V1.1.pdf",
   "specs": [
@@ -73738,7 +73738,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/34.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 34,
   "source_label": "EM74HC_HCT541_Product_DS_V1.1.pdf",
   "specs": [
@@ -74003,7 +74003,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/91.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 91,
   "source_label": "EM74HC_HCT573_Product_DS_V1.0.pdf",
   "specs": [
@@ -74322,7 +74322,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/91.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 91,
   "source_label": "EM74HC_HCT573_Product_DS_V1.0.pdf",
   "specs": [
@@ -74641,7 +74641,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/81.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 81,
   "source_label": "EM74HC_HCT574_Product_DS_V1.0.pdf",
   "specs": [
@@ -74942,7 +74942,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/81.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 81,
   "source_label": "EM74HC_HCT574_Product_DS_V1.0.pdf",
   "specs": [
@@ -75243,7 +75243,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/81.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 81,
   "source_label": "EM74HC_HCT574_Product_DS_V1.0.pdf",
   "specs": [
@@ -75544,7 +75544,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/64.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 64,
   "source_label": "EM74HCT595_Product_DS_V1.1.pdf",
   "specs": [
@@ -75707,7 +75707,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/64.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 64,
   "source_label": "EM74HCT595_Product_DS_V1.1.pdf",
   "specs": [
@@ -75870,7 +75870,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/64.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 64,
   "source_label": "EM74HCT595_Product_DS_V1.1.pdf",
   "specs": [
@@ -76033,7 +76033,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/64.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 64,
   "source_label": "EM74HCT595_Product_DS_V1.1.pdf",
   "specs": [
@@ -76196,7 +76196,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/127.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 127,
   "source_label": "EM74HC_HCT597_Product_DS_V1.1.pdf",
   "specs": [
@@ -76491,7 +76491,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/127.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 127,
   "source_label": "EM74HC_HCT597_Product_DS_V1.1.pdf",
   "specs": [
@@ -76786,7 +76786,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/35.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 35,
   "source_label": "EM74HC_HCT7001_Product_DS_V1.1.pdf",
   "specs": [
@@ -76967,7 +76967,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/35.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 35,
   "source_label": "EM74HC_HCT7001_Product_DS_V1.1.pdf",
   "specs": [
@@ -77148,7 +77148,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/39.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 39,
   "source_label": "EM74HC_HCT7002_Product_DS_V1.1.pdf",
   "specs": [
@@ -77329,7 +77329,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/39.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 39,
   "source_label": "EM74HC_HCT7002_Product_DS_V1.1.pdf",
   "specs": [
@@ -77510,7 +77510,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/99.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 99,
   "source_label": "EM74HC_HCT7032_Product_DS_V1.1.pdf",
   "specs": [
@@ -77691,7 +77691,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/99.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 99,
   "source_label": "EM74HC_HCT7032_Product_DS_V1.1.pdf",
   "specs": [
@@ -77872,7 +77872,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/88.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 88,
   "source_label": "EM74HC_HCT7266_Product_DS_V1.1.pdf",
   "specs": [
@@ -78107,7 +78107,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/88.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 88,
   "source_label": "EM74HC_HCT7266_Product_DS_V1.1.pdf",
   "specs": [
@@ -78342,7 +78342,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/23.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 23,
   "source_label": "EM74HC_HCT74_Product_DS_V1.2.pdf",
   "specs": [
@@ -78571,7 +78571,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/23.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 23,
   "source_label": "EM74HC_HCT74_Product_DS_V1.2.pdf",
   "specs": [
@@ -78800,7 +78800,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/19.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 19,
   "source_label": "EM74HC_HCT86_Product_DS_V1.1.pdf",
   "specs": [
@@ -79035,7 +79035,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/19.png",
   "logic_type": "TTL",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 19,
   "source_label": "EM74HC_HCT86_Product_DS_V1.1.pdf",
   "specs": [
@@ -79270,7 +79270,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/11.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 11,
   "source_label": "EM74LV1T00_Product_DS_V1.0.pdf",
   "specs": [
@@ -79469,7 +79469,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/11.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 11,
   "source_label": "EM74LV1T00_Product_DS_V1.0.pdf",
   "specs": [
@@ -79668,7 +79668,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/11.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 11,
   "source_label": "EM74LV1T00_Product_DS_V1.0.pdf",
   "specs": [
@@ -79867,7 +79867,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/9.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 9,
   "source_label": "EM74LV1T02_Product_DS_V1.0.pdf",
   "specs": [
@@ -80090,7 +80090,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/9.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 9,
   "source_label": "EM74LV1T02_Product_DS_V1.0.pdf",
   "specs": [
@@ -80313,7 +80313,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/9.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 9,
   "source_label": "EM74LV1T02_Product_DS_V1.0.pdf",
   "specs": [
@@ -80536,7 +80536,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/26.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 26,
   "source_label": "EM74LV1T04_Product_DS_V1.0.pdf",
   "specs": [
@@ -80735,7 +80735,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/26.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 26,
   "source_label": "EM74LV1T04_Product_DS_V1.0.pdf",
   "specs": [
@@ -80934,7 +80934,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/26.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 26,
   "source_label": "EM74LV1T04_Product_DS_V1.0.pdf",
   "specs": [
@@ -81133,7 +81133,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/28.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 28,
   "source_label": "EM74LV1T08_Product_DS_V1.0.pdf",
   "specs": [
@@ -81332,7 +81332,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/28.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 28,
   "source_label": "EM74LV1T08_Product_DS_V1.0.pdf",
   "specs": [
@@ -81531,7 +81531,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/28.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 28,
   "source_label": "EM74LV1T08_Product_DS_V1.0.pdf",
   "specs": [
@@ -81730,7 +81730,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/126.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 126,
   "source_label": "EM74LV1T125_Product_DS_V1.0.pdf",
   "specs": [
@@ -82001,7 +82001,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/126.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 126,
   "source_label": "EM74LV1T125_Product_DS_V1.0.pdf",
   "specs": [
@@ -82272,7 +82272,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/126.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 126,
   "source_label": "EM74LV1T125_Product_DS_V1.0.pdf",
   "specs": [
@@ -82543,7 +82543,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/133.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 133,
   "source_label": "EM74LV1T126_Product_DS_V1.0.pdf",
   "specs": [
@@ -82814,7 +82814,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/133.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 133,
   "source_label": "EM74LV1T126_Product_DS_V1.0.pdf",
   "specs": [
@@ -83085,7 +83085,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/133.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 133,
   "source_label": "EM74LV1T126_Product_DS_V1.0.pdf",
   "specs": [
@@ -83356,7 +83356,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/158.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 158,
   "source_label": "EM74LV1T32_Product_DS_V1.0.pdf",
   "specs": [
@@ -83579,7 +83579,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/158.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 158,
   "source_label": "EM74LV1T32_Product_DS_V1.0.pdf",
   "specs": [
@@ -83802,7 +83802,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/158.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 158,
   "source_label": "EM74LV1T32_Product_DS_V1.0.pdf",
   "specs": [
@@ -84025,7 +84025,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/128.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 128,
   "source_label": "EM74LV1T34_Product_DS_V1.0.pdf",
   "specs": [
@@ -84224,7 +84224,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/128.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 128,
   "source_label": "EM74LV1T34_Product_DS_V1.0.pdf",
   "specs": [
@@ -84423,7 +84423,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/128.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 128,
   "source_label": "EM74LV1T34_Product_DS_V1.0.pdf",
   "specs": [
@@ -84622,7 +84622,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/82.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 82,
   "source_label": "EM74LV1T86_Product_DS_V1.0.pdf",
   "specs": [
@@ -84845,7 +84845,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/82.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 82,
   "source_label": "EM74LV1T86_Product_DS_V1.0.pdf",
   "specs": [
@@ -85068,7 +85068,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/82.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 82,
   "source_label": "EM74LV1T86_Product_DS_V1.0.pdf",
   "specs": [
@@ -85291,7 +85291,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/82.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 82,
   "source_label": "EM74LV1T86_Product_DS_V1.0.pdf",
   "specs": [
@@ -85514,7 +85514,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/78.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 78,
   "source_label": "EM74LV1T87_Product_DS_V1.0.pdf",
   "specs": [
@@ -85713,7 +85713,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/78.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 78,
   "source_label": "EM74LV1T87_Product_DS_V1.0.pdf",
   "specs": [
@@ -85912,7 +85912,7 @@
   "voltage": "1.8 V to 3.3 V",
   "pin_image": "./pins/78.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 78,
   "source_label": "EM74LV1T87_Product_DS_V1.0.pdf",
   "specs": [
@@ -86111,7 +86111,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/148.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 148,
   "source_label": "EM74LVC00A_Product_DS_V1.3.pdf",
   "specs": [
@@ -86298,7 +86298,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/148.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 148,
   "source_label": "EM74LVC00A_Product_DS_V1.3.pdf",
   "specs": [
@@ -86485,7 +86485,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/46.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 46,
   "source_label": "EM74LVC02A_Product_DS_V1.1.pdf",
   "specs": [
@@ -86672,7 +86672,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/46.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 46,
   "source_label": "EM74LVC02A_Product_DS_V1.1.pdf",
   "specs": [
@@ -86859,7 +86859,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/111.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 111,
   "source_label": "EM74LVC04A_Product_DS_V1.2.pdf",
   "specs": [
@@ -87046,7 +87046,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/111.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 111,
   "source_label": "EM74LVC04A_Product_DS_V1.2.pdf",
   "specs": [
@@ -87233,7 +87233,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/2.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 2,
   "source_label": "EM74LVC06A_Product_DS_V1.1.pdf",
   "specs": [
@@ -87420,7 +87420,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/2.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 2,
   "source_label": "EM74LVC06A_Product_DS_V1.1.pdf",
   "specs": [
@@ -87607,7 +87607,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/38.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 38,
   "source_label": "EM74LVC07A_Product_DS_V1.1.pdf",
   "specs": [
@@ -87794,7 +87794,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/38.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 38,
   "source_label": "EM74LVC07A_Product_DS_V1.1.pdf",
   "specs": [
@@ -87981,7 +87981,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/41.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 41,
   "source_label": "EM74LVC08A_Product_DS_V1.3.pdf",
   "specs": [
@@ -88168,7 +88168,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/41.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 41,
   "source_label": "EM74LVC08A_Product_DS_V1.3.pdf",
   "specs": [
@@ -88355,7 +88355,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/41.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 41,
   "source_label": "EM74LVC08A_Product_DS_V1.3.pdf",
   "specs": [
@@ -88542,7 +88542,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/48.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 48,
   "source_label": "EM74LVC10A_Product_DS_V1.1.pdf",
   "specs": [
@@ -88723,7 +88723,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/48.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 48,
   "source_label": "EM74LVC10A_Product_DS_V1.1.pdf",
   "specs": [
@@ -88904,7 +88904,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/157.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 157,
   "source_label": "EM74LVC11_Product_DS_V1.1.pdf",
   "specs": [
@@ -89085,7 +89085,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/157.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 157,
   "source_label": "EM74LVC11_Product_DS_V1.1.pdf",
   "specs": [
@@ -89266,7 +89266,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/12.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 12,
   "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
   "specs": [
@@ -89495,7 +89495,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/12.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 12,
   "source_label": "EM74LVC125A_Product_DS_V1.3.pdf",
   "specs": [
@@ -89724,7 +89724,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/167.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 167,
   "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
   "specs": [
@@ -89953,7 +89953,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/167.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 167,
   "source_label": "EM74LVC126A_Product_DS_V1.1.pdf",
   "specs": [
@@ -90182,7 +90182,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/22.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 22,
   "source_label": "EM74LVC132A_Product_DS_V1.1.pdf",
   "specs": [
@@ -90327,7 +90327,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/22.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 22,
   "source_label": "EM74LVC132A_Product_DS_V1.1.pdf",
   "specs": [
@@ -90472,7 +90472,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/17.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 17,
   "source_label": "EM74LVC14A_Product_DS_V1.2.pdf",
   "specs": [
@@ -90617,7 +90617,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/17.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 17,
   "source_label": "EM74LVC14A_Product_DS_V1.2.pdf",
   "specs": [
@@ -90762,7 +90762,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/144.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 144,
   "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf",
   "specs": [
@@ -90889,7 +90889,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/144.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 144,
   "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf",
   "specs": [
@@ -91016,7 +91016,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/144.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 144,
   "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf",
   "specs": [
@@ -91143,7 +91143,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/144.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 144,
   "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf",
   "specs": [
@@ -91270,7 +91270,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/144.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 144,
   "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf",
   "specs": [
@@ -91397,7 +91397,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/169.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 169,
   "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf",
   "specs": [
@@ -91524,7 +91524,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/169.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 169,
   "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf",
   "specs": [
@@ -91651,7 +91651,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/169.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 169,
   "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf",
   "specs": [
@@ -91778,7 +91778,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/169.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 169,
   "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf",
   "specs": [
@@ -91905,7 +91905,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/169.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 169,
   "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf",
   "specs": [
@@ -92032,7 +92032,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/120.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 120,
   "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf",
   "specs": [
@@ -92159,7 +92159,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/120.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 120,
   "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf",
   "specs": [
@@ -92286,7 +92286,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/120.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 120,
   "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf",
   "specs": [
@@ -92413,7 +92413,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/120.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 120,
   "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf",
   "specs": [
@@ -92540,7 +92540,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/120.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 120,
   "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf",
   "specs": [
@@ -92667,7 +92667,7 @@
   "voltage": "1.65 V to 2.7 V",
   "pin_image": "./pins/141.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 141,
   "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -92794,7 +92794,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/131.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 131,
   "source_label": "EM74LVC1G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -92921,7 +92921,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/131.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 131,
   "source_label": "EM74LVC1G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -93048,7 +93048,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/131.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 131,
   "source_label": "EM74LVC1G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -93175,7 +93175,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/131.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 131,
   "source_label": "EM74LVC1G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -93302,7 +93302,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/131.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 131,
   "source_label": "EM74LVC1G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -93429,7 +93429,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/136.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 136,
   "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf",
   "specs": [
@@ -93556,7 +93556,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/136.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 136,
   "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf",
   "specs": [
@@ -93683,7 +93683,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/136.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 136,
   "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf",
   "specs": [
@@ -93810,7 +93810,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/136.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 136,
   "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf",
   "specs": [
@@ -93937,7 +93937,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/136.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 136,
   "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf",
   "specs": [
@@ -94064,7 +94064,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/89.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 89,
   "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf",
   "specs": [
@@ -94191,7 +94191,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/89.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 89,
   "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf",
   "specs": [
@@ -94318,7 +94318,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/89.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 89,
   "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf",
   "specs": [
@@ -94445,7 +94445,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/89.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 89,
   "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf",
   "specs": [
@@ -94572,7 +94572,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/89.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 89,
   "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf",
   "specs": [
@@ -94699,7 +94699,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/107.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 107,
   "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf",
   "specs": [
@@ -94826,7 +94826,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/107.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 107,
   "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf",
   "specs": [
@@ -94953,7 +94953,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/107.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 107,
   "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf",
   "specs": [
@@ -95080,7 +95080,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/107.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 107,
   "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf",
   "specs": [
@@ -95207,7 +95207,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/107.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 107,
   "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf",
   "specs": [
@@ -95334,7 +95334,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/114.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 114,
   "source_label": "EM74LVC1G10_Product_DS_V1.1.pdf",
   "specs": [
@@ -95461,7 +95461,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/114.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 114,
   "source_label": "EM74LVC1G10_Product_DS_V1.1.pdf",
   "specs": [
@@ -95588,7 +95588,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/114.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 114,
   "source_label": "EM74LVC1G10_Product_DS_V1.1.pdf",
   "specs": [
@@ -95715,7 +95715,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/114.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 114,
   "source_label": "EM74LVC1G10_Product_DS_V1.1.pdf",
   "specs": [
@@ -95842,7 +95842,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/104.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 104,
   "source_label": "EM74LVC1G11_Product_DS_V1.1.pdf",
   "specs": [
@@ -95969,7 +95969,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/104.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 104,
   "source_label": "EM74LVC1G11_Product_DS_V1.1.pdf",
   "specs": [
@@ -96096,7 +96096,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/104.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 104,
   "source_label": "EM74LVC1G11_Product_DS_V1.1.pdf",
   "specs": [
@@ -96223,7 +96223,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/104.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 104,
   "source_label": "EM74LVC1G11_Product_DS_V1.1.pdf",
   "specs": [
@@ -96350,7 +96350,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/13.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 13,
   "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf",
   "specs": [
@@ -96435,7 +96435,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/13.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 13,
   "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf",
   "specs": [
@@ -96520,7 +96520,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/13.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 13,
   "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf",
   "specs": [
@@ -96605,7 +96605,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/13.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 13,
   "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf",
   "specs": [
@@ -96690,7 +96690,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/13.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 13,
   "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf",
   "specs": [
@@ -96775,7 +96775,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/5.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 5,
   "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf",
   "specs": [
@@ -96902,7 +96902,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/5.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 5,
   "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf",
   "specs": [
@@ -97029,7 +97029,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/5.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 5,
   "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf",
   "specs": [
@@ -97156,7 +97156,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/5.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 5,
   "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf",
   "specs": [
@@ -97283,7 +97283,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/5.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 5,
   "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf",
   "specs": [
@@ -97410,7 +97410,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/59.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 59,
   "source_label": "EM74LVC1G132_Product_DS_V1.1.pdf",
   "specs": [
@@ -97525,7 +97525,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/59.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 59,
   "source_label": "EM74LVC1G132_Product_DS_V1.1.pdf",
   "specs": [
@@ -97640,7 +97640,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/59.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 59,
   "source_label": "EM74LVC1G132_Product_DS_V1.1.pdf",
   "specs": [
@@ -97755,7 +97755,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/59.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 59,
   "source_label": "EM74LVC1G132_Product_DS_V1.1.pdf",
   "specs": [
@@ -97870,7 +97870,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/59.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 59,
   "source_label": "EM74LVC1G132_Product_DS_V1.1.pdf",
   "specs": [
@@ -97985,7 +97985,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/62.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 62,
   "source_label": "EM74LVC1G14_Product_DS_V1.2.pdf",
   "specs": [
@@ -98100,7 +98100,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/62.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 62,
   "source_label": "EM74LVC1G14_Product_DS_V1.2.pdf",
   "specs": [
@@ -98215,7 +98215,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/62.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 62,
   "source_label": "EM74LVC1G14_Product_DS_V1.2.pdf",
   "specs": [
@@ -98330,7 +98330,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/62.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 62,
   "source_label": "EM74LVC1G14_Product_DS_V1.2.pdf",
   "specs": [
@@ -98445,7 +98445,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/62.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 62,
   "source_label": "EM74LVC1G14_Product_DS_V1.2.pdf",
   "specs": [
@@ -98560,7 +98560,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/66.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 66,
   "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -98687,7 +98687,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/66.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 66,
   "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -98814,7 +98814,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/66.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 66,
   "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -98941,7 +98941,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/66.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 66,
   "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -99068,7 +99068,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/66.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 66,
   "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -99195,7 +99195,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/112.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 112,
   "source_label": "EM74LVC1G17_Product_DS_V1.4.pdf",
   "specs": [
@@ -99310,7 +99310,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/112.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 112,
   "source_label": "EM74LVC1G17_Product_DS_V1.4.pdf",
   "specs": [
@@ -99425,7 +99425,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/112.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 112,
   "source_label": "EM74LVC1G17_Product_DS_V1.4.pdf",
   "specs": [
@@ -99540,7 +99540,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/112.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 112,
   "source_label": "EM74LVC1G17_Product_DS_V1.4.pdf",
   "specs": [
@@ -99655,7 +99655,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/112.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 112,
   "source_label": "EM74LVC1G17_Product_DS_V1.4.pdf",
   "specs": [
@@ -99770,7 +99770,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/51.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 51,
   "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf",
   "specs": [
@@ -99897,7 +99897,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/51.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 51,
   "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf",
   "specs": [
@@ -100024,7 +100024,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/51.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 51,
   "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf",
   "specs": [
@@ -100151,7 +100151,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/51.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 51,
   "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf",
   "specs": [
@@ -100278,7 +100278,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/51.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 51,
   "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf",
   "specs": [
@@ -100405,7 +100405,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/54.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 54,
   "source_label": "EM74LVC1G27_Product_DS_V1.1.pdf",
   "specs": [
@@ -100532,7 +100532,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/54.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 54,
   "source_label": "EM74LVC1G27_Product_DS_V1.1.pdf",
   "specs": [
@@ -100659,7 +100659,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/54.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 54,
   "source_label": "EM74LVC1G27_Product_DS_V1.1.pdf",
   "specs": [
@@ -100786,7 +100786,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/54.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 54,
   "source_label": "EM74LVC1G27_Product_DS_V1.1.pdf",
   "specs": [
@@ -100913,7 +100913,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/4.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 4,
   "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf",
   "specs": [
@@ -101040,7 +101040,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/4.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 4,
   "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf",
   "specs": [
@@ -101167,7 +101167,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/4.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 4,
   "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf",
   "specs": [
@@ -101294,7 +101294,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/4.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 4,
   "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf",
   "specs": [
@@ -101421,7 +101421,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/4.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 4,
   "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf",
   "specs": [
@@ -101548,7 +101548,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/40.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 40,
   "source_label": "EM74LVC1G332_Product_DS_V1.1.pdf",
   "specs": [
@@ -101675,7 +101675,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/40.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 40,
   "source_label": "EM74LVC1G332_Product_DS_V1.1.pdf",
   "specs": [
@@ -101802,7 +101802,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/40.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 40,
   "source_label": "EM74LVC1G332_Product_DS_V1.1.pdf",
   "specs": [
@@ -101929,7 +101929,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/40.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 40,
   "source_label": "EM74LVC1G332_Product_DS_V1.1.pdf",
   "specs": [
@@ -102056,7 +102056,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/27.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 27,
   "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf",
   "specs": [
@@ -102183,7 +102183,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/27.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 27,
   "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf",
   "specs": [
@@ -102310,7 +102310,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/27.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 27,
   "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf",
   "specs": [
@@ -102437,7 +102437,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/27.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 27,
   "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf",
   "specs": [
@@ -102564,7 +102564,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/27.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 27,
   "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf",
   "specs": [
@@ -102691,7 +102691,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/36.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 36,
   "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf",
   "specs": [
@@ -102818,7 +102818,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/36.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 36,
   "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf",
   "specs": [
@@ -102945,7 +102945,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/36.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 36,
   "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf",
   "specs": [
@@ -103072,7 +103072,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/36.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 36,
   "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf",
   "specs": [
@@ -103199,7 +103199,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/36.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 36,
   "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf",
   "specs": [
@@ -103326,7 +103326,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/130.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 130,
   "source_label": "EM74LVC1G57_Product_DS_V1.1.pdf",
   "specs": [
@@ -103465,7 +103465,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/130.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 130,
   "source_label": "EM74LVC1G57_Product_DS_V1.1.pdf",
   "specs": [
@@ -103604,7 +103604,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/106.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 106,
   "source_label": "EM74LVC1G58_Product_DS_V1.1.pdf",
   "specs": [
@@ -103719,7 +103719,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/106.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 106,
   "source_label": "EM74LVC1G58_Product_DS_V1.1.pdf",
   "specs": [
@@ -103834,7 +103834,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/50.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 50,
   "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf",
   "specs": [
@@ -103961,7 +103961,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/50.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 50,
   "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf",
   "specs": [
@@ -104088,7 +104088,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/50.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 50,
   "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf",
   "specs": [
@@ -104215,7 +104215,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/50.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 50,
   "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf",
   "specs": [
@@ -104342,7 +104342,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/50.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 50,
   "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf",
   "specs": [
@@ -104469,7 +104469,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/25.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 25,
   "source_label": "EM74LVC1G97_Product_DS_V1.1.pdf",
   "specs": [
@@ -104608,7 +104608,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/25.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 25,
   "source_label": "EM74LVC1G97_Product_DS_V1.1.pdf",
   "specs": [
@@ -104747,7 +104747,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/75.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 75,
   "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf",
   "specs": [
@@ -104862,7 +104862,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/75.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 75,
   "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf",
   "specs": [
@@ -104977,7 +104977,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/75.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 75,
   "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf",
   "specs": [
@@ -105092,7 +105092,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/75.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 75,
   "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf",
   "specs": [
@@ -105207,7 +105207,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/75.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 75,
   "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf",
   "specs": [
@@ -105322,7 +105322,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/55.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 55,
   "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
   "specs": [
@@ -105557,7 +105557,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/55.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 55,
   "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
   "specs": [
@@ -105792,7 +105792,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/55.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 55,
   "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
   "specs": [
@@ -106027,7 +106027,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/18.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +25 °C",
   "source_document_id": 18,
   "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
   "specs": [
@@ -106250,7 +106250,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/18.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +25 °C",
   "source_document_id": 18,
   "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
   "specs": [
@@ -106473,7 +106473,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/154.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 154,
   "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf",
   "specs": [
@@ -106600,7 +106600,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/154.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 154,
   "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf",
   "specs": [
@@ -106727,7 +106727,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/154.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 154,
   "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf",
   "specs": [
@@ -106854,7 +106854,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/154.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 154,
   "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf",
   "specs": [
@@ -106981,7 +106981,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/154.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 154,
   "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf",
   "specs": [
@@ -107108,7 +107108,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/141.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 141,
   "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -107235,7 +107235,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/141.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 141,
   "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -107362,7 +107362,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/141.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 141,
   "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -107489,7 +107489,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/141.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 141,
   "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf",
   "specs": [
@@ -107616,7 +107616,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/149.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 149,
   "source_label": "EM74LVC2G07_Product_DS_V1.1.pdf",
   "specs": [
@@ -107743,7 +107743,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/149.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 149,
   "source_label": "EM74LVC2G07_Product_DS_V1.1.pdf",
   "specs": [
@@ -107870,7 +107870,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/149.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 149,
   "source_label": "EM74LVC2G07_Product_DS_V1.1.pdf",
   "specs": [
@@ -107997,7 +107997,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/149.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 149,
   "source_label": "EM74LVC2G07_Product_DS_V1.1.pdf",
   "specs": [
@@ -108124,7 +108124,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/103.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 103,
   "source_label": "EM74LVC2G14_Product_DS_V1.2.pdf",
   "specs": [
@@ -108239,7 +108239,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/103.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 103,
   "source_label": "EM74LVC2G14_Product_DS_V1.2.pdf",
   "specs": [
@@ -108354,7 +108354,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/103.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 103,
   "source_label": "EM74LVC2G14_Product_DS_V1.2.pdf",
   "specs": [
@@ -108469,7 +108469,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/103.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 103,
   "source_label": "EM74LVC2G14_Product_DS_V1.2.pdf",
   "specs": [
@@ -108584,7 +108584,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/102.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 102,
   "source_label": "EM74LVC2G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -108711,7 +108711,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/102.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 102,
   "source_label": "EM74LVC2G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -108838,7 +108838,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/102.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 102,
   "source_label": "EM74LVC2G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -108965,7 +108965,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/102.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 102,
   "source_label": "EM74LVC2G16_Product_DS_V1.1.pdf",
   "specs": [
@@ -109092,7 +109092,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/92.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 92,
   "source_label": "EM74LVC2G17_Product_DS_V1.2.pdf",
   "specs": [
@@ -109207,7 +109207,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/92.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 92,
   "source_label": "EM74LVC2G17_Product_DS_V1.2.pdf",
   "specs": [
@@ -109322,7 +109322,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/92.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 92,
   "source_label": "EM74LVC2G17_Product_DS_V1.2.pdf",
   "specs": [
@@ -109437,7 +109437,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/92.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 92,
   "source_label": "EM74LVC2G17_Product_DS_V1.2.pdf",
   "specs": [
@@ -109552,7 +109552,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/14.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 14,
   "source_label": "EM74LVC2G34_Product_DS_V1.2.pdf",
   "specs": [
@@ -109679,7 +109679,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/14.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 14,
   "source_label": "EM74LVC2G34_Product_DS_V1.2.pdf",
   "specs": [
@@ -109806,7 +109806,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/14.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 14,
   "source_label": "EM74LVC2G34_Product_DS_V1.2.pdf",
   "specs": [
@@ -109933,7 +109933,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/14.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 14,
   "source_label": "EM74LVC2G34_Product_DS_V1.2.pdf",
   "specs": [
@@ -110060,7 +110060,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/140.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 140,
   "source_label": "EM74LVC2GU04_Product_DS_V1.1.pdf",
   "specs": [
@@ -110175,7 +110175,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/140.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 140,
   "source_label": "EM74LVC2GU04_Product_DS_V1.1.pdf",
   "specs": [
@@ -110290,7 +110290,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/140.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 140,
   "source_label": "EM74LVC2GU04_Product_DS_V1.1.pdf",
   "specs": [
@@ -110405,7 +110405,7 @@
   "voltage": "1.65 V to 5.5 V",
   "pin_image": "./pins/140.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 140,
   "source_label": "EM74LVC2GU04_Product_DS_V1.1.pdf",
   "specs": [
@@ -110520,7 +110520,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/166.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 166,
   "source_label": "EM74LVC32A_Product_DS_V1.3.pdf",
   "specs": [
@@ -110707,7 +110707,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/166.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 166,
   "source_label": "EM74LVC32A_Product_DS_V1.3.pdf",
   "specs": [
@@ -110894,7 +110894,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/155.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 155,
   "source_label": "EM74LVC4245_Product_DS_V1.3.pdf",
   "specs": [
@@ -111123,7 +111123,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/15.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 15,
   "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
   "specs": [
@@ -111262,7 +111262,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/15.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 15,
   "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf",
   "specs": [
@@ -111401,7 +111401,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/155.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 155,
   "source_label": "EM74LVC4245_Product_DS_V1.3.pdf",
   "specs": [
@@ -111630,7 +111630,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/44.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 44,
   "source_label": "EM74LVC540A_Product_DS_V1.0.pdf",
   "specs": [
@@ -111859,7 +111859,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/44.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 44,
   "source_label": "EM74LVC540A_Product_DS_V1.0.pdf",
   "specs": [
@@ -112088,7 +112088,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/8.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 8,
   "source_label": "EM74LVC541A_Product_DS_V1.0.pdf",
   "specs": [
@@ -112317,7 +112317,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/8.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 8,
   "source_label": "EM74LVC541A_Product_DS_V1.0.pdf",
   "specs": [
@@ -112546,7 +112546,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/30.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +25 °C",
   "source_document_id": 30,
   "source_label": "EM74LVC74A_Product_DS_V1.1.pdf",
   "specs": [
@@ -112781,7 +112781,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/30.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +25 °C",
   "source_document_id": 30,
   "source_label": "EM74LVC74A_Product_DS_V1.1.pdf",
   "specs": [
@@ -113016,7 +113016,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/10.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 10,
   "source_label": "EM74LVC86A_Product_DS_V1.1.pdf",
   "specs": [
@@ -113203,7 +113203,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/10.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 10,
   "source_label": "EM74LVC86A_Product_DS_V1.1.pdf",
   "specs": [
@@ -113390,7 +113390,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/101.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 101,
   "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
   "specs": [
@@ -113529,7 +113529,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/55.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 55,
   "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
   "specs": [
@@ -113764,7 +113764,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/55.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 55,
   "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
   "specs": [
@@ -113999,7 +113999,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/55.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 55,
   "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf",
   "specs": [
@@ -114234,7 +114234,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/18.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +25 °C",
   "source_document_id": 18,
   "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
   "specs": [
@@ -114457,7 +114457,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/18.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +25 °C",
   "source_document_id": 18,
   "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
   "specs": [
@@ -114680,7 +114680,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/101.png",
   "logic_type": "CMOS",
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 101,
   "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf",
   "specs": [
@@ -114819,7 +114819,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/185.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 185,
   "source_label": "EMS23157_Product_DS_V1.3.pdf",
   "specs": [
@@ -115006,7 +115006,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/194.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 194,
   "source_label": "EMS2750_Product_DS_V1.1.pdf",
   "specs": [
@@ -115201,7 +115201,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/173.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 173,
   "source_label": "EMS3157_Product_DS_V1.8.pdf",
   "specs": [
@@ -115394,7 +115394,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/173.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 173,
   "source_label": "EMS3157_Product_DS_V1.8.pdf",
   "specs": [
@@ -115587,7 +115587,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/173.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 173,
   "source_label": "EMS3157_Product_DS_V1.8.pdf",
   "specs": [
@@ -115780,7 +115780,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/173.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 173,
   "source_label": "EMS3157_Product_DS_V1.8.pdf",
   "specs": [
@@ -115973,7 +115973,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/173.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 173,
   "source_label": "EMS3157_Product_DS_V1.8.pdf",
   "specs": [
@@ -116168,7 +116168,7 @@
   "voltage": "17 V",
   "pin_image": "./pins/179.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 179,
   "source_label": "EMS3218_Draft_DS_V0.1.pdf",
   "specs": [
@@ -116407,7 +116407,7 @@
   "voltage": "2.5 V to 4.5 V",
   "pin_image": "./pins/179.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 179,
   "source_label": "EMS3218_Draft_DS_V0.1.pdf",
   "specs": [
@@ -116645,7 +116645,7 @@
   "voltage": "1.5 V to 5 V",
   "pin_image": "./pins/201.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 201,
   "source_label": "EMS3412_Draft_DS_V0.1.pdf",
   "specs": [
@@ -116713,7 +116713,7 @@
   "voltage": "4.2 V to 5.5 V",
   "pin_image": "./pins/195.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 195,
   "source_label": "EMS3515_Product_DS_V1.2.pdf",
   "specs": [
@@ -116982,7 +116982,7 @@
   "voltage": "3 V to 5 V",
   "pin_image": "./pins/187.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 187,
   "source_label": "EMS3518_Product_DS_V1.0.pdf",
   "specs": [
@@ -117080,7 +117080,7 @@
   "voltage": "2.5 V to 5 V",
   "pin_image": "./pins/186.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 186,
   "source_label": "EMS3550_Product_DS_V1.0.pdf",
   "specs": [
@@ -117296,7 +117296,7 @@
   "voltage": "2.5 V to 5 V",
   "pin_image": "./pins/186.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 186,
   "source_label": "EMS3550_Product_DS_V1.0.pdf",
   "specs": [
@@ -117511,7 +117511,7 @@
   "voltage": "3 V to 4.5 V",
   "pin_image": "./pins/174.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 174,
   "source_label": "EMS3580_Product_DS_V1.0.pdf",
   "specs": [
@@ -117680,7 +117680,7 @@
   "voltage": "3 V to 4.5 V",
   "pin_image": "./pins/174.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 174,
   "source_label": "EMS3580_Product_DS_V1.0.pdf",
   "specs": [
@@ -117848,7 +117848,7 @@
   "voltage": "3.4 V to 5.5 V",
   "pin_image": "./pins/170.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 170,
   "source_label": "EMS3900_Product_DS_V1.8.pdf",
   "specs": [
@@ -117969,7 +117969,7 @@
   "voltage": "3.4 V to 5.5 V",
   "pin_image": "./pins/170.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 170,
   "source_label": "EMS3900_Product_DS_V1.8.pdf",
   "specs": [
@@ -118092,7 +118092,7 @@
   "voltage": "3.4 V to 5.5 V",
   "pin_image": "./pins/193.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 193,
   "source_label": "EMS3902_Product_DS_V1.1.pdf",
   "specs": [
@@ -118213,7 +118213,7 @@
   "voltage": "3.4 V to 5.5 V",
   "pin_image": "./pins/193.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 193,
   "source_label": "EMS3902_Product_DS_V1.1.pdf",
   "specs": [
@@ -118336,7 +118336,7 @@
   "voltage": "3.4 V to 5.5 V",
   "pin_image": "./pins/193.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 193,
   "source_label": "EMS3902_Product_DS_V1.1.pdf",
   "specs": [
@@ -118459,7 +118459,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/199.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 199,
   "source_label": "EMS3905_Product_DS_V1.3.pdf",
   "specs": [
@@ -118582,7 +118582,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/199.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 199,
   "source_label": "EMS3905_Product_DS_V1.3.pdf",
   "specs": [
@@ -118705,7 +118705,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/199.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 199,
   "source_label": "EMS3905_Product_DS_V1.3.pdf",
   "specs": [
@@ -118828,7 +118828,7 @@
   "voltage": "2.5 V to 4.5 V",
   "pin_image": "./pins/183.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 183,
   "source_label": "EMS4000_Product_DS_V1.7.pdf",
   "specs": [
@@ -119009,7 +119009,7 @@
   "voltage": "2.5 V to 4.5 V",
   "pin_image": "./pins/183.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 183,
   "source_label": "EMS4000_Product_DS_V1.7.pdf",
   "specs": [
@@ -119197,7 +119197,7 @@
   "voltage": "2.5 V to 4.5 V",
   "pin_image": "./pins/183.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 183,
   "source_label": "EMS4000_Product_DS_V1.7.pdf",
   "specs": [
@@ -119385,7 +119385,7 @@
   "voltage": "1.5 V to 5 V",
   "pin_image": "./pins/197.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 197,
   "source_label": "EMS4100_Product_DS_V1.4.pdf",
   "specs": [
@@ -119563,7 +119563,7 @@
   "voltage": "2.5 V to 4.5 V",
   "pin_image": "./pins/183.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 183,
   "source_label": "EMS4000_Product_DS_V1.7.pdf",
   "specs": [
@@ -119751,7 +119751,7 @@
   "voltage": "2.5 V to 4.5 V",
   "pin_image": "./pins/177.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 177,
   "source_label": "EMS4002_Product_DS_V1.0.pdf",
   "specs": [
@@ -119927,7 +119927,7 @@
   "voltage": "2.5 V to 4.5 V",
   "pin_image": "./pins/177.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 177,
   "source_label": "EMS4002_Product_DS_V1.0.pdf",
   "specs": [
@@ -120110,7 +120110,7 @@
   "voltage": "2.5 V to 4.5 V",
   "pin_image": "./pins/177.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 177,
   "source_label": "EMS4002_Product_DS_V1.0.pdf",
   "specs": [
@@ -120293,7 +120293,7 @@
   "voltage": "2.5 V to 4.5 V",
   "pin_image": "./pins/177.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 177,
   "source_label": "EMS4002_Product_DS_V1.0.pdf",
   "specs": [
@@ -120476,7 +120476,7 @@
   "voltage": "2.5 V to 4.5 V",
   "pin_image": "./pins/177.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 177,
   "source_label": "EMS4002_Product_DS_V1.0.pdf",
   "specs": [
@@ -120659,7 +120659,7 @@
   "voltage": "1.5 V to 5 V",
   "pin_image": "./pins/197.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 197,
   "source_label": "EMS4100_Product_DS_V1.4.pdf",
   "specs": [
@@ -120839,7 +120839,7 @@
   "voltage": "1.5 V to 5 V",
   "pin_image": "./pins/197.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 197,
   "source_label": "EMS4100_Product_DS_V1.4.pdf",
   "specs": [
@@ -121019,7 +121019,7 @@
   "voltage": "1.5 V to 5 V",
   "pin_image": "./pins/172.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 172,
   "source_label": "EMS4310_Draft_DS_V0.1.pdf",
   "specs": [
@@ -121087,7 +121087,7 @@
   "voltage": "2.5 V to 5.5 V",
   "pin_image": "./pins/178.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 178,
   "source_label": "EMS4320_Product_DS_V1.0.pdf",
   "specs": [
@@ -121184,7 +121184,7 @@
   "voltage": "2.5 V to 5.5 V",
   "pin_image": "./pins/176.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 176,
   "source_label": "EMS4321_Product_DS_V1.0.pdf",
   "specs": [
@@ -121281,7 +121281,7 @@
   "voltage": "1.5 V to 5 V",
   "pin_image": "./pins/190.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 190,
   "source_label": "EMS4422_Product_DS_V1.1.pdf",
   "specs": [
@@ -121364,7 +121364,7 @@
   "voltage": "1.5 V to 5 V",
   "pin_image": "./pins/190.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 190,
   "source_label": "EMS4422_Product_DS_V1.1.pdf",
   "specs": [
@@ -121449,7 +121449,7 @@
   "voltage": "4.4 V to 5 V",
   "pin_image": "./pins/182.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 182,
   "source_label": "EMS4485_Draft_DS_V0.9.pdf",
   "specs": [
@@ -121518,7 +121518,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/180.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 180,
   "source_label": "EMS4567_Product_DS_V1.0.pdf",
   "specs": [
@@ -121680,7 +121680,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/184.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 184,
   "source_label": "EMS4735_Product_DS_V1.2.pdf",
   "specs": [
@@ -121803,7 +121803,7 @@
   "voltage": "2.6 V to 5 V",
   "pin_image": "./pins/171.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 171,
   "source_label": "EMS4798_Product_DS_V1.0.pdf",
   "specs": [
@@ -121888,7 +121888,7 @@
   "voltage": "2.6 V to 5 V",
   "pin_image": "./pins/171.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 171,
   "source_label": "EMS4798_Product_DS_V1.0.pdf",
   "specs": [
@@ -121980,7 +121980,7 @@
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/191.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 191,
   "source_label": "EMS4899_Product_DS_V1.4.pdf",
   "specs": [
@@ -122101,7 +122101,7 @@
   "voltage": "2.4 V to 3.6 V",
   "pin_image": "./pins/189.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 189,
   "source_label": "EMS7227_Draft_DS_V0.1.pdf",
   "specs": [
@@ -122305,7 +122305,7 @@
   "voltage": "2.4 V to 3.6 V",
   "pin_image": "./pins/189.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 189,
   "source_label": "EMS7227_Draft_DS_V0.1.pdf",
   "specs": [
@@ -122509,7 +122509,7 @@
   "voltage": "1.3 V to 5.5 V",
   "pin_image": "./pins/202.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 202,
   "source_label": "EXS0102_Product_DS_V1.0.pdf",
   "specs": [
@@ -122591,7 +122591,7 @@
   "voltage": "1.3 V to 5.5 V",
   "pin_image": "./pins/202.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 202,
   "source_label": "EXS0102_Product_DS_V1.0.pdf",
   "specs": [
@@ -122673,7 +122673,7 @@
   "voltage": "1.3 V to 5.5 V",
   "pin_image": "./pins/73.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 73,
   "source_label": "EXS0104_Product_DS_V1.1.pdf",
   "specs": [
@@ -122755,7 +122755,7 @@
   "voltage": "1.3 V to 5.5 V",
   "pin_image": "./pins/73.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 73,
   "source_label": "EXS0104_Product_DS_V1.1.pdf",
   "specs": [
@@ -122837,7 +122837,7 @@
   "voltage": "1.3 V to 5.5 V",
   "pin_image": "./pins/73.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 73,
   "source_label": "EXS0104_Product_DS_V1.1.pdf",
   "specs": [
@@ -122919,7 +122919,7 @@
   "voltage": "1.3 V to 5.5 V",
   "pin_image": "./pins/73.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 73,
   "source_label": "EXS0104_Product_DS_V1.1.pdf",
   "specs": [
@@ -123001,7 +123001,7 @@
   "voltage": "1.3 V to 5.5 V",
   "pin_image": "./pins/203.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 203,
   "source_label": "EXS0106_Product_DS_V1.0.pdf",
   "specs": [
@@ -123083,7 +123083,7 @@
   "voltage": "1.3 V to 5.5 V",
   "pin_image": "./pins/204.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 204,
   "source_label": "EXS0108_Product_DS_V1.0.pdf",
   "specs": [
@@ -123165,7 +123165,7 @@
   "voltage": "1.3 V to 5.5 V",
   "pin_image": "./pins/204.png",
   "logic_type": null,
-  "temp_range": null,
+  "temp_range": "-40 °C to +85 °C",
   "source_document_id": 204,
   "source_label": "EXS0108_Product_DS_V1.0.pdf",
   "specs": [
