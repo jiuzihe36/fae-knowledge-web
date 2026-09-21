@@ -85,14 +85,12 @@
     const fSeries = el.fSeries.value;
     const fPackage = el.fPackage.value;
     const fLogic = el.fLogic.value;
-    const fApp = el.fApp.value;
 
     filtered = products.filter(function (item) {
       if (fFunction && item.function !== fFunction) return false;
       if (fSeries && item.series !== fSeries) return false;
       if (fPackage && item.package !== fPackage) return false;
       if (fLogic && item.logic_type !== fLogic) return false;
-      if (fApp && !(item.applications_domains || []).indexOf(fApp) !== -1) return false;
       if (q && item.haystack.indexOf(q) === -1) return false;
       return true;
     });
@@ -257,9 +255,6 @@
         fillSelect(el.fSeries, products.map(function (p) { return p.series; }));
         fillSelect(el.fPackage, products.map(function (p) { return p.package; }));
         fillSelect(el.fLogic, products.map(function (p) { return p.logic_type; }));
-        fillSelect(el.fApp, products.reduce(function (acc, p) {
-          return acc.concat(p.applications_domains || []);
-        }, []));
 
         const specCount = products.reduce(function (sum, p) {
           return sum + (Array.isArray(p.specs) ? p.specs.length : 0);
