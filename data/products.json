@@ -483,7 +483,7 @@
   "id": 9,
   "model": "EM74HC368",
   "family": "逻辑芯片",
-  "series": "74",
+  "series": "74HC",
   "function": "缓冲器",
   "description": "Hex buffer/line driver; 3-state; inverting",
   "package": "SOP-14L",
