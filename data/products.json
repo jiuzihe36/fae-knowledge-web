@@ -5,14 +5,14 @@
   "family": "逻辑芯片",
   "series": "EL",
   "function": "模拟开关",
-  "description": "Octal bus transceiver; 3-state",
+  "description": "Low Voltage and High Speed SPDT Analog Switch with True Isolation",
   "package": "SOT23",
   "package_size": "2.92 mm × 1.6 mm; 1.25 mm height",
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/196.png",
   "logic_type": "不适用(模拟开关/电平转换)",
   "temp_range": "-40 °C to +85 °C",
-  "source_document_id": 196,
+  "source_document_id": 1,
   "source_label": "EL3157_Product_DS_V1.1.pdf",
   "specs": [
    {
@@ -196,14 +196,14 @@
   "family": "逻辑芯片",
   "series": "EL",
   "function": "模拟开关",
-  "description": "Octal bus transceiver; 3-state",
+  "description": "Low Voltage and High Speed SPDT Analog Switch with True Isolation",
   "package": "SOT363",
   "package_size": "2.1 mm × 1.25 mm; 1.1 mm height",
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/196.png",
   "logic_type": "不适用(模拟开关/电平转换)",
   "temp_range": "-40 °C to +85 °C",
-  "source_document_id": 196,
+  "source_document_id": 1,
   "source_label": "EL3157_Product_DS_V1.1.pdf",
   "specs": [
    {
