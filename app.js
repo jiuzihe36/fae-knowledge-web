@@ -11,6 +11,7 @@
     fSeries: document.getElementById("fSeries"),
     fPackage: document.getElementById("fPackage"),
     fLogic: document.getElementById("fLogic"),
+    fApp: document.getElementById("fApp"),
     clearBtn: document.getElementById("clearBtn"),
     resultCount: document.getElementById("resultCount"),
     tableBody: document.getElementById("tableBody"),
@@ -85,12 +86,14 @@
     const fSeries = el.fSeries.value;
     const fPackage = el.fPackage.value;
     const fLogic = el.fLogic.value;
+    const fApp = el.fApp.value;
 
     filtered = products.filter(function (item) {
       if (fFunction && item.function !== fFunction) return false;
       if (fSeries && item.series !== fSeries) return false;
       if (fPackage && item.package !== fPackage) return false;
       if (fLogic && item.logic_type !== fLogic) return false;
+      if (fApp && (item.applications_domains || []).indexOf(fApp) === -1) return false;
       if (q && item.haystack.indexOf(q) === -1) return false;
       return true;
     });
@@ -139,13 +142,15 @@
 
     el.detailModel.textContent = item.model;
     el.detailDesc.textContent = text(item.description);
+    const dsUrl = item.source_label ? new URL("./datasheets/" + item.source_label, document.baseURI).href : "";
     el.detailMeta.innerHTML = [
       metaItem("功能", item.function),
       metaItem("系列", item.series),
       metaItem("封装", item.package),
       metaItem("逻辑类型", item.logic_type),
       metaItem("工作电压", item.voltage),
-      metaItem("封装尺寸", item.package_size)
+      metaItem("封装尺寸", item.package_size),
+      dsUrl ? '<div class="meta-item"><div class="label">规格书</div><div class="value"><a href="' + esc(dsUrl) + '" target="_blank" rel="noopener">📄 下载 PDF</a></div></div>' : ""
     ].join("");
     const pinWrap = document.getElementById("pinWrap");
     const pinImg = document.getElementById("pinImg");
@@ -212,12 +217,12 @@
       window.clearTimeout(debounceTimer);
       debounceTimer = window.setTimeout(runFilters, 120);
     });
-    ["fFunction", "fSeries", "fPackage", "fLogic"].forEach(function (id) {
+    ["fFunction", "fSeries", "fPackage", "fLogic", "fApp"].forEach(function (id) {
       el[id].addEventListener("change", runFilters);
     });
     el.clearBtn.addEventListener("click", function () {
       el.q.value = "";
-      ["fFunction", "fSeries", "fPackage", "fLogic"].forEach(function (id) {
+      ["fFunction", "fSeries", "fPackage", "fLogic", "fApp"].forEach(function (id) {
         el[id].value = "";
       });
       runFilters();
@@ -255,6 +260,9 @@
         fillSelect(el.fSeries, products.map(function (p) { return p.series; }));
         fillSelect(el.fPackage, products.map(function (p) { return p.package; }));
         fillSelect(el.fLogic, products.map(function (p) { return p.logic_type; }));
+        fillSelect(el.fApp, products.reduce(function (acc, p) {
+          return acc.concat(p.applications_domains || []);
+        }, []));
 
         const specCount = products.reduce(function (sum, p) {
           return sum + (Array.isArray(p.specs) ? p.specs.length : 0);
