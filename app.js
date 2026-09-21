@@ -169,9 +169,15 @@
     el.specEmpty.classList.toggle("hidden", specs.length > 0);
     specs.slice(0, 300).forEach(function (spec) {
       const row = document.createElement("tr");
+      var pHtml = spec.param_html || esc(spec.param);
+      var vHtml = spec.value_html || ("<strong>" + esc(spec.value) + "</strong>");
+      var cHtml = spec.conditions ? ("<br><span class=\"spec-cond\">[" + esc(spec.conditions) + "]</span>") : "";
+      if (spec.conditions_html) {
+        cHtml = "<br><span class=\"spec-cond\">[" + spec.conditions_html + "]</span>";
+      }
       row.innerHTML = [
-        "<td>" + esc(spec.param) + "</td>",
-        "<td><strong>" + esc(spec.value) + "</strong></td>"
+        "<td>" + pHtml + "</td>",
+        "<td>" + vHtml + cHtml + "</td>"
       ].join("");
       el.specTable.appendChild(row);
     });

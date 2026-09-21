@@ -20,7 +20,7 @@ html, body {
   min-height: 100%;
   background: var(--bg);
   color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Arial Unicode MS", "Noto Sans Symbols 2", "Microsoft YaHei", sans-serif;
   font-size: 14px;
   line-height: 1.45;
 }
@@ -460,3 +460,5 @@ input[type="search"]:focus, select:focus {
     padding-right: 14px;
   }
 }
+.spec-cond { color: var(--muted-foreground); font-size: 0.85em; }
+.ovl { text-decoration: overline; }
