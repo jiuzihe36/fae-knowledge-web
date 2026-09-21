@@ -58,7 +58,11 @@ fi
 
 # ---------- 3. Cloudflare Pages 部署（发布）----------
 echo ""
-echo "🚀 Step 3: 部署到 Cloudflare Pages (发布)..."
+echo "🎯 Step 1.5: 注入官方应用域(applications)..."
+python3 "$DIR/scripts/inject_applications.py" 2>&1 | tail -3
+
+echo ""
+echo "📤 Step 2: 提交并推送 GitHub + 部署 Cloudflare (双端)..."
 bash "$DIR/scripts/deploy.sh"
 
 # ---------- 4. 完成 ----------

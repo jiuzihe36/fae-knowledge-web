@@ -150,6 +150,13 @@
     "value": "-26 dB",
     "source_label": "EL3157_Product_DS_V1.1.pdf"
    }
+  ],
+  "applications": "◼ \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n◼ \nCell phones and TWS headset \n\n \n \nEL3157 \nLow Voltage and High Speed SPDT Analog Switch with True Isolation \n \n Rev. 1.1 – Aug 12, 2025 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -303,6 +310,13 @@
     "value": "-26 dB",
     "source_label": "EL3157_Product_DS_V1.1.pdf"
    }
+  ],
+  "applications": "◼ \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n◼ \nCell phones and TWS headset \n\n \n \nEL3157 \nLow Voltage and High Speed SPDT Analog Switch with True Isolation \n \n Rev. 1.1 – Aug 12, 2025 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -456,6 +470,13 @@
     "value": "-26 dB",
     "source_label": "EL3157_Product_DS_V1.1.pdf"
    }
+  ],
+  "applications": "◼ \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n◼ \nCell phones and TWS headset \n\n \n \nEL3157 \nLow Voltage and High Speed SPDT Analog Switch with True Isolation \n \n Rev. 1.1 – Aug 12, 2025 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -669,7 +690,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 961,
@@ -887,7 +909,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9394,
@@ -1105,7 +1128,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9400,
@@ -1323,7 +1347,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9396,
@@ -1541,7 +1566,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9398,
@@ -1759,7 +1785,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9402,
@@ -1977,7 +2004,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9408,
@@ -2195,7 +2223,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9404,
@@ -2413,7 +2442,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9406,
@@ -2631,7 +2661,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9410,
@@ -2844,7 +2875,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G04_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9418,
@@ -3062,7 +3094,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G04_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9414,
@@ -3280,7 +3313,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G04_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9416,
@@ -3498,7 +3532,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G04_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9420,
@@ -3696,7 +3731,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9426,
@@ -3899,7 +3935,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9422,
@@ -4102,7 +4139,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9424,
@@ -4305,7 +4343,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9428,
@@ -4503,7 +4542,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9434,
@@ -4706,7 +4746,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9430,
@@ -4909,7 +4950,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9432,
@@ -5112,7 +5154,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9436,
@@ -5335,7 +5378,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G08_Product_DS_V1.5.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9442,
@@ -5558,7 +5602,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G08_Product_DS_V1.5.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9438,
@@ -5781,7 +5826,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G08_Product_DS_V1.5.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9440,
@@ -6004,7 +6050,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G08_Product_DS_V1.5.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9444,
@@ -6207,7 +6254,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9450,
@@ -6410,7 +6458,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9446,
@@ -6613,7 +6662,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9448,
@@ -6816,7 +6866,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9452,
@@ -7029,7 +7080,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9454,
@@ -7247,7 +7299,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9456,
@@ -7465,7 +7518,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9458,
@@ -7753,7 +7807,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G125_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9464,
@@ -8046,7 +8101,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G125_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9460,
@@ -8339,7 +8395,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G125_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9462,
@@ -8632,7 +8689,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G125_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9466,
@@ -8920,7 +8978,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G126_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9472,
@@ -9213,7 +9272,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G126_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9468,
@@ -9506,7 +9566,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G126_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9470,
@@ -9799,7 +9860,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G126_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9474,
@@ -10042,7 +10104,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9480,
@@ -10290,7 +10353,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9476,
@@ -10538,7 +10602,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9478,
@@ -10786,7 +10851,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9482,
@@ -10999,7 +11065,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9488,
@@ -11217,7 +11284,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9484,
@@ -11435,7 +11503,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9486,
@@ -11653,7 +11722,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9490,
@@ -11896,7 +11966,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G17_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9496,
@@ -12144,7 +12215,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G17_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9492,
@@ -12392,7 +12464,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G17_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9494,
@@ -12640,7 +12713,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G17_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9498,
@@ -12878,7 +12952,8 @@
     "value": "0 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G240_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9500,
@@ -13121,7 +13196,8 @@
     "value": "0 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G240_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9502,
@@ -13364,7 +13440,8 @@
     "value": "0 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G240_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9504,
@@ -13582,7 +13659,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9512,
@@ -13800,7 +13878,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9508,
@@ -14018,7 +14097,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9510,
@@ -14236,7 +14316,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9514,
@@ -14449,7 +14530,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G332_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9516,
@@ -14667,7 +14749,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G332_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9518,
@@ -14885,7 +14968,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G332_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9520,
@@ -15083,7 +15167,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9526,
@@ -15286,7 +15371,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9522,
@@ -15489,7 +15575,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9524,
@@ -15692,7 +15779,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9528,
@@ -15935,7 +16023,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G14_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9534,
@@ -16183,7 +16272,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G14_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9530,
@@ -16431,7 +16521,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G14_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9532,
@@ -16679,7 +16770,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G14_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9536,
@@ -16892,7 +16984,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9542,
@@ -17110,7 +17203,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9538,
@@ -17328,7 +17422,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9540,
@@ -17546,7 +17641,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9544,
@@ -17759,7 +17855,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G34_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9550,
@@ -17977,7 +18074,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G34_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9546,
@@ -18195,7 +18293,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G34_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9548,
@@ -18413,7 +18512,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G34_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 962,
@@ -18631,7 +18731,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9395,
@@ -18849,7 +18950,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9401,
@@ -19067,7 +19169,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9397,
@@ -19285,7 +19388,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9399,
@@ -19503,7 +19607,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9403,
@@ -19721,7 +19826,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9409,
@@ -19939,7 +20045,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9405,
@@ -20157,7 +20264,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9407,
@@ -20375,7 +20483,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9411,
@@ -20588,7 +20697,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G04_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9419,
@@ -20806,7 +20916,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G04_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9415,
@@ -21024,7 +21135,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G04_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9417,
@@ -21242,7 +21354,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G04_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9421,
@@ -21440,7 +21553,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9427,
@@ -21643,7 +21757,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9423,
@@ -21846,7 +21961,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9425,
@@ -22049,7 +22165,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9429,
@@ -22247,7 +22364,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9435,
@@ -22450,7 +22568,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9431,
@@ -22653,7 +22772,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9433,
@@ -22856,7 +22976,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9437,
@@ -23079,7 +23200,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G08_Product_DS_V1.5.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9443,
@@ -23302,7 +23424,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G08_Product_DS_V1.5.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9439,
@@ -23525,7 +23648,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G08_Product_DS_V1.5.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9441,
@@ -23748,7 +23872,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G08_Product_DS_V1.5.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9445,
@@ -23951,7 +24076,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9451,
@@ -24154,7 +24280,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9447,
@@ -24357,7 +24484,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9449,
@@ -24560,7 +24688,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9453,
@@ -24773,7 +24902,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9455,
@@ -24991,7 +25121,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9457,
@@ -25209,7 +25340,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9459,
@@ -25497,7 +25629,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G125_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9465,
@@ -25790,7 +25923,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G125_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9461,
@@ -26083,7 +26217,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G125_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9463,
@@ -26376,7 +26511,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G125_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9467,
@@ -26664,7 +26800,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G126_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9473,
@@ -26957,7 +27094,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G126_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9469,
@@ -27250,7 +27388,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G126_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9471,
@@ -27543,7 +27682,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G126_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9475,
@@ -27786,7 +27926,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9481,
@@ -28034,7 +28175,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9477,
@@ -28282,7 +28424,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9479,
@@ -28530,7 +28673,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9483,
@@ -28743,7 +28887,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9489,
@@ -28961,7 +29106,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9485,
@@ -29179,7 +29325,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9487,
@@ -29397,7 +29544,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9491,
@@ -29640,7 +29788,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G17_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9497,
@@ -29888,7 +30037,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G17_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9493,
@@ -30136,7 +30286,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G17_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9495,
@@ -30384,7 +30535,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G17_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9499,
@@ -30622,7 +30774,8 @@
     "value": "0 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G240_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9501,
@@ -30865,7 +31018,8 @@
     "value": "0 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G240_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9503,
@@ -31108,7 +31262,8 @@
     "value": "0 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G240_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9505,
@@ -31326,7 +31481,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9513,
@@ -31544,7 +31700,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9509,
@@ -31762,7 +31919,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9511,
@@ -31980,7 +32138,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9515,
@@ -32193,7 +32352,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G332_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9517,
@@ -32411,7 +32571,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G332_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9519,
@@ -32629,7 +32790,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT1G332_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9521,
@@ -32827,7 +32989,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9527,
@@ -33030,7 +33193,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9523,
@@ -33233,7 +33397,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9525,
@@ -33436,7 +33601,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9529,
@@ -33679,7 +33845,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G14_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9535,
@@ -33927,7 +34094,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G14_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9531,
@@ -34175,7 +34343,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G14_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9533,
@@ -34423,7 +34592,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G14_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9537,
@@ -34636,7 +34806,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9543,
@@ -34854,7 +35025,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9539,
@@ -35072,7 +35244,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9541,
@@ -35290,7 +35463,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9545,
@@ -35503,7 +35677,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G34_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9551,
@@ -35721,7 +35896,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G34_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9547,
@@ -35939,7 +36115,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G34_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9549,
@@ -36157,7 +36334,8 @@
     "value": "0.07 0.44 0.55 V",
     "source_label": "EM74AHC_AHCT2G34_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9552,
@@ -36515,7 +36693,8 @@
     "value": "0.10 0.11 V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9556,
@@ -36878,7 +37057,8 @@
     "value": "0.10 0.11 V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9555,
@@ -37241,7 +37421,8 @@
     "value": "0.10 0.11 V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9553,
@@ -37604,7 +37785,8 @@
     "value": "0.10 0.11 V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9554,
@@ -37967,7 +38149,8 @@
     "value": "0.10 0.11 V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9557,
@@ -38330,7 +38513,8 @@
     "value": "0.10 0.11 V",
     "source_label": "EM74AUP1G07_Draft_DS_V0.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9558,
@@ -38493,6 +38677,13 @@
     "value": "-26 dB",
     "source_label": "EM74CBT3257_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": " \nCell phones, PDA, Digital Camera and Notebook \n \nLCD Monitor, TV and Set-Top Box \n \nAudio and Video Signal Routing \n \nOther electronic equipment\n\n \n \nEM74CBT3257 \nLow On Resistance, Quad SPDT Analog Switch \n \nRev. 1.0 – Jan 30, 2025                                                                                                                                                   2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "显示/监控/TV"
   ]
  },
  {
@@ -38661,6 +38852,13 @@
     "value": "-26 dB",
     "source_label": "EM74CBT3257_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": " \nCell phones, PDA, Digital Camera and Notebook \n \nLCD Monitor, TV and Set-Top Box \n \nAudio and Video Signal Routing \n \nOther electronic equipment\n\n \n \nEM74CBT3257 \nLow On Resistance, Quad SPDT Analog Switch \n \nRev. 1.0 – Jan 30, 2025                                                                                                                                                   2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "显示/监控/TV"
   ]
  },
  {
@@ -38829,6 +39027,13 @@
     "value": "-26 dB",
     "source_label": "EM74CBT3257_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": " \nCell phones, PDA, Digital Camera and Notebook \n \nLCD Monitor, TV and Set-Top Box \n \nAudio and Video Signal Routing \n \nOther electronic equipment\n\n \n \nEM74CBT3257 \nLow On Resistance, Quad SPDT Analog Switch \n \nRev. 1.0 – Jan 30, 2025                                                                                                                                                   2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "显示/监控/TV"
   ]
  },
  {
@@ -39017,7 +39222,8 @@
     "value": "0.9 0.9 V",
     "source_label": "EM74CBTLV3125_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9562,
@@ -39210,7 +39416,8 @@
     "value": "0.9 0.9 V",
     "source_label": "EM74CBTLV3125_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9563,
@@ -39403,7 +39610,8 @@
     "value": "0.9 0.9 V",
     "source_label": "EM74CBTLV3125_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9564,
@@ -39591,7 +39799,8 @@
     "value": "0.9 0.9 V",
     "source_label": "EM74CBTLV3126_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9565,
@@ -39784,7 +39993,8 @@
     "value": "0.9 0.9 V",
     "source_label": "EM74CBTLV3126_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9566,
@@ -39977,7 +40187,8 @@
     "value": "0.9 0.9 V",
     "source_label": "EM74CBTLV3126_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9567,
@@ -40180,7 +40391,8 @@
     "value": "0.9 0.9 V",
     "source_label": "EM74CBTLV3253_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9568,
@@ -40388,7 +40600,8 @@
     "value": "0.9 0.9 V",
     "source_label": "EM74CBTLV3253_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9569,
@@ -40596,7 +40809,8 @@
     "value": "0.9 0.9 V",
     "source_label": "EM74CBTLV3253_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9570,
@@ -40799,7 +41013,8 @@
     "value": "0.9 0.9 V",
     "source_label": "EM74CBTLV3257_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9571,
@@ -41007,7 +41222,8 @@
     "value": "0.9 0.9 V",
     "source_label": "EM74CBTLV3257_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9572,
@@ -41215,7 +41431,8 @@
     "value": "0.9 0.9 V",
     "source_label": "EM74CBTLV3257_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9658,
@@ -41428,7 +41645,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9660,
@@ -41646,7 +41864,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9662,
@@ -41864,7 +42083,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9664,
@@ -42077,7 +42297,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT02_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9667,
@@ -42295,7 +42516,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT02_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9669,
@@ -42513,7 +42735,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT02_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9671,
@@ -42686,7 +42909,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT03_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9674,
@@ -42864,7 +43088,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT03_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9676,
@@ -43042,7 +43267,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT03_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9678,
@@ -43255,7 +43481,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9680,
@@ -43473,7 +43700,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9682,
@@ -43691,7 +43919,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9684,
@@ -43864,7 +44093,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT05_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9686,
@@ -44042,7 +44272,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT05_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9688,
@@ -44220,7 +44451,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT05_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9690,
@@ -44393,7 +44625,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9692,
@@ -44571,7 +44804,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9694,
@@ -44749,7 +44983,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9696,
@@ -44922,7 +45157,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9698,
@@ -45100,7 +45336,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9700,
@@ -45278,7 +45515,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9702,
@@ -45491,7 +45729,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT08_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9705,
@@ -45709,7 +45948,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT08_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9707,
@@ -45927,7 +46167,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT08_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9709,
@@ -46100,7 +46341,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT09_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9711,
@@ -46278,7 +46520,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT09_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9713,
@@ -46456,7 +46699,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT09_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9715,
@@ -46669,7 +46913,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT10_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9718,
@@ -46887,7 +47132,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT10_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9720,
@@ -47105,7 +47351,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT10_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9722,
@@ -47318,7 +47565,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9725,
@@ -47536,7 +47784,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9727,
@@ -47754,7 +48003,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9729,
@@ -47967,7 +48217,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9731,
@@ -48185,7 +48436,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9733,
@@ -48403,7 +48655,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9735,
@@ -48616,7 +48869,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9737,
@@ -48834,7 +49088,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9739,
@@ -49052,7 +49307,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9741,
@@ -49305,7 +49561,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT132_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9743,
@@ -49563,7 +49820,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT132_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9745,
@@ -49821,7 +50079,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT132_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9747,
@@ -50009,7 +50268,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT138_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9749,
@@ -50202,7 +50462,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT138_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9751,
@@ -50395,7 +50656,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT138_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9753,
@@ -50663,7 +50925,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT14_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9755,
@@ -50936,7 +51199,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT14_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9757,
@@ -51209,7 +51473,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT14_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9576,
@@ -51462,7 +51727,8 @@
     "value": "0.05 0.33 0.4 V",
     "source_label": "EM74HC164_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9573,
@@ -51690,7 +51956,8 @@
     "value": "0.09 0.33 0.4 V",
     "source_label": "EM74HC164A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9574,
@@ -51923,7 +52190,8 @@
     "value": "0.09 0.33 0.4 V",
     "source_label": "EM74HC164A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9575,
@@ -52156,7 +52424,8 @@
     "value": "0.09 0.33 0.4 V",
     "source_label": "EM74HC164A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9577,
@@ -52414,7 +52683,8 @@
     "value": "0.05 0.33 0.4 V",
     "source_label": "EM74HC164_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9578,
@@ -52672,7 +52942,8 @@
     "value": "0.05 0.33 0.4 V",
     "source_label": "EM74HC164_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9579,
@@ -52920,7 +53191,8 @@
     "value": "0.09 0.33 0.4 V",
     "source_label": "EM74HC165A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9580,
@@ -53173,7 +53445,8 @@
     "value": "0.09 0.33 0.4 V",
     "source_label": "EM74HC165A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9581,
@@ -53426,7 +53699,8 @@
     "value": "0.09 0.33 0.4 V",
     "source_label": "EM74HC165A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9759,
@@ -53724,7 +53998,8 @@
     "value": "0.05 0.33 0.4 V",
     "source_label": "EM74HC_HCT166_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9762,
@@ -54027,7 +54302,8 @@
     "value": "0.05 0.33 0.4 V",
     "source_label": "EM74HC_HCT166_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9764,
@@ -54330,7 +54606,8 @@
     "value": "0.05 0.33 0.4 V",
     "source_label": "EM74HC_HCT166_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9766,
@@ -54618,7 +54895,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT174_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9768,
@@ -54911,7 +55189,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT174_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9770,
@@ -55204,7 +55483,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT174_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9772,
@@ -55427,7 +55707,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT20_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9775,
@@ -55655,7 +55936,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT20_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9777,
@@ -55883,7 +56165,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT20_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9779,
@@ -56106,7 +56389,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT21_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9782,
@@ -56334,7 +56618,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT21_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9784,
@@ -56562,7 +56847,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT21_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9786,
@@ -56770,7 +57056,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT240_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9788,
@@ -56983,7 +57270,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT240_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9790,
@@ -57196,7 +57484,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT240_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9792,
@@ -57404,7 +57693,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT244_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9794,
@@ -57617,7 +57907,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT244_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9796,
@@ -57830,7 +58121,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT244_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9798,
@@ -58043,7 +58335,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT245_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9800,
@@ -58261,7 +58554,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT245_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9802,
@@ -58479,7 +58773,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT245_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9804,
@@ -58732,7 +59027,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT259_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9806,
@@ -58990,7 +59286,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT259_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9808,
@@ -59248,7 +59545,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT259_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9810,
@@ -59421,7 +59719,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9812,
@@ -59599,7 +59898,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9814,
@@ -59777,7 +60077,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9816,
@@ -59990,7 +60291,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT27_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9819,
@@ -60208,7 +60510,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT27_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9821,
@@ -60426,7 +60729,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT27_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9823,
@@ -60639,7 +60943,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9825,
@@ -60857,7 +61162,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9827,
@@ -61075,7 +61381,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9829,
@@ -61288,7 +61595,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9831,
@@ -61506,7 +61814,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9833,
@@ -61724,7 +62033,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9835,
@@ -61937,7 +62247,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9838,
@@ -62155,7 +62466,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9840,
@@ -62373,7 +62685,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9842,
@@ -62586,7 +62899,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9844,
@@ -62804,7 +63118,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9846,
@@ -63022,7 +63337,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9848,
@@ -63235,7 +63551,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9851,
@@ -63453,7 +63770,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9853,
@@ -63671,7 +63989,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9855,
@@ -63894,7 +64213,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4002_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9857,
@@ -64122,7 +64442,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4002_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9859,
@@ -64350,7 +64671,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4002_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9861,
@@ -64563,7 +64885,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4075_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9863,
@@ -64781,7 +65104,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4075_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9865,
@@ -64999,7 +65323,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4075_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9867,
@@ -65407,7 +65732,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4094_Draft_DS_V0.9.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9869,
@@ -65815,7 +66141,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4094_Draft_DS_V0.9.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9871,
@@ -66223,7 +66550,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4094_Draft_DS_V0.9.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9873,
@@ -66431,7 +66759,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT540_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9875,
@@ -66644,7 +66973,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT540_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9877,
@@ -66857,7 +67187,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT540_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9879,
@@ -67070,7 +67401,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT541_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9881,
@@ -67288,7 +67620,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT541_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9883,
@@ -67506,7 +67839,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT541_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9885,
@@ -67769,7 +68103,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT573_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9887,
@@ -68037,7 +68372,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT573_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9889,
@@ -68305,7 +68641,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT573_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9891,
@@ -68593,7 +68930,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT574_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9893,
@@ -68886,7 +69224,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT574_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9897,
@@ -69179,7 +69518,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT574_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9895,
@@ -69472,7 +69812,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT574_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9582,
@@ -69750,7 +70091,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC594_Draft_DS_V0.9.pdf"
    }
-  ]
+  ],
+  "applications": " Serial-to-parallel data conversion \n Remote control holding register \n\n \n \nEM74HC594 \n8-bit shift register with output register \n \nRev. 0.9 – Aug 20, 2024 \n2"
  },
  {
   "id": 9583,
@@ -70028,7 +70370,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC594_Draft_DS_V0.9.pdf"
    }
-  ]
+  ],
+  "applications": " Serial-to-parallel data conversion \n Remote control holding register \n\n \n \nEM74HC594 \n8-bit shift register with output register \n \nRev. 0.9 – Aug 20, 2024 \n2"
  },
  {
   "id": 9584,
@@ -70306,7 +70649,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC594_Draft_DS_V0.9.pdf"
    }
-  ]
+  ],
+  "applications": " Serial-to-parallel data conversion \n Remote control holding register \n\n \n \nEM74HC594 \n8-bit shift register with output register \n \nRev. 0.9 – Aug 20, 2024 \n2"
  },
  {
   "id": 9585,
@@ -70589,7 +70933,8 @@
     "value": "0.13 0.33 0.4 V",
     "source_label": "EM74HC595A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": " Serial-to-parallel data conversion \n Remote control holding register \n \n\n \n \nEM74HC595A \n8-bit serial-in, serial or parallel-out shift register with output latches; 3-state \n \nRev. 1.1 – Jun 07, 2025 \n3"
  },
  {
   "id": 9586,
@@ -70877,7 +71222,8 @@
     "value": "0.13 0.33 0.4 V",
     "source_label": "EM74HC595A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": " Serial-to-parallel data conversion \n Remote control holding register \n \n\n \n \nEM74HC595A \n8-bit serial-in, serial or parallel-out shift register with output latches; 3-state \n \nRev. 1.1 – Jun 07, 2025 \n3"
  },
  {
   "id": 9587,
@@ -71165,7 +71511,8 @@
     "value": "0.13 0.33 0.4 V",
     "source_label": "EM74HC595A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": " Serial-to-parallel data conversion \n Remote control holding register \n \n\n \n \nEM74HC595A \n8-bit serial-in, serial or parallel-out shift register with output latches; 3-state \n \nRev. 1.1 – Jun 07, 2025 \n3"
  },
  {
   "id": 595,
@@ -71453,7 +71800,8 @@
     "value": "0.05 0.33 0.4 V",
     "source_label": "EM74HC_HCT597_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 597,
@@ -71746,7 +72094,8 @@
     "value": "0.05 0.33 0.4 V",
     "source_label": "EM74HC_HCT597_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 599,
@@ -72039,7 +72388,8 @@
     "value": "0.05 0.33 0.4 V",
     "source_label": "EM74HC_HCT597_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9911,
@@ -72287,7 +72637,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7001_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9913,
@@ -72540,7 +72891,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7001_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9915,
@@ -72793,7 +73145,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7001_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9917,
@@ -73046,7 +73399,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7002_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9919,
@@ -73304,7 +73658,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7002_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9921,
@@ -73562,7 +73917,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7002_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9923,
@@ -73815,7 +74171,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7032_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9925,
@@ -74073,7 +74430,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7032_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9927,
@@ -74331,7 +74689,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7032_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9929,
@@ -74544,7 +74903,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9931,
@@ -74762,7 +75122,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9933,
@@ -74980,7 +75341,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9935,
@@ -75223,7 +75585,8 @@
     "value": "0.04 0.33 0.4 V",
     "source_label": "EM74HC_HCT74_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9937,
@@ -75471,7 +75834,8 @@
     "value": "0.04 0.33 0.4 V",
     "source_label": "EM74HC_HCT74_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9939,
@@ -75719,7 +76083,8 @@
     "value": "0.04 0.33 0.4 V",
     "source_label": "EM74HC_HCT74_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9941,
@@ -75932,7 +76297,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT86_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9943,
@@ -76150,7 +76516,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT86_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9945,
@@ -76368,7 +76735,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT86_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9588,
@@ -76541,7 +76909,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9589,
@@ -76719,7 +77088,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9590,
@@ -76897,7 +77267,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9591,
@@ -77070,7 +77441,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9592,
@@ -77248,7 +77620,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9593,
@@ -77426,7 +77799,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9594,
@@ -77574,7 +77948,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS03_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9595,
@@ -77727,7 +78102,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS03_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9596,
@@ -77880,7 +78256,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS03_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9597,
@@ -78053,7 +78430,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9598,
@@ -78231,7 +78609,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9599,
@@ -78409,7 +78788,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9600,
@@ -78557,7 +78937,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS05_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9601,
@@ -78710,7 +79091,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS05_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9602,
@@ -78863,7 +79245,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS05_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9603,
@@ -79036,7 +79419,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS08_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9604,
@@ -79214,7 +79598,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS08_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9605,
@@ -79392,7 +79777,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS08_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9606,
@@ -79540,7 +79926,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS09_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9607,
@@ -79693,7 +80080,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS09_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9608,
@@ -79846,7 +80234,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS09_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9609,
@@ -80019,7 +80408,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS10_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9610,
@@ -80197,7 +80587,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS10_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9611,
@@ -80375,7 +80766,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS10_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9612,
@@ -80548,7 +80940,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9613,
@@ -80726,7 +81119,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9614,
@@ -80904,7 +81298,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9615,
@@ -81077,7 +81472,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS125_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9616,
@@ -81255,7 +81651,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS125_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9617,
@@ -81433,7 +81830,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS125_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9618,
@@ -81606,7 +82004,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS126_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9619,
@@ -81784,7 +82183,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS126_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9620,
@@ -81962,7 +82362,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS126_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9621,
@@ -82135,7 +82536,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS20_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9622,
@@ -82313,7 +82715,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS20_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9623,
@@ -82491,7 +82894,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS20_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9624,
@@ -82664,7 +83068,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS21_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9625,
@@ -82842,7 +83247,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS21_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9626,
@@ -83020,7 +83426,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS21_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9627,
@@ -83173,7 +83580,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9628,
@@ -83331,7 +83739,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9629,
@@ -83489,7 +83898,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9630,
@@ -83662,7 +84072,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS27_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9631,
@@ -83840,7 +84251,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS27_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9632,
@@ -84018,7 +84430,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS27_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9633,
@@ -84191,7 +84604,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9634,
@@ -84369,7 +84783,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9635,
@@ -84547,7 +84962,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9636,
@@ -84720,7 +85136,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS365_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9637,
@@ -84898,7 +85315,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS365_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9638,
@@ -85076,7 +85494,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS365_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9639,
@@ -85254,7 +85673,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS367_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9640,
@@ -85432,7 +85852,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS367_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9641,
@@ -85610,7 +86031,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS367_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9642,
@@ -85783,7 +86205,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS4075_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9643,
@@ -85961,7 +86384,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS4075_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9644,
@@ -86139,7 +86563,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS4075_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9645,
@@ -86312,7 +86737,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS7266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9646,
@@ -86490,7 +86916,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS7266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9647,
@@ -86668,7 +87095,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS7266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9648,
@@ -86841,7 +87269,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS86_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9649,
@@ -87019,7 +87448,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS86_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9650,
@@ -87197,7 +87627,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCS86_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9659,
@@ -87410,7 +87841,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9661,
@@ -87628,7 +88060,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9663,
@@ -87846,7 +88279,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9665,
@@ -88059,7 +88493,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT02_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9668,
@@ -88277,7 +88712,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT02_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9670,
@@ -88495,7 +88931,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT02_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9672,
@@ -88668,7 +89105,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT03_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9675,
@@ -88846,7 +89284,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT03_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9677,
@@ -89024,7 +89463,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT03_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9679,
@@ -89237,7 +89677,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9681,
@@ -89455,7 +89896,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9683,
@@ -89673,7 +90115,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9685,
@@ -89846,7 +90289,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT05_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9687,
@@ -90024,7 +90468,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT05_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9689,
@@ -90202,7 +90647,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT05_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9691,
@@ -90375,7 +90821,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9693,
@@ -90553,7 +91000,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9695,
@@ -90731,7 +91179,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9697,
@@ -90904,7 +91353,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9699,
@@ -91082,7 +91532,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9701,
@@ -91260,7 +91711,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9703,
@@ -91473,7 +91925,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT08_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9706,
@@ -91691,7 +92144,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT08_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9708,
@@ -91909,7 +92363,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT08_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9710,
@@ -92082,7 +92537,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT09_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9712,
@@ -92260,7 +92716,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT09_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9714,
@@ -92438,7 +92895,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT09_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9716,
@@ -92651,7 +93109,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT10_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9719,
@@ -92869,7 +93328,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT10_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9721,
@@ -93087,7 +93547,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT10_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9723,
@@ -93300,7 +93761,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9726,
@@ -93518,7 +93980,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9728,
@@ -93736,7 +94199,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9730,
@@ -93949,7 +94413,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9732,
@@ -94167,7 +94632,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9734,
@@ -94385,7 +94851,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT125_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9736,
@@ -94598,7 +95065,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9738,
@@ -94816,7 +95284,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9740,
@@ -95034,7 +95503,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT126_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9742,
@@ -95287,7 +95757,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT132_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9744,
@@ -95545,7 +96016,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT132_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9746,
@@ -95803,7 +96275,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT132_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9748,
@@ -95991,7 +96464,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT138_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9750,
@@ -96184,7 +96658,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT138_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9752,
@@ -96377,7 +96852,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT138_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9754,
@@ -96645,7 +97121,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT14_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9756,
@@ -96918,7 +97395,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT14_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9758,
@@ -97191,7 +97669,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT14_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9651,
@@ -97324,7 +97803,8 @@
     "value": "0.04 0.33 0.4 V",
     "source_label": "EM74HCT164_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9652,
@@ -97462,7 +97942,8 @@
     "value": "0.04 0.33 0.4 V",
     "source_label": "EM74HCT164_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9653,
@@ -97600,7 +98081,8 @@
     "value": "0.04 0.33 0.4 V",
     "source_label": "EM74HCT164_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9760,
@@ -97898,7 +98380,8 @@
     "value": "0.05 0.33 0.4 V",
     "source_label": "EM74HC_HCT166_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9763,
@@ -98201,7 +98684,8 @@
     "value": "0.05 0.33 0.4 V",
     "source_label": "EM74HC_HCT166_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9765,
@@ -98504,7 +98988,8 @@
     "value": "0.05 0.33 0.4 V",
     "source_label": "EM74HC_HCT166_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9767,
@@ -98792,7 +99277,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT174_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9769,
@@ -99085,7 +99571,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT174_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9771,
@@ -99378,7 +99865,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT174_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9773,
@@ -99601,7 +100089,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT20_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9776,
@@ -99829,7 +100318,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT20_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9778,
@@ -100057,7 +100547,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT20_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9780,
@@ -100280,7 +100771,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT21_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9783,
@@ -100508,7 +101000,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT21_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9785,
@@ -100736,7 +101229,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT21_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9787,
@@ -100944,7 +101438,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT240_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9789,
@@ -101157,7 +101652,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT240_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9791,
@@ -101370,7 +101866,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT240_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9793,
@@ -101578,7 +102075,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT244_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9795,
@@ -101791,7 +102289,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT244_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9797,
@@ -102004,7 +102503,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT244_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9799,
@@ -102217,7 +102717,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT245_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9801,
@@ -102435,7 +102936,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT245_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9803,
@@ -102653,7 +103155,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT245_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9805,
@@ -102906,7 +103409,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT259_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9807,
@@ -103164,7 +103668,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT259_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9809,
@@ -103422,7 +103927,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT259_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9811,
@@ -103595,7 +104101,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9813,
@@ -103773,7 +104280,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9815,
@@ -103951,7 +104459,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9817,
@@ -104164,7 +104673,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT27_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9820,
@@ -104382,7 +104892,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT27_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9822,
@@ -104600,7 +105111,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT27_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9824,
@@ -104813,7 +105325,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9826,
@@ -105031,7 +105544,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9828,
@@ -105249,7 +105763,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9830,
@@ -105462,7 +105977,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9832,
@@ -105680,7 +106196,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9834,
@@ -105898,7 +106415,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT365_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9836,
@@ -106111,7 +106629,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9839,
@@ -106329,7 +106848,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9841,
@@ -106547,7 +107067,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT366_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9843,
@@ -106760,7 +107281,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9845,
@@ -106978,7 +107500,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9847,
@@ -107196,7 +107719,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT367_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9849,
@@ -107409,7 +107933,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9852,
@@ -107627,7 +108152,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9854,
@@ -107845,7 +108371,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT368_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9856,
@@ -108068,7 +108595,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4002_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9858,
@@ -108296,7 +108824,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4002_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9860,
@@ -108524,7 +109053,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4002_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9862,
@@ -108737,7 +109267,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4075_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9864,
@@ -108955,7 +109486,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4075_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9866,
@@ -109173,7 +109705,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4075_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9868,
@@ -109581,7 +110114,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4094_Draft_DS_V0.9.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9870,
@@ -109989,7 +110523,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4094_Draft_DS_V0.9.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9872,
@@ -110397,7 +110932,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT4094_Draft_DS_V0.9.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9874,
@@ -110605,7 +111141,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT540_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9876,
@@ -110818,7 +111355,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT540_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9878,
@@ -111031,7 +111569,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT540_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9880,
@@ -111244,7 +111783,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT541_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9882,
@@ -111462,7 +112002,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT541_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9884,
@@ -111680,7 +112221,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT541_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9886,
@@ -111943,7 +112485,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT573_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9888,
@@ -112211,7 +112754,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT573_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9890,
@@ -112479,7 +113023,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT573_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9892,
@@ -112767,7 +113312,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT574_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9894,
@@ -113060,7 +113606,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT574_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9898,
@@ -113353,7 +113900,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT574_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9896,
@@ -113646,7 +114194,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT574_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9654,
@@ -113799,7 +114348,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCT595_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": " Serial-to-parallel data conversion \n Remote control holding register"
  },
  {
   "id": 9655,
@@ -113957,7 +114507,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCT595_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": " Serial-to-parallel data conversion \n Remote control holding register"
  },
  {
   "id": 9657,
@@ -114115,7 +114666,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCT595_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9656,
@@ -114273,7 +114825,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HCT595_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": " Serial-to-parallel data conversion \n Remote control holding register"
  },
  {
   "id": 596,
@@ -114561,7 +115114,8 @@
     "value": "0.05 0.33 0.4 V",
     "source_label": "EM74HC_HCT597_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 598,
@@ -114854,7 +115408,8 @@
     "value": "0.05 0.33 0.4 V",
     "source_label": "EM74HC_HCT597_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 600,
@@ -115147,7 +115702,8 @@
     "value": "0.05 0.33 0.4 V",
     "source_label": "EM74HC_HCT597_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9912,
@@ -115395,7 +115951,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7001_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9914,
@@ -115648,7 +116205,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7001_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9916,
@@ -115901,7 +116459,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7001_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9918,
@@ -116154,7 +116713,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7002_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9920,
@@ -116412,7 +116972,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7002_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9922,
@@ -116670,7 +117231,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7002_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9924,
@@ -116923,7 +117485,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7032_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9926,
@@ -117181,7 +117744,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7032_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9928,
@@ -117439,7 +118003,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7032_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9930,
@@ -117652,7 +118217,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9932,
@@ -117870,7 +118436,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9934,
@@ -118088,7 +118655,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT7266_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9936,
@@ -118331,7 +118899,8 @@
     "value": "0.04 0.33 0.4 V",
     "source_label": "EM74HC_HCT74_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9938,
@@ -118579,7 +119148,8 @@
     "value": "0.04 0.33 0.4 V",
     "source_label": "EM74HC_HCT74_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9940,
@@ -118827,7 +119397,8 @@
     "value": "0.04 0.33 0.4 V",
     "source_label": "EM74HC_HCT74_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9942,
@@ -119040,7 +119611,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT86_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9944,
@@ -119258,7 +119830,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT86_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9946,
@@ -119476,7 +120049,8 @@
     "value": "0.33 0.4 V",
     "source_label": "EM74HC_HCT86_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9947,
@@ -119759,7 +120333,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T00_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9948,
@@ -120047,7 +120622,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T00_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9949,
@@ -120335,7 +120911,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T00_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9950,
@@ -120623,7 +121200,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T00_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9951,
@@ -120901,7 +121479,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T02_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9952,
@@ -121184,7 +121763,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T02_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9953,
@@ -121467,7 +122047,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T02_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9954,
@@ -121750,7 +122331,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T02_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9955,
@@ -122028,7 +122610,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T04_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9956,
@@ -122311,7 +122894,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T04_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9957,
@@ -122594,7 +123178,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T04_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9958,
@@ -122877,7 +123462,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T04_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9959,
@@ -123160,7 +123746,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T08_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9960,
@@ -123448,7 +124035,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T08_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9961,
@@ -123736,7 +124324,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T08_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9962,
@@ -124024,7 +124613,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T08_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9963,
@@ -124347,7 +124937,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T125_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9964,
@@ -124675,7 +125266,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T125_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9965,
@@ -125003,7 +125595,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T125_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9966,
@@ -125331,7 +125924,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T125_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9967,
@@ -125649,7 +126243,8 @@
     "value": "0.35 0.06 0.35 V",
     "source_label": "EM74LV1T126_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9968,
@@ -125972,7 +126567,8 @@
     "value": "0.35 0.06 0.35 V",
     "source_label": "EM74LV1T126_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9969,
@@ -126295,7 +126891,8 @@
     "value": "0.35 0.06 0.35 V",
     "source_label": "EM74LV1T126_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9970,
@@ -126618,7 +127215,8 @@
     "value": "0.35 0.06 0.35 V",
     "source_label": "EM74LV1T126_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9971,
@@ -126901,7 +127499,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T32_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9972,
@@ -127189,7 +127788,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T32_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9973,
@@ -127477,7 +128077,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T32_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9974,
@@ -127765,7 +128366,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T32_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9975,
@@ -128048,7 +128650,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T34_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9976,
@@ -128336,7 +128939,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T34_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9977,
@@ -128624,7 +129228,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T34_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9978,
@@ -128912,7 +129517,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T34_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9979,
@@ -129190,7 +129796,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T86_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9983,
@@ -129473,7 +130080,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T86_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9980,
@@ -129756,7 +130364,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T86_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9981,
@@ -130039,7 +130648,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T86_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9982,
@@ -130322,7 +130932,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T86_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9984,
@@ -130600,7 +131211,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T87_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9985,
@@ -130883,7 +131495,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T87_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9986,
@@ -131166,7 +131779,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T87_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9987,
@@ -131449,7 +132063,8 @@
     "value": "0.35 0.35 V",
     "source_label": "EM74LV1T87_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10163,
@@ -131687,7 +132302,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G97_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9988,
@@ -131940,7 +132556,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC00A_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9989,
@@ -132198,7 +132815,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC00A_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9990,
@@ -132456,7 +133074,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC00A_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9991,
@@ -132709,7 +133328,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC02A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9992,
@@ -132967,7 +133587,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC02A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9993,
@@ -133225,7 +133846,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC02A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9994,
@@ -133478,7 +134100,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC04A_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9995,
@@ -133736,7 +134359,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC04A_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9996,
@@ -133994,7 +134618,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC04A_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9997,
@@ -134222,7 +134847,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC06A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9998,
@@ -134455,7 +135081,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC06A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 9999,
@@ -134688,7 +135315,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC06A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10000,
@@ -134916,7 +135544,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC07A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10001,
@@ -135149,7 +135778,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC07A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10002,
@@ -135382,7 +136012,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC07A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10003,
@@ -135635,7 +136266,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10004,
@@ -135893,7 +136525,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10005,
@@ -136151,7 +136784,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10006,
@@ -136409,7 +137043,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC08A_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10007,
@@ -136657,7 +137292,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC10A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10008,
@@ -136910,7 +137546,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC10A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10009,
@@ -137163,7 +137800,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC10A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10010,
@@ -137411,7 +138049,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10011,
@@ -137664,7 +138303,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10012,
@@ -137917,7 +138557,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10013,
@@ -138230,7 +138871,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10014,
@@ -138548,7 +139190,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10015,
@@ -138866,7 +139509,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC125A_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10016,
@@ -139159,7 +139803,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10017,
@@ -139457,7 +140102,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10018,
@@ -139755,7 +140401,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC126A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10019,
@@ -140108,7 +140755,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC132A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10020,
@@ -140466,7 +141114,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC132A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10021,
@@ -140824,7 +141473,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC132A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10022,
@@ -141177,7 +141827,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC14A_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10023,
@@ -141535,7 +142186,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC14A_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10024,
@@ -141893,7 +142545,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC14A_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10025,
@@ -142101,7 +142754,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10029,
@@ -142314,7 +142968,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10028,
@@ -142527,7 +143182,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10026,
@@ -142740,7 +143396,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10027,
@@ -142953,7 +143610,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10030,
@@ -143166,7 +143824,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10031,
@@ -143374,7 +144033,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10035,
@@ -143587,7 +144247,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10034,
@@ -143800,7 +144461,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10032,
@@ -144013,7 +144675,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10033,
@@ -144226,7 +144889,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10036,
@@ -144439,7 +145103,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10037,
@@ -144647,7 +145312,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10041,
@@ -144860,7 +145526,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10040,
@@ -145073,7 +145740,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10038,
@@ -145286,7 +145954,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10039,
@@ -145499,7 +146168,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10042,
@@ -145712,7 +146382,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 662,
@@ -145925,7 +146596,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10048,
@@ -146143,7 +146815,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10047,
@@ -146361,7 +147034,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10045,
@@ -146579,7 +147253,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10046,
@@ -146797,7 +147472,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10049,
@@ -147015,7 +147691,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10050,
@@ -147228,7 +147905,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10054,
@@ -147446,7 +148124,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10053,
@@ -147664,7 +148343,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10051,
@@ -147882,7 +148562,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10052,
@@ -148100,7 +148781,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10055,
@@ -148318,7 +149000,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 1592,
@@ -148526,7 +149209,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10060,
@@ -148739,7 +149423,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10059,
@@ -148952,7 +149637,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10057,
@@ -149165,7 +149851,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10058,
@@ -149378,7 +150065,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10061,
@@ -149591,7 +150279,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10062,
@@ -149799,7 +150488,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10066,
@@ -150012,7 +150702,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10065,
@@ -150225,7 +150916,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10063,
@@ -150438,7 +151130,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10064,
@@ -150651,7 +151344,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10067,
@@ -150864,7 +151558,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10068,
@@ -151072,7 +151767,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G10_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10072,
@@ -151285,7 +151981,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G10_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10071,
@@ -151498,7 +152195,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G10_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10069,
@@ -151711,7 +152409,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G10_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10070,
@@ -151924,7 +152623,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G10_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10073,
@@ -152132,7 +152832,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10077,
@@ -152345,7 +153046,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10076,
@@ -152558,7 +153260,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10074,
@@ -152771,7 +153474,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10075,
@@ -152984,7 +153688,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G11_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10078,
@@ -153242,7 +153947,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10082,
@@ -153505,7 +154211,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10081,
@@ -153768,7 +154475,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10079,
@@ -154031,7 +154739,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10080,
@@ -154294,7 +155003,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10083,
@@ -154557,7 +155267,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10084,
@@ -154835,7 +155546,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10088,
@@ -155118,7 +155830,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10087,
@@ -155401,7 +156114,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10085,
@@ -155684,7 +156398,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10086,
@@ -155967,7 +156682,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10089,
@@ -156250,7 +156966,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10090,
@@ -156493,7 +157210,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G132_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10094,
@@ -156741,7 +157459,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G132_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10093,
@@ -156989,7 +157708,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G132_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10091,
@@ -157237,7 +157957,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G132_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10092,
@@ -157485,7 +158206,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G132_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10095,
@@ -157733,7 +158455,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G132_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10096,
@@ -157981,7 +158704,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10100,
@@ -158234,7 +158958,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10099,
@@ -158487,7 +159212,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10097,
@@ -158740,7 +159466,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10098,
@@ -158993,7 +159720,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10101,
@@ -159246,7 +159974,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10102,
@@ -159454,7 +160183,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10106,
@@ -159667,7 +160397,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10105,
@@ -159880,7 +160611,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10103,
@@ -160093,7 +160825,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10104,
@@ -160306,7 +161039,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10107,
@@ -160519,7 +161253,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10108,
@@ -160767,7 +161502,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G17_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10112,
@@ -161020,7 +161756,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G17_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10111,
@@ -161273,7 +162010,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G17_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10109,
@@ -161526,7 +162264,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G17_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10110,
@@ -161779,7 +162518,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G17_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10113,
@@ -162032,7 +162772,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G17_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10114,
@@ -162300,7 +163041,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G17_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10115,
@@ -162568,7 +163310,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G17_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10116,
@@ -162836,7 +163579,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10120,
@@ -163109,7 +163853,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10119,
@@ -163382,7 +164127,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10117,
@@ -163655,7 +164401,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10118,
@@ -163928,7 +164675,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10121,
@@ -164201,7 +164949,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10122,
@@ -164409,7 +165158,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G27_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10126,
@@ -164622,7 +165372,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G27_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10125,
@@ -164835,7 +165586,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G27_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10123,
@@ -165048,7 +165800,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G27_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10124,
@@ -165261,7 +166014,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G27_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10127,
@@ -165469,7 +166223,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10131,
@@ -165682,7 +166437,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10130,
@@ -165895,7 +166651,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10128,
@@ -166108,7 +166865,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10129,
@@ -166321,7 +167079,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10132,
@@ -166534,7 +167293,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10133,
@@ -166742,7 +167502,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G332_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10137,
@@ -166955,7 +167716,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G332_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10136,
@@ -167168,7 +167930,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G332_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10134,
@@ -167381,7 +168144,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G332_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10135,
@@ -167594,7 +168358,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G332_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10138,
@@ -167802,7 +168567,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10142,
@@ -168015,7 +168781,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10141,
@@ -168228,7 +168995,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10139,
@@ -168441,7 +169209,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10140,
@@ -168654,7 +169423,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10143,
@@ -168867,7 +169637,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10144,
@@ -169075,7 +169846,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10148,
@@ -169288,7 +170060,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10147,
@@ -169501,7 +170274,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10145,
@@ -169714,7 +170488,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10146,
@@ -169927,7 +170702,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10149,
@@ -170140,7 +170916,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10150,
@@ -170393,7 +171170,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G57_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10151,
@@ -170651,7 +171429,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G57_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10152,
@@ -170909,7 +171688,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G57_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10153,
@@ -171157,7 +171937,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G58_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10154,
@@ -171410,7 +172191,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G58_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10155,
@@ -171663,7 +172445,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G58_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10156,
@@ -171866,7 +172649,8 @@
     "value": "0.1 V",
     "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10160,
@@ -172074,7 +172858,8 @@
     "value": "0.1 V",
     "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10159,
@@ -172282,7 +173067,8 @@
     "value": "0.1 V",
     "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10157,
@@ -172490,7 +173276,8 @@
     "value": "0.1 V",
     "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10158,
@@ -172698,7 +173485,8 @@
     "value": "0.1 V",
     "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10161,
@@ -172906,7 +173694,8 @@
     "value": "0.1 V",
     "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10162,
@@ -173144,7 +173933,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G97_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10164,
@@ -173387,7 +174177,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G97_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10165,
@@ -173630,7 +174421,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1G97_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10166,
@@ -173823,7 +174615,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10170,
@@ -174021,7 +174814,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10169,
@@ -174219,7 +175013,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10167,
@@ -174417,7 +175212,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10168,
@@ -174615,7 +175411,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10171,
@@ -174813,7 +175610,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10233,
@@ -175136,7 +175934,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10235,
@@ -175464,7 +176263,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10239,
@@ -175792,7 +176592,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10237,
@@ -176120,7 +176921,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10241,
@@ -176513,7 +177315,8 @@
     "value": "0.55 0.8 V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10243,
@@ -176911,7 +177714,8 @@
     "value": "0.55 0.8 V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10245,
@@ -177309,7 +178113,8 @@
     "value": "0.55 0.8 V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10172,
@@ -177517,7 +178322,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10175,
@@ -177730,7 +178536,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10177,
@@ -177943,7 +178750,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10176,
@@ -178156,7 +178964,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10173,
@@ -178369,7 +179178,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10174,
@@ -178582,7 +179392,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10178,
@@ -178795,7 +179606,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10182,
@@ -179013,7 +179825,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10181,
@@ -179231,7 +180044,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10179,
@@ -179449,7 +180263,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10180,
@@ -179667,7 +180482,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10184,
@@ -179880,7 +180696,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10188,
@@ -180098,7 +180915,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10187,
@@ -180316,7 +181134,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10185,
@@ -180534,7 +181353,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10186,
@@ -180752,7 +181572,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G07_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10189,
@@ -181000,7 +181821,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10193,
@@ -181253,7 +182075,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10192,
@@ -181506,7 +182329,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10190,
@@ -181759,7 +182583,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10191,
@@ -182012,7 +182837,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G14_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10194,
@@ -182220,7 +183046,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10198,
@@ -182433,7 +183260,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10197,
@@ -182646,7 +183474,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10195,
@@ -182859,7 +183688,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10196,
@@ -183072,7 +183902,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G16_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10199,
@@ -183320,7 +184151,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G17_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10203,
@@ -183573,7 +184405,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G17_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10202,
@@ -183826,7 +184659,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G17_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10200,
@@ -184079,7 +184913,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G17_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10201,
@@ -184332,7 +185167,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G17_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10204,
@@ -184540,7 +185376,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G34_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10208,
@@ -184753,7 +185590,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G34_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10207,
@@ -184966,7 +185804,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G34_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10205,
@@ -185179,7 +186018,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G34_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10206,
@@ -185392,7 +186232,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2G34_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10209,
@@ -185590,7 +186431,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2GU04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10213,
@@ -185788,7 +186630,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2GU04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10212,
@@ -185986,7 +186829,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2GU04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10210,
@@ -186184,7 +187028,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2GU04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10211,
@@ -186382,7 +187227,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC2GU04_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10214,
@@ -186610,7 +187456,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC32A_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10215,
@@ -186843,7 +187690,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC32A_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10216,
@@ -187076,7 +187924,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC32A_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10219,
@@ -187194,7 +188043,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC4245_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10217,
@@ -187342,7 +188192,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10218,
@@ -187495,7 +188346,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC4245A_Product_DS_V1.4.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10220,
@@ -187618,7 +188470,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC4245_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10221,
@@ -187886,7 +188739,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC540A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10222,
@@ -188159,7 +189013,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC540A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10223,
@@ -188432,7 +189287,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC540A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10224,
@@ -188700,7 +189556,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC541A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10225,
@@ -188973,7 +189830,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC541A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10226,
@@ -189246,7 +190104,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC541A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10227,
@@ -189614,7 +190473,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC74A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10228,
@@ -189987,7 +190847,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC74A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10229,
@@ -190360,7 +191221,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC74A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10230,
@@ -190613,7 +191475,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC86A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10231,
@@ -190871,7 +191734,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC86A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10232,
@@ -191129,7 +191993,8 @@
     "value": "0.10 0.10 V",
     "source_label": "EM74LVC86A_Product_DS_V1.1.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10247,
@@ -191282,7 +192147,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10249,
@@ -191440,7 +192306,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10234,
@@ -191763,7 +192630,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10236,
@@ -192091,7 +192959,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10240,
@@ -192419,7 +193288,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10238,
@@ -192747,7 +193617,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC_LVCH244A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10242,
@@ -193140,7 +194011,8 @@
     "value": "0.55 0.8 V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10244,
@@ -193538,7 +194410,8 @@
     "value": "0.55 0.8 V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10246,
@@ -193936,7 +194809,8 @@
     "value": "0.55 0.8 V",
     "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10248,
@@ -194089,7 +194963,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10250,
@@ -194247,7 +195122,8 @@
     "value": "0.1 0.1 V",
     "source_label": "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 869,
@@ -194405,6 +195281,13 @@
     "value": "-26 dB",
     "source_label": "EMS23157_Product_DS_V1.3.pdf"
    }
+  ],
+  "applications": " \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n \nCell phones and TWS headset \n\n \n \nEMS23157 \nLow Voltage and High Speed Dual SPDT Analog Switch with True Isolation \n \n Rev. 1.3 – Dec 15, 2025 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -194568,6 +195451,11 @@
     "value": "-26 dB",
     "source_label": "EMS23157-Q100_Drft_DS_V0.9.pdf"
    }
+  ],
+  "applications": " Wide Supply Range from 1.5 V to 5.5 V \n Low ON-state resistance, typically 1.9 Ω (VCC=5.5 V) \n 1.8 V Compatible Control Logic Inputs \n High Off-Isolation: -80 dB @ 10 kHz \n Low Channel-to-Channel Crosstalk: -82 dB @ 10 kHz \n High Bandwidth ( -3dB @ 800MHz) Suitable For USB2.0 High-Speed Routing \n Low Quiescent Current (< 1uA) when VCC = 3.3 V",
+  "applications_domains": [
+   "USB/Type-C路由",
+   "音频/视频路由"
   ]
  },
  {
@@ -194731,7 +195619,8 @@
     "value": "-26 dB",
     "source_label": "EMS23157_Product_DS_V1.3.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10253,
@@ -194894,7 +195783,8 @@
     "value": "-26 dB",
     "source_label": "EMS23157-Q100_Drft_DS_V0.9.pdf"
    }
-  ]
+  ],
+  "applications": []
  },
  {
   "id": 10256,
@@ -195057,6 +195947,13 @@
     "value": "-82 dB",
     "source_label": "EMS2750_Product_DS_V1.1.pdf"
    }
+  ],
+  "applications": " \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n \nCell phones and TWS headset \n \nUSB Type-C Mic/Gnd Switch \n \nDC Motor Drive \n\n \n \nEMS2750 \nLow Voltage and High Speed Dual SPDT Analog Switch with True Isolation \n \n Rev. 1.1 – Dec 15, 2025 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -195225,6 +196122,15 @@
     "value": "-82 dB",
     "source_label": "EMS2750_Product_DS_V1.1.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -195378,6 +196284,13 @@
     "value": "-26 dB",
     "source_label": "EMS3157_Product_DS_V1.8.pdf"
    }
+  ],
+  "applications": " \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n \nCell phones and TWS headset \n\n \n \nEMS3157 \nLow Voltage and High Speed SPDT Analog Switch with True Isolation \n \n Rev. 1.8 – Jul 10, 2026 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -195541,7 +196454,8 @@
     "value": "-26 dB",
     "source_label": "EMS3157-Q100_Draft_DS_V0.92.pdf"
    }
-  ]
+  ],
+  "applications": " Wide Supply Range from 1.5 V to 5.5 V \n Low ON-state resistance, typically 1.9 Ω (VCC=5.5 V) \n 1.8 V Compatible Control Logic Inputs \n High Off-Isolation: -80 dB @ 10 kHz \n Low Channel-to-Channel Crosstalk: -82 dB @ 10 kHz \n High Bandwidth: -3dB @ 800MHz \n Low Quiescent Current (< 1uA) when VCC = 3.3 V \n    Latch-up performance exceeds 200 mA \n ESD protection: \n• \nHBM ANSI/ESDA/JEDEC JS-001 Class 2 exceeds 3000 V \n• \nCDM ANSI/ESDA/JEDEC JS-002 Class C3  exceeds 2000 V"
  },
  {
   "id": 1813,
@@ -195699,6 +196613,13 @@
     "value": "-26 dB",
     "source_label": "EMS3157_Product_DS_V1.8.pdf"
    }
+  ],
+  "applications": " \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n \nCell phones and TWS headset \n\n \n \nEMS3157 \nLow Voltage and High Speed SPDT Analog Switch with True Isolation \n \n Rev. 1.8 – Jul 10, 2026 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -195857,6 +196778,13 @@
     "value": "-26 dB",
     "source_label": "EMS3157_Product_DS_V1.8.pdf"
    }
+  ],
+  "applications": " \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n \nCell phones and TWS headset \n\n \n \nEMS3157 \nLow Voltage and High Speed SPDT Analog Switch with True Isolation \n \n Rev. 1.8 – Jul 10, 2026 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -196015,6 +196943,13 @@
     "value": "-26 dB",
     "source_label": "EMS3157_Product_DS_V1.8.pdf"
    }
+  ],
+  "applications": " \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n \nCell phones and TWS headset \n\n \n \nEMS3157 \nLow Voltage and High Speed SPDT Analog Switch with True Isolation \n \n Rev. 1.8 – Jul 10, 2026 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -196173,6 +197108,13 @@
     "value": "-26 dB",
     "source_label": "EMS3157_Product_DS_V1.8.pdf"
    }
+  ],
+  "applications": " \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n \nCell phones and TWS headset \n\n \n \nEMS3157 \nLow Voltage and High Speed SPDT Analog Switch with True Isolation \n \n Rev. 1.8 – Jul 10, 2026 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -196341,6 +197283,15 @@
     "value": "-26 dB",
     "source_label": "EMS3157-Q100_Draft_DS_V0.92.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -196499,6 +197450,15 @@
     "value": "-26 dB",
     "source_label": "EMS3157_Product_DS_V1.8.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -196602,6 +197562,11 @@
     "value": "4.7 V",
     "source_label": "EMS3218_Draft_DS_V0.1.pdf"
    }
+  ],
+  "applications": " \nHiFi Audio Equipment \n\n \n \nEMS3218 \nHiFi Audio Switches with Negative Swing Capability and Over-Voltage-Protection \n \n Rev. 0.1 – Jan 21, 2026 \n2",
+  "applications_domains": [
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -196705,6 +197670,10 @@
     "value": "4.7 V",
     "source_label": "EMS3218_Draft_DS_V0.1.pdf"
    }
+  ],
+  "applications": [
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -196833,6 +197802,14 @@
     "value": "-43 dB",
     "source_label": "EMS3412_Draft_DS_V0.1.pdf"
    }
+  ],
+  "applications": "◼ USB Type-C Ecosystem \n◼ Desktop and Notebook PCs \n◼ Server/Storage Area Networks \n◼ PCI Express Backplanes \n◼ Shared I/O Ports \n◼ FPD LinkII and FPD LinkIII Switching",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "PC/服务器/存储",
+   "显示/监控/TV",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -197011,6 +197988,12 @@
     "value": "2.0 5.5 V",
     "source_label": "EMS3515_Product_DS_V1.2.pdf"
    }
+  ],
+  "applications": " \nSmart phones, Tablets, laptops \n \nBluetooth headsets, Mobile accessories\n\n \n \nEMS3515 \n5 V SPST Depletion Switch with Negative Swing \n \n Rev. 1.2 – Mar 04, 2026 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -197189,6 +198172,11 @@
     "value": "2.0 5.5 V",
     "source_label": "EMS3515_Product_DS_V1.2.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -197282,6 +198270,12 @@
     "value": "30 pF",
     "source_label": "EMS3518_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": " \nSmart phones, Tablets, laptops \n \nBluetooth headsets, Mobile accessorie\n\n \n \nEMS3518 \nDual 5V SPST Depletion Audio Switches with Negative Swing \n \n Rev. 1.0 – Oct 16, 2025 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -197375,6 +198369,11 @@
     "value": "30 pF",
     "source_label": "EMS3518_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -197513,6 +198512,12 @@
     "value": "0.4 V",
     "source_label": "EMS3550_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": " \nSmart phones, Tablets, laptops \n \n Bluetooth headsets, Mobile accessories \n\n \n \nEMS3550 \nFour-Pole Single-Throw (4-PST) Depletion Mode Isolation Switch \n \n Rev. 1.0 – Mar 10, 2026 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -197651,6 +198656,12 @@
     "value": "0.4 V",
     "source_label": "EMS3550_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": " \nSmart phones, Tablets, laptops \n \n Bluetooth headsets, Mobile accessories \n\n \n \nEMS3550 \nFour-Pole Single-Throw (4-PST) Depletion Mode Isolation Switch \n \n Rev. 1.0 – Mar 10, 2026 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -197789,6 +198800,11 @@
     "value": "0.4 V",
     "source_label": "EMS3550_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -197952,6 +198968,12 @@
     "value": "0 Ω",
     "source_label": "EMS3580_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": "◼ \nHi-Fi Smartphones and Portable Device  \n◼ \nHi-Fi SACD/DVD Players \n◼ \nHigh Quality Home Theaters \n\n \n \nEMS3580 \nHigh Fidelity Stereo SPDT Switch with Pop and Click Elimination \n \nRev. 1.0 – Feb 21, 2026",
+  "applications_domains": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -198115,6 +199137,11 @@
     "value": "0 Ω",
     "source_label": "EMS3580_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -198293,6 +199320,13 @@
     "value": "1 or 1:2 switch. It is optimized for use with the USB 2.0 DP/DM",
     "source_label": "EMS3900_Product_DS_V1.8.pdf"
    }
+  ],
+  "applications": "◼ \nMobile Phones, Tablets and Notebooks \n◼ \nUSB port devices \n\n \n \nEMS3900 \nDual high-speed USB 2.0 double-pole double-throw analog switch \n \n Rev. 1.8 – Dec 15, 2025 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储"
   ]
  },
  {
@@ -198471,6 +199505,15 @@
     "value": "-26 dB",
     "source_label": "EMS3900_Product_DS_V1.8.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -198649,6 +199692,13 @@
     "value": "1 or 1:2 switch. It is optimized for use with the USB 2.0 DP/DM",
     "source_label": "EMS3902_Product_DS_V1.1.pdf"
    }
+  ],
+  "applications": " \nMobile Phones, Tablets and Notebooks \n \nUSB port devices \n\n \n \nEMS3902 \nDual high-speed USB 2.0 double-pole double-throw analog switch \n \n Rev. 1.1 – Aug 12, 2025 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储"
   ]
  },
  {
@@ -198822,6 +199872,15 @@
     "value": "-26 dB",
     "source_label": "EMS3902_Product_DS_V1.1.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -198995,6 +200054,15 @@
     "value": "-26 dB",
     "source_label": "EMS3902_Product_DS_V1.1.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -199158,6 +200226,13 @@
     "value": "-26 dB",
     "source_label": "EMS3905_Product_DS_V1.3.pdf"
    }
+  ],
+  "applications": " \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n \nCell phones and TWS headset \n\n \n \nEMS3905 \nLow Voltage and High Speed Dual SPDT Analog Switch with True Isolation \n \n Rev. 1.3 – Apr 15, 2026 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -199326,6 +200401,15 @@
     "value": "-26 dB",
     "source_label": "EMS3905_Product_DS_V1.3.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -199494,6 +200578,15 @@
     "value": "-26 dB",
     "source_label": "EMS3905_Product_DS_V1.3.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -199662,6 +200755,15 @@
     "value": "-26 dB",
     "source_label": "EMS3905_Product_DS_V1.3.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -199835,6 +200937,14 @@
     "value": "-41 dB",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    }
+  ],
+  "applications": "◼ \nUSB Type-C™, Type A and Micro B devices \n◼ \nMobile Phones, Tablets and Notebooks \n\n \n \nEMS4000 \nDual 2:1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection \n \n Rev. 1.7 – Jun 20, 2025 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -200013,6 +201123,16 @@
     "value": "-41 dB",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -200191,6 +201311,16 @@
     "value": "-41 dB",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -200294,6 +201424,16 @@
     "value": "-43 dB",
     "source_label": "EMS4100_Product_DS_V1.4.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -200472,6 +201612,16 @@
     "value": "-41 dB",
     "source_label": "EMS4000_Product_DS_V1.7.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -200640,6 +201790,14 @@
     "value": "-41 dB",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": " \nUSB Type-C™, Type A and Micro B devices \n \nMobile Phones, Tablets and Notebooks \n\n \n \nEMS4002 \nDual 2:1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection \n \n Rev. 1.0 – Feb 10, 2026 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -200813,6 +201971,16 @@
     "value": "-41 dB",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -200986,6 +202154,16 @@
     "value": "-41 dB",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -201159,6 +202337,16 @@
     "value": "-41 dB",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -201332,6 +202520,16 @@
     "value": "-41 dB",
     "source_label": "EMS4002_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -201435,6 +202633,15 @@
     "value": "-43 dB",
     "source_label": "EMS4100_Product_DS_V1.4.pdf"
    }
+  ],
+  "applications": " \nUSB Type-C Ecosystem \n \nDesktop and Notebook PCs \n \nServer/Storage Area Networks \n \nPCI Express Backplanes \n \nShared I/O Ports \n \nFPD LinkII and FPD LinkIII Switching \n \n\n \n \nEMS4100 \nTwo-Channel Differential 2:1/1:2 USB 3.1 Super Speed 10Gbps Mux/DeMux \n \n Rev1.4– Dec 15, 2025 \n3",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "显示/监控/TV",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -201543,6 +202750,18 @@
     "value": "-43 dB",
     "source_label": "EMS4100_Product_DS_V1.4.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "显示/监控/TV",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由",
+   "显示/监控/TV"
   ]
  },
  {
@@ -201651,6 +202870,18 @@
     "value": "-43 dB",
     "source_label": "EMS4100_Product_DS_V1.4.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "显示/监控/TV",
+   "车载/医疗/工业"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由",
+   "显示/监控/TV"
   ]
  },
  {
@@ -201779,6 +203010,14 @@
     "value": "-43 dB",
     "source_label": "EMS4310_Draft_DS_V0.1.pdf"
    }
+  ],
+  "applications": "◼ USB Type-C Ecosystem \n◼ Desktop and Notebook PCs \n◼ Server/Storage Area Networks \n◼ PCI Express Backplanes \n◼ Shared I/O Ports \n◼ FPD LinkII and FPD LinkIII Switching",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "PC/服务器/存储",
+   "显示/监控/TV",
+   "车载/医疗/工业"
   ]
  },
  {
@@ -201922,6 +203161,11 @@
     "value": "-40 dB",
     "source_label": "EMS4320_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": " USB Type-C Audio",
+  "applications_domains": [
+   "USB/Type-C路由",
+   "音频/视频路由"
   ]
  },
  {
@@ -202065,6 +203309,13 @@
     "value": "-40 dB",
     "source_label": "EMS4320_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": [
+   "USB/Type-C路由",
+   "音频/视频路由"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -202223,6 +203474,11 @@
     "value": "-40 dB",
     "source_label": "EMS4321_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": " USB Type-C Audio",
+  "applications_domains": [
+   "USB/Type-C路由",
+   "音频/视频路由"
   ]
  },
  {
@@ -202381,6 +203637,13 @@
     "value": "-40 dB",
     "source_label": "EMS4321_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": [
+   "USB/Type-C路由",
+   "音频/视频路由"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -202439,6 +203702,11 @@
     "value": "0 3.3 V",
     "source_label": "EMS4422_Product_DS_V1.1.pdf"
    }
+  ],
+  "applications": " \nRouting of HDMI 2.1 video signals with low signal attenuation between source and sink for \n4K 2K ultra high definition video display and broadcast video equipment. \n \nRouting of DisplayPort video signals with low signal attenuation between source and sink \nfor PC and monitor. \n\n \n \nEMS4422 \n2:1 Mux/DeMux High Bandwidth HDMITM 2.1 Compliant Signal Switch \n \n Rev. 1.1 – May 10, 2025 \n3",
+  "applications_domains": [
+   "音频/视频路由",
+   "显示/监控/TV"
   ]
  },
  {
@@ -202497,6 +203765,13 @@
     "value": "0 3.3 V",
     "source_label": "EMS4422_Product_DS_V1.1.pdf"
    }
+  ],
+  "applications": [
+   "音频/视频路由",
+   "显示/监控/TV"
+  ],
+  "applications_domains": [
+   "显示/监控/TV"
   ]
  },
  {
@@ -202560,6 +203835,12 @@
     "value": "0.3 V",
     "source_label": "EMS4485_Draft_DS_V0.9.pdf"
    }
+  ],
+  "applications": "◼ USB Type-C Receptacle, Mobile Phone and Tablets \n\n \n \nEMS4485 \nUSB Type-C Analog Audio Switch with Protection Function, Moisture and Audio Jack Detection \n \nRev0.9– Jul 06, 2026 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由"
   ]
  },
  {
@@ -202713,6 +203994,13 @@
     "value": "-26 dB",
     "source_label": "EMS4567_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": " \nCell phones, PDA, Digital Camera and Notebook \n \nLCD Monitor, TV and Set-Top Box \n \nAudio and Video Signal Routing \n \nOther electronic equipment\n\n \n \nEMS4567 \nLow On Resistance, Quad SPDT Analog Switch \n \nRev. 1.0 – Oct 30, 2024",
+  "applications_domains": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "显示/监控/TV"
   ]
  },
  {
@@ -202866,6 +204154,15 @@
     "value": "-26 dB",
     "source_label": "EMS4567_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "显示/监控/TV"
+  ],
+  "applications_domains": [
+   "显示/监控/TV"
   ]
  },
  {
@@ -203039,6 +204336,13 @@
     "value": "-82 dB",
     "source_label": "EMS4735_Product_DS_V1.2.pdf"
    }
+  ],
+  "applications": " \nMobile Phones, Tablets and Notebooks \n \nUSB port devices \n\n \n \nEMS4735 \nDual 4:1 High-Speed USB2.0 (480Mbps) SPQT Analog Switch \n \n Rev. 1.2 – Jun 05, 2026 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储"
   ]
  },
  {
@@ -203217,6 +204521,15 @@
     "value": "-82 dB",
     "source_label": "EMS4735_Product_DS_V1.2.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -203295,6 +204608,13 @@
     "value": "1 uA",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": " \nUSB Type-C™, Type A and Micro B devices \n \nMobile Phones, Tablets and Notebooks \n\n \n \nEMS4798 \nAudio Headset Analog Switch with Reduced GND Switch RON and FM Capability \n \n Rev. 1.0 – Apr 08, 2026 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储"
   ]
  },
  {
@@ -203378,6 +204698,15 @@
     "value": "1 uA",
     "source_label": "EMS4798_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由"
   ]
  },
  {
@@ -203536,6 +204865,13 @@
     "value": "-26 dB",
     "source_label": "EMS4899_Product_DS_V1.4.pdf"
    }
+  ],
+  "applications": " \nCell phones, PDA, Digital Camera and Notebook \n \nLCD Monitor, TV and Set-Top Box \n \nAudio and Video Signal Routing \n \nOther electronic equipment\n\n \n \nEMS4899 \nLow On Resistance, Quad SPDT Analog Switch \n \nRev. 1.4 – Mar 05, 2026                                                                                                                                                   2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "显示/监控/TV"
   ]
  },
  {
@@ -203699,6 +205035,13 @@
     "value": "-26 dB",
     "source_label": "EMS4899_Product_DS_V1.4.pdf"
    }
+  ],
+  "applications": " \nCell phones, PDA, Digital Camera and Notebook \n \nLCD Monitor, TV and Set-Top Box \n \nAudio and Video Signal Routing \n \nOther electronic equipment\n\n \n \nEMS4899 \nLow On Resistance, Quad SPDT Analog Switch \n \nRev. 1.4 – Mar 05, 2026                                                                                                                                                   2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "显示/监控/TV"
   ]
  },
  {
@@ -203882,6 +205225,14 @@
     "value": "-45 dB",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    }
+  ],
+  "applications": "◼ \nCell phone, PDA, Digital Camera, and Notebook \n◼ \nLCD Monitor, TV, and Set-Top Box \n\n \n \nEMS7227 \nLow-Power, Two-Port, Hi-Speed,USB2.0 (480Mbps) UART Switch \n \n Rev. 0.1 – Oct 09, 2025 \n2",
+  "applications_domains": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "显示/监控/TV"
   ]
  },
  {
@@ -204075,6 +205426,17 @@
     "value": "-45 dB",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "显示/监控/TV"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由",
+   "显示/监控/TV"
   ]
  },
  {
@@ -204268,6 +205630,17 @@
     "value": "-45 dB",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf"
    }
+  ],
+  "applications": [
+   "手机/平板/便携",
+   "USB/Type-C路由",
+   "音频/视频路由",
+   "PC/服务器/存储",
+   "显示/监控/TV"
+  ],
+  "applications_domains": [
+   "USB/Type-C路由",
+   "显示/监控/TV"
   ]
  },
  {
@@ -204341,6 +205714,10 @@
     "value": "0 0.15 0 0.15 V",
     "source_label": "EXS0104_Product_DS_V1.1.pdf"
    }
+  ],
+  "applications": "Voltage level-translation applications. The EXS0104 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0104\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA3\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\n \nFig. 9. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0104 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0104 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications_domains": [
+   "I2C/传感器/电平转换"
   ]
  },
  {
@@ -204504,6 +205881,10 @@
     "value": "—",
     "source_label": "EXS0102_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": "Voltage level-translation applications. The EXS0102 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0102\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nB1\nB2\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\n \nFig. 8. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0102 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0102 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications_domains": [
+   "I2C/传感器/电平转换"
   ]
  },
  {
@@ -204667,6 +206048,10 @@
     "value": "—",
     "source_label": "EXS0102_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": "Voltage level-translation applications. The EXS0102 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0102\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nB1\nB2\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\n \nFig. 8. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0102 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0102 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications_domains": [
+   "I2C/传感器/电平转换"
   ]
  },
  {
@@ -204830,6 +206215,10 @@
     "value": "—",
     "source_label": "EXS0102_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": "Voltage level-translation applications. The EXS0102 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0102\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nB1\nB2\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\n \nFig. 8. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0102 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0102 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications_domains": [
+   "I2C/传感器/电平转换"
   ]
  },
  {
@@ -204998,6 +206387,10 @@
     "value": "—",
     "source_label": "EXS0104_Product_DS_V1.1.pdf"
    }
+  ],
+  "applications": "Voltage level-translation applications. The EXS0104 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0104\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA3\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\n \nFig. 9. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0104 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0104 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications_domains": [
+   "I2C/传感器/电平转换"
   ]
  },
  {
@@ -205166,6 +206559,10 @@
     "value": "—",
     "source_label": "EXS0104_Product_DS_V1.1.pdf"
    }
+  ],
+  "applications": "Voltage level-translation applications. The EXS0104 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0104\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA3\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\n \nFig. 9. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0104 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0104 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications_domains": [
+   "I2C/传感器/电平转换"
   ]
  },
  {
@@ -205334,6 +206731,10 @@
     "value": "—",
     "source_label": "EXS0104_Product_DS_V1.1.pdf"
    }
+  ],
+  "applications": "Voltage level-translation applications. The EXS0104 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0104\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA3\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\n \nFig. 9. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0104 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0104 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications_domains": [
+   "I2C/传感器/电平转换"
   ]
  },
  {
@@ -205502,6 +206903,10 @@
     "value": "—",
     "source_label": "EXS0104_Product_DS_V1.1.pdf"
    }
+  ],
+  "applications": "Voltage level-translation applications. The EXS0104 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0104\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA3\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\n \nFig. 9. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0104 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0104 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications_domains": [
+   "I2C/传感器/电平转换"
   ]
  },
  {
@@ -205665,6 +207070,10 @@
     "value": "—",
     "source_label": "EXS0106_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": "Voltage level-translation applications. The EXS0106 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0104\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA3\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\nA5\nA6\nB5\nB6\n \nFig. 7. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0106 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0106 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications_domains": [
+   "I2C/传感器/电平转换"
   ]
  },
  {
@@ -205828,6 +207237,10 @@
     "value": "—",
     "source_label": "EXS0106_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": "Voltage level-translation applications. The EXS0106 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0104\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA3\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\nA5\nA6\nB5\nB6\n \nFig. 7. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0106 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0106 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications_domains": [
+   "I2C/传感器/电平转换"
   ]
  },
  {
@@ -205991,6 +207404,10 @@
     "value": "—",
     "source_label": "EXS0108_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": "Voltage level-translation applications. The EXS0108 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0108\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA5\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\nA3\nA6\nB5\nB6\nA7\nA8\nB7\nB8\n \nFig. 8. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0108 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0108 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications_domains": [
+   "I2C/传感器/电平转换"
   ]
  },
  {
@@ -206154,6 +207571,10 @@
     "value": "—",
     "source_label": "EXS0108_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": "Voltage level-translation applications. The EXS0108 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0108\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA5\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\nA3\nA6\nB5\nB6\nA7\nA8\nB7\nB8\n \nFig. 8. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0108 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0108 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications_domains": [
+   "I2C/传感器/电平转换"
   ]
  },
  {
@@ -206317,6 +207738,10 @@
     "value": "—",
     "source_label": "EXS0108_Product_DS_V1.0.pdf"
    }
+  ],
+  "applications": "Voltage level-translation applications. The EXS0108 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0108\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA5\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\nA3\nA6\nB5\nB6\nA7\nA8\nB7\nB8\n \nFig. 8. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0108 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0108 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications_domains": [
+   "I2C/传感器/电平转换"
   ]
  }
 ]
