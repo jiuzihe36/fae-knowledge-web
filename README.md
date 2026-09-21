@@ -8,12 +8,15 @@
 
 ---
 
-## 🌐 访问
+## 🌐 双生产访问（GitHub Pages + Cloudflare Pages 双活）
 
-| 入口 | 网址 | 说明 |
+| 入口 | 网址 | 定位 |
 |------|------|------|
-| **正式发布站** | https://logic-qbu.pages.dev | 全球 CDN，国内访问流畅 |
-| **GitHub 存档** | 本仓库 | 只读存档 / 版本历史 |
+| **GitHub Pages** | https://jiuzihe36.github.io/fae-knowledge-web/ | 双发布源之一 · 存档 + 全球可访问 |
+| **Cloudflare Pages** | https://logic-qbu.pages.dev | 双发布源之二 · 国内访问流畅 · 生产主站 |
+| **GitHub 仓库** | 本仓库 | 唯一权威存档（含完整 git 历史）|
+
+> ⚠️ 两站发布同一份 `data/products.json`（单向来自本地 wiki），内容始终一致。任一平台故障时另一站照常服务。
 
 ---
 
