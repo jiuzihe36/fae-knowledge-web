@@ -228,10 +228,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": "◼ \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n◼ \nCell phones and TWS headset \n\n \n \nEL3157 \nLow Voltage and High Speed SPDT Analog Switch with True Isolation \n \n Rev. 1.1 – Aug 12, 2025 \n2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "手机/TWS耳机",
-   "音频/视频/UART/USB信号路由"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -464,10 +466,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": "◼ \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n◼ \nCell phones and TWS headset \n\n \n \nEL3157 \nLow Voltage and High Speed SPDT Analog Switch with True Isolation \n \n Rev. 1.1 – Aug 12, 2025 \n2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "手机/TWS耳机",
-   "音频/视频/UART/USB信号路由"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -4568,12 +4572,12 @@
     "param_html": "t<sub>PLZ</sub> EM74AHCT1G09"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "安防设备信号处理",
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源使能控制"
   ],
   "function_detail": "双2输入与门（开漏输出）"
  },
@@ -4783,12 +4787,12 @@
     "param_html": "t<sub>PLZ</sub> EM74AHCT1G09"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "安防设备信号处理",
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源使能控制"
   ],
   "function_detail": "双2输入与门（开漏输出）"
  },
@@ -4998,12 +5002,12 @@
     "param_html": "t<sub>PLZ</sub> EM74AHCT1G09"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "安防设备信号处理",
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源使能控制"
   ],
   "function_detail": "双2输入与门（开漏输出）"
  },
@@ -7297,12 +7301,12 @@
     "param_html": "t<sub>pd</sub> EM74AHCT1G14"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "（施密特输入）"
  },
@@ -7456,12 +7460,12 @@
     "param_html": "t<sub>pd</sub> EM74AHCT1G14"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "（施密特输入）"
  },
@@ -7615,12 +7619,12 @@
     "param_html": "t<sub>pd</sub> EM74AHCT1G14"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "（施密特输入）"
  },
@@ -9001,12 +9005,12 @@
     "param_html": "t<sub>dis</sub> EM74AHCT1G240"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "单路反相器（三态输出）"
  },
@@ -9265,12 +9269,12 @@
     "param_html": "t<sub>dis</sub> EM74AHCT1G240"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "单路反相器（三态输出）"
  },
@@ -11144,12 +11148,12 @@
     "param_html": "t<sub>pd</sub> EM74AHCT2G14"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "双路（施密特输入）"
  },
@@ -11303,12 +11307,12 @@
     "param_html": "t<sub>pd</sub> EM74AHCT2G14"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "双路（施密特输入）"
  },
@@ -11462,12 +11466,12 @@
     "param_html": "t<sub>pd</sub> EM74AHCT2G14"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "双路（施密特输入）"
  },
@@ -16858,12 +16862,12 @@
     "param_html": "t<sub>PLZ</sub> EM74AHCT1G09"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "安防设备信号处理",
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源使能控制"
   ],
   "function_detail": "双2输入与门（开漏输出）"
  },
@@ -17073,12 +17077,12 @@
     "param_html": "t<sub>PLZ</sub> EM74AHCT1G09"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "安防设备信号处理",
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源使能控制"
   ],
   "function_detail": "双2输入与门（开漏输出）"
  },
@@ -17288,12 +17292,12 @@
     "param_html": "t<sub>PLZ</sub> EM74AHCT1G09"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "安防设备信号处理",
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源使能控制"
   ],
   "function_detail": "双2输入与门（开漏输出）"
  },
@@ -19587,12 +19591,12 @@
     "param_html": "t<sub>pd</sub> EM74AHCT1G14"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "（施密特输入）"
  },
@@ -19746,12 +19750,12 @@
     "param_html": "t<sub>pd</sub> EM74AHCT1G14"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "（施密特输入）"
  },
@@ -19905,12 +19909,12 @@
     "param_html": "t<sub>pd</sub> EM74AHCT1G14"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "（施密特输入）"
  },
@@ -21291,12 +21295,12 @@
     "param_html": "t<sub>dis</sub> EM74AHCT1G240"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "单路反相器（三态输出）"
  },
@@ -21555,12 +21559,12 @@
     "param_html": "t<sub>dis</sub> EM74AHCT1G240"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "单路反相器（三态输出）"
  },
@@ -23434,12 +23438,12 @@
     "param_html": "t<sub>pd</sub> EM74AHCT2G14"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "双路（施密特输入）"
  },
@@ -23593,12 +23597,12 @@
     "param_html": "t<sub>pd</sub> EM74AHCT2G14"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "双路（施密特输入）"
  },
@@ -23752,12 +23756,12 @@
     "param_html": "t<sub>pd</sub> EM74AHCT2G14"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "双路（施密特输入）"
  },
@@ -25969,7 +25973,8 @@
     "param": "TJ junction Temperature under Bias",
     "value": "max=150",
     "source_label": "EM74CBT3257_Product_DS_V1.0.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "T<sub>J</sub> junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -25982,7 +25987,8 @@
     "param": "R θJA thermal resistance",
     "value": "max=350",
     "source_label": "EM74CBT3257_Product_DS_V1.0.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R<sub>θJA</sub> thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -26141,11 +26147,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": " \nCell phones, PDA, Digital Camera and Notebook \n \nLCD Monitor, TV and Set-Top Box \n \nAudio and Video Signal Routing \n \nOther electronic equipment\n\n \n \nEM74CBT3257 \nLow On Resistance, Quad SPDT Analog Switch \n \nRev. 1.0 – Jan 30, 2025                                                                                                                                                   2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "手机/数码相机/笔记本",
-   "显示器/电视/机顶盒",
-   "音频/视频信号路由"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -26202,7 +26209,8 @@
     "param": "TJ junction Temperature under Bias",
     "value": "max=150",
     "source_label": "EM74CBT3257_Product_DS_V1.0.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "T<sub>J</sub> junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -26215,7 +26223,8 @@
     "param": "R θJA thermal resistance",
     "value": "max=350",
     "source_label": "EM74CBT3257_Product_DS_V1.0.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R<sub>θJA</sub> thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -26374,11 +26383,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": " \nCell phones, PDA, Digital Camera and Notebook \n \nLCD Monitor, TV and Set-Top Box \n \nAudio and Video Signal Routing \n \nOther electronic equipment\n\n \n \nEM74CBT3257 \nLow On Resistance, Quad SPDT Analog Switch \n \nRev. 1.0 – Jan 30, 2025                                                                                                                                                   2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "手机/数码相机/笔记本",
-   "显示器/电视/机顶盒",
-   "音频/视频信号路由"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -26435,7 +26445,8 @@
     "param": "TJ junction Temperature under Bias",
     "value": "max=150",
     "source_label": "EM74CBT3257_Product_DS_V1.0.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "T<sub>J</sub> junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -26448,7 +26459,8 @@
     "param": "R θJA thermal resistance",
     "value": "max=350",
     "source_label": "EM74CBT3257_Product_DS_V1.0.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R<sub>θJA</sub> thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -26607,11 +26619,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": " \nCell phones, PDA, Digital Camera and Notebook \n \nLCD Monitor, TV and Set-Top Box \n \nAudio and Video Signal Routing \n \nOther electronic equipment\n\n \n \nEM74CBT3257 \nLow On Resistance, Quad SPDT Analog Switch \n \nRev. 1.0 – Jan 30, 2025                                                                                                                                                   2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "手机/数码相机/笔记本",
-   "显示器/电视/机顶盒",
-   "音频/视频信号路由"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -35439,12 +35452,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT132| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "工业控制信号处理",
+   "接口信号整形",
+   "消费电子逻辑控制",
+   "电源时序控制"
   ],
   "function_detail": "四路2输入与非门（施密特输入）"
  },
@@ -35654,12 +35667,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT132| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "工业控制信号处理",
+   "接口信号整形",
+   "消费电子逻辑控制",
+   "电源时序控制"
   ],
   "function_detail": "四路2输入与非门（施密特输入）"
  },
@@ -36467,12 +36480,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT14| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "六路（施密特输入）"
  },
@@ -36682,12 +36695,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT14| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "六路（施密特输入）"
  },
@@ -41774,12 +41787,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance| Per buffer ; V = GND to V [5] ICC"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "八路缓冲器（三态输出）"
  },
@@ -42087,12 +42100,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance| Per buffer ; V = GND to V [5] ICC"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "八路缓冲器（三态输出）"
  },
@@ -45881,12 +45894,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "六路缓冲器（三态输出、施密特输入）"
  },
@@ -46187,12 +46200,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "六路缓冲器（三态输出、施密特输入）"
  },
@@ -46493,12 +46506,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "六路缓冲器（三态输出）"
  },
@@ -46799,12 +46812,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "六路缓冲器（三态输出）"
  },
@@ -47105,12 +47118,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "六路缓冲器（三态输出、施密特输入）"
  },
@@ -47411,12 +47424,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "六路缓冲器（三态输出、施密特输入）"
  },
@@ -47717,12 +47730,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "六路缓冲器（三态输出）"
  },
@@ -48023,12 +48036,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "六路缓冲器（三态输出）"
  },
@@ -50130,12 +50143,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance| f = 1 MHz; V = GND to V [5] ICC"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "八路缓冲器（三态输出）"
  },
@@ -50443,12 +50456,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance| f = 1 MHz; V = GND to V [5] ICC"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "八路缓冲器（三态输出）"
  },
@@ -53199,10 +53212,12 @@
     "param_html": "t<sub>PHL</sub> HIGH to LOW propagatio n delay| V = 6.0 VCC"
    }
   ],
-  "applications": " Serial-to-parallel data conversion \n Remote control holding register \n\n \n \nEM74HC594 \n8-bit shift register with output register \n \nRev. 0.9 – Aug 20, 2024 \n2",
+  "applications": "LED点阵/数码管驱动；按键扫描扩展；串并转换(I/O扩展)；显示面板驱动",
   "applications_domains": [
-   "串并转换",
-   "遥控保持寄存器"
+   "LED点阵/数码管驱动",
+   "串并转换(I/O扩展)",
+   "按键扫描扩展",
+   "显示面板驱动"
   ],
   "function_detail": "八移位寄存器"
  },
@@ -53510,10 +53525,12 @@
     "param_html": "t<sub>PHL</sub> HIGH to LOW propagatio n delay| V = 6.0 VCC"
    }
   ],
-  "applications": " Serial-to-parallel data conversion \n Remote control holding register \n\n \n \nEM74HC594 \n8-bit shift register with output register \n \nRev. 0.9 – Aug 20, 2024 \n2",
+  "applications": "LED点阵/数码管驱动；按键扫描扩展；串并转换(I/O扩展)；显示面板驱动",
   "applications_domains": [
-   "串并转换",
-   "遥控保持寄存器"
+   "LED点阵/数码管驱动",
+   "串并转换(I/O扩展)",
+   "按键扫描扩展",
+   "显示面板驱动"
   ],
   "function_detail": "八移位寄存器"
  },
@@ -53821,10 +53838,12 @@
     "param_html": "t<sub>PHL</sub> HIGH to LOW propagatio n delay| V = 6.0 VCC"
    }
   ],
-  "applications": " Serial-to-parallel data conversion \n Remote control holding register \n\n \n \nEM74HC594 \n8-bit shift register with output register \n \nRev. 0.9 – Aug 20, 2024 \n2",
+  "applications": "LED点阵/数码管驱动；按键扫描扩展；串并转换(I/O扩展)；显示面板驱动",
   "applications_domains": [
-   "串并转换",
-   "遥控保持寄存器"
+   "LED点阵/数码管驱动",
+   "串并转换(I/O扩展)",
+   "按键扫描扩展",
+   "显示面板驱动"
   ],
   "function_detail": "八移位寄存器"
  },
@@ -54139,11 +54158,12 @@
     "param_html": "t<sub>en</sub> enable time| V = 6.0 VCC"
    }
   ],
-  "applications": " Serial-to-parallel data conversion \n Remote control holding register \n \n\n \n \nEM74HC595A \n8-bit serial-in, serial or parallel-out shift register with output latches; 3-state \n \nRev. 1.1 – Jun 07, 2025 \n3",
+  "applications": "LED点阵/数码管驱动；按键扫描扩展；串并转换(I/O扩展)；显示面板驱动",
   "applications_domains": [
-   "三态输出应用",
-   "串并转换",
-   "遥控保持寄存器"
+   "LED点阵/数码管驱动",
+   "串并转换(I/O扩展)",
+   "按键扫描扩展",
+   "显示面板驱动"
   ],
   "function_detail": "八移位寄存器（三态输出）"
  },
@@ -54458,11 +54478,12 @@
     "param_html": "t<sub>en</sub> enable time| V = 6.0 VCC"
    }
   ],
-  "applications": " Serial-to-parallel data conversion \n Remote control holding register \n \n\n \n \nEM74HC595A \n8-bit serial-in, serial or parallel-out shift register with output latches; 3-state \n \nRev. 1.1 – Jun 07, 2025 \n3",
+  "applications": "LED点阵/数码管驱动；按键扫描扩展；串并转换(I/O扩展)；显示面板驱动",
   "applications_domains": [
-   "三态输出应用",
-   "串并转换",
-   "遥控保持寄存器"
+   "LED点阵/数码管驱动",
+   "串并转换(I/O扩展)",
+   "按键扫描扩展",
+   "显示面板驱动"
   ],
   "function_detail": "八移位寄存器（三态输出）"
  },
@@ -54777,11 +54798,12 @@
     "param_html": "t<sub>en</sub> enable time| V = 6.0 VCC"
    }
   ],
-  "applications": " Serial-to-parallel data conversion \n Remote control holding register \n \n\n \n \nEM74HC595A \n8-bit serial-in, serial or parallel-out shift register with output latches; 3-state \n \nRev. 1.1 – Jun 07, 2025 \n3",
+  "applications": "LED点阵/数码管驱动；按键扫描扩展；串并转换(I/O扩展)；显示面板驱动",
   "applications_domains": [
-   "三态输出应用",
-   "串并转换",
-   "遥控保持寄存器"
+   "LED点阵/数码管驱动",
+   "串并转换(I/O扩展)",
+   "按键扫描扩展",
+   "显示面板驱动"
   ],
   "function_detail": "八移位寄存器（三态输出）"
  },
@@ -55687,12 +55709,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT7001| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "安防设备信号处理",
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源使能控制"
   ],
   "function_detail": "四路2输入与门（施密特输入）"
  },
@@ -55902,12 +55924,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT7001| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "安防设备信号处理",
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源使能控制"
   ],
   "function_detail": "四路2输入与门（施密特输入）"
  },
@@ -56117,12 +56139,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT7002| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源时序控制",
+   "通信设备信号处理"
   ],
   "function_detail": "四路2输入或非门（施密特输入）"
  },
@@ -56332,12 +56354,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT7002| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源时序控制",
+   "通信设备信号处理"
   ],
   "function_detail": "四路2输入或非门（施密特输入）"
  },
@@ -56547,12 +56569,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT7032| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "工业控制逻辑组合",
+   "汽车电子信号处理",
+   "消费电子逻辑电路",
+   "电源管理控制"
   ],
   "function_detail": "四路2输入或门（施密特输入）"
  },
@@ -56762,12 +56784,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT7032| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "工业控制逻辑组合",
+   "汽车电子信号处理",
+   "消费电子逻辑电路",
+   "电源管理控制"
   ],
   "function_detail": "四路2输入或门（施密特输入）"
  },
@@ -60436,12 +60458,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "安防设备信号处理",
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源使能控制"
   ],
   "function_detail": "四路2输入与门（施密特输入）"
  },
@@ -60630,12 +60652,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "安防设备信号处理",
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源使能控制"
   ],
   "function_detail": "四路2输入与门（施密特输入）"
  },
@@ -60796,12 +60818,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "安防设备信号处理",
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源使能控制"
   ],
   "function_detail": "四路2输入与门（开漏输出、施密特输入）"
  },
@@ -60962,12 +60984,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "安防设备信号处理",
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源使能控制"
   ],
   "function_detail": "四路2输入与门（开漏输出、施密特输入）"
  },
@@ -64835,12 +64857,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "六路缓冲器（三态输出、施密特输入）"
  },
@@ -65078,12 +65100,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "六路缓冲器（三态输出、施密特输入）"
  },
@@ -65321,12 +65343,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "六路缓冲器（三态输出、施密特输入）"
  },
@@ -65564,12 +65586,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "六路缓冲器（三态输出、施密特输入）"
  },
@@ -74001,12 +74023,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT132| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "工业控制信号处理",
+   "接口信号整形",
+   "消费电子逻辑控制",
+   "电源时序控制"
   ],
   "function_detail": "四路2输入与非门（施密特输入）"
  },
@@ -74216,12 +74238,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT132| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "工业控制信号处理",
+   "接口信号整形",
+   "消费电子逻辑控制",
+   "电源时序控制"
   ],
   "function_detail": "四路2输入与非门（施密特输入）"
  },
@@ -75029,12 +75051,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT14| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "六路（施密特输入）"
  },
@@ -75244,12 +75266,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT14| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "六路（施密特输入）"
  },
@@ -78391,12 +78413,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance| Per buffer ; V = GND to V [5] ICC"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "八路缓冲器（三态输出、TTL输入）"
  },
@@ -78704,12 +78726,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance| Per buffer ; V = GND to V [5] ICC"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "八路缓冲器（三态输出、TTL输入）"
  },
@@ -82498,12 +82520,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "六路缓冲器（三态输出、输入、TTL输入）"
  },
@@ -82804,12 +82826,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "六路缓冲器（三态输出、输入、TTL输入）"
  },
@@ -83110,12 +83132,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "六路缓冲器（三态输出、TTL输入）"
  },
@@ -83416,12 +83438,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "六路缓冲器（三态输出、TTL输入）"
  },
@@ -83722,12 +83744,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "六路缓冲器（三态输出、输入、TTL输入）"
  },
@@ -84028,12 +84050,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "六路缓冲器（三态输出、输入、TTL输入）"
  },
@@ -84334,12 +84356,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "六路缓冲器（三态输出、TTL输入）"
  },
@@ -84640,12 +84662,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "六路缓冲器（三态输出、TTL输入）"
  },
@@ -86747,12 +86769,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance| f = 1 MHz; V = GND to V [5] ICC"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "八路缓冲器（三态输出、TTL输入）"
  },
@@ -87060,12 +87082,12 @@
     "param_html": "C<sub>PD</sub> power dissipation capacitance| f = 1 MHz; V = GND to V [5] ICC"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "八路缓冲器（三态输出、TTL输入）"
  },
@@ -89697,10 +89719,12 @@
     "param_html": "ΔI<sub>CC</sub> additional supply current"
    }
   ],
-  "applications": " Serial-to-parallel data conversion \n Remote control holding register",
+  "applications": "LED点阵/数码管驱动；按键扫描扩展；串并转换(I/O扩展)；显示面板驱动",
   "applications_domains": [
-   "串并转换",
-   "遥控保持寄存器"
+   "LED点阵/数码管驱动",
+   "串并转换(I/O扩展)",
+   "按键扫描扩展",
+   "显示面板驱动"
   ],
   "function_detail": "八移位寄存器（三态输出、TTL输入）"
  },
@@ -89889,10 +89913,12 @@
     "param_html": "ΔI<sub>CC</sub> additional supply current"
    }
   ],
-  "applications": " Serial-to-parallel data conversion \n Remote control holding register",
+  "applications": "LED点阵/数码管驱动；按键扫描扩展；串并转换(I/O扩展)；显示面板驱动",
   "applications_domains": [
-   "串并转换",
-   "遥控保持寄存器"
+   "LED点阵/数码管驱动",
+   "串并转换(I/O扩展)",
+   "按键扫描扩展",
+   "显示面板驱动"
   ],
   "function_detail": "八移位寄存器（三态输出、TTL输入）"
  },
@@ -90275,10 +90301,12 @@
     "param_html": "ΔI<sub>CC</sub> additional supply current"
    }
   ],
-  "applications": " Serial-to-parallel data conversion \n Remote control holding register",
+  "applications": "LED点阵/数码管驱动；按键扫描扩展；串并转换(I/O扩展)；显示面板驱动",
   "applications_domains": [
-   "串并转换",
-   "遥控保持寄存器"
+   "LED点阵/数码管驱动",
+   "串并转换(I/O扩展)",
+   "按键扫描扩展",
+   "显示面板驱动"
   ],
   "function_detail": "八移位寄存器（三态输出、TTL输入）"
  },
@@ -91184,12 +91212,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT7001| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "安防设备信号处理",
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源使能控制"
   ],
   "function_detail": "四路2输入与门（施密特输入）"
  },
@@ -91399,12 +91427,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT7001| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "安防设备信号处理",
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源使能控制"
   ],
   "function_detail": "四路2输入与门（施密特输入）"
  },
@@ -91614,12 +91642,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT7002| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源时序控制",
+   "通信设备信号处理"
   ],
   "function_detail": "四路2输入或非门（施密特输入）"
  },
@@ -91829,12 +91857,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT7002| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "工业控制逻辑组合",
+   "消费电子控制电路",
+   "电源时序控制",
+   "通信设备信号处理"
   ],
   "function_detail": "四路2输入或非门（施密特输入）"
  },
@@ -92044,12 +92072,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT7032| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "工业控制逻辑组合",
+   "汽车电子信号处理",
+   "消费电子逻辑电路",
+   "电源管理控制"
   ],
   "function_detail": "四路2输入或门（施密特输入）"
  },
@@ -92259,12 +92287,12 @@
     "param_html": "C<sub>PD</sub> EM74HCT7032| power dissipation capacitance"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "工业控制逻辑组合",
+   "汽车电子信号处理",
+   "消费电子逻辑电路",
+   "电源管理控制"
   ],
   "function_detail": "四路2输入或门（施密特输入）"
  },
@@ -107014,12 +107042,12 @@
     "param_html": "t sk(o) output skew time| V = 3.0 V to 3.6 V [3] CC"
    }
   ],
-  "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
+  "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
   "applications_domains": [
-   "工业控制逻辑组合",
-   "汽车电子信号处理",
-   "消费电子逻辑电路",
-   "电源管理控制"
+   "工业控制信号处理",
+   "接口信号整形",
+   "消费电子逻辑控制",
+   "电源时序控制"
   ],
   "function_detail": "四路2输入与非门（施密特输入）"
  },
@@ -107187,12 +107215,12 @@
     "param_html": "t sk(o) output skew time| V = 3.0 V to 3.6 V [3] CC"
    }
   ],
-  "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
+  "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
   "applications_domains": [
-   "工业控制逻辑组合",
-   "汽车电子信号处理",
-   "消费电子逻辑电路",
-   "电源管理控制"
+   "工业控制信号处理",
+   "接口信号整形",
+   "消费电子逻辑控制",
+   "电源时序控制"
   ],
   "function_detail": "四路2输入与非门（施密特输入）"
  },
@@ -107674,13 +107702,15 @@
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -107824,13 +107854,15 @@
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -107974,13 +108006,15 @@
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -108124,13 +108158,15 @@
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -108274,13 +108310,15 @@
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10",
     "source_label": "EM74LVC1G00_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -108431,7 +108469,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
@@ -108582,7 +108621,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
@@ -108733,7 +108773,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
@@ -108884,7 +108925,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
@@ -109035,7 +109077,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G02_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
@@ -109186,7 +109229,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -109337,7 +109381,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -109488,7 +109533,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -109639,7 +109685,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -109790,7 +109837,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -109941,7 +109989,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -110092,7 +110141,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G06_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -110243,7 +110293,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G06_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -110394,7 +110445,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G06_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -110545,7 +110597,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G06_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -110696,7 +110749,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G06_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -110840,13 +110894,15 @@
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -110990,13 +111046,15 @@
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -111140,13 +111198,15 @@
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -111290,13 +111350,15 @@
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -111440,13 +111502,15 @@
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10",
     "source_label": "EM74LVC1G07_Product_DS_V1.1.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -111597,7 +111661,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -111748,7 +111813,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -111899,7 +111965,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -112050,7 +112117,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -112201,7 +112269,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G08_Product_DS_V1.2.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -112352,7 +112421,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -112503,7 +112573,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -112654,7 +112725,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -112805,7 +112877,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -112956,7 +113029,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G09_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -113118,7 +113192,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G10_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -113280,7 +113355,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G10_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -113442,7 +113518,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G10_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -113604,7 +113681,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G10_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -113755,7 +113833,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G11_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -113906,7 +113985,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G11_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -114057,7 +114137,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G11_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -114208,7 +114289,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G11_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -114303,13 +114385,15 @@
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -114404,13 +114488,15 @@
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -114505,13 +114591,15 @@
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -114606,13 +114694,15 @@
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -114707,13 +114797,15 @@
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10",
     "source_label": "EM74LVC1G125_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -114864,7 +114956,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -115015,7 +115108,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -115166,7 +115260,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -115317,7 +115412,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -115468,7 +115564,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G126_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -115618,12 +115715,12 @@
     "param_html": "T<sub>amb</sub>| ambient temperature"
    }
   ],
-  "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
+  "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
   "applications_domains": [
-   "工业控制逻辑组合",
-   "汽车电子信号处理",
-   "消费电子逻辑电路",
-   "电源管理控制"
+   "工业控制信号处理",
+   "接口信号整形",
+   "消费电子逻辑控制",
+   "电源时序控制"
   ],
   "function_detail": "单路2输入与非门（施密特输入）"
  },
@@ -115765,12 +115862,12 @@
     "param_html": "T<sub>amb</sub>| ambient temperature"
    }
   ],
-  "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
+  "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
   "applications_domains": [
-   "工业控制逻辑组合",
-   "汽车电子信号处理",
-   "消费电子逻辑电路",
-   "电源管理控制"
+   "工业控制信号处理",
+   "接口信号整形",
+   "消费电子逻辑控制",
+   "电源时序控制"
   ],
   "function_detail": "单路2输入与非门（施密特输入）"
  },
@@ -115912,12 +116009,12 @@
     "param_html": "T<sub>amb</sub>| ambient temperature"
    }
   ],
-  "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
+  "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
   "applications_domains": [
-   "工业控制逻辑组合",
-   "汽车电子信号处理",
-   "消费电子逻辑电路",
-   "电源管理控制"
+   "工业控制信号处理",
+   "接口信号整形",
+   "消费电子逻辑控制",
+   "电源时序控制"
   ],
   "function_detail": "单路2输入与非门（施密特输入）"
  },
@@ -116059,12 +116156,12 @@
     "param_html": "T<sub>amb</sub>| ambient temperature"
    }
   ],
-  "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
+  "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
   "applications_domains": [
-   "工业控制逻辑组合",
-   "汽车电子信号处理",
-   "消费电子逻辑电路",
-   "电源管理控制"
+   "工业控制信号处理",
+   "接口信号整形",
+   "消费电子逻辑控制",
+   "电源时序控制"
   ],
   "function_detail": "单路2输入与非门（施密特输入）"
  },
@@ -116206,12 +116303,12 @@
     "param_html": "T<sub>amb</sub>| ambient temperature"
    }
   ],
-  "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
+  "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
   "applications_domains": [
-   "工业控制逻辑组合",
-   "汽车电子信号处理",
-   "消费电子逻辑电路",
-   "电源管理控制"
+   "工业控制信号处理",
+   "接口信号整形",
+   "消费电子逻辑控制",
+   "电源时序控制"
   ],
   "function_detail": "单路2输入与非门（施密特输入）"
  },
@@ -117044,7 +117141,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -117195,7 +117293,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -117346,7 +117445,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -117497,7 +117597,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -117648,7 +117749,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G16_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -118489,15 +118591,16 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "单路反相器（三态输出）"
  },
@@ -118640,15 +118743,16 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "单路反相器（三态输出）"
  },
@@ -118791,15 +118895,16 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "单路反相器（三态输出）"
  },
@@ -118942,15 +119047,16 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "单路反相器（三态输出）"
  },
@@ -119093,15 +119199,16 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G240_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "单路反相器（三态输出）"
  },
@@ -119255,7 +119362,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G27_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
@@ -119417,7 +119525,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G27_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
@@ -119579,7 +119688,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G27_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
@@ -119741,7 +119851,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G27_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
@@ -119892,7 +120003,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -120043,7 +120155,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -120194,7 +120307,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -120345,7 +120459,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -120496,7 +120611,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G32_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -120647,7 +120763,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G332_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -120798,7 +120915,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G332_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -120949,7 +121067,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G332_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -121100,7 +121219,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1G332_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -121262,7 +121382,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -121424,7 +121545,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -121586,7 +121708,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -121748,7 +121871,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -121910,7 +122034,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G34_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -122073,7 +122198,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -122236,7 +122362,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -122399,7 +122526,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -122562,7 +122690,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -122725,7 +122854,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G38_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -122894,12 +123024,12 @@
     "param_html": "t<sub>pd</sub> propagation delay| V = 4.5 V to 5.5 VCC"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "可配置逻辑(替代多颗门电路)；原型/小批量逻辑整合；板级逻辑修补；电源控制组合逻辑",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "原型/小批量逻辑整合",
+   "可配置逻辑(替代多颗门电路)",
+   "板级逻辑修补",
+   "电源控制组合逻辑"
   ],
   "function_detail": "逻辑门"
  },
@@ -123060,12 +123190,12 @@
     "param_html": "t<sub>pd</sub> propagation delay| V = 4.5 V to 5.5 VCC"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "可配置逻辑(替代多颗门电路)；原型/小批量逻辑整合；板级逻辑修补；电源控制组合逻辑",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "原型/小批量逻辑整合",
+   "可配置逻辑(替代多颗门电路)",
+   "板级逻辑修补",
+   "电源控制组合逻辑"
   ],
   "function_detail": "逻辑门"
  },
@@ -123207,12 +123337,12 @@
     "param_html": "T<sub>amb</sub> ambient temperature"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "可配置逻辑(替代多颗门电路)；原型/小批量逻辑整合；板级逻辑修补；电源控制组合逻辑",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "原型/小批量逻辑整合",
+   "可配置逻辑(替代多颗门电路)",
+   "板级逻辑修补",
+   "电源控制组合逻辑"
   ],
   "function_detail": "逻辑门"
  },
@@ -123354,12 +123484,12 @@
     "param_html": "T<sub>amb</sub> ambient temperature"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "可配置逻辑(替代多颗门电路)；原型/小批量逻辑整合；板级逻辑修补；电源控制组合逻辑",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "原型/小批量逻辑整合",
+   "可配置逻辑(替代多颗门电路)",
+   "板级逻辑修补",
+   "电源控制组合逻辑"
   ],
   "function_detail": "逻辑门"
  },
@@ -123513,7 +123643,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "通信编解码校验；数据比较电路；工业控制信号处理；密码/校验模块",
@@ -123675,7 +123806,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "通信编解码校验；数据比较电路；工业控制信号处理；密码/校验模块",
@@ -123837,7 +123969,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "通信编解码校验；数据比较电路；工业控制信号处理；密码/校验模块",
@@ -123999,7 +124132,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "通信编解码校验；数据比较电路；工业控制信号处理；密码/校验模块",
@@ -124161,7 +124295,8 @@
     "value": "max=10",
     "source_label": "EM74LVC1G86_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "通信编解码校验；数据比较电路；工业控制信号处理；密码/校验模块",
@@ -124330,12 +124465,12 @@
     "param_html": "t<sub>pd</sub> propagation delay| V = 4.5 V to 5.5 VCC"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "可配置逻辑(替代多颗门电路)；原型/小批量逻辑整合；板级逻辑修补；电源控制组合逻辑",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "原型/小批量逻辑整合",
+   "可配置逻辑(替代多颗门电路)",
+   "板级逻辑修补",
+   "电源控制组合逻辑"
   ],
   "function_detail": "逻辑门"
  },
@@ -124496,12 +124631,12 @@
     "param_html": "t<sub>pd</sub> propagation delay| V = 4.5 V to 5.5 VCC"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "可配置逻辑(替代多颗门电路)；原型/小批量逻辑整合；板级逻辑修补；电源控制组合逻辑",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "原型/小批量逻辑整合",
+   "可配置逻辑(替代多颗门电路)",
+   "板级逻辑修补",
+   "电源控制组合逻辑"
   ],
   "function_detail": "逻辑门"
  },
@@ -124630,7 +124765,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -124767,7 +124903,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -124904,7 +125041,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -125041,7 +125179,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -125178,7 +125317,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC1GU04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -126691,7 +126831,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -126842,7 +126983,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -126993,7 +127135,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -127144,7 +127287,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -127295,7 +127439,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2G04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -127458,7 +127603,8 @@
     "value": "max=10",
     "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -127621,7 +127767,8 @@
     "value": "max=10",
     "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -127784,7 +127931,8 @@
     "value": "max=10",
     "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -127947,7 +128095,8 @@
     "value": "max=10",
     "source_label": "EM74LVC2G06_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -128110,7 +128259,8 @@
     "value": "max=10",
     "source_label": "EM74LVC2G07_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -128273,7 +128423,8 @@
     "value": "max=10",
     "source_label": "EM74LVC2G07_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -128436,7 +128587,8 @@
     "value": "max=10",
     "source_label": "EM74LVC2G07_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -128599,7 +128751,8 @@
     "value": "max=10",
     "source_label": "EM74LVC2G07_Product_DS_V1.1.pdf",
     "kind": "绝对最大",
-    "conditions": "VCC = 2.7 V to 5.5 V"
+    "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -128740,12 +128893,12 @@
     "param_html": "T<sub>amb</sub>| ambient temperature"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "双路（施密特输入）"
  },
@@ -128878,12 +129031,12 @@
     "param_html": "T<sub>amb</sub>| ambient temperature"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "双路（施密特输入）"
  },
@@ -129016,12 +129169,12 @@
     "param_html": "T<sub>amb</sub>| ambient temperature"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "双路（施密特输入）"
  },
@@ -129154,12 +129307,12 @@
     "param_html": "T<sub>amb</sub>| ambient temperature"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "振荡器(阻容/晶体)；按键去抖反相；慢边沿整形；复位延迟电路",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "复位延迟电路",
+   "慢边沿整形",
+   "按键去抖反相",
+   "振荡器(阻容/晶体)"
   ],
   "function_detail": "双路（施密特输入）"
  },
@@ -129302,7 +129455,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2G16_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -129453,7 +129607,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2G16_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -129604,7 +129759,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2G16_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -129755,7 +129911,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2G16_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -129905,12 +130062,12 @@
     "param_html": "T<sub>amb</sub>| ambient temperature"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "双路（施密特输入）"
  },
@@ -130052,12 +130209,12 @@
     "param_html": "T<sub>amb</sub>| ambient temperature"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "双路（施密特输入）"
  },
@@ -130199,12 +130356,12 @@
     "param_html": "T<sub>amb</sub>| ambient temperature"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "双路（施密特输入）"
  },
@@ -130346,12 +130503,12 @@
     "param_html": "T<sub>amb</sub>| ambient temperature"
    }
   ],
-  "applications": "地址锁存(单片机总线)；数据显示锁存；状态保持电路；I/O扩展",
+  "applications": "按键去抖；慢边沿信号整形；噪声环境信号调理；传感器信号缓冲",
   "applications_domains": [
-   "I/O扩展",
-   "地址锁存(单片机总线)",
-   "数据显示锁存",
-   "状态保持电路"
+   "传感器信号缓冲",
+   "噪声环境信号调理",
+   "慢边沿信号整形",
+   "按键去抖"
   ],
   "function_detail": "双路（施密特输入）"
  },
@@ -130494,7 +130651,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2G34_Product_DS_V1.2.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -130645,7 +130803,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2G34_Product_DS_V1.2.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -130796,7 +130955,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2G34_Product_DS_V1.2.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -130947,7 +131107,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2G34_Product_DS_V1.2.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -131084,7 +131245,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2GU04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -131221,7 +131383,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2GU04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -131358,7 +131521,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2GU04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -131495,7 +131659,8 @@
     "param": "Δt/ΔV",
     "value": "max=10",
     "source_label": "EM74LVC2GU04_Product_DS_V1.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -133085,12 +133250,12 @@
     "param_html": "t<sub>dis</sub> disable time| V = 4.5 V to 5.5 VCC"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "八路缓冲器（三态输出）"
  },
@@ -133356,12 +133521,12 @@
     "param_html": "t<sub>dis</sub> disable time| V = 4.5 V to 5.5 VCC"
    }
   ],
-  "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
+  "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
   "applications_domains": [
-   "信号缓冲增强驱动",
-   "接口隔离驱动",
-   "时钟分配",
-   "长走线信号中继"
+   "复位电路",
+   "振荡电路",
+   "接口电平反相",
+   "时钟/信号反相整形"
   ],
   "function_detail": "八路缓冲器（三态输出）"
  },
@@ -136830,11 +136995,11 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/穿戴信号通路选择",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
    "UART/SPI通道切换",
    "USB信号路由",
-   "手机/穿戴信号通路选择",
+   "手机/平板/便携",
    "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
@@ -137068,17 +137233,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -137137,7 +137297,8 @@
     "param": "TJ junction Temperature under Bias",
     "value": "max=150",
     "source_label": "EMS3157_Product_DS_V1.8.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "T<sub>J</sub> junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -137150,7 +137311,8 @@
     "param": "R θJA thermal resistance",
     "value": "max=350",
     "source_label": "EMS3157_Product_DS_V1.8.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R<sub>θJA</sub> thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -137309,10 +137471,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": " \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n \nCell phones and TWS headset \n\n \n \nEMS3157 \nLow Voltage and High Speed SPDT Analog Switch with True Isolation \n \n Rev. 1.8 – Jul 10, 2026 \n2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "手机/TWS耳机",
-   "音频/视频/UART/USB信号路由"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -137371,7 +137535,8 @@
     "param": "TJ junction Temperature under Bias",
     "value": "max=150",
     "source_label": "EMS3157_Product_DS_V1.8.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "T<sub>J</sub> junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -137384,7 +137549,8 @@
     "param": "R θJA thermal resistance",
     "value": "max=350",
     "source_label": "EMS3157_Product_DS_V1.8.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R<sub>θJA</sub> thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -137543,10 +137709,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": " \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n \nCell phones and TWS headset \n\n \n \nEMS3157 \nLow Voltage and High Speed SPDT Analog Switch with True Isolation \n \n Rev. 1.8 – Jul 10, 2026 \n2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "手机/TWS耳机",
-   "音频/视频/UART/USB信号路由"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -137605,7 +137773,8 @@
     "param": "TJ junction Temperature under Bias",
     "value": "max=150",
     "source_label": "EMS3157_Product_DS_V1.8.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "T<sub>J</sub> junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -137618,7 +137787,8 @@
     "param": "R θJA thermal resistance",
     "value": "max=350",
     "source_label": "EMS3157_Product_DS_V1.8.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R<sub>θJA</sub> thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -137777,10 +137947,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": " \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n \nCell phones and TWS headset \n\n \n \nEMS3157 \nLow Voltage and High Speed SPDT Analog Switch with True Isolation \n \n Rev. 1.8 – Jul 10, 2026 \n2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "手机/TWS耳机",
-   "音频/视频/UART/USB信号路由"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -137839,7 +138011,8 @@
     "param": "TJ junction Temperature under Bias",
     "value": "max=150",
     "source_label": "EMS3157_Product_DS_V1.8.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "T<sub>J</sub> junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -137852,7 +138025,8 @@
     "param": "R θJA thermal resistance",
     "value": "max=350",
     "source_label": "EMS3157_Product_DS_V1.8.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R<sub>θJA</sub> thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -138011,10 +138185,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": " \nAudio, Video, UART, USB2.0 Signal and Supply Routing \n \nCell phones and TWS headset \n\n \n \nEMS3157 \nLow Voltage and High Speed SPDT Analog Switch with True Isolation \n \n Rev. 1.8 – Jul 10, 2026 \n2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "手机/TWS耳机",
-   "音频/视频/UART/USB信号路由"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -138073,7 +138249,8 @@
     "param": "TJ junction Temperature under Bias",
     "value": "max=150",
     "source_label": "EMS3157_Product_DS_V1.8.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "T<sub>J</sub> junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -138086,7 +138263,8 @@
     "param": "R θJA thermal resistance",
     "value": "max=350",
     "source_label": "EMS3157_Product_DS_V1.8.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R<sub>θJA</sub> thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -138229,17 +138407,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "单路模拟开关"
  },
@@ -138535,9 +138708,12 @@
     "conditions_html": "3.0V< V <3.5V<sub>CC</sub>"
    }
   ],
-  "applications": " \nHiFi Audio Equipment \n\n \n \nEMS3218 \nHiFi Audio Switches with Negative Swing Capability and Over-Voltage-Protection \n \n Rev. 0.1 – Jan 21, 2026 \n2",
+  "applications": "信号通道选择；数据总线切换；传感器通道复用；测试设备切换",
   "applications_domains": [
-   "HiFi音频设备"
+   "传感器通道复用",
+   "信号通道选择",
+   "数据总线切换",
+   "测试设备切换"
   ],
   "function_detail": "与门"
  },
@@ -138833,13 +139009,12 @@
     "conditions_html": "3.0V< V <3.5V<sub>CC</sub>"
    }
   ],
-  "applications": [
-   "音频/视频路由",
-   "车载/医疗/工业"
-  ],
+  "applications": "信号通道选择；数据总线切换；传感器通道复用；测试设备切换",
   "applications_domains": [
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "传感器通道复用",
+   "信号通道选择",
+   "数据总线切换",
+   "测试设备切换"
   ],
   "function_detail": "与门"
  },
@@ -138907,14 +139082,12 @@
     "param_html": "P<sub>D</sub> Power Dissipation"
    }
   ],
-  "applications": "◼ USB Type-C Ecosystem \n◼ Desktop and Notebook PCs \n◼ Server/Storage Area Networks \n◼ PCI Express Backplanes \n◼ Shared I/O Ports \n◼ FPD LinkII and FPD LinkIII Switching",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PCIe背板",
-   "USB Type-C设备",
-   "共享I/O端口",
-   "台式机/笔记本",
-   "服务器",
-   "车载FPD-Link切换"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "双多路复用器"
  },
@@ -139144,7 +139317,8 @@
     "param": "OIRR",
     "value": "typ=-100",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "<b>OIRR</b>"
    },
    {
     "param": "OIRR",
@@ -139152,13 +139326,15 @@
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
     "kind": "静态",
     "conditions": "V = 5.0V DD Vsw < 3.0Vrms, f = 20kHz",
-    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz"
+    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz",
+    "param_html": "<b>OIRR</b>"
    },
    {
     "param": "OIRR",
     "value": "typ=-100",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "<b>OIRR</b>"
    },
    {
     "param": "OIRR",
@@ -139166,13 +139342,15 @@
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
     "kind": "静态",
     "conditions": "V = 5.0V DD Vsw < 3.0Vrms, f = 20kHz",
-    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz"
+    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz",
+    "param_html": "<b>OIRR</b>"
    },
    {
     "param": "OIRR",
     "value": "typ=-100",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "<b>OIRR</b>"
    },
    {
     "param": "OIRR",
@@ -139180,13 +139358,15 @@
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
     "kind": "静态",
     "conditions": "V = 5.0V DD Vsw < 3.0Vrms, f = 20kHz",
-    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz"
+    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz",
+    "param_html": "<b>OIRR</b>"
    },
    {
     "param": "OIRR",
     "value": "typ=-100",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "<b>OIRR</b>"
    },
    {
     "param": "OIRR",
@@ -139194,13 +139374,15 @@
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
     "kind": "静态",
     "conditions": "V = 5.0V DD Vsw < 3.0Vrms, f = 20kHz",
-    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz"
+    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz",
+    "param_html": "<b>OIRR</b>"
    },
    {
     "param": "OIRR",
     "value": "typ=-108",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "<b>OIRR</b>"
    },
    {
     "param": "OIRR",
@@ -139208,13 +139390,15 @@
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
     "kind": "静态",
     "conditions": "V = 5.0V DD Vsw < 3.0Vrms, f = 20kHz",
-    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz"
+    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz",
+    "param_html": "<b>OIRR</b>"
    },
    {
     "param": "OIRR",
     "value": "typ=-108",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "<b>OIRR</b>"
    },
    {
     "param": "OIRR",
@@ -139222,24 +139406,23 @@
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
     "kind": "静态",
     "conditions": "V = 5.0V DD Vsw < 3.0Vrms, f = 20kHz",
-    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz"
+    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz",
+    "param_html": "<b>OIRR</b>"
    },
    {
     "param": "OIRR",
     "value": "typ=-108",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "<b>OIRR</b>"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "音频/视频路由",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -139365,15 +139548,12 @@
     "kind": "交流特性"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "音频/视频路由",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "双路模拟开关"
  },
@@ -139576,7 +139756,8 @@
     "param": "OIRR",
     "value": "typ=-85",
     "source_label": "EMS3550_Product_DS_V1.0.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "<b>OIRR</b>"
    },
    {
     "param": "BW | Band Width",
@@ -139633,10 +139814,12 @@
     "param_html": "V<sub>IL</sub>| Input voltage low"
    }
   ],
-  "applications": " \nSmart phones, Tablets, laptops \n \n Bluetooth headsets, Mobile accessories \n\n \n \nEMS3550 \nFour-Pole Single-Throw (4-PST) Depletion Mode Isolation Switch \n \n Rev. 1.0 – Mar 10, 2026 \n2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "手机/平板/笔记本",
-   "蓝牙耳机/手机配件"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "Four-Pole Single-Throw (4-PST) Depletion Mode Isolation Swit"
  },
@@ -139839,7 +140022,8 @@
     "param": "OIRR",
     "value": "typ=-85",
     "source_label": "EMS3550_Product_DS_V1.0.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "<b>OIRR</b>"
    },
    {
     "param": "BW | Band Width",
@@ -139896,15 +140080,12 @@
     "param_html": "V<sub>IL</sub>| Input voltage low"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "音频/视频路由",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "Four-Pole Single-Throw (4-PST) Depletion Mode Isolation Swit"
  },
@@ -140127,9 +140308,12 @@
     "kind": "特性"
    }
   ],
-  "applications": "◼ \nHi-Fi Smartphones and Portable Device  \n◼ \nHi-Fi SACD/DVD Players \n◼ \nHigh Quality Home Theaters \n\n \n \nEMS3580 \nHigh Fidelity Stereo SPDT Switch with Pop and Click Elimination \n \nRev. 1.0 – Feb 21, 2026",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "SACD/DVD播放器"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -140352,15 +140536,12 @@
     "kind": "特性"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "音频/视频路由",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -140510,10 +140691,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": "◼ \nMobile Phones, Tablets and Notebooks \n◼ \nUSB port devices \n\n \n \nEMS3900 \nDual high-speed USB 2.0 double-pole double-throw analog switch \n \n Rev. 1.8 – Dec 15, 2025 \n2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "USB接口设备",
-   "手机/平板/笔记本"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "双路模拟开关"
  },
@@ -140663,17 +140846,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "双路模拟开关"
  },
@@ -140823,10 +141001,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": " \nMobile Phones, Tablets and Notebooks \n \nUSB port devices \n\n \n \nEMS3902 \nDual high-speed USB 2.0 double-pole double-throw analog switch \n \n Rev. 1.1 – Aug 12, 2025 \n2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "USB接口设备",
-   "手机/平板/笔记本"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "双路模拟开关"
  },
@@ -140976,17 +141156,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "双路模拟开关"
  },
@@ -141136,17 +141311,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "双路模拟开关"
  },
@@ -141295,17 +141465,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -141454,17 +141619,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -141613,17 +141773,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -141724,7 +141879,8 @@
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
     "source_label": "EMS4000_Product_DS_V1.7.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -141860,10 +142016,12 @@
     "kind": "特性"
    }
   ],
-  "applications": "◼ \nUSB Type-C™, Type A and Micro B devices \n◼ \nMobile Phones, Tablets and Notebooks \n\n \n \nEMS4000 \nDual 2:1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection \n \n Rev. 1.7 – Jun 20, 2025 \n2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "USB Type-C设备",
-   "手机/平板/笔记本"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "双路多路复用器"
  },
@@ -141964,7 +142122,8 @@
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
     "source_label": "EMS4000_Product_DS_V1.7.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -142106,19 +142265,12 @@
     "kind": "特性"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "双路多路复用器"
  },
@@ -142219,7 +142371,8 @@
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
     "source_label": "EMS4000_Product_DS_V1.7.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -142361,19 +142514,12 @@
     "kind": "特性"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "双路多路复用器"
  },
@@ -142569,19 +142715,12 @@
     "param_html": "Off| Off Isolation"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "双路USB模拟开关"
  },
@@ -142682,7 +142821,8 @@
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
     "source_label": "EMS4000_Product_DS_V1.7.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -142824,19 +142964,12 @@
     "kind": "特性"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "双路多路复用器"
  },
@@ -142930,7 +143063,8 @@
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
     "source_label": "EMS4002_Product_DS_V1.0.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -143066,10 +143200,12 @@
     "kind": "特性"
    }
   ],
-  "applications": " \nUSB Type-C™, Type A and Micro B devices \n \nMobile Phones, Tablets and Notebooks \n\n \n \nEMS4002 \nDual 2:1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection \n \n Rev. 1.0 – Feb 10, 2026 \n2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "USB Type-C设备",
-   "手机/平板/笔记本"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "双路多路复用器"
  },
@@ -143163,7 +143299,8 @@
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
     "source_label": "EMS4002_Product_DS_V1.0.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -143305,19 +143442,12 @@
     "kind": "特性"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "双路多路复用器"
  },
@@ -143411,7 +143541,8 @@
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
     "source_label": "EMS4002_Product_DS_V1.0.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -143553,19 +143684,12 @@
     "kind": "特性"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "双路多路复用器"
  },
@@ -143659,7 +143783,8 @@
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
     "source_label": "EMS4002_Product_DS_V1.0.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -143801,19 +143926,12 @@
     "kind": "特性"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "双路USB模拟开关"
  },
@@ -143907,7 +144025,8 @@
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
     "source_label": "EMS4002_Product_DS_V1.0.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -144049,19 +144168,12 @@
     "kind": "特性"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "双路多路复用器"
  },
@@ -144276,21 +144388,12 @@
     "conditions": "R = 50Ω f = 1.2GHz V = 0.2V L IS PP"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储",
-   "显示/监控/TV",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "显示/监控/TV",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "多路复用器"
  },
@@ -144505,21 +144608,12 @@
     "conditions": "R = 50Ω f = 1.2GHz V = 0.2V L IS PP"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储",
-   "显示/监控/TV",
-   "车载/医疗/工业"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "显示/监控/TV",
-   "车载/医疗/工业",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "多路复用器"
  },
@@ -144587,14 +144681,12 @@
     "param_html": "P<sub>D</sub> Power Dissipation"
    }
   ],
-  "applications": "◼ USB Type-C Ecosystem \n◼ Desktop and Notebook PCs \n◼ Server/Storage Area Networks \n◼ PCI Express Backplanes \n◼ Shared I/O Ports \n◼ FPD LinkII and FPD LinkIII Switching",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PCIe背板",
-   "USB Type-C设备",
-   "共享I/O端口",
-   "台式机/笔记本",
-   "服务器",
-   "车载FPD-Link切换"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "双多路复用器"
  },
@@ -144699,13 +144791,12 @@
     "param_html": "ESD| Human Body Model (HBM)"
    }
   ],
-  "applications": [
-   "USB/Type-C路由",
-   "音频/视频路由"
-  ],
+  "applications": "信号通道选择；数据总线切换；传感器通道复用；测试设备切换",
   "applications_domains": [
-   "USB/Type-C路由",
-   "音频/视频路由"
+   "传感器通道复用",
+   "信号通道选择",
+   "数据总线切换",
+   "测试设备切换"
   ],
   "function_detail": "与门"
  },
@@ -144810,13 +144901,12 @@
     "param_html": "ESD| Human Body Model (HBM)"
    }
   ],
-  "applications": [
-   "USB/Type-C路由",
-   "音频/视频路由"
-  ],
+  "applications": "信号通道选择；数据总线切换；传感器通道复用；测试设备切换",
   "applications_domains": [
-   "USB/Type-C路由",
-   "音频/视频路由"
+   "传感器通道复用",
+   "信号通道选择",
+   "数据总线切换",
+   "测试设备切换"
   ],
   "function_detail": "与门"
  },
@@ -144915,12 +145005,12 @@
     "param_html": "I<sub>OFF</sub>| Leakage under power off"
    }
   ],
-  "applications": " \nRouting of HDMI 2.1 video signals with low signal attenuation between source and sink for \n4K 2K ultra high definition video display and broadcast video equipment. \n \nRouting of DisplayPort video signals with low signal attenuation between source and sink \nfor PC and monitor. \n\n \n \nEMS4422 \n2:1 Mux/DeMux High Bandwidth HDMITM 2.1 Compliant Signal Switch \n \n Rev. 1.1 – May 10, 2025 \n3",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "音频/视频信号切换",
+   "UART/SPI通道切换",
    "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业"
+   "音频/视频信号切换"
   ],
   "function_detail": "双多路复用器"
  },
@@ -145011,13 +145101,12 @@
     "param_html": "I<sub>OFF</sub>| Leakage under power off"
    }
   ],
-  "applications": [
-   "音频/视频路由",
-   "显示/监控/TV"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "显示/监控/TV",
-   "音频/视频路由"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "多路模拟开关"
  },
@@ -145101,12 +145190,12 @@
     "kind": "特性"
    }
   ],
-  "applications": "◼ USB Type-C Receptacle, Mobile Phone and Tablets \n\n \n \nEMS4485 \nUSB Type-C Analog Audio Switch with Protection Function, Moisture and Audio Jack Detection \n \nRev0.9– Jul 06, 2026 \n2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "音频/视频信号切换",
+   "UART/SPI通道切换",
    "USB信号路由",
    "手机/平板/便携",
-   "车载/医疗/工业"
+   "音频/视频信号切换"
   ],
   "function_detail": "与门"
  },
@@ -145316,17 +145405,12 @@
     "kind": "特性"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "音频/视频路由",
-   "PC/服务器/存储",
-   "显示/监控/TV"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "显示/监控/TV",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -145475,17 +145559,12 @@
     "param_html": "ΔR<sub>ON</sub>| on-resistance matching between channels"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "双路模拟开关"
  },
@@ -145590,10 +145669,12 @@
     "kind": "推荐工作条件"
    }
   ],
-  "applications": " \nUSB Type-C™, Type A and Micro B devices \n \nMobile Phones, Tablets and Notebooks \n\n \n \nEMS4798 \nAudio Headset Analog Switch with Reduced GND Switch RON and FM Capability \n \n Rev. 1.0 – Apr 08, 2026 \n2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "USB Type-C设备",
-   "手机/平板/笔记本"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -145704,17 +145785,12 @@
     "kind": "推荐工作条件"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -145863,11 +145939,12 @@
     "param_html": "ΔR<sub>ON</sub>"
    }
   ],
-  "applications": " \nCell phones, PDA, Digital Camera and Notebook \n \nLCD Monitor, TV and Set-Top Box \n \nAudio and Video Signal Routing \n \nOther electronic equipment\n\n \n \nEMS4899 \nLow On Resistance, Quad SPDT Analog Switch \n \nRev. 1.4 – Mar 05, 2026                                                                                                                                                   2",
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "手机/数码相机/笔记本",
-   "显示器/电视/机顶盒",
-   "音频/视频信号路由"
+   "UART/SPI通道切换",
+   "USB信号路由",
+   "手机/平板/便携",
+   "音频/视频信号切换"
   ],
   "function_detail": "模拟开关"
  },
@@ -146129,19 +146206,12 @@
     "kind": "特性"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储",
-   "显示/监控/TV"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "显示/监控/TV",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "Low-Power, Two-Port, Hi-Speed,USB2.0 (480Mbps) UART Switch"
  },
@@ -146403,19 +146473,12 @@
     "kind": "特性"
    }
   ],
-  "applications": [
-   "手机/平板/便携",
-   "USB/Type-C路由",
-   "音频/视频路由",
-   "PC/服务器/存储",
-   "显示/监控/TV"
-  ],
+  "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
   "applications_domains": [
-   "PC/服务器/存储",
-   "USB/Type-C路由",
+   "UART/SPI通道切换",
+   "USB信号路由",
    "手机/平板/便携",
-   "显示/监控/TV",
-   "音频/视频路由"
+   "音频/视频信号切换"
   ],
   "function_detail": "Low-Power, Two-Port, Hi-Speed,USB2.0 (480Mbps) UART Switch"
  },
@@ -146495,20 +146558,22 @@
     "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
-  "applications": "Voltage level-translation applications. The EXS0102 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0102\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nB1\nB2\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\n \nFig. 8. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0102 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0102 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
   "applications_domains": [
    "I2C/SPI/UART电平转换",
-   "低压SoC与5V外设互连",
    "SIM卡/存储卡电平适配",
+   "低压SoC与5V外设互连",
    "多电源域系统互连"
   ],
   "function_detail": "双路电平转换收发器"
@@ -146589,20 +146654,22 @@
     "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0102_Product_DS_V1.0.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
-  "applications": "Voltage level-translation applications. The EXS0102 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0102\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nB1\nB2\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\n \nFig. 8. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0102 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0102 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
   "applications_domains": [
    "I2C/SPI/UART电平转换",
-   "低压SoC与5V外设互连",
    "SIM卡/存储卡电平适配",
+   "低压SoC与5V外设互连",
    "多电源域系统互连"
   ],
   "function_detail": "双路电平转换收发器"
@@ -146683,20 +146750,22 @@
     "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
-  "applications": "Voltage level-translation applications. The EXS0104 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0104\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA3\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\n \nFig. 9. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0104 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0104 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
   "applications_domains": [
    "I2C/SPI/UART电平转换",
-   "低压SoC与5V外设互连",
    "SIM卡/存储卡电平适配",
+   "低压SoC与5V外设互连",
    "多电源域系统互连"
   ],
   "function_detail": "双路收发器"
@@ -146777,20 +146846,22 @@
     "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
-  "applications": "Voltage level-translation applications. The EXS0104 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0104\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA3\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\n \nFig. 9. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0104 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0104 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
   "applications_domains": [
    "I2C/SPI/UART电平转换",
-   "低压SoC与5V外设互连",
    "SIM卡/存储卡电平适配",
+   "低压SoC与5V外设互连",
    "多电源域系统互连"
   ],
   "function_detail": "双路收发器"
@@ -146871,20 +146942,22 @@
     "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
-  "applications": "Voltage level-translation applications. The EXS0104 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0104\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA3\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\n \nFig. 9. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0104 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0104 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
   "applications_domains": [
    "I2C/SPI/UART电平转换",
-   "低压SoC与5V外设互连",
    "SIM卡/存储卡电平适配",
+   "低压SoC与5V外设互连",
    "多电源域系统互连"
   ],
   "function_detail": "双路收发器"
@@ -146965,20 +147038,22 @@
     "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0104_Product_DS_V1.1.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
-  "applications": "Voltage level-translation applications. The EXS0104 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0104\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA3\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\n \nFig. 9. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0104 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0104 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
   "applications_domains": [
    "I2C/SPI/UART电平转换",
-   "低压SoC与5V外设互连",
    "SIM卡/存储卡电平适配",
+   "低压SoC与5V外设互连",
    "多电源域系统互连"
   ],
   "function_detail": "双路收发器"
@@ -147059,20 +147134,22 @@
     "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0106_Product_DS_V1.0.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0106_Product_DS_V1.0.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
-  "applications": "Voltage level-translation applications. The EXS0106 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0104\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA3\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\nA5\nA6\nB5\nB6\n \nFig. 7. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0106 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0106 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
   "applications_domains": [
    "I2C/SPI/UART电平转换",
-   "低压SoC与5V外设互连",
    "SIM卡/存储卡电平适配",
+   "低压SoC与5V外设互连",
    "多电源域系统互连"
   ],
   "function_detail": "双路收发器"
@@ -147153,20 +147230,22 @@
     "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
-  "applications": "Voltage level-translation applications. The EXS0108 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0108\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA5\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\nA3\nA6\nB5\nB6\nA7\nA8\nB7\nB8\n \nFig. 8. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0108 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0108 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
   "applications_domains": [
    "I2C/SPI/UART电平转换",
-   "低压SoC与5V外设互连",
    "SIM卡/存储卡电平适配",
+   "低压SoC与5V外设互连",
    "多电源域系统互连"
   ],
   "function_detail": "双路收发器"
@@ -147247,20 +147326,22 @@
     "param": "| enabled",
     "value": "typ=7 pF",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
     "source_label": "EXS0108_Product_DS_V1.0.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
-  "applications": "Voltage level-translation applications. The EXS0108 can be used in point-to-point applications \nto interface between devices or systems operating at different supply voltages. The device is \nprimarily targeted at I2C or 1-wire which use open-drain drivers, it may also be used in \napplications where push-pull drivers are connected to the ports. \n1.8 V\nSYSTEM\nCONTROLLER\nEXS0108\n3.3 V\nSYSTEM\nDATA\nOE\nVCC(A)\nVCC(B)\nA1\nA2\nA5\nA4\nB1\nB2\nB3\nB4\nDATA\n1.8V\n3.3V\n0.1μF\n0.1μF\n1μF\nGND\n1μF\nA3\nA6\nB5\nB6\nA7\nA8\nB7\nB8\n \nFig. 8. Typical operating circuit \n11.2. Architecture \nThe architecture of the EXS0108 is shown in Fig. 1. The device does not require an extra input \nsignal to control the direction of data flow from A to B or B to A. \nThe EXS0108 is a \"switch\" type voltage translator, it employs two key circuits to enable voltage \ntranslation:",
+  "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
   "applications_domains": [
    "I2C/SPI/UART电平转换",
-   "低压SoC与5V外设互连",
    "SIM卡/存储卡电平适配",
+   "低压SoC与5V外设互连",
    "多电源域系统互连"
   ],
   "function_detail": "双路收发器"
