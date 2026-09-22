@@ -50,6 +50,7 @@
       item.family,
       item.series,
       item.function,
+      item.function_detail,
       item.description,
       item.package,
       item.logic_type,
