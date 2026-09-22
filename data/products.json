@@ -25961,13 +25961,15 @@
     "param": "I A continuous Current Through COM, NC, NO",
     "value": "max=±100",
     "source_label": "EM74CBT3257_Product_DS_V1.0.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "I<sub>A</sub> continuous Current Through COM, NC, NO"
    },
    {
     "param": "I A peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)",
     "value": "max=±200",
     "source_label": "EM74CBT3257_Product_DS_V1.0.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "I<sub>A</sub> peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)"
    },
    {
     "param": "TJ junction Temperature under Bias",
@@ -26197,13 +26199,15 @@
     "param": "I A continuous Current Through COM, NC, NO",
     "value": "max=±100",
     "source_label": "EM74CBT3257_Product_DS_V1.0.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "I<sub>A</sub> continuous Current Through COM, NC, NO"
    },
    {
     "param": "I A peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)",
     "value": "max=±200",
     "source_label": "EM74CBT3257_Product_DS_V1.0.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "I<sub>A</sub> peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)"
    },
    {
     "param": "TJ junction Temperature under Bias",
@@ -26433,13 +26437,15 @@
     "param": "I A continuous Current Through COM, NC, NO",
     "value": "max=±100",
     "source_label": "EM74CBT3257_Product_DS_V1.0.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "I<sub>A</sub> continuous Current Through COM, NC, NO"
    },
    {
     "param": "I A peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)",
     "value": "max=±200",
     "source_label": "EM74CBT3257_Product_DS_V1.0.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "I<sub>A</sub> peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)"
    },
    {
     "param": "TJ junction Temperature under Bias",
@@ -75386,7 +75392,8 @@
     "param": "∆ICC additional supply current",
     "value": "[per input pin; V = V - 2.1 V; IO = 0 A; ICC other inputs at V or GND; CC VCC = 4.5 V to 5.5 VCC] max=300 μA",
     "source_label": "EM74HCT164_Product_DS_V1.0.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "∆I<sub>CC</sub> additional supply current"
    },
    {
     "param": "t pd propagation delay | V = 4.5 VCC",
@@ -75572,7 +75579,8 @@
     "param": "∆ICC additional supply current",
     "value": "[per input pin; V = V - 2.1 V; IO = 0 A; ICC other inputs at V or GND; CC VCC = 4.5 V to 5.5 VCC] max=300 μA",
     "source_label": "EM74HCT164_Product_DS_V1.0.pdf",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "∆I<sub>CC</sub> additional supply current"
    },
    {
     "param": "t pd propagation delay | V = 4.5 VCC",
@@ -132346,7 +132354,8 @@
     "param": "t sk(o) output skew time",
     "value": "max=1.0 ns",
     "source_label": "EM74LVC4245_Product_DS_V1.3.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "t<sub>sk(o)</sub> output skew time"
    },
    {
     "param": "CPD power dissipation capacitance | outputs enabled",
@@ -132948,7 +132957,8 @@
     "param": "t sk(o) output skew time",
     "value": "max=1.0 ns",
     "source_label": "EM74LVC4245_Product_DS_V1.3.pdf",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "t<sub>sk(o)</sub> output skew time"
    },
    {
     "param": "CPD power dissipation capacitance | outputs enabled",
@@ -138501,21 +138511,24 @@
     "value": "min=± 5",
     "source_label": "EMS3218_Draft_DS_V0.1.pdf",
     "kind": "绝对最大",
-    "conditions": "V to GND CC"
+    "conditions": "V to GND CC",
+    "param_html": "ESD"
    },
    {
     "param": "ESD",
     "value": "min=± 4",
     "source_label": "EMS3218_Draft_DS_V0.1.pdf",
     "kind": "绝对最大",
-    "conditions": "Li and Ri to GND"
+    "conditions": "Li and Ri to GND",
+    "param_html": "ESD"
    },
    {
     "param": "ESD",
     "value": "min=± 4",
     "source_label": "EMS3218_Draft_DS_V0.1.pdf",
     "kind": "绝对最大",
-    "conditions": "Li and Ri to GND"
+    "conditions": "Li and Ri to GND",
+    "param_html": "ESD"
    },
    {
     "param": "VCC | Supply voltage range",
@@ -138631,7 +138644,8 @@
     "value": "typ=-110",
     "source_label": "EMS3218_Draft_DS_V0.1.pdf",
     "kind": "静态",
-    "conditions": "f = 20 Hz to 20 KHz, R = 1 kΩ, V = 1.5 V L IN rms"
+    "conditions": "f = 20 Hz to 20 KHz, R = 1 kΩ, V = 1.5 V L IN rms",
+    "param_html": "THD"
    },
    {
     "param": "O IRR | Off isolation rejection ratio",
@@ -138802,21 +138816,24 @@
     "value": "min=± 5",
     "source_label": "EMS3218_Draft_DS_V0.1.pdf",
     "kind": "绝对最大",
-    "conditions": "V to GND CC"
+    "conditions": "V to GND CC",
+    "param_html": "ESD"
    },
    {
     "param": "ESD",
     "value": "min=± 4",
     "source_label": "EMS3218_Draft_DS_V0.1.pdf",
     "kind": "绝对最大",
-    "conditions": "Li and Ri to GND"
+    "conditions": "Li and Ri to GND",
+    "param_html": "ESD"
    },
    {
     "param": "ESD",
     "value": "min=± 4",
     "source_label": "EMS3218_Draft_DS_V0.1.pdf",
     "kind": "绝对最大",
-    "conditions": "Li and Ri to GND"
+    "conditions": "Li and Ri to GND",
+    "param_html": "ESD"
    },
    {
     "param": "VCC | Supply voltage range",
@@ -138932,7 +138949,8 @@
     "value": "typ=-110",
     "source_label": "EMS3218_Draft_DS_V0.1.pdf",
     "kind": "静态",
-    "conditions": "f = 20 Hz to 20 KHz, R = 1 kΩ, V = 1.5 V L IN rms"
+    "conditions": "f = 20 Hz to 20 KHz, R = 1 kΩ, V = 1.5 V L IN rms",
+    "param_html": "THD"
    },
    {
     "param": "O IRR | Off isolation rejection ratio",
@@ -139045,7 +139063,8 @@
     "param": "V TX/RX Super Speed Data Channel TX/RX",
     "value": "min=-0.5; max=3.8",
     "source_label": "EMS3412_Draft_DS_V0.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "V TX/RX Super Speed Data Channel TX/RX"
    },
    {
     "param": "VI DC Input Voltage",
@@ -139072,7 +139091,8 @@
     "param": "T j Junction Temperature",
     "value": "max=125",
     "source_label": "EMS3412_Draft_DS_V0.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "T<sub>j</sub> Junction Temperature"
    },
    {
     "param": "P D Power Dissipation",
@@ -139154,7 +139174,8 @@
     "param": "ESD",
     "value": "min=± 7",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "ESD"
    },
    {
     "param": "VDD | Supply voltage",
@@ -139176,61 +139197,70 @@
     "value": "max=1.8",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
     "kind": "绝对最大",
-    "conditions": "Isolating（V =2.5V, RL=32Ω, f<30kHz） DD"
+    "conditions": "Isolating（V =2.5V, RL=32Ω, f<30kHz） DD",
+    "param_html": "V<sub>SW(OFF)</sub>"
    },
    {
     "param": "V SW(OFF)",
     "value": "max=2.4",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
     "kind": "绝对最大",
-    "conditions": "Isolating（V =3.0V, RL=32Ω, f<30kHz） DD"
+    "conditions": "Isolating（V =3.0V, RL=32Ω, f<30kHz） DD",
+    "param_html": "V<sub>SW(OFF)</sub>"
    },
    {
     "param": "V SW(OFF)",
     "value": "max=2.6",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
     "kind": "绝对最大",
-    "conditions": "Isolating（V =3.5V, RL=32Ω, f<30kHz） DD"
+    "conditions": "Isolating（V =3.5V, RL=32Ω, f<30kHz） DD",
+    "param_html": "V<sub>SW(OFF)</sub>"
    },
    {
     "param": "V SW(OFF)",
     "value": "max=2.7",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
     "kind": "绝对最大",
-    "conditions": "Isolating（V =4.0V, RL=32Ω, f<30kHz） DD"
+    "conditions": "Isolating（V =4.0V, RL=32Ω, f<30kHz） DD",
+    "param_html": "V<sub>SW(OFF)</sub>"
    },
    {
     "param": "V SW(OFF)",
     "value": "max=2.8",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
     "kind": "绝对最大",
-    "conditions": "Isolating（V =4.5V, RL=32Ω, f<30kHz） DD"
+    "conditions": "Isolating（V =4.5V, RL=32Ω, f<30kHz） DD",
+    "param_html": "V<sub>SW(OFF)</sub>"
    },
    {
     "param": "V SW(OFF)",
     "value": "max=3.0",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
     "kind": "绝对最大",
-    "conditions": "Isolating（V =5.0V, RL=32Ω, f<30kHz） DD"
+    "conditions": "Isolating（V =5.0V, RL=32Ω, f<30kHz） DD",
+    "param_html": "V<sub>SW(OFF)</sub>"
    },
    {
     "param": "V SW(OFF)",
     "value": "min=4.7; max=5.5",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "V<sub>SW(OFF)</sub>"
    },
    {
     "param": "V SW(ON)",
     "value": "max=3.0",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
     "kind": "绝对最大",
-    "conditions": "Conducting（f<30kHz）"
+    "conditions": "Conducting（f<30kHz）",
+    "param_html": "V<sub>SW(ON)</sub>"
    },
    {
     "param": "V SW(ON)",
     "value": "min=4.7; max=5.5",
     "source_label": "EMS3515_Product_DS_V1.2.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "V<sub>SW(ON)</sub>"
    },
    {
     "param": "T A | Ambient Temperature",
@@ -140291,7 +140321,8 @@
     "param": "XTALK",
     "value": "145 dB",
     "source_label": "EMS3580_Product_DS_V1.0.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "<b>XTALK</b>"
    },
    {
     "param": "XTALK | RL =",
@@ -140519,7 +140550,8 @@
     "param": "XTALK",
     "value": "145 dB",
     "source_label": "EMS3580_Product_DS_V1.0.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "<b>XTALK</b>"
    },
    {
     "param": "XTALK | RL =",
@@ -142150,7 +142182,8 @@
     "param": "NOTE",
     "value": "YYWW = Data Code.",
     "source_label": "EMS4000_Product_DS_V1.7.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
@@ -142399,7 +142432,8 @@
     "param": "NOTE",
     "value": "YYWW = Data Code.",
     "source_label": "EMS4000_Product_DS_V1.7.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
@@ -142849,7 +142883,8 @@
     "param": "NOTE",
     "value": "YYWW = Data Code.",
     "source_label": "EMS4000_Product_DS_V1.7.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
@@ -143327,7 +143362,8 @@
     "param": "NOTE",
     "value": "YYWW = Data Code.",
     "source_label": "EMS4002_Product_DS_V1.0.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
@@ -143569,7 +143605,8 @@
     "param": "NOTE",
     "value": "YYWW = Data Code.",
     "source_label": "EMS4002_Product_DS_V1.0.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
@@ -143811,7 +143848,8 @@
     "param": "NOTE",
     "value": "YYWW = Data Code.",
     "source_label": "EMS4002_Product_DS_V1.0.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
@@ -144053,7 +144091,8 @@
     "param": "NOTE",
     "value": "YYWW = Data Code.",
     "source_label": "EMS4002_Product_DS_V1.0.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
@@ -144644,7 +144683,8 @@
     "param": "V TX/RX Super Speed Data Channel TX/RX",
     "value": "min=-0.5; max=3.8",
     "source_label": "EMS4310_Draft_DS_V0.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "V TX/RX Super Speed Data Channel TX/RX"
    },
    {
     "param": "VI DC Input Voltage",
@@ -144671,7 +144711,8 @@
     "param": "T j Junction Temperature",
     "value": "max=125",
     "source_label": "EMS4310_Draft_DS_V0.1.pdf",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "T<sub>j</sub> Junction Temperature"
    },
    {
     "param": "P D Power Dissipation",
@@ -145698,7 +145739,8 @@
     "param": "NOTE",
     "value": "XYYWW = Vendor Code and Date Code.",
     "source_label": "EMS4798_Product_DS_V1.0.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "VDD",
@@ -145968,7 +146010,8 @@
     "param": "BW tSK(P) Skew of opposite transitions",
     "value": "[of the same output VCC = 3.3 V, RL = 50 Ω, CL = 5 pF] 20 ps",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf",
-    "kind": "交流特性"
+    "kind": "交流特性",
+    "param_html": "BW t<sub>SK(P)</sub>) Skew of opposite transitions"
    },
    {
     "param": "BW | VCC = 3.0 to 3.6 V, RL = 50 Ω, CL = 0 pF",
@@ -146051,13 +146094,15 @@
     "param": "OE 8 10 Switch Enable (HIGH",
     "value": "DISABLE; LOW: ENABLE)",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "OE 8 10 Switch Enable (HIGH"
    },
    {
     "param": "S 10 2 Switch Select (LOW",
     "value": "D+, D- = HSD1+, HSD1-; HIGH: D+, D- = HSD2+, HSD2-)",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "S 10 2 Switch Select (LOW"
    },
    {
     "param": "VCC ICCT Increase in ICC current per control voltage and VCC",
@@ -146203,7 +146248,8 @@
     "param": "XTALK XTALK Non-Adjacent channel",
     "value": "[crosstalk VCC = 3.0 to 3.6 V, RL = 50 Ω, f = 240 MHz] -45 dB",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "<b>XTALK</b> XTALK Non-Adjacent channel"
    }
   ],
   "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
@@ -146235,7 +146281,8 @@
     "param": "BW tSK(P) Skew of opposite transitions",
     "value": "[of the same output VCC = 3.3 V, RL = 50 Ω, CL = 5 pF] 20 ps",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf",
-    "kind": "交流特性"
+    "kind": "交流特性",
+    "param_html": "BW t<sub>SK(P)</sub>) Skew of opposite transitions"
    },
    {
     "param": "BW | VCC = 3.0 to 3.6 V, RL = 50 Ω, CL = 0 pF",
@@ -146318,13 +146365,15 @@
     "param": "OE 8 10 Switch Enable (HIGH",
     "value": "DISABLE; LOW: ENABLE)",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "OE 8 10 Switch Enable (HIGH"
    },
    {
     "param": "S 10 2 Switch Select (LOW",
     "value": "D+, D- = HSD1+, HSD1-; HIGH: D+, D- = HSD2+, HSD2-)",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "S 10 2 Switch Select (LOW"
    },
    {
     "param": "VCC ICCT Increase in ICC current per control voltage and VCC",
@@ -146470,7 +146519,8 @@
     "param": "XTALK XTALK Non-Adjacent channel",
     "value": "[crosstalk VCC = 3.0 to 3.6 V, RL = 50 Ω, f = 240 MHz] -45 dB",
     "source_label": "EMS7227_Draft_DS_V0.1.pdf",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "<b>XTALK</b> XTALK Non-Adjacent channel"
    }
   ],
   "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
