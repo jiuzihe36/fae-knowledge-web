@@ -43,6 +43,8 @@
     return value == null || String(value).trim() === "" ? "-" : String(value);
   }
 
+  var specsCache = {};
+
   function buildHaystack(item) {
     const raw = item.raw_json || {};
     const parts = [
@@ -64,7 +66,25 @@
         parts.push(spec.param, spec.value, spec.source_label);
       });
     }
+    if (specsCache[item.id]) {
+      specsCache[item.id].forEach(function (spec) {
+        parts.push(spec.param, spec.value);
+      });
+    }
     return parts.join(" ").toLowerCase();
+  }
+
+  function prefetchSpecs(items) {
+    items.slice(0, 668).forEach(function (item) {
+      if (specsCache[item.id]) return;
+      fetch(new URL("./data/specs/" + item.id + ".json", document.baseURI).href)
+        .then(function (r) { return r.json(); })
+        .then(function (specs) {
+          specsCache[item.id] = specs;
+          item._haystack = null;
+        })
+        .catch(function () {});
+    });
   }
 
   function fillSelect(select, values) {
@@ -95,7 +115,10 @@
       if (fPackage && item.package !== fPackage) return false;
       if (fLogic && item.logic_type !== fLogic) return false;
       if (fApp && (item.applications_domains || []).indexOf(fApp) === -1) return false;
-      if (q && item.haystack.indexOf(q) === -1) return false;
+      if (q) {
+        var h = item._haystack || (item._haystack = buildHaystack(item));
+        if (h.indexOf(q) === -1) return false;
+      }
       return true;
     });
 
@@ -166,23 +189,34 @@
       pinImg.alt = "Pin diagram";
     }
 
-    const specs = Array.isArray(item.specs) ? item.specs : [];
     el.specTable.innerHTML = "";
-    el.specEmpty.classList.toggle("hidden", specs.length > 0);
-    specs.slice(0, 300).forEach(function (spec) {
-      const row = document.createElement("tr");
-      var pHtml = spec.param_html || esc(spec.param);
-      var vHtml = spec.value_html || ("<strong>" + esc(spec.value) + "</strong>");
-      var cHtml = spec.conditions ? ("<br><span class=\"spec-cond\">[" + esc(spec.conditions) + "]</span>") : "";
-      if (spec.conditions_html) {
-        cHtml = "<br><span class=\"spec-cond\">[" + spec.conditions_html + "]</span>";
-      }
-      row.innerHTML = [
-        "<td>" + pHtml + "</td>",
-        "<td>" + vHtml + cHtml + "</td>"
-      ].join("");
-      el.specTable.appendChild(row);
-    });
+    el.specEmpty.classList.toggle("hidden", false);
+    el.specEmpty.textContent = "加载中…";
+    el.specEmpty.classList.remove("hidden");
+    fetch(new URL("./data/specs/" + item.id + ".json", document.baseURI).href)
+      .then(function (r) { return r.json(); })
+      .then(function (specs) {
+        el.specTable.innerHTML = "";
+        el.specEmpty.classList.toggle("hidden", specs.length > 0);
+        specs.slice(0, 300).forEach(function (spec) {
+          const row = document.createElement("tr");
+          var pHtml = spec.param_html || esc(spec.param);
+          var vHtml = spec.value_html || ("<strong>" + esc(spec.value) + "</strong>");
+          var cHtml = spec.conditions ? ("<br><span class=\"spec-cond\">[" + esc(spec.conditions) + "]</span>") : "";
+          if (spec.conditions_html) {
+            cHtml = "<br><span class=\"spec-cond\">[" + spec.conditions_html + "]</span>";
+          }
+          row.innerHTML = [
+            "<td>" + pHtml + "</td>",
+            "<td>" + vHtml + cHtml + "</td>"
+          ].join("");
+          el.specTable.appendChild(row);
+        });
+      })
+      .catch(function () {
+        el.specEmpty.textContent = "参数加载失败";
+        el.specEmpty.classList.remove("hidden");
+      });
 
     const docModels = products
       .filter(function (p) { return p.source_document_id === item.source_document_id && p.id !== item.id; })
@@ -272,13 +306,11 @@
           return acc.concat(p.applications_domains || []);
         }, []));
 
-        const specCount = products.reduce(function (sum, p) {
-          return sum + (Array.isArray(p.specs) ? p.specs.length : 0);
-        }, 0);
         el.statModels.textContent = products.length;
-        el.statSpecs.textContent = specCount;
+        el.statSpecs.textContent = "18439";
         el.meta.textContent = "离线数据库 · 静态网页版";
         runFilters();
+        setTimeout(function () { prefetchSpecs(products); }, 1500);
       })
       .catch(function (err) {
         el.meta.textContent = "数据加载失败";
