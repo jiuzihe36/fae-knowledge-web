@@ -99529,9 +99529,10 @@
     "param": "I OK | output clamping current",
     "value": "min=VI < -0.5 V or VI > VCC + 0.5 V; max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
     "param_html": "I<sub>OK</sub>| output clamping current",
-    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>"
+    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -99682,9 +99683,10 @@
     "param": "I OK | output clamping current",
     "value": "min=VI < -0.5 V or VI > VCC + 0.5 V; max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
     "param_html": "I<sub>OK</sub>| output clamping current",
-    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>"
+    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -99835,9 +99837,10 @@
     "param": "I OK | output clamping current",
     "value": "min=VI < -0.5 V or VI > VCC + 0.5 V; max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
     "param_html": "I<sub>OK</sub>| output clamping current",
-    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>"
+    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -99988,9 +99991,10 @@
     "param": "I OK | output clamping current",
     "value": "min=VI < -0.5 V or VI > VCC + 0.5 V; max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
     "param_html": "I<sub>OK</sub>| output clamping current",
-    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>"
+    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -101810,8 +101814,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -101946,8 +101951,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -102082,8 +102088,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -102218,8 +102225,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -102354,8 +102362,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -105060,9 +105069,10 @@
     "param": "I OK | output clamping current",
     "value": "min=VI < -0.5 V or VI > VCC + 0.5 V; max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
     "param_html": "I<sub>OK</sub>| output clamping current",
-    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>"
+    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -105213,9 +105223,10 @@
     "param": "I OK | output clamping current",
     "value": "min=VI < -0.5 V or VI > VCC + 0.5 V; max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
     "param_html": "I<sub>OK</sub>| output clamping current",
-    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>"
+    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -105366,9 +105377,10 @@
     "param": "I OK | output clamping current",
     "value": "min=VI < -0.5 V or VI > VCC + 0.5 V; max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
     "param_html": "I<sub>OK</sub>| output clamping current",
-    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>"
+    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -105519,9 +105531,10 @@
     "param": "I OK | output clamping current",
     "value": "min=VI < -0.5 V or VI > VCC + 0.5 V; max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
     "param_html": "I<sub>OK</sub>| output clamping current",
-    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>"
+    "value_html": "<strong>min=VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V; max=±50 mA</strong>",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -106886,8 +106899,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -107037,8 +107051,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -107188,8 +107203,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -107339,8 +107355,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -107490,8 +107507,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -108695,8 +108713,9 @@
     "param": "I OK output clamping current | VI < -0.5 V or VI > VCC + 0.5 V",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V >V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub> output clamping current| VI < -0.5 V or VI > VCC + 0.5 V"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub> output clamping current| VI < -0.5 V or VI > VCC + 0.5 V",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O output voltage | Active mode [1]",
@@ -108831,8 +108850,9 @@
     "param": "I OK output clamping current | VI < -0.5 V or VI > VCC + 0.5 V",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V >V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub> output clamping current| VI < -0.5 V or VI > VCC + 0.5 V"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub> output clamping current| VI < -0.5 V or VI > VCC + 0.5 V",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O output voltage | Active mode [1]",
@@ -108967,8 +108987,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -109118,8 +109139,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -109269,8 +109291,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -109420,8 +109443,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -109571,8 +109595,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -114746,8 +114771,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -114882,8 +114908,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -115018,8 +115045,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
@@ -115154,8 +115182,9 @@
     "param": "I OK | output clamping current",
     "value": "max=±50 mA",
     "kind": "绝对最大",
-    "conditions": "V > V or V < 0 VO CC O",
-    "param_html": "I<sub>OK</sub>| output clamping current"
+    "conditions": "VI < -0.5 V or VI > VCC + 0.5 V",
+    "param_html": "I<sub>OK</sub>| output clamping current",
+    "conditions_html": "VI < -0.5 V or VI > V<sub>CC</sub> + 0.5 V"
    },
    {
     "param": "V O | output voltage",
