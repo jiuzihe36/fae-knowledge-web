@@ -22889,17 +22889,20 @@
    {
     "param": "I A continuous Current Through COM, NC, NO",
     "value": "max=±100 mA",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "I A continuous Current Through COM, NC, NO"
    },
    {
     "param": "I A peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)",
     "value": "max=±200 mA",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "I A peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)"
    },
    {
     "param": "TJ junction Temperature under Bias",
     "value": "max=150 °C",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "TJ junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -22910,7 +22913,8 @@
    {
     "param": "R θJA thermal resistance",
     "value": "max=350 oC/W",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R θJA thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -23102,17 +23106,20 @@
    {
     "param": "I A continuous Current Through COM, NC, NO",
     "value": "max=±100 mA",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "I A continuous Current Through COM, NC, NO"
    },
    {
     "param": "I A peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)",
     "value": "max=±200 mA",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "I A peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)"
    },
    {
     "param": "TJ junction Temperature under Bias",
     "value": "max=150 °C",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "TJ junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -23123,7 +23130,8 @@
    {
     "param": "R θJA thermal resistance",
     "value": "max=350 oC/W",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R θJA thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -23315,17 +23323,20 @@
    {
     "param": "I A continuous Current Through COM, NC, NO",
     "value": "max=±100 mA",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "I A continuous Current Through COM, NC, NO"
    },
    {
     "param": "I A peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)",
     "value": "max=±200 mA",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "I A peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)"
    },
    {
     "param": "TJ junction Temperature under Bias",
     "value": "max=150 °C",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "TJ junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -23336,7 +23347,8 @@
    {
     "param": "R θJA thermal resistance",
     "value": "max=350 oC/W",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R θJA thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -66400,6 +66412,7 @@
     "param": "∆ICC additional supply current",
     "value": "[per input pin; V = V - 2.1 V; IO = 0 A; ICC other inputs at V or GND; CC VCC = 4.5 V to 5.5 VCC] max=300 μA",
     "kind": "静态",
+    "param_html": "∆ICC additional supply current",
     "value_html": "<strong>[per input pin; V = V - 2.1 V; IO = 0 A; ICC other inputs at V or GND; CC V<sub>CC</sub> = 4.5 V to 5.5 V<sub>CC</sub>] max=300 μA</strong>"
    },
    {
@@ -66566,6 +66579,7 @@
     "param": "∆ICC additional supply current",
     "value": "[per input pin; V = V - 2.1 V; IO = 0 A; ICC other inputs at V or GND; CC VCC = 4.5 V to 5.5 VCC] max=300 μA",
     "kind": "静态",
+    "param_html": "∆ICC additional supply current",
     "value_html": "<strong>[per input pin; V = V - 2.1 V; IO = 0 A; ICC other inputs at V or GND; CC V<sub>CC</sub> = 4.5 V to 5.5 V<sub>CC</sub>] max=300 μA</strong>"
    },
    {
@@ -94806,12 +94820,14 @@
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -94939,12 +94955,14 @@
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -95072,12 +95090,14 @@
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -95205,12 +95225,14 @@
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -95338,12 +95360,14 @@
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "消费电子逻辑控制；工业控制信号处理；电源时序控制；接口信号整形",
@@ -95477,7 +95501,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
@@ -95611,7 +95636,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
@@ -95745,7 +95771,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
@@ -95879,7 +95906,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
@@ -96013,7 +96041,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源时序控制；消费电子控制电路；通信设备信号处理",
@@ -96147,7 +96176,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -96281,7 +96311,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -96415,7 +96446,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -96549,7 +96581,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -96683,7 +96716,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -96816,7 +96850,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -96949,7 +96984,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -97082,7 +97118,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -97215,7 +97252,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -97348,7 +97386,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -97481,7 +97520,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "I2C总线上拉驱动；中断信号线或逻辑；LED驱动；电平转换(上拉至高电压)",
@@ -97608,12 +97648,14 @@
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -97740,12 +97782,14 @@
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -97872,12 +97916,14 @@
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -98004,12 +98050,14 @@
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -98136,12 +98184,14 @@
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10 ns/V",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -98275,7 +98325,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -98409,7 +98460,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -98543,7 +98595,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -98677,7 +98730,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -98811,7 +98865,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -98944,7 +98999,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -99077,7 +99133,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -99210,7 +99267,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -99343,7 +99401,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -99476,7 +99535,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -99515,8 +99575,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -99630,6 +99689,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -99669,8 +99729,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -99784,6 +99843,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -99823,8 +99883,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -99938,6 +99997,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -99977,8 +100037,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -100092,6 +100151,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -100228,7 +100288,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -100364,7 +100425,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -100500,7 +100562,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -100636,7 +100699,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源使能控制；安防设备信号处理；消费电子控制电路",
@@ -100722,12 +100786,14 @@
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -100813,12 +100879,14 @@
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -100904,12 +100972,14 @@
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -100995,12 +101065,14 @@
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -101086,12 +101158,14 @@
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=20 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    },
    {
     "param": "Δt/ΔV Input transition rise and fall rate",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV Input transition rise and fall rate"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -101225,7 +101299,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -101359,7 +101434,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -101493,7 +101569,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -101627,7 +101704,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -101761,7 +101839,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -101800,8 +101879,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -101937,8 +102015,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -102074,8 +102151,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -102211,8 +102287,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -102348,8 +102423,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -103195,7 +103269,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -103329,7 +103404,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -103463,7 +103539,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -103597,7 +103674,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -103731,7 +103809,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -104480,7 +104559,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -104614,7 +104694,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -104748,7 +104829,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -104882,7 +104964,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -105016,7 +105099,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -105055,8 +105139,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -105170,6 +105253,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -105209,8 +105293,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -105324,6 +105407,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -105363,8 +105447,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -105478,6 +105561,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -105517,8 +105601,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -105632,6 +105715,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -105766,7 +105850,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -105900,7 +105985,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -106034,7 +106120,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -106168,7 +106255,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -106302,7 +106390,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -106438,7 +106527,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -106574,7 +106664,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -106710,7 +106801,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -106846,7 +106938,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "工业控制逻辑组合；电源管理控制；汽车电子信号处理；消费电子逻辑电路",
@@ -106885,8 +106978,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -106998,6 +107090,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -107037,8 +107130,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -107150,6 +107242,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -107189,8 +107282,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -107302,6 +107394,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -107341,8 +107434,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -107454,6 +107546,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -107493,8 +107586,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -107606,6 +107698,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -107645,8 +107738,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -107683,8 +107775,7 @@
     "value": "max=50 mA",
     "kind": "绝对最大",
     "conditions": "V = 0 V to 6.5V O",
-    "param_html": "I<sub>O</sub>| output current",
-    "conditions_html": "V = 0 V to 6.5V<sub>O</sub>"
+    "param_html": "I<sub>O</sub>| output current"
    },
    {
     "param": "ICC | supply current",
@@ -107758,6 +107849,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -107797,8 +107889,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -107835,8 +107926,7 @@
     "value": "max=50 mA",
     "kind": "绝对最大",
     "conditions": "V = 0 V to 6.5V O",
-    "param_html": "I<sub>O</sub>| output current",
-    "conditions_html": "V = 0 V to 6.5V<sub>O</sub>"
+    "param_html": "I<sub>O</sub>| output current"
    },
    {
     "param": "ICC | supply current",
@@ -107910,6 +108000,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -107949,8 +108040,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -107987,8 +108077,7 @@
     "value": "max=50 mA",
     "kind": "绝对最大",
     "conditions": "V = 0 V to 6.5V O",
-    "param_html": "I<sub>O</sub>| output current",
-    "conditions_html": "V = 0 V to 6.5V<sub>O</sub>"
+    "param_html": "I<sub>O</sub>| output current"
    },
    {
     "param": "ICC | supply current",
@@ -108062,6 +108151,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -108101,8 +108191,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -108139,8 +108228,7 @@
     "value": "max=50 mA",
     "kind": "绝对最大",
     "conditions": "V = 0 V to 6.5V O",
-    "param_html": "I<sub>O</sub>| output current",
-    "conditions_html": "V = 0 V to 6.5V<sub>O</sub>"
+    "param_html": "I<sub>O</sub>| output current"
    },
    {
     "param": "ICC | supply current",
@@ -108214,6 +108302,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -108253,8 +108342,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -108291,8 +108379,7 @@
     "value": "max=50 mA",
     "kind": "绝对最大",
     "conditions": "V = 0 V to 6.5V O",
-    "param_html": "I<sub>O</sub>| output current",
-    "conditions_html": "V = 0 V to 6.5V<sub>O</sub>"
+    "param_html": "I<sub>O</sub>| output current"
    },
    {
     "param": "ICC | supply current",
@@ -108366,6 +108453,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -108699,8 +108787,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub> input clamping current| V < 0 VI",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub> input clamping current| V < 0 VI"
    },
    {
     "param": "VI input voltage | [1]",
@@ -108836,8 +108923,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub> input clamping current| V < 0 VI",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub> input clamping current| V < 0 VI"
    },
    {
     "param": "VI input voltage | [1]",
@@ -108973,8 +109059,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -109086,6 +109171,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -109125,8 +109211,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -109238,6 +109323,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -109277,8 +109363,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -109390,6 +109475,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -109429,8 +109515,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -109542,6 +109627,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -109581,8 +109667,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -109694,6 +109779,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -110110,7 +110196,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -110232,7 +110319,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -110354,7 +110442,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -110476,7 +110565,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -110598,7 +110688,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -111938,7 +112029,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -112072,7 +112164,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -112206,7 +112299,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -112340,7 +112434,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -112474,7 +112569,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -112513,8 +112609,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -112551,8 +112646,7 @@
     "value": "max=50 mA",
     "kind": "绝对最大",
     "conditions": "V = 0 V to 6.5V O",
-    "param_html": "I<sub>O</sub>| output current",
-    "conditions_html": "V = 0 V to 6.5V<sub>O</sub>"
+    "param_html": "I<sub>O</sub>| output current"
    },
    {
     "param": "ICC | supply current",
@@ -112626,6 +112720,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -112665,8 +112760,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -112703,8 +112797,7 @@
     "value": "max=50 mA",
     "kind": "绝对最大",
     "conditions": "V = 0 V to 6.5V O",
-    "param_html": "I<sub>O</sub>| output current",
-    "conditions_html": "V = 0 V to 6.5V<sub>O</sub>"
+    "param_html": "I<sub>O</sub>| output current"
    },
    {
     "param": "ICC | supply current",
@@ -112778,6 +112871,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -112817,8 +112911,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -112855,8 +112948,7 @@
     "value": "max=50 mA",
     "kind": "绝对最大",
     "conditions": "V = 0 V to 6.5V O",
-    "param_html": "I<sub>O</sub>| output current",
-    "conditions_html": "V = 0 V to 6.5V<sub>O</sub>"
+    "param_html": "I<sub>O</sub>| output current"
    },
    {
     "param": "ICC | supply current",
@@ -112930,6 +113022,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -112969,8 +113062,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -113007,8 +113099,7 @@
     "value": "max=50 mA",
     "kind": "绝对最大",
     "conditions": "V = 0 V to 6.5V O",
-    "param_html": "I<sub>O</sub>| output current",
-    "conditions_html": "V = 0 V to 6.5V<sub>O</sub>"
+    "param_html": "I<sub>O</sub>| output current"
    },
    {
     "param": "ICC | supply current",
@@ -113082,6 +113173,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -113121,8 +113213,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -113159,8 +113250,7 @@
     "value": "max=50 mA",
     "kind": "绝对最大",
     "conditions": "V = 0 V to 6.5V O",
-    "param_html": "I<sub>O</sub>| output current",
-    "conditions_html": "V = 0 V to 6.5V<sub>O</sub>"
+    "param_html": "I<sub>O</sub>| output current"
    },
    {
     "param": "ICC | supply current",
@@ -113234,6 +113324,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -113273,8 +113364,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -113311,8 +113401,7 @@
     "value": "max=50 mA",
     "kind": "绝对最大",
     "conditions": "V = 0 V to 6.5V O",
-    "param_html": "I<sub>O</sub>| output current",
-    "conditions_html": "V = 0 V to 6.5V<sub>O</sub>"
+    "param_html": "I<sub>O</sub>| output current"
    },
    {
     "param": "ICC | supply current",
@@ -113386,6 +113475,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -113425,8 +113515,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -113463,8 +113552,7 @@
     "value": "max=50 mA",
     "kind": "绝对最大",
     "conditions": "V = 0 V to 6.5V O",
-    "param_html": "I<sub>O</sub>| output current",
-    "conditions_html": "V = 0 V to 6.5V<sub>O</sub>"
+    "param_html": "I<sub>O</sub>| output current"
    },
    {
     "param": "ICC | supply current",
@@ -113538,6 +113626,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -113577,8 +113666,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -113615,8 +113703,7 @@
     "value": "max=50 mA",
     "kind": "绝对最大",
     "conditions": "V = 0 V to 6.5V O",
-    "param_html": "I<sub>O</sub>| output current",
-    "conditions_html": "V = 0 V to 6.5V<sub>O</sub>"
+    "param_html": "I<sub>O</sub>| output current"
    },
    {
     "param": "ICC | supply current",
@@ -113690,6 +113777,7 @@
     "value": "max=10 ns/V",
     "kind": "绝对最大",
     "conditions": "VCC = 2.7 V to 5.5 V",
+    "param_html": "Δt/ΔV",
     "conditions_html": "V<sub>CC</sub> = 2.7 V to 5.5 V"
    }
   ],
@@ -114316,7 +114404,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -114450,7 +114539,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -114584,7 +114674,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -114718,7 +114809,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -114757,8 +114849,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -114894,8 +114985,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -115031,8 +115121,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -115168,8 +115257,7 @@
     "value": "min=-50 mA",
     "kind": "绝对最大",
     "conditions": "V < 0 V I",
-    "param_html": "I<sub>IK</sub>| input clamping current",
-    "conditions_html": "V < 0 V<sub>I</sub>"
+    "param_html": "I<sub>IK</sub>| input clamping current"
    },
    {
     "param": "VI | input voltage",
@@ -115400,7 +115488,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -115534,7 +115623,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -115668,7 +115758,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -115802,7 +115893,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "信号缓冲增强驱动；时钟分配；长走线信号中继；接口隔离驱动",
@@ -115924,7 +116016,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -116046,7 +116139,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -116168,7 +116262,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -116290,7 +116385,8 @@
    {
     "param": "Δt/ΔV",
     "value": "max=10 ns/V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "Δt/ΔV"
    }
   ],
   "applications": "时钟/信号反相整形；复位电路；接口电平反相；振荡电路",
@@ -116897,7 +116993,8 @@
    {
     "param": "t sk(o) output skew time",
     "value": "max=1.0 ns",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "t sk(o) output skew time"
    },
    {
     "param": "CPD power dissipation capacitance | outputs enabled",
@@ -117448,7 +117545,8 @@
    {
     "param": "t sk(o) output skew time",
     "value": "max=1.0 ns",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "t sk(o) output skew time"
    },
    {
     "param": "CPD power dissipation capacitance | outputs enabled",
@@ -121337,7 +121435,8 @@
    {
     "param": "TJ junction Temperature under Bias",
     "value": "max=150 °C",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "TJ junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -121348,7 +121447,8 @@
    {
     "param": "R θJA thermal resistance",
     "value": "max=350 oC/W",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R θJA thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -121552,7 +121652,8 @@
    {
     "param": "TJ junction Temperature under Bias",
     "value": "max=150 °C",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "TJ junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -121563,7 +121664,8 @@
    {
     "param": "R θJA thermal resistance",
     "value": "max=350 oC/W",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R θJA thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -121767,7 +121869,8 @@
    {
     "param": "TJ junction Temperature under Bias",
     "value": "max=150 °C",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "TJ junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -121778,7 +121881,8 @@
    {
     "param": "R θJA thermal resistance",
     "value": "max=350 oC/W",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R θJA thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -121982,7 +122086,8 @@
    {
     "param": "TJ junction Temperature under Bias",
     "value": "max=150 °C",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "TJ junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -121993,7 +122098,8 @@
    {
     "param": "R θJA thermal resistance",
     "value": "max=350 oC/W",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R θJA thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -122197,7 +122303,8 @@
    {
     "param": "TJ junction Temperature under Bias",
     "value": "max=150 °C",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "TJ junction Temperature under Bias"
    },
    {
     "param": "T L lead Temperature (Soldering, 10 seconds)",
@@ -122208,7 +122315,8 @@
    {
     "param": "R θJA thermal resistance",
     "value": "max=350 oC/W",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "R θJA thermal resistance"
    },
    {
     "param": "VCC supply voltage",
@@ -122417,19 +122525,22 @@
     "param": "ESD",
     "value": "min=± 5 kV",
     "kind": "绝对最大",
-    "conditions": "V to GND CC"
+    "conditions": "V to GND CC",
+    "param_html": "ESD"
    },
    {
     "param": "ESD",
     "value": "min=± 4 kV",
     "kind": "绝对最大",
-    "conditions": "Li and Ri to GND"
+    "conditions": "Li and Ri to GND",
+    "param_html": "ESD"
    },
    {
     "param": "ESD",
     "value": "min=± 4 kV",
     "kind": "绝对最大",
-    "conditions": "Li and Ri to GND"
+    "conditions": "Li and Ri to GND",
+    "param_html": "ESD"
    },
    {
     "param": "VCC | Supply voltage range",
@@ -122479,24 +122590,21 @@
     "value": "typ=0.78 Ω",
     "kind": "静态",
     "conditions": "I = 60 mA, V = - 2 V to 2 V SW SW",
-    "param_html": "R<sub>ON</sub>| Switch on resistance",
-    "conditions_html": "I = 60 mA, V = - 2 V to 2 V<sub>SW</sub> SW"
+    "param_html": "R<sub>ON</sub>| Switch on resistance"
    },
    {
     "param": "ΔR ON | Switch delta RON",
     "value": "typ=50 mΩ",
     "kind": "静态",
     "conditions": "I = 60 mA, V = - 2 V to 2 V SW SW",
-    "param_html": "ΔR<sub>ON</sub>| Switch delta RON",
-    "conditions_html": "I = 60 mA, V = - 2 V to 2 V<sub>SW</sub> SW"
+    "param_html": "ΔR<sub>ON</sub>| Switch delta RON"
    },
    {
     "param": "RFLAT(ON) | Switch R flatness ON",
     "value": "typ=75 mΩ",
     "kind": "静态",
     "conditions": "I = 60 mA, V = - 2 V to 2 V SW SW",
-    "param_html": "R<sub>FLAT</sub>(ON)| Switch R flatness ON",
-    "conditions_html": "I = 60 mA, V = - 2 V to 2 V<sub>SW</sub> SW"
+    "param_html": "R<sub>FLAT</sub>(ON)| Switch R flatness ON"
    },
    {
     "param": "C ON | On capacitance",
@@ -122530,7 +122638,8 @@
     "param": "THD",
     "value": "typ=-110 dB",
     "kind": "静态",
-    "conditions": "f = 20 Hz to 20 KHz, R = 1 kΩ, V = 1.5 V L IN rms"
+    "conditions": "f = 20 Hz to 20 KHz, R = 1 kΩ, V = 1.5 V L IN rms",
+    "param_html": "THD"
    },
    {
     "param": "O IRR | Off isolation rejection ratio",
@@ -122570,32 +122679,28 @@
     "value": "min=1.3 V",
     "kind": "静态",
     "conditions": "2.5V< V <3.0V CC",
-    "param_html": "V<sub>IH</sub>| Control input voltage HIGH",
-    "conditions_html": "2.5V< V <3.0V<sub>CC</sub>"
+    "param_html": "V<sub>IH</sub>| Control input voltage HIGH"
    },
    {
     "param": "VIH",
     "value": "min=1.5 V",
     "kind": "静态",
     "conditions": "3.0V< V <3.5V CC",
-    "param_html": "V<sub>IH</sub>",
-    "conditions_html": "3.0V< V <3.5V<sub>CC</sub>"
+    "param_html": "V<sub>IH</sub>"
    },
    {
     "param": "VIL | Control input voltage LOW",
     "value": "max=0.3 V",
     "kind": "静态",
     "conditions": "2.5V< V <3.0V CC",
-    "param_html": "V<sub>IL</sub>| Control input voltage LOW",
-    "conditions_html": "2.5V< V <3.0V<sub>CC</sub>"
+    "param_html": "V<sub>IL</sub>| Control input voltage LOW"
    },
    {
     "param": "VIL",
     "value": "max=0.5 V",
     "kind": "静态",
     "conditions": "3.0V< V <3.5V CC",
-    "param_html": "V<sub>IL</sub>",
-    "conditions_html": "3.0V< V <3.5V<sub>CC</sub>"
+    "param_html": "V<sub>IL</sub>"
    }
   ],
   "applications": "信号通道选择；数据总线切换；传感器通道复用；测试设备切换",
@@ -122683,19 +122788,22 @@
     "param": "ESD",
     "value": "min=± 5 kV",
     "kind": "绝对最大",
-    "conditions": "V to GND CC"
+    "conditions": "V to GND CC",
+    "param_html": "ESD"
    },
    {
     "param": "ESD",
     "value": "min=± 4 kV",
     "kind": "绝对最大",
-    "conditions": "Li and Ri to GND"
+    "conditions": "Li and Ri to GND",
+    "param_html": "ESD"
    },
    {
     "param": "ESD",
     "value": "min=± 4 kV",
     "kind": "绝对最大",
-    "conditions": "Li and Ri to GND"
+    "conditions": "Li and Ri to GND",
+    "param_html": "ESD"
    },
    {
     "param": "VCC | Supply voltage range",
@@ -122745,24 +122853,21 @@
     "value": "typ=0.78 Ω",
     "kind": "静态",
     "conditions": "I = 60 mA, V = - 2 V to 2 V SW SW",
-    "param_html": "R<sub>ON</sub>| Switch on resistance",
-    "conditions_html": "I = 60 mA, V = - 2 V to 2 V<sub>SW</sub> SW"
+    "param_html": "R<sub>ON</sub>| Switch on resistance"
    },
    {
     "param": "ΔR ON | Switch delta RON",
     "value": "typ=50 mΩ",
     "kind": "静态",
     "conditions": "I = 60 mA, V = - 2 V to 2 V SW SW",
-    "param_html": "ΔR<sub>ON</sub>| Switch delta RON",
-    "conditions_html": "I = 60 mA, V = - 2 V to 2 V<sub>SW</sub> SW"
+    "param_html": "ΔR<sub>ON</sub>| Switch delta RON"
    },
    {
     "param": "RFLAT(ON) | Switch R flatness ON",
     "value": "typ=75 mΩ",
     "kind": "静态",
     "conditions": "I = 60 mA, V = - 2 V to 2 V SW SW",
-    "param_html": "R<sub>FLAT</sub>(ON)| Switch R flatness ON",
-    "conditions_html": "I = 60 mA, V = - 2 V to 2 V<sub>SW</sub> SW"
+    "param_html": "R<sub>FLAT</sub>(ON)| Switch R flatness ON"
    },
    {
     "param": "C ON | On capacitance",
@@ -122796,7 +122901,8 @@
     "param": "THD",
     "value": "typ=-110 dB",
     "kind": "静态",
-    "conditions": "f = 20 Hz to 20 KHz, R = 1 kΩ, V = 1.5 V L IN rms"
+    "conditions": "f = 20 Hz to 20 KHz, R = 1 kΩ, V = 1.5 V L IN rms",
+    "param_html": "THD"
    },
    {
     "param": "O IRR | Off isolation rejection ratio",
@@ -122836,32 +122942,28 @@
     "value": "min=1.3 V",
     "kind": "静态",
     "conditions": "2.5V< V <3.0V CC",
-    "param_html": "V<sub>IH</sub>| Control input voltage HIGH",
-    "conditions_html": "2.5V< V <3.0V<sub>CC</sub>"
+    "param_html": "V<sub>IH</sub>| Control input voltage HIGH"
    },
    {
     "param": "VIH",
     "value": "min=1.5 V",
     "kind": "静态",
     "conditions": "3.0V< V <3.5V CC",
-    "param_html": "V<sub>IH</sub>",
-    "conditions_html": "3.0V< V <3.5V<sub>CC</sub>"
+    "param_html": "V<sub>IH</sub>"
    },
    {
     "param": "VIL | Control input voltage LOW",
     "value": "max=0.3 V",
     "kind": "静态",
     "conditions": "2.5V< V <3.0V CC",
-    "param_html": "V<sub>IL</sub>| Control input voltage LOW",
-    "conditions_html": "2.5V< V <3.0V<sub>CC</sub>"
+    "param_html": "V<sub>IL</sub>| Control input voltage LOW"
    },
    {
     "param": "VIL",
     "value": "max=0.5 V",
     "kind": "静态",
     "conditions": "3.0V< V <3.5V CC",
-    "param_html": "V<sub>IL</sub>",
-    "conditions_html": "3.0V< V <3.5V<sub>CC</sub>"
+    "param_html": "V<sub>IL</sub>"
    }
   ],
   "applications": "信号通道选择；数据总线切换；传感器通道复用；测试设备切换",
@@ -122898,7 +123000,8 @@
    {
     "param": "V TX/RX Super Speed Data Channel TX/RX",
     "value": "min=-0.5; max=3.8 V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "V TX/RX Super Speed Data Channel TX/RX"
    },
    {
     "param": "VI DC Input Voltage",
@@ -122922,7 +123025,8 @@
    {
     "param": "T j Junction Temperature",
     "value": "max=125 °C",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "T j Junction Temperature"
    },
    {
     "param": "P D Power Dissipation",
@@ -122996,7 +123100,8 @@
    {
     "param": "ESD",
     "value": "min=± 7 kV",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "ESD"
    },
    {
     "param": "VDD | Supply voltage",
@@ -123015,53 +123120,62 @@
     "param": "V SW(OFF)",
     "value": "max=1.8 Vrms",
     "kind": "绝对最大",
-    "conditions": "Isolating（V =2.5V, RL=32Ω, f<30kHz） DD"
+    "conditions": "Isolating（V =2.5V, RL=32Ω, f<30kHz） DD",
+    "param_html": "V SW(OFF)"
    },
    {
     "param": "V SW(OFF)",
     "value": "max=2.4 Vrms",
     "kind": "绝对最大",
-    "conditions": "Isolating（V =3.0V, RL=32Ω, f<30kHz） DD"
+    "conditions": "Isolating（V =3.0V, RL=32Ω, f<30kHz） DD",
+    "param_html": "V SW(OFF)"
    },
    {
     "param": "V SW(OFF)",
     "value": "max=2.6 Vrms",
     "kind": "绝对最大",
-    "conditions": "Isolating（V =3.5V, RL=32Ω, f<30kHz） DD"
+    "conditions": "Isolating（V =3.5V, RL=32Ω, f<30kHz） DD",
+    "param_html": "V SW(OFF)"
    },
    {
     "param": "V SW(OFF)",
     "value": "max=2.7 Vrms",
     "kind": "绝对最大",
-    "conditions": "Isolating（V =4.0V, RL=32Ω, f<30kHz） DD"
+    "conditions": "Isolating（V =4.0V, RL=32Ω, f<30kHz） DD",
+    "param_html": "V SW(OFF)"
    },
    {
     "param": "V SW(OFF)",
     "value": "max=2.8 Vrms",
     "kind": "绝对最大",
-    "conditions": "Isolating（V =4.5V, RL=32Ω, f<30kHz） DD"
+    "conditions": "Isolating（V =4.5V, RL=32Ω, f<30kHz） DD",
+    "param_html": "V SW(OFF)"
    },
    {
     "param": "V SW(OFF)",
     "value": "max=3.0 Vrms",
     "kind": "绝对最大",
-    "conditions": "Isolating（V =5.0V, RL=32Ω, f<30kHz） DD"
+    "conditions": "Isolating（V =5.0V, RL=32Ω, f<30kHz） DD",
+    "param_html": "V SW(OFF)"
    },
    {
     "param": "V SW(OFF)",
     "value": "min=4.7; max=5.5 V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "V SW(OFF)"
    },
    {
     "param": "V SW(ON)",
     "value": "max=3.0 Vrms",
     "kind": "绝对最大",
-    "conditions": "Conducting（f<30kHz）"
+    "conditions": "Conducting（f<30kHz）",
+    "param_html": "V SW(ON)"
    },
    {
     "param": "V SW(ON)",
     "value": "min=4.7; max=5.5 V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "V SW(ON)"
    },
    {
     "param": "T A | Ambient Temperature",
@@ -123094,16 +123208,14 @@
     "value": "typ=0.85 Ω",
     "kind": "静态",
     "conditions": "I = 50 mA, V = - 3 V to 3 V SW SW",
-    "param_html": "R<sub>ON</sub>| Switch on resistance",
-    "conditions_html": "I = 50 mA, V = - 3 V to 3 V<sub>SW</sub> SW"
+    "param_html": "R<sub>ON</sub>| Switch on resistance"
    },
    {
     "param": "RFLAT(ON) | On resistance flatness",
     "value": "typ=8.7 mΩ",
     "kind": "静态",
     "conditions": "I = 50 mA,V = - 3 V to 3 V SW SW",
-    "param_html": "R<sub>FLAT</sub>(ON)| On resistance flatness",
-    "conditions_html": "I = 50 mA,V = - 3 V to 3 V<sub>SW</sub> SW"
+    "param_html": "R<sub>FLAT</sub>(ON)| On resistance flatness"
    },
    {
     "param": "C ON | On capacitance",
@@ -123131,85 +123243,91 @@
     "value": "typ=-115 dB",
     "kind": "静态",
     "conditions": "V = 5.0V DD Vsw < 3.0Vrms, f = 20kHz",
-    "param_html": "OIRR| Off isolation rejection ratio",
-    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz"
+    "param_html": "OIRR| Off isolation rejection ratio"
    },
    {
     "param": "OIRR",
     "value": "typ=-100 dB",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "OIRR"
    },
    {
     "param": "OIRR",
     "value": "typ=-115 dB",
     "kind": "静态",
     "conditions": "V = 5.0V DD Vsw < 3.0Vrms, f = 20kHz",
-    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz"
+    "param_html": "OIRR"
    },
    {
     "param": "OIRR",
     "value": "typ=-100 dB",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "OIRR"
    },
    {
     "param": "OIRR",
     "value": "typ=-115 dB",
     "kind": "静态",
     "conditions": "V = 5.0V DD Vsw < 3.0Vrms, f = 20kHz",
-    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz"
+    "param_html": "OIRR"
    },
    {
     "param": "OIRR",
     "value": "typ=-100 dB",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "OIRR"
    },
    {
     "param": "OIRR",
     "value": "typ=-115 dB",
     "kind": "静态",
     "conditions": "V = 5.0V DD Vsw < 3.0Vrms, f = 20kHz",
-    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz"
+    "param_html": "OIRR"
    },
    {
     "param": "OIRR",
     "value": "typ=-100 dB",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "OIRR"
    },
    {
     "param": "OIRR",
     "value": "typ=-115 dB",
     "kind": "静态",
     "conditions": "V = 5.0V DD Vsw < 3.0Vrms, f = 20kHz",
-    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz"
+    "param_html": "OIRR"
    },
    {
     "param": "OIRR",
     "value": "typ=-108 dB",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "OIRR"
    },
    {
     "param": "OIRR",
     "value": "typ=-115 dB",
     "kind": "静态",
     "conditions": "V = 5.0V DD Vsw < 3.0Vrms, f = 20kHz",
-    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz"
+    "param_html": "OIRR"
    },
    {
     "param": "OIRR",
     "value": "typ=-108 dB",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "OIRR"
    },
    {
     "param": "OIRR",
     "value": "typ=-115 dB",
     "kind": "静态",
     "conditions": "V = 5.0V DD Vsw < 3.0Vrms, f = 20kHz",
-    "conditions_html": "V = 5.0V<sub>DD</sub> Vsw < 3.0Vrms, f = 20kHz"
+    "param_html": "OIRR"
    },
    {
     "param": "OIRR",
     "value": "typ=-108 dB",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "OIRR"
    }
   ],
   "applications": "音频/视频信号切换；USB信号路由；UART/SPI通道切换；手机/平板/便携",
@@ -123469,16 +123587,14 @@
     "value": "typ=1.2 Ω",
     "kind": "静态",
     "conditions": "I = 50 mA,V = -3 V to 3 V SW SW",
-    "param_html": "R<sub>ON</sub>| Switch on resistance",
-    "conditions_html": "I = 50 mA,V = -3 V to 3 V<sub>SW</sub> SW"
+    "param_html": "R<sub>ON</sub>| Switch on resistance"
    },
    {
     "param": "RFLAT(ON) | On resistance flatness",
     "value": "typ=14 mΩ",
     "kind": "静态",
     "conditions": "I = 50 mA,V = -3 V to 3 V SW SW",
-    "param_html": "R<sub>FLAT</sub>(ON)| On resistance flatness",
-    "conditions_html": "I = 50 mA,V = -3 V to 3 V<sub>SW</sub> SW"
+    "param_html": "R<sub>FLAT</sub>(ON)| On resistance flatness"
    },
    {
     "param": "C ON | On capacitance",
@@ -123511,7 +123627,8 @@
    {
     "param": "OIRR",
     "value": "typ=-85 dB",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "OIRR"
    },
    {
     "param": "BW | Band Width",
@@ -123525,32 +123642,28 @@
     "value": "typ=67 μA",
     "kind": "静态",
     "conditions": "V = 2.5 V, SEL0=SEL1= 0 V DD",
-    "param_html": "I<sub>DD</sub>| Quiescent current",
-    "conditions_html": "V = 2.5 V, SEL0=SEL1= 0 V<sub>DD</sub>"
+    "param_html": "I<sub>DD</sub>| Quiescent current"
    },
    {
     "param": "I DD",
     "value": "typ=92 μA",
     "kind": "静态",
     "conditions": "V = 3.3 V, SEL0=SEL1= 0 V DD",
-    "param_html": "I<sub>DD</sub>",
-    "conditions_html": "V = 3.3 V, SEL0=SEL1= 0 V<sub>DD</sub>"
+    "param_html": "I<sub>DD</sub>"
    },
    {
     "param": "I DD",
     "value": "typ=158 μA",
     "kind": "静态",
     "conditions": "V = 5.0 V, SEL0=SEL1= 0 V DD",
-    "param_html": "I<sub>DD</sub>",
-    "conditions_html": "V = 5.0 V, SEL0=SEL1= 0 V<sub>DD</sub>"
+    "param_html": "I<sub>DD</sub>"
    },
    {
     "param": "I DIS | Disable current",
     "value": "typ=0.1 μA",
     "kind": "静态",
     "conditions": "V ≤ 0.2 V DD",
-    "param_html": "I DIS| Disable current",
-    "conditions_html": "V ≤ 0.2 V<sub>DD</sub>"
+    "param_html": "I DIS| Disable current"
    },
    {
     "param": "VIH | Input voltage high",
@@ -123706,16 +123819,14 @@
     "value": "typ=1.2 Ω",
     "kind": "静态",
     "conditions": "I = 50 mA,V = -3 V to 3 V SW SW",
-    "param_html": "R<sub>ON</sub>| Switch on resistance",
-    "conditions_html": "I = 50 mA,V = -3 V to 3 V<sub>SW</sub> SW"
+    "param_html": "R<sub>ON</sub>| Switch on resistance"
    },
    {
     "param": "RFLAT(ON) | On resistance flatness",
     "value": "typ=14 mΩ",
     "kind": "静态",
     "conditions": "I = 50 mA,V = -3 V to 3 V SW SW",
-    "param_html": "R<sub>FLAT</sub>(ON)| On resistance flatness",
-    "conditions_html": "I = 50 mA,V = -3 V to 3 V<sub>SW</sub> SW"
+    "param_html": "R<sub>FLAT</sub>(ON)| On resistance flatness"
    },
    {
     "param": "C ON | On capacitance",
@@ -123748,7 +123859,8 @@
    {
     "param": "OIRR",
     "value": "typ=-85 dB",
-    "kind": "静态"
+    "kind": "静态",
+    "param_html": "OIRR"
    },
    {
     "param": "BW | Band Width",
@@ -123762,32 +123874,28 @@
     "value": "typ=67 μA",
     "kind": "静态",
     "conditions": "V = 2.5 V, SEL0=SEL1= 0 V DD",
-    "param_html": "I<sub>DD</sub>| Quiescent current",
-    "conditions_html": "V = 2.5 V, SEL0=SEL1= 0 V<sub>DD</sub>"
+    "param_html": "I<sub>DD</sub>| Quiescent current"
    },
    {
     "param": "I DD",
     "value": "typ=92 μA",
     "kind": "静态",
     "conditions": "V = 3.3 V, SEL0=SEL1= 0 V DD",
-    "param_html": "I<sub>DD</sub>",
-    "conditions_html": "V = 3.3 V, SEL0=SEL1= 0 V<sub>DD</sub>"
+    "param_html": "I<sub>DD</sub>"
    },
    {
     "param": "I DD",
     "value": "typ=158 μA",
     "kind": "静态",
     "conditions": "V = 5.0 V, SEL0=SEL1= 0 V DD",
-    "param_html": "I<sub>DD</sub>",
-    "conditions_html": "V = 5.0 V, SEL0=SEL1= 0 V<sub>DD</sub>"
+    "param_html": "I<sub>DD</sub>"
    },
    {
     "param": "I DIS | Disable current",
     "value": "typ=0.1 μA",
     "kind": "静态",
     "conditions": "V ≤ 0.2 V DD",
-    "param_html": "I DIS| Disable current",
-    "conditions_html": "V ≤ 0.2 V<sub>DD</sub>"
+    "param_html": "I DIS| Disable current"
    },
    {
     "param": "VIH | Input voltage high",
@@ -123986,7 +124094,8 @@
    {
     "param": "XTALK",
     "value": "145 dB",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "XTALK"
    },
    {
     "param": "XTALK | RL =",
@@ -124185,7 +124294,8 @@
    {
     "param": "XTALK",
     "value": "145 dB",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "XTALK"
    },
    {
     "param": "XTALK | RL =",
@@ -125451,7 +125561,8 @@
    {
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -125662,7 +125773,8 @@
    {
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -125685,7 +125797,8 @@
    {
     "param": "NOTE",
     "value": "YYWW = Data Code.",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
@@ -125878,7 +125991,8 @@
    {
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -125901,7 +126015,8 @@
    {
     "param": "NOTE",
     "value": "YYWW = Data Code.",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
@@ -126271,7 +126386,8 @@
    {
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -126294,7 +126410,8 @@
    {
     "param": "NOTE",
     "value": "YYWW = Data Code.",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
@@ -126481,7 +126598,8 @@
    {
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -126686,7 +126804,8 @@
    {
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -126709,7 +126828,8 @@
    {
     "param": "NOTE",
     "value": "YYWW = Data Code.",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
@@ -126896,7 +127016,8 @@
    {
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -126919,7 +127040,8 @@
    {
     "param": "NOTE",
     "value": "YYWW = Data Code.",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
@@ -127106,7 +127228,8 @@
    {
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -127129,7 +127252,8 @@
    {
     "param": "NOTE",
     "value": "YYWW = Data Code.",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
@@ -127316,7 +127440,8 @@
    {
     "param": "Dual 2",
     "value": "1 USB2.0 Mux/De-Mux with 20V Over-Voltage Protection",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "Dual 2"
    },
    {
     "param": "IDD IDD supply current | EN* = 3.5 V VDD = 3.5 V",
@@ -127339,7 +127464,8 @@
    {
     "param": "NOTE",
     "value": "YYWW = Data Code.",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "RFLAT | RFLAT RON flatness [1] VIS = 0 V to 0.4 V IOUT = 8 mA",
@@ -127874,7 +128000,8 @@
    {
     "param": "V TX/RX Super Speed Data Channel TX/RX",
     "value": "min=-0.5; max=3.8 V",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "V TX/RX Super Speed Data Channel TX/RX"
    },
    {
     "param": "VI DC Input Voltage",
@@ -127898,7 +128025,8 @@
    {
     "param": "T j Junction Temperature",
     "value": "max=125 °C",
-    "kind": "绝对最大"
+    "kind": "绝对最大",
+    "param_html": "T j Junction Temperature"
    },
    {
     "param": "P D Power Dissipation",
@@ -128132,8 +128260,9 @@
     "param": "RON | on- resistance",
     "value": "typ=6.5; max=9.5 Ω Ω",
     "kind": "静态",
-    "conditions": "V = 3V, 1.5V≤V ≤V , I =-40mA CC I/O CC I/O",
-    "param_html": "R<sub>ON</sub>| on- resistance"
+    "conditions": "VCC = 3 V, 1.5 V ≤ VOH ≤ VCC, I = -40 mA",
+    "param_html": "R<sub>ON</sub>| on- resistance",
+    "conditions_html": "V<sub>CC</sub> = 3 V, 1.5 V ≤ V<sub>OH</sub> ≤ V<sub>CC</sub>, I = -40 mA"
    },
    {
     "param": "RON",
@@ -128145,15 +128274,17 @@
     "param": "RON(flat) | ON-state resistance flatness",
     "value": "typ=1.5 Ω",
     "kind": "静态",
-    "conditions": "V =3V, V =1.5V and V ,I =-40mA CC I/O CC I/O",
-    "param_html": "R<sub>ON</sub>(flat)| ON-state resistance flatness"
+    "conditions": "VCC = 3 V, VOH = 1.5 V or VCC, I = -40 mA",
+    "param_html": "R<sub>ON</sub>(flat)| ON-state resistance flatness",
+    "conditions_html": "V<sub>CC</sub> = 3 V, V<sub>OH</sub> = 1.5 V or V<sub>CC</sub>, I = -40 mA"
    },
    {
     "param": "ΔR ON | On-state resistance match between high-speed channels",
     "value": "typ=0.4; max=1 Ω",
     "kind": "静态",
-    "conditions": "V =3V, 1.5V≤V ≤V , I =-40mA CC I/O CC I/O",
-    "param_html": "ΔR<sub>ON</sub>| On-state resistance match between high-speed channels"
+    "conditions": "VCC = 3 V, 1.5 V ≤ VOH ≤ VCC, I = -40 mA",
+    "param_html": "ΔR<sub>ON</sub>| On-state resistance match between high-speed channels",
+    "conditions_html": "V<sub>CC</sub> = 3 V, 1.5 V ≤ V<sub>OH</sub> ≤ V<sub>CC</sub>, I = -40 mA"
    },
    {
     "param": "I OFF | Leakage under power off",
@@ -128167,8 +128298,9 @@
     "param": "RON | on- resistance",
     "value": "typ=8.2; max=10.5 Ω Ω",
     "kind": "静态",
-    "conditions": "V = 3V, 1.5V≤V ≤V , I =-40mA CC I/O CC I/O",
-    "param_html": "R<sub>ON</sub>| on- resistance"
+    "conditions": "VCC = 3 V, 1.5 V ≤ VOH ≤ VCC, I = -40 mA",
+    "param_html": "R<sub>ON</sub>| on- resistance",
+    "conditions_html": "V<sub>CC</sub> = 3 V, 1.5 V ≤ V<sub>OH</sub> ≤ V<sub>CC</sub>, I = -40 mA"
    },
    {
     "param": "RON",
@@ -128180,15 +128312,17 @@
     "param": "RON(flat) | ON-state resistance flatness",
     "value": "typ=1.5 Ω",
     "kind": "静态",
-    "conditions": "V =3V, V =1.5V and V ,I =-40mA CC I/O CC I/O",
-    "param_html": "R<sub>ON</sub>(flat)| ON-state resistance flatness"
+    "conditions": "VCC = 3 V, VOH = 1.5 V or VCC, I = -40 mA",
+    "param_html": "R<sub>ON</sub>(flat)| ON-state resistance flatness",
+    "conditions_html": "V<sub>CC</sub> = 3 V, V<sub>OH</sub> = 1.5 V or V<sub>CC</sub>, I = -40 mA"
    },
    {
     "param": "ΔR ON | On-state resistance match between high-speed channels",
     "value": "typ=0.4; max=1 Ω",
     "kind": "静态",
-    "conditions": "V =3V, 1.5V≤V ≤V , I =-40mA CC I/O CC I/O",
-    "param_html": "ΔR<sub>ON</sub>| On-state resistance match between high-speed channels"
+    "conditions": "VCC = 3 V, 1.5 V ≤ VOH ≤ VCC, I = -40 mA",
+    "param_html": "ΔR<sub>ON</sub>| On-state resistance match between high-speed channels",
+    "conditions_html": "V<sub>CC</sub> = 3 V, 1.5 V ≤ V<sub>OH</sub> ≤ V<sub>CC</sub>, I = -40 mA"
    },
    {
     "param": "I OFF | Leakage under power off",
@@ -128823,7 +128957,8 @@
    {
     "param": "NOTE",
     "value": "XYYWW = Vendor Code and Date Code.",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "NOTE"
    },
    {
     "param": "VDD",
@@ -129071,6 +129206,7 @@
     "param": "BW tSK(P) Skew of opposite transitions",
     "value": "[of the same output VCC = 3.3 V, RL = 50 Ω, CL = 5 pF] 20 ps",
     "kind": "交流特性",
+    "param_html": "BW tSK(P) Skew of opposite transitions",
     "value_html": "<strong>[of the same output V<sub>CC</sub> = 3.3 V, RL = 50 Ω, CL = 5 pF] 20 ps</strong>"
    },
    {
@@ -129145,12 +129281,14 @@
    {
     "param": "OE 8 10 Switch Enable (HIGH",
     "value": "DISABLE; LOW: ENABLE)",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "OE 8 10 Switch Enable (HIGH"
    },
    {
     "param": "S 10 2 Switch Select (LOW",
     "value": "D+, D- = HSD1+, HSD1-; HIGH: D+, D- = HSD2+, HSD2-)",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "S 10 2 Switch Select (LOW"
    },
    {
     "param": "VCC ICCT Increase in ICC current per control voltage and VCC",
@@ -129277,6 +129415,7 @@
     "param": "XTALK XTALK Non-Adjacent channel",
     "value": "[crosstalk VCC = 3.0 to 3.6 V, RL = 50 Ω, f = 240 MHz] -45 dB",
     "kind": "特性",
+    "param_html": "XTALK XTALK Non-Adjacent channel",
     "value_html": "<strong>[crosstalk V<sub>CC</sub> = 3.0 to 3.6 V, RL = 50 Ω, f = 240 MHz] -45 dB</strong>"
    }
   ],
@@ -129309,6 +129448,7 @@
     "param": "BW tSK(P) Skew of opposite transitions",
     "value": "[of the same output VCC = 3.3 V, RL = 50 Ω, CL = 5 pF] 20 ps",
     "kind": "交流特性",
+    "param_html": "BW tSK(P) Skew of opposite transitions",
     "value_html": "<strong>[of the same output V<sub>CC</sub> = 3.3 V, RL = 50 Ω, CL = 5 pF] 20 ps</strong>"
    },
    {
@@ -129383,12 +129523,14 @@
    {
     "param": "OE 8 10 Switch Enable (HIGH",
     "value": "DISABLE; LOW: ENABLE)",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "OE 8 10 Switch Enable (HIGH"
    },
    {
     "param": "S 10 2 Switch Select (LOW",
     "value": "D+, D- = HSD1+, HSD1-; HIGH: D+, D- = HSD2+, HSD2-)",
-    "kind": "特性"
+    "kind": "特性",
+    "param_html": "S 10 2 Switch Select (LOW"
    },
    {
     "param": "VCC ICCT Increase in ICC current per control voltage and VCC",
@@ -129515,6 +129657,7 @@
     "param": "XTALK XTALK Non-Adjacent channel",
     "value": "[crosstalk VCC = 3.0 to 3.6 V, RL = 50 Ω, f = 240 MHz] -45 dB",
     "kind": "特性",
+    "param_html": "XTALK XTALK Non-Adjacent channel",
     "value_html": "<strong>[crosstalk V<sub>CC</sub> = 3.0 to 3.6 V, RL = 50 Ω, f = 240 MHz] -45 dB</strong>"
    }
   ],
@@ -129601,12 +129744,14 @@
    {
     "param": "| enabled",
     "value": "typ=7 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
   "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
@@ -129692,12 +129837,14 @@
    {
     "param": "| enabled",
     "value": "typ=7 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
   "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
@@ -129783,12 +129930,14 @@
    {
     "param": "| enabled",
     "value": "typ=7 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
   "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
@@ -129874,12 +130023,14 @@
    {
     "param": "| enabled",
     "value": "typ=7 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
   "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
@@ -129965,12 +130116,14 @@
    {
     "param": "| enabled",
     "value": "typ=7 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
   "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
@@ -130056,12 +130209,14 @@
    {
     "param": "| enabled",
     "value": "typ=7 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
   "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
@@ -130147,12 +130302,14 @@
    {
     "param": "| enabled",
     "value": "typ=7 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
   "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
@@ -130238,12 +130395,14 @@
    {
     "param": "| enabled",
     "value": "typ=7 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
   "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
@@ -130329,12 +130488,14 @@
    {
     "param": "| enabled",
     "value": "typ=7 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| enabled"
    },
    {
     "param": "| disabled",
     "value": "typ=3.1 pF",
-    "kind": "动态"
+    "kind": "动态",
+    "param_html": "| disabled"
    }
   ],
   "applications": "I2C/SPI/UART电平转换；低压SoC与5V外设互连；SIM卡/存储卡电平适配；多电源域系统互连",
