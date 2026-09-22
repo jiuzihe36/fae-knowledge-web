@@ -112,7 +112,7 @@
       tr.dataset.id = item.id;
       tr.innerHTML = [
         '<td class="model-cell">' + esc(item.model) + "</td>",
-        "<td>" + esc(text(item.function)) + "</td>",
+        "<td>" + esc(text(item.function_detail || item.function)) + "</td>",
         "<td>" + esc(text(item.series)) + "</td>",
         "<td>" + esc(text(item.package)) + "</td>",
         "<td>" + esc(text(item.logic_type)) + "</td>",
@@ -145,6 +145,7 @@
     const dsUrl = item.source_label ? new URL("./datasheets/" + item.source_label, document.baseURI).href : "";
     el.detailMeta.innerHTML = [
       metaItem("功能", item.function),
+      metaItem("功能详细", item.function_detail),
       metaItem("系列", item.series),
       metaItem("封装", item.package),
       metaItem("逻辑类型", item.logic_type),
