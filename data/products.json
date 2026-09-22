@@ -125482,7 +125482,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/18.png",
   "logic_type": "CMOS",
-  "temp_range": "-40 °C to +25 °C",
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 18,
   "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
   "specs": [
@@ -125745,7 +125745,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/18.png",
   "logic_type": "CMOS",
-  "temp_range": "-40 °C to +25 °C",
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 18,
   "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
   "specs": [
@@ -133320,7 +133320,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/30.png",
   "logic_type": "CMOS",
-  "temp_range": "-40 °C to +25 °C",
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 30,
   "source_label": "EM74LVC74A_Product_DS_V1.1.pdf",
   "specs": [
@@ -133597,7 +133597,7 @@
   "voltage": "1.2 V to 5.5 V",
   "pin_image": "./pins/30.png",
   "logic_type": "CMOS",
-  "temp_range": "-40 °C to +25 °C",
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 30,
   "source_label": "EM74LVC74A_Product_DS_V1.1.pdf",
   "specs": [
@@ -135312,7 +135312,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/18.png",
   "logic_type": "CMOS",
-  "temp_range": "-40 °C to +25 °C",
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 18,
   "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
   "specs": [
@@ -135575,7 +135575,7 @@
   "voltage": "4.5 V to 5.5 V",
   "pin_image": "./pins/18.png",
   "logic_type": "CMOS",
-  "temp_range": "-40 °C to +25 °C",
+  "temp_range": "-40 °C to +125 °C",
   "source_document_id": 18,
   "source_label": "EM74LVC_LVCH245A_Product_DS_V1.0.pdf",
   "specs": [
