@@ -44,7 +44,6 @@
   }
 
   function buildHaystack(item) {
-    const raw = item.raw_json || {};
     const parts = [
       item.model,
       item.family,
@@ -56,8 +55,7 @@
       item.logic_type,
       item.voltage,
       item.temp_range,
-      item.source_label,
-      JSON.stringify(raw)
+      item.source_label
     ];
     if (Array.isArray(item.specs)) {
       item.specs.forEach(function (spec) {
@@ -151,7 +149,9 @@
       metaItem("封装", item.package),
       metaItem("逻辑类型", item.logic_type),
       metaItem("工作电压", item.voltage),
+      metaItem("工作温度", item.temp_range),
       metaItem("封装尺寸", item.package_size),
+      metaItem("应用场景", (item.applications_domains || []).join("、") || item.applications),
       dsUrl ? '<div class="meta-item"><div class="label">规格书</div><div class="value"><a href="' + esc(dsUrl) + '" target="_blank" rel="noopener">👁 查看</a> · <a href="' + esc(dsUrl.replace("/datasheets/", "/datasheets_view/")) + '" target="_blank" rel="noopener">👁 快速查看</a> · <a href="' + esc(dsUrl) + '" download>⬇ 下载原版</a></div></div>' : ""
     ].join("");
     const pinWrap = document.getElementById("pinWrap");
@@ -185,7 +185,7 @@
     });
 
     const docModels = products
-      .filter(function (p) { return p.source_document_id === item.source_document_id && p.id !== item.id; })
+      .filter(function (p) { return p.source_label && p.source_label === item.source_label && p.id !== item.id; })
       .sort(function (a, b) { return a.model.localeCompare(b.model); })
       .slice(0, 12);
     const funcModels = products
