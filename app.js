@@ -1074,6 +1074,18 @@
   /* ---------- 数据加载 ---------- */
 
   function load() {
+    // 首屏骨架屏
+    var skCols = [40, 60, 30, 50, 40, 30, 70];
+    var skHtml = "";
+    for (var r = 0; r < 12; r++) {
+      skHtml += '<tr class="skeleton-row">';
+      for (var c = 0; c < skCols.length; c++) {
+        skHtml += '<td><div class="sk-bar w' + skCols[c] + '"></div></td>';
+      }
+      skHtml += "</tr>";
+    }
+    el.tableBody.innerHTML = skHtml;
+
     fetch("./data/products.json")
       .then(function (response) {
         if (!response.ok) throw new Error("HTTP " + response.status);
@@ -1107,12 +1119,14 @@
         el.statModels.textContent = products.length;
         el.statSpecs.textContent = specCount;
         el.meta.textContent = "离线数据库 · 静态网页版";
+        el.tableBody.innerHTML = "";
         runFilters();
       })
       .catch(function (err) {
         el.meta.textContent = "数据加载失败";
         el.empty.textContent = "无法加载 products.json：" + err.message;
         el.empty.classList.remove("hidden");
+        el.tableBody.innerHTML = "";
       });
   }
 
