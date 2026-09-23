@@ -29,6 +29,13 @@ else
   echo "  (无 sync_from_wiki.py — 跳过重建, 沿用现有 products.json)"
 fi
 
+# P2P 替代数据（wiki full-mapping -> data/p2p.json，对账失败会中断部署）
+if [ -f "$DIR/scripts/gen_p2p.py" ]; then
+  python3 "$DIR/scripts/gen_p2p.py" || { echo "❌ gen_p2p.py 对账失败, 中止"; exit 1; }
+else
+  echo "  (无 gen_p2p.py — 跳过 p2p.json)"
+fi
+
 cd "$DIR"
 
 # ---------- 2. GitHub 提交 + 推送（单向: 本地 → 远程）----------

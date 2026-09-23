@@ -1,0 +1,3057 @@
+{
+ "generated": "2026-09-24",
+ "source": "wiki comparisons/p2p-ti-full-mapping.md + p3 取证",
+ "ti_index": {
+  "SN74AHC1G00": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74AHC1G00 HTTP 200, page shows ACTIVE"
+  },
+  "SN74AHC1G02": {
+   "status": "ACTIVE",
+   "evidence": "web_extract ti.com/product/SN74AHC1G02 -> product page, status \"ACTIVE\""
+  },
+  "SN74AHC1G04": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74AHC1G04 标题下 [ACTIVE] This product has been released to the market and is available for purchase"
+  },
+  "SN74AHC1G06": {
+   "status": "NOTFOUND",
+   "evidence": "web_extract https://www.ti.com/product/SN74AHC1G06 -> 404 Not Found; curl -> HTTP 404; web_search \"SN74AHC1G06 ti.com / site:ti.com/product\" returns no ti.com/product/SN74AHC1G06 page"
+  },
+  "SN74AHC1G07": {
+   "status": "NOTFOUND",
+   "evidence": "ti.com/product page HTTP 404; web_search \"SN74AHC1G07 ti.com\" + site:ti.com no product page"
+  },
+  "SN74AHC1G08": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74AHC1G08 页面标题+H1含料号，状态标记 ACTIVE"
+  },
+  "SN74AHC1G09": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74AHC1G09 HTTP 200, product page, lifecycle ACTIVE"
+  },
+  "SN74AHC1G11": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74AHC1G11 HTTP 404 (Error 404 not found | TI.com)"
+  },
+  "SN74AHC1G125": {
+   "status": "ACTIVE",
+   "evidence": "web_extract ti.com/product/SN74AHC1G125 -> product page, status \"ACTIVE\""
+  },
+  "SN74AHC1G126": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74AHC1G126 标题下 [ACTIVE] This product has been released to the market and is available for purchase"
+  },
+  "SN74AHC1G14": {
+   "status": "ACTIVE",
+   "evidence": "web_extract https://www.ti.com/product/SN74AHC1G14 -> HTTP 200, title \"SN74AHC1G14 data sheet, product information and support\", lifecycle badge status=1 (ACTIVE)"
+  },
+  "SN74AHC1G16": {
+   "status": "NOTFOUND",
+   "evidence": "ti.com/product page HTTP 404; web_search cross-confirm no ti.com product page"
+  },
+  "SN74AHC1G17": {
+   "status": "NOTFOUND",
+   "evidence": "产品页返回 TI 官方 404；web_search 'SN74AHC1G17 ti.com' / 'site:ti.com/product \"SN74AHC1G17\"' 均无该料号 product URL"
+  },
+  "SN74AHC1G240": {
+   "status": "NOTFOUND",
+   "evidence": "ti.com/product/SN74AHC1G240 HTTP 404; site:ti.com search finds no such product page"
+  },
+  "SN74AHC1G32": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74AHC1G32 HTTP 200, 页内 ACTIVE"
+  },
+  "SN74AHC1G332": {
+   "status": "NOTFOUND",
+   "evidence": "HTTP 404 on ti.com/product/SN74AHC1G332 (2 extract backends + curl); site: search & exact-phrase search return no product page (only SN74AHC1G32 / SN74LVC1G332)"
+  },
+  "SN74AHC2G04": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74AHC2G04 返回 404 Error 404 page (curl http_code=404); web_search \"SN74AHC2G04\" site:ti.com 无该产品页"
+  },
+  "SN74AHC2G14": {
+   "status": "NOTFOUND",
+   "evidence": "web_extract https://www.ti.com/product/SN74AHC2G14 -> 404 Not Found; curl -> HTTP 404; web_search \"SN74AHC2G14 ti.com / site:ti.com/product\" returns no ti.com/product/SN74AHC2G14 page"
+  },
+  "SN74AHC2G16": {
+   "status": "NOTFOUND",
+   "evidence": "ti.com/product page HTTP 404; web_search cross-confirm no ti.com product page"
+  },
+  "SN74AHC2G34": {
+   "status": "NOTFOUND",
+   "evidence": "产品页返回 TI 官方 404；两轮 site:ti.com 搜索无 /product/SN74AHC2G34（仅有 SN74AUP2G34/SN74LVC2G34）"
+  },
+  "SN74AHCT1G00": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74AHCT1G00 HTTP 200, header badge ACTIVE"
+  },
+  "SN74AHCT1G02": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74AHCT1G02 HTTP 200, 页内 ACTIVE"
+  },
+  "SN74AHCT1G04": {
+   "status": "ACTIVE",
+   "evidence": "web_extract ti.com/product/SN74AHCT1G04 -> product page, status \"ACTIVE\""
+  },
+  "SN74AHCT1G06": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74AHCT1G06 返回 404 (curl http_code=404); web_search \"SN74AHCT1G06\" site:ti.com 结果 0 条"
+  },
+  "SN74AHCT1G07": {
+   "status": "NOTFOUND",
+   "evidence": "web_extract https://www.ti.com/product/SN74AHCT1G07 -> 404 Not Found; curl -> HTTP 404; web_search \"SN74AHCT1G07 ti.com / site:ti.com/product\" returns no ti.com/product/SN74AHCT1G07 page"
+  },
+  "SN74AHCT1G08": {
+   "status": "ACTIVE",
+   "evidence": "HTTP 200 product page \"# SN74AHCT1G08 1-ch 2-input AND gate\"; package variants ACTIVE (DBV/DCK/DRL)"
+  },
+  "SN74AHCT1G09": {
+   "status": "NOTFOUND",
+   "evidence": "产品页返回 TI 官方 404；搜索仅命中 SN74AHC1G09，无 SN74AHCT1G09 产品页"
+  },
+  "SN74AHCT1G11": {
+   "status": "NOTFOUND",
+   "evidence": "ti.com/product/SN74AHCT1G11 HTTP 404; site:ti.com search finds no such product page"
+  },
+  "SN74AHCT1G125": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74AHCT1G125 HTTP 200, 页内 ACTIVE"
+  },
+  "SN74AHCT1G126": {
+   "status": "ACTIVE",
+   "evidence": "web_extract ti.com/product/SN74AHCT1G126 -> product page (AHCT parametrics), status \"ACTIVE\""
+  },
+  "SN74AHCT1G14": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74AHCT1G14 -> # SN74AHCT1G14 ACTIVE Single 4.5-V to 5.5-V inverter with Schmitt-Trigger inputs"
+  },
+  "SN74AHCT1G16": {
+   "status": "NOTFOUND",
+   "evidence": "web_extract https://www.ti.com/product/SN74AHCT1G16 -> 404 Not Found; curl -> HTTP 404; web_search \"SN74AHCT1G16 ti.com / site:ti.com/product\" returns no ti.com/product/SN74AHCT1G16 page"
+  },
+  "SN74AHCT1G17": {
+   "status": "NOTFOUND",
+   "evidence": "ti.com/product page HTTP 404; web_search cross-confirm no ti.com product page"
+  },
+  "SN74AHCT1G240": {
+   "status": "NOTFOUND",
+   "evidence": "产品页返回 TI 官方 404；搜索仅有 SN74AHCT240/SN74HC240，无 1G240 版本"
+  },
+  "SN74AHCT1G32": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74AHCT1G32 HTTP 200, header badge ACTIVE"
+  },
+  "SN74AHCT1G332": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74AHCT1G332 HTTP 404 (Error 404 not found | TI.com)"
+  },
+  "SN74AHCT2G04": {
+   "status": "NOTFOUND",
+   "evidence": "HTTP 404 on ti.com/product/SN74AHCT2G04 (extract + curl); no product page in site:/exact searches (only SN74AHCT04 / SN74LVC2G04)"
+  },
+  "SN74AHCT2G14": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74AHCT2G14 返回 404 (curl http_code=404); web_search \"SN74AHCT2G14\" site:ti.com 无该产品页"
+  },
+  "SN74AHCT2G16": {
+   "status": "NOTFOUND",
+   "evidence": "web_extract https://www.ti.com/product/SN74AHCT2G16 -> 404 Not Found; curl -> HTTP 404; web_search \"SN74AHCT2G16 ti.com / site:ti.com/product\" returns no ti.com/product/SN74AHCT2G16 page"
+  },
+  "SN74AHCT2G34": {
+   "status": "NOTFOUND",
+   "evidence": "ti.com/product page HTTP 404; web_search cross-confirm no ti.com product page"
+  },
+  "SN74AUP1G07": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74AUP1G07 抓取成功"
+  },
+  "SN74CBT3257": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74CBT3257 HTTP200 (web_extract 2108 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74CBTLV3125": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74CBTLV3125 H1+ACTIVE"
+  },
+  "SN74CBTLV3126": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74CBTLV3126 HTTP 200, header badge ACTIVE"
+  },
+  "SN74CBTLV3253": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74CBTLV3253 HTTP 200, 页内 ACTIVE"
+  },
+  "SN74CBTLV3257": {
+   "status": "ACTIVE",
+   "evidence": "web_extract ti.com/product/SN74CBTLV3257 -> product page, status \"ACTIVE\""
+  },
+  "SN74HC00": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HC00 HTTP 200; lifecycle marker: 4 >ACTIVE<"
+  },
+  "SN74HC02": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC02 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74HC03": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC03 抓取成功"
+  },
+  "SN74HC04": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC04 HTTP200 (web_extract 3377 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74HC05": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HC05 HTTP 200; lifecycle marker: 9 >ACTIVE<"
+  },
+  "SN74HC06": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HC06 HTTP 404; /lit/ds/symlink/sn74hc06.pdf 404; /document-viewer/SN74HC06/datasheet 404"
+  },
+  "SN74HC07": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HC07 返回 404/Not found(重试确认)"
+  },
+  "SN74HC08": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC08 HTTP200 (web_extract 3445 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74HC09": {
+   "status": "NOTFOUND",
+   "evidence": "ti.com/product/SN74HC09 HTTP 404 (web_extract x3 + curl); ti.com/lit/gpn/SN74HC09 HTTP 404"
+  },
+  "SN74HC10": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC10 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74HC11": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC11 抓取成功"
+  },
+  "SN74HC125": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC125 HTTP200 (web_extract 3309 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74HC126": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HC126 HTTP 200; lifecycle marker: 5 >ACTIVE<"
+  },
+  "SN74HC132": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC132 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74HC138": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC138 抓取成功"
+  },
+  "SN74HC14": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC14 HTTP200 (web_extract 3221 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74HC164": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HC164 HTTP 200; lifecycle marker: 5 >ACTIVE<"
+  },
+  "SN74HC164A": {
+   "status": "OBSOLETE",
+   "evidence": "https://www.ti.com/product/SN74HC164A -> # SN74HC164A NOT RECOMMENDED FOR NEW DESIGNS"
+  },
+  "SN74HC165A": {
+   "status": "ACTIVE",
+   "evidence": "web_extract https://www.ti.com/product/SN74HC165A -> HTTP 200, title \"SN74HC165A data sheet, product information and support\", lifecycle badge status=1 (ACTIVE)"
+  },
+  "SN74HC166": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC166 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74HC174": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC174 抓取成功"
+  },
+  "SN74HC20": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC20 HTTP200 (web_extract 3417 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74HC21": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HC21 HTTP 200; lifecycle marker: 4 >ACTIVE<"
+  },
+  "SN74HC240": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC240 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74HC244": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC244 抓取成功"
+  },
+  "SN74HC245": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC245 HTTP200 (web_extract 3372 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74HC259": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HC259 HTTP 200; lifecycle marker: 4 >ACTIVE<"
+  },
+  "SN74HC266": {
+   "status": "ACTIVE",
+   "evidence": "HTTP 200 product page \"# SN74HC266 4-ch XNOR gate\"; packages D/NS/N ACTIVE"
+  },
+  "SN74HC27": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC27 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74HC32": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC32 抓取成功"
+  },
+  "SN74HC365": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC365 HTTP200 (web_extract 3388 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74HC366": {
+   "status": "NOTFOUND",
+   "evidence": "ti.com/product/SN74HC366 HTTP 404 (web_extract x3 + curl); ti.com/lit/gpn/SN74HC366 HTTP 404"
+  },
+  "SN74HC367": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC367 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74HC368": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC368 抓取成功"
+  },
+  "SN74HC4002": {
+   "status": "NOTFOUND",
+   "evidence": "产品页返回 TI 官方 404；搜索仅有 SN54HC4002/CD74HC4002，无 SN74HC4002 产品页"
+  },
+  "SN74HC4075": {
+   "status": "NOTFOUND",
+   "evidence": "ti.com/product/SN74HC4075 HTTP 404; quoted ti.com search finds no such product page"
+  },
+  "SN74HC4094": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HC4094 HTTP 404 (Error 404 not found | TI.com)"
+  },
+  "SN74HC540": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC540 HTTP200 (web_extract 3319 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74HC541": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HC541 HTTP 200; lifecycle marker: 4 >ACTIVE<"
+  },
+  "SN74HC573": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC573 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74HC574": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC574 抓取成功"
+  },
+  "SN74HC594": {
+   "status": "ACTIVE",
+   "evidence": "web_extract ti.com/product/SN74HC594 -> product page, status \"ACTIVE\""
+  },
+  "SN74HC595A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC595A -> # SN74HC595A ACTIVE"
+  },
+  "SN74HC597": {
+   "status": "NOTFOUND",
+   "evidence": "web_extract https://www.ti.com/product/SN74HC597 -> 404 Not Found; curl -> HTTP 404; web_search \"SN74HC597 ti.com / site:ti.com/product\" returns no ti.com/product/SN74HC597 page"
+  },
+  "SN74HC7001": {
+   "status": "ACTIVE",
+   "evidence": "HTTP 200 product page \"# SN74HC7001\"; page shows \"SN74HC7001 ACTIVE\"; packages D/N ACTIVE"
+  },
+  "SN74HC7002": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC7002 H1+ACTIVE"
+  },
+  "SN74HC7032": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HC7032 HTTP 200, product page, lifecycle ACTIVE"
+  },
+  "SN74HC7266": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HC7266 HTTP 404 (Error 404 not found | TI.com)"
+  },
+  "SN74HC74": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HC74 HTTP200 (web_extract 3355 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74HC86": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HC86 HTTP 200; lifecycle marker: 3 >ACTIVE<"
+  },
+  "SN74HCS00": {
+   "status": "ACTIVE",
+   "evidence": "web_extract ti.com/product/SN74HCS00 -> product page, status \"ACTIVE\"; curl 200"
+  },
+  "SN74HCS02": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCS02 -> ### SN74HCS02 ACTIVE, 4-ch 2-input NOR with Schmitt-Trigger"
+  },
+  "SN74HCS03": {
+   "status": "ACTIVE",
+   "evidence": "web_extract https://www.ti.com/product/SN74HCS03 -> HTTP 200, title \"SN74HCS03 data sheet, product information and support\", lifecycle badge status=1 (ACTIVE)"
+  },
+  "SN74HCS04": {
+   "status": "ACTIVE",
+   "evidence": "HTTP 200 product page \"# SN74HCS04 Hex inverter\"; packages BQA/D/PW ACTIVE"
+  },
+  "SN74HCS05": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCS05 H1含料号，无 obsolete/NRND 字样"
+  },
+  "SN74HCS08": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HCS08 HTTP 200, product page, lifecycle ACTIVE"
+  },
+  "SN74HCS09": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCS09 HTTP 200, 页内 ACTIVE"
+  },
+  "SN74HCS10": {
+   "status": "ACTIVE",
+   "evidence": "web_extract ti.com/product/SN74HCS10 -> product page, status \"ACTIVE\""
+  },
+  "SN74HCS11": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCS11 -> # SN74HCS11 ACTIVE 3-ch, 3-input AND gate"
+  },
+  "SN74HCS125": {
+   "status": "ACTIVE",
+   "evidence": "web_extract https://www.ti.com/product/SN74HCS125 -> HTTP 200, title \"SN74HCS125 data sheet, product information and support\", lifecycle badge status=1 (ACTIVE)"
+  },
+  "SN74HCS126": {
+   "status": "ACTIVE",
+   "evidence": "HTTP 200 product page \"# SN74HCS126 quadruple bus buffer\"; packages D/DYY/PW ACTIVE"
+  },
+  "SN74HCS20": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCS20 H1含料号+datasheet链接，无 obsolete/NRND 字样"
+  },
+  "SN74HCS21": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HCS21 HTTP 200, product page, lifecycle ACTIVE"
+  },
+  "SN74HCS266": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCS266 HTTP 200, 页内 ACTIVE"
+  },
+  "SN74HCS27": {
+   "status": "ACTIVE",
+   "evidence": "web_extract ti.com/product/SN74HCS27 -> product page, status \"ACTIVE\""
+  },
+  "SN74HCS32": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCS32 -> # SN74HCS32 ACTIVE 4-ch, 2-input OR gate"
+  },
+  "SN74HCS365": {
+   "status": "ACTIVE",
+   "evidence": "web_extract https://www.ti.com/product/SN74HCS365 -> HTTP 200, title \"SN74HCS365 data sheet, product information and support\", lifecycle badge status=1 (ACTIVE)"
+  },
+  "SN74HCS367": {
+   "status": "ACTIVE",
+   "evidence": "HTTP 200 product page \"# SN74HCS367 hex buffers 3-state\"; packages D/PW ACTIVE"
+  },
+  "SN74HCS4075": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCS4075 H1+ACTIVE"
+  },
+  "SN74HCS7266": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HCS7266 HTTP 200, product page, lifecycle ACTIVE"
+  },
+  "SN74HCS86": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCS86 HTTP 200, 页内 ACTIVE"
+  },
+  "SN74HCT00": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCT00 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74HCT02": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCT02 抓取成功"
+  },
+  "SN74HCT03": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT03 HTTP404 (curl 404, 3298B; web_extract failed); site:ti.com/product search no exact match"
+  },
+  "SN74HCT04": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HCT04 HTTP 200; lifecycle marker: 5 >ACTIVE<"
+  },
+  "SN74HCT05": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT05 HTTP 404; /lit/ds/symlink/sn74hct05.pdf 404; /document-viewer/SN74HCT05/datasheet 404"
+  },
+  "SN74HCT06": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT06 返回 404/Not found(重试确认)"
+  },
+  "SN74HCT07": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT07 HTTP404 (curl 404, 3298B; web_extract failed); site:ti.com/product search no exact match"
+  },
+  "SN74HCT08": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HCT08 HTTP 200; lifecycle marker: 3 >ACTIVE<"
+  },
+  "SN74HCT09": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT09 HTTP 404; /lit/ds/symlink/sn74hct09.pdf 404; /document-viewer/SN74HCT09/datasheet 404"
+  },
+  "SN74HCT10": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT10 返回 404/Not found(重试确认)"
+  },
+  "SN74HCT11": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT11 HTTP404 (curl 404, 3298B; web_extract failed); site:ti.com/product search no exact match"
+  },
+  "SN74HCT125": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HCT125 HTTP 200; lifecycle marker: 3 >ACTIVE<"
+  },
+  "SN74HCT126": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT126 HTTP 404; /lit/ds/symlink/sn74hct126.pdf 404; /document-viewer/SN74HCT126/datasheet 404"
+  },
+  "SN74HCT132": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT132 返回 404/Not found(重试确认)"
+  },
+  "SN74HCT138": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCT138 HTTP200 (web_extract 1783 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74HCT14": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HCT14 HTTP 200; lifecycle marker: 3 >ACTIVE<"
+  },
+  "SN74HCT164": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT164 HTTP 404; /lit/ds/symlink/sn74hct164.pdf 404; /document-viewer/SN74HCT164/datasheet 404"
+  },
+  "SN74HCT166": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT166 返回 404/Not found(重试确认)"
+  },
+  "SN74HCT174": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT174 HTTP404 (curl 404, 3298B; web_extract failed); site:ti.com/product search no exact match"
+  },
+  "SN74HCT20": {
+   "status": "NOTFOUND",
+   "evidence": "ti.com/product/SN74HCT20 HTTP 404 (web_extract x3 + curl); ti.com/lit/gpn/SN74HCT20 HTTP 404"
+  },
+  "SN74HCT21": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT21 HTTP 404; /lit/ds/symlink/sn74hct21.pdf 404; /document-viewer/SN74HCT21/datasheet 404"
+  },
+  "SN74HCT240": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCT240 抓取成功"
+  },
+  "SN74HCT244": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCT244 HTTP200 (web_extract 3434 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74HCT245": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HCT245 HTTP 200; lifecycle marker: 4 >ACTIVE<"
+  },
+  "SN74HCT259": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT259 HTTP 404; /lit/ds/symlink/sn74hct259.pdf 404; /document-viewer/SN74HCT259/datasheet 404"
+  },
+  "SN74HCT266": {
+   "status": "NOTFOUND",
+   "evidence": "HTTP 404 on ti.com/product/SN74HCT266 (extract + curl); no product page in site:/exact searches (only SN74HC266 / SN74HCS266)"
+  },
+  "SN74HCT27": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT27 返回 404/Not found(重试确认)"
+  },
+  "SN74HCT32": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCT32 HTTP200 (web_extract 3330 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74HCT365": {
+   "status": "NOTFOUND",
+   "evidence": "ti.com/product/SN74HCT365 HTTP 404 (web_extract x3 + curl); ti.com/lit/gpn/SN74HCT365 HTTP 404"
+  },
+  "SN74HCT366": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT366 HTTP 404; /lit/ds/symlink/sn74hct366.pdf 404; /document-viewer/SN74HCT366/datasheet 404"
+  },
+  "SN74HCT367": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT367 返回 404/Not found(重试确认)"
+  },
+  "SN74HCT368": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT368 HTTP404 (curl 404, 3298B; web_extract failed); site:ti.com/product search no exact match"
+  },
+  "SN74HCT4002": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT4002 返回 404 (curl http_code=404); web_search \"SN74HCT4002\" site:ti.com 无该产品页"
+  },
+  "SN74HCT4075": {
+   "status": "NOTFOUND",
+   "evidence": "web_extract https://www.ti.com/product/SN74HCT4075 -> 404 Not Found; curl -> HTTP 404; web_search \"SN74HCT4075 ti.com / site:ti.com/product\" returns no ti.com/product/SN74HCT4075 page"
+  },
+  "SN74HCT4094": {
+   "status": "NOTFOUND",
+   "evidence": "ti.com/product page HTTP 404; search returns CD74HCT4094 instead, no SN74HCT4094 page"
+  },
+  "SN74HCT540": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HCT540 HTTP 200; lifecycle marker: 3 >ACTIVE<"
+  },
+  "SN74HCT541": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCT541 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74HCT573": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCT573 抓取成功"
+  },
+  "SN74HCT574": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCT574 HTTP200 (web_extract 3365 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74HCT595": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74HCT595 HTTP 200; lifecycle marker: 3 >ACTIVE<"
+  },
+  "SN74HCT597": {
+   "status": "NOTFOUND",
+   "evidence": "产品页返回 TI 官方 404；搜索仅有 CD74HCT597/SN74HCT595，无 SN74HCT597 产品页"
+  },
+  "SN74HCT7001": {
+   "status": "NOTFOUND",
+   "evidence": "ti.com/product/SN74HCT7001 HTTP 404; site:ti.com search finds no such product page"
+  },
+  "SN74HCT7002": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT7002 HTTP 404 (Error 404 not found | TI.com)"
+  },
+  "SN74HCT7032": {
+   "status": "NOTFOUND",
+   "evidence": "HTTP 404 on ti.com/product/SN74HCT7032 (extract + curl); no product page in site:/exact searches (only SN74HC7032 / SN74HCT32)"
+  },
+  "SN74HCT7266": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT7266 返回 404 (curl http_code=404); web_search \"SN74HCT7266\" site:ti.com 结果 0 条, TI 只有 SN74HCS7266/CD74HC7266"
+  },
+  "SN74HCT74": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74HCT74 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74HCT86": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74HCT86 返回 404/Not found(重试确认)"
+  },
+  "SN74LV1T00": {
+   "status": "ACTIVE",
+   "evidence": "web_extract https://www.ti.com/product/SN74LV1T00 -> HTTP 200, title \"SN74LV1T00 data sheet, product information and support\", lifecycle badge status=1 (ACTIVE)"
+  },
+  "SN74LV1T02": {
+   "status": "ACTIVE",
+   "evidence": "HTTP 200 product page \"# SN74LV1T02 2-input NOR level shifter\"; packages DCK/DBV ACTIVE"
+  },
+  "SN74LV1T04": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LV1T04 H1+ACTIVE"
+  },
+  "SN74LV1T08": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74LV1T08 HTTP 200, product page, lifecycle ACTIVE"
+  },
+  "SN74LV1T125": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LV1T125 HTTP 200, 页内 ACTIVE"
+  },
+  "SN74LV1T126": {
+   "status": "ACTIVE",
+   "evidence": "web_extract ti.com/product/SN74LV1T126 -> product page, status \"ACTIVE\""
+  },
+  "SN74LV1T32": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LV1T32 标题下 [ACTIVE] This product has been released to the market and is available for purchase"
+  },
+  "SN74LV1T34": {
+   "status": "ACTIVE",
+   "evidence": "web_extract https://www.ti.com/product/SN74LV1T34 -> HTTP 200, title \"SN74LV1T34 data sheet, product information and support\", lifecycle badge status=1 (ACTIVE)"
+  },
+  "SN74LV1T86": {
+   "status": "ACTIVE",
+   "evidence": "HTTP 200 product page \"# SN74LV1T86 XOR level shifter\"; packages DBV/DCK ACTIVE"
+  },
+  "SN74LV1T87": {
+   "status": "NOTFOUND",
+   "evidence": "产品页返回 TI 官方 404；搜索仅有 SN74AUP1T87，无 SN74LV1T87 产品页"
+  },
+  "SN74LVC00A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC00A HTTP200 (web_extract 3360 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74LVC02A": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74LVC02A HTTP 200; lifecycle marker: 5 >ACTIVE<"
+  },
+  "SN74LVC04A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC04A HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74LVC06A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC06A 抓取成功"
+  },
+  "SN74LVC07A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC07A HTTP200 (web_extract 3412 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74LVC08A": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74LVC08A HTTP 200; lifecycle marker: 2 >ACTIVE<"
+  },
+  "SN74LVC10A": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74LVC10A HTTP 200, product page, lifecycle ACTIVE"
+  },
+  "SN74LVC11": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74LVC11 HTTP 404 (Error 404 not found | TI.com)"
+  },
+  "SN74LVC11A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC11A"
+  },
+  "SN74LVC125A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC125A HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74LVC126A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC126A 抓取成功"
+  },
+  "SN74LVC132A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC132A HTTP200 (web_extract 3346 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74LVC14A": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74LVC14A HTTP 200; lifecycle marker: 2 >ACTIVE<"
+  },
+  "SN74LVC1G00": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G00 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74LVC1G02": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G02 抓取成功"
+  },
+  "SN74LVC1G04": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G04 HTTP200 (web_extract 3272 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74LVC1G06": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74LVC1G06 HTTP 200; lifecycle marker: 7 >ACTIVE<"
+  },
+  "SN74LVC1G07": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G07 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74LVC1G08": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G08 抓取成功"
+  },
+  "SN74LVC1G09": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74LVC1G09 HTTP404 (curl 404, 3298B; web_extract failed); site:ti.com/product search no exact match"
+  },
+  "SN74LVC1G09B": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G09B"
+  },
+  "SN74LVC1G10": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74LVC1G10 HTTP 200; lifecycle marker: 3 >ACTIVE<"
+  },
+  "SN74LVC1G11": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G11 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74LVC1G125": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G125 抓取成功"
+  },
+  "SN74LVC1G126": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G126 HTTP200 (web_extract 3248 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74LVC1G132": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74LVC1G132 HTTP 200; lifecycle marker: 3 >ACTIVE<"
+  },
+  "SN74LVC1G14": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G14 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74LVC1G16": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G16 抓取成功"
+  },
+  "SN74LVC1G17": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G17 HTTP200 (web_extract 3318 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74LVC1G240": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74LVC1G240 HTTP 200; lifecycle marker: 4 >ACTIVE<"
+  },
+  "SN74LVC1G27": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G27 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74LVC1G32": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G32 抓取成功"
+  },
+  "SN74LVC1G332": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G332 HTTP200 (web_extract 3395 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74LVC1G34": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74LVC1G34 HTTP 200; lifecycle marker: 4 >ACTIVE<"
+  },
+  "SN74LVC1G38": {
+   "status": "ACTIVE",
+   "evidence": "web_extract ti.com/product/SN74LVC1G38 -> product page, status \"ACTIVE\""
+  },
+  "SN74LVC1G57": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G57 标题下 [ACTIVE] This product has been released to the market and is available for purchase"
+  },
+  "SN74LVC1G58": {
+   "status": "ACTIVE",
+   "evidence": "web_extract https://www.ti.com/product/SN74LVC1G58 -> HTTP 200, title \"SN74LVC1G58 data sheet, product information and support\", lifecycle badge status=1 (ACTIVE)"
+  },
+  "SN74LVC1G86": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1G86 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74LVC1G97": {
+   "status": "ACTIVE",
+   "evidence": "HTTP 200 product page \"# SN74LVC1G97 Configurable Multiple-Function Gate\"; packages DBV/DCK/DRL/DRY/DSF/YZP ACTIVE"
+  },
+  "SN74LVC1GU04": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC1GU04 H1+ACTIVE"
+  },
+  "SN74LVC244A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC244A 抓取成功"
+  },
+  "SN74LVC245A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC245A HTTP200 (web_extract 3443 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74LVC2G04": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74LVC2G04 HTTP 200; lifecycle marker: 5 >ACTIVE<"
+  },
+  "SN74LVC2G06": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC2G06 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74LVC2G07": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC2G07 抓取成功"
+  },
+  "SN74LVC2G14": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC2G14 HTTP200 (web_extract 3156 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74LVC2G16": {
+   "status": "NOTFOUND",
+   "evidence": "ti.com/product/SN74LVC2G16 HTTP 404 (web_extract x3 + curl); ti.com/lit/gpn/SN74LVC2G16 HTTP 404"
+  },
+  "SN74LVC2G17": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC2G17 HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74LVC2G34": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC2G34 抓取成功"
+  },
+  "SN74LVC2GU04": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74LVC2GU04 HTTP 200, product page, lifecycle ACTIVE"
+  },
+  "SN74LVC32A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC32A HTTP200 (web_extract 3270 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74LVC4245": {
+   "status": "NOTFOUND",
+   "evidence": "https://www.ti.com/product/SN74LVC4245 HTTP 404 (Error 404 not found | TI.com)"
+  },
+  "SN74LVC4245A": {
+   "status": "ACTIVE",
+   "evidence": "web_extract ti.com/product/SN74LVC4245A -> product page, status \"ACTIVE\""
+  },
+  "SN74LVC540A": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74LVC540A HTTP 200; lifecycle marker: 2 >ACTIVE<"
+  },
+  "SN74LVC541A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC541A HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74LVC74A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC74A 抓取成功"
+  },
+  "SN74LVC86A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC86A HTTP200 (web_extract 3397 chars); curl marketingStatusDescription dominant=ACTIVE"
+  },
+  "SN74LVC8T245": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVC8T245 标题下 [ACTIVE] This product has been released to the market and is available for purchase"
+  },
+  "SN74LVCH244A": {
+   "status": "ACTIVE",
+   "evidence": "ti.com/product/SN74LVCH244A HTTP 200; lifecycle marker: 2 >ACTIVE<"
+  },
+  "SN74LVCH245A": {
+   "status": "ACTIVE",
+   "evidence": "https://www.ti.com/product/SN74LVCH245A HTTP 200, <meta name=\"status\" content=\"ACTIVE\">"
+  },
+  "SN74LVCH8T245": {
+   "status": "ACTIVE",
+   "evidence": "web_extract https://www.ti.com/product/SN74LVCH8T245 -> HTTP 200, title \"SN74LVCH8T245 data sheet, product information and support\", lifecycle badge status=1 (ACTIVE)"
+  }
+ },
+ "logic": [
+  {
+   "slug": "em74ahc1g00-em74ahct1g00",
+   "em": "EM74AHC1G00; EM74AHCT1G00",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G00",
+    "SN74AHCT1G00"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74ahc1g02-em74ahct1g02",
+   "em": "EM74AHC1G02; EM74AHCT1G02",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G02",
+    "SN74AHCT1G02"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74ahc1g04-em74ahct1g04",
+   "em": "EM74AHC1G04; EM74AHCT1G04",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G04",
+    "SN74AHCT1G04"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74ahc1g06-em74ahct1g06",
+   "em": "EM74AHC1G06; EM74AHCT1G06",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G06",
+    "SN74AHCT1G06"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74ahc1g07-em74ahct1g07",
+   "em": "EM74AHC1G07; EM74AHCT1G07",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G07",
+    "SN74AHCT1G07"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74ahc1g08-em74ahct1g08",
+   "em": "EM74AHC1G08; EM74AHCT1G08",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G08",
+    "SN74AHCT1G08"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74ahc1g09-em74ahct1g09",
+   "em": "EM74AHC1G09; EM74AHCT1G09",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G09",
+    "SN74AHCT1G09"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74AHCT1G09），可用：SN74AHC1G09"
+  },
+  {
+   "slug": "em74ahc1g11-em74ahct1g11",
+   "em": "EM74AHC1G11; EM74AHCT1G11",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G11",
+    "SN74AHCT1G11"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74ahc1g125-em74ahct1g125",
+   "em": "EM74AHC1G125;EM74AHCT1G125",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G125",
+    "SN74AHCT1G125"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74ahc1g126-em74ahct1g126",
+   "em": "EM74AHC1G126;EM74AHCT1G126",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G126",
+    "SN74AHCT1G126"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74ahc1g14-em74ahct1g14",
+   "em": "EM74AHC1G14; EM74AHCT1G14",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G14",
+    "SN74AHCT1G14"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74ahc1g16-em74ahct1g16",
+   "em": "EM74AHC1G16; EM74AHCT1G16",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G16",
+    "SN74AHCT1G16"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74ahc1g17-em74ahct1g17",
+   "em": "EM74AHC1G17; EM74AHCT1G17",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G17",
+    "SN74AHCT1G17"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74ahc1g240-em74ahct1g240",
+   "em": "EM74AHC1G240;EM74AHCT1G240",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G240",
+    "SN74AHCT1G240"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74ahc1g32-em74ahct1g32",
+   "em": "EM74AHC1G32; EM74AHCT1G32",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G32",
+    "SN74AHCT1G32"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74ahc1g332-em74ahct1g332",
+   "em": "EM74AHC1G332;",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC1G332",
+    "SN74AHCT1G332"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74ahc2g04-em74ahct2g04",
+   "em": "EM74AHC2G04; EM74AHCT2G04",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC2G04",
+    "SN74AHCT2G04"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74ahc2g14-em74ahct2g14",
+   "em": "EM74AHC2G14; EM74AHCT2G14",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC2G14",
+    "SN74AHCT2G14"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74ahc2g16-em74ahct2g16",
+   "em": "EM74AHC2G16; EM74AHCT2G16",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC2G16",
+    "SN74AHCT2G16"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74ahc2g34-em74ahct2g34",
+   "em": "EM74AHC2G34; EM74AHCT2G34",
+   "vcc_em": "2.0–5.5 V",
+   "vcc_ti": "2 V to 5.5 V",
+   "ti": [
+    "SN74AHC2G34",
+    "SN74AHCT2G34"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74aup1g07",
+   "em": "EM74AUP1G07",
+   "vcc_em": "0.8–3.6 V",
+   "vcc_ti": "0.8 V to 3.6 V",
+   "ti": [
+    "SN74AUP1G07"
+   ],
+   "verdict": "[!]",
+   "note": "芯祥侧 Draft 状态，量产替代前需正式版规格书；芯祥 VCC 0.8–3.6 V ⊇ TI 0.8 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74cbt3257",
+   "em": "EM74CBT3257",
+   "vcc_em": "1.5–5.5 V",
+   "vcc_ti": "4 V to 5.5 V",
+   "ti": [
+    "SN74CBT3257"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.5–5.5 V ⊇ TI 4 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74cbtlv3125",
+   "em": "EM74CBTLV3125",
+   "vcc_em": "2.3–3.6 V",
+   "vcc_ti": "2.3 V to 3.6 V",
+   "ti": [
+    "SN74CBTLV3125"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.3–3.6 V ⊇ TI 2.3 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74cbtlv3126",
+   "em": "EM74CBTLV3126",
+   "vcc_em": "2.3–3.6 V",
+   "vcc_ti": "2.3 V to 3.6 V",
+   "ti": [
+    "SN74CBTLV3126"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.3–3.6 V ⊇ TI 2.3 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74cbtlv3253",
+   "em": "EM74CBTLV3253",
+   "vcc_em": "2.3–3.6 V",
+   "vcc_ti": "2.3 V to 3.6 V",
+   "ti": [
+    "SN74CBTLV3253"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.3–3.6 V ⊇ TI 2.3 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74cbtlv3257",
+   "em": "EM74CBTLV3257",
+   "vcc_em": "2.3–3.6 V",
+   "vcc_ti": "2.3 V to 3.6 V",
+   "ti": [
+    "SN74CBTLV3257"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.3–3.6 V ⊇ TI 2.3 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc00-em74hct00",
+   "em": "EM74HC00; EM74HCT00",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC00",
+    "SN74HCT00"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc02-em74hct02",
+   "em": "EM74HC02; EM74HCT02",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC02",
+    "SN74HCT02"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc03-em74hct03",
+   "em": "EM74HC03; EM74HCT03",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC03",
+    "SN74HCT03"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT03），可用：SN74HC03；TI 以 CD 前缀在售 CD74HCT03（二轮探测 FOUND-ALT，HTTP200; CD74HCT03 4-ch 2-input NAND open-drain, ACTIVE）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc04-em74hct04",
+   "em": "EM74HC04; EM74HCT04",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC04",
+    "SN74HCT04"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc05-em74hct05",
+   "em": "EM74HC05; EM74HCT05",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC05",
+    "SN74HCT05"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT05），可用：SN74HC05"
+  },
+  {
+   "slug": "em74hc06-em74hct06",
+   "em": "EM74HC06; EM74HCT06",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC06",
+    "SN74HCT06"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74hc07-em74hct07",
+   "em": "EM74HC07; EM74HCT07",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC07",
+    "SN74HCT07"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74hc08-em74hct08",
+   "em": "EM74HC08; EM74HCT08",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC08",
+    "SN74HCT08"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc09-em74hct09",
+   "em": "EM74HC09; EM74HCT09",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC09",
+    "SN74HCT09"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74hc10-em74hct10",
+   "em": "EM74HC10; EM74HCT10",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC10",
+    "SN74HCT10"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT10），可用：SN74HC10；TI 以 CD 前缀在售 CD74HCT10（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT10 HTTP200; 页面标题 CD74HCT10 '3-ch, 3-input NAND gates' 且 ACTIVE + Order now）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc11-em74hct11",
+   "em": "EM74HC11; EM74HCT11",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC11",
+    "SN74HCT11"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT11），可用：SN74HC11；TI 以 CD 前缀在售 CD74HCT11（二轮探测 FOUND-ALT，HTTP200; CD74HCT11 '3-ch 3-input AND gate TTL-compatible', ACTIVE）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc125-em74hct125",
+   "em": "EM74HC125; EM74HCT125",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC125",
+    "SN74HCT125"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc126-em74hct126",
+   "em": "EM74HC126; EM74HCT126",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC126",
+    "SN74HCT126"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT126），可用：SN74HC126；TI 以 CD 前缀在售 CD74HCT126（二轮探测 FOUND-ALT，HTTP200; CD74HCT126 '4-ch buffers 3-state', ACTIVE + Order now）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc132-em74hct132",
+   "em": "EM74HC132; EM74HCT132",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC132",
+    "SN74HCT132"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT132），可用：SN74HC132；TI 以 CD 前缀在售 CD74HCT132（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT132 200, HCT param spec 4432 chars）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc138-em74hct138",
+   "em": "EM74HC138; EM74HCT138",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC138",
+    "SN74HCT138"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc14-em74hct14",
+   "em": "EM74HC14; EM74HCT14",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC14",
+    "SN74HCT14"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc164",
+   "em": "EM74HC164",
+   "vcc_em": "2.5–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC164"
+   ],
+   "verdict": "[!]",
+   "note": "VCC 下限差异：芯祥 2.5–6.0 V vs TI 2 V to 6 V（低压档 <2.5V 覆盖不到）"
+  },
+  {
+   "slug": "em74hc164a",
+   "em": "EM74HC164A",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC164A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）；TI 侧含 OBSOLETE 料号（替代窗口有利）"
+  },
+  {
+   "slug": "em74hc165a",
+   "em": "EM74HC165A",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC165A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc166-em74hct166",
+   "em": "EM74HC166; EM74HCT166",
+   "vcc_em": "2.8–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC166",
+    "SN74HCT166"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT166），可用：SN74HC166；TI 以 CD 前缀在售 CD74HCT166（二轮探测 FOUND-ALT，HTTP200; CD74HCT166 8-Bit Parallel-In/Serial-Out Shift Register, ACTIVE）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc174-em74hct174",
+   "em": "EM74HC174; EM74HCT174",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC174",
+    "SN74HCT174"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT174），可用：SN74HC174；TI 以 CD 前缀在售 CD74HCT174（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT174 200, CD54/CD74HCT174 product page 4106 chars）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc20-em74hct20",
+   "em": "EM74HC20; EM74HCT20",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC20",
+    "SN74HCT20"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT20），可用：SN74HC20；TI 以 CD 前缀在售 CD74HCT20（二轮探测 FOUND-ALT，HTTP200; CD74HCT20 '2-ch, 4-input NAND gates', Order now + 规格表）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc21-em74hct21",
+   "em": "EM74HC21; EM74HCT21",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC21",
+    "SN74HCT21"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT21），可用：SN74HC21；TI 以 CD 前缀在售 CD74HCT21（二轮探测 FOUND-ALT，HTTP200; CD74HCT21 '2-ch 4-input AND gate TTL-compatible', ACTIVE）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc240-em74hct240",
+   "em": "EM74HC240; EM74HCT240",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC240",
+    "SN74HCT240"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc244-em74hct244",
+   "em": "EM74HC244; EM74HCT244",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC244",
+    "SN74HCT244"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc245-em74hct245",
+   "em": "EM74HC245; EM74HCT245",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC245",
+    "SN74HCT245"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc259-em74hct259",
+   "em": "EM74HC259; EM74HCT259",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC259",
+    "SN74HCT259"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT259），可用：SN74HC259；TI 以 CD 前缀在售 CD74HCT259（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT259 200, addressable latch 4258 chars）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc266-em74hct266",
+   "em": "EM74HC266; EM74HCT266",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC266",
+    "SN74HCT266"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT266），可用：SN74HC266"
+  },
+  {
+   "slug": "em74hc27-em74hct27",
+   "em": "EM74HC27; EM74HCT27",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC27",
+    "SN74HCT27"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT27），可用：SN74HC27；TI 以 CD 前缀在售 CD74HCT27（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT27 200, 3-ch HCT param 4404 chars）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc32-em74hct32",
+   "em": "EM74HC32; EM74HCT32",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC32",
+    "SN74HCT32"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc365-em74hct365",
+   "em": "EM74HC365; EM74HCT365",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC365",
+    "SN74HCT365"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT365），可用：SN74HC365；TI 以 CD 前缀在售 CD74HCT365（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT365 200, ACTIVE 6-ch 3-state）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc366-em74hct366",
+   "em": "EM74HC366; EM74HCT366",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC366",
+    "SN74HCT366"
+   ],
+   "verdict": "[!]",
+   "note": "TI 以 CD 前缀在售 CD74HC366（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HC366 200, 6-ch inverter 3-state product page）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc367-em74hct367",
+   "em": "EM74HC367; EM74HCT367",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC367",
+    "SN74HCT367"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT367），可用：SN74HC367；TI 以 CD 前缀在售 CD74HCT367（二轮探测 FOUND-ALT，HTTP200; CD74HCT367 6-ch buffers w/ 3-state, ACTIVE）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc368-em74hct368",
+   "em": "EM74HC368; EM74HCT368",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC368",
+    "SN74HCT368"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT368），可用：SN74HC368；TI 以 CD 前缀在售 CD74HCT368（二轮探测 FOUND-ALT，HTTP200; CD74HCT368 6-ch inverters 3-state, ACTIVE）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc4002-em74hct4002",
+   "em": "EM74HC4002; EM74HCT4002",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC4002",
+    "SN74HCT4002"
+   ],
+   "verdict": "[!]",
+   "note": "TI 以 CD 前缀在售 CD74HC4002（二轮探测 FOUND-ALT，ti.com/product/SN74HC4002=404(x2); ti.com/product/CD74HC4002=200 + web_extract规格页4096字符）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc4075-em74hct4075",
+   "em": "EM74HC4075; EM74HCT4075",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC4075",
+    "SN74HCT4075"
+   ],
+   "verdict": "[!]",
+   "note": "TI 以 CD 前缀在售 CD74HCT4075（二轮探测 FOUND-ALT，ti.com/product/SN74HCT4075=404(x2); ti.com/product/CD74HCT4075=200 + extract标题页含ACTIVE 2428字符）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc4094-em74hct4094",
+   "em": "EM74HC4094; EM74HCT4094",
+   "vcc_em": "2.0–6.0 V (HC) / 4.5–5.5 V (HCT)",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC4094",
+    "SN74HCT4094"
+   ],
+   "verdict": "[!]",
+   "note": "TI 以 CD 前缀在售 CD74HCT4094（二轮探测 FOUND-ALT，ti.com/product/SN74HCT4094=404(x2); ti.com/product/CD74HCT4094=200 + extract含ACTIVE 3112字符）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc540-em74hct540",
+   "em": "EM74HC540; EM74HCT540",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC540",
+    "SN74HCT540"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc541-em74hct541",
+   "em": "EM74HC541; EM74HCT541",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC541",
+    "SN74HCT541"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc573-em74hct573",
+   "em": "EM74HC573; EM74HCT573",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC573",
+    "SN74HCT573"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc574-em74hct574",
+   "em": "EM74HC574; EM74HCT574",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC574",
+    "SN74HCT574"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc594",
+   "em": "EM74HC594",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC594"
+   ],
+   "verdict": "[!]",
+   "note": "芯祥侧 Draft 状态，量产替代前需正式版规格书；芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc595a",
+   "em": "EM74HC595A",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC595A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc597-em74hct597",
+   "em": "EM74HC597; EM74HCT597",
+   "vcc_em": "2.8–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC597",
+    "SN74HCT597"
+   ],
+   "verdict": "[!]",
+   "note": "TI 以 CD 前缀在售 CD74HCT597（二轮探测 FOUND-ALT，ti.com/product/SN74HCT597=404(x2); ti.com/product/CD74HCT597=200 + extract含ACTIVE 3110字符）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc7001-em74hct7001",
+   "em": "EM74HC7001; EM74HCT7001",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC7001",
+    "SN74HCT7001"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT7001），可用：SN74HC7001"
+  },
+  {
+   "slug": "em74hc7002-em74hct7002",
+   "em": "EM74HC7002; EM74HCT7002",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC7002",
+    "SN74HCT7002"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT7002），可用：SN74HC7002"
+  },
+  {
+   "slug": "em74hc7032-em74hct7032",
+   "em": "EM74HC7032; EM74HCT7032",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC7032",
+    "SN74HCT7032"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT7032），可用：SN74HC7032"
+  },
+  {
+   "slug": "em74hc7266-em74hct7266",
+   "em": "EM74HC7266; EM74HCT7266",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC7266",
+    "SN74HCT7266"
+   ],
+   "verdict": "[!]",
+   "note": "TI 以 CD 前缀在售 CD74HC7266（二轮探测 FOUND-ALT，ti.com/product/SN74HC7266=404(x2); ti.com/product/CD74HC7266=200 + extract2541字符 + lit/ds/symlink/cd74hc7266.pdf=200）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hc74-em74hct74",
+   "em": "EM74HC74; EM74HCT74",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC74",
+    "SN74HCT74"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hc86-em74hct86",
+   "em": "EM74HC86; EM74HCT86",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HC86",
+    "SN74HCT86"
+   ],
+   "verdict": "[!]",
+   "note": "部分变体 TI 无（SN74HCT86），可用：SN74HC86；TI 以 CD 前缀在售 CD74HCT86（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT86 200, HCT param 4482 chars）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hcs00",
+   "em": "EM74HCS00",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS00"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs02",
+   "em": "EM74HCS02",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS02"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs03",
+   "em": "EM74HCS03",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS03"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs04",
+   "em": "EM74HCS04",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS04"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs05",
+   "em": "EM74HCS05",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS05"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs08",
+   "em": "EM74HCS08",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS08"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs09",
+   "em": "EM74HCS09",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS09"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs10",
+   "em": "EM74HCS10",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS10"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs11",
+   "em": "EM74HCS11",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS11"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs125",
+   "em": "EM74HCS125",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS125"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs126",
+   "em": "EM74HCS126",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS126"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs20",
+   "em": "EM74HCS20",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS20"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs21",
+   "em": "EM74HCS21",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS21"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs266",
+   "em": "EM74HCS266",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS266"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs27",
+   "em": "EM74HCS27",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS27"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs32",
+   "em": "EM74HCS32",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS32"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs365",
+   "em": "EM74HCS365",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS365"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs367",
+   "em": "EM74HCS367",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS367"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs4075",
+   "em": "EM74HCS4075",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS4075"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs7266",
+   "em": "EM74HCS7266",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS7266"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hcs86",
+   "em": "EM74HCS86",
+   "vcc_em": "2.0–6.0 V",
+   "vcc_ti": "2 V to 6 V",
+   "ti": [
+    "SN74HCS86"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74hct164",
+   "em": "EM74HCT164",
+   "vcc_em": "4.5–5.5 V",
+   "vcc_ti": "4.5 V to 5.5 V",
+   "ti": [
+    "SN74HCT164"
+   ],
+   "verdict": "[!]",
+   "note": "TI 以 CD 前缀在售 CD74HCT164（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT164 200, 8-bit serial-in HCT 5295 chars）——同功能号前缀口径差异"
+  },
+  {
+   "slug": "em74hct595",
+   "em": "EM74HCT595",
+   "vcc_em": "2.7–5.5 V",
+   "vcc_ti": "4.5 V to 5.5 V",
+   "ti": [
+    "SN74HCT595"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 2.7–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lv1t00",
+   "em": "EM74LV1T00",
+   "vcc_em": "1.6–5.5 V",
+   "vcc_ti": "1.6 V to 5.5 V",
+   "ti": [
+    "SN74LV1T00"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lv1t02",
+   "em": "EM74LV1T02",
+   "vcc_em": "1.6–5.5 V",
+   "vcc_ti": "1.6 V to 5.5 V",
+   "ti": [
+    "SN74LV1T02"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lv1t04",
+   "em": "EM74LV1T04",
+   "vcc_em": "1.6–5.5 V",
+   "vcc_ti": "1.6 V to 5.5 V",
+   "ti": [
+    "SN74LV1T04"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lv1t08",
+   "em": "EM74LV1T08",
+   "vcc_em": "1.6–5.5 V",
+   "vcc_ti": "1.6 V to 5.5 V",
+   "ti": [
+    "SN74LV1T08"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lv1t125",
+   "em": "EM74LV1T125",
+   "vcc_em": "1.6–5.5 V",
+   "vcc_ti": "1.6 V to 5.5 V",
+   "ti": [
+    "SN74LV1T125"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lv1t126",
+   "em": "EM74LV1T126",
+   "vcc_em": "1.6–5.5 V",
+   "vcc_ti": "1.6 V to 5.5 V",
+   "ti": [
+    "SN74LV1T126"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lv1t32",
+   "em": "EM74LV1T32",
+   "vcc_em": "1.6–5.5 V",
+   "vcc_ti": "1.6 V to 5.5 V",
+   "ti": [
+    "SN74LV1T32"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lv1t34",
+   "em": "EM74LV1T34",
+   "vcc_em": "1.6–5.5 V",
+   "vcc_ti": "1.6 V to 5.5 V",
+   "ti": [
+    "SN74LV1T34"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lv1t86",
+   "em": "EM74LV1T86",
+   "vcc_em": "1.6–5.5 V",
+   "vcc_ti": "1.6 V to 5.5 V",
+   "ti": [
+    "SN74LV1T86"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lv1t87",
+   "em": "EM74LV1T87",
+   "vcc_em": "1.6–5.5 V",
+   "vcc_ti": "1.6 V to 5.5 V",
+   "ti": [
+    "SN74LV1T87"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74lvc00a",
+   "em": "EM74LVC00A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC00A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc02a",
+   "em": "EM74LVC02A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC02A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc04a",
+   "em": "EM74LVC04A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC04A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc06a",
+   "em": "EM74LVC06A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC06A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc07a",
+   "em": "EM74LVC07A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC07A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc08a",
+   "em": "EM74LVC08A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC08A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc10a",
+   "em": "EM74LVC10A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC10A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc11",
+   "em": "EM74LVC11",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC11A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc125a",
+   "em": "EM74LVC125A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC125A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc126a",
+   "em": "EM74LVC126A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC126A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc132a",
+   "em": "EM74LVC132A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC132A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc14a",
+   "em": "EM74LVC14A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC14A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g00",
+   "em": "EM74LVC1G00",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G00"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g02",
+   "em": "EM74LVC1G02",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G02"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g04",
+   "em": "EM74LVC1G04",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G04"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g06",
+   "em": "EM74LVC1G06",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G06"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g07",
+   "em": "EM74LVC1G07",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G07"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g08",
+   "em": "EM74LVC1G08",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G08"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g09",
+   "em": "EM74LVC1G09",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G09B"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g10",
+   "em": "EM74LVC1G10",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G10"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g11",
+   "em": "EM74LVC1G11",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G11"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g125",
+   "em": "EM74LVC1G125",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G125"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g126",
+   "em": "EM74LVC1G126",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G126"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g132",
+   "em": "EM74LVC1G132",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G132"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g14",
+   "em": "EM74LVC1G14",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G14"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g16",
+   "em": "EM74LVC1G16",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G16"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g17",
+   "em": "EM74LVC1G17",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G17"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g240",
+   "em": "EM74LVC1G240",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G240"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g27",
+   "em": "EM74LVC1G27",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G27"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g32",
+   "em": "EM74LVC1G32",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G32"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g332",
+   "em": "EM74LVC1G332",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G332"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g34",
+   "em": "EM74LVC1G34",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G34"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g38",
+   "em": "EM74LVC1G38",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G38"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g57",
+   "em": "EM74LVC1G57",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G57"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g58",
+   "em": "EM74LVC1G58",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G58"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g86",
+   "em": "EM74LVC1G86",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G86"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1g97",
+   "em": "EM74LVC1G97",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1G97"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc1gu04",
+   "em": "EM74LVC1GU04",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC1GU04"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc244a-em74lvch244a",
+   "em": "EM74LVC244A; EM74LVCH244A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC244A",
+    "SN74LVCH244A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc245a-em74lvch245a",
+   "em": "EM74LVC245A; EM74LVCH245A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC245A",
+    "SN74LVCH245A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc2g04",
+   "em": "EM74LVC2G04",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC2G04"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc2g06",
+   "em": "EM74LVC2G06",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC2G06"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc2g07",
+   "em": "EM74LVC2G07",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC2G07"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc2g14",
+   "em": "EM74LVC2G14",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC2G14"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc2g16",
+   "em": "EM74LVC2G16",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC2G16"
+   ],
+   "verdict": "✖",
+   "note": "TI 官网无此料号（两法交叉确认）"
+  },
+  {
+   "slug": "em74lvc2g17",
+   "em": "EM74LVC2G17",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC2G17"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc2g34",
+   "em": "EM74LVC2G34",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC2G34"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc2gu04",
+   "em": "EM74LVC2GU04",
+   "vcc_em": "1.65–5.5 V",
+   "vcc_ti": "1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC2GU04"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc32a",
+   "em": "EM74LVC32A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC32A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc4245",
+   "em": "EM74LVC4245",
+   "vcc_em": "1.5–5.5 V",
+   "vcc_ti": "VCCA: 4.5 V to 5.5 V; VCCB: 2.7 V to 3.6 V",
+   "ti": [
+    "SN74LVC4245A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.5–5.5 V ⊇ TI VCCA: 4.5 V to 5.5 V; VCCB: 2.7 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc4245a",
+   "em": "EM74LVC4245A",
+   "vcc_em": "1.4–5.5 V",
+   "vcc_ti": "VCCA: 4.5 V to 5.5 V; VCCB: 2.7 V to 3.6 V",
+   "ti": [
+    "SN74LVC4245A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.4–5.5 V ⊇ TI VCCA: 4.5 V to 5.5 V; VCCB: 2.7 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc540a",
+   "em": "EM74LVC540A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC540A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc541a",
+   "em": "EM74LVC541A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC541A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc74a",
+   "em": "EM74LVC74A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC74A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc86a",
+   "em": "EM74LVC86A",
+   "vcc_em": "1.2–5.5 V",
+   "vcc_ti": "1.65 V to 3.6 V",
+   "ti": [
+    "SN74LVC86A"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
+  },
+  {
+   "slug": "em74lvc8t245-em74lvch8t245",
+   "em": "EM74LVC8T245; EM74LVCH8T245",
+   "vcc_em": "1.3–5.5 V",
+   "vcc_ti": "VCCA: 1.65 V to 5.5 V; VCCB: 1.65 V to 5.5 V",
+   "ti": [
+    "SN74LVC8T245",
+    "SN74LVCH8T245"
+   ],
+   "verdict": "[OK]",
+   "note": "芯祥 VCC 1.3–5.5 V ⊇ TI VCCA: 1.65 V to 5.5 V; VCCB: 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
+  }
+ ],
+ "analog": [
+  {
+   "slug": "ems23157",
+   "ti_text": "TS5A23157（同源） [OK]",
+   "verdict": "[OK]",
+   "note": "",
+   "evidence": "capability-matrix 转引"
+  },
+  {
+   "slug": "ems3157",
+   "ti_text": "TS5A3159 [OK]；SN74LVC1G3157 [OK]（见 p2p-sn74lvc1g3157-final，READY）",
+   "verdict": "[OK]",
+   "note": "",
+   "evidence": "capability-matrix 转引"
+  },
+  {
+   "slug": "ems3900",
+   "ti_text": "TS3USB221 [OK]",
+   "verdict": "[OK]",
+   "note": "",
+   "evidence": "capability-matrix 转引"
+  },
+  {
+   "slug": "ems3902",
+   "ti_text": "TS3USB221 [OK]",
+   "verdict": "[OK]",
+   "note": "",
+   "evidence": "capability-matrix 转引"
+  },
+  {
+   "slug": "ems3905",
+   "ti_text": "TS3USB31E [OK]",
+   "verdict": "[OK]",
+   "note": "",
+   "evidence": "capability-matrix 转引"
+  },
+  {
+   "slug": "ems4000",
+   "ti_text": "—（TI 无 OVP 单品） [OK]",
+   "verdict": "[OK]",
+   "note": "",
+   "evidence": "capability-matrix 转引"
+  },
+  {
+   "slug": "ems4002",
+   "ti_text": "—（TI 无 OVP 单品） [OK]",
+   "verdict": "[OK]",
+   "note": "",
+   "evidence": "capability-matrix 转引"
+  },
+  {
+   "slug": "ems4320",
+   "ti_text": "TS3USBA225 [OK]",
+   "verdict": "[OK]",
+   "note": "",
+   "evidence": "capability-matrix 转引"
+  },
+  {
+   "slug": "ems4321",
+   "ti_text": "TS3USBA225 [OK]",
+   "verdict": "[OK]",
+   "note": "",
+   "evidence": "capability-matrix 转引"
+  },
+  {
+   "slug": "ems4567",
+   "ti_text": "TS3A5018 [OK]",
+   "verdict": "[OK]",
+   "note": "",
+   "evidence": "capability-matrix 转引"
+  },
+  {
+   "slug": "ems4798",
+   "ti_text": "TS3A225E（无自主检测） [OK]",
+   "verdict": "[OK]",
+   "note": "",
+   "evidence": "capability-matrix 转引"
+  },
+  {
+   "slug": "ems4899",
+   "ti_text": "TS3A5018 [OK]",
+   "verdict": "[OK]",
+   "note": "",
+   "evidence": "capability-matrix 转引"
+  },
+  {
+   "slug": "exs0102",
+   "ti_text": "TXS0102 [OK]",
+   "verdict": "[OK]",
+   "note": "",
+   "evidence": "capability-matrix 转引"
+  },
+  {
+   "slug": "exs0104",
+   "ti_text": "TXS0104E（open-drain/TXS 架构同位）[OK]；TXB0104 ✖（push-pull 无上拉，架构不对位，见 p2p-ti-mapping §2 已核实注）",
+   "verdict": "[OK]",
+   "note": "",
+   "evidence": "capability-matrix 转引"
+  },
+  {
+   "slug": "exs0108",
+   "ti_text": "TXS0108 [OK]",
+   "verdict": "[OK]",
+   "note": "",
+   "evidence": "capability-matrix 转引"
+  },
+  {
+   "slug": "el3157",
+   "ti_text": "TS5A3159",
+   "verdict": "[!]",
+   "note": "脚位已取证：EL3157 数据手册 pin 表 B1=1(常开)/GND=2/B0=3(常闭)/A=4/VCC=5/SEL=6，与 TI TS5A3159(1=NO,2=GND,3=NC,4=COM,5=V+,6=IN) 及 SN74LVC1G3157 完全同脚位，封装 SOT363/SOT23-6 对位 SC70(DCK)/SOT-23(DBV)；但关键参数不对位：EL 800MHz/CON12pF vs TS5A3159 100MHz/84pF、SN74LVC1G3157 340MHz/Ron6Ω(EL 1.9Ω)，VCC 下限 1.5V vs 1.65V → 维持[!]，脚位级兼容可注记、参数级非 P2P",
+   "evidence": "https://www.ti.com/product/TS5A3159;https://datasheet.lcsc.com/datasheet/pdf/ad828c877078a2f3cece24ad396101fb.pdf?productCode=C52140494"
+  },
+  {
+   "slug": "ems23157-q100",
+   "ti_text": "TS5A23157-Q1",
+   "verdict": "[!]功能替代",
+   "note": "车规口径成立：TS5A23157-Q1 AEC-Q100 Grade1(-40~125℃) 在售，双 SPDT 位宽对位、VCC 1.65-5.5V vs 1.5-5.5V；差异 Ron 15Ω typ/BW 220MHz vs 芯祥 1.9Ω/800MHz，封装 VSSOP-10(DGS) 3.0x4.9 vs MSOP-10L 3.0x3.0 → 功能替代非脚对脚",
+   "evidence": "https://www.ti.com/product/TS5A23157-Q1"
+  },
+  {
+   "slug": "ems2750",
+   "ti_text": "TS5A23157",
+   "verdict": "[!]功能替代",
+   "note": "位宽对齐确认：TI 在售双 SPDT(TS5A23157, 2:1 x2ch, 1.65-5.5V)，原判 TS3A27518E(6ch 1:2)位宽不对齐属实但存在更对位款；差异 Ron 10Ω/BW 220MHz vs 1.9Ω/800MHz，封装 UQFN-10 2x1.5 / VSSOP-10 3x4.9 vs QFN1.4x1.8-10L → 功能替代非脚对脚",
+   "evidence": "https://www.ti.com/product/TS5A23157"
+  },
+  {
+   "slug": "ems3157-q100",
+   "ti_text": "SN74LVC1G3157-Q1",
+   "verdict": "[!]功能替代",
+   "note": "车规在售：AEC-Q100 Grade1、1.65-5.5V、SC70-6(DCK) 与 EMS3157GW SOT363 同外形，脚位与 EL3157 家族取证一致(pin1=SEL高选通端)；第二选项 TS5A3159-Q1(AEC-Q100、SOT-23-6、Ron 0.7-1Ω、BW 100MHz)；参数差：1G3157 Ron6Ω/BW340MHz vs 1.9Ω/800MHz、VCC≥1.65 vs 1.5V → 非参数级 P2P；TI 无 TS5A3157-Q1",
+   "evidence": "https://www.ti.com/product/SN74LVC1G3157-Q1"
+  },
+  {
+   "slug": "ems3218",
+   "ti_text": "TS5USBA224",
+   "verdict": "[!]功能替代",
+   "note": "TI 负摆幅音频开关：音频内建 pop/click 分流、负轨能力、USB2.0 480Mbps 同封装，UQFN-10 1.8x1.4 与 QFN1.4x1.8-10L 同尺寸；差异：配置为 DPDT 而非 SPST+MUTE、音频 THD<0.05%(约-66dB) vs -105dB、Ron 3Ω vs 0.78Ω、无 Ro/Lo 4.7V OVP、无 17V MUTE 与 70Ω 端接；备选 TS3A227E(I2C 检测型) → 功能替代非脚对脚",
+   "evidence": "https://www.ti.com/product/TS5USBA224"
+  },
+  {
+   "slug": "ems3412",
+   "ti_text": "TMUXHS4212",
+   "verdict": "[!]功能替代",
+   "note": "功能对位：2 差分通道 2:1/1:2、USB3.2 10Gbps、-3dB 13GHz(芯祥 5.1GHz)、被动双向；差异 VCC 3.3/1.8V vs 1.5-5V、QFN 2.5x4.5 vs QFN4x4-24L；备选 HD3SS3212/HD3SS3412A、TS3DV642(12ch/6Gbps)；与 EMS4310 同 die 同结论 → 功能替代非脚对脚",
+   "evidence": "https://www.ti.com/product/TMUXHS4212"
+  },
+  {
+   "slug": "ems3515",
+   "ti_text": "TS5A22364",
+   "verdict": "[!]",
+   "note": "TI 无耗尽型(VDD 缺失时常闭导通)负摆幅 SPST：已查 TI 全部负摆幅款 TS5A22362/22364/22366(双 SPDT 增强型, -2.75~2.75V, 22364 带 pop/click 分流)、TS12A12511(单通道 SPDT, -6~6V, 5Ω)、TS5USBA224(音频负轨 DPDT)，均为增强型、VCC=0 时隔离而非导通 → 维持[!]，无升级款",
+   "evidence": "https://www.ti.com/lit/gpn/TS5A22364"
+  },
+  {
+   "slug": "ems3518",
+   "ti_text": "NONE",
+   "verdict": "✖",
+   "note": "双 SPST 耗尽型负摆幅 TI 确无：负摆幅仅见 TS5A22362/TS5A22364(双 SPDT 增强型，掉电时隔离、无 VDD=0 导通行为)、TS12A12511(单通道 SPDT)、TS5USBA224(DPDT 音频+USB)，检索 ti.com 无 depletion 型号 → 维持 ✖",
+   "evidence": "https://www.ti.com/product/TS5A22364"
+  },
+  {
+   "slug": "ems3550",
+   "ti_text": "NONE",
+   "verdict": "✖",
+   "note": "四刀(4-PST)耗尽型隔离开关 + SEL0/SEL1 振荡器频偏(790kHz-1.12MHz, 110kHz 步进) EMI 配置：TI 无独立耗尽型开关(depletion 字样仅见于 TS3A227E 音频插座开关内部 FET)，亦无 4-PST/频偏 EMI 配置款 → 维持 ✖",
+   "evidence": "https://www.ti.com/product/TS3A227E"
+  },
+  {
+   "slug": "ems3580",
+   "ti_text": "NONE",
+   "verdict": "✖",
+   "note": "HiFi 立体声 SPDT(THD+N -118dB@100kΩ、SNR 132dBA、Ron 0.16Ω、负摆幅 -3.3V、pop/click 软启停) TI 确无同规格：TS5USBA224 音频 THD<0.05%(约-66dB)、TS5A22364 仅负摆幅+分流、TS3A227E 为检测配置型，均远低于 HiFi 指标 → 维持 ✖",
+   "evidence": "https://www.ti.com/product/TS5USBA224"
+  },
+  {
+   "slug": "ems4100",
+   "ti_text": "TMUXHS4212",
+   "verdict": "[!]功能替代",
+   "note": "2 差分通道 2:1/1:2 被动 mux，USB3.1/3.2 10Gbps(TI 上限 16Gbps)、BW 13GHz vs 3.5GHz；差异 VCC 3.3/1.8V vs 1.5-5V、QFN 2.5x4.5 vs QFN1.8x2.6-16 / QFN2x3-18；备选 HD3SS3212(2ch/10Gbps/3-3.6V) → 功能替代非脚对脚",
+   "evidence": "https://www.ti.com/product/TMUXHS4212"
+  },
+  {
+   "slug": "ems4310",
+   "ti_text": "TMUXHS4212",
+   "verdict": "[!]功能替代",
+   "note": "与 EMS3412 同 die 双 SKU，TI 对位同为 TMUXHS4212(2 差分通道 2:1、USB3.2 10Gbps、13GHz)；差异 VCC 3.3/1.8V vs 1.5-5V、QFN 2.5x4.5 vs QFN4x4-24L；TUSB1002/TUSB1046A 为 redriver(有源)非被动开关，不构成 P2P → 功能替代非脚对脚",
+   "evidence": "https://www.ti.com/product/TMUXHS4212"
+  },
+  {
+   "slug": "ems4422",
+   "ti_text": "TMUXHS4612",
+   "verdict": "[!]功能替代",
+   "note": "更近款：明确支持 HDMI 2.1 12Gbps、6 通道 20Gbps、侧带通道 5V 容忍可走 DDC/HPD/DP AUX，明显近于原映射 TS3DV642(定位 HDMI 2.0/DVI 1.0/DP1.4、6Gbps 上限)；仍非脚对脚：WQFN-40 6x3mm vs QFN5x5-40L、VCC 3.3V vs 1.5-5V → 维持 FUNC-ALT，建议矩阵 TI 侧改注 TMUXHS4612",
+   "evidence": "https://www.ti.com/product/TMUXHS4612"
+  },
+  {
+   "slug": "ems4485",
+   "ti_text": "TS3A227E",
+   "verdict": "[!]功能替代",
+   "note": "覆盖 Type-C/耳机侧 OMTP/CTIA(3/4 极)自动识别、I2C 手动控制、click/pop 与掉电噪声抑制(内置 depletion FET)；缺口：SBUx/DP/DN 4.4V OVP、湿度检测、950MHz USB2.0 通路(TI 需 TS5USBA224+TS3USB221A 组合)，封装 DSBGA-16/VQFN-16 vs WLCSP-25 → 功能替代非脚对脚",
+   "evidence": "https://www.ti.com/product/TS3A227E"
+  },
+  {
+   "slug": "ems4735",
+   "ti_text": "NONE",
+   "verdict": "[!]",
+   "note": "验证 TI 无 4:1/1:4 USB2.0 开关：在售 USB2.0 开关均为 2:1/1:2(TMUXHS221、TMUXHS221LV、TS3USB221A、TS5USBC41 双 2:1)或 6 通道 1:2(TS3A27518E)，无双 4:1 SPQT 对位 → 维持[!]，TS3USB30E 位宽仍不符",
+   "evidence": "https://www.ti.com/product/TMUXHS221"
+  },
+  {
+   "slug": "ems7227",
+   "ti_text": "TMUXHS221",
+   "verdict": "[!]功能替代",
+   "note": "实质功能(两口 USB2.0 DPDT 2:1)对位：2 通道 2:1、Ron 3Ω(=芯祥 3.0Ω)、BW 3.3GHz(>720MHz)、UQFN-10 1.4x1.8 与 QFN1.4x1.8-10L 同尺寸、数据脚 5V 容忍，新款 TMUXHS221F 带 30V OVP(>芯祥 OVT 5.25V)；差异 VCC 3.3V 固定 vs 2.4-4.4V、HBM 5kV vs 8kV、引脚映射未取证；UART 口径：TI 无 UART 专用命名开关(TSU6111A 为 SP2T USB&UART 低侧路由) → 功能替代非脚对脚",
+   "evidence": "https://www.ti.com/product/TMUXHS221"
+  },
+  {
+   "slug": "exs0106",
+   "ti_text": "NONE",
+   "verdict": "[!]",
+   "note": "取证结果：TI 官方无 TXS0106(ti.com/product/TXS0106 与 ti.com/lit/ds/symlink/txs0106.pdf 均 404，站内检索只返回 TXB0106/TXB0606/TXV0106)；6 位最接近 TXB0106(自动方向但推挽、VCCA 1.2-3.6V、VCCB 1.65-5.5V、TSSOP-16 PW)与 TXV0106(6 位固定方向)，无 6 位开漏自动方向款；EXS0106 为 VCCA 1.3-5.5V/开漏/40Mbps、TSSOP-16 → 位宽可凑但 VCCA 与开漏属性不对齐，维持[!]",
+   "evidence": "https://www.ti.com/product/TXB0106"
+  }
+ ]
+}

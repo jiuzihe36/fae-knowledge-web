@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>芯祥 FAE 型号速查</title>
-  <link rel="stylesheet" href="./style.css?v=20260914b">
+  <link rel="stylesheet" href="./style.css?v=20260923a">
 </head>
 <body>
   <header class="topbar">
@@ -15,75 +15,133 @@
         <p id="meta">正在加载数据...</p>
       </div>
     </div>
-    <div class="topstats">
-      <span id="statModels">-</span>
-      <span>型号</span>
-      <span id="statSpecs">-</span>
-      <span>参数</span>
+    <div class="topbar-side">
+      <div class="topstats">
+        <span id="statModels">-</span>
+        <span>型号</span>
+        <span id="statSpecs">-</span>
+        <span>参数</span>
+      </div>
+      <button id="themeBtn" class="theme-btn" type="button" aria-label="切换深色/浅色主题" title="切换深色/浅色主题">🌙</button>
     </div>
   </header>
 
-  <main class="layout">
-    <aside class="filters">
-      <input id="q" type="search" placeholder="搜索型号 / 功能 / 封装 / 参数" autocomplete="off">
-      <label>功能
-        <select id="fFunction"></select>
-      </label>
-      <label>系列
-        <select id="fSeries"></select>
-      </label>
-      <label>封装
-        <select id="fPackage"></select>
-      </label>
-      <label>逻辑类型
-        <select id="fLogic"></select>
-      </label>
-      <label>应用域
-        <select id="fApp"></select>
-      </label>
-      <div class="filter-actions">
-        <button id="clearBtn" type="button">清除筛选</button>
-        <span id="resultCount">0</span>
-      </div>
-    </aside>
+  <nav class="viewtabs" id="viewTabs" aria-label="视图切换">
+    <button type="button" class="tab active" data-view="list">型号列表</button>
+    <button type="button" class="tab" data-view="search">替代查询</button>
+    <button type="button" class="tab" data-view="compare">A/B 对比</button>
+  </nav>
 
-    <section class="list">
-      <table class="model-table">
-        <thead>
-          <tr>
-            <th>型号</th>
-            <th>功能</th>
-            <th>系列</th>
-            <th>封装</th>
-            <th>逻辑类型</th>
-            <th>电压</th>
-            <th>封装尺寸</th>
-          </tr>
-        </thead>
-        <tbody id="tableBody"></tbody>
-      </table>
-      <div id="empty" class="empty hidden">没有匹配记录</div>
-    </section>
-  </main>
+  <div id="viewList" class="view">
+    <main class="layout">
+      <aside class="filters">
+        <input id="q" type="search" placeholder="搜索型号 / 功能 / 封装 / 参数" autocomplete="off">
+        <label>功能
+          <select id="fFunction"></select>
+        </label>
+        <label>系列
+          <select id="fSeries"></select>
+        </label>
+        <label>封装
+          <select id="fPackage"></select>
+        </label>
+        <label>逻辑类型
+          <select id="fLogic"></select>
+        </label>
+        <label>应用域
+          <select id="fApp"></select>
+        </label>
+        <label>状态
+          <select id="fStatus">
+            <option value="">全部</option>
+            <option value="Product">Product</option>
+            <option value="Draft">Draft</option>
+            <option value="Q100">Q100</option>
+          </select>
+        </label>
+        <div class="filter-actions">
+          <button id="clearBtn" type="button">清除筛选</button>
+          <span id="resultCount">0</span>
+        </div>
+      </aside>
+
+      <section class="list">
+        <table class="model-table">
+          <thead>
+            <tr>
+              <th>型号</th>
+              <th>功能</th>
+              <th>系列</th>
+              <th>封装</th>
+              <th>逻辑类型</th>
+              <th>电压</th>
+              <th>封装尺寸</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+        <div id="empty" class="empty hidden">没有匹配记录</div>
+      </section>
+    </main>
+  </div>
+
+  <section id="viewSearch" class="view view-pad hidden" aria-hidden="true">
+    <div class="view-head">
+      <h2>P2P 替代查询</h2>
+      <p>输入芯祥料号（如 EM74HC00、em74lvc1g09）或 TI 料号（如 SN74HC00、CD74HCT132、SN74LVC1G09B）双向反查；点击结果打开对应型号详情。</p>
+    </div>
+    <input id="p2pQuery" class="p2p-input" type="search" placeholder="EM74HC00 / SN74HC00 / CD74HCT132 ..." autocomplete="off">
+    <div id="p2pResults" class="p2p-results"></div>
+    <div id="p2pEmpty" class="empty hidden"></div>
+  </section>
+
+  <section id="viewCompare" class="view view-pad hidden" aria-hidden="true">
+    <div class="view-head">
+      <h2>A/B 对比</h2>
+      <p>选择两个型号并排对比关键字段与电气参数，差异行标黄；参数最多显示前 100 行。</p>
+    </div>
+    <div class="cmp-controls">
+      <label>型号 A
+        <input id="cmpA" type="text" list="modelList" placeholder="EM74AHC1G00DRL" autocomplete="off">
+      </label>
+      <button id="cmpSwap" class="cmp-swap" type="button" title="交换 A / B">⇄ 交换</button>
+      <label>型号 B
+        <input id="cmpB" type="text" list="modelList" placeholder="EM74HC00D" autocomplete="off">
+      </label>
+      <button id="cmpBtn" class="cmp-go" type="button">开始对比</button>
+    </div>
+    <datalist id="modelList"></datalist>
+    <div id="cmpResult" class="cmp-result"></div>
+    <div id="cmpEmpty" class="empty">选择两个型号后点击「开始对比」</div>
+  </section>
 
   <div id="detail" class="drawer hidden" aria-hidden="true">
     <div class="drawer-backdrop" data-close></div>
     <section class="drawer-panel" role="dialog" aria-modal="true">
       <div class="drawer-head">
         <div>
-          <h2 id="detailModel"></h2>
+          <div class="head-line">
+            <h2 id="detailModel"></h2>
+            <span id="detailBadges" class="badges"></span>
+          </div>
           <p id="detailDesc"></p>
         </div>
         <button id="closeDetail" type="button" aria-label="关闭">×</button>
       </div>
       <div id="detailMeta" class="meta-grid"></div>
+
+      <section id="tiCard" class="ti-card hidden">
+        <h3>TI 对标 <span id="tiNote" class="ti-src"></span></h3>
+        <div id="tiList" class="ti-list"></div>
+      </section>
+
       <div id="pinWrap" class="pin-wrap hidden">
-        <h3>引脚图</h3>
+        <h3>引脚图 <span class="pin-hint">点击放大</span></h3>
         <div class="pin-box"><img id="pinImg" src="" alt="Pin diagram"></div>
       </div>
       <div class="detail-grid">
         <section>
-          <h3>电气参数</h3>
+          <h3>电气参数 <span class="spec-hint">按类别分组</span></h3>
           <div class="spec-scroll">
             <table id="specTable" class="spec-table">
               <thead>
@@ -104,6 +162,15 @@
     </section>
   </div>
 
-  <script src="./app.js?v=20260914b"></script>
+  <div id="lightbox" class="lightbox hidden" aria-hidden="true">
+    <div class="lightbox-mask" data-close></div>
+    <figure class="lightbox-fig">
+      <img id="lightboxImg" src="" alt="">
+      <figcaption id="lightboxCap"></figcaption>
+    </figure>
+    <button id="lightboxClose" type="button" aria-label="关闭">×</button>
+  </div>
+
+  <script src="./app.js?v=20260923a"></script>
 </body>
 </html>
