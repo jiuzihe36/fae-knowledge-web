@@ -545,10 +545,16 @@
     return !!(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
   }
 
+  // 按系统时间判定：7:00–18:59 浅色，其余深色
+  function timeBasedDark() {
+    var h = new Date().getHours();
+    return h < 7 || h >= 19;
+  }
+
   function isDarkNow(mode) {
     if (mode === "dark") return true;
     if (mode === "light") return false;
-    return systemDark();
+    return timeBasedDark();
   }
 
   function applyTheme(mode) {
@@ -1148,7 +1154,14 @@
       });
   }
 
+  // 启动时按时间（或已存的手动选择）应用主题
   applyTheme(getStoredTheme());
+
+  // 每整分钟检查：若用户未手动锁定，随时间自动切换纯白/纯黑
+  setInterval(function () {
+    if (getStoredTheme() === "auto") applyTheme("auto");
+  }, 60 * 1000);
+
   bindEvents();
   switchView("list");
   renderP2P();
