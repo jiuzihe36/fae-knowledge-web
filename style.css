@@ -428,6 +428,10 @@ input[type="search"]:focus, input[type="text"]:focus, select:focus {
   vertical-align: top;
 }
 
+.model-table td[data-label="电压"] {
+  white-space: nowrap;
+}
+
 .model-table tbody tr:nth-child(even) td {
   background: var(--panel-2);
 }
