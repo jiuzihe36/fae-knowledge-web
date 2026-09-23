@@ -954,11 +954,7 @@
     "SN74AHCT1G00"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74AHC1G00",
-    "74AHCT1G00"
-   ]
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74ahc1g02-em74ahct1g02",
@@ -970,11 +966,7 @@
     "SN74AHCT1G02"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74AHC1G02",
-    "74AHCT1G02"
-   ]
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74ahc1g04-em74ahct1g04",
@@ -986,11 +978,7 @@
     "SN74AHCT1G04"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74AHC1G04",
-    "74AHCT1G04"
-   ]
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74ahc1g06-em74ahct1g06",
@@ -1002,11 +990,7 @@
     "SN74AHCT1G06"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74AHC1G06",
-    "74AHCT1G06"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74ahc1g07-em74ahct1g07",
@@ -1018,11 +1002,7 @@
     "SN74AHCT1G07"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74AHC1G07",
-    "74AHCT1G07"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74ahc1g08-em74ahct1g08",
@@ -1034,11 +1014,7 @@
     "SN74AHCT1G08"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74AHC1G08",
-    "74AHCT1G08"
-   ]
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74ahc1g09-em74ahct1g09",
@@ -1050,11 +1026,7 @@
     "SN74AHCT1G09"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74AHCT1G09），可用：SN74AHC1G09",
-   "nxp": [
-    "74AHC1G09",
-    "74AHCT1G09"
-   ]
+   "note": "部分变体 TI 无（SN74AHCT1G09），可用：SN74AHC1G09"
   },
   {
    "slug": "em74ahc1g11-em74ahct1g11",
@@ -1066,11 +1038,7 @@
     "SN74AHCT1G11"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74AHC1G11",
-    "74AHCT1G11"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74ahc1g125-em74ahct1g125",
@@ -1082,11 +1050,7 @@
     "SN74AHCT1G125"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74AHC1G125",
-    "74AHCT1G125"
-   ]
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74ahc1g126-em74ahct1g126",
@@ -1098,11 +1062,7 @@
     "SN74AHCT1G126"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74AHC1G126",
-    "74AHCT1G126"
-   ]
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74ahc1g14-em74ahct1g14",
@@ -1114,11 +1074,7 @@
     "SN74AHCT1G14"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74AHC1G14",
-    "74AHCT1G14"
-   ]
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74ahc1g16-em74ahct1g16",
@@ -1130,11 +1086,7 @@
     "SN74AHCT1G16"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74AHC1G16",
-    "74AHCT1G16"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74ahc1g17-em74ahct1g17",
@@ -1146,11 +1098,7 @@
     "SN74AHCT1G17"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74AHC1G17",
-    "74AHCT1G17"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74ahc1g240-em74ahct1g240",
@@ -1162,11 +1110,7 @@
     "SN74AHCT1G240"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74AHC1G240",
-    "74AHCT1G240"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74ahc1g32-em74ahct1g32",
@@ -1178,11 +1122,7 @@
     "SN74AHCT1G32"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74AHC1G32",
-    "74AHCT1G32"
-   ]
+   "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74ahc1g332-em74ahct1g332",
@@ -1194,11 +1134,7 @@
     "SN74AHCT1G332"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74AHC1G332",
-    "74AHCT1G332"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74ahc2g04-em74ahct2g04",
@@ -1210,11 +1146,7 @@
     "SN74AHCT2G04"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74AHC2G04",
-    "74AHCT2G04"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74ahc2g14-em74ahct2g14",
@@ -1226,11 +1158,7 @@
     "SN74AHCT2G14"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74AHC2G14",
-    "74AHCT2G14"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74ahc2g16-em74ahct2g16",
@@ -1242,11 +1170,7 @@
     "SN74AHCT2G16"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74AHC2G16",
-    "74AHCT2G16"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74ahc2g34-em74ahct2g34",
@@ -1258,11 +1182,7 @@
     "SN74AHCT2G34"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74AHC2G34",
-    "74AHCT2G34"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74aup1g07",
@@ -1273,10 +1193,7 @@
     "SN74AUP1G07"
    ],
    "verdict": "[!]",
-   "note": "芯祥侧 Draft 状态，量产替代前需正式版规格书；芯祥 VCC 0.8–3.6 V ⊇ TI 0.8 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74AUP1G07"
-   ]
+   "note": "芯祥侧 Draft 状态，量产替代前需正式版规格书；芯祥 VCC 0.8–3.6 V ⊇ TI 0.8 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74cbt3257",
@@ -1287,10 +1204,7 @@
     "SN74CBT3257"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.5–5.5 V ⊇ TI 4 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74CBT3257"
-   ]
+   "note": "芯祥 VCC 1.5–5.5 V ⊇ TI 4 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74cbtlv3125",
@@ -1301,10 +1215,7 @@
     "SN74CBTLV3125"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.3–3.6 V ⊇ TI 2.3 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74CBTLV3125"
-   ]
+   "note": "芯祥 VCC 2.3–3.6 V ⊇ TI 2.3 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74cbtlv3126",
@@ -1315,10 +1226,7 @@
     "SN74CBTLV3126"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.3–3.6 V ⊇ TI 2.3 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74CBTLV3126"
-   ]
+   "note": "芯祥 VCC 2.3–3.6 V ⊇ TI 2.3 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74cbtlv3253",
@@ -1329,10 +1237,7 @@
     "SN74CBTLV3253"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.3–3.6 V ⊇ TI 2.3 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74CBTLV3253"
-   ]
+   "note": "芯祥 VCC 2.3–3.6 V ⊇ TI 2.3 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74cbtlv3257",
@@ -1343,10 +1248,7 @@
     "SN74CBTLV3257"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.3–3.6 V ⊇ TI 2.3 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74CBTLV3257"
-   ]
+   "note": "芯祥 VCC 2.3–3.6 V ⊇ TI 2.3 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc00-em74hct00",
@@ -1358,11 +1260,7 @@
     "SN74HCT00"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC00",
-    "74HCT00"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc02-em74hct02",
@@ -1374,11 +1272,7 @@
     "SN74HCT02"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC02",
-    "74HCT02"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc03-em74hct03",
@@ -1390,11 +1284,7 @@
     "SN74HCT03"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT03），可用：SN74HC03；TI 以 CD 前缀在售 CD74HCT03（二轮探测 FOUND-ALT，HTTP200; CD74HCT03 4-ch 2-input NAND open-drain, ACTIVE）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC03",
-    "74HCT03"
-   ]
+   "note": "部分变体 TI 无（SN74HCT03），可用：SN74HC03；TI 以 CD 前缀在售 CD74HCT03（二轮探测 FOUND-ALT，HTTP200; CD74HCT03 4-ch 2-input NAND open-drain, ACTIVE）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc04-em74hct04",
@@ -1406,11 +1296,7 @@
     "SN74HCT04"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC04",
-    "74HCT04"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc05-em74hct05",
@@ -1422,11 +1308,7 @@
     "SN74HCT05"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT05），可用：SN74HC05",
-   "nxp": [
-    "74HC05",
-    "74HCT05"
-   ]
+   "note": "部分变体 TI 无（SN74HCT05），可用：SN74HC05"
   },
   {
    "slug": "em74hc06-em74hct06",
@@ -1438,11 +1320,7 @@
     "SN74HCT06"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74HC06",
-    "74HCT06"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74hc07-em74hct07",
@@ -1454,11 +1332,7 @@
     "SN74HCT07"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74HC07",
-    "74HCT07"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74hc08-em74hct08",
@@ -1470,11 +1344,7 @@
     "SN74HCT08"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC08",
-    "74HCT08"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc09-em74hct09",
@@ -1486,11 +1356,7 @@
     "SN74HCT09"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74HC09",
-    "74HCT09"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74hc10-em74hct10",
@@ -1502,11 +1368,7 @@
     "SN74HCT10"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT10），可用：SN74HC10；TI 以 CD 前缀在售 CD74HCT10（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT10 HTTP200; 页面标题 CD74HCT10 '3-ch, 3-input NAND gates' 且 ACTIVE + Order now）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC10",
-    "74HCT10"
-   ]
+   "note": "部分变体 TI 无（SN74HCT10），可用：SN74HC10；TI 以 CD 前缀在售 CD74HCT10（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT10 HTTP200; 页面标题 CD74HCT10 '3-ch, 3-input NAND gates' 且 ACTIVE + Order now）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc11-em74hct11",
@@ -1518,11 +1380,7 @@
     "SN74HCT11"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT11），可用：SN74HC11；TI 以 CD 前缀在售 CD74HCT11（二轮探测 FOUND-ALT，HTTP200; CD74HCT11 '3-ch 3-input AND gate TTL-compatible', ACTIVE）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC11",
-    "74HCT11"
-   ]
+   "note": "部分变体 TI 无（SN74HCT11），可用：SN74HC11；TI 以 CD 前缀在售 CD74HCT11（二轮探测 FOUND-ALT，HTTP200; CD74HCT11 '3-ch 3-input AND gate TTL-compatible', ACTIVE）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc125-em74hct125",
@@ -1534,11 +1392,7 @@
     "SN74HCT125"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC125",
-    "74HCT125"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc126-em74hct126",
@@ -1550,11 +1404,7 @@
     "SN74HCT126"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT126），可用：SN74HC126；TI 以 CD 前缀在售 CD74HCT126（二轮探测 FOUND-ALT，HTTP200; CD74HCT126 '4-ch buffers 3-state', ACTIVE + Order now）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC126",
-    "74HCT126"
-   ]
+   "note": "部分变体 TI 无（SN74HCT126），可用：SN74HC126；TI 以 CD 前缀在售 CD74HCT126（二轮探测 FOUND-ALT，HTTP200; CD74HCT126 '4-ch buffers 3-state', ACTIVE + Order now）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc132-em74hct132",
@@ -1566,11 +1416,7 @@
     "SN74HCT132"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT132），可用：SN74HC132；TI 以 CD 前缀在售 CD74HCT132（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT132 200, HCT param spec 4432 chars）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC132",
-    "74HCT132"
-   ]
+   "note": "部分变体 TI 无（SN74HCT132），可用：SN74HC132；TI 以 CD 前缀在售 CD74HCT132（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT132 200, HCT param spec 4432 chars）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc138-em74hct138",
@@ -1582,11 +1428,7 @@
     "SN74HCT138"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC138",
-    "74HCT138"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc14-em74hct14",
@@ -1598,11 +1440,7 @@
     "SN74HCT14"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC14",
-    "74HCT14"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc164",
@@ -1613,10 +1451,7 @@
     "SN74HC164"
    ],
    "verdict": "[!]",
-   "note": "VCC 下限差异：芯祥 2.5–6.0 V vs TI 2 V to 6 V（低压档 <2.5V 覆盖不到）",
-   "nxp": [
-    "74HC164"
-   ]
+   "note": "VCC 下限差异：芯祥 2.5–6.0 V vs TI 2 V to 6 V（低压档 <2.5V 覆盖不到）"
   },
   {
    "slug": "em74hc164a",
@@ -1627,10 +1462,7 @@
     "SN74HC164A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）；TI 侧含 OBSOLETE 料号（替代窗口有利）",
-   "nxp": [
-    "74HC164A"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）；TI 侧含 OBSOLETE 料号（替代窗口有利）"
   },
   {
    "slug": "em74hc165a",
@@ -1641,10 +1473,7 @@
     "SN74HC165A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC165A"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc166-em74hct166",
@@ -1656,11 +1485,7 @@
     "SN74HCT166"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT166），可用：SN74HC166；TI 以 CD 前缀在售 CD74HCT166（二轮探测 FOUND-ALT，HTTP200; CD74HCT166 8-Bit Parallel-In/Serial-Out Shift Register, ACTIVE）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC166",
-    "74HCT166"
-   ]
+   "note": "部分变体 TI 无（SN74HCT166），可用：SN74HC166；TI 以 CD 前缀在售 CD74HCT166（二轮探测 FOUND-ALT，HTTP200; CD74HCT166 8-Bit Parallel-In/Serial-Out Shift Register, ACTIVE）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc174-em74hct174",
@@ -1672,11 +1497,7 @@
     "SN74HCT174"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT174），可用：SN74HC174；TI 以 CD 前缀在售 CD74HCT174（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT174 200, CD54/CD74HCT174 product page 4106 chars）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC174",
-    "74HCT174"
-   ]
+   "note": "部分变体 TI 无（SN74HCT174），可用：SN74HC174；TI 以 CD 前缀在售 CD74HCT174（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT174 200, CD54/CD74HCT174 product page 4106 chars）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc20-em74hct20",
@@ -1688,11 +1509,7 @@
     "SN74HCT20"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT20），可用：SN74HC20；TI 以 CD 前缀在售 CD74HCT20（二轮探测 FOUND-ALT，HTTP200; CD74HCT20 '2-ch, 4-input NAND gates', Order now + 规格表）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC20",
-    "74HCT20"
-   ]
+   "note": "部分变体 TI 无（SN74HCT20），可用：SN74HC20；TI 以 CD 前缀在售 CD74HCT20（二轮探测 FOUND-ALT，HTTP200; CD74HCT20 '2-ch, 4-input NAND gates', Order now + 规格表）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc21-em74hct21",
@@ -1704,11 +1521,7 @@
     "SN74HCT21"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT21），可用：SN74HC21；TI 以 CD 前缀在售 CD74HCT21（二轮探测 FOUND-ALT，HTTP200; CD74HCT21 '2-ch 4-input AND gate TTL-compatible', ACTIVE）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC21",
-    "74HCT21"
-   ]
+   "note": "部分变体 TI 无（SN74HCT21），可用：SN74HC21；TI 以 CD 前缀在售 CD74HCT21（二轮探测 FOUND-ALT，HTTP200; CD74HCT21 '2-ch 4-input AND gate TTL-compatible', ACTIVE）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc240-em74hct240",
@@ -1720,11 +1533,7 @@
     "SN74HCT240"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC240",
-    "74HCT240"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc244-em74hct244",
@@ -1736,11 +1545,7 @@
     "SN74HCT244"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC244",
-    "74HCT244"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc245-em74hct245",
@@ -1752,11 +1557,7 @@
     "SN74HCT245"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC245",
-    "74HCT245"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc259-em74hct259",
@@ -1768,11 +1569,7 @@
     "SN74HCT259"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT259），可用：SN74HC259；TI 以 CD 前缀在售 CD74HCT259（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT259 200, addressable latch 4258 chars）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC259",
-    "74HCT259"
-   ]
+   "note": "部分变体 TI 无（SN74HCT259），可用：SN74HC259；TI 以 CD 前缀在售 CD74HCT259（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT259 200, addressable latch 4258 chars）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc266-em74hct266",
@@ -1784,11 +1581,7 @@
     "SN74HCT266"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT266），可用：SN74HC266",
-   "nxp": [
-    "74HC266",
-    "74HCT266"
-   ]
+   "note": "部分变体 TI 无（SN74HCT266），可用：SN74HC266"
   },
   {
    "slug": "em74hc27-em74hct27",
@@ -1800,11 +1593,7 @@
     "SN74HCT27"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT27），可用：SN74HC27；TI 以 CD 前缀在售 CD74HCT27（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT27 200, 3-ch HCT param 4404 chars）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC27",
-    "74HCT27"
-   ]
+   "note": "部分变体 TI 无（SN74HCT27），可用：SN74HC27；TI 以 CD 前缀在售 CD74HCT27（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT27 200, 3-ch HCT param 4404 chars）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc32-em74hct32",
@@ -1816,11 +1605,7 @@
     "SN74HCT32"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC32",
-    "74HCT32"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc365-em74hct365",
@@ -1832,11 +1617,7 @@
     "SN74HCT365"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT365），可用：SN74HC365；TI 以 CD 前缀在售 CD74HCT365（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT365 200, ACTIVE 6-ch 3-state）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC365",
-    "74HCT365"
-   ]
+   "note": "部分变体 TI 无（SN74HCT365），可用：SN74HC365；TI 以 CD 前缀在售 CD74HCT365（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT365 200, ACTIVE 6-ch 3-state）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc366-em74hct366",
@@ -1848,11 +1629,7 @@
     "SN74HCT366"
    ],
    "verdict": "[!]",
-   "note": "TI 以 CD 前缀在售 CD74HC366（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HC366 200, 6-ch inverter 3-state product page）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC366",
-    "74HCT366"
-   ]
+   "note": "TI 以 CD 前缀在售 CD74HC366（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HC366 200, 6-ch inverter 3-state product page）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc367-em74hct367",
@@ -1864,11 +1641,7 @@
     "SN74HCT367"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT367），可用：SN74HC367；TI 以 CD 前缀在售 CD74HCT367（二轮探测 FOUND-ALT，HTTP200; CD74HCT367 6-ch buffers w/ 3-state, ACTIVE）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC367",
-    "74HCT367"
-   ]
+   "note": "部分变体 TI 无（SN74HCT367），可用：SN74HC367；TI 以 CD 前缀在售 CD74HCT367（二轮探测 FOUND-ALT，HTTP200; CD74HCT367 6-ch buffers w/ 3-state, ACTIVE）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc368-em74hct368",
@@ -1880,11 +1653,7 @@
     "SN74HCT368"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT368），可用：SN74HC368；TI 以 CD 前缀在售 CD74HCT368（二轮探测 FOUND-ALT，HTTP200; CD74HCT368 6-ch inverters 3-state, ACTIVE）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC368",
-    "74HCT368"
-   ]
+   "note": "部分变体 TI 无（SN74HCT368），可用：SN74HC368；TI 以 CD 前缀在售 CD74HCT368（二轮探测 FOUND-ALT，HTTP200; CD74HCT368 6-ch inverters 3-state, ACTIVE）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc4002-em74hct4002",
@@ -1896,11 +1665,7 @@
     "SN74HCT4002"
    ],
    "verdict": "[!]",
-   "note": "TI 以 CD 前缀在售 CD74HC4002（二轮探测 FOUND-ALT，ti.com/product/SN74HC4002=404(x2); ti.com/product/CD74HC4002=200 + web_extract规格页4096字符）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC4002",
-    "74HCT4002"
-   ]
+   "note": "TI 以 CD 前缀在售 CD74HC4002（二轮探测 FOUND-ALT，ti.com/product/SN74HC4002=404(x2); ti.com/product/CD74HC4002=200 + web_extract规格页4096字符）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc4075-em74hct4075",
@@ -1912,11 +1677,7 @@
     "SN74HCT4075"
    ],
    "verdict": "[!]",
-   "note": "TI 以 CD 前缀在售 CD74HCT4075（二轮探测 FOUND-ALT，ti.com/product/SN74HCT4075=404(x2); ti.com/product/CD74HCT4075=200 + extract标题页含ACTIVE 2428字符）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC4075",
-    "74HCT4075"
-   ]
+   "note": "TI 以 CD 前缀在售 CD74HCT4075（二轮探测 FOUND-ALT，ti.com/product/SN74HCT4075=404(x2); ti.com/product/CD74HCT4075=200 + extract标题页含ACTIVE 2428字符）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc4094-em74hct4094",
@@ -1928,11 +1689,7 @@
     "SN74HCT4094"
    ],
    "verdict": "[!]",
-   "note": "TI 以 CD 前缀在售 CD74HCT4094（二轮探测 FOUND-ALT，ti.com/product/SN74HCT4094=404(x2); ti.com/product/CD74HCT4094=200 + extract含ACTIVE 3112字符）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC4094",
-    "74HCT4094"
-   ]
+   "note": "TI 以 CD 前缀在售 CD74HCT4094（二轮探测 FOUND-ALT，ti.com/product/SN74HCT4094=404(x2); ti.com/product/CD74HCT4094=200 + extract含ACTIVE 3112字符）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc540-em74hct540",
@@ -1944,11 +1701,7 @@
     "SN74HCT540"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC540",
-    "74HCT540"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc541-em74hct541",
@@ -1960,11 +1713,7 @@
     "SN74HCT541"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC541",
-    "74HCT541"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc573-em74hct573",
@@ -1976,11 +1725,7 @@
     "SN74HCT573"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC573",
-    "74HCT573"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc574-em74hct574",
@@ -1992,11 +1737,7 @@
     "SN74HCT574"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC574",
-    "74HCT574"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc594",
@@ -2007,10 +1748,7 @@
     "SN74HC594"
    ],
    "verdict": "[!]",
-   "note": "芯祥侧 Draft 状态，量产替代前需正式版规格书；芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC594"
-   ]
+   "note": "芯祥侧 Draft 状态，量产替代前需正式版规格书；芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc595a",
@@ -2021,10 +1759,7 @@
     "SN74HC595A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC595A"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc597-em74hct597",
@@ -2036,11 +1771,7 @@
     "SN74HCT597"
    ],
    "verdict": "[!]",
-   "note": "TI 以 CD 前缀在售 CD74HCT597（二轮探测 FOUND-ALT，ti.com/product/SN74HCT597=404(x2); ti.com/product/CD74HCT597=200 + extract含ACTIVE 3110字符）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC597",
-    "74HCT597"
-   ]
+   "note": "TI 以 CD 前缀在售 CD74HCT597（二轮探测 FOUND-ALT，ti.com/product/SN74HCT597=404(x2); ti.com/product/CD74HCT597=200 + extract含ACTIVE 3110字符）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc7001-em74hct7001",
@@ -2052,11 +1783,7 @@
     "SN74HCT7001"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT7001），可用：SN74HC7001",
-   "nxp": [
-    "74HC7001",
-    "74HCT7001"
-   ]
+   "note": "部分变体 TI 无（SN74HCT7001），可用：SN74HC7001"
   },
   {
    "slug": "em74hc7002-em74hct7002",
@@ -2068,11 +1795,7 @@
     "SN74HCT7002"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT7002），可用：SN74HC7002",
-   "nxp": [
-    "74HC7002",
-    "74HCT7002"
-   ]
+   "note": "部分变体 TI 无（SN74HCT7002），可用：SN74HC7002"
   },
   {
    "slug": "em74hc7032-em74hct7032",
@@ -2084,11 +1807,7 @@
     "SN74HCT7032"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT7032），可用：SN74HC7032",
-   "nxp": [
-    "74HC7032",
-    "74HCT7032"
-   ]
+   "note": "部分变体 TI 无（SN74HCT7032），可用：SN74HC7032"
   },
   {
    "slug": "em74hc7266-em74hct7266",
@@ -2100,11 +1819,7 @@
     "SN74HCT7266"
    ],
    "verdict": "[!]",
-   "note": "TI 以 CD 前缀在售 CD74HC7266（二轮探测 FOUND-ALT，ti.com/product/SN74HC7266=404(x2); ti.com/product/CD74HC7266=200 + extract2541字符 + lit/ds/symlink/cd74hc7266.pdf=200）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC7266",
-    "74HCT7266"
-   ]
+   "note": "TI 以 CD 前缀在售 CD74HC7266（二轮探测 FOUND-ALT，ti.com/product/SN74HC7266=404(x2); ti.com/product/CD74HC7266=200 + extract2541字符 + lit/ds/symlink/cd74hc7266.pdf=200）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hc74-em74hct74",
@@ -2116,11 +1831,7 @@
     "SN74HCT74"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HC74",
-    "74HCT74"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hc86-em74hct86",
@@ -2132,11 +1843,7 @@
     "SN74HCT86"
    ],
    "verdict": "[!]",
-   "note": "部分变体 TI 无（SN74HCT86），可用：SN74HC86；TI 以 CD 前缀在售 CD74HCT86（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT86 200, HCT param 4482 chars）——同功能号前缀口径差异",
-   "nxp": [
-    "74HC86",
-    "74HCT86"
-   ]
+   "note": "部分变体 TI 无（SN74HCT86），可用：SN74HC86；TI 以 CD 前缀在售 CD74HCT86（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT86 200, HCT param 4482 chars）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hcs00",
@@ -2147,10 +1854,7 @@
     "SN74HCS00"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS00"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs02",
@@ -2161,10 +1865,7 @@
     "SN74HCS02"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS02"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs03",
@@ -2175,10 +1876,7 @@
     "SN74HCS03"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS03"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs04",
@@ -2189,10 +1887,7 @@
     "SN74HCS04"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS04"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs05",
@@ -2203,10 +1898,7 @@
     "SN74HCS05"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS05"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs08",
@@ -2217,10 +1909,7 @@
     "SN74HCS08"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS08"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs09",
@@ -2231,10 +1920,7 @@
     "SN74HCS09"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS09"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs10",
@@ -2245,10 +1931,7 @@
     "SN74HCS10"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS10"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs11",
@@ -2259,10 +1942,7 @@
     "SN74HCS11"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS11"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs125",
@@ -2273,10 +1953,7 @@
     "SN74HCS125"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS125"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs126",
@@ -2287,10 +1964,7 @@
     "SN74HCS126"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS126"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs20",
@@ -2301,10 +1975,7 @@
     "SN74HCS20"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS20"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs21",
@@ -2315,10 +1986,7 @@
     "SN74HCS21"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS21"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs266",
@@ -2329,10 +1997,7 @@
     "SN74HCS266"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS266"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs27",
@@ -2343,10 +2008,7 @@
     "SN74HCS27"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS27"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs32",
@@ -2357,10 +2019,7 @@
     "SN74HCS32"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS32"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs365",
@@ -2371,10 +2030,7 @@
     "SN74HCS365"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS365"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs367",
@@ -2385,10 +2041,7 @@
     "SN74HCS367"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS367"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs4075",
@@ -2399,10 +2052,7 @@
     "SN74HCS4075"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS4075"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs7266",
@@ -2413,10 +2063,7 @@
     "SN74HCS7266"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS7266"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hcs86",
@@ -2427,10 +2074,7 @@
     "SN74HCS86"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCS86"
-   ]
+   "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74hct164",
@@ -2441,10 +2085,7 @@
     "SN74HCT164"
    ],
    "verdict": "[!]",
-   "note": "TI 以 CD 前缀在售 CD74HCT164（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT164 200, 8-bit serial-in HCT 5295 chars）——同功能号前缀口径差异",
-   "nxp": [
-    "74HCT164"
-   ]
+   "note": "TI 以 CD 前缀在售 CD74HCT164（二轮探测 FOUND-ALT，https://www.ti.com/product/CD74HCT164 200, 8-bit serial-in HCT 5295 chars）——同功能号前缀口径差异"
   },
   {
    "slug": "em74hct595",
@@ -2455,10 +2096,7 @@
     "SN74HCT595"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.7–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74HCT595"
-   ]
+   "note": "芯祥 VCC 2.7–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lv1t00",
@@ -2469,10 +2107,7 @@
     "SN74LV1T00"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LV1T00"
-   ]
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lv1t02",
@@ -2483,10 +2118,7 @@
     "SN74LV1T02"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LV1T02"
-   ]
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lv1t04",
@@ -2497,10 +2129,7 @@
     "SN74LV1T04"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LV1T04"
-   ]
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lv1t08",
@@ -2511,10 +2140,7 @@
     "SN74LV1T08"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LV1T08"
-   ]
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lv1t125",
@@ -2525,10 +2151,7 @@
     "SN74LV1T125"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LV1T125"
-   ]
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lv1t126",
@@ -2539,10 +2162,7 @@
     "SN74LV1T126"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LV1T126"
-   ]
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lv1t32",
@@ -2553,10 +2173,7 @@
     "SN74LV1T32"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LV1T32"
-   ]
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lv1t34",
@@ -2567,10 +2184,7 @@
     "SN74LV1T34"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LV1T34"
-   ]
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lv1t86",
@@ -2581,10 +2195,7 @@
     "SN74LV1T86"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LV1T86"
-   ]
+   "note": "芯祥 VCC 1.6–5.5 V ⊇ TI 1.6 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lv1t87",
@@ -2595,10 +2206,7 @@
     "SN74LV1T87"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74LV1T87"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74lvc00a",
@@ -2609,10 +2217,7 @@
     "SN74LVC00A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC00A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc02a",
@@ -2623,10 +2228,7 @@
     "SN74LVC02A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC02A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc04a",
@@ -2637,10 +2239,7 @@
     "SN74LVC04A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC04A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc06a",
@@ -2651,10 +2250,7 @@
     "SN74LVC06A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC06A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc07a",
@@ -2665,10 +2261,7 @@
     "SN74LVC07A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC07A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc08a",
@@ -2679,10 +2272,7 @@
     "SN74LVC08A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC08A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc10a",
@@ -2693,10 +2283,7 @@
     "SN74LVC10A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC10A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc11",
@@ -2707,10 +2294,7 @@
     "SN74LVC11A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC11A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc125a",
@@ -2721,10 +2305,7 @@
     "SN74LVC125A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC125A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc126a",
@@ -2735,10 +2316,7 @@
     "SN74LVC126A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC126A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc132a",
@@ -2749,10 +2327,7 @@
     "SN74LVC132A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC132A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc14a",
@@ -2763,10 +2338,7 @@
     "SN74LVC14A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC14A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g00",
@@ -2777,10 +2349,7 @@
     "SN74LVC1G00"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G00"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g02",
@@ -2791,10 +2360,7 @@
     "SN74LVC1G02"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G02"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g04",
@@ -2805,10 +2371,7 @@
     "SN74LVC1G04"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G04"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g06",
@@ -2819,10 +2382,7 @@
     "SN74LVC1G06"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G06"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g07",
@@ -2833,10 +2393,7 @@
     "SN74LVC1G07"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G07"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g08",
@@ -2847,10 +2404,7 @@
     "SN74LVC1G08"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G08"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g09",
@@ -2861,10 +2415,7 @@
     "SN74LVC1G09B"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G09"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g10",
@@ -2875,10 +2426,7 @@
     "SN74LVC1G10"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G10"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g11",
@@ -2889,10 +2437,7 @@
     "SN74LVC1G11"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G11"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g125",
@@ -2903,10 +2448,7 @@
     "SN74LVC1G125"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G125"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g126",
@@ -2917,10 +2459,7 @@
     "SN74LVC1G126"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G126"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g132",
@@ -2931,10 +2470,7 @@
     "SN74LVC1G132"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G132"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g14",
@@ -2945,10 +2481,7 @@
     "SN74LVC1G14"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G14"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g16",
@@ -2959,10 +2492,7 @@
     "SN74LVC1G16"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G16"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g17",
@@ -2973,10 +2503,7 @@
     "SN74LVC1G17"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G17"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g240",
@@ -2987,10 +2514,7 @@
     "SN74LVC1G240"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G240"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g27",
@@ -3001,10 +2525,7 @@
     "SN74LVC1G27"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G27"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g32",
@@ -3015,10 +2536,7 @@
     "SN74LVC1G32"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G32"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g332",
@@ -3029,10 +2547,7 @@
     "SN74LVC1G332"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G332"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g34",
@@ -3043,10 +2558,7 @@
     "SN74LVC1G34"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G34"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g38",
@@ -3057,10 +2569,7 @@
     "SN74LVC1G38"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G38"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g57",
@@ -3071,10 +2580,7 @@
     "SN74LVC1G57"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G57"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g58",
@@ -3085,10 +2591,7 @@
     "SN74LVC1G58"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G58"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g86",
@@ -3099,10 +2602,7 @@
     "SN74LVC1G86"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G86"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1g97",
@@ -3113,10 +2613,7 @@
     "SN74LVC1G97"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1G97"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc1gu04",
@@ -3127,10 +2624,7 @@
     "SN74LVC1GU04"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC1GU04"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc244a-em74lvch244a",
@@ -3142,11 +2636,7 @@
     "SN74LVCH244A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC244A",
-    "74LVCH244A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc245a-em74lvch245a",
@@ -3158,11 +2648,7 @@
     "SN74LVCH245A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC245A",
-    "74LVCH245A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc2g04",
@@ -3173,10 +2659,7 @@
     "SN74LVC2G04"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC2G04"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc2g06",
@@ -3187,10 +2670,7 @@
     "SN74LVC2G06"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC2G06"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc2g07",
@@ -3201,10 +2681,7 @@
     "SN74LVC2G07"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC2G07"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc2g14",
@@ -3215,10 +2692,7 @@
     "SN74LVC2G14"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC2G14"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc2g16",
@@ -3229,10 +2703,7 @@
     "SN74LVC2G16"
    ],
    "verdict": "✖",
-   "note": "TI 官网无此料号（两法交叉确认）",
-   "nxp": [
-    "74LVC2G16"
-   ]
+   "note": "TI 官网无此料号（两法交叉确认）"
   },
   {
    "slug": "em74lvc2g17",
@@ -3243,10 +2714,7 @@
     "SN74LVC2G17"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC2G17"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc2g34",
@@ -3257,10 +2725,7 @@
     "SN74LVC2G34"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC2G34"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc2gu04",
@@ -3271,10 +2736,7 @@
     "SN74LVC2GU04"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC2GU04"
-   ]
+   "note": "芯祥 VCC 1.65–5.5 V ⊇ TI 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc32a",
@@ -3285,10 +2747,7 @@
     "SN74LVC32A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC32A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc4245",
@@ -3299,10 +2758,7 @@
     "SN74LVC4245A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.5–5.5 V ⊇ TI VCCA: 4.5 V to 5.5 V; VCCB: 2.7 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC4245A"
-   ]
+   "note": "芯祥 VCC 1.5–5.5 V ⊇ TI VCCA: 4.5 V to 5.5 V; VCCB: 2.7 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc4245a",
@@ -3313,10 +2769,7 @@
     "SN74LVC4245A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.4–5.5 V ⊇ TI VCCA: 4.5 V to 5.5 V; VCCB: 2.7 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC4245A"
-   ]
+   "note": "芯祥 VCC 1.4–5.5 V ⊇ TI VCCA: 4.5 V to 5.5 V; VCCB: 2.7 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc540a",
@@ -3327,10 +2780,7 @@
     "SN74LVC540A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC540A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc541a",
@@ -3341,10 +2791,7 @@
     "SN74LVC541A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC541A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc74a",
@@ -3355,10 +2802,7 @@
     "SN74LVC74A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC74A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc86a",
@@ -3369,10 +2813,7 @@
     "SN74LVC86A"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC86A"
-   ]
+   "note": "芯祥 VCC 1.2–5.5 V ⊇ TI 1.65 V to 3.6 V（全覆盖，drop-in 安全）"
   },
   {
    "slug": "em74lvc8t245-em74lvch8t245",
@@ -3384,11 +2825,7 @@
     "SN74LVCH8T245"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 1.3–5.5 V ⊇ TI VCCA: 1.65 V to 5.5 V; VCCB: 1.65 V to 5.5 V（全覆盖，drop-in 安全）",
-   "nxp": [
-    "74LVC8T245",
-    "74LVCH8T245"
-   ]
+   "note": "芯祥 VCC 1.3–5.5 V ⊇ TI VCCA: 1.65 V to 5.5 V; VCCB: 1.65 V to 5.5 V（全覆盖，drop-in 安全）"
   }
  ],
  "analog": [
