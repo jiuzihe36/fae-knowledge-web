@@ -647,11 +647,15 @@ input[type="search"]:focus, input[type="text"]:focus, select:focus {
 
 .p2p-meta {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 6px 18px;
   margin-top: 8px;
   color: var(--muted);
   font-size: 12px;
+}
+
+.p2p-meta span {
+  white-space: nowrap;
 }
 
 .p2p-meta b {
