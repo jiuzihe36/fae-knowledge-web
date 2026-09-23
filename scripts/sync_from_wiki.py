@@ -87,8 +87,19 @@ def main():
             for pn in pns:
                 models_pkgs.append((pn, "未知"))
         
+        def covered(pn, existing):
+            """跳过裸占位：已有带封装后缀的真实订购码变体时不再补裸名
+            （2026-09-21 清洗策略；否则每次同步会把 244 条占位加回来）"""
+            if pn in existing:
+                return True
+            if '-' in pn:
+                core, grade = pn.split('-', 1)
+                if any(m.startswith(core) and m.endswith('-' + grade) for m in existing):
+                    return True
+            return any(m.startswith(pn) and m != pn for m in existing)
+
         for model, pkg in models_pkgs:
-            if model in have_models:
+            if model in have_models or covered(model, have_models):
                 continue
             new_id = 20000 + len(existing) + new_count
             existing.append({

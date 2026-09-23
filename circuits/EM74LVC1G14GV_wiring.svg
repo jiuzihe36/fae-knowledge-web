@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" font-family="Helvetica,Arial,sans-serif">
+<rect width="720" height="440" fill="#fff"/>
+<text x="360" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#111">EM74LVC1G14GV 使用接线图 · SOT23-5L</text>
+<text x="360" y="52" text-anchor="middle" font-size="12" fill="#666">单路反相器（施密特输入） · VCC 1.65 V to 5.5 V · 左=控制/输入，右=输出</text>
+<line x1="60" y1="78" x2="660" y2="78" stroke="#111" stroke-width="2.5"/>
+<text x="48" y="83" text-anchor="end" font-size="14" font-weight="bold">VCC</text>
+<line x1="60" y1="400" x2="660" y2="400" stroke="#111" stroke-width="2.5"/>
+<text x="48" y="405" text-anchor="end" font-size="14" font-weight="bold">GND</text>
+<text x="365" y="118" text-anchor="middle" font-size="14" font-weight="bold">EM74LVC1G14GV · SOT23-5L</text>
+<rect x="300" y="130" width="130" height="240" rx="5" fill="#f7f9fb" stroke="#111" stroke-width="2.5"/>
+<text x="308" y="214" font-size="12" text-anchor="start">A (2)</text>
+<line x1="300" y1="210" x2="170" y2="210" stroke="#111" stroke-width="2"/>
+<text x="52" y="206" font-size="13" font-weight="bold">A →</text>
+<text x="308" y="269" font-size="12" text-anchor="start">NC (1)</text>
+<text x="308" y="324" font-size="12" text-anchor="start">GND (3)</text>
+<line x1="300" y1="320" x2="150" y2="320" stroke="#111" stroke-width="2"/>
+<line x1="150" y1="320" x2="150" y2="400" stroke="#111" stroke-width="2"/>
+<text x="422" y="214" font-size="12" text-anchor="end">VCC (5)</text>
+<line x1="430" y1="210" x2="520" y2="210" stroke="#111" stroke-width="2"/>
+<line x1="520" y1="210" x2="520" y2="78" stroke="#111" stroke-width="2"/>
+<text x="422" y="324" font-size="12" text-anchor="end">Y (4)</text>
+<line x1="430" y1="320" x2="560" y2="320" stroke="#111" stroke-width="2"/>
+<text x="568" y="316" font-size="13" font-weight="bold">→ Y</text>
+<circle cx="330" cy="283" r="4.5" fill="none" stroke="#111" stroke-width="2"/>
+<line x1="640" y1="78" x2="640" y2="195" stroke="#111" stroke-width="2"/>
+<line x1="631" y1="195" x2="649" y2="195" stroke="#111" stroke-width="2.5"/>
+<line x1="631" y1="205" x2="649" y2="205" stroke="#111" stroke-width="2.5"/>
+<line x1="640" y1="205" x2="640" y2="400" stroke="#111" stroke-width="2"/>
+<text x="600" y="118" text-anchor="end" font-size="13">C 100nF</text>
+</svg>

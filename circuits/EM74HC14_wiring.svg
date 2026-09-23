@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" font-family="Helvetica,Arial,sans-serif">
+<rect width="720" height="440" fill="#fff"/>
+<text x="360" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#111">EM74HC14 使用接线图 · SOP-14 · 典型应用： RC 振荡器</text>
+<text x="360" y="52" text-anchor="middle" font-size="12" fill="#666">例: R=100kΩ, C=10nF → f≈900Hz · 左=输入，右=输出，反馈绕底</text>
+<line x1="60" y1="78" x2="660" y2="78" stroke="#111" stroke-width="2.5"/>
+<text x="48" y="83" text-anchor="end" font-size="14" font-weight="bold">VCC</text>
+<line x1="60" y1="400" x2="660" y2="400" stroke="#111" stroke-width="2.5"/>
+<text x="48" y="405" text-anchor="end" font-size="14" font-weight="bold">GND</text>
+<rect x="290" y="140" width="150" height="220" rx="5" fill="#f7f9fb" stroke="#111" stroke-width="2.5"/>
+<text x="365" y="172" text-anchor="middle" font-size="14" font-weight="bold">EM74HC14 · SOP-14</text>
+<text x="365" y="196" text-anchor="middle" font-size="11" fill="#666">未用输入(3,5,9,11,13) → 接GND</text>
+<!-- 行栅格: 230 / 310 左右对齐 -->
+<text x="298" y="234" font-size="12">1A (1)</text>
+<text x="432" y="234" text-anchor="end" font-size="12">1Y (2)</text>
+<text x="298" y="314" font-size="12">GND (7)</text>
+<text x="432" y="314" text-anchor="end" font-size="12">VCC (14)</text>
+<!-- 行1左: 1A -> 节点, R上到VCC -->
+<line x1="290" y1="230" x2="150" y2="230" stroke="#111" stroke-width="2"/>
+<circle cx="150" cy="230" r="4" fill="#111"/>
+<line x1="150" y1="78" x2="150" y2="164" stroke="#111" stroke-width="2"/>
+<rect x="143" y="164" width="14" height="30" fill="#fff" stroke="#111" stroke-width="2"/>
+<line x1="150" y1="194" x2="150" y2="230" stroke="#111" stroke-width="2"/>
+<text x="166" y="186" font-size="13">R 100kΩ</text>
+<!-- 行1右: 1Y 出 + 反馈分支 -->
+<line x1="440" y1="230" x2="560" y2="230" stroke="#111" stroke-width="2"/>
+<text x="466" y="223" font-size="13" font-weight="bold">OUT</text>
+<line x1="560" y1="230" x2="560" y2="300" stroke="#111" stroke-width="2"/>
+<path d="M560,300 A10,10 0 0,1 560,320" fill="none" stroke="#111" stroke-width="2"/>
+<line x1="560" y1="320" x2="560" y2="378" stroke="#111" stroke-width="2"/>
+<!-- 行2左: GND 下轨 -->
+<line x1="290" y1="310" x2="245" y2="310" stroke="#111" stroke-width="2"/>
+<line x1="245" y1="310" x2="245" y2="400" stroke="#111" stroke-width="2"/>
+<!-- 行2右: VCC 上轨 (走x=590避开1Y线) -->
+<line x1="440" y1="310" x2="590" y2="310" stroke="#111" stroke-width="2"/>
+<line x1="590" y1="310" x2="590" y2="78" stroke="#111" stroke-width="2"/>
+<!-- 反馈绕底 y=378: 凸起越过GND竖线x=245 -->
+<line x1="560" y1="378" x2="342" y2="378" stroke="#111" stroke-width="2"/>
+<line x1="330" y1="378" x2="265" y2="378" stroke="#111" stroke-width="2"/>
+<path d="M265,378 A20,20 0 0,0 225,378" fill="none" stroke="#111" stroke-width="2"/>
+<line x1="225" y1="378" x2="150" y2="378" stroke="#111" stroke-width="2"/>
+<line x1="150" y1="378" x2="150" y2="230" stroke="#111" stroke-width="2"/>
+<circle cx="150" cy="230" r="4" fill="#111"/>
+<line x1="330" y1="371" x2="330" y2="385" stroke="#111" stroke-width="2.5"/>
+<line x1="342" y1="371" x2="342" y2="385" stroke="#111" stroke-width="2.5"/>
+<text x="360" y="374" font-size="13">C 10nF</text>
+<text x="172" y="372" font-size="11" fill="#444">反馈</text>
+<!-- 去耦 -->
+<line x1="640" y1="78" x2="640" y2="195" stroke="#111" stroke-width="2"/>
+<line x1="631" y1="195" x2="649" y2="195" stroke="#111" stroke-width="2.5"/>
+<line x1="631" y1="205" x2="649" y2="205" stroke="#111" stroke-width="2.5"/>
+<line x1="640" y1="205" x2="640" y2="400" stroke="#111" stroke-width="2"/>
+<text x="648" y="250" font-size="13">C1 100nF</text>
+</svg>

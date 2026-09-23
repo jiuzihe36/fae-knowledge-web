@@ -4,7 +4,7 @@
 > 一个可搜索、可筛选、带引脚图的芯片型号速查站点。
 
 [![pages](https://img.shields.io/badge/Cloudflare%20Pages-在线-F38020)](https://logic-qbu.pages.dev)
-[![数据](https://img.shields.io/badge/型号-920%20条-2ea44f)]()
+[![数据](https://img.shields.io/badge/型号-670%20条-2ea44f)]()
 
 ---
 
@@ -29,7 +29,7 @@
 - 📌 **引脚图**：每个型号配真实规格书引脚图，悬停/点击放大
 - 📊 **电气参数**：VCC 范围、逻辑类型、温度范围、封装尺寸
 
-**数据规模**：920 条型号记录 · 204 张引脚图 · 13 个产品系列。
+**数据规模**：670 条型号记录 · 204 张引脚图 · 13 个产品系列。
 
 ---
 
@@ -60,7 +60,7 @@
 ├── app.js              # 搜索/筛选/引脚弹窗逻辑
 ├── style.css           # 样式
 ├── data/
-│   └── products.json   # 920 条型号数据（自动生成）
+│   └── products.json   # 670 条型号数据（自动生成）
 ├── pins/               # 204 张引脚图
 ├── scripts/
 │   ├── sync_from_wiki.py   # wiki → products.json 同步
@@ -96,7 +96,7 @@ python3 -m http.server 8000
 
 ## 🔒 数据完整性
 
-- 920 条记录，id 全唯一、无重复
+- 670 条记录，id 全唯一、无重复
 - 全部型号有电气参数、封装、引脚图
 - 引脚图引用可访问性逐张校验通过
 - 验证脚本：`scripts/verify_product.py`（数据 + 引用 + 唯一性三盲 API 级验收）
