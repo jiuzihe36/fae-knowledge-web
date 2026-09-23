@@ -58,8 +58,11 @@ fi
 
 # ---------- 3. Cloudflare Pages 部署（发布）----------
 echo ""
-echo "🎯 Step 1.5: 注入官方应用域(applications)..."
-python3 "$DIR/scripts/inject_applications.py" 2>&1 | tail -3
+echo "🎯 Step 1.5: 应用域注入已停用 (2026-09-24)"
+echo "  原因: inject_applications.py 会把 40 条中文精编 applications 覆盖为"
+echo "  含 ◼ PUA/题头噪音的 PDF 原文 (与全库 630 条中文口径不一致)。"
+echo "  如需恢复, 先清洗 raw_apps_authoritative.json 再启用本步。"
+# python3 "$DIR/scripts/inject_applications.py" 2>&1 | tail -3
 
 echo ""
 echo "📤 Step 2: 提交并推送 GitHub + 部署 Cloudflare (双端)..."
