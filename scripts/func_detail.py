@@ -74,8 +74,14 @@ def parse(title):
         core = '模拟开关'
     elif 'translator' in tl or 'translat' in tl:
         core = '电平转换器'
+    elif 'bus switch' in tl or 'bus-switch' in tl:
+        core = '总线开关'
     elif 'gate' in tl:
         core = '逻辑门'
+    # 核心词表没命中时禁止吐"路数孤字"（如 4-bit bus switch → "四"），
+    # 回退整条标题，宁可英文也不要残缺中文（2026-09-23）
+    if not core:
+        return t[:60]
     out = roads + width + core
     if feats:
         out += '（' + '、'.join(feats) + '）'

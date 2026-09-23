@@ -26775,8 +26775,8 @@
   "model": "EM74CBTLV3125D",
   "family": "逻辑芯片",
   "series": "74CBT",
-  "function": "锁存器",
-  "description": "四",
+  "function": "模拟开关",
+  "description": "四路总线开关",
   "package": "SOP-14L",
   "package_size": "8.450-8.850 × 5.800-6.200 × Max 1.750 mm",
   "voltage": "2.3 V to 3.6 V",
@@ -26910,15 +26910,15 @@
    "数据显示锁存",
    "状态保持电路"
   ],
-  "function_detail": "四"
+  "function_detail": "四路总线开关"
  },
  {
   "id": 9563,
   "model": "EM74CBTLV3125PW",
   "family": "逻辑芯片",
   "series": "74CBT",
-  "function": "锁存器",
-  "description": "四",
+  "function": "模拟开关",
+  "description": "四路总线开关",
   "package": "TSSOP-14L",
   "package_size": "body width 4.4 mm",
   "voltage": "2.3 V to 3.6 V",
@@ -27052,15 +27052,15 @@
    "数据显示锁存",
    "状态保持电路"
   ],
-  "function_detail": "四"
+  "function_detail": "四路总线开关"
  },
  {
   "id": 9565,
   "model": "EM74CBTLV3126D",
   "family": "逻辑芯片",
   "series": "74CBT",
-  "function": "锁存器",
-  "description": "四",
+  "function": "模拟开关",
+  "description": "四路总线开关",
   "package": "SOP-14L",
   "package_size": "8.450-8.850 × 5.800-6.200 × Max 1.750 mm",
   "voltage": "2.3 V to 3.6 V",
@@ -27194,15 +27194,15 @@
    "数据显示锁存",
    "状态保持电路"
   ],
-  "function_detail": "四"
+  "function_detail": "四路总线开关"
  },
  {
   "id": 9566,
   "model": "EM74CBTLV3126PW",
   "family": "逻辑芯片",
   "series": "74CBT",
-  "function": "锁存器",
-  "description": "四",
+  "function": "模拟开关",
+  "description": "四路总线开关",
   "package": "TSSOP-14L",
   "package_size": "body width 4.4 mm",
   "voltage": "2.3 V to 3.6 V",
@@ -27336,7 +27336,7 @@
    "数据显示锁存",
    "状态保持电路"
   ],
-  "function_detail": "四"
+  "function_detail": "四路总线开关"
  },
  {
   "id": 9567,
@@ -58704,7 +58704,7 @@
   "model": "EM74HCS00D",
   "family": "逻辑芯片",
   "series": "74HCS",
-  "function": "锁存器",
+  "function": "与非门",
   "description": "四路2输入与非门（施密特输入）",
   "package": "SOP-14L",
   "package_size": "8.450-8.850 × 5.800-6.200 × Max 1.750 mm",
@@ -58900,7 +58900,7 @@
   "model": "EM74HCS00PW",
   "family": "逻辑芯片",
   "series": "74HCS",
-  "function": "锁存器",
+  "function": "与非门",
   "description": "四路2输入与非门（施密特输入）",
   "package": "TSSOP-14L",
   "package_size": "body width 4.4 mm",
@@ -59096,7 +59096,7 @@
   "model": "EM74HCS02D",
   "family": "逻辑芯片",
   "series": "74HCS",
-  "function": "锁存器",
+  "function": "或非门",
   "description": "四路2输入或非门（施密特输入）",
   "package": "SOP-14L",
   "package_size": "8.450-8.850 × 5.800-6.200 × Max 1.750 mm",
@@ -59292,7 +59292,7 @@
   "model": "EM74HCS02PW",
   "family": "逻辑芯片",
   "series": "74HCS",
-  "function": "锁存器",
+  "function": "或非门",
   "description": "四路2输入或非门（施密特输入）",
   "package": "TSSOP-14L",
   "package_size": "body width 4.4 mm",
