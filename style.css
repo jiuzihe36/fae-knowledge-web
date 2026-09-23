@@ -982,6 +982,22 @@ tr.cmp-diff td:first-child {
 
 .ti-pn a:hover { text-decoration: underline; }
 
+.ti-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--accent-ink);
+  background: var(--accent2);
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin-right: 6px;
+}
+
+.ti-nxp-line {
+  margin-top: 4px;
+}
+
 .ti-plain {
   font-weight: 600;
   word-break: break-word;

@@ -774,7 +774,8 @@
     if (rec.kind === "logic") {
       const tiList = Array.isArray(e.ti) ? e.ti : [];
       if (!tiList.length) return '<div class="ti-row"><div class="ti-empty">暂无 TI 对应型号</div></div>';
-      return tiList.map(function (pn) {
+      const nxpList = Array.isArray(e.nxp) ? e.nxp : [];
+      return tiList.map(function (pn, idx) {
         const st = tiStatus(p2pIndex, pn);
         const evi = tiEvidence(p2pIndex, pn);
         const href = pnHref(p2pIndex, pn);
@@ -784,6 +785,11 @@
         const vcc = (e.vcc_em || e.vcc_ti)
           ? '<div class="ti-evi">VCC 芯祥 ' + esc(text(e.vcc_em)) + " / TI " + esc(text(e.vcc_ti)) + "</div>"
           : "";
+        const nxpPn = nxpList[idx];
+        const nxpHtml = nxpPn
+          ? '<div class="ti-line ti-nxp-line"><span class="ti-tag">NXP</span><span class="ti-pn">' + esc(nxpPn) + "</span>" +
+            '<a class="ti-evi" href="https://www.nexperia.com/products/' + esc(nxpPn.toLowerCase()) + '/" target="_blank" rel="noopener">查证 ↗</a></div>'
+          : "";
         return [
           '<div class="ti-row">',
           '<div class="ti-line"><span class="ti-pn">' + pnHtml + "</span>",
@@ -791,6 +797,7 @@
           verdictHtml,
           "</div>",
           vcc,
+          nxpHtml,
           noteHtml,
           '<div class="ti-evi">证据：' + evidenceHtml(evi) + "</div>",
           "</div>"
