@@ -26015,7 +26015,7 @@
   "series": "74CBT",
   "function": "模拟开关",
   "description": "模拟开关",
-  "package": "SOP-14L",
+  "package": "SOP-16L",
   "package_size": "8.450-8.850 × 5.800-6.200 × Max 1.750 mm",
   "voltage": "1.5 V to 5.5 V",
   "pin_image": "./pins/181.png",
@@ -143741,7 +143741,7 @@
   "logic_type": "不适用(模拟开关/电平转换)",
   "temp_range": "-40 °C to +85 °C",
   "source_document_id": 197,
-  "source_label": "EMS4100_Product_DS_V1.4.pdf",
+  "source_label": "EMS4000_Product_DS_V1.7.pdf",
   "specs": [
    {
     "param": "VCC supply voltage",

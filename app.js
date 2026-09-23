@@ -46,6 +46,11 @@
   }
 
   /* 状态推导（不改 products.json）：Q100 优先，其次 Draft，其余 Product */
+  // 电路图文件名 = 型号原样 (已与 circuits/ 下文件逐一对齐); 仅过滤路径穿越字符
+  function safeCircuitName(model) {
+    return String(model || "").replace(/[\/\\]/g, "_");
+  }
+
   function deriveStatus(item) {
     if (!item) return "Product";
     if (/-Q100/i.test(String(item.model || ""))) return "Q100";
@@ -502,6 +507,8 @@
     tiCard: document.getElementById("tiCard"),
     tiNote: document.getElementById("tiNote"),
     tiList: document.getElementById("tiList"),
+    circuitWrap: document.getElementById("circuitWrap"),
+    circuitImg: document.getElementById("circuitImg"),
     pinWrap: document.getElementById("pinWrap"),
     pinImg: document.getElementById("pinImg"),
     specTable: document.getElementById("specTable").querySelector("tbody"),
@@ -691,6 +698,23 @@
     ].join("");
 
     renderTiCard(item);
+
+    // 应用电路图: circuits/{model}_wiring.svg (670 款全量, 引脚与走向取自规格书)
+    const circuitUrl = new URL("./circuits/" + safeCircuitName(item.model) + "_wiring.svg", document.baseURI).href;
+    const circuitSrc = item.circuit_svg
+      ? new URL(item.circuit_svg, document.baseURI).href
+      : circuitUrl;
+    if (el.circuitWrap && el.circuitImg) {
+      if (item.circuit_svg !== null) {
+        el.circuitWrap.classList.remove("hidden");
+        el.circuitImg.src = circuitSrc;
+        el.circuitImg.alt = item.model + " 应用电路图";
+      } else {
+        el.circuitWrap.classList.add("hidden");
+        el.circuitImg.src = "";
+        el.circuitImg.alt = "Application circuit";
+      }
+    }
 
     if (item.pin_image) {
       el.pinWrap.classList.remove("hidden");
@@ -968,11 +992,12 @@
 
   /* ---------- 引脚图灯箱 ---------- */
 
-  function openLightbox() {
-    if (!el.pinImg.src) return;
-    el.lightboxImg.src = el.pinImg.src;
-    el.lightboxImg.alt = el.pinImg.alt;
-    el.lightboxCap.textContent = el.pinImg.alt;
+  function openLightbox(img) {
+    const target = img || el.pinImg;
+    if (!target.src) return;
+    el.lightboxImg.src = target.src;
+    el.lightboxImg.alt = target.alt;
+    el.lightboxCap.textContent = target.alt;
     el.lightbox.classList.remove("hidden");
     el.lightbox.setAttribute("aria-hidden", "false");
   }
@@ -1059,7 +1084,9 @@
     el.relatedDoc.addEventListener("click", relatedClick);
     el.relatedFunc.addEventListener("click", relatedClick);
 
-    el.pinImg.addEventListener("click", openLightbox);
+    // 空值保护: 浏览器缓存旧版 index.html 时新元素为 null, 直接 addEventListener 会抛错中断整个 init
+    if (el.pinImg) el.pinImg.addEventListener("click", function () { openLightbox(el.pinImg); });
+    if (el.circuitImg) el.circuitImg.addEventListener("click", function () { openLightbox(el.circuitImg); });
     el.lightboxClose.addEventListener("click", closeLightbox);
     el.lightbox.addEventListener("click", function (event) {
       if (event.target === el.lightbox || event.target.classList.contains("lightbox-mask") || event.target === el.lightboxImg) {
