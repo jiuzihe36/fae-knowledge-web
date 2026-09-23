@@ -178,6 +178,25 @@ def main() -> None:
         if dups:
             errors.append(f"{name} duplicate slug: {dups}")
 
+    # --- NXP/Nexperia 对标合并 (side-table: data/p2p_nxp.json) ---
+    # wiki 源表无 NXP 列, 该数据由 18f9f1d 直接写入 p2p.json; 2026-09-23 起
+    # 固化为 side-table 并在此合并, 否则每次 regen 会把 165 条 nxp 刷掉。
+    # side-table 缺失或有漏条 → 计入 errors, 对账失败阻断部署。
+    nxp_path = OUT.parent / "p2p_nxp.json"
+    if nxp_path.exists():
+        nxp_tbl = json.loads(nxp_path.read_text(encoding="utf-8"))
+        hit = 0
+        for e in logic:
+            if e["slug"] in nxp_tbl:
+                e["nxp"] = nxp_tbl[e["slug"]]
+                hit += 1
+        miss = [e["slug"] for e in logic if "nxp" not in e]
+        if miss:
+            errors.append(f"nxp side-table 缺 {len(miss)} 条: {miss[:5]}")
+        print(f"[gen_p2p] nxp    : merged {hit}/{counts['logic']}")
+    else:
+        errors.append(f"缺 {nxp_path.name} (NXP 对标 side-table)")
+
     # --- 输出 ---
     fm = re.search(r"^updated:\s*(\S+)", text, re.M)
     generated = fm.group(1) if fm else date.today().isoformat()
