@@ -564,6 +564,28 @@
     /* 目录树内联筛选：命中时自动展开路径，并高亮 */
     if (el.pageBody) el.pageBody.addEventListener("input", function (e) {
       if (e.target.id !== "treeFilter") return;
+      /* 全折叠时型号行根本没渲染进 DOM，筛选前先把目录展开到功能级，
+         让型号行进 DOM（已展开则不破坏用户当前层级） */
+      if (CATALOG) {
+        var anyOpen = Object.keys(openCats).length || Object.keys(openProcs).length ||
+                      Object.keys(openSeries).length || Object.keys(openFuncs).length ||
+                      Object.keys(openSers).length;
+        if (!anyOpen) {
+          CATALOG.cats.forEach(function (c) {
+            openCats[c.key] = true;
+            (c.procs || []).forEach(function (p) {
+              if (p.name) openProcs[c.key + "|" + p.name] = true;
+              (p.series || []).forEach(function (s) {
+                openSeries[c.key + "|" + s.name] = true;
+                (s.funcs || []).forEach(function (f) {
+                  openFuncs[c.key + "|" + s.name + ">" + f.name] = true;
+                });
+              });
+            });
+          });
+          renderCatalog();
+        }
+      }
       var q = norm(e.target.value);
       var info = document.getElementById("treeFilterInfo");
       var root = el.catTree;
