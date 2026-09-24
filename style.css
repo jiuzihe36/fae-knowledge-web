@@ -1497,3 +1497,18 @@ tr.cmp-diff td:first-child {
 .comp-p2p-em { font-size: 15px; margin: 6px 0 4px; }
 .comp-p2p-competitors { font-size: 12px; color: var(--muted-foreground, #7a7168); }
 .badge-ok { background: #6d8b5e; color: #fff; }
+
+
+/* ---------- 参数级 P2P 对比 ---------- */
+.comp-blk { border: 1px solid #ece3d6; border-radius: 8px; padding: 10px 12px; margin-bottom: 10px; background: #fffdfa; }
+.comp-blk-head { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+.comp-param-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.comp-param-table th { background: #f5efe6; text-align: left; padding: 6px 8px; border-bottom: 2px solid #e0d5c5; white-space: nowrap; }
+.comp-param-table td { padding: 5px 8px; border-bottom: 1px solid #f2ece4; vertical-align: top; }
+.comp-param-table tr:hover td { background: #fdfbf8; }
+.comp-sym { color: #a89680; font-size: 11px; }
+.v-ok { color: #4d7a3f; }
+.v-diff { color: #b5603a; font-weight: 600; }
+.v-muted { color: #a89680; }
+.badge-warn { background: #c07a3e; color: #fff; }
+.badge-muted { background: #a89680; color: #fff; }

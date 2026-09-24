@@ -799,6 +799,8 @@
 
   /* ---------- 竞品对标（圣邦/中微爱芯/帝奥微） ---------- */
   var compP2P = null;
+  var paramData = null;
+  var paramIndex = null;
   var compP2PIndex = null;   /* family -> item */
   var compByModel = null;    /* 芯祥型号 -> item */
 
@@ -869,15 +871,75 @@
 
   function compVendorName(v) { return COMP_VN[v] || v; }
 
-  /* 竞品料号 → 芯祥替代（点型号可直接跳到详情） */
+  /* 单个竞品料号的参数对比块 */
+  function fmtLim(min, max, unit) {
+    if (min === null && max === null) return "—";
+    var lo = (min === null || min === undefined) ? "" : String(min);
+    var hi = (max === null || max === undefined) ? "" : String(max);
+    if (lo && hi) return lo + " ~ " + hi + (unit || "");
+    if (hi) return "≤ " + hi + (unit || "");
+    return "≥ " + lo + (unit || "");
+  }
+
+  function verdictBadge(v) {
+    var cls = v === "参数一致" ? "badge-ok" : (v === "有差异" ? "badge-warn" : "badge-muted");
+    return '<span class="badge ' + cls + '">' + esc(v || "—") + "</span>";
+  }
+
+  function compParamBlock(c, pr) {
+    var html = '<div class="comp-blk">';
+    html += '<div class="comp-blk-head">' +
+      '<span class="comp-badge comp-' + esc(c.v) + '">' + esc(compVendorName(c.v)) + "</span> " +
+      '<span class="mono"><b>' + esc(c.pn) + "</b></span>";
+    if (pr) html += " " + verdictBadge(pr.verdict);
+    html += '<a class="comp-dl" href="' + esc(c.url || "") + '" target="_blank" rel="noopener" style="margin-left:8px">规格书 ↗</a>';
+    html += "</div>";
+    if (!pr || !pr.params || !pr.params.length) {
+      html += '<div class="ti-note">该型号暂无提取到的参数对比（可点规格书人工核对）</div></div>';
+      return html;
+    }
+    html += '<table class="comp-param-table"><thead><tr>' +
+      "<th>参数</th><th>芯祥 " + esc(pr.em) + "</th><th>" + esc(compVendorName(c.v)) + " " + esc(c.pn) + "</th><th>判定</th>" +
+      "</tr></thead><tbody>";
+    pr.params.forEach(function (p_) {
+      var emTxt = p_.em_val || p_.em_raw || "—";
+      var cTxt = (p_.comp_param ? esc(p_.comp_param) + " " : "") + fmtLim(p_.comp_min, p_.comp_max, "");
+      var v = p_.verdict || "";
+      var vCls = v === "一致" ? "v-ok" : (v === "类别不同" ? "v-muted" : "v-diff");
+      html += "<tr>" +
+        "<td>" + esc(p_.label) + ' <span class="mono comp-sym">' + esc(p_.sym) + "</span></td>" +
+        '<td class="mono">' + esc(emTxt) + "</td>" +
+        '<td class="mono">' + cTxt + "</td>" +
+        '<td class="' + vCls + '">' + esc(v) + "</td>" +
+        "</tr>";
+    });
+    html += "</tbody></table></div>";
+    return html;
+  }
+
+
+  /* 竞品料号 → 芯祥替代（点型号可直接跳到详情，带参数判定徽标） */
   function emForCompPn(pn) {
     if (!compP2PIndex) return '<span class="comp-none">—</span>';
     var f = canonFam(famOf(pn));
     var it = compP2PIndex.byFamily[f];
     if (!it || !it.em || !it.em.length) return '<span class="comp-none">—</span>';
-    return it.em.map(function (m) {
+    var links = it.em.map(function (m) {
       return '<a class="comp-em-link mono" href="#" data-model="' + esc(m) + '">' + esc(m) + "</a>";
     }).join(" ");
+    /* 附参数判定：取该竞品料号下最好的一个判定 */
+    var best = "";
+    if (paramData && Array.isArray(paramData.items)) {
+      var rank = { "参数一致": 3, "有差异": 2, "需核对": 1 };
+      (it.em || []).forEach(function (m) {
+        (paramIndex[normPn(m)] || []).forEach(function (pr) {
+          if (pr.comp_pn === pn && pr.comp_vendor === it.comps[0].v) {
+            if ((rank[pr.verdict] || 0) > (rank[best] || 0)) best = pr.verdict;
+          }
+        });
+      });
+    }
+    return links + (best ? " " + verdictBadge(best) : "");
   }
 
 
@@ -897,6 +959,12 @@
       return;
     }
     var html = "";
+    /* 该型号的参数级对比（按竞品料号索引） */
+    var pmap = Object.create(null);
+    var pkey = normPn(item.model);
+    (paramIndex && paramIndex[pkey] ? paramIndex[pkey] : []).forEach(function (pr) {
+      pmap[pr.comp_vendor + "|" + pr.comp_pn] = pr;
+    });
     items.forEach(function (it) {
       var comps = Array.isArray(it.comps) ? it.comps : [];
       if (!comps.length) return;
@@ -906,16 +974,11 @@
       if (it.em_pkg && it.em_pkg.length) html += '<span class="ti-note">封装可选 ' + esc(it.em_pkg.join("、")) + "</span>";
       html += "</div>";
       html += '<div class="comp-same">同功能族：<span class="mono">' + esc(it.family) + "</span>（" + comps.length + " 个竞品料号）</div>";
-      html += '<table class="comp-p2p-table"><thead><tr><th>厂商</th><th>竞品料号</th><th>分类</th><th>规格书</th></tr></thead><tbody>';
       comps.forEach(function (c) {
-        html += "<tr>" +
-          '<td><span class="comp-badge comp-' + esc(c.v) + '">' + esc(compVendorName(c.v)) + "</span></td>" +
-          '<td class="mono"><b>' + esc(c.pn) + "</b></td>" +
-          "<td>" + esc(c.cat || "") + "</td>" +
-          '<td><a class="comp-dl" href="' + esc(c.url || "") + '" target="_blank" rel="noopener">规格书 ↗</a></td>' +
-          "</tr>";
+        var pr = pmap[c.v + "|" + c.pn];
+        html += compParamBlock(c, pr);
       });
-      html += "</tbody></table></div>";
+      html += "</div>";
     });
     el.compList.innerHTML = html || '<div class="ti-empty">暂无该型号的竞品对标数据</div>';
   }
@@ -1490,6 +1553,24 @@
     el.compResults.innerHTML = html;
   }
 
+  function loadParams() {
+    fetch("./data/p2p_params.json")
+      .then(function (response) {
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        return response.json();
+      })
+      .then(function (data) {
+        paramData = data && typeof data === "object" ? data : null;
+        paramIndex = Object.create(null);
+        (paramData && Array.isArray(paramData.items) ? paramData.items : []).forEach(function (it) {
+          var k = normPn(it.em);
+          if (!paramIndex[k]) paramIndex[k] = [];
+          paramIndex[k].push(it);
+        });
+      })
+      .catch(function () { paramData = null; paramIndex = null; });
+  }
+
   function loadCompP2P() {
     fetch("./data/p2p_competitor.json")
       .then(function (response) {
@@ -1566,4 +1647,5 @@
   loadP2P();
   loadComp();
   loadCompP2P();
+  loadParams();
 })();
