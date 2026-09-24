@@ -903,6 +903,26 @@
     bind();
     bindTree();
     boot();
+    setupBackToTop();
+  }
+
+  /* 回到顶部：目录树/栏目页滚动超过一屏时出现 */
+  function setupBackToTop() {
+    var btn = document.getElementById("toTop");
+    if (!btn) return;
+    var ticking = false;
+    function update() {
+      var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+      btn.classList.toggle("show", y > 600);
+      ticking = false;
+    }
+    window.addEventListener("scroll", function () {
+      if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
+    }, { passive: true });
+    btn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    update();
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
