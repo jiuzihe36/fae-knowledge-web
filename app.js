@@ -1492,7 +1492,7 @@
   var compVendor = "";
   var compTimer = null;
   var compCat = "";
-  var COMP_VN = { SGM: "圣邦", AiP: "中微爱芯", DIOO: "帝奥微" };
+  var COMP_VN = { SGM: "圣邦", AiP: "中微爱芯", DIOO: "帝奥微", TI: "TI", NXP: "NXP" };
 
   function compFillCats() {
     if (!compData) return;
