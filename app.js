@@ -485,6 +485,13 @@
     viewList: document.getElementById("viewList"),
     viewSearch: document.getElementById("viewSearch"),
     viewCompare: document.getElementById("viewCompare"),
+    viewComp: document.getElementById("viewComp"),
+    compVendorTabs: document.getElementById("compVendorTabs"),
+    compQuery: document.getElementById("compQuery"),
+    compCat: document.getElementById("compCat"),
+    compCount: document.getElementById("compCount"),
+    compResults: document.getElementById("compResults"),
+    compTotal: document.getElementById("compTotal"),
     q: document.getElementById("q"),
     fFunction: document.getElementById("fFunction"),
     fSeries: document.getElementById("fSeries"),
@@ -533,7 +540,7 @@
   /* ---------- 视图切换 ---------- */
 
   function switchView(name) {
-    const views = { list: el.viewList, search: el.viewSearch, compare: el.viewCompare };
+    const views = { list: el.viewList, search: el.viewSearch, compare: el.viewCompare, comp: el.viewComp };
     Object.keys(views).forEach(function (key) {
       const active = key === name;
       views[key].classList.toggle("hidden", !active);
@@ -1223,6 +1230,89 @@
       });
   }
 
+  /* ---------- 竞品规格书视图 ---------- */
+  var compData = null;
+  var compVendor = "";
+  var compTimer = null;
+  var compCat = "";
+  var COMP_VN = { SGM: "圣邦", AiP: "中微爱芯", DIOO: "帝奥微" };
+
+  function compFillCats() {
+    if (!compData) return;
+    var seen = {};
+    compData.forEach(function (r) {
+      if (compVendor && r.v !== compVendor) return;
+      seen[r.c] = 1;
+    });
+    var cats = Object.keys(seen).sort();
+    var html = '<option value="">全部分类</option>';
+    cats.forEach(function (c) {
+      html += '<option value="' + esc(c) + '">' + esc(c) + " (" + (byCat(c)) + ")</option>";
+    });
+    el.compCat.innerHTML = html;
+    function byCat(c) {
+      var n = 0;
+      compData.forEach(function (r) { if (r.c === c && (!compVendor || r.v === compVendor)) n++; });
+      return n;
+    }
+  }
+
+  function renderComp() {
+    if (!compData) {
+      el.compResults.innerHTML = '<div class="empty">加载失败或暂无数据</div>';
+      return;
+    }
+    var kw = (el.compQuery.value || "").trim().toLowerCase();
+    var rows = compData.filter(function (r) {
+      if (compVendor && r.v !== compVendor) return false;
+      if (compCat && r.c !== compCat) return false;
+      if (kw) {
+        var hay = (r.p + " " + r.c + " " + (r.d || "") + " " + (r.k || "")).toLowerCase();
+        if (hay.indexOf(kw) < 0) return false;
+      }
+      return true;
+    });
+    el.compCount.textContent = "命中 " + rows.length + " 条" + (rows.length > 300 ? "（仅显示前 300 条，请继续缩小范围）" : "");
+    if (!rows.length) {
+      el.compResults.innerHTML = '<div class="empty">没有匹配的规格书</div>';
+      return;
+    }
+    var html = '<table class="comp-table"><thead><tr>' +
+      "<th>厂商</th><th>型号</th><th>分类</th><th>功能描述</th><th>封装</th><th>大小</th><th>规格书</th>" +
+      "</tr></thead><tbody>";
+    rows.slice(0, 300).forEach(function (r) {
+      html += "<tr>" +
+        '<td><span class="comp-badge comp-' + esc(r.v) + '">' + esc(COMP_VN[r.v] || r.v) + "</span></td>" +
+        '<td class="mono"><b>' + esc(r.p) + "</b></td>" +
+        "<td>" + esc(r.c) + "</td>" +
+        "<td>" + esc(r.d || "-") + "</td>" +
+        '<td class="mono">' + esc(r.k || "-") + "</td>" +
+        "<td>" + (r.s ? r.s + " MB" : "-") + "</td>" +
+        '<td><a class="comp-dl" href="' + esc(r.u) + '" target="_blank" rel="noopener">官网下载 ↗</a></td>' +
+        "</tr>";
+    });
+    html += "</tbody></table>";
+    el.compResults.innerHTML = html;
+  }
+
+  function loadComp() {
+    fetch("./data/competitor_index.json")
+      .then(function (response) {
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        return response.json();
+      })
+      .then(function (data) {
+        compData = Array.isArray(data) ? data : [];
+        el.compTotal.textContent = compData.length;
+        compFillCats();
+        renderComp();
+      })
+      .catch(function () {
+        compData = null;
+        renderComp();
+      });
+  }
+
   // 启动时按时间（或已存的手动选择）应用主题
   applyTheme(getStoredTheme());
 
@@ -1231,9 +1321,31 @@
     if (getStoredTheme() === "auto") applyTheme("auto");
   }, 60 * 1000);
 
+  el.compVendorTabs.addEventListener("click", function (event) {
+    var btn = event.target.closest(".comp-vtab");
+    if (!btn) return;
+    Array.prototype.forEach.call(el.compVendorTabs.querySelectorAll(".comp-vtab"), function (b) {
+      b.classList.toggle("active", b === btn);
+    });
+    compVendor = btn.dataset.v || "";
+    compCat = "";
+    el.compCat.value = "";
+    compFillCats();
+    renderComp();
+  });
+  el.compQuery.addEventListener("input", function () {
+    window.clearTimeout(compTimer);
+    compTimer = window.setTimeout(renderComp, 120);
+  });
+  el.compCat.addEventListener("change", function () {
+    compCat = el.compCat.value || "";
+    renderComp();
+  });
+
   bindEvents();
   switchView("list");
   renderP2P();
   load();
   loadP2P();
+  loadComp();
 })();

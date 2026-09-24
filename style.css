@@ -1456,3 +1456,26 @@ tr.cmp-diff td:first-child {
     animation-duration: 0.01ms !important;
   }
 }
+
+
+/* ---------- 竞品规格书视图 ---------- */
+.comp-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.comp-vtab {
+  padding: 7px 14px; border: 1px solid var(--border, #e0d5c5); background: var(--card, #fff);
+  color: inherit; border-radius: 6px; cursor: pointer; font-size: 13px;
+}
+.comp-vtab.active { background: #8d7a63; color: #fff; border-color: #8d7a63; }
+.comp-ctl { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.comp-cat { padding: 8px 10px; border: 1px solid var(--border, #e0d5c5); border-radius: 6px; background: var(--card, #fff); color: inherit; font-size: 13px; max-width: 320px; }
+.comp-count { color: var(--muted-foreground, #7a7168); font-size: 13px; margin-bottom: 8px; }
+.comp-results { overflow-x: auto; }
+.comp-table { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--card, #fff); }
+.comp-table th { background: #f0eae1; text-align: left; padding: 8px 10px; border-bottom: 2px solid #e0d5c5; white-space: nowrap; }
+.comp-table td { padding: 7px 10px; border-bottom: 1px solid #f2ece4; vertical-align: top; }
+.comp-table tr:hover td { background: #fdfbf8; }
+.comp-badge { display: inline-block; padding: 1px 7px; border-radius: 4px; font-size: 11px; color: #fff; white-space: nowrap; }
+.comp-SGM { background: #5a8ca8; }
+.comp-AiP { background: #a8763f; }
+.comp-DIOO { background: #6d8b5e; }
+.comp-dl { color: #8d6a3f; text-decoration: none; white-space: nowrap; }
+.comp-dl:hover { text-decoration: underline; }
