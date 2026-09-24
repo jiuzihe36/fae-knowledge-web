@@ -4,7 +4,7 @@
   "use strict";
 
   var el = {};
-  var DATA = { products: [], compIndex: [], compP2P: null, params: null, p2p: null };
+  var DATA = { products: [] };   /* 竞品/P2P 已摘除，只保留芯祥自有产品 */
   var ready = false;
 
   function $(id) { return document.getElementById(id); }
@@ -38,17 +38,12 @@
 
   /* ---------- 数据装载 ---------- */
   function grab() {
-    /* app.js 在 load() 里把数据桥接到 window.__xx */
     var g = window.__xx || {};
     DATA.products = g.products || [];
-    DATA.compIndex = g.compIndex || [];
-    DATA.compP2P = g.compP2P || null;
-    DATA.params = g.paramData || null;
-    DATA.p2p = g.p2p || null;
   }
 
   function hasData() {
-    return DATA.products.length || DATA.compIndex.length || DATA.compP2P || DATA.params;
+    return !!DATA.products.length;
   }
 
   function loadJson(path) {
@@ -65,7 +60,6 @@
     DATA.products.forEach(function (p) { specs += (p.specs && p.specs.length) || 0; });
     if (el.statModels && n) el.statModels.textContent = n;
     if (el.statSpecs && specs) el.statSpecs.textContent = specs > 999 ? Math.round(specs / 1000) + "k" : specs;
-    if (el.statComps && DATA.compIndex.length) el.statComps.textContent = DATA.compIndex.length;
     if (el.meta) el.meta.textContent = "型号 " + n + " 款 · 参数 " + specs + " 条";
     loadCatalog().then(function () {
       /* 默认展开最大类，避免打开只看到 3 行 */
@@ -105,16 +99,9 @@
       if (hasData() || ++tries > 60) {
         clearInterval(iv);
         if (!hasData()) {
-          Promise.all([
-            loadJson("./data/products.json"),
-            loadJson("./data/competitor_index.json"),
-            loadJson("./data/p2p_competitor.json"),
-            loadJson("./data/p2p_params.json")
-          ]).then(function (r) {
-            if (r[0]) DATA.products = r[0];
-            if (r[1]) DATA.compIndex = r[1];
-            if (r[2]) DATA.compP2P = r[2];
-            if (r[3]) DATA.params = r[3];
+          /* 兜底：只拉芯祥自有产品数据（竞品/P2P 已整体摘除，不再请求） */
+          loadJson("./data/products_lite.json").then(function (d) {
+            if (d) DATA.products = d;
             afterReady();
           });
         } else afterReady();
@@ -197,64 +184,11 @@
     hits.sort(function (a, b) { return a.r - b.r || a.p.model.localeCompare(b.p.model); });
     return hits.map(function (h) { return h.p; });
   }
-
-
-
-  /* 从 p2p.json 的 logic/analog 里找 TI 料号 → 芯祥对应（补充 p2p_competitor 未覆盖的） */
-
-
-
-
-  /* ---------- 参数对比（芯祥型号 vs 某竞品料号） ---------- */
-  function paramsFor(emModel, compVendor, compPn) {
-    if (!DATA.params) return null;
-    var items = DATA.params.items || [];
-    var target = null;
-    items.forEach(function (it) {
-      if (norm(it.em) === norm(emModel) && it.comp_vendor === compVendor && norm(it.comp_pn) === norm(compPn)) target = it;
-    });
-    if (target) return target;
-    /* 退化：同竞品料号任意芯祥型号 */
-    items.forEach(function (it) {
-      if (!target && it.comp_vendor === compVendor && norm(it.comp_pn) === norm(compPn)) target = it;
-    });
-    return target;
-  }
-
-  function allParamsForEm(emModel) {
-    if (!DATA.params) return [];
-    var k = famKey(emModel);
-    return (DATA.params.items || []).filter(function (it) {
-      return norm(it.em) === norm(emModel) || famKey(it.em) === k;
-    });
-  }
-
-  var VERDICT_CLS = { "参数一致": "ok", "有差异": "warn", "需核对": "neutral", "偏紧": "warn" };
-
-  function paramsTable(it) {
-    if (!it || !it.params || !it.params.length) return "";
-    var rows = it.params.slice(0, 14).map(function (p) {
-      var v = VERDICT_CLS[p.verdict] || "neutral";
-      return '<tr><td class="p-sym">' + esc(p.sym) + "</td>" +
-        '<td class="p-em">' + esc(p.em_val || "") + "</td>" +
-        '<td class="p-cp">' + esc(p.comp_val || p.comp_raw || "") + "</td>" +
-        '<td><span class="vbadge v-' + v + '">' + esc(p.verdict || "") + "</span></td></tr>";
-    }).join("");
-    return '<div class="ptable-wrap"><table class="ptable">' +
-      '<thead><tr><th>参数</th><th>芯祥 ' + esc(it.em) + "</th><th>" + esc(it.comp_vendor) + " " + esc(it.comp_pn) + "</th><th>判定</th></tr></thead>" +
-      "<tbody>" + rows + "</tbody></table>" +
-      (it.params.length > 14 ? '<div class="ptable-more">共 ' + it.params.length + " 项参数，显示前 14 项</div>" : "") +
-      "</div>";
-  }
+      var VERDICT_CLS = { "参数一致": "ok", "有差异": "warn", "需核对": "neutral", "偏紧": "warn" };
 
   /* ---------- 渲染 ---------- */
   /* ---------- 详情页上下切换（按当前可见列表顺序） ---------- */
   var NAV = { list: [], idx: -1 };
-
-  function setNavList(list) {
-    NAV.list = (list || []).slice();
-    NAV.idx = -1;
-  }
 
   /* ---------- 常用场景（localStorage，不传服务器） ---------- */
   var FAV_KEY = "xx_fav_apps";
@@ -890,23 +824,21 @@
     if (c.kind === "empty") { setMode(false); return; }
     setMode(true);
     if (!ready) { render('<div class="empty">数据加载中…</div>', ""); return; }
-
-    /* 主页只检索芯祥自有产品；竞品信息在型号详情页内 */
     var prods = [], funcs = [];
     if (c.kind === "em" || c.kind === "comp" || c.kind === "generic") prods = findProducts(q);
     if (!prods.length) funcs = findByFunc(q);
 
     if (prods.length) {
-      el.filterBar.classList.remove("hidden");
+      if (el.filterBar) el.filterBar.classList.remove("hidden");
       render(prods.map(productCard).join(""), prods.length + " 个芯祥型号");
       return;
     }
     if (funcs.length) {
-      el.filterBar.classList.add("hidden");
+      if (el.filterBar) el.filterBar.classList.add("hidden");
       renderList(funcs, funcs.length + ' 款产品含「' + q + '」');
       return;
     }
-    el.filterBar.classList.add("hidden");
+    if (el.filterBar) el.filterBar.classList.add("hidden");
     render('<div class="empty">没有找到「' + esc(q) + '」。</div>' +
       '<div class="entry-hint">可试试：型号主体（74AHC1G00）、功能名（与非门）、路数（四路）</div>', "0 条结果");
   }
@@ -958,14 +890,14 @@
       renderCatalog();
     });
     if (el.toggleAll) el.toggleAll.addEventListener("click", function () {
-      el.q.value = ""; el.filterBar.classList.remove("hidden"); renderList(DATA.products, DATA.products.length + " 个芯祥型号");
+      el.q.value = ""; if (el.filterBar) el.filterBar.classList.remove("hidden"); renderList(DATA.products, DATA.products.length + " 个芯祥型号");
     });
   }
 
   function init() {
     ["q", "resultBar", "resultSummary", "resultCount", "clearBtn", "filterBar",
-     "toggleAll", "results", "compPanel", "compResults", "compCount", "statModels", "statSpecs",
-     "statComps", "meta", "catalogMode", "searchMode", "catTree", "catCount",
+    "toggleAll", "results", "statModels", "statSpecs",
+    "meta", "catalogMode", "searchMode", "catTree", "catCount",
      "expandAll", "collapseAll", "crumb", "pageBody"].forEach(function (id) { el[id] = $(id); });
     if (!el.results) return;
     bind();

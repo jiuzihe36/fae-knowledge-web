@@ -75,50 +75,6 @@
     <!-- 栏目页：应用 / 技术文档 / 封装与可靠性 -->
     <div id="pageBody" class="page-body hidden"></div>
 
-    <!-- 兼容层：app.js 依赖的元素仍在 DOM 中（隐藏，不参与布局） -->
-    <div class="legacy" hidden aria-hidden="true">
-      <nav id="viewTabs"></nav>
-      <div id="viewList" class="view"></div>
-      <div id="viewSearch" class="view"></div>
-      <div id="viewCompare" class="view"></div>
-      <div id="viewComp" class="view"></div>
-      <div id="filterBar" class="toolbar">
-        <label>功能<select id="fFunction"></select></label>
-        <label>系列<select id="fSeries"></select></label>
-        <label>封装<select id="fPackage"></select></label>
-        <label>逻辑<select id="fLogic"></select></label>
-        <label>应用<select id="fApp"></select></label>
-        <select id="fStatus"><option value="">全部</option></select>
-      </div>
-      <input id="cmpA" type="text" list="modelList" autocomplete="off">
-      <input id="cmpB" type="text" list="modelList" autocomplete="off">
-      <button id="cmpSwap" type="button"></button>
-      <button id="cmpBtn" type="button"></button>
-      <div id="cmpResult"></div>
-      <div id="cmpEmpty" class="empty"></div>
-      <input id="p2pQuery" class="p2p-input" type="search" autocomplete="off">
-      <div id="p2pResults" class="p2p-results"></div>
-      <div id="p2pEmpty" class="empty hidden"></div>
-      <div id="compPanel" class="comp-panel hidden">
-        <div class="comp-tabs" id="compVendorTabs">
-          <button type="button" class="comp-vtab active" data-v="">全部</button>
-          <button type="button" class="comp-vtab" data-v="TI">TI</button>
-          <button type="button" class="comp-vtab" data-v="NXP">NXP</button>
-          <button type="button" class="comp-vtab" data-v="SGM">圣邦</button>
-          <button type="button" class="comp-vtab" data-v="AiP">中微爱芯</button>
-          <button type="button" class="comp-vtab" data-v="DIOO">帝奥微</button>
-        </div>
-        <div class="comp-ctl">
-          <input id="compQuery" class="p2p-input" type="search" placeholder="搜索型号 / 分类 / 功能" autocomplete="off">
-          <select id="compCat" class="comp-cat"><option value="">全部分类</option></select>
-        </div>
-        <div id="compCount" class="comp-count"></div>
-        <div id="compResults" class="comp-results"></div>
-      </div>
-      <table class="model-table"><tbody id="tableBody"></tbody></table>
-      <div id="empty" class="empty hidden"></div>
-    </div>
-    <datalist id="modelList"></datalist>
   </div>
 
   <div id="detail" class="drawer hidden" aria-hidden="true">
@@ -170,16 +126,9 @@
         </aside>
       </div>
 
-      <!-- 竞品信息：只在详情页出现，不在主页混入 -->
-      <section id="compCard" class="ti-card hidden">
-        <h3>竞品对标 <span id="compNote" class="ti-src"></span></h3>
-        <div id="compList" class="ti-list"></div>
-      </section>
+      <!-- 竞品对标区块已摘除（网页端不展示竞品信息）；元素留在下方 .legacy 隐藏层以维持 app.js 引用 -->
 
-      <section id="tiCard" class="ti-card hidden">
-        <h3>TI 对标 <span id="tiNote" class="ti-src"></span></h3>
-        <div id="tiList" class="ti-list"></div>
-      </section>
+      <!-- TI 对标区块已摘除；元素留在下方 .legacy 隐藏层 -->
     </section>
   </div>
 

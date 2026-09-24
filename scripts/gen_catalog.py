@@ -24,16 +24,7 @@ from collections import OrderedDict, defaultdict
 from datetime import datetime
 
 WEB = Path('/Users/hu/fae-knowledge-web')
-prod = json.load(open(WEB / 'data' / 'products.json'))
-comp_p2p = json.load(open(WEB / 'data' / 'p2p_competitor.json'))
-
-# 芯祥型号 → 可对比竞品数
-comp_count = defaultdict(set)
-for it in (comp_p2p.get('items') or []):
-    for em in (it.get('em') or []):
-        for c in (it.get('comps') or []):
-            comp_count[em.upper()].add((c.get('v'), c.get('pn')))
-
+prod = json.load(open(WEB / 'data' / 'products_lite.json'))
 
 ROUTE_ORDER = ['单路', '双路', '三路', '四路', '六路', '八路', '多路',
                '2 位', '4 位', '6 位', '8 位', '10 位', '12 位', '16 位', '其他']
@@ -150,7 +141,6 @@ for p in prod:
     fn = p.get('function') or '其他'
     se = p.get('series') or '其他'
     fam = fam_of(p['model'])
-    ncomp = len(comp_count.get(p['model'].upper(), set())) or len(comp_count.get(fam, set()))
     buckets[c][fn][se].append({
         'm': p['model'],
         'pkg': p.get('package') or '',
