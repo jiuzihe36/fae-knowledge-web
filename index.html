@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>芯祥 FAE 型号速查</title>
-  <link rel="stylesheet" href="./style.css?v=20260924a">
+  <link rel="stylesheet" href="./style.css?v=20260924c">
 </head>
 <body>
   <header class="topbar">
@@ -89,9 +89,9 @@
   <section id="viewSearch" class="view view-pad hidden" aria-hidden="true">
     <div class="view-head">
       <h2>P2P 替代查询</h2>
-      <p>输入芯祥料号（如 EM74HC00、em74lvc1g09）或 TI 料号（如 SN74HC00、CD74HCT132、SN74LVC1G09B）双向反查；点击结果打开对应型号详情。</p>
+      <p>输入芯祥料号（EM74HC00）、TI 料号（SN74HC00）、或竞品料号（SGM2019、AiP74LVC1G08、DIO3157E）双向反查；点击结果打开对应型号详情。</p>
     </div>
-    <input id="p2pQuery" class="p2p-input" type="search" placeholder="EM74HC00 / SN74HC00 / CD74HCT132 ..." autocomplete="off">
+    <input id="p2pQuery" class="p2p-input" type="search" placeholder="EM74HC00 / SN74HC00 / SGM2019 / AiP74LVC1G08 ..." autocomplete="off">
     <div id="p2pResults" class="p2p-results"></div>
     <div id="p2pEmpty" class="empty hidden"></div>
   </section>
@@ -155,6 +155,11 @@
         <div id="tiList" class="ti-list"></div>
       </section>
 
+      <section id="compCard" class="ti-card hidden">
+        <h3>竞品对标 <span id="compNote" class="ti-src"></span></h3>
+        <div id="compList" class="ti-list"></div>
+      </section>
+
       <div id="circuitWrap" class="pin-wrap hidden">
         <h3>应用电路图 <span class="pin-hint">点击放大 · 引脚与走向取自规格书 Pin description</span></h3>
         <div class="pin-box circuit-box"><img id="circuitImg" src="" alt="Application circuit"></div>
@@ -195,6 +200,6 @@
     <button id="lightboxClose" type="button" aria-label="关闭">×</button>
   </div>
 
-  <script src="./app.js?v=20260924b"></script>
+  <script src="./app.js?v=20260924c"></script>
 </body>
 </html>

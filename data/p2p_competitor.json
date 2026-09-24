@@ -1,0 +1,3389 @@
+{
+ "generated": "2026-09-24",
+ "total_families": 127,
+ "total_comp_pns": 183,
+ "by_vendor": {
+  "DIOO": 4,
+  "SGM": 55,
+  "AiP": 124
+ },
+ "covered_em": 365,
+ "items": [
+  {
+   "family": "2315",
+   "em": [
+    "EMS23157MS",
+    "EMS23157MS-Q100"
+   ],
+   "em_func": "模拟开关",
+   "em_pkg": [
+    "MSOP-10L"
+   ],
+   "em_voltage": "1.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "DIOO",
+     "pn": "DIO23157",
+     "cat": "通用模拟开关",
+     "pkg": "",
+     "url": "https://www.dioo.com/admin/api/upload/img/1701686248485.pdf"
+    }
+   ]
+  },
+  {
+   "family": "3157",
+   "em": [
+    "EL3157GV",
+    "EL3157GW",
+    "EMS3157GM",
+    "EMS3157GS",
+    "EMS3157GV",
+    "EMS3157GW",
+    "EMS3157GW-Q100",
+    "EMS3157GX3"
+   ],
+   "em_func": "模拟开关",
+   "em_pkg": [
+    "DFN0.8X1-6L",
+    "DFN1.45X1-6L",
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-6L",
+    "SOT363"
+   ],
+   "em_voltage": "1.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "DIOO",
+     "pn": "DIO3157E",
+     "cat": "通用模拟开关",
+     "pkg": "",
+     "url": "https://www.dioo.com/admin/api/upload/img/1712802561229.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "SGM3157",
+     "cat": "Analog Switches ≤5.5V",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/a22623ad-a59a-4732-b010-4b667f6b9a7c"
+    }
+   ]
+  },
+  {
+   "family": "4002",
+   "em": [
+    "EMS4002",
+    "EMS4002DRC",
+    "EMS4002MS",
+    "EMS4002RSE",
+    "EMS4002RSW"
+   ],
+   "em_func": "双路多路复用器",
+   "em_pkg": [
+    "DFN3X3-10L",
+    "MSOP-10L",
+    "QFN-10L",
+    "QFN1.5×2.0-10L"
+   ],
+   "em_voltage": "2.5 V to 4.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "CD4002▲",
+     "cat": "4000(95)",
+     "pkg": "3.0 - 15.0",
+     "url": "http://www.i-core.cn/upload/file1773983594130/instructions/CD4002-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "4100",
+   "em": [
+    "EMS4100N",
+    "EMS4100Q"
+   ],
+   "em_func": "多路复用器",
+   "em_pkg": [
+    "QFN1.8×2.6-16L",
+    "QFN2x3-18L"
+   ],
+   "em_voltage": "1.5 V to 5 V",
+   "comps": [
+    {
+     "v": "SGM",
+     "pn": "SGM41002",
+     "cat": "Battery Protection ICs",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/4a309b49-9971-4675-95a7-9d4b7ad13d88"
+    },
+    {
+     "v": "SGM",
+     "pn": "SGM41007",
+     "cat": "Linear Chargers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/5720d138-c299-4b8f-b8d2-9c46f3ab5a44"
+    },
+    {
+     "v": "SGM",
+     "pn": "SGM41008",
+     "cat": "Linear Chargers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/57d9644b-7bee-4e1c-909a-90226183bbc4"
+    }
+   ]
+  },
+  {
+   "family": "4422",
+   "em": [
+    "EMS4422",
+    "EMS4422RSB"
+   ],
+   "em_func": "双多路复用器",
+   "em_pkg": [
+    "QFN-40L",
+    "QFN5×5-40L"
+   ],
+   "em_voltage": "1.5 V to 5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP4422",
+     "cat": "MOSFET驱动器(20)",
+     "pkg": "9",
+     "url": "http://www.i-core.cn/upload/file1789540595960/instructions/AiP4422（中文）.pdf"
+    }
+   ]
+  },
+  {
+   "family": "4485",
+   "em": [
+    "EMS4485"
+   ],
+   "em_func": "USB Type-C 模拟音频开关 (带耳机检测/保护)",
+   "em_pkg": [
+    "WLCSP-25"
+   ],
+   "em_voltage": "未标注(仅绝对最大-0.5~5.5V)",
+   "comps": [
+    {
+     "v": "DIOO",
+     "pn": "DIO4485/B",
+     "cat": "通用模拟开关",
+     "pkg": "",
+     "url": "https://www.dioo.com/admin/api/upload/img/1764309465656.pdf"
+    },
+    {
+     "v": "DIOO",
+     "pn": "DIO4485G/4485BG",
+     "cat": "USB开关",
+     "pkg": "",
+     "url": "https://www.dioo.com/admin/api/upload/img/1764309611231.pdf"
+    }
+   ]
+  },
+  {
+   "family": "7227",
+   "em": [
+    "EMS7227MS",
+    "EMS7227RSW"
+   ],
+   "em_func": "Low-Power, Two-Port, Hi-Speed,USB2.0 (480Mbps) UART Switch",
+   "em_pkg": [
+    "MSOP3.0×3.0-10L",
+    "QFN1.4×1.8-10L"
+   ],
+   "em_voltage": "2.4 V to 3.6 V",
+   "comps": [
+    {
+     "v": "SGM",
+     "pn": "SGM7227",
+     "cat": "USB 2.0",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/7f51690b-df0a-469d-bc9e-611fa03c70c2"
+    }
+   ]
+  },
+  {
+   "family": "74AHC1G00",
+   "em": [
+    "EM74AHC1G00DRL",
+    "EM74AHC1G00GV",
+    "EM74AHC1G00GW"
+   ],
+   "em_func": "单路2输入与非门",
+   "em_pkg": [
+    "SOT23-5L",
+    "SOT353",
+    "SOT553"
+   ],
+   "em_voltage": "2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74AHC1G00-Q1",
+     "cat": "74AHC AHCT(6)",
+     "pkg": "SOT353",
+     "url": "http://www.i-core.cn/upload/file1787117934723/instructions/AiP74AHC1G00-Q1-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74AHC1G08",
+   "em": [
+    "EM74AHC1G08DRL",
+    "EM74AHC1G08GV",
+    "EM74AHC1G08GW"
+   ],
+   "em_func": "单路2输入与门",
+   "em_pkg": [
+    "SOT23-5L",
+    "SOT353",
+    "SOT553"
+   ],
+   "em_voltage": "2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74AHC1G08-Q1",
+     "cat": "74AHC AHCT(6)",
+     "pkg": "SOT23-5",
+     "url": "http://www.i-core.cn/upload/file1787117934723/instructions/AiP74AHC1G08-Q1-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74AHC1G08",
+     "cat": "AND Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/86a06048-a833-4ab5-9494-46320b7a2ccb"
+    }
+   ]
+  },
+  {
+   "family": "74AHC1G09",
+   "em": [
+    "EM74AHC1G09DRL",
+    "EM74AHC1G09GV",
+    "EM74AHC1G09GW"
+   ],
+   "em_func": "双2输入与门（开漏输出）",
+   "em_pkg": [
+    "SOT23-5L",
+    "SOT353",
+    "SOT553"
+   ],
+   "em_voltage": "2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74AHC1G09",
+     "cat": "AHC AHCT(105)",
+     "pkg": "2.0 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1787706142572/instructions/AiP74AHC1G09-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74AHC1G126",
+   "em": [
+    "EM74AHC1G126DRL",
+    "EM74AHC1G126GV",
+    "EM74AHC1G126GW"
+   ],
+   "em_func": "缓冲器（三态输出）",
+   "em_pkg": [
+    "SOT23-5L",
+    "SOT353",
+    "SOT553"
+   ],
+   "em_voltage": "2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74AHC1G126-Q1",
+     "cat": "74AHC AHCT(6)",
+     "pkg": "SOT353",
+     "url": "http://www.i-core.cn/upload/file1787117934723/instructions/AiP74AHC1G126-Q1-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74AHCT1G00",
+   "em": [
+    "EM74AHCT1G00DRL",
+    "EM74AHCT1G00GV",
+    "EM74AHCT1G00GW"
+   ],
+   "em_func": "单路2输入与非门",
+   "em_pkg": [
+    "SOT23",
+    "SOT353",
+    "SOT553"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74AHCT1G00",
+     "cat": "AHC AHCT(105)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1787706142572/instructions/AiP74AHC1G00 AiP74AHCT1G00-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74AHCT1G02",
+   "em": [
+    "EM74AHCT1G02DRL",
+    "EM74AHCT1G02GV",
+    "EM74AHCT1G02GW"
+   ],
+   "em_func": "单路2输入或非门",
+   "em_pkg": [
+    "SOT23",
+    "SOT353",
+    "SOT553"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74AHCT1G02▲",
+     "cat": "AHC AHCT(105)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1787706142572/instructions/AiP74AHC1G02 AiP74AHCT1G02（中文）.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74AHCT1G04",
+   "em": [
+    "EM74AHCT1G04DRL",
+    "EM74AHCT1G04GV",
+    "EM74AHCT1G04GW"
+   ],
+   "em_func": "反相器",
+   "em_pkg": [
+    "SOT23",
+    "SOT353",
+    "SOT553"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74AHCT1G04",
+     "cat": "AHC AHCT(105)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1787706142572/instructions/AiP74AHC1G04 AiP74AHCT1G04-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74AHCT1G08",
+   "em": [
+    "EM74AHCT1G08DRL",
+    "EM74AHCT1G08GV",
+    "EM74AHCT1G08GW"
+   ],
+   "em_func": "单路2输入与门",
+   "em_pkg": [
+    "SOT23",
+    "SOT353",
+    "SOT553"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74AHCT1G08",
+     "cat": "AHC AHCT(105)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1787706142572/instructions/AiP74AHC1G08 AiP74AHCT1G08-DATASHEET.pdf"
+    },
+    {
+     "v": "AiP",
+     "pn": "AiP74AHCT1G08-Q1",
+     "cat": "74AHC AHCT(6)",
+     "pkg": "SOT23-5",
+     "url": "http://www.i-core.cn/upload/file1787117934723/instructions/AiP74AHCT1G08-Q1-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74AHCT1G125",
+   "em": [
+    "EM74AHCT1G125DRL",
+    "EM74AHCT1G125GV",
+    "EM74AHCT1G125GW"
+   ],
+   "em_func": "缓冲器（三态输出）",
+   "em_pkg": [
+    "SOT23",
+    "SOT353",
+    "SOT553"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74AHCT1G125",
+     "cat": "AHC AHCT(105)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1787706142572/instructions/AiP74AHC1G125 AiP74AHCT1G125-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74AHCT1G126",
+   "em": [
+    "EM74AHCT1G126DRL",
+    "EM74AHCT1G126GV",
+    "EM74AHCT1G126GW"
+   ],
+   "em_func": "缓冲器（三态输出）",
+   "em_pkg": [
+    "SOT23",
+    "SOT353",
+    "SOT553"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74AHCT1G126",
+     "cat": "AHC AHCT(105)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1787706142572/instructions/AiP74AHC1G126 AiP74AHCT1G126-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74AHCT1G14",
+   "em": [
+    "EM74AHCT1G14DRL",
+    "EM74AHCT1G14GV",
+    "EM74AHCT1G14GW"
+   ],
+   "em_func": "（施密特输入）",
+   "em_pkg": [
+    "SOT23",
+    "SOT353",
+    "SOT553"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74AHCT1G14",
+     "cat": "AHC AHCT(105)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1787706142572/instructions/AiP74AHC1G14 AiP74AHCT1G14-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74AHCT1G32",
+   "em": [
+    "EM74AHCT1G32DRL",
+    "EM74AHCT1G32GV",
+    "EM74AHCT1G32GW"
+   ],
+   "em_func": "单路2输入或门",
+   "em_pkg": [
+    "SOT23",
+    "SOT353",
+    "SOT553"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74AHCT1G32▲",
+     "cat": "AHC AHCT(105)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1787706142572/instructions/AiP74AHC1G32 AiP74AHCT1G32（中文）.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74AHCT2G04",
+   "em": [
+    "EM74AHCT2G04DRL",
+    "EM74AHCT2G04GV",
+    "EM74AHCT2G04GW"
+   ],
+   "em_func": "双路反相器",
+   "em_pkg": [
+    "SOT23",
+    "SOT363",
+    "SOT563"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74AHCT2G04▲",
+     "cat": "AHC AHCT(105)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1787706142572/instructions/AiP74AHC2G04 AiPAHCT2G04-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74AHCT2G14",
+   "em": [
+    "EM74AHCT2G14DRL",
+    "EM74AHCT2G14GV",
+    "EM74AHCT2G14GW"
+   ],
+   "em_func": "双路（施密特输入）",
+   "em_pkg": [
+    "SOT23",
+    "SOT363",
+    "SOT563"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74AHCT2G14",
+     "cat": "AHC AHCT(105)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1787706142572/instructions/AiP74AHC2G14 AiP74AHCT2G14（中文）.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74AUP1G07",
+   "em": [
+    "EM74AUP1G07GM",
+    "EM74AUP1G07GS",
+    "EM74AUP1G07GV",
+    "EM74AUP1G07GW",
+    "EM74AUP1G07GX"
+   ],
+   "em_func": "缓冲器（开漏输出）",
+   "em_pkg": [
+    "DFN0.8X0.8-5L",
+    "DFN1X1-6L",
+    "DFN1X1.45-6L",
+    "SOT23-5L",
+    "SOT353"
+   ],
+   "em_voltage": "0.8 V to 3.6 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74AUP1G07",
+     "cat": "AUP(68)",
+     "pkg": "0.8 - 3.6",
+     "url": "http://www.i-core.cn/upload/file1769740861978/instructions/AiP74AUP1G07-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74CBT3257",
+   "em": [
+    "EM74CBT3257",
+    "EM74CBT3257D",
+    "EM74CBT3257PW"
+   ],
+   "em_func": "模拟开关",
+   "em_pkg": [
+    "SOP-16L",
+    "TSSOP-16L"
+   ],
+   "em_voltage": "1.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74CBT3257",
+     "cat": "CBT 开关(19)",
+     "pkg": "2:1",
+     "url": "http://www.i-core.cn/upload/file178825289345/instructions/AiP74CBT3257（中文）.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74CBTLV3253",
+   "em": [
+    "EM74CBTLV3253"
+   ],
+   "em_func": "双路多路复用器",
+   "em_pkg": [
+    "SOP-14L"
+   ],
+   "em_voltage": "2.3 V to 3.6 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74CBTLV3253",
+     "cat": "CBTLV/CBTLVD 开关(16)",
+     "pkg": "4:1",
+     "url": "http://www.i-core.cn/upload/file1787705958785/instructions/AiP74CBTLV3253（中文）.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74CBTLV3257",
+   "em": [
+    "EM74CBTLV3257"
+   ],
+   "em_func": "四路多路复用器",
+   "em_pkg": [
+    "SOP-14L"
+   ],
+   "em_voltage": "2.3 V to 3.6 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74CBTLV3257",
+     "cat": "CBTLV/CBTLVD 开关(16)",
+     "pkg": "2:1",
+     "url": "http://www.i-core.cn/upload/file1787705958785/instructions/AiP74CBTLV3257-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HC00",
+   "em": [
+    "EM74HC00D",
+    "EM74HC00PW"
+   ],
+   "em_func": "四路2输入与非门",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HC00-Q1",
+     "cat": "74HC HCT(8)",
+     "pkg": "TSSOP14",
+     "url": "http://www.i-core.cn/upload/file1787706944430/instructions/AiP74HC00-Q1-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HC06",
+   "em": [
+    "EM74HC06D",
+    "EM74HC06PW"
+   ],
+   "em_func": "六路反相器（开漏输出）",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HC06",
+     "cat": "HC HCT(285)",
+     "pkg": "2.0 - 6.0",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC06 AiP74HCT06-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HC08",
+   "em": [
+    "EM74HC08D",
+    "EM74HC08PW"
+   ],
+   "em_func": "四路2输入与门",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HC08-Q1",
+     "cat": "74HC HCT(8)",
+     "pkg": "SOP14/TSSOP14",
+     "url": "http://www.i-core.cn/upload/file1787706944430/instructions/AiP74HC08-Q1-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HC11",
+   "em": [
+    "EM74HC11D",
+    "EM74HC11PW"
+   ],
+   "em_func": "三路3输入与门",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HC11-Q1",
+     "cat": "74HC HCT(8)",
+     "pkg": "TSSOP14",
+     "url": "http://www.i-core.cn/upload/file1787706944430/instructions/AiP74HC11-Q1-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HC126",
+   "em": [
+    "EM74HC126D",
+    "EM74HC126PW"
+   ],
+   "em_func": "四路缓冲器（三态输出、施密特输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HC126-Q1",
+     "cat": "74HC HCT(8)",
+     "pkg": "SOP14",
+     "url": "http://www.i-core.cn/upload/file1787706944430/instructions/AiP74HC126-Q1-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HC132",
+   "em": [
+    "EM74HC132D",
+    "EM74HC132PW"
+   ],
+   "em_func": "四路2输入与非门（施密特输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HC132-Q1",
+     "cat": "74HC HCT(8)",
+     "pkg": "TSSOP14",
+     "url": "http://www.i-core.cn/upload/file1787706944430/instructions/AiP74HC132-Q1-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HC14",
+   "em": [
+    "EM74HC14D",
+    "EM74HC14PW"
+   ],
+   "em_func": "六路（施密特输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HC14-Q1",
+     "cat": "74HC HCT(8)",
+     "pkg": "TSSOP14",
+     "url": "http://www.i-core.cn/upload/file1787706944430/instructions/AiP74HC14-Q1-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HC164",
+   "em": [
+    "EM74HC164AD",
+    "EM74HC164APW",
+    "EM74HC164D",
+    "EM74HC164PW"
+   ],
+   "em_func": "八移位寄存器",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "SGM",
+     "pn": "74HC164",
+     "cat": "Registers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/7939073b-da8e-4bfd-8d09-34c03a113f7e"
+    }
+   ]
+  },
+  {
+   "family": "74HC165",
+   "em": [
+    "EM74HC165A",
+    "EM74HC165AD",
+    "EM74HC165APW"
+   ],
+   "em_func": "八移位寄存器",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-16L",
+    "TSSOP-16L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "SGM",
+     "pn": "74HC165",
+     "cat": "Registers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/11e9ee64-e910-44ab-b036-962d86f3beab"
+    }
+   ]
+  },
+  {
+   "family": "74HC245",
+   "em": [
+    "EM74HC245D",
+    "EM74HC245PW"
+   ],
+   "em_func": "八路缓冲器（三态输出）",
+   "em_pkg": [
+    "SOP-20L",
+    "TSSOP-20L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "SGM",
+     "pn": "74HC245",
+     "cat": "Transceivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/579bcf07-5cfa-4595-8414-9abfc346e08e"
+    }
+   ]
+  },
+  {
+   "family": "74HC4094",
+   "em": [
+    "EM74HC4094D",
+    "EM74HC4094PW"
+   ],
+   "em_func": "八与门",
+   "em_pkg": [
+    "SOP-16L",
+    "TSSOP-16L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HC4094",
+     "cat": "HC HCT(285)",
+     "pkg": "3.0 - 15.0",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC4094-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HC541",
+   "em": [
+    "EM74HC541D",
+    "EM74HC541PW"
+   ],
+   "em_func": "八路缓冲器（三态输出）",
+   "em_pkg": [
+    "SOP-20L",
+    "TSSOP-20L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "SGM",
+     "pn": "74HC541",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/ca1ccfa3-08b1-4f8f-83ce-54276e61c517"
+    }
+   ]
+  },
+  {
+   "family": "74HC573",
+   "em": [
+    "EM74HC573D",
+    "EM74HC573PW"
+   ],
+   "em_func": "八路锁存器（三态输出）",
+   "em_pkg": [
+    "SOP-20L",
+    "TSSOP-20L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "SGM",
+     "pn": "74HC573",
+     "cat": "Latches",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/39a29bb3-2223-4b27-84d8-9d51a6b7329f"
+    }
+   ]
+  },
+  {
+   "family": "74HC574",
+   "em": [
+    "EM74HC574D",
+    "EM74HC574DB",
+    "EM74HC574PW"
+   ],
+   "em_func": "八路触发器（三态输出）",
+   "em_pkg": [
+    "SOP-20L",
+    "SSOP-20L",
+    "TSSOP-20L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "SGM",
+     "pn": "74HC574",
+     "cat": "Flip-flops",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/00751bf5-151f-4308-9454-de20fa55d032"
+    }
+   ]
+  },
+  {
+   "family": "74HC595",
+   "em": [
+    "EM74HC595A",
+    "EM74HC595AD",
+    "EM74HC595APW"
+   ],
+   "em_func": "八移位寄存器（三态输出）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-16L",
+    "TSSOP-16L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "SGM",
+     "pn": "74HC595",
+     "cat": "Registers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/c756b7a2-9770-48da-bca7-487225ea1fe9"
+    },
+    {
+     "v": "SGM",
+     "pn": "74HC595Q",
+     "cat": "Registers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/af9aab1f-8d08-4630-b118-7431b0b3cb57"
+    }
+   ]
+  },
+  {
+   "family": "74HC7266",
+   "em": [
+    "EM74HC7266D",
+    "EM74HC7266PW"
+   ],
+   "em_func": "四路2输入或非门",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HC7266",
+     "cat": "HC HCT(285)",
+     "pkg": "2.0 - 6.0",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC7266 AiP74HCT7266-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HC74",
+   "em": [
+    "EM74HC74D",
+    "EM74HC74PW"
+   ],
+   "em_func": "双路触发器",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "2 V to 6 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HC74-Q1",
+     "cat": "74HC HCT(8)",
+     "pkg": "TSSOP14",
+     "url": "http://www.i-core.cn/upload/file1787706944430/instructions/AiP74HC74-Q1-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT00",
+   "em": [
+    "EM74HCT00D",
+    "EM74HCT00PW"
+   ],
+   "em_func": "四路2输入与非门（TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT00",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC00 AiP74HCT00-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT02",
+   "em": [
+    "EM74HCT02D",
+    "EM74HCT02PW"
+   ],
+   "em_func": "四路2输入或非门（TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT02",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC02 AiP74HCT02-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT03",
+   "em": [
+    "EM74HCT03D",
+    "EM74HCT03PW"
+   ],
+   "em_func": "四路2输入与非门（开漏输出、输入、TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT03▲",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC03 AiP74HCT03-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT04",
+   "em": [
+    "EM74HCT04D",
+    "EM74HCT04PW"
+   ],
+   "em_func": "六路反相器（TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT04",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC04 AiP74HCT04-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT05",
+   "em": [
+    "EM74HCT05D",
+    "EM74HCT05PW"
+   ],
+   "em_func": "六路与门（开漏输出、输入、TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT05▲",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC05 AiP74HCT05-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT07",
+   "em": [
+    "EM74HCT07D",
+    "EM74HCT07PW"
+   ],
+   "em_func": "六路缓冲器（开漏输出、TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT07",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5~5.5V",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC07 AiP74HCT07-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT08",
+   "em": [
+    "EM74HCT08D",
+    "EM74HCT08PW"
+   ],
+   "em_func": "四路2输入与门（TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT08",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC08 AiP74HCT08-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT09",
+   "em": [
+    "EM74HCT09D",
+    "EM74HCT09PW"
+   ],
+   "em_func": "四路2输入与门（开漏输出、输入、TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT09▲",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC09 AiP74HCT09-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT10",
+   "em": [
+    "EM74HCT10D",
+    "EM74HCT10PW"
+   ],
+   "em_func": "三路3输入与非门（TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT10▲",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC10 AiP74HCT10-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT11",
+   "em": [
+    "EM74HCT11D",
+    "EM74HCT11PW"
+   ],
+   "em_func": "三路3输入与门（TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT11",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC11 AiP74HCT11-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT125",
+   "em": [
+    "EM74HCT125D",
+    "EM74HCT125PW"
+   ],
+   "em_func": "四路缓冲器（三态输出、输入、TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT125",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC125 AiP74HCT125-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT126",
+   "em": [
+    "EM74HCT126D",
+    "EM74HCT126PW"
+   ],
+   "em_func": "四路缓冲器（三态输出、输入、TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT126",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC126 AiP74HCT126-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT132",
+   "em": [
+    "EM74HCT132D",
+    "EM74HCT132PW"
+   ],
+   "em_func": "四路2输入与非门（施密特输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT132",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC132 AiP74HCT132-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT138",
+   "em": [
+    "EM74HCT138D",
+    "EM74HCT138PW"
+   ],
+   "em_func": "多路复用器（TTL输入）",
+   "em_pkg": [
+    "SOP-16L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT138",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC138 AiP74HCT138-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT14",
+   "em": [
+    "EM74HCT14D",
+    "EM74HCT14PW"
+   ],
+   "em_func": "六路（施密特输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT14",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC14 AiP74HCT14-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT164",
+   "em": [
+    "EM74HCT164D",
+    "EM74HCT164PW"
+   ],
+   "em_func": "八移位寄存器（TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT164",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC164 AiP74HCT164-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT166",
+   "em": [
+    "EM74HCT166D",
+    "EM74HCT166PW"
+   ],
+   "em_func": "八移位寄存器（TTL输入）",
+   "em_pkg": [
+    "SOP-16L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT166▲",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC166 AiP74HCT166-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT174",
+   "em": [
+    "EM74HCT174D",
+    "EM74HCT174PW"
+   ],
+   "em_func": "六路触发器（TTL输入）",
+   "em_pkg": [
+    "SOP-16L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT174▲",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC174 AiP74HCT174-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT20",
+   "em": [
+    "EM74HCT20D",
+    "EM74HCT20PW"
+   ],
+   "em_func": "双路4输入与非门（TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT20",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC20 AiP74HCT20-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT21",
+   "em": [
+    "EM74HCT21D",
+    "EM74HCT21PW"
+   ],
+   "em_func": "双路4输入与门（TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT21▲",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC21 AiP74HCT21-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT240",
+   "em": [
+    "EM74HCT240D",
+    "EM74HCT240PW"
+   ],
+   "em_func": "八路缓冲器（三态输出、TTL输入）",
+   "em_pkg": [
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT240",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC240 AiP74HCT240-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT244",
+   "em": [
+    "EM74HCT244D",
+    "EM74HCT244PW"
+   ],
+   "em_func": "八路缓冲器（三态输出、TTL输入）",
+   "em_pkg": [
+    "SOP-20L",
+    "TSSOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT244",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC244 AiP74HCT244-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT245",
+   "em": [
+    "EM74HCT245D",
+    "EM74HCT245PW"
+   ],
+   "em_func": "八路缓冲器（三态输出、TTL输入）",
+   "em_pkg": [
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT245",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC245 AiP74HCT245-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74HCT245",
+     "cat": "Transceivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/a8296301-a85b-4753-bb74-515854bbdd66"
+    }
+   ]
+  },
+  {
+   "family": "74HCT259",
+   "em": [
+    "EM74HCT259D",
+    "EM74HCT259PW"
+   ],
+   "em_func": "八锁存器（TTL输入）",
+   "em_pkg": [
+    "SOP-16L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT259",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC259 AiP74HCT259-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT266",
+   "em": [
+    "EM74HCT266D",
+    "EM74HCT266PW"
+   ],
+   "em_func": "四路2输入或非门（开漏输出、输入、TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT266▲",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC266 AiP74HCT266-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT27",
+   "em": [
+    "EM74HCT27D",
+    "EM74HCT27PW"
+   ],
+   "em_func": "三路3输入或非门（TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT27",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC27 AiP74HCT27-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT32",
+   "em": [
+    "EM74HCT32D",
+    "EM74HCT32PW"
+   ],
+   "em_func": "四路2输入或门（TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT32",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC32 AiP74HCT32-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT365",
+   "em": [
+    "EM74HCT365D",
+    "EM74HCT365PW"
+   ],
+   "em_func": "六路缓冲器（三态输出、输入、TTL输入）",
+   "em_pkg": [
+    "SOP-16L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT365▲",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC365 AiP74HCT365-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT366",
+   "em": [
+    "EM74HCT366D",
+    "EM74HCT366PW"
+   ],
+   "em_func": "六路缓冲器（三态输出、TTL输入）",
+   "em_pkg": [
+    "SOP-16L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT366",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC366 AiP74HCT366-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT367",
+   "em": [
+    "EM74HCT367D",
+    "EM74HCT367PW"
+   ],
+   "em_func": "六路缓冲器（三态输出、输入、TTL输入）",
+   "em_pkg": [
+    "SOP-16L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT367",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC367 AiP74HCT367-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT540",
+   "em": [
+    "EM74HCT540D",
+    "EM74HCT540PW"
+   ],
+   "em_func": "八路缓冲器（三态输出、TTL输入）",
+   "em_pkg": [
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT540",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC540 AiP74HCT540-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT541",
+   "em": [
+    "EM74HCT541D",
+    "EM74HCT541PW"
+   ],
+   "em_func": "八路缓冲器（三态输出、TTL输入）",
+   "em_pkg": [
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT541",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC541 AiP74HCT541-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT573",
+   "em": [
+    "EM74HCT573D",
+    "EM74HCT573PW"
+   ],
+   "em_func": "八路锁存器（三态输出、TTL输入）",
+   "em_pkg": [
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT573",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC573 AiP74HCT573-DATASHEET.pdf"
+    },
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT573-Q1",
+     "cat": "74HC HCT(8)",
+     "pkg": "TSSOP20",
+     "url": "http://www.i-core.cn/upload/file1787706944430/instructions/AiP74HCT573-Q1-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT574",
+   "em": [
+    "EM74HCT574D",
+    "EM74HCT574DB",
+    "EM74HCT574PW"
+   ],
+   "em_func": "八路触发器（三态输出、TTL输入）",
+   "em_pkg": [
+    "SOP-20L",
+    "SSOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT574",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC574 AiP74HCT574-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74HCT574",
+     "cat": "Flip-flops",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/516b2f43-3384-4a4e-81a2-0396a4c31c6a"
+    }
+   ]
+  },
+  {
+   "family": "74HCT595",
+   "em": [
+    "EM74HCT595",
+    "EM74HCT595D",
+    "EM74HCT595DB",
+    "EM74HCT595PW"
+   ],
+   "em_func": "八移位寄存器（三态输出、TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-16L",
+    "SSOP-16L",
+    "TSSOP-16L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT595",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC595 AiP74HCT595-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74HCT595",
+     "cat": "Registers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/4d69f5ac-ad0d-49a4-ae25-0cd3ef63753f"
+    },
+    {
+     "v": "SGM",
+     "pn": "74HCT595Q",
+     "cat": "Registers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/af9aab1f-8d08-4630-b118-7431b0b3cb57"
+    }
+   ]
+  },
+  {
+   "family": "74HCT597",
+   "em": [
+    "EM74HCT597D",
+    "EM74HCT597PW"
+   ],
+   "em_func": "八移位寄存器（TTL输入）",
+   "em_pkg": [
+    "SOP-16L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT597▲",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC597 AiP74HCT597-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT74",
+   "em": [
+    "EM74HCT74D",
+    "EM74HCT74PW"
+   ],
+   "em_func": "双路触发器（TTL输入）",
+   "em_pkg": [
+    "SOP-14L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT74",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC74 AiP74HCT74-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74HCT86",
+   "em": [
+    "EM74HCT86D",
+    "EM74HCT86PW"
+   ],
+   "em_func": "四路2输入或门（TTL输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74HCT86",
+     "cat": "HC HCT(285)",
+     "pkg": "4.5 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1788255397502/instructions/AiP74HC86 AiP74HCT86-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC00",
+   "em": [
+    "EM74LVC00AD",
+    "EM74LVC00APW"
+   ],
+   "em_func": "四路2输入与非门",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "1.2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC00",
+     "cat": "LV LVC(222)",
+     "pkg": "1.2~5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC00-DATASHEET.pdf"
+    },
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC00-Q1",
+     "cat": "74LV LVC(13)",
+     "pkg": "TSSOP14",
+     "url": "http://www.i-core.cn/upload/file1787708012361/instructions/AiP74LVC00-Q1-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC00A",
+     "cat": "NAND Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/8b0d5cc9-a44f-4a58-9362-dee45d3ccb17"
+    }
+   ]
+  },
+  {
+   "family": "74LVC04",
+   "em": [
+    "EM74LVC04AD",
+    "EM74LVC04APW"
+   ],
+   "em_func": "六路反相器",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "1.2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC04",
+     "cat": "LV LVC(222)",
+     "pkg": "1.2~5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC04-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC04",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/46016fc1-20e7-45cc-8c32-a84458544108"
+    }
+   ]
+  },
+  {
+   "family": "74LVC07",
+   "em": [
+    "EM74LVC07AD",
+    "EM74LVC07APW"
+   ],
+   "em_func": "六路缓冲器（开漏输出）",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "1.2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC07",
+     "cat": "LV LVC(222)",
+     "pkg": "1.2~5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC07-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC08",
+   "em": [
+    "EM74LVC08AD",
+    "EM74LVC08APW",
+    "EM74LVC08ARGY"
+   ],
+   "em_func": "四路2输入与门",
+   "em_pkg": [
+    "QFN3.5x3.5-14L",
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "1.2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC08",
+     "cat": "LV LVC(222)",
+     "pkg": "1.2~5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC08-DATASHEET.pdf"
+    },
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC08-Q1",
+     "cat": "74LV LVC(13)",
+     "pkg": "TSSOP14",
+     "url": "http://www.i-core.cn/upload/file1787708012361/instructions/AiP74LVC08-Q1-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC08",
+     "cat": "AND Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/1a58a496-f638-44f2-9426-7395e41d5778"
+    }
+   ]
+  },
+  {
+   "family": "74LVC125",
+   "em": [
+    "EM74LVC125AD",
+    "EM74LVC125APW"
+   ],
+   "em_func": "四路缓冲器（三态输出）",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "1.2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC125",
+     "cat": "LV LVC(222)",
+     "pkg": "1.2~5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC125-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC125A",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/4b7a8120-52cf-47e2-8306-3625471d4ad1"
+    }
+   ]
+  },
+  {
+   "family": "74LVC126",
+   "em": [
+    "EM74LVC126AD",
+    "EM74LVC126APW"
+   ],
+   "em_func": "四路缓冲器（三态输出）",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "1.2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC126",
+     "cat": "LV LVC(222)",
+     "pkg": "1.2~5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC126-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC126A",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/7471bab9-44c3-46d7-859e-fc504d05e686"
+    }
+   ]
+  },
+  {
+   "family": "74LVC132",
+   "em": [
+    "EM74LVC132AD",
+    "EM74LVC132APW"
+   ],
+   "em_func": "四路2输入与非门（施密特输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "1.2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC132",
+     "cat": "LV LVC(222)",
+     "pkg": "1.2~5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC132-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC14",
+   "em": [
+    "EM74LVC14AD",
+    "EM74LVC14APW"
+   ],
+   "em_func": "六路（施密特输入）",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "1.2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC14",
+     "cat": "LV LVC(222)",
+     "pkg": "1.2~5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC14-DATASHEET.pdf"
+    },
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC14-Q1",
+     "cat": "74LV LVC(13)",
+     "pkg": "TSSOP14",
+     "url": "http://www.i-core.cn/upload/file1787708012361/instructions/AiP74LVC14-Q1-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G00",
+   "em": [
+    "EM74LVC1G00GM",
+    "EM74LVC1G00GS",
+    "EM74LVC1G00GV",
+    "EM74LVC1G00GW",
+    "EM74LVC1G00GX"
+   ],
+   "em_func": "单路2输入与非门",
+   "em_pkg": [
+    "DFN0.8X0.8-4L",
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-5L",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G00",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G00-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G00",
+     "cat": "NAND Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/030b51ff-e1a3-45e1-8240-35ba469c76fd"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G02",
+   "em": [
+    "EM74LVC1G02GM",
+    "EM74LVC1G02GS",
+    "EM74LVC1G02GV",
+    "EM74LVC1G02GW",
+    "EM74LVC1G02GX"
+   ],
+   "em_func": "单路2输入或非门",
+   "em_pkg": [
+    "DFN0.8x0.8-",
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-5L",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G02",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G02-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G02",
+     "cat": "NOR Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/f872c33e-2598-402e-9fee-1375662afe4f"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G04",
+   "em": [
+    "EM74LVC1G04GM",
+    "EM74LVC1G04GS",
+    "EM74LVC1G04GV",
+    "EM74LVC1G04GW",
+    "EM74LVC1G04GX"
+   ],
+   "em_func": "单路反相器",
+   "em_pkg": [
+    "DFN0.8X0.8-4L",
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-5L",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G04",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G04-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G04",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/b23fef14-4717-4086-af54-d617105f2f5f"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G04Q",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/952d9423-d2f4-4477-a40e-6b92500082e6"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G04XG",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/7b1bfe08-e422-4864-82e0-d82e89589b6d"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G06",
+   "em": [
+    "EM74LVC1G06",
+    "EM74LVC1G06GM",
+    "EM74LVC1G06GS",
+    "EM74LVC1G06GV",
+    "EM74LVC1G06GW",
+    "EM74LVC1G06GX"
+   ],
+   "em_func": "反相器（开漏输出）",
+   "em_pkg": [
+    "DFN0.8X0.8-4L",
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-5L",
+    "SOT23-6L/SOT363/DFN6L",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G06",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G06-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G07",
+   "em": [
+    "EM74LVC1G07GM",
+    "EM74LVC1G07GS",
+    "EM74LVC1G07GV",
+    "EM74LVC1G07GW",
+    "EM74LVC1G07GX"
+   ],
+   "em_func": "缓冲器（开漏输出）",
+   "em_pkg": [
+    "DFN0.8X0.8-4L",
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-5L",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G07",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G07-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G07",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/e7e76ad0-cb2d-4ffa-8781-5aa6286a8589"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G07Q",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/cff1ef3c-68ff-43b1-be05-4299c804230d"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G08",
+   "em": [
+    "EM74LVC1G08GM",
+    "EM74LVC1G08GS",
+    "EM74LVC1G08GV",
+    "EM74LVC1G08GW",
+    "EM74LVC1G08GX"
+   ],
+   "em_func": "单路2输入与门",
+   "em_pkg": [
+    "DFN0.8X0.8-4L",
+    "DFN1X1-6L",
+    "DFN1X1.45-6L",
+    "SOT23-5L",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G08",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G08-DATASHEET.pdf"
+    },
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G08-Q1",
+     "cat": "74LV LVC(13)",
+     "pkg": "SOT353",
+     "url": "http://www.i-core.cn/upload/file1787708012361/instructions/AiP74LVC1G08-Q1-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G08",
+     "cat": "AND Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/15fe8496-3505-49d7-b2cd-8b8313debe46"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G08Q",
+     "cat": "AND Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/53d18ccb-8137-4fd9-b4fb-e2b942cd9407"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G10",
+   "em": [
+    "EM74LVC1G10GM",
+    "EM74LVC1G10GS",
+    "EM74LVC1G10GV",
+    "EM74LVC1G10GW"
+   ],
+   "em_func": "单路3输入与非门",
+   "em_pkg": [
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-6L",
+    "SOT363"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G10",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G10-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G11",
+   "em": [
+    "EM74LVC1G11GM",
+    "EM74LVC1G11GS",
+    "EM74LVC1G11GV",
+    "EM74LVC1G11GW"
+   ],
+   "em_func": "单路3输入与门",
+   "em_pkg": [
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-6L",
+    "SOT363"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G11",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G11-DATASHEET.pdf"
+    },
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G11-Q1",
+     "cat": "74LV LVC(13)",
+     "pkg": "SOT363",
+     "url": "http://www.i-core.cn/upload/file1787708012361/instructions/AiP74LVC1G11-Q1-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G11",
+     "cat": "AND Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/b9b5d000-3fe6-4785-9dd5-090b2a5255e1"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G11Q",
+     "cat": "AND Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/e5ced926-8daf-4a60-9018-a9cdb643d279"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G125",
+   "em": [
+    "EM74LVC1G125GM",
+    "EM74LVC1G125GS",
+    "EM74LVC1G125GV",
+    "EM74LVC1G125GW",
+    "EM74LVC1G125GX"
+   ],
+   "em_func": "缓冲器（三态输出）",
+   "em_pkg": [
+    "SOT23",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G125",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G125-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G125",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/e043d275-37fc-41c0-8b65-7949f0232ee8"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G126",
+   "em": [
+    "EM74LVC1G126GM",
+    "EM74LVC1G126GS",
+    "EM74LVC1G126GV",
+    "EM74LVC1G126GW",
+    "EM74LVC1G126GX"
+   ],
+   "em_func": "缓冲器（三态输出）",
+   "em_pkg": [
+    "DFN0.8X0.8-4L",
+    "DFN1X1-6L",
+    "DFN1X1.45-6L",
+    "SOT23-5L",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G126",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G126-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G126",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/a97610ce-5599-430e-93d8-a617e89c905b"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G132",
+   "em": [
+    "EM74LVC1G132GM",
+    "EM74LVC1G132GS",
+    "EM74LVC1G132GV",
+    "EM74LVC1G132GW",
+    "EM74LVC1G132GX"
+   ],
+   "em_func": "单路2输入与非门（施密特输入）",
+   "em_pkg": [
+    "SOT23",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G132",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G132-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G14",
+   "em": [
+    "EM74LVC1G14GM",
+    "EM74LVC1G14GS",
+    "EM74LVC1G14GV",
+    "EM74LVC1G14GW",
+    "EM74LVC1G14GX"
+   ],
+   "em_func": "单路反相器（施密特输入）",
+   "em_pkg": [
+    "DFN0.8X0.8-4L",
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-5L",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G14",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G14-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G14",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/ef50c1fe-7517-4ef3-95fb-575efe2994d8"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G16",
+   "em": [
+    "EM74LVC1G16GM",
+    "EM74LVC1G16GS",
+    "EM74LVC1G16GV",
+    "EM74LVC1G16GW",
+    "EM74LVC1G16GX"
+   ],
+   "em_func": "单路缓冲器",
+   "em_pkg": [
+    "DFN0.8X0.8-4L",
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-5L",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G16",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G16-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G17",
+   "em": [
+    "EM74LVC1G17GM",
+    "EM74LVC1G17GS",
+    "EM74LVC1G17GV",
+    "EM74LVC1G17GW",
+    "EM74LVC1G17GX"
+   ],
+   "em_func": "单路缓冲器（施密特输入）",
+   "em_pkg": [
+    "DFN0.8X0.8-4L",
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-5L",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G17B",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G07B-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G17",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/ff25229b-815f-4d34-a220-b4a57eeed7df"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G17Q",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/aebd2694-373a-4f50-9580-d845d730920e"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G240",
+   "em": [
+    "EM74LVC1G240GM",
+    "EM74LVC1G240GS",
+    "EM74LVC1G240GV",
+    "EM74LVC1G240GW",
+    "EM74LVC1G240GX"
+   ],
+   "em_func": "单路反相器（三态输出）",
+   "em_pkg": [
+    "SOT23",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G240",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G240-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G27",
+   "em": [
+    "EM74LVC1G27GM",
+    "EM74LVC1G27GS",
+    "EM74LVC1G27GV",
+    "EM74LVC1G27GW"
+   ],
+   "em_func": "单路3输入或非门",
+   "em_pkg": [
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-6L",
+    "SOT363"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G27",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G27-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G32",
+   "em": [
+    "EM74LVC1G32GM",
+    "EM74LVC1G32GS",
+    "EM74LVC1G32GV",
+    "EM74LVC1G32GW",
+    "EM74LVC1G32GX"
+   ],
+   "em_func": "单路2输入或门",
+   "em_pkg": [
+    "DFN0.8X0.8-4L",
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-5L",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G32",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G32-DATASHEET.pdf"
+    },
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G32-Q1",
+     "cat": "74LV LVC(13)",
+     "pkg": "SOT23-5/SOT353",
+     "url": "http://www.i-core.cn/upload/file1787708012361/instructions/AiP74LVC1G32-Q1-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G32",
+     "cat": "OR Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/5106df3c-71b0-4d74-b5cf-8579003653f3"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G32Q",
+     "cat": "OR Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/082a7a35-8fc7-4724-8cb9-54027f27315c"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G332",
+   "em": [
+    "EM74LVC1G332GM",
+    "EM74LVC1G332GS",
+    "EM74LVC1G332GV",
+    "EM74LVC1G332GW"
+   ],
+   "em_func": "单路3输入或门",
+   "em_pkg": [
+    "SOT23",
+    "SOT363"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G332▲",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G332-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G332",
+     "cat": "OR Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/018f2958-dc9b-4ef8-a1c7-082e0ccc9c99"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G34",
+   "em": [
+    "EM74LVC1G34GM",
+    "EM74LVC1G34GS",
+    "EM74LVC1G34GV",
+    "EM74LVC1G34GW",
+    "EM74LVC1G34GX"
+   ],
+   "em_func": "单路缓冲器",
+   "em_pkg": [
+    "DFN0.8X0.8-4L",
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-5L",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G34",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G34-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G38",
+   "em": [
+    "EM74LVC1G38GM",
+    "EM74LVC1G38GS",
+    "EM74LVC1G38GV",
+    "EM74LVC1G38GW",
+    "EM74LVC1G38GX"
+   ],
+   "em_func": "双2输入与非门",
+   "em_pkg": [
+    "DFN0.8X0.8-4L",
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-5L",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G38",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G38-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G57",
+   "em": [
+    "EM74LVC1G57GV",
+    "EM74LVC1G57GW"
+   ],
+   "em_func": "逻辑门",
+   "em_pkg": [
+    "SOT23-6L",
+    "SOT363"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G57",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G57-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G57",
+     "cat": "Configurable Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/74d65e9f-8b92-4cd1-8194-bc1b03f3b633"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G58",
+   "em": [
+    "EM74LVC1G58GV",
+    "EM74LVC1G58GW"
+   ],
+   "em_func": "逻辑门",
+   "em_pkg": [
+    "SOT23-6L",
+    "SOT363"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G58",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65~5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G58-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G58",
+     "cat": "Configurable Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/9453ff16-e143-4d09-929a-35ec0c4877ed"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G86",
+   "em": [
+    "EM74LVC1G86GM",
+    "EM74LVC1G86GS",
+    "EM74LVC1G86GV",
+    "EM74LVC1G86GW",
+    "EM74LVC1G86GX"
+   ],
+   "em_func": "双2输入或门",
+   "em_pkg": [
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT353"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G86",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G86-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G86",
+     "cat": "XOR (exclusive OR) Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/c067e685-5a59-40e6-9606-287ccfc4ad8e"
+    }
+   ]
+  },
+  {
+   "family": "74LVC1G97",
+   "em": [
+    "EM74LVC1G97GV",
+    "EM74LVC1G97GW"
+   ],
+   "em_func": "逻辑门",
+   "em_pkg": [
+    "SOT23-6L",
+    "SOT363"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC1G97",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC1G97-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC1G97",
+     "cat": "Configurable Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/66ddff25-13d4-495f-8c04-ffae12f8922a"
+    }
+   ]
+  },
+  {
+   "family": "74LVC244",
+   "em": [
+    "EM74LVC244AD",
+    "EM74LVC244ADB",
+    "EM74LVC244APW"
+   ],
+   "em_func": "八路缓冲器（三态输出）",
+   "em_pkg": [
+    "SOP-20L",
+    "SSOP-20L",
+    "TSSOP-20L"
+   ],
+   "em_voltage": "1.2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC244",
+     "cat": "LV LVC(222)",
+     "pkg": "1.2~5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC244-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC245",
+   "em": [
+    "EM74LVC245AD",
+    "EM74LVC245APW"
+   ],
+   "em_func": "八路收发器（三态输出）",
+   "em_pkg": [
+    "SOP-20L",
+    "TSSOP-20L"
+   ],
+   "em_voltage": "1.2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC245",
+     "cat": "LV LVC(222)",
+     "pkg": "1.2~5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC245-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC245A",
+     "cat": "Transceivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/5daaaafe-f724-44f9-b958-880ce0845e98"
+    }
+   ]
+  },
+  {
+   "family": "74LVC2G04",
+   "em": [
+    "EM74LVC2G04DRL",
+    "EM74LVC2G04GM",
+    "EM74LVC2G04GS",
+    "EM74LVC2G04GV",
+    "EM74LVC2G04GW"
+   ],
+   "em_func": "双路反相器",
+   "em_pkg": [
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-6L",
+    "SOT363",
+    "SOT563"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC2G04",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC2G04-DATASHEET.pdf"
+    },
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC2G04-Q1",
+     "cat": "74LV LVC(13)",
+     "pkg": "SOT363",
+     "url": "http://www.i-core.cn/upload/file1787708012361/instructions/AiP74LVC2G04-Q1-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC2G04",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/e66a01f7-6617-499f-9509-108f496b276c"
+    }
+   ]
+  },
+  {
+   "family": "74LVC2G06",
+   "em": [
+    "EM74LVC2G06GM",
+    "EM74LVC2G06GS",
+    "EM74LVC2G06GV",
+    "EM74LVC2G06GW"
+   ],
+   "em_func": "反相器（开漏输出）",
+   "em_pkg": [
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-6L",
+    "SOT363"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC2G06",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC2G06-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC2G07",
+   "em": [
+    "EM74LVC2G07GM",
+    "EM74LVC2G07GS",
+    "EM74LVC2G07GV",
+    "EM74LVC2G07GW"
+   ],
+   "em_func": "缓冲器（开漏输出）",
+   "em_pkg": [
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-6L",
+    "SOT363"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC2G07",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC2G07-DATASHEET.pdf"
+    },
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC2G07-Q1",
+     "cat": "74LV LVC(13)",
+     "pkg": "SOT363",
+     "url": "http://www.i-core.cn/upload/file1787708012361/instructions/AiP74LVC2G07-Q1-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC2G14",
+   "em": [
+    "EM74LVC2G14GM",
+    "EM74LVC2G14GS",
+    "EM74LVC2G14GV",
+    "EM74LVC2G14GW"
+   ],
+   "em_func": "双路（施密特输入）",
+   "em_pkg": [
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-6L",
+    "SOT363"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC2G14",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC2G14-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC2G14",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/ea5851fa-143d-4ecc-8d8b-eaf05ee0b813"
+    }
+   ]
+  },
+  {
+   "family": "74LVC2G16",
+   "em": [
+    "EM74LVC2G16GM",
+    "EM74LVC2G16GS",
+    "EM74LVC2G16GV",
+    "EM74LVC2G16GW"
+   ],
+   "em_func": "双路缓冲器",
+   "em_pkg": [
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-6L",
+    "SOT363"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC2G16",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC2G16-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC2G17",
+   "em": [
+    "EM74LVC2G17GM",
+    "EM74LVC2G17GS",
+    "EM74LVC2G17GV",
+    "EM74LVC2G17GW"
+   ],
+   "em_func": "双路（施密特输入）",
+   "em_pkg": [
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-6L",
+    "SOT363"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC2G17",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC2G17-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC2G17",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/ffdf570a-ffb6-4150-abeb-d48dc760c8e9"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC2G17Q",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/d2461958-4c98-4a42-a24b-c399c731bec5"
+    }
+   ]
+  },
+  {
+   "family": "74LVC2G34",
+   "em": [
+    "EM74LVC2G34GM",
+    "EM74LVC2G34GS",
+    "EM74LVC2G34GV",
+    "EM74LVC2G34GW"
+   ],
+   "em_func": "双路缓冲器",
+   "em_pkg": [
+    "DFN1X1-6L",
+    "SOT23",
+    "SOT23-6L",
+    "SOT363"
+   ],
+   "em_voltage": "1.65 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC2G34",
+     "cat": "LV LVC(222)",
+     "pkg": "1.65 - 5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC2G34-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC32",
+   "em": [
+    "EM74LVC32AD",
+    "EM74LVC32APW"
+   ],
+   "em_func": "四路2输入或门",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "1.2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC32",
+     "cat": "LV LVC(222)",
+     "pkg": "1.2~5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC32-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC32",
+     "cat": "OR Gates",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/1bca8e88-9dc9-4e37-9307-3e5da344dbd0"
+    }
+   ]
+  },
+  {
+   "family": "74LVC4245",
+   "em": [
+    "EM74LVC4245",
+    "EM74LVC4245A",
+    "EM74LVC4245APW",
+    "EM74LVC4245PW"
+   ],
+   "em_func": "八路收发器（三态输出）",
+   "em_pkg": [
+    "TSSOP-24L"
+   ],
+   "em_voltage": "1.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC4245",
+     "cat": "LV LVC(222)",
+     "pkg": "VDDA:1.5~5.5\nVDDB:1.5~3.6",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC4245-DATASHEET.pdf"
+    }
+   ]
+  },
+  {
+   "family": "74LVC540",
+   "em": [
+    "EM74LVC540AD",
+    "EM74LVC540APW"
+   ],
+   "em_func": "八路缓冲器（三态输出）",
+   "em_pkg": [
+    "SOP-20L",
+    "TSSOP-20L"
+   ],
+   "em_voltage": "1.2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "SGM",
+     "pn": "74LVC540A",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/48dbbc48-2815-4321-9c6a-344774582bd2"
+    }
+   ]
+  },
+  {
+   "family": "74LVC541",
+   "em": [
+    "EM74LVC541AD",
+    "EM74LVC541APW"
+   ],
+   "em_func": "八路缓冲器（三态输出）",
+   "em_pkg": [
+    "SOP-20L",
+    "TSSOP-20L"
+   ],
+   "em_voltage": "1.2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC541",
+     "cat": "LV LVC(222)",
+     "pkg": "1.2~5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC541-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC541A",
+     "cat": "Buffers & Drivers",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/2e67f566-d42b-4726-ba93-07428de6c05f"
+    }
+   ]
+  },
+  {
+   "family": "74LVC74",
+   "em": [
+    "EM74LVC74AD",
+    "EM74LVC74APW"
+   ],
+   "em_func": "双路触发器",
+   "em_pkg": [
+    "SOP-14L",
+    "TSSOP-14L"
+   ],
+   "em_voltage": "1.2 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVC74",
+     "cat": "LV LVC(222)",
+     "pkg": "1.2~5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVC74-DATASHEET.pdf"
+    },
+    {
+     "v": "SGM",
+     "pn": "74LVC74",
+     "cat": "Flip-flops",
+     "pkg": "",
+     "url": "https://www.sg-micro.com/rect/assets/e58c5410-ff55-45bf-ad3b-3ac70586d6a8"
+    }
+   ]
+  },
+  {
+   "family": "74LVCH245",
+   "em": [
+    "EM74LVCH245AD",
+    "EM74LVCH245APW"
+   ],
+   "em_func": "八路收发器（三态输出）",
+   "em_pkg": [
+    "SOP-20L"
+   ],
+   "em_voltage": "4.5 V to 5.5 V",
+   "comps": [
+    {
+     "v": "AiP",
+     "pn": "AiP74LVCH245",
+     "cat": "LV LVC(222)",
+     "pkg": "1.2~5.5",
+     "url": "http://www.i-core.cn/upload/file1789606409686/instructions/AiP74LVCH245-DATASHEET.pdf"
+    }
+   ]
+  }
+ ]
+}

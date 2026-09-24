@@ -1479,3 +1479,21 @@ tr.cmp-diff td:first-child {
 .comp-DIOO { background: #6d8b5e; }
 .comp-dl { color: #8d6a3f; text-decoration: none; white-space: nowrap; }
 .comp-dl:hover { text-decoration: underline; }
+
+
+/* ---------- 竞品对标（详情页 + 索引表） ---------- */
+.comp-head { display: flex; gap: 10px; flex-wrap: wrap; align-items: baseline; margin-bottom: 4px; }
+.comp-same { color: var(--muted-foreground, #7a7168); font-size: 12px; margin: 4px 0 6px; }
+.comp-p2p-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 10px; }
+.comp-p2p-table th { background: #f0eae1; text-align: left; padding: 6px 9px; border-bottom: 2px solid #e0d5c5; white-space: nowrap; }
+.comp-p2p-table td { padding: 5px 9px; border-bottom: 1px solid #f2ece4; vertical-align: top; }
+.comp-p2p-table tr:hover td { background: #fdfbf8; }
+.comp-em-link { color: #2f8f86; text-decoration: none; border-bottom: 1px dashed #2f8f86; }
+.comp-em-link:hover { border-bottom-style: solid; }
+.comp-none { color: var(--muted-foreground, #aaa); }
+
+
+.comp-p2p-card { border-left: 3px solid #a8763f; }
+.comp-p2p-em { font-size: 15px; margin: 6px 0 4px; }
+.comp-p2p-competitors { font-size: 12px; color: var(--muted-foreground, #7a7168); }
+.badge-ok { background: #6d8b5e; color: #fff; }

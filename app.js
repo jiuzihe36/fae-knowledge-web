@@ -521,6 +521,10 @@
     detailDesc: document.getElementById("detailDesc"),
     detailMeta: document.getElementById("detailMeta"),
     tiCard: document.getElementById("tiCard"),
+    compCard: document.getElementById("compCard"),
+    compNote: document.getElementById("compNote"),
+    compList: document.getElementById("compList"),
+    compIndexNote: document.getElementById("compIndexNote"),
     tiNote: document.getElementById("tiNote"),
     tiList: document.getElementById("tiList"),
     circuitWrap: document.getElementById("circuitWrap"),
@@ -715,6 +719,7 @@
     ].join("");
 
     renderTiCard(item);
+    renderCompCard(item);
 
     // 应用电路图: circuits/{model}_wiring.svg (670 款全量, 引脚与走向取自规格书)
     const circuitUrl = new URL("./circuits/" + safeCircuitName(item.model) + "_wiring.svg", document.baseURI).href;
@@ -790,6 +795,129 @@
       return;
     }
     el.tiList.innerHTML = recs.map(tiRowHtml).join("");
+  }
+
+  /* ---------- 竞品对标（圣邦/中微爱芯/帝奥微） ---------- */
+  var compP2P = null;
+  var compP2PIndex = null;   /* family -> item */
+  var compByModel = null;    /* 芯祥型号 -> item */
+
+  function buildCompIndex(data) {
+    var byFamily = Object.create(null);
+    var byModel = Object.create(null);
+    var items = (data && Array.isArray(data.items)) ? data.items : [];
+    items.forEach(function (it) {
+      byFamily[it.family] = it;
+      (it.em || []).forEach(function (m) {
+        var k = normPn(m);
+        if (!byModel[k]) byModel[k] = [];
+        if (byModel[k].indexOf(it) < 0) byModel[k].push(it);
+      });
+    });
+    var famKeys = Object.keys(byFamily).sort(function (a, b) { return b.length - a.length; });
+    return { byFamily: byFamily, byModel: byModel, famKeys: famKeys, data: data };
+  }
+
+  /* 从型号推功能族，兜底匹配（byModel 未命中时） */
+  function famOf(model) {
+    var s = normPn(model);
+    /* 先剥厂商前缀，与后端 Python 侧的族提取保持一致 */
+    var pres = ["EMS", "EXS", "EM", "EL", "AIP", "SGM", "DIO", "CD", "HEF", "MC", "SN"];
+    for (var i = 0; i < pres.length; i++) {
+      if (s.indexOf(pres[i]) === 0 && s.length > pres[i].length) { s = s.slice(pres[i].length); break; }
+    }
+    var m = s.match(/^(74[A-Z]{2,4}\d{1,3}G?\d{1,3})/);
+    if (m) return m[1];
+    m = s.match(/^(4\d{3})/);
+    if (m) return m[1];
+    m = s.match(/^([A-Z]{0,4}\d{3,4})/);
+    return m ? m[1] : s;
+  }
+
+  /* 族规范化：优先用数据里的族名表做「最长前缀」匹配，避免正则猜封装后缀。
+     compP2PIndex.byFamily 的键就是权威族名（74CBTLV3257、74AHC1G08、3157…），
+     型号只要以某个族名为前缀即归入该族（取最长的那个）。 */
+  function canonFam(f) {
+    if (!compP2PIndex || !compP2PIndex.famKeys) return f;
+    var keys = compP2PIndex.famKeys;
+    var best = "";
+    for (var i = 0; i < keys.length; i++) {
+      var k = keys[i];
+      if (f.indexOf(k) === 0 && k.length > best.length) best = k;
+    }
+    return best || f;
+  }
+
+  function compItemsForModel(model) {
+    if (!compP2PIndex) return [];
+    var k = normPn(model);
+    var hit = compP2PIndex.byModel[k];
+    if (hit && hit.length) return hit;
+    var f = canonFam(famOf(model));
+    var it = compP2PIndex.byFamily[f];
+    if (it) return [it];
+    /* 前缀兜底：74CBTLV3257PW → 74CBTLV3257 */
+    var keys = Object.keys(compP2PIndex.byFamily);
+    for (var i = 0; i < keys.length; i++) {
+      var k = keys[i];
+      if (f.length >= 5 && (k.indexOf(f) === 0 || f.indexOf(k) === 0) && Math.abs(k.length - f.length) <= 2) {
+        return [compP2PIndex.byFamily[k]];
+      }
+    }
+    return [];
+  }
+
+  function compVendorName(v) { return COMP_VN[v] || v; }
+
+  /* 竞品料号 → 芯祥替代（点型号可直接跳到详情） */
+  function emForCompPn(pn) {
+    if (!compP2PIndex) return '<span class="comp-none">—</span>';
+    var f = canonFam(famOf(pn));
+    var it = compP2PIndex.byFamily[f];
+    if (!it || !it.em || !it.em.length) return '<span class="comp-none">—</span>';
+    return it.em.map(function (m) {
+      return '<a class="comp-em-link mono" href="#" data-model="' + esc(m) + '">' + esc(m) + "</a>";
+    }).join(" ");
+  }
+
+
+  function renderCompCard(item) {
+    if (!el.compCard) return;
+    var items = compItemsForModel(item.model);
+    el.compCard.classList.remove("hidden");
+    if (!compP2P) {
+      el.compNote.textContent = "";
+      el.compList.innerHTML = '<div class="ti-empty">数据未就绪</div>';
+      return;
+    }
+    var gen = compP2P.generated || "";
+    el.compNote.textContent = gen ? "· 数据截至 " + gen : "";
+    if (!items.length) {
+      el.compList.innerHTML = '<div class="ti-empty">暂无该型号的竞品对标数据（仅覆盖与竞品同功能族的料号）</div>';
+      return;
+    }
+    var html = "";
+    items.forEach(function (it) {
+      var comps = Array.isArray(it.comps) ? it.comps : [];
+      if (!comps.length) return;
+      html += '<div class="ti-row">';
+      html += '<div class="comp-head"><span class="mono"><b>' + esc(it.em.join(" / ")) + "</b></span>";
+      if (it.em_func) html += '<span class="ti-note">' + esc(it.em_func) + "</span>";
+      if (it.em_pkg && it.em_pkg.length) html += '<span class="ti-note">封装可选 ' + esc(it.em_pkg.join("、")) + "</span>";
+      html += "</div>";
+      html += '<div class="comp-same">同功能族：<span class="mono">' + esc(it.family) + "</span>（" + comps.length + " 个竞品料号）</div>";
+      html += '<table class="comp-p2p-table"><thead><tr><th>厂商</th><th>竞品料号</th><th>分类</th><th>规格书</th></tr></thead><tbody>';
+      comps.forEach(function (c) {
+        html += "<tr>" +
+          '<td><span class="comp-badge comp-' + esc(c.v) + '">' + esc(compVendorName(c.v)) + "</span></td>" +
+          '<td class="mono"><b>' + esc(c.pn) + "</b></td>" +
+          "<td>" + esc(c.cat || "") + "</td>" +
+          '<td><a class="comp-dl" href="' + esc(c.url || "") + '" target="_blank" rel="noopener">规格书 ↗</a></td>' +
+          "</tr>";
+      });
+      html += "</tbody></table></div>";
+    });
+    el.compList.innerHTML = html || '<div class="ti-empty">暂无该型号的竞品对标数据</div>';
   }
 
   function tiStatusBadgesHtml(pns, dedupe) {
@@ -957,12 +1085,13 @@
     const q = el.p2pQuery.value.trim();
     if (!q) {
       el.p2pResults.innerHTML = "";
-      el.p2pEmpty.textContent = "输入 EM 或 TI 料号开始查询，例如 EM74HC00 / SN74HC00";
+      el.p2pEmpty.textContent = "输入芯祥 / TI / 竞品料号开始查询，例如 EM74HC00 / SN74HC00 / SGM7SZ00 / AiP74LVC1G08";
       el.p2pEmpty.classList.remove("hidden");
       return;
     }
     const recs = searchP2P(p2pIndex, q);
-    if (!recs.length) {
+    const compRecs = searchCompP2P(q);
+    if (!recs.length && !compRecs.length) {
       el.p2pResults.innerHTML = "";
       el.p2pEmpty.textContent = "没有匹配「" + q + "」的替代关系";
       el.p2pEmpty.classList.remove("hidden");
@@ -970,10 +1099,75 @@
     }
     el.p2pEmpty.classList.add("hidden");
     const shown = recs.slice(0, 100);
-    el.p2pResults.innerHTML = shown.map(p2pCardHtml).join("") +
+    el.p2pResults.innerHTML =
+      compRecs.map(compP2PRowHtml).join("") +
+      shown.map(p2pCardHtml).join("") +
       (recs.length > shown.length
         ? '<div class="p2p-count">显示前 100 条，共 ' + recs.length + " 条，继续输入可缩小范围</div>"
         : "");
+  }
+
+
+  /* 去厂商前缀：SGM74HC541 → 74HC541, AiP74LVC1G08 → 74LVC1G08 */
+  function stripVendor(s) {
+    var pres = ["AIP", "SGM", "DIO", "EMS", "EXS", "EM", "EL", "CD", "HEF", "MC", "SN"];
+    for (var i = 0; i < pres.length; i++) {
+      if (s.indexOf(pres[i]) === 0 && s.length > pres[i].length) return s.slice(pres[i].length);
+    }
+    return s;
+  }
+
+  /* 竞品料号反查：输入圣邦/AiP/DIOO 料号 → 给芯祥替代 */
+  function searchCompP2P(query) {
+    if (!compP2PIndex) return [];
+    var q = normPn(query);
+    if (!q || q.length < 3) return [];
+    var out = [];
+    var seen = Object.create(null);
+    /* 查询词也去厂商前缀：SGM74HC541 → 74HC541 */
+    var qn = stripVendor(q);
+    (compP2PIndex.data.items || []).forEach(function (it) {
+      var hit = false;
+      (it.comps || []).forEach(function (c) {
+        var p = normPn(c.pn);
+        var pn = stripVendor(p);
+        if (p === q || pn === q || pn === qn ||
+            p.indexOf(q) === 0 || pn.indexOf(q) === 0 || pn.indexOf(qn) === 0 ||
+            (q.length >= 5 && (p.indexOf(q) !== -1 || pn.indexOf(qn) !== -1))) hit = true;
+      });
+      if (!hit) return;
+      if (seen[it.family]) return;
+      seen[it.family] = true;
+      /* 精确度打分：竞品料号与查询词完全相等 > 去掉厂商前缀后相等 > 前缀 */
+      var score = 3;
+      (it.comps || []).forEach(function (c) {
+        var p = normPn(c.pn), pn = stripVendor(p);
+        if (p === q || pn === q) score = Math.min(score, 0);
+        else if (pn === qn) score = Math.min(score, 1);
+      });
+      out.push({ it: it, score: score });
+    });
+    out.sort(function (a, b) {
+      if (a.score !== b.score) return a.score - b.score;
+      return a.it.family.localeCompare(b.it.family);
+    });
+    return out.slice(0, 30).map(function (r) { return r.it; });
+  }
+
+  function compP2PRowHtml(it) {
+    var ems = (it.em || []).map(function (m) {
+      return '<a class="comp-em-link mono" href="#" data-model="' + esc(m) + '">' + esc(m) + "</a>";
+    }).join("、");
+    var comps = (it.comps || []).map(function (c) {
+      return '<span class="comp-badge comp-' + esc(c.v) + '">' + esc(compVendorName(c.v)) + "</span> " +
+             '<span class="mono">' + esc(c.pn) + "</span>";
+    }).join(" ｜ ");
+    return '<div class="p2p-card comp-p2p-card">' +
+      '<div class="p2p-head"><span class="badge badge-ok">芯祥替代</span>' +
+      '<span class="ti-note">' + esc(it.em_func || "") + "</span></div>" +
+      '<div class="comp-p2p-em">' + ems + "</div>" +
+      '<div class="comp-p2p-competitors">竞品：' + comps + "</div>" +
+      "</div>";
   }
 
   function jumpToProduct(token) {
@@ -1278,7 +1472,7 @@
       return;
     }
     var html = '<table class="comp-table"><thead><tr>' +
-      "<th>厂商</th><th>型号</th><th>分类</th><th>功能描述</th><th>封装</th><th>大小</th><th>规格书</th>" +
+      "<th>厂商</th><th>型号</th><th>分类</th><th>功能描述</th><th>封装</th><th>芯祥对应</th><th>大小</th><th>规格书</th>" +
       "</tr></thead><tbody>";
     rows.slice(0, 300).forEach(function (r) {
       html += "<tr>" +
@@ -1287,12 +1481,29 @@
         "<td>" + esc(r.c) + "</td>" +
         "<td>" + esc(r.d || "-") + "</td>" +
         '<td class="mono">' + esc(r.k || "-") + "</td>" +
+        "<td>" + emForCompPn(r.p) + "</td>" +
         "<td>" + (r.s ? r.s + " MB" : "-") + "</td>" +
         '<td><a class="comp-dl" href="' + esc(r.u) + '" target="_blank" rel="noopener">官网下载 ↗</a></td>' +
         "</tr>";
     });
     html += "</tbody></table>";
     el.compResults.innerHTML = html;
+  }
+
+  function loadCompP2P() {
+    fetch("./data/p2p_competitor.json")
+      .then(function (response) {
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        return response.json();
+      })
+      .then(function (data) {
+        compP2P = data && typeof data === "object" ? data : null;
+        compP2PIndex = compP2P ? buildCompIndex(compP2P) : null;
+      })
+      .catch(function () {
+        compP2P = null;
+        compP2PIndex = null;
+      });
   }
 
   function loadComp() {
@@ -1341,6 +1552,12 @@
     compCat = el.compCat.value || "";
     renderComp();
   });
+  el.compResults.addEventListener("click", function (event) {
+    var a = event.target.closest("a.comp-em-link");
+    if (!a) return;
+    event.preventDefault();
+    jumpToProduct(a.dataset.model);
+  });
 
   bindEvents();
   switchView("list");
@@ -1348,4 +1565,5 @@
   load();
   loadP2P();
   loadComp();
+  loadCompP2P();
 })();
