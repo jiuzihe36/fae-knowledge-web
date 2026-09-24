@@ -2523,3 +2523,116 @@ body { background: #ffffff; }
 .app-star:hover { color: #E8A33D; transform: scale(1.18); }
 .app-card.fav .app-star { color: #E8A33D; }
 .app-card.fav { border-left: 3px solid #E8A33D; }
+
+
+/* ============================================================
+   手机端适配（≤560px）—— 2026-09-25
+   问题：顶栏一行塞了 logo+标题+搜索+2统计+主题按钮 → 重叠
+   思路：顶栏分两行、统计收起、目录树缩进压缩、抽屉全屏
+   ============================================================ */
+@media (max-width: 560px) {
+  /* --- 顶栏：品牌行 + 搜索行 ---
+     ⚠ 必须覆盖 TI 覆盖层的 .topbar-inner { height: 60px }（写死高度），
+     否则两行内容溢出 60px 盒、标题被压成竖排 + 压在 logo 上 */
+  .topbar-inner {
+    height: auto !important;
+    min-height: 0 !important;
+    flex-wrap: wrap;
+    align-items: center !important;
+    gap: 8px;
+    padding-block: 8px;
+    padding-inline: 12px;
+  }
+  .topbar { position: static !important; }
+  .brand { flex: 1 1 auto; min-width: 0; }
+  .brand-text h1 { font-size: 16px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .logo { width: 30px; height: 30px; font-size: 12px; flex: 0 0 auto; }
+
+  .topbar-side {
+    flex: 1 1 100%;
+    order: 2;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+  /* 搜索框独占一行，不再和统计抢空间 */
+  .topbar-search { flex: 1 1 auto; min-width: 0; order: 2; }
+  .topbar-search input { min-height: 36px; font-size: 14px; padding: 6px 10px; }
+  /* 手机屏幕小，统计数字收起来（进详情页也看得到） */
+  .topstats { display: none; }
+  .theme-btn { flex: 0 0 auto; width: 36px; height: 36px; }
+
+  /* --- 主色横条：允许横向滑动，不换行不重叠 --- */
+  .band-in {
+    padding-inline: 12px;
+    gap: 14px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .band-in::-webkit-scrollbar { display: none; }
+  .band-in a { padding-block: 9px; font-size: 13px; white-space: nowrap; letter-spacing: -0.01em; }
+  /* 最后一项右侧留白，横滑到底不贴边 */
+  .band-in a:last-child { padding-right: 18px; }
+
+  /* --- 面包屑 --- */
+  .crumb { padding-inline: 12px; font-size: 12px; white-space: nowrap; overflow-x: auto; }
+
+  /* --- 目录树：缩进减半，避免文字被挤没 ---
+     注意：路数层复用 .ser-row/.ser-block 类名（见 unified.js renderRoutes），
+     所以只有 4 套缩进：大类 / 工艺组 / 系列 / 功能（含路数） */
+  /* 触控友好：行高 ≥44px，图标与文字拉开间距 */
+  .cat-row, .pro-row, .ser-row, .func-row {
+    padding-inline: 12px; gap: 12px; min-height: 44px;
+  }
+  .cat-name, .pro-name, .ser-name, .func-name { margin-left: 2px; }
+  .pro-row { padding-left: 20px !important; }
+  .ser-row { padding-left: 30px !important; }
+  .func-row { padding-left: 40px !important; }
+  .mod-row {
+    grid-template-columns: 1fr auto !important;
+    padding: 10px 12px 10px 62px !important;
+    gap: 2px 8px;
+  }
+  .mod-detail, .mod-pkg, .mod-vcc { display: none; }
+  .cat-sub { display: none; }
+
+  /* 目录工具栏：筛选框占满一行 */
+  .cat-tools { flex-wrap: wrap; gap: 6px; padding-inline: 12px; }
+  .tree-filter { flex: 1 1 100%; max-width: none; order: 3; }
+  .cat-hero { padding-inline: 12px; }
+  .cat-hero h2 { font-size: 18px; }
+  .cat-hero p { font-size: 12.5px; }
+
+  /* --- 栏目页 --- */
+  .page-body { padding-inline: 12px; }
+  .page-search { width: 100%; }
+  .page-h3 { font-size: 15px; }
+  .app-grid { grid-template-columns: 1fr !important; }
+  .app-head { gap: 6px; }
+
+  /* --- 详情抽屉：手机全屏 --- */
+  .drawer-panel {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 0;
+  }
+  .drawer-head { padding: 12px 14px 8px; }
+  .head-line { flex-wrap: wrap; gap: 6px; }
+  .head-line h2 { font-size: 19px; word-break: break-all; }
+  .nav-line { gap: 6px; }
+  .nav-btn { padding: 4px 10px; font-size: 12px; }
+  .meta-grid { grid-template-columns: 1fr !important; }
+  .meta-item { border-right: 0 !important; }
+
+  /* --- 表格：允许横滑，不撑破 --- */
+  .model-table, .spec-table, .ptable-wrap { display: block; overflow-x: auto; white-space: nowrap; }
+  .ptable { min-width: 520px; }
+  table { font-size: 12.5px; }
+
+  /* --- 全局：禁止横向溢出 --- */
+  body { overflow-x: hidden; }
+  /* 底部安全区：不被手机手势条遮挡 */
+  .cat-tree, .page-body { padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px)); }
+  img, svg { max-width: 100%; height: auto; }
+  .shell { padding-inline: 12px !important; }
+}

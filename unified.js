@@ -76,6 +76,11 @@
       renderCatalog();
       if (el.q && el.q.value.trim()) doSearch(el.q.value);
       else setMode(false);
+      /* 手机用短 placeholder（长提示在窄屏被截断） */
+      if (el.q && window.innerWidth <= 560) {
+        el.q.setAttribute("placeholder", "搜索芯祥型号");
+      }
+
       /* 桌面端自动聚焦搜索框；触屏不聚焦（避免弹键盘挡内容） */
       if (el.q && !("ontouchstart" in window) && window.innerWidth > 820) {
         try { el.q.focus({ preventScroll: true }); } catch (e) { el.q.focus(); }
@@ -461,6 +466,11 @@
 
   function renderCatalog() {
     if (!CATALOG || !el.catTree) return;
+    /* 手机端收紧筛选框提示（长提示在窄屏被截断） */
+    if (window.innerWidth <= 560) {
+      var tf = document.getElementById("treeFilter");
+      if (tf) tf.setAttribute("placeholder", "筛选型号 / 功能 / 封装");
+    }
     var cats = CATALOG.cats || [];
     if (el.catCount) el.catCount.textContent = CATALOG.total + " 款产品 · " + cats.length + " 大类";
     var html = cats.map(function (c) {
