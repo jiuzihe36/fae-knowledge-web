@@ -15,8 +15,11 @@ echo "=========================================="
 # ---------- 0. 校验前置 ----------
 command -v wrangler >/dev/null 2>&1 || { echo "❌ 缺 wrangler: npm i -g wrangler"; exit 1; }
 command -v python3 >/dev/null 2>&1 || { echo "❌ 缺 python3"; exit 1; }
-if ! wrangler whoami 2>/dev/null | grep -q "logged in"; then
-  echo "❌ 未登录 Cloudflare → 请先运行: wrangler login"
+# 登录检查: 只看本地凭据文件, 不走网络。wrangler whoami 要联网查账户列表, 网络抖动时会误报"未登录"
+# (2026-09-24: 后台部署多次因 whoami 网络失败误判; 凭据文件存在且含 oauth_token 即视为已登录)
+WR_CRED="$HOME/.wrangler/config/default.toml"
+if [ ! -f "$WR_CRED" ] || ! grep -q "oauth_token" "$WR_CRED" 2>/dev/null; then
+  echo "❌ 未找到 Cloudflare 凭据 ($WR_CRED) → 请先运行: wrangler login"
   exit 1
 fi
 
