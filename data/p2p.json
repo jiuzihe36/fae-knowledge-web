@@ -1,6 +1,6 @@
 {
  "generated": "2026-09-24",
- "source": "wiki comparisons/p2p-ti-full-mapping.md + p3 取证; +AiP 6颗 (xinxiang-fae 第二批) + TXS0104E",
+ "source": "wiki comparisons/p2p-ti-full-mapping.md + p3 取证",
  "ti_index": {
   "SN74AHC1G00": {
    "status": "ACTIVE",
@@ -941,10 +941,6 @@
   "SN74LVCH8T245": {
    "status": "ACTIVE",
    "evidence": "web_extract https://www.ti.com/product/SN74LVCH8T245 -> HTTP 200, title \"SN74LVCH8T245 data sheet, product information and support\", lifecycle badge status=1 (ACTIVE)"
-  },
-  "TXS0104E": {
-   "status": "ACTIVE",
-   "evidence": "xinxiang-fae P2P 第一批交付: TXS0104EDR -> EXS0104D (SOP-14L) 逐脚完全一致"
   }
  },
  "logic": [
@@ -962,6 +958,18 @@
    "nxp": [
     "74AHC1G00",
     "74AHCT1G00"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V",
+     "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -978,6 +986,18 @@
    "nxp": [
     "74AHC1G02",
     "74AHCT1G02"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V",
+     "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -994,6 +1014,18 @@
    "nxp": [
     "74AHC1G04",
     "74AHCT1G04"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V",
+     "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1010,6 +1042,16 @@
    "nxp": [
     "74AHC1G06",
     "74AHCT1G06"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1026,6 +1068,16 @@
    "nxp": [
     "74AHC1G07",
     "74AHCT1G07"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1042,6 +1094,18 @@
    "nxp": [
     "74AHC1G08",
     "74AHCT1G08"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V",
+     "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1058,6 +1122,16 @@
    "nxp": [
     "74AHC1G09",
     "74AHCT1G09"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1074,6 +1148,16 @@
    "nxp": [
     "74AHC1G11",
     "74AHCT1G11"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1090,6 +1174,18 @@
    "nxp": [
     "74AHC1G125",
     "74AHCT1G125"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V",
+     "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1106,6 +1202,18 @@
    "nxp": [
     "74AHC1G126",
     "74AHCT1G126"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V",
+     "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1122,6 +1230,18 @@
    "nxp": [
     "74AHC1G14",
     "74AHCT1G14"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V",
+     "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1138,6 +1258,16 @@
    "nxp": [
     "74AHC1G16",
     "74AHCT1G16"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1154,6 +1284,16 @@
    "nxp": [
     "74AHC1G17",
     "74AHCT1G17"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1170,6 +1310,16 @@
    "nxp": [
     "74AHC1G240",
     "74AHCT1G240"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1186,6 +1336,18 @@
    "nxp": [
     "74AHC1G32",
     "74AHCT1G32"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V",
+     "note": "芯祥 VCC 2.0–5.5 V ⊇ TI 2 V to 5.5 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1202,6 +1364,16 @@
    "nxp": [
     "74AHC1G332",
     "74AHCT1G332"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1218,6 +1390,16 @@
    "nxp": [
     "74AHC2G04",
     "74AHCT2G04"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1234,6 +1416,16 @@
    "nxp": [
     "74AHC2G14",
     "74AHCT2G14"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1250,6 +1442,16 @@
    "nxp": [
     "74AHC2G16",
     "74AHCT2G16"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1266,6 +1468,16 @@
    "nxp": [
     "74AHC2G34",
     "74AHCT2G34"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–5.5 V",
+     "vcc_ti": "2 V to 5.5 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1366,6 +1578,18 @@
    "nxp": [
     "74HC00",
     "74HCT00"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1382,6 +1606,18 @@
    "nxp": [
     "74HC02",
     "74HCT02"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1398,6 +1634,16 @@
    "nxp": [
     "74HC03",
     "74HCT03"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1414,6 +1660,18 @@
    "nxp": [
     "74HC04",
     "74HCT04"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1430,6 +1688,16 @@
    "nxp": [
     "74HC05",
     "74HCT05"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1446,6 +1714,16 @@
    "nxp": [
     "74HC06",
     "74HCT06"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1462,6 +1740,16 @@
    "nxp": [
     "74HC07",
     "74HCT07"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1478,6 +1766,18 @@
    "nxp": [
     "74HC08",
     "74HCT08"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1494,6 +1794,16 @@
    "nxp": [
     "74HC09",
     "74HCT09"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1510,6 +1820,16 @@
    "nxp": [
     "74HC10",
     "74HCT10"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1526,6 +1846,16 @@
    "nxp": [
     "74HC11",
     "74HCT11"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1542,6 +1872,18 @@
    "nxp": [
     "74HC125",
     "74HCT125"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1558,6 +1900,16 @@
    "nxp": [
     "74HC126",
     "74HCT126"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1574,6 +1926,16 @@
    "nxp": [
     "74HC132",
     "74HCT132"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1590,6 +1952,18 @@
    "nxp": [
     "74HC138",
     "74HCT138"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1606,6 +1980,18 @@
    "nxp": [
     "74HC14",
     "74HCT14"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1664,6 +2050,16 @@
    "nxp": [
     "74HC166",
     "74HCT166"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1680,6 +2076,16 @@
    "nxp": [
     "74HC174",
     "74HCT174"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1696,6 +2102,16 @@
    "nxp": [
     "74HC20",
     "74HCT20"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1712,6 +2128,16 @@
    "nxp": [
     "74HC21",
     "74HCT21"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1728,6 +2154,18 @@
    "nxp": [
     "74HC240",
     "74HCT240"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1744,6 +2182,18 @@
    "nxp": [
     "74HC244",
     "74HCT244"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1760,6 +2210,18 @@
    "nxp": [
     "74HC245",
     "74HCT245"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1776,6 +2238,16 @@
    "nxp": [
     "74HC259",
     "74HCT259"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1792,6 +2264,16 @@
    "nxp": [
     "74HC266",
     "74HCT266"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1808,6 +2290,16 @@
    "nxp": [
     "74HC27",
     "74HCT27"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1824,6 +2316,18 @@
    "nxp": [
     "74HC32",
     "74HCT32"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1840,6 +2344,16 @@
    "nxp": [
     "74HC365",
     "74HCT365"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1856,6 +2370,16 @@
    "nxp": [
     "74HC366",
     "74HCT366"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1872,6 +2396,16 @@
    "nxp": [
     "74HC367",
     "74HCT367"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1888,6 +2422,16 @@
    "nxp": [
     "74HC368",
     "74HCT368"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1904,6 +2448,16 @@
    "nxp": [
     "74HC4002",
     "74HCT4002"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1920,6 +2474,16 @@
    "nxp": [
     "74HC4075",
     "74HCT4075"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1936,6 +2500,16 @@
    "nxp": [
     "74HC4094",
     "74HCT4094"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -1952,6 +2526,18 @@
    "nxp": [
     "74HC540",
     "74HCT540"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1968,6 +2554,18 @@
    "nxp": [
     "74HC541",
     "74HCT541"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -1984,6 +2582,18 @@
    "nxp": [
     "74HC573",
     "74HCT573"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -2000,6 +2610,18 @@
    "nxp": [
     "74HC574",
     "74HCT574"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -2044,6 +2666,16 @@
    "nxp": [
     "74HC597",
     "74HCT597"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -2060,6 +2692,16 @@
    "nxp": [
     "74HC7001",
     "74HCT7001"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -2076,6 +2718,16 @@
    "nxp": [
     "74HC7002",
     "74HCT7002"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -2092,6 +2744,16 @@
    "nxp": [
     "74HC7032",
     "74HCT7032"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -2108,6 +2770,16 @@
    "nxp": [
     "74HC7266",
     "74HCT7266"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -2124,6 +2796,18 @@
    "nxp": [
     "74HC74",
     "74HCT74"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V",
+     "note": "芯祥 VCC 2.0–6.0 V ⊇ TI 2 V to 6 V（全覆盖，drop-in 安全）"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V",
+     "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）"
+    }
    ]
   },
   {
@@ -2140,6 +2824,16 @@
    "nxp": [
     "74HC86",
     "74HCT86"
+   ],
+   "vcc_parts": [
+    {
+     "vcc_em": "2.0–6.0 V",
+     "vcc_ti": "2 V to 6 V"
+    },
+    {
+     "vcc_em": "4.5–5.5 V",
+     "vcc_ti": "4.5 V to 5.5 V"
+    }
    ]
   },
   {
@@ -3619,56 +4313,6 @@
    "verdict": "[!]",
    "note": "取证结果：TI 官方无 TXS0106(ti.com/product/TXS0106 与 ti.com/lit/ds/symlink/txs0106.pdf 均 404，站内检索只返回 TXB0106/TXB0606/TXV0106)；6 位最接近 TXB0106(自动方向但推挽、VCCA 1.2-3.6V、VCCB 1.65-5.5V、TSSOP-16 PW)与 TXV0106(6 位固定方向)，无 6 位开漏自动方向款；EXS0106 为 VCCA 1.3-5.5V/开漏/40Mbps、TSSOP-16 → 位宽可凑但 VCCA 与开漏属性不对齐，维持[!]",
    "evidence": "https://www.ti.com/product/TXB0106"
-  }
- ],
- "aip": [
-  {
-   "competitor": "AiP 中微爱芯",
-   "model": "AIP74AHCT1G08GB236",
-   "em": "EM74AHCT1G08GV",
-   "verdict": "[OK]",
-   "pins": "1=B 2=A 3=GND 4=Y 5=VCC (逐脚一致)",
-   "note": "SOT23-5L 引脚完全对应; 芯祥温度 -40~+125℃ 宽于 AiP -40~+105℃; AHCT 为 TTL 阈值(若原设计 CMOS 阈值改用 EM74LVC1G08GV)"
-  },
-  {
-   "competitor": "AiP 中微爱芯",
-   "model": "AIP74AHCT1G00GB236",
-   "em": "EM74AHCT1G00GV",
-   "verdict": "[OK]",
-   "pins": "1=B 2=A 3=GND 4=Y 5=VCC (逐脚一致)",
-   "note": "SOT23-5L 引脚完全对应; 温度两侧均 -40~+125℃"
-  },
-  {
-   "competitor": "AiP 中微爱芯",
-   "model": "AIP74LVC1G57GB236",
-   "em": "EM74LVC1G57GV",
-   "verdict": "[OK]",
-   "pins": "1=B 2=GND 3=A 4=Y 5=VCC 6=C (逐脚一致)",
-   "note": "SOT23-6L 引脚完全对应; 8 种可配置逻辑; 芯祥驱动 ±24mA > AiP ±8mA"
-  },
-  {
-   "competitor": "AiP 中微爱芯",
-   "model": "AIP74LVC1G157GB236",
-   "em": "-",
-   "verdict": "[NONE]",
-   "pins": "-",
-   "note": "2 路信号复用器 SOT23-6, 芯祥暂无直接对应; 邻近 EM74CBTLV3257 (四路复用器 SOP-16, 功能覆盖但引脚不同)"
-  },
-  {
-   "competitor": "AiP 中微爱芯",
-   "model": "AIP74LVC1G18GB236",
-   "em": "-",
-   "verdict": "[NONE]",
-   "pins": "-",
-   "note": "2 路信号分离器 SOT23-6, 芯祥暂无直接对应; 无邻近料, 建议登记产品线"
-  },
-  {
-   "competitor": "AiP 中微爱芯",
-   "model": "AIP74AHCT3G17GB236",
-   "em": "-",
-   "verdict": "[NONE]",
-   "pins": "-",
-   "note": "3 路同相缓冲器 TSSOP8/VSSOP8, 芯祥暂无直接对应; 邻近 EM74LVC2G17GV (双路 SOT23-6, 需改版评估)"
   }
  ]
 }

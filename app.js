@@ -813,11 +813,18 @@
         const st = tiStatus(p2pIndex, pn);
         const evi = tiEvidence(p2pIndex, pn);
         const href = pnHref(p2pIndex, pn);
+        /* 家族电压按位覆盖: HC+HCT/AHC+AHCT 合并条目的第二颗是 4.5–5.5V,
+           无 vcc_parts 时回落条目级值(单 TI 条目不受影响) */
+        const part = (Array.isArray(e.vcc_parts) && e.vcc_parts[idx]) || null;
+        const vccEm = (part && part.vcc_em) || e.vcc_em;
+        const vccTi = (part && part.vcc_ti) || e.vcc_ti;
+        const noteText = (part && part.note) || e.note;
+        const noteHtml = noteText ? '<div class="ti-note">' + esc(noteText) + "</div>" : "";
         const pnHtml = href
           ? '<a href="' + esc(href) + '" target="_blank" rel="noopener">' + esc(pn) + "</a>"
           : esc(pn);
-        const vcc = (e.vcc_em || e.vcc_ti)
-          ? '<div class="ti-evi">VCC 芯祥 ' + esc(text(e.vcc_em)) + " / TI " + esc(text(e.vcc_ti)) + "</div>"
+        const vcc = (vccEm || vccTi)
+          ? '<div class="ti-evi">VCC 芯祥 ' + esc(text(vccEm)) + " / TI " + esc(text(vccTi)) + "</div>"
           : "";
         const nxpPn = nxpList[idx];
         const nxpHtml = nxpPn

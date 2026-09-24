@@ -197,6 +197,30 @@ def main() -> None:
     else:
         errors.append(f"缺 {nxp_path.name} (NXP 对标 side-table)")
 
+    # --- 家族电压按位覆盖 (side-table: data/p2p_vcc.json) ---
+    # wiki 源表每条只有一个 vcc_em/vcc_ti 格 (11 列结构无法表达双家族电压),
+    # HC+HCT / AHC+AHCT 合并条目的第二颗是 4.5–5.5V 而非基格的 2–6V / 2–5.5V,
+    # 否则前端第二张卡显示第一家族的电压(2026-09 用户发现)。按位覆盖数组与
+    # ti[] 对齐; side-table 缺条/多条 → 计入 errors 阻断部署。
+    vcc_path = OUT.parent / "p2p_vcc.json"
+    if vcc_path.exists():
+        vcc_tbl = json.loads(vcc_path.read_text(encoding="utf-8"))
+        hit = 0
+        for e in logic:
+            if e["slug"] in vcc_tbl:
+                ov = vcc_tbl[e["slug"]]
+                if not isinstance(ov, list) or len(ov) != len(e["ti"]):
+                    errors.append(f"vcc side-table {e['slug']}: 覆盖数 {len(ov) if isinstance(ov, list) else type(ov).__name__} != ti 数 {len(e['ti'])}")
+                    continue
+                e["vcc_parts"] = ov
+                hit += 1
+        extra = [s for s in vcc_tbl if s not in {e["slug"] for e in logic}]
+        if extra:
+            errors.append(f"vcc side-table 多 {len(extra)} 条: {extra[:5]}")
+        print(f"[gen_p2p] vcc    : merged {hit}/{counts['logic']}")
+    else:
+        errors.append(f"缺 {vcc_path.name} (家族电压按位覆盖 side-table)")
+
     # --- 输出 ---
     fm = re.search(r"^updated:\s*(\S+)", text, re.M)
     generated = fm.group(1) if fm else date.today().isoformat()
