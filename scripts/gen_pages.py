@@ -223,3 +223,16 @@ json.dump(quality, open(W / 'quality.json', 'w', encoding='utf-8'),
 print(f'应用: {len(app_items)} 个场景')
 print(f'文档: {doc_stats}')
 print(f'质量: 温度 {len(temp)} 档 / 封装 {len(pkg)} 种 / 状态 {len(status)} 种')
+
+# ---------- 拆分：products_lite.json + specs.json ----------
+# specs（电气参数表）占 products.json 体积 95%，但只在下钻详情页时用。
+# 拆开后首屏只拉 446KB（原 4.16MB）。前端 app.js 用 ensureSpecs() 懒加载。
+_lite = [{k: v for k, v in it.items() if k != 'specs'} for it in prod]
+_specs = {str(it['id']): it['specs'] for it in prod if it.get('specs')}
+json.dump(_lite, open(W / 'products_lite.json', 'w', encoding='utf-8'),
+          ensure_ascii=False, separators=(',', ':'))
+json.dump(_specs, open(W / 'specs.json', 'w', encoding='utf-8'),
+          ensure_ascii=False, separators=(',', ':'))
+print(f'拆分: products_lite {len(_lite)} 款 / specs {len(_specs)} 份 ' +
+      f'({(W / "products_lite.json").stat().st_size // 1024}KB + ' +
+      f'{(W / "specs.json").stat().st_size // 1024}KB)')

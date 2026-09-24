@@ -697,9 +697,41 @@
     return list.length ? normPn(list[0]) : "";
   }
 
+  /* ---------- specs 懒加载：首次开详情才拉（3.7MB，占 products 原体积 95%） ---------- */
+  var SPECS = null, SPECS_PROMISE = null;
+  function ensureSpecs() {
+    if (SPECS) return Promise.resolve(SPECS);
+    if (SPECS_PROMISE) return SPECS_PROMISE;
+    SPECS_PROMISE = fetch("./data/specs.json")
+      .then(function (r) { return r.ok ? r.json() : {}; })
+      .then(function (m) {
+        SPECS = m || {};
+        /* 回填到每个产品，后续代码无感知 */
+        products.forEach(function (p) {
+          if (SPECS[String(p.id)]) p.specs = SPECS[String(p.id)];
+        });
+        /* 顺带把参数总数补上（首屏占位 "-"） */
+        if (el.statSpecs) {
+          var n = 0;
+          products.forEach(function (p) { if (Array.isArray(p.specs)) n += p.specs.length; });
+          el.statSpecs.textContent = n;
+        }
+        return SPECS;
+      })
+      .catch(function (e) { console.warn("[specs] 加载失败", e); SPECS = {}; return SPECS; });
+    return SPECS_PROMISE;
+  }
+
   function openDetail(id) {
     const item = products.find(function (p) { return p.id === id; });
     if (!item) return;
+    /* 详情页需要 specs（参数表）+ 竞品/P2P（竞品对标区块）。
+       首次打开时并发拉齐，之后就同步走（各 loader 幂等）。 */
+    if (!SPECS) {
+      Promise.all([ensureSpecs(), loadComp(), loadCompP2P(), loadP2P(), loadParams()])
+        .then(function () { openDetail(id); });
+      return;
+    }
 
     el.detailModel.textContent = item.model;
     el.detailBadges.innerHTML = statusBadgeHtml(deriveStatus(item), true);
@@ -1428,7 +1460,8 @@
     }
     el.tableBody.innerHTML = skHtml;
 
-    fetch("./data/products.json")
+    /* 首屏只拉精简版（446KB vs 4.16MB，specs 占 95% 已拆到 specs.json 懒加载） */
+    fetch("./data/products_lite.json")
       .then(function (response) {
         if (!response.ok) throw new Error("HTTP " + response.status);
         return response.json();
@@ -1455,14 +1488,16 @@
           el.modelList.appendChild(opt);
         });
 
-        const specCount = products.reduce(function (sum, p) {
-          return sum + (Array.isArray(p.specs) ? p.specs.length : 0);
-        }, 0);
         el.statModels.textContent = products.length;
-        el.statSpecs.textContent = specCount;
+        el.statSpecs.textContent = "-";
         if (el.meta) el.meta.textContent = "离线数据库 · 静态网页版";
         el.tableBody.innerHTML = "";
         runFilters();
+        /* 首屏渲染完成后空闲时预取 specs（不阻塞首屏，点开详情时已就绪） */
+        var prefetch = function () { ensureSpecs(); };
+        if (window.requestIdleCallback) window.requestIdleCallback(prefetch, { timeout: 3000 });
+        else setTimeout(prefetch, 1200);
+
         /* 桥接给 unified.js：数据 + 按型号打开详情 */
         window.__xx = window.__xx || {};
         window.__xx.products = products;
@@ -1475,29 +1510,34 @@
       })
       .catch(function (err) {
         if (el.meta) el.meta.textContent = "数据加载失败";
-        el.empty.textContent = "无法加载 products.json：" + err.message;
+        el.empty.textContent = "无法加载产品数据：" + err.message;
         el.empty.classList.remove("hidden");
         el.tableBody.innerHTML = "";
       });
   }
 
+  /* ---------- P2P 数据懒加载 ----------
+     首页只需要 products_lite，以下四份（合计约 4MB）只在真正用到时才拉：
+       p2p.json / p2p_competitor.json / competitor_index.json / p2p_params.json
+     每份带 _loaded / _promise 标记，重复调用不会重复请求。 */
+  function lazyLoad(name, flag, url, onData) {
+    var st = lazyLoad._st = lazyLoad._st || {};
+    if (st[flag]) return Promise.resolve(st[flag]);
+    if (st[flag + "_p"]) return st[flag + "_p"];
+    st[flag + "_p"] = fetch(url)
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) { st[flag] = d || (flag === "comp" ? [] : {}); return onData(st[flag]); })
+      .catch(function (e) { console.warn("[" + name + "] 加载失败", e); st[flag] = (flag === "comp" ? [] : {}); return onData(st[flag]); });
+    return st[flag + "_p"];
+  }
+
   function loadP2P() {
-    fetch("./data/p2p.json")
-      .then(function (response) {
-        if (!response.ok) throw new Error("HTTP " + response.status);
-        return response.json();
-      })
-      .then(function (data) {
-        p2p = data && typeof data === "object" ? data : null;
-        p2pIndex = p2p ? buildP2PIndex(p2p) : null;
-        __xxHook(); window.__xx.p2p = p2p; window.__xx.p2pIndex = p2pIndex;
-        renderP2P();
-      })
-      .catch(function () {
-        p2p = null;
-        p2pIndex = null;
-        renderP2P();
-      });
+    return lazyLoad("p2p", "p2p", "./data/p2p.json", function (data) {
+      p2p = data && typeof data === "object" ? data : null;
+      p2pIndex = p2p ? buildP2PIndex(p2p) : null;
+      __xxHook(); window.__xx.p2p = p2p; window.__xx.p2pIndex = p2pIndex;
+      renderP2P();
+    });
   }
 
   /* ---------- 竞品规格书视图 ---------- */
@@ -1567,58 +1607,34 @@
   }
 
   function loadParams() {
-    fetch("./data/p2p_params.json")
-      .then(function (response) {
-        if (!response.ok) throw new Error("HTTP " + response.status);
-        return response.json();
-      })
-      .then(function (data) {
-        paramData = data && typeof data === "object" ? data : null;
-        paramIndex = Object.create(null);
-        (paramData && Array.isArray(paramData.items) ? paramData.items : []).forEach(function (it) {
-          var k = normPn(it.em);
-          if (!paramIndex[k]) paramIndex[k] = [];
-          paramIndex[k].push(it);
-          __xxHook(); window.__xx.paramData = paramData; window.__xx.paramIndex = paramIndex;
-        });
-      })
-      .catch(function () { paramData = null; paramIndex = null; });
+    return lazyLoad("params", "params", "./data/p2p_params.json", function (data) {
+      paramData = data && typeof data === "object" ? data : null;
+      paramIndex = Object.create(null);
+      (paramData && Array.isArray(paramData.items) ? paramData.items : []).forEach(function (it) {
+        var k = normPn(it.em);
+        if (!paramIndex[k]) paramIndex[k] = [];
+        paramIndex[k].push(it);
+      });
+      __xxHook(); window.__xx.paramData = paramData; window.__xx.paramIndex = paramIndex;
+    });
   }
 
   function loadCompP2P() {
-    fetch("./data/p2p_competitor.json")
-      .then(function (response) {
-        if (!response.ok) throw new Error("HTTP " + response.status);
-        return response.json();
-      })
-      .then(function (data) {
-        compP2P = data && typeof data === "object" ? data : null;
-        compP2PIndex = compP2P ? buildCompIndex(compP2P) : null;
-        __xxHook(); window.__xx.compP2P = compP2P; window.__xx.compP2PIndex = compP2PIndex;
-      })
-      .catch(function () {
-        compP2P = null;
-        compP2PIndex = null;
-      });
+    return lazyLoad("compP2P", "compP2P", "./data/p2p_competitor.json", function (data) {
+      compP2P = data && typeof data === "object" ? data : null;
+      compP2PIndex = compP2P ? buildCompIndex(compP2P) : null;
+      __xxHook(); window.__xx.compP2P = compP2P; window.__xx.compP2PIndex = compP2PIndex;
+    });
   }
 
   function loadComp() {
-    fetch("./data/competitor_index.json")
-      .then(function (response) {
-        if (!response.ok) throw new Error("HTTP " + response.status);
-        return response.json();
-      })
-      .then(function (data) {
-        compData = Array.isArray(data) ? data : [];
-        el.compTotal.textContent = compData.length;
-        __xxHook(); window.__xx.compIndex = compData;
-        compFillCats();
-        renderComp();
-      })
-      .catch(function () {
-        compData = null;
-        renderComp();
-      });
+    return lazyLoad("comp", "comp", "./data/competitor_index.json", function (data) {
+      compData = Array.isArray(data) ? data : [];
+      if (el.compTotal) el.compTotal.textContent = compData.length;
+      __xxHook(); window.__xx.compIndex = compData;
+      compFillCats();
+      renderComp();
+    });
   }
 
   // 启动时按时间（或已存的手动选择）应用主题
@@ -1659,9 +1675,13 @@
   bindEvents();
   switchView("list");
   renderP2P();
+  /* 首屏：只拉 products_lite.json（446KB）—— 目录树/搜索/详情骨架全靠它。
+     P2P 数据（p2p/comp/compP2P/params 合计约 4MB）改为按需：
+     竞品相关只在竞品面板打开时拉，p2p_params 只在参数对比展开时拉。 */
   load();
-  loadP2P();
-  loadComp();
-  loadCompP2P();
-  loadParams();
+
+  /* 空闲预热：等首屏可交互之后再悄悄拉竞品索引（打开竞品面板即秒开） */
+  var warm = function () { loadComp(); };
+  if (window.requestIdleCallback) window.requestIdleCallback(warm, { timeout: 5000 });
+  else setTimeout(warm, 2500);
 })();
