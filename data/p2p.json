@@ -3147,13 +3147,13 @@
   {
    "slug": "em74hct595",
    "em": "EM74HCT595",
-   "vcc_em": "2.7–5.5 V",
+   "vcc_em": "4.5–5.5 V",
    "vcc_ti": "4.5 V to 5.5 V",
    "ti": [
     "SN74HCT595"
    ],
    "verdict": "[OK]",
-   "note": "芯祥 VCC 2.7–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）",
+   "note": "芯祥 VCC 4.5–5.5 V ⊇ TI 4.5 V to 5.5 V（全覆盖，drop-in 安全）",
    "nxp": [
     "74HCT595"
    ]
