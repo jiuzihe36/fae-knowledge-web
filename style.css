@@ -1662,3 +1662,864 @@ tr.cmp-diff td:first-child {
 .v-muted { color: #a89680; }
 .badge-warn { background: #c07a3e; color: #fff; }
 .badge-muted { background: #a89680; color: #fff; }
+
+/* ============================================================
+   统一入口层（unified.js）——主搜索 + 分级结果
+   ============================================================ */
+.legacy { display: none !important; }
+
+.hero {
+  padding-block: 30px 10px;
+}
+
+.hero-input {
+  width: 100%;
+  min-height: 56px;
+  padding: 14px 20px;
+  font-size: 16px;
+  border: 1px solid var(--line-control);
+  border-radius: var(--r-lg);
+  background: var(--field);
+  color: var(--ink);
+  box-shadow: var(--e-card);
+  transition: border-color var(--dur-1) var(--ease), box-shadow var(--dur-1) var(--ease);
+}
+
+.hero-input:focus {
+  border-color: var(--accent2);
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent2) 22%, transparent);
+}
+
+.hero-hint {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.hint-label {
+  font-size: 12px;
+  color: var(--muted);
+  margin-right: 2px;
+}
+
+.chip {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  color: var(--muted);
+  padding: 5px 13px;
+  font-size: 12.5px;
+}
+
+.chip:hover {
+  color: var(--accent);
+  border-color: var(--accent2);
+  background: var(--soft);
+}
+
+/* 结果栏 */
+.result-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-2);
+  padding: 12px var(--gap-3);
+  margin-top: var(--gap-2);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+}
+
+.result-summary {
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.result-bar .count-pill { margin-left: auto; }
+
+/* 结果卡网格 */
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: var(--gap-2);
+  padding-block: var(--gap-3) var(--gap-4);
+}
+
+.entry-hint {
+  grid-column: 1 / -1;
+  font-size: 13px;
+  color: var(--muted);
+  padding-bottom: 2px;
+}
+
+.cat-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+  gap: var(--gap-1);
+}
+
+.catcard {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  text-align: left;
+  padding: 13px 15px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  box-shadow: var(--e-card);
+}
+
+.catcard:hover { border-color: var(--accent2); background: var(--soft); }
+.catcard b { font-size: 13.5px; font-weight: 600; }
+.catcard span { font-size: 11.5px; color: var(--muted); }
+
+/* 型号卡 */
+.rcard {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 14px 16px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  box-shadow: var(--e-card);
+  color: var(--ink);
+}
+
+.rcard:hover { border-color: var(--accent2); background: var(--soft); }
+
+.rcard-top {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.rcard-model { font-size: 14px; font-weight: 650; }
+
+.rcard-func {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.rcard-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.rcard-meta .hl { color: var(--accent); font-weight: 600; }
+
+.rcard-badges { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+
+.mini-badge {
+  font-size: 10.5px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--muted);
+}
+
+/* 竞品替代卡 */
+.ccard {
+  grid-column: 1 / -1;
+  padding: 16px 18px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r-card);
+  box-shadow: var(--e-card);
+  margin-bottom: var(--gap-2);
+}
+
+.ccard-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ccard-pn { font-size: 14px; font-weight: 650; }
+.ccard-v { font-size: 11px; padding: 2px 8px; border-radius: 999px; background: var(--soft); color: var(--muted); }
+.ccard-arrow { color: var(--accent); font-weight: 700; }
+.ccard-em { font-size: 13.5px; font-weight: 600; color: var(--accent); }
+.ccard-sub { font-size: 12.5px; color: var(--muted); margin-top: 5px; }
+.ccard-acts { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+
+/* 参数对比表 */
+.ptable-wrap { margin-top: 12px; overflow-x: auto; }
+
+.ptable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 12.5px;
+}
+
+.ptable th {
+  text-align: left;
+  padding: 7px 10px;
+  background: var(--panel-2);
+  border-bottom: 1px solid var(--line);
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.ptable td {
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.ptable .p-sym { font-family: var(--mono); font-weight: 600; white-space: nowrap; }
+.ptable .p-em { color: var(--ink); }
+.ptable .p-cp { color: var(--muted); }
+.ptable-more { font-size: 11.5px; color: var(--muted); padding-top: 6px; }
+
+.vbadge {
+  display: inline-block;
+  font-size: 10.5px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.v-ok { background: var(--badge-ok-bg); color: var(--badge-ok-ink); }
+.v-warn { background: var(--badge-warn-bg); color: var(--badge-warn-ink); }
+.v-neutral { background: var(--badge-neutral-bg); color: var(--badge-neutral-ink); }
+
+/* 规格书列表 */
+.dscard {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 16px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.dscard:hover { border-color: var(--accent2); background: var(--soft); }
+.dscard-v { font-size: 11px; padding: 2px 8px; border-radius: 999px; background: var(--soft); color: var(--muted); min-width: 62px; text-align: center; }
+.dscard-pn { font-weight: 600; }
+.dscard-cat { color: var(--muted); font-size: 12px; }
+.dscard-go { margin-left: auto; color: var(--accent); font-size: 12px; white-space: nowrap; }
+
+.vendor-head { grid-column: 1 / -1; font-size: 14px; padding-bottom: 4px; }
+.more-note { grid-column: 1 / -1; font-size: 12px; color: var(--muted); padding-top: 6px; }
+
+.comp-panel {
+  padding-block: var(--gap-3) var(--gap-4);
+}
+
+@media (max-width: 820px) {
+  .results { grid-template-columns: 1fr; }
+  .hero-input { font-size: 15px; min-height: 50px; }
+}
+
+/* ============================================================
+   主页产品目录树（三级折叠：大类 → 功能 → 型号）
+   ============================================================ */
+.topbar-search {
+  flex: 0 1 340px;
+  min-width: 180px;
+}
+
+.topbar-search input {
+  width: 100%;
+  min-height: 34px;
+  padding: 6px 12px;
+  font-size: 13px;
+  border: 1px solid var(--line-control);
+  border-radius: var(--r-control);
+  background: var(--field);
+  color: var(--ink);
+}
+
+.cat-hero {
+  padding-block: 26px 14px;
+}
+
+.cat-hero h2 {
+  font-size: 21px;
+  letter-spacing: -0.015em;
+}
+
+.cat-hero p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 6px;
+  max-width: 78ch;
+  line-height: 1.6;
+}
+
+.cat-tools {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-1);
+  margin-top: 14px;
+}
+
+.cat-tools .count-pill { margin-left: auto; }
+
+.cat-tree {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: var(--gap-4);
+}
+
+/* 一级：大类 */
+.cat-node {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  box-shadow: var(--e-card);
+  overflow: hidden;
+}
+
+.cat-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  text-align: left;
+  padding: 15px 18px;
+  background: transparent;
+  border: 0;
+  color: var(--ink);
+}
+
+.cat-row:hover { background: var(--soft); }
+
+.cat-caret,
+.func-caret {
+  display: inline-block;
+  color: var(--muted);
+  font-size: 11px;
+  transition: transform var(--dur-1) var(--ease);
+}
+
+.cat-caret.open,
+.func-caret.open { transform: rotate(90deg); }
+
+.cat-name { font-size: 15.5px; font-weight: 650; }
+.cat-count { font-size: 12px; color: var(--accent); font-weight: 600; }
+.cat-sub { margin-left: auto; font-size: 12px; color: var(--muted); }
+
+.cat-body {
+  border-top: 1px solid var(--line);
+  padding: 6px 0 10px;
+}
+
+/* 二级：功能 */
+.func-node { border-top: 1px solid var(--line); }
+.func-node:first-child { border-top: 0; }
+
+.func-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  padding: 11px 18px 11px 34px;
+  background: transparent;
+  border: 0;
+  color: var(--ink);
+}
+
+.func-row:hover { background: var(--soft); }
+.func-name { font-size: 14px; font-weight: 600; }
+
+.func-count {
+  font-size: 11px;
+  color: var(--muted);
+  background: var(--soft);
+  border-radius: 999px;
+  padding: 1px 9px;
+}
+
+/* 三级：系列 + 型号 */
+.func-body { padding: 2px 0 8px 46px; }
+
+.ser-block { margin-bottom: 2px; }
+
+/* 三级：系列（可折叠） */
+.ser-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+  padding: 7px 12px;
+  background: transparent;
+  border: 0;
+  border-radius: var(--r-control);
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.ser-row:hover { background: var(--soft); }
+
+.ser-caret {
+  display: inline-block;
+  color: var(--muted);
+  font-size: 10px;
+  transition: transform var(--dur-1) var(--ease);
+}
+
+.ser-caret.open { transform: rotate(90deg); }
+
+.ser-name { font-weight: 650; letter-spacing: 0.02em; }
+
+.ser-count {
+  font-size: 10.5px;
+  color: var(--muted);
+  background: var(--soft);
+  border-radius: 999px;
+  padding: 1px 8px;
+}
+
+/* 四级：型号（缩进 + 左侧层级线） */
+.ser-body {
+  padding-left: 14px;
+  border-left: 2px solid var(--line);
+  margin-left: 19px;
+  margin-top: 2px;
+  margin-bottom: 6px;
+}
+
+.mod-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 1.3fr) 82px 96px minmax(0, 1.6fr) auto;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  background: transparent;
+  border: 0;
+  border-radius: var(--r-control);
+  color: var(--ink);
+  font-size: 12.5px;
+}
+
+.mod-row:hover { background: var(--soft); }
+.mod-name { font-weight: 600; font-size: 13px; }
+.mod-pkg { color: var(--muted); }
+.mod-vcc { color: var(--muted); font-variant-numeric: tabular-nums; }
+.mod-detail { color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.mod-comp {
+  font-size: 10.5px;
+  color: var(--accent);
+  border: 1px solid var(--accent2);
+  border-radius: 999px;
+  padding: 1px 8px;
+  white-space: nowrap;
+}
+
+@media (max-width: 980px) {
+  .mod-row { grid-template-columns: minmax(120px, 1.2fr) 84px minmax(0, 1fr) auto; }
+  .mod-vcc { display: none; }
+}
+
+@media (max-width: 820px) {
+  .topbar-search { flex: 1 1 100%; order: 3; }
+  .mod-row { grid-template-columns: 1fr auto; gap: 4px 10px; }
+  .mod-pkg, .mod-detail { display: none; }
+    }
+
+/* 功能组层（大类 → 功能组 → 功能 → 系列 → 型号） */
+.grp-node { border-top: 1px solid var(--line); }
+.grp-node:first-child { border-top: 0; }
+
+.grp-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  padding: 12px 18px 12px 30px;
+  background: transparent;
+  border: 0;
+  color: var(--ink);
+}
+
+.grp-row:hover { background: var(--soft); }
+
+.grp-caret {
+  display: inline-block;
+  color: var(--muted);
+  font-size: 10.5px;
+  transition: transform var(--dur-1) var(--ease);
+}
+
+.grp-caret.open { transform: rotate(90deg); }
+
+.grp-name { font-size: 14.5px; font-weight: 650; }
+.grp-count { font-size: 12px; color: var(--accent); font-weight: 600; }
+.grp-sub { margin-left: auto; font-size: 11.5px; color: var(--muted); }
+
+/* 功能组下缩进一层 */
+.grp-body { padding-left: 12px; border-left: 2px solid var(--line); margin-left: 21px; }
+.grp-body .grp-body 
+/* 型号行内的系列名（第 2 列）用稍深的颜色区分封装 */
+.mod-pkg { color: var(--muted); font-weight: 600; }
+
+/* 系列层（工艺组 → 系列 → 功能 → 路数 → 型号） */
+.pro-block { border-top: 1px solid var(--line); }
+.pro-block:first-child { border-top: 0; }
+
+.pro-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 18px 9px 66px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+}
+.pro-row:hover { background: var(--soft); }
+
+.pro-caret {
+  font-size: 10px;
+  color: var(--muted);
+  transition: transform .15s ease;
+  flex: 0 0 auto;
+}
+.pro-caret.open { transform: rotate(90deg); }
+
+.pro-name { font-weight: 650; color: var(--ink); }
+
+.pro-count {
+  font-size: 11px;
+  color: var(--accent);
+  font-weight: 650;
+  padding: 1px 8px;
+  background: var(--soft);
+  border-radius: 999px;
+}
+
+.pro-sub { margin-left: auto; font-size: 11px; color: var(--muted); }
+
+.pro-body { padding-left: 26px; }
+
+/* 功能层在系列内（缩进加深） */
+
+
+/* ============================================================
+   六层目录统一缩进（每层 +24px）
+   大类 18 → 工艺组 42 → 系列 66 → 功能 90 → 路数 114 → 型号 138
+   ============================================================ */
+.cat-row   { padding-left: 18px; }
+.grp-row   { padding-left: 42px; }
+.pro-row   { padding-left: 66px; }
+.func-row  { padding-left: 90px; }
+.ser-row   { padding-left: 114px; }
+
+.cat-body, .grp-body, .pro-body, .func-body, .ser-body { padding-left: 0; }
+
+.mod-row { padding-left: 138px; margin: 0 10px 4px; border-radius: 8px; }
+
+
+/* ============================================================
+   TI 风格层（2026-09-25）
+   参考 TI 原厂产品页设计语汇：
+   - 只用颜色分层，几乎无框线；靠留白 + 字号建立层级
+   - 一条主色横条扛全部品牌感
+   - 参数表只有浅横线，无竖线无斑马纹
+   ============================================================ */
+
+/* 规格化变量：TI 用色 */
+:root {
+  --ti-line:      #e0e0e0;   /* 表格横线 */
+  --ti-line-soft: #eef0f1;   /* 树节点分隔 */
+  --ti-head-bg:   #f2f2f2;   /* 表头底 */
+  --ti-desc:      #555555;   /* 描述文字 */
+  --ti-link:      #1d6b7a;   /* 链接 */
+  --ti-ok:        #00875a;   /* 状态绿 */
+  --ti-shell:     1200px;
+}
+
+/* 页面底色纯白、字体行距放宽 */
+body { background: #ffffff; }
+
+/* ---------- 顶栏：白底 + 一条灰线，纯平无阴影 ---------- */
+.topbar {
+  background: #ffffff !important;
+  border-bottom: 1px solid var(--ti-line) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+.topbar-inner { height: 60px; align-items: center; }
+.brand h1 { font-size: 17px; font-weight: 700; letter-spacing: -.2px; }
+.brand p { font-size: 12px; color: var(--muted); }
+.logo {
+  width: 34px; height: 34px; border-radius: 7px;
+  background: var(--accent) !important;
+  box-shadow: none !important;
+  font-size: 13px !important;
+}
+
+/* 顶部搜索框：细边框方角（TI 式），不是药丸 */
+.topbar-search input {
+  height: 38px; border: 1px solid #d6d6d6 !important;
+  border-radius: 4px !important;
+  background: #fff !important;
+  box-shadow: none !important;
+  font-size: 14px;
+}
+.topbar-search input::placeholder { color: #9aa0a6; }
+.topbar-search input:focus {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 3px rgba(47,143,134,.12) !important;
+}
+
+/* ---------- 主色横条（新增元素）---------- */
+.band { background: var(--accent); }
+.band-in {
+  max-width: var(--ti-shell); margin: 0 auto; padding: 0 var(--gutter, 28px);
+  height: 46px; display: flex; align-items: center; gap: 26px;
+}
+.band-in a {
+  color: #fff; text-decoration: none; font-size: 15px;
+  padding: 13px 0; border-bottom: 3px solid transparent;
+  transition: border-color var(--dur-1, 140ms) ease;
+}
+.band-in a.on { border-bottom-color: #fff; font-weight: 600; }
+.band-in a:hover { border-bottom-color: rgba(255,255,255,.5); }
+
+/* ---------- 面包屑（新增元素）---------- */
+.crumb {
+  max-width: var(--ti-shell); margin: 0 auto; padding: 15px var(--gutter, 28px) 0;
+  font-size: 13px; color: var(--muted);
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0;
+}
+.crumb a { color: var(--muted); text-decoration: none; }
+.crumb a:hover { color: var(--accent); text-decoration: underline; }
+.crumb b { color: var(--ink); font-weight: 600; }
+.crumb .sep { color: #b8bec3; margin: 0 7px; }
+
+/* ---------- 分区标题：TI 用"大而不粗" ---------- */
+.cat-hero h2 {
+  font-size: 26px !important; font-weight: 400 !important;
+  letter-spacing: -.3px; color: var(--ink); margin: 22px 0 8px !important;
+}
+.cat-hero p { font-size: 14px !important; color: var(--ti-desc) !important; }
+
+/* ---------- 目录树：横线分层，去卡片框 ---------- */
+.cat-tree { display: block; }
+.cat-node, .grp-node, .pro-block, .func-block, .ser-block {
+  border: 0 !important; border-radius: 0 !important;
+  box-shadow: none !important; background: none !important;
+  margin: 0 !important;
+}
+.cat-node { border-bottom: 1px solid var(--ti-line) !important; }
+
+.cat-row, .grp-row, .pro-row, .func-row, .ser-row {
+  border-radius: 0 !important;
+  border-bottom: 1px solid var(--ti-line-soft);
+  background: none !important;
+  box-shadow: none !important;
+}
+.cat-row:hover, .grp-row:hover, .pro-row:hover,
+.func-row:hover, .ser-row:hover { background: #fafbfb !important; }
+
+/* 统计胶囊：扁平化 */
+.cat-count, .grp-count, .pro-count, .func-count, .ser-count {
+  background: #f2f2f2 !important; color: var(--muted) !important;
+  border: 0 !important; font-weight: 600 !important;
+}
+.cat-count { color: var(--accent) !important; }
+
+/* 型号行：等宽料号 + 状态 */
+.mod-row {
+  border-radius: 0 !important;
+  border-bottom: 1px solid var(--ti-line-soft) !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding-left: 138px !important;
+}
+.mod-row:hover { background: #f7fafa !important; }
+.mod-name { color: var(--ti-link) !important; font-weight: 600; }
+.mod-pkg { color: var(--muted) !important; }
+
+/* 按钮：TI 式方角细边 */
+.btn-ghost {
+  border: 1px solid #cfd4d8 !important; border-radius: 4px !important;
+  background: #fff !important; color: var(--body, #333) !important;
+  box-shadow: none !important; font-size: 13px;
+}
+.btn-ghost:hover { border-color: var(--accent) !important; color: var(--accent) !important; }
+
+/* ---------- 详情抽屉：表格走 TI 极简 ---------- */
+.spec-table th {
+  background: var(--ti-head-bg) !important;
+  border: 0 !important; border-bottom: 0 !important;
+  font-size: 13px !important; font-weight: 600 !important; color: #333 !important;
+}
+.spec-table td {
+  border: 0 !important;
+  border-bottom: 1px solid var(--ti-line) !important;
+  padding: 11px 14px !important;
+}
+.spec-table tr:hover td { background: #fafbfb; }
+
+.card, .ti-card, .pin-wrap { border-radius: 0 !important; box-shadow: none !important; }
+.card { border: 0 !important; border-top: 1px solid var(--ti-line) !important; padding-left: 0 !important; padding-right: 0 !important; }
+.drawer-panel { box-shadow: -8px 0 40px rgba(20,25,28,.16) !important; }
+
+/* 状态徽标绿 */
+.stat b { color: var(--ink) !important; }
+
+
+/* ============================================================
+   栏目页：应用 / 技术文档 / 封装与可靠性
+   ============================================================ */
+.page-body { padding-bottom: 60px; }
+.page-h3 {
+  font-size: 19px; font-weight: 600; color: var(--ink);
+  margin: 34px 0 12px; letter-spacing: -.2px;
+}
+
+/* 应用场景卡 */
+.app-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0; border-top: 1px solid var(--ti-line);
+}
+.app-card {
+  border-bottom: 1px solid var(--ti-line);
+  border-right: 1px solid var(--ti-line);
+  padding: 16px 18px; cursor: pointer; transition: background 140ms ease;
+}
+.app-card:hover { background: #fafbfb; }
+.app-card.open { background: #f7fafa; grid-column: 1 / -1; }
+.app-name { font-size: 15px; font-weight: 600; color: var(--ink); }
+.app-count { font-size: 12px; color: var(--accent); font-weight: 600; margin-top: 4px; }
+.app-models { margin-top: 14px; border-top: 1px solid var(--ti-line-soft); padding-top: 8px; }
+.app-mod {
+  display: grid; grid-template-columns: 180px 110px 74px; gap: 12px;
+  width: 100%; padding: 8px 10px; border: 0; background: none;
+  cursor: pointer; text-align: left; font: inherit; font-size: 13px;
+  border-bottom: 1px solid var(--ti-line-soft);
+}
+.app-mod:hover { background: #f2f7f7; }
+.am-pn { color: var(--ti-link); font-weight: 600; }
+.am-fn { color: var(--body, #333); }
+.am-se { color: var(--muted); }
+.app-more { padding: 10px; font-size: 12px; color: var(--muted); }
+
+/* 技术文档列表 */
+.doc-tools { display: flex; align-items: center; gap: 12px; margin: 16px 0 14px; }
+.page-search {
+  flex: 0 1 340px; height: 36px; padding: 0 12px;
+  border: 1px solid #d6d6d6; border-radius: 4px;
+  font: inherit; font-size: 14px; outline: 0;
+}
+.page-search:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(47,143,134,.12); }
+.doc-list { border-top: 1px solid var(--ti-line); }
+.doc-row {
+  display: grid; grid-template-columns: 190px 1fr 90px 110px 130px;
+  gap: 12px; align-items: center; width: 100%;
+  padding: 11px 14px; border: 0; border-bottom: 1px solid var(--ti-line-soft);
+  background: none; cursor: pointer; text-align: left; font: inherit; font-size: 13px;
+}
+.doc-row:hover { background: #f7fafa; }
+.doc-pn { color: var(--ti-link); font-weight: 600; }
+.doc-fn { color: var(--body, #333); }
+.doc-se, .doc-pk { color: var(--muted); font-size: 12px; }
+.doc-badges { display: flex; gap: 6px; }
+.dbadge {
+  font-size: 11px; padding: 2px 8px; border-radius: 999px;
+  background: #f2f2f2; color: var(--muted);
+}
+.dbadge.on { background: #e7f6ec; color: #1f7a47; }
+
+
+/* 尾缀对照表 */
+.sfx-badge {
+  display: inline-block; font-family: var(--mono);
+  font-size: 13px; font-weight: 700; color: #fff;
+  background: var(--accent); padding: 3px 10px; border-radius: 4px;
+  letter-spacing: .3px;
+}
+.page-note {
+  font-size: 13px; color: var(--muted); margin: -4px 0 14px;
+  padding: 10px 14px; background: #f7fafa; border-left: 3px solid var(--accent);
+}
+.page-note .mono { font-family: var(--mono); color: var(--ti-link); font-weight: 600; }
+.param td.sm, .param th.sm { font-size: 12px; color: var(--muted); }
+
+
+/* ---------- 体验优化（2026-09-25）---------- */
+/* 应用卡展开指示 */
+.app-head { display: flex; align-items: center; gap: 8px; }
+.app-caret {
+  font-size: 10px; color: var(--muted); transition: transform 160ms ease;
+  flex: 0 0 auto;
+}
+.app-card.open .app-caret { transform: rotate(90deg); }
+
+/* 详情页复制型号按钮 */
+.copy-btn {
+  border: 1px solid #cfd4d8; background: #fff; color: var(--muted);
+  font-size: 12px; padding: 3px 10px; border-radius: 4px;
+  cursor: pointer; font-family: inherit; transition: all 140ms ease;
+  flex: 0 0 auto;
+}
+.copy-btn:hover { border-color: var(--accent); color: var(--accent); }
+.copy-btn.ok { background: #e7f6ec; border-color: #c4ecd4; color: #1f7a47; font-weight: 600; }
+
+/* 面包屑在栏目页也可点 */
+.crumb a { cursor: pointer; }
+
+
+/* 详情页上下切换 */
+.nav-line { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+.nav-btn {
+  border: 1px solid #d8dce0; background: #fff; color: var(--fg);
+  font-size: 12px; padding: 3px 12px; border-radius: 4px;
+  cursor: pointer; font-family: inherit; transition: all 140ms ease;
+}
+.nav-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.nav-btn:disabled { opacity: .38; cursor: not-allowed; }
+.nav-pos { font-size: 12px; color: var(--muted); margin-left: 2px; }
+
+
+/* ---------- 交互优化（2026-09-25 第二批）---------- */
+/* 目录树筛选框 */
+.tree-filter {
+  flex: 1 1 220px; min-width: 180px; max-width: 340px;
+  border: 1px solid #d8dce0; border-radius: 4px; padding: 5px 10px;
+  font-size: 13px; font-family: inherit; color: var(--fg); background: #fff;
+}
+.tree-filter:focus { outline: none; border-color: var(--accent); }
+.tree-filter-info { font-size: 12px; color: var(--muted); }
+.mod-row.hit, .rcard.hit { background: #FFF8E5 !important; }
+
+/* 应用卡收藏星 */
+.app-star {
+  border: 0; background: transparent; cursor: pointer; padding: 0 2px;
+  font-size: 15px; line-height: 1; color: #c9ced3; flex: 0 0 auto;
+  transition: color 140ms ease, transform 140ms ease;
+}
+.app-star:hover { color: #E8A33D; transform: scale(1.18); }
+.app-card.fav .app-star { color: #E8A33D; }
+.app-card.fav { border-left: 3px solid #E8A33D; }

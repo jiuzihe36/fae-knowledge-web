@@ -715,7 +715,7 @@
       metaItem("工作温度", item.temp_range),
       metaItem("封装尺寸", item.package_size),
       metaItem("应用场景", (item.applications_domains || []).join("、") || item.applications),
-      dsUrl ? '<div class="meta-item"><div class="label">规格书</div><div class="value"><a href="' + esc(dsUrl) + '" target="_blank" rel="noopener">👁 查看</a> · <a href="' + esc(dsUrl.replace("/datasheets/", "/datasheets_view/")) + '" target="_blank" rel="noopener">👁 快速查看</a> · <a href="' + esc(dsUrl) + '" download>⬇ 下载原版</a></div></div>' : ""
+      dsUrl ? '<div class="meta-item"><div class="label">规格书</div><div class="value"><a href="' + esc(dsUrl) + '" target="_blank" rel="noopener">👁 查看</a> · <a href="' + esc(dsUrl) + '" download>⬇ 下载</a></div></div>' : ""
     ].join("");
 
     renderTiCard(item);
@@ -740,6 +740,8 @@
 
     if (item.pin_image) {
       el.pinWrap.classList.remove("hidden");
+      /* WebP 引脚图（体积省 58%） */
+      el.pinImg.onerror = null;
       el.pinImg.src = new URL(item.pin_image, document.baseURI).href;
       el.pinImg.alt = item.model + " pin diagram";
     } else {
@@ -800,6 +802,7 @@
   /* ---------- 竞品对标（圣邦/中微爱芯/帝奥微） ---------- */
   var compP2P = null;
   var paramData = null;
+  function __xxHook() { window.__xx = window.__xx || {}; }
   var paramIndex = null;
   var compP2PIndex = null;   /* family -> item */
   var compByModel = null;    /* 芯祥型号 -> item */
@@ -1457,12 +1460,21 @@
         }, 0);
         el.statModels.textContent = products.length;
         el.statSpecs.textContent = specCount;
-        el.meta.textContent = "离线数据库 · 静态网页版";
+        if (el.meta) el.meta.textContent = "离线数据库 · 静态网页版";
         el.tableBody.innerHTML = "";
         runFilters();
+        /* 桥接给 unified.js：数据 + 按型号打开详情 */
+        window.__xx = window.__xx || {};
+        window.__xx.products = products;
+        window.__xx.openByModel = function (model) {
+          const m = String(model || "").toUpperCase();
+          const item = products.find(function (p) { return p.model.toUpperCase() === m; })
+            || products.find(function (p) { return p.model.toUpperCase().indexOf(m) === 0; });
+          if (item) openDetail(item.id);
+        };
       })
       .catch(function (err) {
-        el.meta.textContent = "数据加载失败";
+        if (el.meta) el.meta.textContent = "数据加载失败";
         el.empty.textContent = "无法加载 products.json：" + err.message;
         el.empty.classList.remove("hidden");
         el.tableBody.innerHTML = "";
@@ -1478,6 +1490,7 @@
       .then(function (data) {
         p2p = data && typeof data === "object" ? data : null;
         p2pIndex = p2p ? buildP2PIndex(p2p) : null;
+        __xxHook(); window.__xx.p2p = p2p; window.__xx.p2pIndex = p2pIndex;
         renderP2P();
       })
       .catch(function () {
@@ -1566,6 +1579,7 @@
           var k = normPn(it.em);
           if (!paramIndex[k]) paramIndex[k] = [];
           paramIndex[k].push(it);
+          __xxHook(); window.__xx.paramData = paramData; window.__xx.paramIndex = paramIndex;
         });
       })
       .catch(function () { paramData = null; paramIndex = null; });
@@ -1580,6 +1594,7 @@
       .then(function (data) {
         compP2P = data && typeof data === "object" ? data : null;
         compP2PIndex = compP2P ? buildCompIndex(compP2P) : null;
+        __xxHook(); window.__xx.compP2P = compP2P; window.__xx.compP2PIndex = compP2PIndex;
       })
       .catch(function () {
         compP2P = null;
@@ -1596,6 +1611,7 @@
       .then(function (data) {
         compData = Array.isArray(data) ? data : [];
         el.compTotal.textContent = compData.length;
+        __xxHook(); window.__xx.compIndex = compData;
         compFillCats();
         renderComp();
       })

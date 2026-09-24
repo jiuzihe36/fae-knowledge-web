@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>芯祥 FAE 型号速查</title>
-  <link rel="stylesheet" href="./style.css?v=20260925a">
+  <title>芯祥产品目录</title>
+  <link rel="stylesheet" href="./style.css?v=20260925h">
 </head>
 <body>
   <header class="topbar">
@@ -12,144 +12,113 @@
       <div class="brand">
         <div class="logo">EM</div>
         <div class="brand-text">
-          <h1>芯祥 FAE 型号速查</h1>
-          <p id="meta">正在加载数据...</p>
+          <h1>芯祥产品目录</h1>
         </div>
       </div>
       <div class="topbar-side">
-        <div class="topstats">
-          <div class="stat">
-            <b id="statModels">-</b>
-            <span>型号</span>
-          </div>
-          <div class="stat">
-            <b id="statSpecs">-</b>
-            <span>参数</span>
-          </div>
+        <div class="topbar-search">
+          <input id="q" type="search" autocomplete="off"
+                 placeholder="搜索型号，如 EM74LVC1G08、EM74AHC1G00（按 / 聚焦）">
         </div>
-        <button id="themeBtn" class="theme-btn" type="button" aria-label="切换深色/浅色主题" title="切换深色/浅色主题">🌙</button>
+        <div class="topstats">
+          <div class="stat"><b id="statModels">-</b><span>型号</span></div>
+          <div class="stat"><b id="statSpecs">-</b><span>参数</span></div>
+        </div>
+        <button id="themeBtn" class="theme-btn" type="button" aria-label="切换主题" title="切换深色/浅色主题">🌙</button>
       </div>
     </div>
-    <nav class="viewtabs" id="viewTabs" aria-label="视图切换">
-      <div class="viewtabs-inner">
-        <button type="button" class="tab active" data-view="list">型号列表</button>
-        <button type="button" class="tab" data-view="search">替代查询</button>
-        <button type="button" class="tab" data-view="compare">A/B 对比</button>
-        <button type="button" class="tab" data-view="comp">竞品规格书</button>
-      </div>
-    </nav>
   </header>
 
-  <div class="shell">
-    <div id="viewList" class="view">
-      <div class="toolbar">
-        <input id="q" class="toolbar-search" type="search" placeholder="搜索型号 / 功能 / 封装 / 参数" autocomplete="off">
-        <div class="toolbar-filters">
-          <label>功能
-            <select id="fFunction"></select>
-          </label>
-          <label>系列
-            <select id="fSeries"></select>
-          </label>
-          <label>封装
-            <select id="fPackage"></select>
-          </label>
-          <label>逻辑类型
-            <select id="fLogic"></select>
-          </label>
-          <label>应用域
-            <select id="fApp"></select>
-          </label>
-          <label>状态
-            <select id="fStatus">
-              <option value="">全部</option>
-              <option value="Product">Product</option>
-              <option value="Draft">Draft</option>
-              <option value="Q100">Q100</option>
-            </select>
-          </label>
-        </div>
-        <div class="toolbar-actions">
-          <button id="clearBtn" class="btn-ghost" type="button">清除筛选</button>
-          <span id="resultCount" class="count-pill">0</span>
-        </div>
-      </div>
+  <!-- TI 式主色横条：一条扛全部品牌感 -->
+  <nav class="band" aria-label="主导航">
+    <div class="band-in">
+      <a class="on" href="#" data-page="catalog">产品</a>
+      <a href="#" data-page="apps">应用</a>
+      <a href="#" data-page="docs">技术文档</a>
+      <a href="#" data-page="quality">封装与可靠性</a>
+    </div>
+  </nav>
 
-      <section class="list card">
-        <table class="model-table">
-          <thead>
-            <tr>
-              <th>型号</th>
-              <th>功能</th>
-              <th>系列</th>
-              <th>封装</th>
-              <th>逻辑类型</th>
-              <th>电压</th>
-              <th>封装尺寸</th>
-            </tr>
-          </thead>
-          <tbody id="tableBody"></tbody>
-        </table>
-        <div id="empty" class="empty hidden">没有匹配记录</div>
-      </section>
+  <!-- 面包屑：层级横着放 -->
+  <nav id="crumb" class="crumb" aria-label="面包屑">
+    <b>全部产品</b>
+  </nav>
+
+  <div class="shell">
+    <!-- 搜索模式的结果区（默认隐藏，输入时接管） -->
+    <div id="searchMode" class="hidden">
+      <div id="resultBar" class="result-bar">
+        <span id="resultSummary" class="result-summary"></span>
+        <span id="resultCount" class="count-pill">0</span>
+        <button id="clearBtn" class="btn-ghost" type="button">返回目录</button>
+      </div>
+      <div id="results" class="results"></div>
     </div>
 
-    <section id="viewSearch" class="view hidden" aria-hidden="true">
-      <div class="view-head">
-        <h2>P2P 替代查询</h2>
-        <p>输入芯祥料号（EM74HC00）、TI 料号（SN74HC00）、或竞品料号（SGM2019、AiP74LVC1G08、DIO3157E）双向反查；点击结果打开对应型号详情。</p>
-      </div>
-      <div class="panel">
-        <input id="p2pQuery" class="p2p-input" type="search" placeholder="EM74HC00 / SN74HC00 / SGM2019 / AiP74LVC1G08 ..." autocomplete="off">
-        <div id="p2pResults" class="p2p-results"></div>
-        <div id="p2pEmpty" class="empty hidden"></div>
-      </div>
-    </section>
-
-    <section id="viewCompare" class="view hidden" aria-hidden="true">
-      <div class="view-head">
-        <h2>A/B 对比</h2>
-        <p>选择两个型号并排对比关键字段与电气参数，差异行标黄；参数最多显示前 100 行。</p>
-      </div>
-      <div class="panel">
-        <div class="cmp-controls">
-          <label>型号 A
-            <input id="cmpA" type="text" list="modelList" placeholder="EM74AHC1G00DRL" autocomplete="off">
-          </label>
-          <button id="cmpSwap" class="cmp-swap" type="button" title="交换 A / B">⇄ 交换</button>
-          <label>型号 B
-            <input id="cmpB" type="text" list="modelList" placeholder="EM74HC00D" autocomplete="off">
-          </label>
-          <button id="cmpBtn" class="cmp-go" type="button">开始对比</button>
+    <!-- 目录模式：主页（只展示芯祥自有产品） -->
+    <div id="catalogMode">
+      <div class="cat-hero">
+        <h2>产品目录</h2>
+        <p id="catIntro">按大类逐层展开：工艺组 → 系列 → 功能 → 路数 → 型号。点击型号查看详情。</p>
+        <div class="cat-tools">
+          <button id="expandAll" class="btn-ghost" type="button">全部展开</button>
+          <button id="collapseAll" class="btn-ghost" type="button">全部折叠</button>
+          <input id="treeFilter" class="tree-filter" type="search"
+                 placeholder="在目录里筛选：型号 / 功能 / 封装" autocomplete="off">
+          <span id="treeFilterInfo" class="tree-filter-info"></span>
+          <span id="catCount" class="count-pill">-</span>
         </div>
-        <datalist id="modelList"></datalist>
-        <div id="cmpResult" class="cmp-result"></div>
-        <div id="cmpEmpty" class="empty">选择两个型号后点击「开始对比」</div>
       </div>
-    </section>
+      <div id="catTree" class="cat-tree"></div>
+    </div>
 
-    <section id="viewComp" class="view hidden" aria-hidden="true">
-      <div class="view-head">
-        <h2>竞品规格书</h2>
-        <p>TI / NXP (Nexperia) / 圣邦 SGMICRO / 中微爱芯 AiP / 帝奥微 DIOO 五家官网规格书索引，共 <span id="compTotal">-</span> 份。搜索型号、分类或功能后点「官网下载」打开原始 PDF。</p>
+    <!-- 栏目页：应用 / 技术文档 / 封装与可靠性 -->
+    <div id="pageBody" class="page-body hidden"></div>
+
+    <!-- 兼容层：app.js 依赖的元素仍在 DOM 中（隐藏，不参与布局） -->
+    <div class="legacy" hidden aria-hidden="true">
+      <nav id="viewTabs"></nav>
+      <div id="viewList" class="view"></div>
+      <div id="viewSearch" class="view"></div>
+      <div id="viewCompare" class="view"></div>
+      <div id="viewComp" class="view"></div>
+      <div id="filterBar" class="toolbar">
+        <label>功能<select id="fFunction"></select></label>
+        <label>系列<select id="fSeries"></select></label>
+        <label>封装<select id="fPackage"></select></label>
+        <label>逻辑<select id="fLogic"></select></label>
+        <label>应用<select id="fApp"></select></label>
+        <select id="fStatus"><option value="">全部</option></select>
       </div>
-      <div class="panel">
+      <input id="cmpA" type="text" list="modelList" autocomplete="off">
+      <input id="cmpB" type="text" list="modelList" autocomplete="off">
+      <button id="cmpSwap" type="button"></button>
+      <button id="cmpBtn" type="button"></button>
+      <div id="cmpResult"></div>
+      <div id="cmpEmpty" class="empty"></div>
+      <input id="p2pQuery" class="p2p-input" type="search" autocomplete="off">
+      <div id="p2pResults" class="p2p-results"></div>
+      <div id="p2pEmpty" class="empty hidden"></div>
+      <div id="compPanel" class="comp-panel hidden">
         <div class="comp-tabs" id="compVendorTabs">
           <button type="button" class="comp-vtab active" data-v="">全部</button>
           <button type="button" class="comp-vtab" data-v="TI">TI</button>
-          <button type="button" class="comp-vtab" data-v="NXP">NXP (Nexperia)</button>
-          <button type="button" class="comp-vtab" data-v="SGM">圣邦 SGMICRO</button>
-          <button type="button" class="comp-vtab" data-v="AiP">中微爱芯 AiP</button>
-          <button type="button" class="comp-vtab" data-v="DIOO">帝奥微 DIOO</button>
+          <button type="button" class="comp-vtab" data-v="NXP">NXP</button>
+          <button type="button" class="comp-vtab" data-v="SGM">圣邦</button>
+          <button type="button" class="comp-vtab" data-v="AiP">中微爱芯</button>
+          <button type="button" class="comp-vtab" data-v="DIOO">帝奥微</button>
         </div>
         <div class="comp-ctl">
-          <input id="compQuery" class="p2p-input" type="search" placeholder="搜索型号 / 分类 / 功能 / 封装，如 SGM2019、74LVC1G08、LDO" autocomplete="off">
+          <input id="compQuery" class="p2p-input" type="search" placeholder="搜索型号 / 分类 / 功能" autocomplete="off">
           <select id="compCat" class="comp-cat"><option value="">全部分类</option></select>
         </div>
         <div id="compCount" class="comp-count"></div>
         <div id="compResults" class="comp-results"></div>
       </div>
-    </section>
+      <table class="model-table"><tbody id="tableBody"></tbody></table>
+      <div id="empty" class="empty hidden"></div>
+    </div>
+    <datalist id="modelList"></datalist>
   </div>
 
   <div id="detail" class="drawer hidden" aria-hidden="true">
@@ -159,7 +128,13 @@
         <div>
           <div class="head-line">
             <h2 id="detailModel"></h2>
+            <button id="copyModelBtn" class="copy-btn" type="button" title="复制型号">复制</button>
             <span id="detailBadges" class="badges"></span>
+          </div>
+          <div class="nav-line">
+            <button id="prevModel" class="nav-btn" type="button" title="上一个型号（←）">‹ 上一个</button>
+            <button id="nextModel" class="nav-btn" type="button" title="下一个型号（→）">下一个 ›</button>
+            <span id="navPos" class="nav-pos"></span>
           </div>
           <p id="detailDesc"></p>
         </div>
@@ -167,18 +142,8 @@
       </div>
       <div id="detailMeta" class="meta-grid"></div>
 
-      <section id="tiCard" class="ti-card hidden">
-        <h3>TI 对标 <span id="tiNote" class="ti-src"></span></h3>
-        <div id="tiList" class="ti-list"></div>
-      </section>
-
-      <section id="compCard" class="ti-card hidden">
-        <h3>竞品对标 <span id="compNote" class="ti-src"></span></h3>
-        <div id="compList" class="ti-list"></div>
-      </section>
-
       <section id="circuitWrap" class="pin-wrap hidden">
-        <h3>应用电路图 <span class="pin-hint">点击放大 · 引脚与走向取自规格书 Pin description</span></h3>
+        <h3>应用电路图 <span class="pin-hint">点击放大</span></h3>
         <div class="pin-box circuit-box"><img id="circuitImg" src="" alt="Application circuit"></div>
       </section>
       <section id="pinWrap" class="pin-wrap hidden">
@@ -191,9 +156,7 @@
           <h3>电气参数 <span class="spec-hint">按类别分组</span></h3>
           <div class="spec-scroll">
             <table id="specTable" class="spec-table">
-              <thead>
-                <tr><th>参数</th><th>数值</th></tr>
-              </thead>
+              <thead><tr><th>参数</th><th>数值</th></tr></thead>
               <tbody></tbody>
             </table>
             <div id="specEmpty" class="empty hidden">无参数</div>
@@ -206,6 +169,17 @@
           <div id="relatedFunc" class="related"></div>
         </aside>
       </div>
+
+      <!-- 竞品信息：只在详情页出现，不在主页混入 -->
+      <section id="compCard" class="ti-card hidden">
+        <h3>竞品对标 <span id="compNote" class="ti-src"></span></h3>
+        <div id="compList" class="ti-list"></div>
+      </section>
+
+      <section id="tiCard" class="ti-card hidden">
+        <h3>TI 对标 <span id="tiNote" class="ti-src"></span></h3>
+        <div id="tiList" class="ti-list"></div>
+      </section>
     </section>
   </div>
 
@@ -218,6 +192,7 @@
     <button id="lightboxClose" type="button" aria-label="关闭">×</button>
   </div>
 
-  <script src="./app.js?v=20260925a"></script>
+  <script src="./app.js?v=20260925d"></script>
+  <script src="./unified.js?v=20260925h"></script>
 </body>
 </html>
