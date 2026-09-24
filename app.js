@@ -127,6 +127,7 @@
     const data = p2p && typeof p2p === "object" ? p2p : {};
     const byEm = Object.create(null);
     const byTi = Object.create(null);
+    const byAiP = Object.create(null);
     const status = Object.create(null);
 
     const tiIndex = data.ti_index && typeof data.ti_index === "object" ? data.ti_index : {};
@@ -158,6 +159,14 @@
       extractPns(entry.evidence).forEach(function (t) { add(byTi, normPn(t), rec); });
     });
 
+    (Array.isArray(data.aip) ? data.aip : []).forEach(function (entry) {
+      const rec = { kind: "aip", entry: entry, key: "aip|" + (entry.model || "") + "|" + (entry.em || "") };
+      add(byAiP, normPn(entry.model), rec);
+      if (entry.em && entry.em !== "-") add(byEm, normPn(entry.em), rec);
+    });
+
+    return { byEm: byEm, byTi: byTi, byAiP: byAiP, status: status };
+
     /* ti_index 中未被 logic/analog 引用的孤立 PN（多为 NOTFOUND 记录）也要可反查 */
     Object.keys(status).forEach(function (k) {
       if (k in byTi) return;
@@ -185,7 +194,7 @@
     for (let i = 0; i < matchers.length; i++) {
       const out = [];
       const seen = Object.create(null);
-      [index.byEm, index.byTi].forEach(function (map) {
+      [index.byEm, index.byTi, index.byAiP].forEach(function (map) {
         Object.keys(map).forEach(function (k) {
           if (!matchers[i](k)) return;
           map[k].forEach(function (rec) {
@@ -670,6 +679,7 @@
   function recJumpToken(rec) {
     if (rec.kind === "status") return "";
     const e = rec.entry;
+    if (rec.kind === "aip") return e.em && e.em !== "-" ? normPn(splitTokens(e.em)[0] || "") : "";
     const list = rec.kind === "logic"
       ? splitTokens(e.em).concat(slugTokens(e.slug))
       : slugTokens(e.slug);
@@ -881,6 +891,24 @@
   function p2pCardHtml(rec) {
     const e = rec.entry;
     const token = esc(recJumpToken(rec));
+    if (rec.kind === "aip") {
+      const emHtml = (e.em && e.em !== "-")
+        ? '<span class="p2p-em">' + esc(displayEm(e)) + "</span>"
+        : '<span class="p2p-em p2p-na" title="芯祥暂无直接对应料号">—</span>';
+      const aipHtml = '<span>' + esc(e.model) + '</span>';
+      const head = [
+        '<div class="p2p-top">',
+        emHtml,
+        '<span class="p2p-arrow">→</span>',
+        '<span class="p2p-ti">' + aipHtml + "</span>",
+        '<span class="p2p-badges">' + p2pBadgesHtml(rec) + "</span>",
+        "</div>"
+      ].join("");
+      const meta = '<div class="p2p-meta"><span>竞品：<b>' + esc(text(e.competitor)) + "</b></span>" +
+        (e.pins && e.pins !== "-" ? "<span>引脚：" + esc(e.pins) + "</span>" : "") + "</div>";
+      const note = e.note ? '<div class="p2p-note">备注：' + esc(e.note) + "</div>" : "";
+      return '<article class="p2p-card" data-em="' + token + '" tabindex="0">' + head + meta + note + "</article>";
+    }
     const tiHtml = rec.kind === "logic"
       ? (Array.isArray(e.ti) ? e.ti : []).map(function (pn) { return "<span>" + esc(pn) + "</span>"; }).join("")
       : "<span>" + esc(text(e.ti_text)) + "</span>";

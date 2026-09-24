@@ -1,6 +1,6 @@
 {
  "generated": "2026-09-24",
- "source": "wiki comparisons/p2p-ti-full-mapping.md + p3 取证",
+ "source": "wiki comparisons/p2p-ti-full-mapping.md + p3 取证; +AiP 6颗 (xinxiang-fae 第二批) + TXS0104E",
  "ti_index": {
   "SN74AHC1G00": {
    "status": "ACTIVE",
@@ -941,6 +941,10 @@
   "SN74LVCH8T245": {
    "status": "ACTIVE",
    "evidence": "web_extract https://www.ti.com/product/SN74LVCH8T245 -> HTTP 200, title \"SN74LVCH8T245 data sheet, product information and support\", lifecycle badge status=1 (ACTIVE)"
+  },
+  "TXS0104E": {
+   "status": "ACTIVE",
+   "evidence": "xinxiang-fae P2P 第一批交付: TXS0104EDR -> EXS0104D (SOP-14L) 逐脚完全一致"
   }
  },
  "logic": [
@@ -3615,6 +3619,56 @@
    "verdict": "[!]",
    "note": "取证结果：TI 官方无 TXS0106(ti.com/product/TXS0106 与 ti.com/lit/ds/symlink/txs0106.pdf 均 404，站内检索只返回 TXB0106/TXB0606/TXV0106)；6 位最接近 TXB0106(自动方向但推挽、VCCA 1.2-3.6V、VCCB 1.65-5.5V、TSSOP-16 PW)与 TXV0106(6 位固定方向)，无 6 位开漏自动方向款；EXS0106 为 VCCA 1.3-5.5V/开漏/40Mbps、TSSOP-16 → 位宽可凑但 VCCA 与开漏属性不对齐，维持[!]",
    "evidence": "https://www.ti.com/product/TXB0106"
+  }
+ ],
+ "aip": [
+  {
+   "competitor": "AiP 中微爱芯",
+   "model": "AIP74AHCT1G08GB236",
+   "em": "EM74AHCT1G08GV",
+   "verdict": "[OK]",
+   "pins": "1=B 2=A 3=GND 4=Y 5=VCC (逐脚一致)",
+   "note": "SOT23-5L 引脚完全对应; 芯祥温度 -40~+125℃ 宽于 AiP -40~+105℃; AHCT 为 TTL 阈值(若原设计 CMOS 阈值改用 EM74LVC1G08GV)"
+  },
+  {
+   "competitor": "AiP 中微爱芯",
+   "model": "AIP74AHCT1G00GB236",
+   "em": "EM74AHCT1G00GV",
+   "verdict": "[OK]",
+   "pins": "1=B 2=A 3=GND 4=Y 5=VCC (逐脚一致)",
+   "note": "SOT23-5L 引脚完全对应; 温度两侧均 -40~+125℃"
+  },
+  {
+   "competitor": "AiP 中微爱芯",
+   "model": "AIP74LVC1G57GB236",
+   "em": "EM74LVC1G57GV",
+   "verdict": "[OK]",
+   "pins": "1=B 2=GND 3=A 4=Y 5=VCC 6=C (逐脚一致)",
+   "note": "SOT23-6L 引脚完全对应; 8 种可配置逻辑; 芯祥驱动 ±24mA > AiP ±8mA"
+  },
+  {
+   "competitor": "AiP 中微爱芯",
+   "model": "AIP74LVC1G157GB236",
+   "em": "-",
+   "verdict": "[NONE]",
+   "pins": "-",
+   "note": "2 路信号复用器 SOT23-6, 芯祥暂无直接对应; 邻近 EM74CBTLV3257 (四路复用器 SOP-16, 功能覆盖但引脚不同)"
+  },
+  {
+   "competitor": "AiP 中微爱芯",
+   "model": "AIP74LVC1G18GB236",
+   "em": "-",
+   "verdict": "[NONE]",
+   "pins": "-",
+   "note": "2 路信号分离器 SOT23-6, 芯祥暂无直接对应; 无邻近料, 建议登记产品线"
+  },
+  {
+   "competitor": "AiP 中微爱芯",
+   "model": "AIP74AHCT3G17GB236",
+   "em": "-",
+   "verdict": "[NONE]",
+   "pins": "-",
+   "note": "3 路同相缓冲器 TSSOP8/VSSOP8, 芯祥暂无直接对应; 邻近 EM74LVC2G17GV (双路 SOT23-6, 需改版评估)"
   }
  ]
 }

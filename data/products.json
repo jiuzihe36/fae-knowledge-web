@@ -139723,7 +139723,7 @@
    "数据总线切换",
    "测试设备切换"
   ],
-  "function_detail": "与门"
+  "function_detail": "音频/USB 多路复用器 (SPST, 负摆幅+过压保护)"
  },
  {
   "id": 10273,
@@ -140041,7 +140041,7 @@
    "数据总线切换",
    "测试设备切换"
   ],
-  "function_detail": "与门"
+  "function_detail": "音频/USB 多路复用器 (SPST, 负摆幅+过压保护)"
  },
  {
   "id": 10274,
@@ -146043,7 +146043,7 @@
    "数据总线切换",
    "测试设备切换"
   ],
-  "function_detail": "与门"
+  "function_detail": "USB2.0+HiFi 音频 DPDT 多路复用器"
  },
  {
   "id": 10313,
@@ -146153,7 +146153,7 @@
    "数据总线切换",
    "测试设备切换"
   ],
-  "function_detail": "与门"
+  "function_detail": "USB2.0+HiFi 音频 DPDT 多路复用器"
  },
  {
   "id": 10314,
@@ -146450,7 +146450,7 @@
    "手机/平板/便携",
    "音频/视频信号切换"
   ],
-  "function_detail": "与门"
+  "function_detail": "USB Type-C 模拟音频开关 (带耳机检测/保护)"
  },
  {
   "id": 10319,
@@ -148677,7 +148677,7 @@
   "pin_image": "./pins/173.png",
   "logic_type": "不适用(模拟开关/电平转换)",
   "temp_range": "-40 °C to +125 °C",
-  "source_document_id": null,
+  "source_document_id": "EMS3157-Q100_Draft_DS_V0.92.pdf",
   "source_label": "EMS3157-Q100_Draft_DS_V0.92.pdf",
   "specs": [
    {
@@ -148929,7 +148929,7 @@
   "pin_image": "./pins/185.png",
   "logic_type": "不适用(模拟开关/电平转换)",
   "temp_range": "-40 °C to +125 °C",
-  "source_document_id": null,
+  "source_document_id": "EMS23157-Q100_Drft_DS_V0.9.pdf",
   "source_label": "EMS23157-Q100_Drft_DS_V0.9.pdf",
   "specs": [
    {
