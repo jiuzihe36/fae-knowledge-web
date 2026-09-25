@@ -561,30 +561,33 @@
       }
     });
 
-    /* 目录树内联筛选：命中时自动展开路径，并高亮 */
-    if (el.pageBody) el.pageBody.addEventListener("input", function (e) {
+    /* 目录树内联筛选：命中时自动展开路径，并高亮
+       （挂 document：treeFilter 在 #catalogMode 内、不在 #pageBody 子树里，
+         挂 pageBody 收不到它的 input 事件 → 筛选框整体失效） */
+    document.addEventListener("input", function (e) {
       if (e.target.id !== "treeFilter") return;
-      /* 全折叠时型号行根本没渲染进 DOM，筛选前先把目录展开到功能级，
-         让型号行进 DOM（已展开则不破坏用户当前层级） */
-      if (CATALOG) {
-        var anyOpen = Object.keys(openCats).length || Object.keys(openProcs).length ||
-                      Object.keys(openSeries).length || Object.keys(openFuncs).length ||
-                      Object.keys(openSers).length;
-        if (!anyOpen) {
-          CATALOG.cats.forEach(function (c) {
-            openCats[c.key] = true;
-            (c.procs || []).forEach(function (p) {
-              if (p.name) openProcs[c.key + "|" + p.name] = true;
-              (p.series || []).forEach(function (s) {
-                openSeries[c.key + "|" + s.name] = true;
-                (s.funcs || []).forEach(function (f) {
-                  openFuncs[c.key + "|" + s.name + ">" + f.name] = true;
+      /* 型号行 .mod-row 在最深的路数层(openSers)之下——任何一层没展开，
+         型号行就不进 DOM，筛选必然「无匹配」。所以筛选前必须把
+         大类→工艺→系列→功能→路数 全部展开（已全展开则跳过，不重建 DOM） */
+      if (CATALOG && Object.keys(openSers).length === 0) {
+        CATALOG.cats.forEach(function (c) {
+          openCats[c.key] = true;
+          (c.procs || []).forEach(function (p) {
+            if (p.name) openProcs[c.key + "|" + p.name] = true;
+            (p.series || []).forEach(function (s) {
+              var sKey = c.key + "|" + s.name;
+              openSeries[sKey] = true;
+              (s.funcs || []).forEach(function (f) {
+                var path = s.name + ">" + f.name;
+                openFuncs[c.key + "|" + path] = true;
+                (f.routes || []).forEach(function (rt) {
+                  openSers[c.key + "|" + path + "|" + rt.name] = true;
                 });
               });
             });
           });
-          renderCatalog();
-        }
+        });
+        renderCatalog();
       }
       var q = norm(e.target.value);
       var info = document.getElementById("treeFilterInfo");
