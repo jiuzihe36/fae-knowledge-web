@@ -169,19 +169,22 @@ if (typeof document === "undefined") return;
   }
 
   function applyTheme(mode) {
-    if (mode === "dark" || mode === "light") {
-      document.documentElement.setAttribute("data-theme", mode);
-    } else {
-      document.documentElement.removeAttribute("data-theme");
-    }
-    const dark = isDarkNow(mode);
+    /* 关键：时间/手动决定「实际该用哪套色」，并写死到 data-theme。
+       不能让浏览器按系统深色偏好走 —— 用户要求白天纯白、晚上纯黑，
+       与系统设置无关（否则系统开着深色时，白天也是黑的）。 */
+    var dark = isDarkNow(mode);
+    document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
     el.themeBtn.textContent = dark ? "☀️" : "🌙";
-    el.themeBtn.title = dark ? "切换到浅色" : "切换到深色";
+    var label = mode === "auto" ? "（自动·跟随时间）" : (dark ? "（深色）" : "（浅色）");
+    el.themeBtn.title = "点击切换主题 " + label;
   }
 
   function toggleTheme() {
     const mode = getStoredTheme();
-    const next = isDarkNow(mode) ? "light" : "dark";
+    /* 三态循环：自动 → 浅色 → 深色 → 自动。
+       必须有回到「自动」的路 —— 旧版只能在浅/深之间切，
+       一旦手动切过就永久锁定，这是「白天晚上切换有问题」的根因之一。 */
+    const next = mode === "auto" ? "light" : (mode === "light" ? "dark" : "auto");
     try {
       window.localStorage.setItem(THEME_KEY, next);
     } catch (e) { /* 忽略 */ }
