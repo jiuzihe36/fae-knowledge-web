@@ -716,6 +716,35 @@
       (sub ? "<p>" + esc(sub) + "</p>" : "") + "</div>" + body;
   }
 
+  /* ---- 封装与可靠性页小工具 ---- */
+  function qCard(n, label) {
+    return '<div class="q-card"><b>' + esc(String(n)) + '</b><span>' + esc(label) + '</span></div>';
+  }
+  /* 尾缀的实际封装分布：主封装 + 数量，>3 种时折叠（title 显示全部） */
+  function pkgDist(variants) {
+    if (!variants || !variants.length) return "—";
+    var top = variants.slice(0, 3).map(function (v) {
+      return esc(v.k) + '<span class="mu"> ' + v.n + '</span>';
+    }).join('<span class="sep2">·</span>');
+    if (variants.length > 3) {
+      var rest = variants.slice(3).map(function (v) { return v.k + " " + v.n; }).join("、");
+      top += '<span class="sep2">·</span><span class="mu" title="' + esc(rest) + '">等 ' + variants.length + ' 种</span>';
+    }
+    return top;
+  }
+  /* 尺寸文本归一化：× 统一、单位间距统一 */
+  function fmtSize(s) {
+    if (!s) return "—";
+    return String(s)
+      .replace(/\s*[xX·]\s*/g, " × ")
+      .replace(/\s*×\s*/g, " × ")
+      .replace(/(\d)\s*mm/g, "$1 mm")
+      .replace(/\s*;/g, "；")
+      .replace(/Max\s+/g, "Max ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
   function renderPage(name) {
     var d = PAGES[name];
     if (!d || !el.pageBody) return;
@@ -766,40 +795,71 @@
     }
 
     if (name === "quality") {
+      var tot = d.total || 1;
       html += pageShell("封装与可靠性",
         "温度等级 · 封装尺寸 · 工艺类型，共 " + d.total + " 款型号");
-      html += '<h3 class="page-h3">工作温度等级</h3><table class="param"><thead><tr><th>温度范围</th><th>型号数</th><th>占比</th></tr></thead><tbody>' +
+
+      /* ① 概览卡片 */
+      html += '<div class="q-overview">' +
+        qCard(d.total, "在库型号") +
+        qCard(d.temp.length, "温度等级") +
+        qCard(d.package.length, "封装形式") +
+        qCard(d.suffix ? d.suffix.length : 0, "尾缀种类") +
+        '</div>';
+
+      /* ② 工作温度等级（含占比条） */
+      html += '<h3 class="page-h3">工作温度等级</h3>' +
+        '<table class="param q-tbl"><thead><tr><th>温度范围</th><th class="num">型号数</th><th class="num">占比</th><th class="bar-col">分布</th></tr></thead><tbody>' +
         d.temp.map(function (t) {
-          return '<tr><td class="k">' + esc(t.k) + '</td><td class="v">' + t.n +
-            '</td><td class="v">' + (t.n / d.total * 100).toFixed(1) + "%</td></tr>";
+          var pct = t.n / tot * 100;
+          return '<tr><td class="k">' + esc(t.k) + '</td><td class="v num">' + t.n +
+            '</td><td class="v num">' + pct.toFixed(1) + '%</td>' +
+            '<td class="bar-col"><span class="q-bar" style="width:' + Math.max(pct, 1).toFixed(1) + '%"></span></td></tr>';
         }).join("") + "</tbody></table>";
 
-      html += '<h3 class="page-h3">工艺类型</h3><table class="param"><thead><tr><th>类型</th><th>型号数</th></tr></thead><tbody>' +
+      /* ③ 工艺类型 */
+      html += '<h3 class="page-h3">工艺类型</h3>' +
+        '<table class="param q-tbl"><thead><tr><th>类型</th><th class="num">型号数</th><th class="num">占比</th></tr></thead><tbody>' +
         d.logic_type.map(function (t) {
-          return '<tr><td class="k">' + esc(t.k) + '</td><td class="v">' + t.n + "</td></tr>";
+          return '<tr><td class="k">' + esc(t.k) + '</td><td class="v num">' + t.n +
+            '</td><td class="v num">' + (t.n / tot * 100).toFixed(1) + '%</td></tr>';
         }).join("") + "</tbody></table>";
 
-      /* 尾缀对照表 —— 用户最关心：型号末尾字母 = 什么封装 */
+      /* ④ 型号尾缀对照（紧凑：主封装 + 其余折叠） */
       if (d.suffix && d.suffix.length) {
         html += '<h3 class="page-h3">型号尾缀对照（' + d.suffix.length + ' 种）</h3>' +
           '<p class="page-note">尾缀标识封装形式，具体引脚数由型号中间的数字决定。' +
           '例：<span class="mono">EM74LVC1G00<b>GV</b></span> = SOT-23-5</p>' +
-          '<table class="param"><thead><tr><th>尾缀</th><th>封装系列</th><th>说明</th><th>型号数</th><th>实际封装</th></tr></thead><tbody>' +
+          '<table class="param q-tbl sfx-tbl"><thead><tr><th>尾缀</th><th>封装系列</th><th>说明</th><th class="num">型号数</th><th>实际封装分布</th></tr></thead><tbody>' +
           d.suffix.map(function (s) {
-            var vars = s.variants.map(function (v) { return esc(v.k) + " (" + v.n + ")"; }).join("、");
             return '<tr><td class="k"><span class="sfx-badge">' + esc(s.sfx) + '</span></td>' +
               '<td class="v mono sm">' + esc(s.family) + "</td>" +
               '<td class="v sm">' + esc(s.desc) + "</td>" +
-              '<td class="v">' + s.n + "</td>" +
-              '<td class="v sm">' + (vars || "—") + "</td></tr>";
+              '<td class="v num">' + s.n + "</td>" +
+              '<td class="v sm pkg-dist">' + pkgDist(s.variants) + "</td></tr>";
           }).join("") + "</tbody></table>";
       }
 
+      /* ⑤ 封装规格（尺寸归一化、允许换行） */
       html += '<h3 class="page-h3">封装规格（' + d.package.length + ' 种）</h3>' +
-        '<table class="param"><thead><tr><th>封装</th><th>型号数</th><th>本体尺寸</th></tr></thead><tbody>' +
+        '<table class="param q-tbl pkg-tbl"><thead><tr><th>封装</th><th class="num">型号数</th><th>本体尺寸</th></tr></thead><tbody>' +
         d.package.map(function (p) {
-          return '<tr><td class="k mono">' + esc(p.k) + '</td><td class="v">' + p.n + '</td><td class="v sm">' + esc(p.size) + "</td></tr>";
+          return '<tr><td class="k mono">' + esc(p.k) + '</td><td class="v num">' + p.n +
+            '</td><td class="v sm size-cell">' + esc(fmtSize(p.size)) + "</td></tr>";
         }).join("") + "</tbody></table>";
+
+      /* ⑥ 系列分布（温度档） */
+      if (d.by_series && d.by_series.length) {
+        html += '<h3 class="page-h3">各系列温度分布</h3>' +
+          '<table class="param q-tbl"><thead><tr><th>系列</th><th class="num">型号数</th><th>温度等级分布</th></tr></thead><tbody>' +
+          d.by_series.map(function (s) {
+            var dist = (s.temp || []).map(function (t) {
+              return esc(t.k.replace(/\s*°C/g, "℃").replace("-40 ", "-40~")) + " <b>" + t.n + "</b>";
+            }).join('<span class="sep2">·</span>');
+            return '<tr><td class="k mono">' + esc(s.k) + '</td><td class="v num">' + s.n +
+              '</td><td class="v sm">' + (dist || "—") + "</td></tr>";
+          }).join("") + "</tbody></table>";
+      }
     }
 
     el.pageBody.innerHTML = html;

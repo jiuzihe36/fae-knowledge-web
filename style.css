@@ -2113,3 +2113,45 @@ body { background: #ffffff; }
 }
 .to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
 .to-top:hover { filter: brightness(1.05); }
+
+/* ---------- 封装与可靠性页布局 ---------- */
+.q-overview {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
+  margin: 4px 0 8px;
+}
+.q-card {
+  border: 1px solid var(--line); border-radius: 8px;
+  padding: 16px 14px; background: var(--panel); text-align: center;
+  display: flex; flex-direction: column; gap: 4px;
+}
+.q-card b { font-size: 26px; font-weight: 700; color: var(--accent); line-height: 1.1; }
+.q-card span { font-size: 12.5px; color: var(--muted); }
+
+/* 表格：固定布局 + 列宽，防长文本撑破 */
+.q-tbl { table-layout: fixed; }
+.q-tbl th.num, .q-tbl td.num { text-align: right; width: 84px; }
+.q-tbl .bar-col { width: 22%; }
+.q-bar {
+  display: inline-block; height: 8px; border-radius: 4px;
+  background: var(--accent); opacity: .55; vertical-align: middle;
+  min-width: 3px;
+}
+/* 尾缀表列宽分配 */
+.sfx-tbl th:nth-child(1), .sfx-tbl td:nth-child(1) { width: 68px; }
+.sfx-tbl th:nth-child(2), .sfx-tbl td:nth-child(2) { width: 130px; }
+.sfx-tbl th:nth-child(3), .sfx-tbl td:nth-child(3) { width: 140px; }
+.sfx-tbl th:nth-child(4), .sfx-tbl td:nth-child(4) { width: 72px; }
+.sfx-tbl .pkg-dist { word-break: break-word; line-height: 1.7; }
+.sfx-tbl .pkg-dist .mu { color: var(--muted); font-size: 11.5px; }
+.sep2 { color: #cfcfcf; margin: 0 5px; }
+
+/* 封装规格表列宽 */
+.pkg-tbl th:nth-child(1), .pkg-tbl td:nth-child(1) { width: 200px; }
+.pkg-tbl th:nth-child(2), .pkg-tbl td:nth-child(2) { width: 80px; }
+.pkg-tbl .size-cell { word-break: break-word; line-height: 1.75; }
+
+@media (max-width: 720px) {
+  .q-overview { grid-template-columns: repeat(2, 1fr); }
+  .q-tbl { table-layout: auto; }
+  .q-tbl .bar-col { display: none; }
+}
