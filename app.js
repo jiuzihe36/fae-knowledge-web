@@ -193,7 +193,7 @@ if (typeof document === "undefined") return;
   function ensureSpecs() {
     if (SPECS) return Promise.resolve(SPECS);
     if (SPECS_PROMISE) return SPECS_PROMISE;
-    SPECS_PROMISE = fetch("./data/specs.json")
+    SPECS_PROMISE = fetch("./data/specs.json?t=" + Math.floor(Date.now() / 60000))
       .then(function (r) { return r.ok ? r.json() : {}; })
       .then(function (m) {
         SPECS = m || {};
@@ -400,7 +400,7 @@ if (typeof document === "undefined") return;
 
   function load() {
     /* 首屏只拉精简版（446KB vs 4.16MB，specs 占 95% 已拆到 specs.json 懒加载） */
-    fetch("./data/products_lite.json")
+    fetch("./data/products_lite.json?t=" + Math.floor(Date.now() / 60000))
       .then(function (response) {
         if (!response.ok) throw new Error("HTTP " + response.status);
         return response.json();

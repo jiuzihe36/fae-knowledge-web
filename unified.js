@@ -47,7 +47,10 @@
   }
 
   function loadJson(path) {
-    return fetch(path).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
+    /* 数据文件加时间戳参数：防止浏览器/CDN 缓存旧数据（曾致分类更新后页面不变） */
+    var sep = path.indexOf("?") >= 0 ? "&" : "?";
+    return fetch(path + sep + "t=" + Math.floor(Date.now() / 60000))
+      .then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
   }
 
   var BY_ID = Object.create(null);   /* id -> product，避免每次开详情全表扫描 */
@@ -84,7 +87,9 @@
 
   function loadCatalog() {
     if (CATALOG) return Promise.resolve(CATALOG);
-    return fetch("./data/catalog.json").then(function (r) { return r.ok ? r.json() : null; })
+    /* 加时间戳参数防缓存（与 loadJson 一致） */
+    return fetch("./data/catalog.json?t=" + Math.floor(Date.now() / 60000))
+      .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (d) { CATALOG = d; return d; })
       .catch(function () { return null; });
   }
