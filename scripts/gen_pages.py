@@ -256,6 +256,16 @@ for s, d in sorted(sfx.items(), key=lambda kv: -kv[1]['n']):
     })
 quality['suffix'] = suffix_rows
 
+# 保留 package_detail（由 build_quality_packages.py 从 wiki 封装字典生成，勿被本脚本冲掉）
+_qpath = W / 'quality.json'
+if _qpath.exists():
+    try:
+        _prev = json.load(open(_qpath, encoding='utf-8'))
+        if _prev.get('package_detail'):
+            quality['package_detail'] = _prev['package_detail']
+    except Exception:
+        pass
+
 json.dump(quality, open(W / 'quality.json', 'w', encoding='utf-8'),
           ensure_ascii=False, separators=(',', ':'))
 
