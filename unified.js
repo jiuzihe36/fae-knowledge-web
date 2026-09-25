@@ -493,6 +493,15 @@
     var nx = document.getElementById("nextModel");
     if (pv) pv.addEventListener("click", function () { navStep(-1); });
     if (nx) nx.addEventListener("click", function () { navStep(1); });
+    /* 表头键盘排序（Enter/Space） */
+    if (el.pageBody) el.pageBody.addEventListener("keydown", function (e) {
+      if (e.key !== "Enter" && e.key !== " ") return;
+      var th = e.target.closest && e.target.closest(".doc-th");
+      if (!th || !PAGES.docs) return;
+      e.preventDefault();
+      th.click();
+    });
+
     document.addEventListener("keydown", function (e) {
       var dw = document.getElementById("detail");
       if (!dw || dw.classList.contains("hidden")) return;
@@ -500,6 +509,14 @@
       if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA")) return;
       if (e.key === "ArrowLeft") { e.preventDefault(); navStep(-1); }
       else if (e.key === "ArrowRight") { e.preventDefault(); navStep(1); }
+      else if (e.key === "Escape") {
+        e.preventDefault();
+        var cl = document.getElementById("closeDetail");
+        if (cl) { cl.click(); return; }
+        /* 兜底：直接收起抽屉 */
+        dw.classList.add("hidden");
+        dw.setAttribute("aria-hidden", "true");
+      }
     });
 
     /* 复制型号（FAE 日常：把料号发给客户/同事） */
@@ -654,14 +671,30 @@
     return hits;
   }
 
-    /* 技术文档页：显示全部 */
+    /* 技术文档页：点表头排序（升序 ↔ 降序） */
     if (el.pageBody) el.pageBody.addEventListener("click", function (e) {
+      var th = e.target.closest(".doc-th");
+      if (th && PAGES.docs) {
+        var key = th.getAttribute("data-sort");
+        if (DOC_SORT.key === key) DOC_SORT.dir = -DOC_SORT.dir;
+        else { DOC_SORT.key = key; DOC_SORT.dir = 1; }
+        var head = document.querySelector(".doc-head");
+        if (head) head.outerHTML = docHeadHtml();
+        var bx = document.getElementById("docList");
+        if (bx) {
+          var qq = (document.getElementById("docQ") || {}).value || "";
+          var lst = filterDocs(qq);
+          bx.innerHTML = lst.map(function(x){return docRow(x, qq);}).join("") || '<div class="empty">没有匹配的型号</div>';
+        }
+        return;
+      }
+      /* 键盘可达：表头 Enter/Space 也能排序 */
       if (e.target.id !== "docAllBtn" || !PAGES.docs) return;
       var box = document.getElementById("docList");
       var cnt = document.getElementById("docCount");
       var q = (document.getElementById("docQ") || {}).value || "";
       var list = filterDocs(q);
-      if (box) box.innerHTML = list.map(docRow).join("") || '<div class="empty">没有匹配的型号</div>';
+      if (box) box.innerHTML = list.map(function(x){return docRow(x, q);}).join("") || '<div class="empty">没有匹配的型号</div>';
       if (cnt) cnt.textContent = list.length + " 款 · 已全部显示";
       e.target.disabled = true;
       e.target.textContent = "已全部显示";
@@ -676,7 +709,7 @@
       var cnt = document.getElementById("docCount");
       var all = document.getElementById("docAllBtn");
       if (all) { all.disabled = false; all.textContent = "显示全部"; }
-      if (box) box.innerHTML = list.slice(0, 200).map(docRow).join("") ||
+      if (box) box.innerHTML = list.slice(0, 200).map(function(x){return docRow(x, q);}).join("") ||
         '<div class="empty">没有匹配的型号</div>';
       if (cnt) cnt.textContent = list.length > 200
         ? list.length + " 款 · 显示前 200" : list.length + " 款";
@@ -792,9 +825,9 @@
         'placeholder="按型号 / 功能 / 系列 / 封装筛选" autocomplete="off">' +
         '<button id="docAllBtn" class="btn-ghost" type="button">显示全部</button>' +
         '<span id="docCount" class="count-pill">' + d.items.length + " 款 · 显示前 200</span></div>" +
-        DOC_HEAD + '</div>';
+        docHeadHtml() + '</div>';
       html += '<div id="docList" class="doc-list">' +
-        d.items.slice(0, 200).map(docRow).join("") + "</div>";
+        d.items.slice(0, 200).map(function(x){return docRow(x, "");}).join("") + "</div>";
     }
 
     if (name === "quality") {
@@ -884,22 +917,72 @@
   function filterDocs(q) {
     if (!PAGES.docs) return [];
     var s = norm(q);
-    if (!s) return PAGES.docs.items;
-    return PAGES.docs.items.filter(function (it) {
+    var list = !s ? PAGES.docs.items.slice() : PAGES.docs.items.filter(function (it) {
       return norm(it.m + " " + it.fn + " " + it.se + " " + it.pk).indexOf(s) >= 0;
+    });
+    return sortDocs(list);
+  }
+
+  /* 排序：字符串列按中文/字母，布尔列（技术文档）按有无 */
+  function sortDocs(list) {
+    if (!DOC_SORT.key) return list;
+    var k = DOC_SORT.key, dir = DOC_SORT.dir;
+    return list.slice().sort(function (a, b) {
+      var x = a[k], y = b[k];
+      if (k === "ds" || k === "pin") {          /* 布尔：有文档的排前 */
+        x = x ? 1 : 0; y = y ? 1 : 0;
+        return (y - x) * dir;
+      }
+      x = String(x == null ? "" : x); y = String(y == null ? "" : y);
+      if (x === "—") x = ""; if (y === "—") y = "";
+      /* 电压/温度：提取首个数值比较，否则按字符串 */
+      if (k === "v" || k === "t") {
+        var nx = parseFloat(x.replace(/[^0-9.\-]/g, " ").trim());
+        var ny = parseFloat(y.replace(/[^0-9.\-]/g, " ").trim());
+        if (!isNaN(nx) && !isNaN(ny) && nx !== ny) return (nx - ny) * dir;
+      }
+      return x.localeCompare(y, "zh-Hans-CN") * dir;
     });
   }
 
-  var DOC_HEAD = '<div class="doc-head"><span>型号</span><span>功能</span><span>系列</span>' +
-    '<span>封装</span><span>工作电压</span><span>温度范围</span><span>工艺</span>' +
-    '<span>技术文档</span></div>';
+  /* 表头：列可点击排序（data-sort 对应 docs.json 字段） */
+  var DOC_COLS = [
+    ['型号', 'm'], ['功能', 'fn'], ['系列', 'se'], ['封装', 'pk'],
+    ['工作电压', 'v'], ['温度范围', 't'], ['工艺', 'lt'], ['技术文档', 'ds'],
+  ];
+  var DOC_SORT = { key: '', dir: 1 };
+  function docHeadHtml() {
+    return '<div class="doc-head">' + DOC_COLS.map(function (c) {
+      var on = DOC_SORT.key === c[1];
+      var arrow = on ? (DOC_SORT.dir > 0 ? '\u25b2' : '\u25bc') : '';
+      return '<span class="doc-th' + (on ? ' on' : '') + '" data-sort="' + c[1] +
+        '" role="button" tabindex="0" title="点击按' + esc(c[0]) + '排序">' +
+        esc(c[0]) + (arrow ? '<i class="doc-ar">' + arrow + '</i>' : '') + '</span>';
+    }).join('') + '</div>';
+  }
 
-  function docRow(it) {
+  /* 关键词高亮（转义后按字面替换，避免 XSS） */
+  function hl(text, kw) {
+    var t = esc(text == null ? "" : text);
+    if (!kw) return t;
+    var k = esc(kw);
+    if (!k) return t;
+    var out = "", low = t.toLowerCase(), lowk = k.toLowerCase(), i = 0;
+    while (true) {
+      var p = low.indexOf(lowk, i);
+      if (p < 0) { out += t.slice(i); break; }
+      out += t.slice(i, p) + '<mark class="doc-hl">' + t.slice(p, p + k.length) + "</mark>";
+      i = p + k.length;
+    }
+    return out;
+  }
+
+  function docRow(it, kw) {
     return '<button type="button" class="doc-row" data-model="' + esc(it.m) + '">' +
-      '<span class="doc-pn mono">' + esc(it.m) + "</span>" +
-      '<span class="doc-fn">' + esc(it.fn) + "</span>" +
-      '<span class="doc-se">' + esc(it.se) + "</span>" +
-      '<span class="doc-pk">' + esc(it.pk) + "</span>" +
+      '<span class="doc-pn mono">' + hl(it.m, kw) + "</span>" +
+      '<span class="doc-fn">' + hl(it.fn, kw) + "</span>" +
+      '<span class="doc-se">' + hl(it.se, kw) + "</span>" +
+      '<span class="doc-pk">' + hl(it.pk, kw) + "</span>" +
       '<span class="doc-v" title="' + esc(it.v || "—") + '">' + esc(it.v || "—") + "</span>" +
       '<span class="doc-t" title="' + esc(it.t || "—") + '">' + esc(it.t || "—") + "</span>" +
       '<span class="doc-lt">' + esc(it.lt || "—") + "</span>" +
