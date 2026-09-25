@@ -713,7 +713,7 @@
 
   function pageShell(title, sub, body) {
     return '<div class="cat-hero"><h2>' + esc(title) + "</h2>" +
-      (sub ? "<p>" + esc(sub) + "</p>" : "") + "</div>" + body;
+      (sub ? "<p>" + esc(sub) + "</p>" : "") + "</div>" + (body || "");
   }
 
   /* ---- 封装与可靠性页小工具 ---- */
