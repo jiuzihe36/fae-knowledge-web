@@ -12,6 +12,10 @@
   --warn: #b07842;
   --shadow: 0 1px 2px rgba(20, 25, 28, 0.05), 0 12px 30px rgba(20, 25, 28, 0.08);
   --scrim: rgba(15, 18, 20, 0.42);
+  /* 导航横条：浅色=主色底白字；深色=纯黑底，主色只做选中下划线（简单配色） */
+  --band-bg: #2f8f86;
+  --band-ink: #ffffff;
+  --band-line: #ffffff;
 
   --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --r-control: 8px;
@@ -59,6 +63,9 @@
     --warn: #d9a06a;
     --shadow: 0 24px 56px rgba(0, 0, 0, 0.7);
     --scrim: rgba(0, 0, 0, 0.66);
+    --band-bg: #000000;
+    --band-ink: #ffffff;
+    --band-line: #4fc4ba;
 
     --panel-glass: rgba(12, 13, 14, 0.82);
     --e-card: 0 1px 2px rgba(0, 0, 0, 0.5);
@@ -97,6 +104,9 @@
   --warn: #d9a06a;
   --shadow: 0 24px 56px rgba(0, 0, 0, 0.7);
   --scrim: rgba(0, 0, 0, 0.66);
+  --band-bg: #000000;
+  --band-ink: #ffffff;
+  --band-line: #4fc4ba;
 
   --panel-glass: rgba(12, 13, 14, 0.82);
   --e-card: 0 1px 2px rgba(0, 0, 0, 0.5);
@@ -1774,18 +1784,21 @@ body { background: var(--bg); }
 }
 
 /* ---------- 主色横条（新增元素）---------- */
-.band { background: var(--accent); }
+.band {
+  background: var(--band-bg);
+  border-bottom: 1px solid var(--line);
+}
 .band-in {
   max-width: var(--ti-shell); margin: 0 auto; padding: 0 var(--gutter, 28px);
   height: 46px; display: flex; align-items: center; gap: 26px;
 }
 .band-in a {
-  color: #fff; text-decoration: none; font-size: 15px;
+  color: var(--band-ink); text-decoration: none; font-size: 15px;
   padding: 13px 0; border-bottom: 3px solid transparent;
   transition: border-color var(--dur-1, 140ms) ease;
 }
-.band-in a.on { border-bottom-color: #fff; font-weight: 600; }
-.band-in a:hover { border-bottom-color: rgba(255,255,255,.5); }
+.band-in a.on { border-bottom-color: var(--band-line); font-weight: 600; }
+.band-in a:hover { border-bottom-color: var(--band-line); opacity: .75; }
 
 /* ---------- 面包屑（新增元素）---------- */
 .crumb {
@@ -2323,4 +2336,18 @@ body { background: var(--bg); }
   :root:not([data-theme="light"]) .doc-hl { background: #5c4a00 !important; color: #ffe066 !important; }
   :root:not([data-theme="light"]) .sep2 { color: #3a3f43 !important; }
   :root:not([data-theme="light"]) .comp-blk { border-color: var(--line) !important; }
+}
+
+/* 深色下：导航条已纯黑，「回到顶部」按钮同步收成低调描边（简单配色） */
+:root[data-theme="dark"] .to-top {
+  background: var(--panel) !important;
+  color: var(--accent) !important;
+  border: 1px solid var(--line) !important;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .to-top {
+    background: var(--panel) !important;
+    color: var(--accent) !important;
+    border: 1px solid var(--line) !important;
+  }
 }
