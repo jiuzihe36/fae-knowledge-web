@@ -1883,7 +1883,11 @@ body { background: #ffffff; }
 .app-more { padding: 10px; font-size: 12px; color: var(--muted); }
 
 /* 技术文档列表 */
-.doc-tools { display: flex; align-items: center; gap: 12px; margin: 16px 0 14px; }
+.doc-tools {
+  display: flex; align-items: center; gap: 12px; margin: 16px 0 0;
+  position: sticky; top: var(--stick-top); z-index: 25;
+  padding: 14px 0 12px; background: var(--bg, #fff);
+}
 .page-search {
   flex: 0 1 340px; height: 36px; padding: 0 12px;
   border: 1px solid #d6d6d6; border-radius: 4px;
@@ -1900,7 +1904,7 @@ body { background: #ffffff; }
   border-bottom: 1px solid var(--ti-line);
   font-size: 12px; font-weight: 600; color: var(--muted);
   letter-spacing: .2px;
-  position: sticky; top: 0; z-index: 20;
+  position: sticky; top: calc(var(--stick-top) + 64px); z-index: 20;
 }
 .doc-row {
   display: grid;
