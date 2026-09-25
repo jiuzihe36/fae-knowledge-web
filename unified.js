@@ -889,7 +889,8 @@
   }
 
   var DOC_HEAD = '<div class="doc-head"><span>型号</span><span>功能</span><span>系列</span>' +
-    '<span>封装</span><span>技术文档</span></div>';
+    '<span>封装</span><span>工作电压</span><span>温度范围</span><span>工艺</span>' +
+    '<span>技术文档</span></div>';
 
   function docRow(it) {
     return '<button type="button" class="doc-row" data-model="' + esc(it.m) + '">' +
@@ -897,6 +898,9 @@
       '<span class="doc-fn">' + esc(it.fn) + "</span>" +
       '<span class="doc-se">' + esc(it.se) + "</span>" +
       '<span class="doc-pk">' + esc(it.pk) + "</span>" +
+      '<span class="doc-v" title="' + esc(it.v || "—") + '">' + esc(it.v || "—") + "</span>" +
+      '<span class="doc-t" title="' + esc(it.t || "—") + '">' + esc(it.t || "—") + "</span>" +
+      '<span class="doc-lt">' + esc(it.lt || "—") + "</span>" +
       '<span class="doc-badges">' +
       (it.ds ? '<span class="dbadge on">规格书</span>' : "") +
       (it.pin ? '<span class="dbadge on">引脚图</span>' : "") +

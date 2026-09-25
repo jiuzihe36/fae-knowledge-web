@@ -102,6 +102,13 @@ for p in prod:
         'pk': p.get('package') or '',
         'ds': bool(p.get('source_document_id')),
         'pin': p.get('pin_image') or '',
+        # 扩展列：工作电压 / 温度范围 / 工艺类型 / 封装尺寸（供文档表头多列展示）
+        'v': (p.get('voltage') or '').replace(' V to ', '–').replace(' V', 'V'),
+        't': (p.get('temp_range') or '')
+             .replace(' °C to +', '~').replace('°C to +', '~').replace(' °C', '℃').replace('°C', '℃')
+             .replace('-40~85℃', '-40~+85℃').replace('-40~125℃', '-40~+125℃'),
+        'lt': ('—' if '不适用' in (p.get('logic_type') or '') else (p.get('logic_type') or '')),
+        'ps': p.get('package_size') or '',
     }
     docs.append(rec)
 
