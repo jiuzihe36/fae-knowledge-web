@@ -18,7 +18,7 @@
   --r-card: 10px;
   --r-lg: 14px;
   --stick-top: 72px;
-  --doc-top: 107px;   /* topbar-inner 60 + band-in 46 + topbar 下边框 1：技术文档页 sticky 起始位 */
+  --doc-top: 61px;   /* 实测：topbar 吸顶后可见高度 = topbar-inner 60 + 边框 1（band-in 会随页面滚走）*/
   --panel-glass: rgba(255, 255, 255, 0.82);
   --e-card: 0 1px 2px rgba(20, 25, 28, 0.05), 0 1px 3px rgba(20, 25, 28, 0.05);
   --line-control: #d7dbde;
@@ -2116,7 +2116,9 @@ body { background: #ffffff; }
   table { font-size: 12.5px; }
 
   /* --- 全局：禁止横向溢出 --- */
-  body { overflow-x: hidden; }
+  /* 注意：必须放 html，不能放 body —— body 的 overflow-x:hidden 会把 overflow-y 计算为 auto，
+     使 body 成为滚动容器，导致子元素 position:sticky 整体失效（技术文档页工具栏/表头不吸顶的根因） */
+  html { overflow-x: hidden; }
   /* 底部安全区：不被手机手势条遮挡 */
   .cat-tree, .page-body { padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px)); }
   img, svg { max-width: 100%; height: auto; }
