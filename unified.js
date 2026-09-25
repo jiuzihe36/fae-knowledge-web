@@ -564,70 +564,95 @@
     if (e.target.id !== "treeFilter") return;
     var q = norm(e.target.value);
     var info = document.getElementById("treeFilterInfo");
-    var root = el.catTree;
-    if (!root) return;
+    if (!el.catTree) return;
 
-    /* 清空搜索：回到「默认折叠」初始态，而不是残留满屏展开 */
+    /* 清空搜索：回到「默认折叠」初始态 */
     if (!q) {
       if (info) info.textContent = "";
       resetTreeDefault();
       return;
     }
+    /* 精准展开：只展开「含命中结果」的层级路径，其余保持默认折叠。
+       （型号行的祖先 key 由数据层算出，不靠全量展开后隐藏） */
+    var exact = isExactSeriesName(q);
+    var hits = applyFilter(q, exact);
+    renderCatalog();
+    /* 命中项高亮（浅黄底），便于一眼定位 */
+    var root = el.catTree;
+    if (root) {
+      root.querySelectorAll(".mod-row").forEach(function (n) {
+        var on = exact ? (norm(n.getAttribute("data-series")) === q)
+                       : norm(n.getAttribute("data-model") || "").indexOf(q) >= 0;
+        n.classList.toggle("hit", on);
+      });
+    }
+    if (info) info.textContent = hits ? "命中 " + hits + " 款" : "无匹配";
+  });
 
-    /* 型号行 .mod-row 在最深的路数层(openSers)之下——任何一层没展开，
-       型号行就不进 DOM，筛选必然「无匹配」。搜索时先把
-       大类→工艺→系列→功能→路数 全部展开，让所有型号行进 DOM。 */
-    if (CATALOG && root.querySelectorAll(".mod-row, .rcard").length < DATA.products.length) {
-      CATALOG.cats.forEach(function (c) {
-        openCats[c.key] = true;
-        (c.procs || []).forEach(function (p) {
-          if (p.name) openProcs[c.key + "|" + p.name] = true;
-          (p.series || []).forEach(function (s) {
-            var sKey = c.key + "|" + s.name;
-            openSeries[sKey] = true;
-            (s.funcs || []).forEach(function (f) {
-              var path = s.name + ">" + f.name;
-              openFuncs[c.key + "|" + path] = true;
-              (f.routes || []).forEach(function (rt) {
-                openSers[c.key + "|" + path + "|" + rt.name] = true;
+  /* 关键词是否精确等于目录里某个系列名（搜系列名时不误伤同前缀系列） */
+  function isExactSeriesName(q) {
+    var found = false;
+    if (CATALOG) CATALOG.cats.forEach(function (c) {
+      (c.procs || []).forEach(function (p) {
+        (p.series || []).forEach(function (s) { if (norm(s.name) === q) found = true; });
+      });
+    });
+    return found;
+  }
+
+  /* 按关键词精准展开：遍历目录数据，命中路径才展开（其余保持默认折叠），
+     返回命中款数。规则：
+       ① 关键词精确等于某系列名（如 74hc）→ 只按系列归属命中，不误伤 74HCT/74HCS；
+       ② 否则型号可见条件 = 型号名/封装/系列名/功能名/路数名 任一含关键词。 */
+  function applyFilter(q, exactSeries) {
+    openCats = Object.create(null); openProcs = Object.create(null);
+    openSeries = Object.create(null); openFuncs = Object.create(null);
+    openSers = Object.create(null);
+    if (!CATALOG) return 0;
+    var hits = 0;
+    CATALOG.cats.forEach(function (c) {
+      (c.procs || []).forEach(function (p) {
+        (p.series || []).forEach(function (s) {
+          var sHit = norm(s.name).indexOf(q) >= 0;
+          (s.funcs || []).forEach(function (f) {
+            var fHit = norm(f.name).indexOf(q) >= 0;
+            var path = s.name + ">" + f.name;
+            var fVisible = false;
+            (f.routes || []).forEach(function (rt) {
+              var rHit = norm(rt.name).indexOf(q) >= 0;
+              var rVisible = false;
+              (rt.models || []).forEach(function (m) {
+                var matched;
+                if (exactSeries) {
+                  /* 精确系列名：只看系列归属，绝不因子串关系误伤 74HCT/74HCS */
+                  matched = (norm(s.name) === q);
+                } else {
+                  matched = norm(m.m).indexOf(q) >= 0 ||
+                            norm(m.pkg || "").indexOf(q) >= 0 ||
+                            sHit || fHit || rHit;
+                }
+                if (matched) { rVisible = true; hits++; }
               });
+              if (rVisible) { openSers[c.key + "|" + path + "|" + rt.name] = true; fVisible = true; }
             });
+            if (fVisible) { openFuncs[c.key + "|" + path] = true; }
           });
+          /* 该系列下若有命中则逐级展开其祖先 */
+          var sHas = false;
+          (s.funcs || []).forEach(function (f) {
+            var path = s.name + ">" + f.name;
+            if (openFuncs[c.key + "|" + path]) sHas = true;
+          });
+          if (sHas || (!exactSeries && sHit)) {
+            openSeries[c.key + "|" + s.name] = true;
+            if (p.name) openProcs[c.key + "|" + p.name] = true;
+            openCats[c.key] = true;
+          }
         });
       });
-      renderCatalog();
-    }
-    /* 清掉旧高亮（重建后本就没有，保留兜底） */
-    root.querySelectorAll(".mod-row.hit, .rcard.hit").forEach(function (n) { n.classList.remove("hit"); });
-
-      /* 用户搜的若是「系列名」（如 74hc / 74lvc），应命中该系列、不误伤同前缀的
-         其它系列（74HCT/74HCS 的型号名里也含 "74hc" 子串）。先用现有系列行
-         判断 q 是否精确等于某个系列名，是则只认系列归属。 */
-      var exactSeries = false;
-      root.querySelectorAll(".pro-row[data-series]").forEach(function (n) {
-        if (norm(n.getAttribute("data-series")) === q) exactSeries = true;
-      });
-      var hits = 0;
-      root.querySelectorAll(".mod-row, .rcard").forEach(function (n) {
-        var model = norm(n.getAttribute("data-model") || "");
-        var series = norm(n.getAttribute("data-series") || "");
-        var on;
-        if (exactSeries) {
-          on = series === q;                       /* 按系列精确命中，排除 74HCT/HCS */
-        } else {
-          var txt = norm(n.textContent + " " + (n.getAttribute("data-model") || ""));
-          on = txt.indexOf(q) >= 0;
-        }
-        n.style.display = on ? "" : "none";
-        if (on) { n.classList.add("hit"); hits++; }
-      });
-      /* 隐藏没有命中的祖先节点 */
-      root.querySelectorAll(".cat-node, .pro-node, .ser-node, .func-node, .route-node").forEach(function (n) {
-        var any = n.querySelector(".mod-row:not([style*='none']), .rcard:not([style*='none'])");
-        if (!any) n.style.display = "none";
-      });
-      if (info) info.textContent = hits ? "命中 " + hits + " 款" : "无匹配";
     });
+    return hits;
+  }
 
     /* 技术文档页：显示全部 */
     if (el.pageBody) el.pageBody.addEventListener("click", function (e) {

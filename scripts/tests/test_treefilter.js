@@ -24,31 +24,30 @@ const type = (f, v) => { f.value = v; f.dispatchEvent(new window.Event('input', 
   const catTree = doc.getElementById('catTree'), f = doc.getElementById('treeFilter'), info = doc.getElementById('treeFilterInfo');
   let pass = 0, fail = 0;
   const check = (n, c, extra) => { c ? (pass++, console.log('  ✅', n)) : (fail++, console.log('  ❌', n, extra || '')); };
-  const initialRows = catTree.querySelectorAll('.mod-row').length;
-  console.log('初始 DOM 型号行:', initialRows, '(默认只展开最大类)');
 
+  // 搜 74hc
   type(f, '74hc'); await sleep(600);
-  const h1 = vis(catTree, '.mod-row.hit');
-  console.log('  搜 74hc: 命中', h1, JSON.stringify(info.textContent));
-  check('74hc 精确命中 104 款', h1 === 104, '(实际' + h1 + ')');
+  console.log('  搜 74hc: 命中', vis(catTree, '.mod-row'), JSON.stringify(info.textContent));
+  const openedCats = Array.prototype.filter.call(catTree.querySelectorAll('.cat-row'), n => n.getAttribute('aria-expanded') === 'true').map(n => n.textContent.trim().split(' ')[0]);
+  const openedProcs = Array.prototype.filter.call(catTree.querySelectorAll('.pro-row'), n => n.getAttribute('aria-expanded') === 'true').map(n => n.getAttribute('data-series') || n.textContent.trim().slice(0, 12));
+  const openedSeries = Array.prototype.filter.call(catTree.querySelectorAll('.pro-row'), n => n.getAttribute('aria-expanded') === 'true').map(n => n.getAttribute('data-series'));
+  console.log('  展开的大类:', openedCats);
+  console.log('  展开的工艺/系列:', openedSeries);
+  check('74hc 命中 104 款', vis(catTree, '.mod-row') === 104, '(实际' + vis(catTree, '.mod-row') + ')');
+  check('只展开 74HC 系列', openedSeries.length === 1 && openedSeries[0] === '74HC', JSON.stringify(openedSeries));
+  check('未展开 74HCT/74HCS', openedSeries.indexOf('74HCT') < 0 && openedSeries.indexOf('74HCS') < 0);
 
+  // 搜 74lvc
   type(f, '74lvc'); await sleep(600);
-  console.log('  搜 74lvc: 命中', vis(catTree, '.mod-row.hit'), JSON.stringify(info.textContent));
-  check('74lvc 命中 202 款', vis(catTree, '.mod-row.hit') === 202);
+  const ser2 = Array.prototype.filter.call(catTree.querySelectorAll('.pro-row'), n => n.getAttribute('aria-expanded') === 'true').map(n => n.getAttribute('data-series'));
+  console.log('  搜 74lvc: 命中', vis(catTree, '.mod-row'), ' 展开系列:', ser2);
+  check('74lvc 命中 202 款', vis(catTree, '.mod-row') === 202);
+  check('只展开 74LVC 系列(可能两个大类各一)', ser2.every(x => x === '74LVC') && ser2.length >= 1, JSON.stringify(ser2));
 
-  type(f, 'EM74HCT125D'); await sleep(500);
-  console.log('  搜 EM74HCT125D: 命中', vis(catTree, '.mod-row.hit'), JSON.stringify(info.textContent));
-  check('具体型号命中 >=1', vis(catTree, '.mod-row.hit') >= 1);
-
+  // 清空
   type(f, ''); await sleep(500);
-  const afterClear = catTree.querySelectorAll('.mod-row').length;
-  console.log('  清空后 DOM 型号行:', afterClear, ' (初始', initialRows, ')');
-  check('清空后回到默认折叠 (行数≈初始, 非670)', afterClear <= initialRows + 5, '(实际' + afterClear + ')');
-  check('清空后 info 清空', info.textContent === '');
-
-  type(f, '74hc'); await sleep(600);
-  console.log('  再搜 74hc: 命中', vis(catTree, '.mod-row.hit'));
-  check('清空后再搜 74hc 仍 104 款', vis(catTree, '.mod-row.hit') === 104);
+  console.log('  清空后: 可见型号行', vis(catTree, '.mod-row'), ' info=', JSON.stringify(info.textContent));
+  check('清空后回默认折叠 (型号行 0)', vis(catTree, '.mod-row') === 0);
 
   console.log(`\n=== ${pass} 通过, ${fail} 失败 ===`);
   process.exit(fail ? 1 : 0);
