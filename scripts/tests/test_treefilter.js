@@ -33,7 +33,8 @@ const type = (f, v) => { f.value = v; f.dispatchEvent(new window.Event('input', 
   const openedSeries = Array.prototype.filter.call(catTree.querySelectorAll('.pro-row'), n => n.getAttribute('aria-expanded') === 'true').map(n => n.getAttribute('data-series'));
   console.log('  展开的大类:', openedCats);
   console.log('  展开的工艺/系列:', openedSeries);
-  check('74hc 命中 104 款', vis(catTree, '.mod-row') === 104, '(实际' + vis(catTree, '.mod-row') + ')');
+  const expectHc = liteArr.filter(m => /^EM74HC\d/i.test(m.model || '')).length;
+  check('74hc 命中 ' + expectHc + ' 款', vis(catTree, '.mod-row') === expectHc, '(实际' + vis(catTree, '.mod-row') + ')');
   check('只展开 74HC 系列', openedSeries.length === 1 && openedSeries[0] === '74HC', JSON.stringify(openedSeries));
   check('未展开 74HCT/74HCS', openedSeries.indexOf('74HCT') < 0 && openedSeries.indexOf('74HCS') < 0);
 
