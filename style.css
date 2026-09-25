@@ -2351,3 +2351,26 @@ body { background: var(--bg); }
     border: 1px solid var(--line) !important;
   }
 }
+
+/* ============================================================
+   深色（纯黑）下的语义色收尾：尾缀徽标/柱状条/提示条
+   浅色下这些是主色实心块（在白底上清爽），
+   纯黑底上同样的大色块会显得刺眼 —— 收成描边/低饱和。
+   ============================================================ */
+:root[data-theme="dark"] .sfx-badge {
+  background: transparent !important;
+  color: var(--accent) !important;
+  border: 1px solid var(--accent) !important;
+}
+:root[data-theme="dark"] .q-bar { background: var(--accent) !important; opacity: .8; }
+:root[data-theme="dark"] .page-note { background: var(--soft) !important; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .sfx-badge {
+    background: transparent !important;
+    color: var(--accent) !important;
+    border: 1px solid var(--accent) !important;
+  }
+  :root:not([data-theme="light"]) .q-bar { background: var(--accent) !important; opacity: .8; }
+  :root:not([data-theme="light"]) .page-note { background: var(--soft) !important; }
+}
