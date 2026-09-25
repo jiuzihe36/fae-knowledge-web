@@ -29,6 +29,29 @@ prod = json.load(open(WEB / 'data' / 'products_lite.json'))
 ROUTE_ORDER = ['单路', '双路', '三路', '四路', '六路', '八路', '多路',
                '2 位', '4 位', '6 位', '8 位', '10 位', '12 位', '16 位', '其他']
 
+# 模拟开关按「产品类型」分组（口径来自芯祥官方宣讲 PPT p16-p18）：
+#   High/Super Speed Analog Switch / General Analog Switch /
+#   High Performance Audio Switch / Audio Ground Switch / Depletion Audio Switch
+SWITCH_TYPE = OrderedDict([
+    ('高速开关（USB/HDMI）', ['EMS3900', 'EMS3902', 'EMS3905', 'EMS4000', 'EMS4002',
+                            'EMS4100', 'EMS4300', 'EMS4422', 'EMS4735', 'EMS4642',
+                            'EMS7227', 'EMS3412', 'EMS4310']),
+    ('音频开关', ['EMS4320', 'EMS4321', 'EMS4798', 'EMS4521', 'EMS4798C',
+                 'EMS3218', 'EMS3580', 'EMS4485']),
+    ('耗尽型开关', ['EMS3515', 'EMS3518', 'EMS3550']),
+])
+
+
+def switch_type_of(model):
+    """模拟开关的产品类型分组（型号前缀匹配，取最长命中）"""
+    mu = (model or '').upper()
+    best, hit = '', '通用开关'
+    for tname, prefixes in SWITCH_TYPE.items():
+        for pf in prefixes:
+            if mu.startswith(pf.upper()) and len(pf) > len(best):
+                best, hit = pf, tname
+    return hit
+
 # 工艺子类：按电压范围客观归类（数据里的 voltage 字段）
 PROCESS_GROUPS = OrderedDict([
     ('宽电压 / 低压通用', ['74LVC', '74AUP', '74LV1T']),
@@ -148,7 +171,7 @@ for p in prod:
         'detail': p.get('function_detail') or '',
         'sys': p.get('package_size') or '',
         'comp': 0,
-        'route': parse_route(p['model'], p.get('function_detail')),
+        'route': switch_type_of(p['model']) if c == 'switch' else parse_route(p['model'], p.get('function_detail')),
         'inputs': parse_inputs(p.get('function_detail')),
     })
 
@@ -166,7 +189,9 @@ for key, name in CATS.items():
                 rmap[m['route']].append(m)
                 fcount += 1
         routes = []
-        for rn in ROUTE_ORDER:
+        # 模拟开关类按产品类型分组（顺序=SWITCH_TYPE 定义序），其余按 ROUTE_ORDER
+        order = list(SWITCH_TYPE.keys()) + ['通用开关'] if key == 'switch' else ROUTE_ORDER
+        for rn in order:
             if rn not in rmap: continue
             models = sorted(rmap[rn], key=lambda x: (x['series'], x['m']))
             routes.append({'name': rn, 'count': len(models), 'models': models})
@@ -206,7 +231,8 @@ for key, name in CATS.items():
                 for m in models:
                     rmap[m['route']].append(m)
                 routes = []
-                for rn in ROUTE_ORDER:
+                order2 = list(SWITCH_TYPE.keys()) + ['通用开关'] if key == 'switch' else ROUTE_ORDER
+                for rn in order2:
                     if rn not in rmap: continue
                     routes.append({'name': rn, 'count': len(rmap[rn]),
                                    'models': sorted(rmap[rn], key=lambda x: x['m'])})
