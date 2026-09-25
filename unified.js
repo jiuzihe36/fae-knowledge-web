@@ -661,7 +661,7 @@
       var cnt = document.getElementById("docCount");
       var q = (document.getElementById("docQ") || {}).value || "";
       var list = filterDocs(q);
-      if (box) box.innerHTML = list.map(docRow).join("") || '<div class="empty">没有匹配的型号</div>';
+      if (box) box.innerHTML = DOC_HEAD + (list.map(docRow).join("") || '<div class="empty">没有匹配的型号</div>');
       if (cnt) cnt.textContent = list.length + " 款 · 已全部显示";
       e.target.disabled = true;
       e.target.textContent = "已全部显示";
@@ -676,8 +676,8 @@
       var cnt = document.getElementById("docCount");
       var all = document.getElementById("docAllBtn");
       if (all) { all.disabled = false; all.textContent = "显示全部"; }
-      if (box) box.innerHTML = list.slice(0, 200).map(docRow).join("") ||
-        '<div class="empty">没有匹配的型号</div>';
+      if (box) box.innerHTML = DOC_HEAD + (list.slice(0, 200).map(docRow).join("") ||
+   '<div class="empty">没有匹配的型号</div>');
       if (cnt) cnt.textContent = list.length > 200
         ? list.length + " 款 · 显示前 200" : list.length + " 款";
     });
@@ -791,7 +791,8 @@
         'placeholder="按型号 / 功能 / 系列 / 封装筛选" autocomplete="off">' +
         '<button id="docAllBtn" class="btn-ghost" type="button">显示全部</button>' +
         '<span id="docCount" class="count-pill">' + d.items.length + " 款 · 显示前 200</span></div>";
-      html += '<div id="docList" class="doc-list">' + d.items.slice(0, 200).map(docRow).join("") + "</div>";
+      html += '<div id="docList" class="doc-list">' + DOC_HEAD +
+        d.items.slice(0, 200).map(docRow).join("") + "</div>";
     }
 
     if (name === "quality") {
@@ -886,6 +887,9 @@
       return norm(it.m + " " + it.fn + " " + it.se + " " + it.pk).indexOf(s) >= 0;
     });
   }
+
+  var DOC_HEAD = '<div class="doc-head"><span>型号</span><span>功能</span><span>系列</span>' +
+    '<span>封装</span><span>技术文档</span></div>';
 
   function docRow(it) {
     return '<button type="button" class="doc-row" data-model="' + esc(it.m) + '">' +

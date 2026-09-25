@@ -1891,6 +1891,15 @@ body { background: #ffffff; }
 }
 .page-search:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(47,143,134,.12); }
 .doc-list { border-top: 1px solid var(--ti-line); }
+/* 表头：对齐 doc-row 栅格，TI 风格浅灰底 + 单条横线 */
+.doc-head {
+  display: grid; grid-template-columns: 190px 1fr 90px 110px 130px;
+  gap: 12px; align-items: center;
+  padding: 9px 14px; background: #f2f2f2;
+  border-bottom: 1px solid var(--ti-line);
+  font-size: 12px; font-weight: 600; color: var(--muted);
+  letter-spacing: .2px;
+}
 .doc-row {
   display: grid; grid-template-columns: 190px 1fr 90px 110px 130px;
   gap: 12px; align-items: center; width: 100%;

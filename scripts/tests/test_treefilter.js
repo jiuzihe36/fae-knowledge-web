@@ -3,8 +3,8 @@ const { JSDOM, VirtualConsole } = require('jsdom');
 const liteArr = JSON.parse(fs.readFileSync('/Users/hu/fae-knowledge-web/data/products_lite.json', 'utf-8'));
 let html = fs.readFileSync('/Users/hu/fae-knowledge-web/index.html', 'utf-8');
 const uniJs = fs.readFileSync('/Users/hu/fae-knowledge-web/unified.js', 'utf-8');
-html = html.replace('<script src="./app.js?v=20260925n"></script>', '')
-           .replace('<script src="./unified.js?v=20260925n"></script>', '<script>' + uniJs + '</script>');
+html = html.replace(/<script src="\.\/app\.js\?v=[^"]*"><\/script>/, '')
+           .replace(/<script src="\.\/unified\.js\?v=[^"]*"><\/script>/, '<script>' + uniJs + '</script>');
 const vc = new VirtualConsole();
 vc.on('jsdomError', e => console.log('[jsdomError]', e.message));
 const dom = new JSDOM(html, {
