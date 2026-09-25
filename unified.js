@@ -840,13 +840,25 @@
           }).join("") + "</tbody></table>";
       }
 
-      /* ⑤ 封装规格（尺寸归一化、允许换行） */
-      html += '<h3 class="page-h3">封装规格（' + d.package.length + ' 种）</h3>' +
-        '<table class="param q-tbl pkg-tbl"><thead><tr><th>封装</th><th class="num">型号数</th><th>本体尺寸</th></tr></thead><tbody>' +
-        d.package.map(function (p) {
+      /* ⑤ 封装规格（权威字典：引脚数 / 本体尺寸 / 高度 / pitch） */
+      var pkgRows = d.package_detail || [];
+      html += '<h3 class="page-h3">封装规格（' + (pkgRows.length || d.package.length) + ' 种）</h3>' +
+        '<table class="param q-tbl pkg-tbl"><thead><tr>' +
+        '<th>封装</th><th class="num">型号数</th><th class="num">引脚</th>' +
+        '<th>本体尺寸 (mm)</th><th class="num">高度 max</th><th class="num">pitch</th>' +
+        '</tr></thead><tbody>' +
+        (pkgRows.length ? pkgRows.map(function (p) {
+          return '<tr><td class="k mono">' + esc(p.pkg) + '</td>' +
+            '<td class="v num">' + p.n + '</td>' +
+            '<td class="v num">' + esc(p.pins) + '</td>' +
+            '<td class="v sm">' + esc(p.body) + '</td>' +
+            '<td class="v num">' + esc(p.hmax) + '</td>' +
+            '<td class="v num">' + esc(p.pitch) + '</td></tr>';
+        }).join("") : d.package.map(function (p) {
           return '<tr><td class="k mono">' + esc(p.k) + '</td><td class="v num">' + p.n +
-            '</td><td class="v sm size-cell">' + esc(fmtSize(p.size)) + "</td></tr>";
-        }).join("") + "</tbody></table>";
+            '</td><td class="v num">—</td><td class="v sm size-cell">' + esc(fmtSize(p.size)) +
+            '</td><td class="v num">—</td><td class="v num">—</td></tr>';
+        }).join("")) + "</tbody></table>";
 
       /* ⑥ 系列分布（温度档） */
       if (d.by_series && d.by_series.length) {

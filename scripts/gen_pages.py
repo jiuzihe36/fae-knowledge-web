@@ -170,10 +170,10 @@ FAMILY = OrderedDict([
     ('ADB', ('SSOP',       '缩小型小外形')),
     ('DB',  ('SSOP',       '缩小型小外形')),
     ('DC',  ('VSSOP',      '超小外形')),
-    ('GW',  ('SOT-353/363/553/563', '超小外形晶体管封装')),
+    ('GW',  ('SOT-353/363', '超小外形晶体管封装')),
     ('DRL', ('SOT-553/563', '超小外形')),
     ('GV',  ('SOT-23-5/6',  '小外形晶体管封装')),
-    ('GM',  ('SOT-23 / DFN', '小外形')),
+    ('GM',  ('DFN 1×1.45', '微型双侧无引脚')),
     ('GS',  ('DFN',        '双侧无引脚扁平')),
     ('GX',  ('DFN 0.8×0.8', '微型双侧无引脚')),
     ('MS',  ('MSOP',       '微型小外形')),
@@ -206,10 +206,49 @@ for p in prod:
     if len(sfx[s]['models']) < 3:
         sfx[s]['models'].append(m)
 
+def _pkg_family(pkg_name):
+    """从实际封装名归纳「族名」，用于尾缀表的 family 列。
+    依据封装前缀 + 尺寸（不含引脚数），避免同族多引脚数被误判为多族。"""
+    import re as _re
+    n = (pkg_name or '').upper()
+    m = _re.match(r'^(TSSOP|SSOP|VSSOP|MSOP|TVSOP)', n)
+    if m:
+        return m.group(1)
+    m = _re.match(r'^(SOP)', n)
+    if m:
+        return 'SOP'
+    m = _re.match(r'^(SOT23|SOT-23)', n)
+    if m:
+        return 'SOT-23'
+    m = _re.match(r'^(SOT)(\d{3})', n)
+    if m:
+        return 'SOT-' + m.group(2)
+    m = _re.match(r'^(QFN|DFN)([\d.]+)[xX×]([\d.]+)', n)
+    if m:
+        return f'{m.group(1)} {m.group(2)}×{m.group(3)}'
+    m = _re.match(r'^(QFN|DFN)-(\d+)', n)
+    if m:
+        return m.group(1)
+    m = _re.match(r'^(QFN|DFN)$', n)
+    if m:
+        return m.group(1)
+    m = _re.match(r'^(WLCSP|WCSP|X\d?SON|SC|SOD)', n)
+    if m:
+        return m.group(1)
+    return pkg_name or '—'
+
+
 suffix_rows = []
 for s, d in sorted(sfx.items(), key=lambda kv: -kv[1]['n']):
     pk = d['pkgs'].most_common(1)[0][0]
     fam, desc = FAMILY.get(s, ('—', '—'))
+    # family 以实际数据为准（自动归纳，覆盖硬编码，杜绝两尾缀描述重复）
+    real_fams = []
+    for _pk, _cnt in d['pkgs'].most_common():
+        _f = _pkg_family(_pk)
+        if _f not in real_fams:
+            real_fams.append(_f)
+    fam = ' / '.join(real_fams) if real_fams else fam
     suffix_rows.append({
         'sfx': s, 'n': d['n'], 'pkg': pk, 'family': fam, 'desc': desc,
         'variants': [{'k': a, 'n': b} for a, b in d['pkgs'].most_common()],
