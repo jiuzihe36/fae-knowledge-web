@@ -18,6 +18,8 @@
   --r-card: 10px;
   --r-lg: 14px;
   --stick-top: 72px;
+  --doc-tools-h: 74px;   /* 26 top + 36 控件 + 12 bottom */
+  --doc-top: 106px;   /* topbar 60 + band-in 46：技术文档页 sticky 起始位 */
   --panel-glass: rgba(255, 255, 255, 0.82);
   --e-card: 0 1px 2px rgba(20, 25, 28, 0.05), 0 1px 3px rgba(20, 25, 28, 0.05);
   --line-control: #d7dbde;
@@ -918,8 +920,14 @@ input[type="search"]:focus, input[type="text"]:focus, select:focus {
 @media (max-width: 820px) {
   :root {
     --stick-top: 68px;
+    /* 移动端 topbar 换行高度不定，工具栏不吸顶（改为随内容滚动），表头直接吸在 topbar 下 */
+    --doc-top: 0px;
+    --doc-tools-h: 0px;
     --gutter: 16px;
   }
+
+  /* 移动端：搜索工具栏取消 sticky，避免与换行后的 topbar 重叠 */
+  .doc-tools { position: static; padding: 16px 0 10px; }
 
   .toolbar {
     padding: var(--gap-2);
@@ -1884,9 +1892,10 @@ body { background: #ffffff; }
 
 /* 技术文档列表 */
 .doc-tools {
-  display: flex; align-items: center; gap: 12px; margin: 16px 0 0;
-  position: sticky; top: var(--stick-top); z-index: 25;
-  padding: 14px 0 12px; background: var(--bg, #fff);
+  display: flex; align-items: center; gap: 12px;
+  position: sticky; top: var(--doc-top); z-index: 25;
+  margin: 0; padding: 26px 0 12px;
+  background: var(--bg, #fff);
 }
 .page-search {
   flex: 0 1 340px; height: 36px; padding: 0 12px;
@@ -1904,7 +1913,7 @@ body { background: #ffffff; }
   border-bottom: 1px solid var(--ti-line);
   font-size: 12px; font-weight: 600; color: var(--muted);
   letter-spacing: .2px;
-  position: sticky; top: calc(var(--stick-top) + 64px); z-index: 20;
+  position: sticky; top: calc(var(--doc-top) + var(--doc-tools-h)); z-index: 20;
 }
 .doc-row {
   display: grid;
