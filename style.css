@@ -18,8 +18,7 @@
   --r-card: 10px;
   --r-lg: 14px;
   --stick-top: 72px;
-  --doc-tools-h: 74px;   /* 26 top + 36 控件 + 12 bottom */
-  --doc-top: 106px;   /* topbar 60 + band-in 46：技术文档页 sticky 起始位 */
+  --doc-top: 107px;   /* topbar-inner 60 + band-in 46 + topbar 下边框 1：技术文档页 sticky 起始位 */
   --panel-glass: rgba(255, 255, 255, 0.82);
   --e-card: 0 1px 2px rgba(20, 25, 28, 0.05), 0 1px 3px rgba(20, 25, 28, 0.05);
   --line-control: #d7dbde;
@@ -920,14 +919,13 @@ input[type="search"]:focus, input[type="text"]:focus, select:focus {
 @media (max-width: 820px) {
   :root {
     --stick-top: 68px;
-    /* 移动端 topbar 换行高度不定，工具栏不吸顶（改为随内容滚动），表头直接吸在 topbar 下 */
+    /* 移动端 topbar 会换行、高度不定：整体吸顶仍可用，起始位设 0 由浏览器自然处理 */
     --doc-top: 0px;
-    --doc-tools-h: 0px;
     --gutter: 16px;
   }
 
-  /* 移动端：搜索工具栏取消 sticky，避免与换行后的 topbar 重叠 */
-  .doc-tools { position: static; padding: 16px 0 10px; }
+  /* 移动端：整体吸顶块间距收紧 */
+  .doc-tools { padding: 16px 0 10px; }
 
   .toolbar {
     padding: var(--gap-2);
@@ -1891,9 +1889,13 @@ body { background: #ffffff; }
 .app-more { padding: 10px; font-size: 12px; color: var(--muted); }
 
 /* 技术文档列表 */
+/* 唯一 sticky 容器：工具栏 + 表头一起吸顶（无需计算各自高度，天然无缝隙） */
+.doc-sticky {
+  position: sticky; top: var(--doc-top); z-index: 25;
+  background: var(--bg, #fff);
+}
 .doc-tools {
   display: flex; align-items: center; gap: 12px;
-  position: sticky; top: var(--doc-top); z-index: 25;
   margin: 0; padding: 26px 0 12px;
   background: var(--bg, #fff);
 }
@@ -1911,9 +1913,9 @@ body { background: #ffffff; }
   gap: 10px; align-items: center;
   padding: 10px 14px; background: #f2f2f2;
   border-bottom: 1px solid var(--ti-line);
+  border-top: 1px solid var(--ti-line-soft);
   font-size: 12px; font-weight: 600; color: var(--muted);
   letter-spacing: .2px;
-  position: sticky; top: calc(var(--doc-top) + var(--doc-tools-h)); z-index: 20;
 }
 .doc-row {
   display: grid;

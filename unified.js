@@ -661,7 +661,7 @@
       var cnt = document.getElementById("docCount");
       var q = (document.getElementById("docQ") || {}).value || "";
       var list = filterDocs(q);
-      if (box) box.innerHTML = DOC_HEAD + (list.map(docRow).join("") || '<div class="empty">没有匹配的型号</div>');
+      if (box) box.innerHTML = list.map(docRow).join("") || '<div class="empty">没有匹配的型号</div>';
       if (cnt) cnt.textContent = list.length + " 款 · 已全部显示";
       e.target.disabled = true;
       e.target.textContent = "已全部显示";
@@ -676,8 +676,8 @@
       var cnt = document.getElementById("docCount");
       var all = document.getElementById("docAllBtn");
       if (all) { all.disabled = false; all.textContent = "显示全部"; }
-      if (box) box.innerHTML = DOC_HEAD + (list.slice(0, 200).map(docRow).join("") ||
-   '<div class="empty">没有匹配的型号</div>');
+      if (box) box.innerHTML = list.slice(0, 200).map(docRow).join("") ||
+        '<div class="empty">没有匹配的型号</div>';
       if (cnt) cnt.textContent = list.length > 200
         ? list.length + " 款 · 显示前 200" : list.length + " 款";
     });
@@ -787,11 +787,13 @@
       var st = d.stats;
       html += pageShell("技术文档",
         "规格书 " + st.with_ds + " 份 · 引脚图 " + st.with_pin + " 份 · 覆盖全部 " + st.total + " 款型号");
-      html += '<div class="doc-tools"><input id="docQ" class="page-search" type="search" ' +
+      html += '<div class="doc-sticky"><div class="doc-tools">' +
+        '<input id="docQ" class="page-search" type="search" ' +
         'placeholder="按型号 / 功能 / 系列 / 封装筛选" autocomplete="off">' +
         '<button id="docAllBtn" class="btn-ghost" type="button">显示全部</button>' +
-        '<span id="docCount" class="count-pill">' + d.items.length + " 款 · 显示前 200</span></div>";
-      html += '<div id="docList" class="doc-list">' + DOC_HEAD +
+        '<span id="docCount" class="count-pill">' + d.items.length + " 款 · 显示前 200</span></div>" +
+        DOC_HEAD + '</div>';
+      html += '<div id="docList" class="doc-list">' +
         d.items.slice(0, 200).map(docRow).join("") + "</div>";
     }
 
