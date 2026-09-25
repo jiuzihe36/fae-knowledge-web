@@ -12,10 +12,10 @@
   --warn: #b07842;
   --shadow: 0 1px 2px rgba(20, 25, 28, 0.05), 0 12px 30px rgba(20, 25, 28, 0.08);
   --scrim: rgba(15, 18, 20, 0.42);
-  /* 导航横条：浅色=主色底白字；深色=纯黑底，主色只做选中下划线（简单配色） */
-  --band-bg: #2f8f86;
-  --band-ink: #ffffff;
-  --band-line: #ffffff;
+  /* 导航横条：白天纯白底+深色字、晚上纯黑底+白色字，主色只做一条选中下划线（简单配色） */
+  --band-bg: #ffffff;
+  --band-ink: #1a1d1f;
+  --band-line: #2f8f86;
 
   --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --r-control: 8px;
@@ -2191,7 +2191,7 @@ body { background: var(--bg); }
 .to-top {
   position: fixed; right: 22px; bottom: 22px; z-index: 40;
   padding: 10px 16px; border-radius: 999px;
-  border: 1px solid var(--line); background: var(--accent); color: var(--accent-ink);
+  border: 1px solid var(--accent); background: var(--panel); color: var(--accent);
   font-size: 13px; font-weight: 600; cursor: pointer;
   box-shadow: var(--e-card); opacity: 0; visibility: hidden;
   transform: translateY(12px); transition: opacity .2s ease, transform .2s ease, visibility .2s;
