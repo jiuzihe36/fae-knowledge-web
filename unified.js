@@ -204,24 +204,7 @@
     return l.indexOf(name) >= 0;
   }
 
-  /* 筛选时：把全部层级展开（否则未展开层里的型号根本没渲染进 DOM） */
-  function expandAllForFilter(root) {
-    var changed = true, guard = 0;
-    while (changed && guard++ < 12) {
-      changed = false;
-      /* 没展开的工艺组/系列/功能/路数节点，点它展开 */
-      var closed = root.querySelectorAll(".pro-row[aria-expanded='false'], .ser-row[aria-expanded='false'], .func-row[aria-expanded='false'], .route-row[aria-expanded='false']");
-      if (closed.length) {
-        /* 一次点开一个，靠重建后重扫（渲染是全量重建的） */
-        closed[0].click();
-        changed = true;
-      }
-      var closedCat = root.querySelectorAll(".cat-row[aria-expanded='false']");
-      if (closedCat.length) { closedCat[0].click(); changed = true; }
-    }
-  }
-
-  /* 从 DOM 里取"当前可见的型号列表"——所见即所得，不用维护镜像状态 */
+    /* 从 DOM 里取"当前可见的型号列表"——所见即所得，不用维护镜像状态 */
   function visibleModels(fromEl) {
     var container = fromEl ? fromEl.parentElement : null;
     while (container && container !== document.body) {
@@ -314,9 +297,10 @@
 
   /* 路数 → 型号（最内两层） */
   /* 型号行 */
-  function renderModels(list) {
+  function renderModels(list, seriesName) {
     return list.map(function (m) {
-      return '<button type="button" class="mod-row" data-model="' + esc(m.m) + '">' +
+      return '<button type="button" class="mod-row" data-model="' + esc(m.m) +
+        '" data-series="' + esc(seriesName || "") + '">' +
         '<span class="mod-name mono">' + esc(m.m) + "</span>" +
         '<span class="mod-pkg">' + esc(m.pkg || "") + "</span>" +
         '<span class="mod-vcc">' + esc(m.vcc || "") + "</span>" +
@@ -338,7 +322,7 @@
         "</button>";
       if (!rOpen) return '<div class="ser-block">' + head + "</div>";
       return '<div class="ser-block">' + head +
-        '<div class="ser-body">' + renderModels(rt.models) + "</div></div>";
+        '<div class="ser-body">' + renderModels(rt.models, path.split(">")[0]) + "</div></div>";
     }).join("");
   }
 
@@ -424,6 +408,18 @@
     }).join("");
     el.catTree.innerHTML = html;
     renderCrumb();
+  }
+
+  /* 回到「默认折叠」初始态：清空所有展开状态，只展开最大的大类 */
+  function resetTreeDefault() {
+    openCats = Object.create(null); openProcs = Object.create(null);
+    openSeries = Object.create(null); openFuncs = Object.create(null);
+    openSers = Object.create(null);
+    if (CATALOG && CATALOG.cats && CATALOG.cats.length) {
+      var big = CATALOG.cats.slice().sort(function (a, b) { return b.count - a.count; })[0];
+      if (big) openCats[big.key] = true;
+    }
+    renderCatalog();
   }
 
   /* 面包屑：跟着当前展开层级走 */
@@ -565,53 +561,63 @@
        （挂 document：treeFilter 在 #catalogMode 内、不在 #pageBody 子树里，
          挂 pageBody 收不到它的 input 事件 → 筛选框整体失效） */
     document.addEventListener("input", function (e) {
-      if (e.target.id !== "treeFilter") return;
-      /* 型号行 .mod-row 在最深的路数层(openSers)之下——任何一层没展开，
-         型号行就不进 DOM，筛选必然「无匹配」。所以筛选前必须把
-         大类→工艺→系列→功能→路数 全部展开（已全展开则跳过，不重建 DOM） */
-      if (CATALOG && Object.keys(openSers).length === 0) {
-        CATALOG.cats.forEach(function (c) {
-          openCats[c.key] = true;
-          (c.procs || []).forEach(function (p) {
-            if (p.name) openProcs[c.key + "|" + p.name] = true;
-            (p.series || []).forEach(function (s) {
-              var sKey = c.key + "|" + s.name;
-              openSeries[sKey] = true;
-              (s.funcs || []).forEach(function (f) {
-                var path = s.name + ">" + f.name;
-                openFuncs[c.key + "|" + path] = true;
-                (f.routes || []).forEach(function (rt) {
-                  openSers[c.key + "|" + path + "|" + rt.name] = true;
-                });
+    if (e.target.id !== "treeFilter") return;
+    var q = norm(e.target.value);
+    var info = document.getElementById("treeFilterInfo");
+    var root = el.catTree;
+    if (!root) return;
+
+    /* 清空搜索：回到「默认折叠」初始态，而不是残留满屏展开 */
+    if (!q) {
+      if (info) info.textContent = "";
+      resetTreeDefault();
+      return;
+    }
+
+    /* 型号行 .mod-row 在最深的路数层(openSers)之下——任何一层没展开，
+       型号行就不进 DOM，筛选必然「无匹配」。搜索时先把
+       大类→工艺→系列→功能→路数 全部展开，让所有型号行进 DOM。 */
+    if (CATALOG && root.querySelectorAll(".mod-row, .rcard").length < DATA.products.length) {
+      CATALOG.cats.forEach(function (c) {
+        openCats[c.key] = true;
+        (c.procs || []).forEach(function (p) {
+          if (p.name) openProcs[c.key + "|" + p.name] = true;
+          (p.series || []).forEach(function (s) {
+            var sKey = c.key + "|" + s.name;
+            openSeries[sKey] = true;
+            (s.funcs || []).forEach(function (f) {
+              var path = s.name + ">" + f.name;
+              openFuncs[c.key + "|" + path] = true;
+              (f.routes || []).forEach(function (rt) {
+                openSers[c.key + "|" + path + "|" + rt.name] = true;
               });
             });
           });
         });
-        renderCatalog();
-      }
-      var q = norm(e.target.value);
-      var info = document.getElementById("treeFilterInfo");
-      var root = el.catTree;
-      if (!root) return;
-      /* 清掉旧高亮 */
-      root.querySelectorAll(".mod-row.hit, .rcard.hit").forEach(function (n) { n.classList.remove("hit"); });
-      if (!q) {
-        if (info) info.textContent = "";
-        root.querySelectorAll(".mod-row, .rcard").forEach(function (n) { n.style.display = ""; });
-        return;
-      }
-      /* 未展开的层级要自动展开，否则里面的型号根本不渲染 */
-      var needExpand = false;
-      root.querySelectorAll(".cat-row, .pro-row, .ser-row, .func-row, .route-row").forEach(function (n) {
-        var t = norm(n.textContent || "");
-        if (t.indexOf(q) >= 0) needExpand = true;
       });
-      if (needExpand) expandAllForFilter(root);
+      renderCatalog();
+    }
+    /* 清掉旧高亮（重建后本就没有，保留兜底） */
+    root.querySelectorAll(".mod-row.hit, .rcard.hit").forEach(function (n) { n.classList.remove("hit"); });
 
+      /* 用户搜的若是「系列名」（如 74hc / 74lvc），应命中该系列、不误伤同前缀的
+         其它系列（74HCT/74HCS 的型号名里也含 "74hc" 子串）。先用现有系列行
+         判断 q 是否精确等于某个系列名，是则只认系列归属。 */
+      var exactSeries = false;
+      root.querySelectorAll(".pro-row[data-series]").forEach(function (n) {
+        if (norm(n.getAttribute("data-series")) === q) exactSeries = true;
+      });
       var hits = 0;
       root.querySelectorAll(".mod-row, .rcard").forEach(function (n) {
-        var txt = norm(n.textContent + " " + (n.getAttribute("data-model") || ""));
-        var on = txt.indexOf(q) >= 0;
+        var model = norm(n.getAttribute("data-model") || "");
+        var series = norm(n.getAttribute("data-series") || "");
+        var on;
+        if (exactSeries) {
+          on = series === q;                       /* 按系列精确命中，排除 74HCT/HCS */
+        } else {
+          var txt = norm(n.textContent + " " + (n.getAttribute("data-model") || ""));
+          on = txt.indexOf(q) >= 0;
+        }
         n.style.display = on ? "" : "none";
         if (on) { n.classList.add("hit"); hits++; }
       });
