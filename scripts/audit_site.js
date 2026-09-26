@@ -56,6 +56,9 @@ safari(`(function(){
 
 const LIGHT_SCAN = `
 function lightBlocks(){
+  /* 只在深色模式下扫亮块（浅色模式全页本就该是亮色，不构成问题） */
+  var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  if (!isDark) return 'n/a(浅色模式)';
   var els = document.querySelectorAll('body *'), n = 0, names = [];
   for (var i=0;i<els.length;i++){
     var e = els[i]; if(!e.offsetWidth && !e.offsetHeight) continue;
@@ -64,7 +67,8 @@ function lightBlocks(){
     var a = m.length>3?+m[3]:1; if (a < 0.35) continue;
     var L = 0.2126*(+m[0]) + 0.7152*(+m[1]) + 0.0722*(+m[2]);
     var cls = (typeof e.className === 'string' && e.className) ? e.className.split(' ')[0] : e.tagName;
-    if (L > 60 && cls !== 'logo') { n++; if (names.length < 6) names.push(cls); }
+    /* logo/q-bar/band 是品牌色与数据可视化，不算残留 */
+    if (L > 60 && cls !== 'logo' && cls !== 'q-bar' && cls !== 'band') { n++; if (names.length < 6) names.push(cls); }
   }
   return n + (names.length ? '(' + names.join(',') + ')' : '');
 }`;
@@ -131,6 +135,9 @@ snap('详情抽屉', `(function(){
 
 safari(`(function(){ var c=document.getElementById('closeDetail'); if(c) c.click(); return 'closed'; })()`);
 execSync('sleep 3');
+/* 先清空搜索框（上一轮可能留有值），再输入测试词 */
+safari(`(function(){ var q=document.getElementById('q'); q.value=''; q.dispatchEvent(new Event('input',{bubbles:true})); return 'cleared-first'; })()`);
+execSync('sleep 2');
 safari(`(function(){ var q=document.getElementById('q'); q.value='74hc'; q.dispatchEvent(new Event('input',{bubbles:true})); return 'typed'; })()`);
 snap('搜索 74hc', `(function(){
   var rs = document.getElementById('results');
@@ -157,6 +164,6 @@ snap('undefined 全扫', `(function(){
 })()`);
 
 console.log('\n===== 汇总 =====');
-const errs = report.filter(r => /^ERR|undefined [1-9]|REJECT|ERROR:|亮块=[1-9]/.test(r.value));
+const errs = report.filter(r => /^ERR|undefined [1-9]|REJECT|ERROR:|亮块=[1-9]/.test(r.value) && !/亮块=n\/a/.test(r.value));
 if (errs.length) { console.log('可疑项 ' + errs.length + ' 条:'); errs.forEach(e => console.log('  - ' + e.label + ': ' + e.value.slice(0, 160))); }
 else console.log('无可疑项 ✅');
