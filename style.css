@@ -2196,18 +2196,33 @@ body { background: var(--bg); }
   .meta-item { border-right: 0 !important; }
 
   /* --- 表格：允许横滑，不撑破 --- */
-  .model-table, .spec-table, .ptable-wrap { display: block; overflow-x: auto; white-space: nowrap; }
-  .ptable { min-width: 520px; }
+  /* 表格统一自适应视口，不强制横滑（用户要求「自适应全屏，不要左右滑」） */
+  .model-table, .spec-table, .ptable { width: 100% !important; table-layout: fixed; }
+  .model-table th, .model-table td, .spec-table th, .spec-table td,
+  .ptable th, .ptable td { white-space: normal; word-break: break-word; overflow-wrap: anywhere; padding-inline: 4px !important; }
+  .ptable-wrap { overflow-x: visible; }
   table { font-size: 12.5px; }
 
-  /* --- 封装与可靠性页的表格（.q-tbl）：列多了在 325px 里放不下会被压扁，
-         解法：给表格自己的滚动容器 + 关键列最小宽，宁可横滑不要压扁。 --- */
-  .q-tbl { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: normal; }
-  .q-tbl thead, .q-tbl tbody { display: table; width: 100%; min-width: 520px; }
-  .q-tbl th, .q-tbl td { white-space: normal; }
-  .sfx-tbl th, .sfx-tbl td { min-width: 56px; }
-  .sfx-tbl th:nth-child(2), .sfx-tbl td:nth-child(2) { min-width: 84px; }
-  .sfx-tbl th:nth-child(3), .sfx-tbl td:nth-child(3) { min-width: 78px; }
+  /* --- 封装与可靠性页的表格（.q-tbl）：列按内容自适应视口宽度，
+         不要强制 min-width 横滑（用户要求「自适应全屏，不要左右滑」）。
+         列多/内容长的用 font-size 与换行控制，不靠撑宽。 --- */
+  .q-tbl { display: table; width: 100% !important; table-layout: fixed; overflow-x: visible; }
+  .q-tbl thead, .q-tbl tbody { display: table-header-group; }
+  .q-tbl tbody { display: table-row-group; }
+  .q-tbl th, .q-tbl td { white-space: normal; word-break: break-word; overflow-wrap: anywhere; padding-inline: 4px !important; }
+  .q-tbl th { font-size: 11.5px; }
+  .q-tbl td { font-size: 12px; }
+  /* 列宽按内容量分配（fixed 布局下由第一行的列宽决定，此处按列数给比例） */
+  .sfx-tbl th:nth-child(1), .sfx-tbl td:nth-child(1) { width: 16% !important; }
+  .sfx-tbl th:nth-child(2), .sfx-tbl td:nth-child(2) { width: 26% !important; }
+  .sfx-tbl th:nth-child(3), .sfx-tbl td:nth-child(3) { width: 30% !important; }
+  .sfx-tbl th:nth-child(4), .sfx-tbl td:nth-child(4) { width: 28% !important; }
+  .pkg-tbl th:nth-child(1), .pkg-tbl td:nth-child(1) { width: 22% !important; }
+  .pkg-tbl th:nth-child(2), .pkg-tbl td:nth-child(2) { width: 12% !important; }
+  .pkg-tbl th:nth-child(3), .pkg-tbl td:nth-child(3) { width: 10% !important; }
+  .pkg-tbl th:nth-child(4), .pkg-tbl td:nth-child(4) { width: 24% !important; }
+  .pkg-tbl th:nth-child(5), .pkg-tbl td:nth-child(5) { width: 18% !important; }
+  .pkg-tbl th:nth-child(6), .pkg-tbl td:nth-child(6) { width: 14% !important; }
 
   /* --- 触控目标：Apple HIG 建议 ≥44px，桌面值 25/27px 在手机上太难点中 --- */
   .copy-btn, .nav-btn { min-height: 40px; padding: 8px 14px; font-size: 13px; }
