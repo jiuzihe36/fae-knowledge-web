@@ -843,14 +843,14 @@
   function qCard(n, label) {
     return '<div class="q-card"><b>' + esc(String(n)) + '</b><span>' + esc(label) + '</span></div>';
   }
-  /* 尾缀的实际封装分布：主封装 + 数量，>3 种时折叠（title 显示全部） */
+  /* 尾缀的实际封装分布：只列封装名（不写数量——用户明确要求） */
   function pkgDist(variants) {
     if (!variants || !variants.length) return "—";
     var top = variants.slice(0, 3).map(function (v) {
-      return esc(v.k) + '<span class="mu"> ' + v.n + '</span>';
+      return esc(v.k);
     }).join('<span class="sep2">·</span>');
     if (variants.length > 3) {
-      var rest = variants.slice(3).map(function (v) { return v.k + " " + v.n; }).join("、");
+      var rest = variants.slice(3).map(function (v) { return v.k; }).join("、");
       top += '<span class="sep2">·</span><span class="mu" title="' + esc(rest) + '">等 ' + variants.length + ' 种</span>';
     }
     return top;
