@@ -843,18 +843,6 @@
   function qCard(n, label) {
     return '<div class="q-card"><b>' + esc(String(n)) + '</b><span>' + esc(label) + '</span></div>';
   }
-  /* 尾缀的实际封装分布：只列封装名（不写数量——用户明确要求） */
-  function pkgDist(variants) {
-    if (!variants || !variants.length) return "—";
-    var top = variants.slice(0, 3).map(function (v) {
-      return esc(v.k);
-    }).join('<span class="sep2">·</span>');
-    if (variants.length > 3) {
-      var rest = variants.slice(3).map(function (v) { return v.k; }).join("、");
-      top += '<span class="sep2">·</span><span class="mu" title="' + esc(rest) + '">等 ' + variants.length + ' 种</span>';
-    }
-    return top;
-  }
   /* 尺寸文本归一化：× 统一、单位间距统一 */
   function fmtSize(s) {
     if (!s) return "—";
@@ -937,13 +925,12 @@
         html += '<h3 class="page-h3">型号尾缀对照（' + d.suffix.length + ' 种）</h3>' +
           '<p class="page-note">尾缀标识封装形式，具体引脚数由型号中间的数字决定。' +
           '例：<span class="mono">EM74LVC1G00<b>GV</b></span> = SOT-23-5</p>' +
-          '<table class="param q-tbl sfx-tbl"><thead><tr><th>尾缀</th><th>封装系列</th><th>说明</th><th class="num">型号数</th><th>实际封装分布</th></tr></thead><tbody>' +
+          '<table class="param q-tbl sfx-tbl"><thead><tr><th>尾缀</th><th>封装系列</th><th>说明</th><th class="num">型号数</th></tr></thead><tbody>' +
           d.suffix.map(function (s) {
             return '<tr><td class="k"><span class="sfx-badge">' + esc(s.sfx) + '</span></td>' +
               '<td class="v mono sm">' + esc(s.family) + "</td>" +
               '<td class="v sm">' + esc(s.desc) + "</td>" +
-              '<td class="v num">' + s.n + "</td>" +
-              '<td class="v sm pkg-dist">' + pkgDist(s.variants) + "</td></tr>";
+              '<td class="v num">' + s.n + "</td></tr>";
           }).join("") + "</tbody></table>";
       }
 

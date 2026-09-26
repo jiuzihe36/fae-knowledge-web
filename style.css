@@ -2200,8 +2200,7 @@ body { background: var(--bg); }
   .ptable { min-width: 520px; }
   table { font-size: 12.5px; }
 
-  /* --- 封装与可靠性页的表格（.q-tbl）：5 列在 325px 里放不下，
-         最后一列被挤到只剩 14px 宽 → 表头「实际封装分布」竖排成单字（用户报的问题）。
+  /* --- 封装与可靠性页的表格（.q-tbl）：列多了在 325px 里放不下会被压扁，
          解法：给表格自己的滚动容器 + 关键列最小宽，宁可横滑不要压扁。 --- */
   .q-tbl { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: normal; }
   .q-tbl thead, .q-tbl tbody { display: table; width: 100%; min-width: 520px; }
@@ -2209,7 +2208,6 @@ body { background: var(--bg); }
   .sfx-tbl th, .sfx-tbl td { min-width: 56px; }
   .sfx-tbl th:nth-child(2), .sfx-tbl td:nth-child(2) { min-width: 84px; }
   .sfx-tbl th:nth-child(3), .sfx-tbl td:nth-child(3) { min-width: 78px; }
-  .sfx-tbl th:nth-child(5), .sfx-tbl td:nth-child(5) { min-width: 110px; }
 
   /* --- 触控目标：Apple HIG 建议 ≥44px，桌面值 25/27px 在手机上太难点中 --- */
   .copy-btn, .nav-btn { min-height: 40px; padding: 8px 14px; font-size: 13px; }
@@ -2279,13 +2277,11 @@ body { background: var(--bg); }
   background: var(--accent); opacity: .55; vertical-align: middle;
   min-width: 3px;
 }
-/* 尾缀表列宽分配 */
+/* 尾缀表列宽分配（4 列：尾缀 / 封装系列 / 说明 / 型号数） */
 .sfx-tbl th:nth-child(1), .sfx-tbl td:nth-child(1) { width: 68px; }
 .sfx-tbl th:nth-child(2), .sfx-tbl td:nth-child(2) { width: 130px; }
 .sfx-tbl th:nth-child(3), .sfx-tbl td:nth-child(3) { width: 140px; }
 .sfx-tbl th:nth-child(4), .sfx-tbl td:nth-child(4) { width: 72px; }
-.sfx-tbl .pkg-dist { word-break: break-word; line-height: 1.7; }
-.sfx-tbl .pkg-dist .mu { color: var(--muted); font-size: 11.5px; }
 .sep2 { color: #cfcfcf; margin: 0 5px; }
 
 /* 封装规格表列宽 */
