@@ -46,6 +46,16 @@ setUrl(URL_BASE);
 console.log('等待页面加载…');
 execSync('sleep 12');
 
+/* 轮询等待目录树渲染完成（部署后首屏可能较慢），最多等 60 秒 */
+(function waitReady(){
+  for (let i = 0; i < 20; i++) {
+    const r = safari(`(function(){ var t=document.getElementById('catTree'); return t ? t.querySelectorAll('.cat-row').length : 0; })()`);
+    if (parseInt(r, 10) > 0) { console.log('目录树就绪（' + r + ' 个大类行）'); return; }
+    execSync('sleep 3');
+  }
+  console.log('⚠️ 目录树未就绪，继续巡检');
+})();
+
 safari(`(function(){
   window.__auditErrs = [];
   window.addEventListener('error', function(e){ window.__auditErrs.push('ERROR: ' + e.message + ' @' + (e.filename||'') + ':' + (e.lineno||'')); });
