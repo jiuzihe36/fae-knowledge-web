@@ -238,7 +238,7 @@ if (typeof document === "undefined") return;
       metaItem("工作电压", item.voltage),
       metaItem("工作温度", item.temp_range),
       metaItem("封装尺寸", item.package_size),
-      metaItem("应用场景", (item.applications_domains || []).join("、") || item.applications),
+      appSceneItem(item),
       dsUrl ? '<div class="meta-item"><div class="label">规格书</div><div class="value"><a href="' + esc(dsUrl) + '" target="_blank" rel="noopener">👁 查看</a> · <a href="' + esc(dsUrl) + '" download>⬇ 下载</a></div></div>' : ""
     ].join("");
 
@@ -312,6 +312,19 @@ if (typeof document === "undefined") return;
     return '<div class="meta-item"><div class="label">' + esc(label) + '</div><div class="value">' + esc(text(value)) + "</div></div>";
   }
 
+  /* 应用场景：可点击 —— 跳到「应用」页并筛出该场景（unified.js 提供 goAppScene） */
+  function appSceneItem(item) {
+    var scenes = (item.applications_domains || []).slice();
+    if (!scenes.length && item.applications) scenes = [item.applications];
+    if (!scenes.length) {
+      return '<div class="meta-item"><div class="label">应用场景</div><div class="value">—</div></div>';
+    }
+    var links = scenes.map(function (s) {
+      return '<a href="#" class="app-scene-link" data-app-scene="' + esc(s) + '">' + esc(s) + "</a>";
+    }).join("、");
+    return '<div class="meta-item"><div class="label">应用场景</div><div class="value">' + links + "</div></div>";
+  }
+
   function relatedLinks(items, note) {
     if (!items.length) {
       return '<div class="empty">无</div>';
@@ -366,6 +379,18 @@ if (typeof document === "undefined") return;
     el.detailBackdrop.addEventListener("click", closeDetail);
     el.relatedDoc.addEventListener("click", relatedClick);
     el.relatedFunc.addEventListener("click", relatedClick);
+
+    /* 详情里的「应用场景」点击 → 关抽屉 + 跳应用页筛出该场景 */
+    if (el.detailMeta) el.detailMeta.addEventListener("click", function (event) {
+      var a = event.target.closest("[data-app-scene]");
+      if (!a) return;
+      event.preventDefault();
+      var scene = a.getAttribute("data-app-scene");
+      closeDetail();
+      if (window.__xx && typeof window.__xx.goAppScene === "function") {
+        window.__xx.goAppScene(scene);
+      }
+    });
 
     // 空值保护: 浏览器缓存旧版 index.html 时新元素为 null, 直接 addEventListener 会抛错中断整个 init
     if (el.pinImg) el.pinImg.addEventListener("click", function () { openLightbox(el.pinImg); });

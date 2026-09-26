@@ -175,14 +175,17 @@
       var fd = String(p.function_detail || "").toLowerCase();
       var se = String(p.series || "").toLowerCase();
       var pk = String(p.package || "").toLowerCase();
+      /* 应用场景也是搜索字段 —— 用户搜「I2C」应能找到开漏反相器（场景=「I2C 总线与中断驱动」） */
+      var ap = [p.applications || "", (p.applications_domains || []).join(" ")].join(" ").toLowerCase();
       if (fn === s) rank = 0;                       /* 功能名完全一致 */
       else if (fn.indexOf(s) >= 0) rank = 1;         /* 功能名含关键词 */
       else if (fd.indexOf(s) >= 0) rank = 2;         /* 功能描述含 */
-      else if (se.indexOf(s) >= 0) rank = 3;         /* 系列名含 */
-      else if (pk.indexOf(s) >= 0) rank = 4;         /* 封装含 */
+      else if (ap.indexOf(s) >= 0) rank = 3;         /* 应用场景含（选型主入口，排在系列/封装前） */
+      else if (se.indexOf(s) >= 0) rank = 4;         /* 系列名含 */
+      else if (pk.indexOf(s) >= 0) rank = 5;         /* 封装含 */
       else {
         var rest = [p.logic_type, p.application, p.description].filter(Boolean).join(" ").toLowerCase();
-        if (rest.indexOf(s) >= 0) rank = 5;          /* 其他字段顺带提到 */
+        if (rest.indexOf(s) >= 0) rank = 6;          /* 其他字段顺带提到 */
       }
       if (rank >= 0) hits.push({ p: p, r: rank });
     });
@@ -720,6 +723,20 @@
         ? list.length + " 款 · 显示前 200" : list.length + " 款";
     });
 
+    /* 应用场景页筛选（场景名 / 型号 / 功能任一命中） */
+    if (el.pageBody) el.pageBody.addEventListener("input", function (e) {
+      if (e.target.id !== "appQ" || !PAGES.apps) return;
+      var q = e.target.value;
+      var grid = document.getElementById("appGrid");
+      var cnt = document.getElementById("appCount");
+      var shown = appCardsHtml(PAGES.apps.items, q);
+      if (grid) grid.innerHTML = shown;
+      if (cnt) {
+        var n = q ? (grid ? grid.querySelectorAll(".app-card").length : 0) : PAGES.apps.items.length;
+        cnt.textContent = q ? n + " / " + PAGES.apps.items.length + " 个场景" : PAGES.apps.items.length + " 个场景";
+      }
+    });
+
     /* 面包屑点击 = 收起该层以下 */
     if (el.crumb) el.crumb.addEventListener("click", function (e) {
       var a = e.target.closest("a[data-crumb-back]"); if (!a) return;
@@ -752,6 +769,74 @@
   function pageShell(title, sub, body) {
     return '<div class="cat-hero"><h2>' + esc(title) + "</h2>" +
       (sub ? "<p>" + esc(sub) + "</p>" : "") + "</div>" + (body || "");
+  }
+
+  /* ---- 应用场景卡片 ---- */
+  /* 场景卡片 HTML。filter 非空时：场景名/型号/功能任一命中即保留。
+     展开列表**不再截断**（旧版 slice(0,60) 导致「通用逻辑门组合」125 款只看得到 60 款）。
+     型号超过 24 款时按功能二次分组（如 125 款门电路 → 与门/与非门/或门/或非门），
+     否则一个大场景展开后是一长条无法定位的清单。 */
+  var APP_GROUP_MIN = 24;   /* 超过此数才二次分组 */
+
+  function appModelsHtml(models) {
+    if (models.length <= APP_GROUP_MIN) {
+      return models.map(appModHtml).join("");
+    }
+    /* 按功能分组（保持原有顺序：先出现的功能先列） */
+    var order = [], byFn = {};
+    models.forEach(function (m) {
+      var k = m.fn || "其他";
+      if (!byFn[k]) { byFn[k] = []; order.push(k); }
+      byFn[k].push(m);
+    });
+    if (order.length <= 1) return models.map(appModHtml).join("");
+    return order.map(function (k) {
+      return '<div class="app-sub"><div class="app-sub-head">' + esc(k) +
+        '<span class="app-sub-n">' + byFn[k].length + " 款</span></div>" +
+        '<div class="app-sub-body">' + byFn[k].map(appModHtml).join("") + "</div></div>";
+    }).join("");
+  }
+
+  function appModHtml(m) {
+    return '<button type="button" class="app-mod" data-model="' + esc(m.m) + '">' +
+      '<span class="am-pn mono">' + esc(m.m) + "</span>" +
+      '<span class="am-fn">' + esc(m.fn) + "</span>" +
+      '<span class="am-se">' + esc(m.se) + "</span>" +
+      "</button>";
+  }
+
+  function appCardsHtml(items, filter) {
+    var q = String(filter || "").trim().toLowerCase();
+    var favs = favList();
+    var list = items.slice().sort(function (a, b) {
+      var fa = favs.indexOf(a.name) >= 0 ? 0 : 1;
+      var fb = favs.indexOf(b.name) >= 0 ? 0 : 1;
+      return fa - fb || (b.count - a.count);
+    });
+    if (q) {
+      list = list.filter(function (it) {
+        if (it.name.toLowerCase().indexOf(q) >= 0) return true;
+        /* 型号名 / 功能名命中（如搜「USB」应命中含 USB 开关的场景） */
+        for (var i = 0; i < it.models.length; i++) {
+          var m = it.models[i];
+          if (String(m.m).toLowerCase().indexOf(q) >= 0) return true;
+          if (String(m.fn).toLowerCase().indexOf(q) >= 0) return true;
+        }
+        return false;
+      });
+    }
+    if (!list.length) return '<div class="empty">没有匹配的应用场景</div>';
+    return list.map(function (it) {
+      var fav = favs.indexOf(it.name) >= 0;
+      return '<div class="app-card' + (fav ? " fav" : "") + '" data-app="' + esc(it.name) + '">' +
+        '<div class="app-head"><span class="app-name">' + esc(it.name) + "</span>" +
+        '<button class="app-star" type="button" data-fav="' + esc(it.name) + '" ' +
+        'title="' + (fav ? "取消常用" : "标记常用") + '" aria-label="标记常用">' +
+        (fav ? "★" : "☆") + "</button>" +
+        '<span class="app-caret">▸</span></div>' +
+        '<div class="app-count">' + it.count + " 款型号 · 点击展开</div>" +
+        '<div class="app-models hidden">' + appModelsHtml(it.models) + "</div></div>";
+    }).join("");
   }
 
   /* ---- 封装与可靠性页小工具 ---- */
@@ -794,31 +879,12 @@
     if (name === "apps") {
       html += pageShell("按应用场景选型",
         "共 " + d.total + " 个应用场景，覆盖 " + d.total_models + " 款型号。点击场景展开对应型号。");
-      /* 常用场景置顶（localStorage，本机有效） */
-      var _favs = favList();
-      var _sorted = d.items.slice().sort(function (a, b) {
-        var fa = _favs.indexOf(a.name) >= 0 ? 0 : 1;
-        var fb = _favs.indexOf(b.name) >= 0 ? 0 : 1;
-        return fa - fb || (b.count - a.count);
-      });
-      html += '<div class="app-grid">' + _sorted.map(function (it) {
-        var fav = isFav(it.name);
-        return '<div class="app-card' + (fav ? " fav" : "") + '" data-app="' + esc(it.name) + '">' +
-          '<div class="app-head"><span class="app-name">' + esc(it.name) + "</span>" +
-          '<button class="app-star" type="button" data-fav="' + esc(it.name) + '" ' +
-          'title="' + (fav ? "取消常用" : "标记常用") + '" aria-label="标记常用">' +
-          (fav ? "★" : "☆") + "</button>" +
-          '<span class="app-caret">▸</span></div>' +
-          '<div class="app-count">' + it.count + " 款型号 · 点击展开</div>" +
-          '<div class="app-models hidden">' + it.models.slice(0, 60).map(function (m) {
-            return '<button type="button" class="app-mod" data-model="' + esc(m.m) + '">' +
-              '<span class="am-pn mono">' + esc(m.m) + "</span>" +
-              '<span class="am-fn">' + esc(m.fn) + "</span>" +
-              '<span class="am-se">' + esc(m.se) + "</span>" +
-              "</button>";
-          }).join("") + (it.models.length > 60 ? '<div class="app-more">共 ' + it.models.length + " 款，显示前 60 款</div>" : "") +
-          "</div></div>";
-      }).join("") + "</div>";
+      /* 场景筛选框：输入关键词（如 USB / I2C / 缓冲）即时过滤场景 */
+      html += '<div class="doc-sticky"><div class="doc-tools">' +
+        '<input id="appQ" class="page-search" type="search" ' +
+        'placeholder="按场景名 / 型号 / 功能筛选（如 USB、I2C、缓冲）" autocomplete="off">' +
+        '<span id="appCount" class="count-pill">' + d.total + " 个场景</span></div></div>";
+      html += '<div id="appGrid" class="app-grid">' + appCardsHtml(d.items, PENDING_APP_Q) + "</div>";
     }
 
     if (name === "docs") {
@@ -1029,6 +1095,30 @@
   function setMode(searching) {
     if (el.catalogMode) el.catalogMode.classList.toggle("hidden", searching);
     if (el.searchMode) el.searchMode.classList.toggle("hidden", !searching);
+  }
+
+  /* 跨文件桥接：详情抽屉里点「应用场景」可跳到应用页并筛出该场景 */
+  window.__xx = window.__xx || {};
+  var PENDING_APP_Q = "";
+  window.__xx.goAppScene = function (sceneName) {
+    if (!sceneName) return;
+    PENDING_APP_Q = sceneName;
+    goPage("apps");
+    applyAppFilter(sceneName);
+  };
+  /* 应用页筛选应用器（渲染完成后调用也安全） */
+  function applyAppFilter(q) {
+    if (!PAGES.apps) return;                 /* 数据未就绪 —— 等 renderPage 里再补 */
+    var grid = document.getElementById("appGrid");
+    var cnt = document.getElementById("appCount");
+    var input = document.getElementById("appQ");
+    if (input && input.value !== q) input.value = q;
+    if (grid) grid.innerHTML = appCardsHtml(PAGES.apps.items, q);
+    if (cnt) {
+      var n = grid ? grid.querySelectorAll(".app-card").length : 0;
+      cnt.textContent = q ? n + " / " + PAGES.apps.items.length + " 个场景"
+                          : PAGES.apps.items.length + " 个场景";
+    }
   }
 
 

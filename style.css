@@ -857,6 +857,15 @@ input[type="search"]:focus, input[type="text"]:focus, select:focus {
   margin-top: 3px;
 }
 
+/* 详情里的「应用场景」可点击 → 跳应用页筛出该场景 */
+.app-scene-link {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+.app-scene-link:hover { border-bottom-color: var(--accent); }
+
 /* ---------- 引脚图灯箱 ---------- */
 
 .lightbox {
@@ -1918,6 +1927,16 @@ body { background: var(--bg); }
 .am-fn { color: var(--body, #333); }
 .am-se { color: var(--muted); }
 .app-more { padding: 10px; font-size: 12px; color: var(--muted); }
+
+/* 大场景展开后按功能二次分组（如 125 款门电路 → 与门/与非门/或门/或非门） */
+.app-sub { margin: 6px 0 2px; }
+.app-sub-head {
+  display: flex; align-items: baseline; gap: 8px;
+  font-size: 12px; font-weight: 600; color: var(--accent);
+  padding: 6px 10px 4px; border-bottom: 1px solid var(--ti-line-soft);
+}
+.app-sub-n { font-weight: 400; color: var(--muted); }
+.app-sub-body { padding-left: 10px; }
 
 /* 技术文档列表 */
 /* 唯一 sticky 容器：工具栏 + 表头一起吸顶（无需计算各自高度，天然无缝隙） */
