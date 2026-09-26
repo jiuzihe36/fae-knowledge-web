@@ -2138,9 +2138,11 @@ body { background: var(--bg); }
     padding-inline: 12px; gap: 12px; min-height: 44px;
   }
   .cat-name, .pro-name, .ser-name, .func-name { margin-left: 2px; }
-  .pro-row { padding-left: 20px !important; }
-  .ser-row { padding-left: 30px !important; }
-  .func-row { padding-left: 40px !important; }
+  /* 注意：.grp-row 也必须覆盖 —— 桌面 42px 在 390px 上把文字挤到只剩一半宽 */
+  .grp-row { padding-left: 20px !important; }
+  .pro-row { padding-left: 30px !important; }
+  .ser-row { padding-left: 40px !important; }
+  .func-row { padding-left: 50px !important; }
   .mod-row {
     grid-template-columns: 1fr auto !important;
     padding: 10px 12px 10px 62px !important;
@@ -2158,6 +2160,22 @@ body { background: var(--bg); }
 
   /* --- 栏目页 --- */
   .page-body { padding-inline: 12px; }
+
+  /* --- 技术文档表：8 列共 1126px 在 390px 上撑破整页（实测 scrollWidth=1136）---
+     手机只留 型号 / 功能 / 封装 / 文档 4 列，其余隐藏（系列/电压/温度/工艺）。
+     表头与数据行必须同步改（同一份 grid-template-columns + 同样的隐藏列），
+     否则表头与数据串列。 */
+  .doc-head, .doc-row {
+    grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr) minmax(0, .9fr) auto !important;
+    gap: 6px !important;
+    padding-inline: 10px !important;
+  }
+  .doc-se, .doc-v, .doc-t, .doc-lt { display: none !important; }
+  /* 表头 span 顺序同 DOC_COLS：1型号 2功能 3系列 4封装 5电压 6温度 7工艺 8文档 */
+  .doc-th:nth-child(3), .doc-th:nth-child(5),
+  .doc-th:nth-child(6), .doc-th:nth-child(7) { display: none !important; }
+  .doc-fn { font-size: 12px; }
+  .doc-pk { font-size: 11.5px; }
   .page-search { width: 100%; }
   .page-h3 { font-size: 15px; }
   .app-grid { grid-template-columns: 1fr !important; }
@@ -2181,6 +2199,16 @@ body { background: var(--bg); }
   .model-table, .spec-table, .ptable-wrap { display: block; overflow-x: auto; white-space: nowrap; }
   .ptable { min-width: 520px; }
   table { font-size: 12.5px; }
+
+  /* --- 触控目标：Apple HIG 建议 ≥44px，桌面值 25/27px 在手机上太难点中 --- */
+  .copy-btn, .nav-btn { min-height: 40px; padding: 8px 14px; font-size: 13px; }
+  .theme-btn { width: 40px; height: 40px; }
+  .doc-th { min-height: 40px; align-items: center; }
+  .chip { min-height: 36px; }
+  .btn-ghost { min-height: 40px; padding: 8px 14px; }
+  /* 面包屑：行内链接高度只有 17px，手机上要撑开命中区 */
+  .crumb a, .crumb b { display: inline-block; padding: 6px 2px; }
+  .crumb { padding-block: 4px; }
 
   /* --- 全局：禁止横向溢出 --- */
   /* 注意：必须放 html，不能放 body —— body 的 overflow-x:hidden 会把 overflow-y 计算为 auto，
