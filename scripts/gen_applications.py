@@ -32,6 +32,27 @@ from pathlib import Path
 W = Path('/Users/hu/fae-knowledge-web/data')
 PROD_FILE = W / 'products.json'
 
+# ---------- 官方模拟开关分类（与 gen_catalog.py 同源，来自宣讲 PPT p16-p18）----------
+SWITCH_TYPE = {
+    '高速开关（USB/HDMI）': ['EMS3900', 'EMS3902', 'EMS3905', 'EMS4000', 'EMS4002',
+                          'EMS4100', 'EMS4300', 'EMS4422', 'EMS4735', 'EMS4642',
+                          'EMS7227', 'EMS3412', 'EMS4310'],
+    '音频开关': ['EMS4320', 'EMS4321', 'EMS4798', 'EMS4521', 'EMS4798C',
+               'EMS3218', 'EMS3580', 'EMS4485'],
+    '耗尽型开关': ['EMS3515', 'EMS3518', 'EMS3550'],
+}
+
+
+def switch_type_of(model):
+    mu = (model or '').upper()
+    best, hit = '', '通用开关'
+    for tname, prefixes in SWITCH_TYPE.items():
+        for pf in prefixes:
+            if mu.startswith(pf.upper()) and len(pf) > len(best):
+                best, hit = pf, tname
+    return hit
+
+
 FEAT_ORDER = ['三态输出', '开漏输出', '施密特输入', 'TTL输入']
 
 
@@ -140,36 +161,21 @@ DEFAULT_SCENE = {
     '模拟开关': '音频/视频信号切换',
 }
 
-# 模拟开关内部再分：EMS 系列走高速/音频专用场景
-EMS_SWITCH_SCENE = {
-    'EMS3': 'USB/高速信号切换',      # EMS31xx/35xx 高速开关
-    'EMS4': 'USB/高速信号切换',      # EMS4xxx 高速/音频开关
-    'EL':   '音频/视频信号切换',      # EL3157 等
-    'EM74CBTLV': '总线开关与隔离',
-}
-
-
 def scene_of(p):
     fn = p.get('function') or ''
     pf = primary_feat(p)
 
-    # 模拟开关/多路复用器：按 function_detail 的真实用途分（不用系列粗判）
+    # 模拟开关/多路复用器：复用官方 SWITCH_TYPE 口径（与产品目录树一致）
     if fn in ('模拟开关', '多路复用器'):
-        fd = p.get('function_detail') or ''
-        # 总线开关（CBT/CBTLV 系列，用于总线隔离与热插拔）
-        if '总线开关' in fd or (p.get('series') or '').startswith('74CBT'):
-            return '多路信号选择'
-        # 音频相关（音频开关/耳机/Type-C 音频/HiFi 音频）
-        if any(k in fd for k in ('音频', '耳机', 'HiFi', 'Type-C')):
-            return '音频/模拟信号切换'
-        # USB 相关
-        if 'USB' in fd:
-            return 'USB 信号切换'
-        # 差分/多路复用
-        if '多路复用' in fd or 'Mux' in fd or 'DeMux' in fd:
-            return '多路信号选择'
-        # 其余通用模拟开关
-        return '音频/模拟信号切换'
+        st = switch_type_of(p.get('model') or '')
+        if st == '高速开关（USB/HDMI）':
+            return 'USB/HDMI 高速信号切换'
+        if st in ('音频开关', '耗尽型开关'):
+            return '音频信号切换'        # 耗尽型均为负摆幅音频用途
+        # 通用开关：总线开关（CBT 系列）另分
+        if (p.get('series') or '').startswith('74CBT'):
+            return '总线开关与隔离'
+        return '通用模拟开关/多路复用'
 
     if (fn, pf) in SCENE:
         return SCENE[(fn, pf)]
