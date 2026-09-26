@@ -115,7 +115,7 @@ if (typeof document === "undefined") return;
   const products = [];
   /* 竞品/P2P 数据已整体摘除 */
   let filtered = [];
-  let debounceTimer = null;
+  let debounceTimer = null;   /* 保留：历史变量，现由 unified.js 的 timer 承担 */
 
   const el = {
     meta: document.getElementById("meta"),
@@ -348,14 +348,9 @@ if (typeof document === "undefined") return;
   /* ---------- 事件 ---------- */
 
   function bindEvents() {
-    el.q.addEventListener("input", function () {
-      window.clearTimeout(debounceTimer);
-      debounceTimer = window.setTimeout(doSearch, 120);
-    });
-    el.clearBtn.addEventListener("click", function () {
-      el.q.value = "";
-      doSearch("");
-    });
+    /* 注意：#q 输入与 #clearBtn 的搜索行为由 unified.js 绑定（doSearch 定义在那里）。
+       此处**不要**再绑一次 —— 跨 IIFE 引用 doSearch 会抛 ReferenceError，
+       且与 unified.js 的监听重复（一次输入触发两次搜索）。 */
 
     el.themeBtn.addEventListener("click", toggleTheme);
     if (window.matchMedia) {
