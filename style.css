@@ -1959,7 +1959,7 @@ body { background: var(--bg); }
 /* 表头：对齐 doc-row 栅格，滚动时吸顶悬浮 */
 .doc-head {
   display: grid;
-  grid-template-columns: 200px 110px 88px 118px 124px 132px 96px 160px;
+  grid-template-columns: minmax(0,1.9fr) minmax(0,1.1fr) minmax(0,.85fr) minmax(0,1.05fr) minmax(0,1.15fr) minmax(0,1.25fr) minmax(0,.9fr) minmax(0,1.4fr);
   gap: 10px; align-items: center;
   padding: 10px 14px; background: var(--ti-head-bg);
   border-bottom: 1px solid var(--ti-line);
@@ -1986,7 +1986,7 @@ body { background: var(--bg); }
 
 .doc-row {
   display: grid;
-  grid-template-columns: 200px 110px 88px 118px 124px 132px 96px 160px;
+  grid-template-columns: minmax(0,1.9fr) minmax(0,1.1fr) minmax(0,.85fr) minmax(0,1.05fr) minmax(0,1.15fr) minmax(0,1.25fr) minmax(0,.9fr) minmax(0,1.4fr);
   gap: 10px; align-items: center; width: 100%;
   padding: 11px 14px; border: 0; border-bottom: 1px solid var(--ti-line-soft);
   background: none; cursor: pointer; text-align: left; font: inherit; font-size: 13px;
@@ -2478,3 +2478,10 @@ body { background: var(--bg); }
 .gal .doc-row .doc-raw { color: var(--accent); font-weight: 600; font-size: 12.5px; white-space: nowrap; }
 .gal .doc-row:hover .doc-raw { text-decoration: underline; }
 .gal .empty { padding: 60px 0; text-align: center; color: var(--muted); }
+
+/* 布局修补：详情抽屉图片自适应，禁止横向溢出。
+   引脚图原图为 1224px 宽、无 max-width，曾把 937px 的 .pin-box 撑破 →
+   抽屉（全屏 100vw）出现横向滚动条，用户必须左右滑才能看全。 */
+.pin-box { max-width: 100%; }
+.pin-box img { max-width: 100%; height: auto; }
+.drawer-panel { max-width: 100%; }
