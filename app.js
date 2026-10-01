@@ -18,7 +18,7 @@
   }
 
   /* 状态推导（不改 products.json）：Q100 优先，其次 Draft，其余 Product */
-  // 电路图文件名 = 型号原样 (已与 circuits/ 下文件逐一对齐); 仅过滤路径穿越字符
+  // 图纸文件名 = 型号原样 (已与 app_schematics/ 下文件逐一对齐); 仅过滤路径穿越字符
   function safeCircuitName(model) {
     return String(model || "").replace(/[\/\\]/g, "_");
   }
@@ -246,32 +246,6 @@ if (typeof document === "undefined") return;
 
     /* 竞品对标 / TI 对标 已按需求摘除（网页端不展示任何竞品信息） */
 
-    // 应用电路图: circuits/{model}_wiring.svg (670 款全量, 引脚与走向取自规格书)
-    const circuitUrl = new URL("./circuits/" + safeCircuitName(item.model) + "_wiring.svg", document.baseURI).href;
-    const circuitSrc = item.circuit_svg
-      ? new URL(item.circuit_svg, document.baseURI).href
-      : circuitUrl;
-    /* 应用电路图已下线 (2026-09-30)：circuits/ 不再发布。
-       与完整应用原理图同款保护 —— 先隐藏，onload 才显示；线上 404 时保持隐藏。 */
-    if (el.circuitWrap && el.circuitImg) {
-      el.circuitWrap.classList.add("hidden");
-      el.circuitImg.onload = function () {
-        el.circuitWrap.classList.remove("hidden");
-        el.circuitImg.onload = null;
-      };
-      el.circuitImg.onerror = function () {
-        el.circuitWrap.classList.add("hidden");
-        el.circuitImg.onerror = null;
-      };
-      if (item.circuit_svg !== null) {
-        el.circuitImg.src = circuitSrc;
-        el.circuitImg.alt = item.model + " 应用电路图";
-      } else {
-        el.circuitImg.src = "";
-        el.circuitImg.alt = "Application circuit";
-      }
-    }
-
     /* 完整应用原理图: app_schematics/{model}_app.svg
        与上面的简易接线图并存；文件不存在时该区块自动隐藏。 */
     if (el.appSchematicWrap && el.appSchematicImg) {
@@ -425,7 +399,6 @@ if (typeof document === "undefined") return;
 
     // 空值保护: 浏览器缓存旧版 index.html 时新元素为 null, 直接 addEventListener 会抛错中断整个 init
     if (el.pinImg) el.pinImg.addEventListener("click", function () { openLightbox(el.pinImg); });
-    if (el.circuitImg) el.circuitImg.addEventListener("click", function () { openLightbox(el.circuitImg); });
     if (el.appSchematicImg) el.appSchematicImg.addEventListener("click", function () { openLightbox(el.appSchematicImg); });
     el.lightboxClose.addEventListener("click", closeLightbox);
     el.lightbox.addEventListener("click", function (event) {

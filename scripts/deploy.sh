@@ -38,13 +38,13 @@ trap 'rm -rf "$PUB"' EXIT
 echo "📦 构造发布目录 $PUB"
 
 # 站点资源目录（代码里实际引用的：./circuits/ ./data/ ./datasheets/）
-# 应用电路图已按需求下线 (2026-09-30)：circuits/ 不再随站点发布
-for d in datasheets pins_webp pins data; do
+# 应用电路图上线 (2026-10-01)：发布 652 张实际应用电路图；接线图 circuits/ 已全部删除
+for d in datasheets pins_webp pins data app_schematics; do
   [ -d "$DIR/$d" ] && rsync -a --exclude '.DS_Store' "$DIR/$d/" "$PUB/$d/"
 done
 
 # 根文件（HTML/JS/CSS/图标，排除调试脚本）
-for f in index.html app.js unified.js theme-init.js style.css favicon.svg apple-touch-icon.png og-cover.png; do
+for f in index.html gallery.html app.js unified.js theme-init.js style.css favicon.svg apple-touch-icon.png og-cover.png; do
   [ -f "$DIR/$f" ] && cp "$DIR/$f" "$PUB/"
 done
 
