@@ -577,7 +577,7 @@
       var mod = e.target.closest("[data-model]");
       if (mod) { openDetail(mod.getAttribute("data-model"), mod); return; }
       var card = e.target.closest(".app-card");
-      if (card) {
+      if (card && !card.classList.contains("gal-card")) {   /* 画廊分组卡由 gallery.js 自己处理 */
         var body = card.querySelector(".app-models");
         if (body) { body.classList.toggle("hidden"); card.classList.toggle("open"); }
         return;
@@ -684,7 +684,9 @@
     /* 技术文档页：点表头排序（升序 ↔ 降序） */
     if (el.pageBody) el.pageBody.addEventListener("click", function (e) {
       var th = e.target.closest(".doc-th");
-      if (th && PAGES.docs) {
+      /* 只有技术文档页在场时才接管：应用电路图也用 .doc-th，
+         不设这道护栏会把画廊的表头整个换成文档表头（排序随即失效） */
+      if (th && PAGES.docs && document.getElementById("docList")) {
         var key = th.getAttribute("data-sort");
         if (DOC_SORT.key === key) DOC_SORT.dir = -DOC_SORT.dir;
         else { DOC_SORT.key = key; DOC_SORT.dir = 1; }

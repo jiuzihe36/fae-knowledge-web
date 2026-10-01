@@ -47,6 +47,7 @@
     var a = document.createElement("a");
     a.className = "doc-row";
     a.href = "./index.html?model=" + encodeURIComponent(p.model);
+    a.setAttribute("data-model", p.model);   /* SPA 内原地打开详情（与目录树/文档一致） */
     a.innerHTML =
       '<span class="doc-pn">' + hl(p.model, kw) + '</span>' +
       '<span class="doc-fn">' + hl(p.function || "—", kw) + '</span>' +
@@ -54,10 +55,15 @@
       '<span class="doc-raw">原图 →</span>';
     /* 整行 → 产品详情；点「原图」→ 新标签直接看 SVG */
     a.addEventListener("click", function (e) {
-      if (e.target.closest(".doc-raw")) {
+      if (e.target.closest(".doc-raw")) {           /* 点「原图」→ 新标签看 SVG，不触发详情 */
         e.preventDefault();
+        e.stopPropagation();
         window.open("./app_schematics/" + encodeURIComponent(p.model) + "_app.svg", "_blank");
+        return;
       }
+      /* SPA 里由 unified.js 按 data-model 原地打开详情，避免整页刷新；
+         独立页（gallery.html）没有桥接，保留 <a> 默认跳转 */
+      if (window.__xx && typeof window.__xx.openByModel === "function") e.preventDefault();
     });
     return a;
   }
