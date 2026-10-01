@@ -1249,9 +1249,12 @@
       });
     }
     var timers = [];
+    /* 图片区块是抽屉打开后异步填充、逐个从 hidden 变可见的，
+       所以要错开多算几次（不做子树观察，避免自我变更回环把页面卡死） */
+    var STEPS = [60, 300, 700, 1400, 2400];
     function schedule() {
       timers.forEach(clearTimeout);
-      timers = [setTimeout(apply, 60), setTimeout(apply, 350), setTimeout(apply, 900)];
+      timers = STEPS.map(function (t) { return setTimeout(apply, t); });
     }
     var obs = new MutationObserver(function () {
       if (!panel.classList.contains("hidden")) schedule();
