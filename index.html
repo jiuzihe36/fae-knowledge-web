@@ -21,7 +21,7 @@
   <meta name="twitter:image" content="https://logic-qbu.pages.dev/og-cover.png">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
-  <link rel="stylesheet" href="./style.css?v=20261001g">
+  <link rel="stylesheet" href="./style.css?v=20261001h">
   <!-- 主题预置：必须同步执行，避免深色下闪白 -->
   <script src="./theme-init.js?v=20260926n"></script>
 </head>
@@ -89,7 +89,7 @@
           <span id="catCount" class="count-pill">-</span>
         </div>
       </div>
-      <div id="catTree" class="cat-tree"></div>
+      <div id="catTree" class="cat-tree"><div class="skel-list"><div class="skel-bar"></div><div class="skel-bar"></div><div class="skel-bar"></div><div class="skel-bar"></div><div class="skel-bar"></div><div class="skel-bar"></div></div></div>
     </div>
 
     <!-- 栏目页：应用 / 技术文档 / 封装与可靠性 / 应用电路图 -->
@@ -118,18 +118,18 @@
       </div>
       <div id="detailMeta" class="meta-grid"></div>
 
-      <section id="appSchematicWrap" class="pin-wrap hidden">
+      <section id="appSchematicWrap" class="pin-wrap collapsible hidden">
         <h3>应用电路图 <span class="pin-hint">完整原理图 · 含引脚表 / 真值表 / 电气参数 / 封装图 · 点击放大</span></h3>
         <div class="pin-box circuit-box"><img id="appSchematicImg" src="" alt="Full application schematic"></div>
         <p class="app-schematic-note">该图依据产品规格书绘制：引脚定义、真值表、电气参数与封装信息均照录规格书，规格书未列出的项不做推测。</p>
       </section>
-      <section id="pinWrap" class="pin-wrap hidden">
+      <section id="pinWrap" class="pin-wrap collapsible hidden">
         <h3>引脚图 <span class="pin-hint">点击放大</span></h3>
         <div class="pin-box"><img id="pinImg" src="" alt="Pin diagram"></div>
       </section>
 
       <div class="detail-grid">
-        <section class="card">
+        <section class="card collapsible">
           <h3>电气参数 <span class="spec-hint">按类别分组</span></h3>
           <div class="spec-scroll">
             <table id="specTable" class="spec-table">
@@ -161,8 +161,8 @@
   </div>
 
   <script src="./app.js?v=20261001a"></script>
-  <script src="./unified.js?v=20261001d"></script>
-  <script src="./gallery.js?v=20261001f"></script>
+  <script src="./unified.js?v=20261001e"></script>
+  <script src="./gallery.js?v=20261001g"></script>
 
   <!-- 回到顶部：目录树滚动超过一屏时出现 -->
   <button id="toTop" class="to-top" type="button" aria-label="回到顶部" title="回到顶部">↑ 顶部</button>

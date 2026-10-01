@@ -2495,3 +2495,26 @@ body { background: var(--bg); }
 .app-star::after { content: ""; position: absolute; inset: -8px; }
 /* 移动端型号列过长时换行而不是被裁掉 */
 .doc-row .doc-pn { min-width: 0; overflow-wrap: anywhere; }
+
+/* ── 详情抽屉：区块折叠（窄屏减少长滚动） ── */
+.collapsible > h3 { display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
+.collapsible > h3::after { content: "▾"; margin-left: auto; font-size: 11px; color: var(--muted);
+  transition: transform .15s ease; }
+.collapsible.collapsed > h3::after { transform: rotate(-90deg); }
+.collapsible.collapsed > :not(h3) { display: none !important; }
+.collapsible.collapsed > h3 { margin-bottom: 0; }
+
+/* ── 加载骨架屏 ── */
+.skel-list { padding: 14px 0; display: flex; flex-direction: column; gap: 10px; }
+.skel-bar { height: 34px; border-radius: 4px; background: linear-gradient(90deg,
+  var(--soft) 25%, var(--line) 37%, var(--soft) 63%); background-size: 400% 100%;
+  animation: skelShift 1.4s ease-in-out infinite; }
+@keyframes skelShift { 0% { background-position: 100% 50%; } 100% { background-position: 0 50%; } }
+
+/* ── 应用电路图：按功能分组的折叠卡（复用应用页 .app-card 视觉） ── */
+.gal-groups .app-card { padding: 12px 14px; }
+.gal-groups .app-head { cursor: pointer; }
+.gal-groups .app-count { margin-top: 0; margin-left: 8px; }
+.gal-groups .app-models { padding-top: 6px; }
+.gal-groups .app-models .doc-row { border-bottom: 1px solid var(--ti-line-soft); }
+.gal .doc-tools { flex-wrap: wrap; }
