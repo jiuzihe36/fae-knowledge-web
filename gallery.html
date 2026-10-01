@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>原理图画廊 · 芯祥全系列产品</title>
 <style>
-:root{--fg:#0f172a;--mut:#64748b;--line:#e2e8f0;--bg:#f8fafc;--card:#fff;--acc:#4338ca}
+:root{--fg:#0f172a;--mut:#64748b;--line:#e2e8f0;--bg:#f8fafc;--card:#fff;--acc:#2f8f86}
 *{box-sizing:border-box}
 body{margin:0;font:15px/1.6 -apple-system,"PingFang SC",sans-serif;color:var(--fg);background:var(--bg)}
 header{position:sticky;top:0;z-index:9;background:#0f172a;color:#fff;padding:14px 22px;
@@ -43,15 +43,8 @@ a.raw:hover{text-decoration:underline}
      数据全部照录规格书，未列出项不做推测。</p>
 </header>
 
-<div class="bar">
-  <input id="q" type="search" placeholder="搜索型号 / 功能，如 EM74HC138、译码、电平转换">
-  <select id="ff"><option value="">全部功能</option></select>
-  <span class="cnt" id="cnt"></span>
-</div>
+<div id="galhost"></div>
 
-<div id="root"></div>
-<div class="empty" id="none" style="display:none">没有匹配的型号</div>
-
-<script src="./gallery.js?v=20261001a"></script>
+<script src="./gallery.js?v=20261001b"></script>
 </body>
 </html>
