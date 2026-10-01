@@ -554,8 +554,10 @@
     /* 主色横条：切换栏目页 */
     document.querySelectorAll(".band-in a").forEach(function (a) {
       a.addEventListener("click", function (e) {
+        var page = a.getAttribute("data-page");
+        if (!page) return;          // 无 data-page 的是站内跳转（如 gallery.html），走默认导航
         e.preventDefault();
-        goPage(a.getAttribute("data-page"));
+        goPage(page);
       });
     });
 
