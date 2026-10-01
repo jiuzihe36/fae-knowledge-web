@@ -501,6 +501,23 @@
     var nx = document.getElementById("nextModel");
     if (pv) pv.addEventListener("click", function () { navStep(-1); });
     if (nx) nx.addEventListener("click", function () { navStep(1); });
+    /* 回到顶部：长列表（技术文档 200 行 / 应用电路图 652 行）滚动后出现 */
+    (function () {
+      if (document.querySelector(".to-top")) return;
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "to-top";
+      btn.setAttribute("aria-label", "回到顶部");
+      btn.textContent = "↑ 回到顶部";
+      btn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+      document.body.appendChild(btn);
+      var onScroll = function () { btn.classList.toggle("show", window.scrollY > 600); };
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+    })();
+
     /* 表头键盘排序（Enter/Space） */
     if (el.pageBody) el.pageBody.addEventListener("keydown", function (e) {
       if (e.key !== "Enter" && e.key !== " ") return;

@@ -2471,8 +2471,9 @@ body { background: var(--bg); }
 .gal .doc-tools select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(47,143,134,.12); }
 .gal .doc-tools .count-pill { margin-left: auto; }
 .gal .doc-head, .gal .doc-row { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.3fr) 150px 96px; }
-.gal .doc-head, .gal .doc-th { cursor: default; }
-.gal .doc-th:hover { color: inherit; }
+.gal .doc-head { cursor: default; }
+.gal .doc-th[data-sort] { cursor: pointer; }
+.gal .doc-th.on { color: var(--accent); font-weight: 700; }
 .gal .doc-row { text-decoration: none; color: inherit; }
 .gal .doc-row .doc-pn { font-family: var(--mono, ui-monospace, monospace); }
 .gal .doc-row .doc-raw { color: var(--accent); font-weight: 600; font-size: 12.5px; white-space: nowrap; }
@@ -2485,3 +2486,20 @@ body { background: var(--bg); }
 .pin-box { max-width: 100%; }
 .pin-box img { max-width: 100%; height: auto; }
 .drawer-panel { max-width: 100%; }
+
+/* ── 体验优化 ── */
+/* 可点击放大的图：给出 zoom-in 手势提示（.pin-box 内的图都支持点击放大） */
+.pin-box img { cursor: zoom-in; }
+/* 应用页收藏星标：视觉不变，点击热区扩到 ~31px（原 15px 太小） */
+.app-star { position: relative; }
+.app-star::after { content: ""; position: absolute; inset: -8px; }
+/* 移动端型号列过长时换行而不是被裁掉 */
+.doc-row .doc-pn { min-width: 0; overflow-wrap: anywhere; }
+/* 回到顶部（长列表页滚动后出现） */
+.to-top { position: fixed; right: 22px; bottom: 26px; z-index: 32;
+  padding: 9px 14px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--panel); color: var(--ink); font-size: 13px; cursor: pointer;
+  box-shadow: var(--shadow); opacity: 0; transform: translateY(6px);
+  pointer-events: none; transition: opacity .18s ease, transform .18s ease; }
+.to-top.show { opacity: 1; transform: none; pointer-events: auto; }
+.to-top:hover { border-color: var(--accent); color: var(--accent); }

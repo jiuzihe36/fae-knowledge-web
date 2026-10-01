@@ -4,7 +4,7 @@
    数据只拉一次（模块级缓存），二次打开秒开；搜索词/筛选状态跨切换保留。 */
 (function () {
   var products = null, funcs = null, pending = null;
-  var state = { k: "", f: "" };
+  var state = { k: "", f: "", sortKey: "model", sortDir: 1 };
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"]/g, function (ch) {
@@ -55,10 +55,12 @@
       '  <div class="doc-tools">' +
       '    <input id="gal-q" class="page-search" type="search" placeholder="搜索型号 / 功能 / 封装，如 EM74HC138、译码、电平转换">' +
       '    <select id="gal-ff"><option value="">全部功能</option></select>' +
-      '    <span class="count-pill" id="gal-cnt">—</span>' +
+      '    <span class="count-pill" id="gal-cnt">加载中…</span>' +
       '  </div>' +
-      '  <div class="doc-head"><span class="doc-th">型号</span><span class="doc-th">功能</span>' +
-      '    <span class="doc-th">封装</span><span class="doc-th">图纸</span></div>' +
+      '  <div class="doc-head"><span class="doc-th" data-sort="model">型号</span>' +
+      '    <span class="doc-th" data-sort="function">功能</span>' +
+      '    <span class="doc-th" data-sort="package">封装</span>' +
+      '    <span class="doc-th">图纸</span></div>' +
       '</div>' +
       '<div class="doc-list" id="gal-root"></div>' +
       '<div class="empty" id="gal-none" style="display:none">没有匹配的型号</div>';
@@ -78,8 +80,13 @@
         return (p.model || "").toUpperCase().indexOf(k) >= 0 ||
                (p.function || "").toUpperCase().indexOf(k) >= 0 ||
                (p.package || "").toUpperCase().indexOf(k) >= 0;
-      }).slice().sort(function (a, b) {
-        return (a.model || "").localeCompare(b.model || "");
+      });
+      var sk = state.sortKey, sd = state.sortDir;
+      list.sort(function (a, b) {
+        var x = a[sk] || "", y = b[sk] || "";
+        var r = String(x).localeCompare(String(y), "zh-Hans-CN");
+        if (r === 0) r = String(a.model || "").localeCompare(String(b.model || ""));
+        return r * sd;
       });
       var frag = document.createDocumentFragment();
       list.forEach(function (p) { frag.appendChild(row(p)); });
@@ -87,6 +94,7 @@
       root.appendChild(frag);
       none.style.display = list.length ? "none" : "block";
       cnt.textContent = list.length + " / " + products.length + " 款";
+      updateHead();
     }
 
     function fillFuncs() {
@@ -100,10 +108,35 @@
       ff.value = state.f;
     }
 
+    /* 表头排序：与技术文档一致（点击升/降序，带 ↑↓ 指示） */
+    var head = host.querySelector(".doc-head");
+    var COLS = [["型号", "model"], ["功能", "function"], ["封装", "package"], ["图纸", ""]];
+    function updateHead() {
+      [...head.querySelectorAll(".doc-th")].forEach(function (th, i) {
+        var key = COLS[i][1];
+        var sortable = !!key;
+        th.classList.toggle("on", sortable && state.sortKey === key);
+        th.style.cursor = sortable ? "pointer" : "default";
+        th.textContent = COLS[i][0] + (sortable && state.sortKey === key
+          ? (state.sortDir === 1 ? " ↑" : " ↓") : "");
+      });
+    }
+    head.addEventListener("click", function (e) {
+      var th = e.target.closest(".doc-th");
+      if (!th) return;
+      var key = th.getAttribute("data-sort");
+      if (!key) return;
+      if (state.sortKey === key) state.sortDir = -state.sortDir;
+      else { state.sortKey = key; state.sortDir = 1; }
+      updateHead();
+      render();
+    });
+
     q.value = state.k;
     q.addEventListener("input", function () { state.k = q.value; render(); });
     ff.addEventListener("change", function () { state.f = ff.value; render(); });
 
+    updateHead();
     if (products) {
       fillFuncs();
       render();
