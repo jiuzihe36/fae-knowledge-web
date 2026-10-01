@@ -2443,3 +2443,22 @@ body { background: var(--bg); }
   :root:not([data-theme="light"]) .q-bar { background: var(--accent) !important; opacity: .45; }
   :root:not([data-theme="light"]) .page-note { background: var(--soft) !important; }
 }
+
+/* ── 完整应用原理图（芯祥 FAE 新增，EMS4422 同风格）── */
+#appSchematicImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: zoom-in;
+  transition: filter .15s ease;
+  background: #fff;
+  border-radius: 8px;
+}
+#appSchematicImg:hover { filter: brightness(.97); }
+.app-schematic-note {
+  margin: 8px 2px 0;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--muted, #64748b);
+  opacity: .9;
+}

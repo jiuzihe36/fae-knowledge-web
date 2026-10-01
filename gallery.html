@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>原理图画廊 · 芯祥全系列产品</title>
+<style>
+:root{--fg:#0f172a;--mut:#64748b;--line:#e2e8f0;--bg:#f8fafc;--card:#fff;--acc:#4338ca}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.6 -apple-system,"PingFang SC",sans-serif;color:var(--fg);background:var(--bg)}
+header{position:sticky;top:0;z-index:9;background:#0f172a;color:#fff;padding:14px 22px;
+  box-shadow:0 2px 10px rgba(15,23,42,.18)}
+header h1{margin:0;font-size:18px}
+header p{margin:4px 0 0;font-size:13px;color:#94a3b8}
+.bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:14px 22px;background:var(--card);
+  border-bottom:1px solid var(--line);position:sticky;top:66px;z-index:8}
+.bar input,.bar select{padding:8px 12px;border:1px solid var(--line);border-radius:8px;font-size:14px;background:#fff}
+.bar input{min-width:240px}
+.bar .cnt{margin-left:auto;font-size:13px;color:var(--mut);font-variant-numeric:tabular-nums}
+.grp{padding:20px 22px 4px}
+.grp h2{margin:0 0 4px;font-size:16px;color:var(--acc)}
+.grp span{font-size:12.5px;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:16px;padding:12px 22px 30px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  transition:.15s;cursor:pointer}
+.card:hover{border-color:var(--acc);box-shadow:0 6px 18px rgba(67,56,202,.13);transform:translateY(-2px)}
+.card .thumb{height:172px;background:#fff;display:flex;align-items:center;justify-content:center;
+  border-bottom:1px solid var(--line);overflow:hidden}
+.card .thumb img{max-width:100%;max-height:100%;object-fit:contain}
+.card .meta{padding:9px 12px 11px}
+.card .m{font-weight:700;font-size:14.5px;letter-spacing:.2px}
+.card .d{font-size:12.5px;color:var(--mut);margin-top:2px}
+.card .d b{color:var(--fg);font-weight:600}
+.empty{padding:60px 22px;text-align:center;color:var(--mut)}
+a.raw{font-size:11.5px;color:var(--acc);text-decoration:none}
+a.raw:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<header>
+  <h1>芯祥全系列 · 应用电路原理图画廊</h1>
+  <p>每张图含：主应用电路 · ① 引脚表 · ② 真值表 · ③ 关键电气参数 · ④ 封装引脚图 · ⑤ 应用拓扑 · 设计要点。
+     数据全部照录规格书，未列出项不做推测。</p>
+</header>
+
+<div class="bar">
+  <input id="q" type="search" placeholder="搜索型号 / 功能，如 EM74HC138、译码、电平转换">
+  <select id="ff"><option value="">全部功能</option></select>
+  <span class="cnt" id="cnt"></span>
+</div>
+
+<div id="root"></div>
+<div class="empty" id="none" style="display:none">没有匹配的型号</div>
+
+<script>
+(function () {
+  var products = [], root = document.getElementById("root"),
+      q = document.getElementById("q"), ff = document.getElementById("ff"),
+      cnt = document.getElementById("cnt"), none = document.getElementById("none");
+
+  function card(p) {
+    var a = document.createElement("a");
+    a.className = "card";
+    a.href = "./index.html?model=" + encodeURIComponent(p.model);
+    a.innerHTML =
+      '<div class="thumb"><img loading="lazy" alt="' + p.model +
+      ' 应用原理图" src="./app_schematics/' + encodeURIComponent(p.model) + '_app.svg"></div>' +
+      '<div class="meta"><div class="m">' + p.model + '</div>' +
+      '<div class="d"><b>' + (p.function || "—") + '</b> · ' + (p.package || "—") + '</div>' +
+      '<div class="d"><a class="raw" href="./app_schematics/' + encodeURIComponent(p.model) +
+      '_app.svg" target="_blank" onclick="event.stopPropagation()">看原图 →</a></div></div>';
+    /* 点卡片主体跳详情；点「看原图」在新标签打开 SVG */
+    a.addEventListener("click", function (e) {
+      if (e.target.closest("a.raw")) e.preventDefault();
+    });
+    return a;
+  }
+
+  function render() {
+    var k = q.value.trim().toUpperCase(), f = ff.value;
+    var list = products.filter(function (p) {
+      if (f && (p.function || "") !== f) return false;
+      if (!k) return true;
+      return (p.model || "").toUpperCase().indexOf(k) >= 0 ||
+             (p.function || "").toUpperCase().indexOf(k) >= 0 ||
+             (p.package || "").toUpperCase().indexOf(k) >= 0;
+    });
+    /* 按功能分组：审图时一次看同一类画法 */
+    var groups = {}, order = [];
+    list.forEach(function (p) {
+      var g = p.function || "其它";
+      if (!groups[g]) { groups[g] = []; order.push(g); }
+      groups[g].push(p);
+    });
+    root.innerHTML = "";
+    order.sort(function (a, b) { return groups[b].length - groups[a].length; });
+    order.forEach(function (g) {
+      var h = document.createElement("div");
+      h.className = "grp";
+      h.innerHTML = "<h2>" + g + "</h2><span>" + groups[g].length + " 款</span>";
+      root.appendChild(h);
+      var grid = document.createElement("div");
+      grid.className = "grid";
+      groups[g].forEach(function (p) { grid.appendChild(card(p)); });
+      root.appendChild(grid);
+    });
+    none.style.display = list.length ? "none" : "block";
+    cnt.textContent = list.length + " / " + products.length + " 款";
+  }
+
+  fetch("./data/products_lite.json")
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      products = d;
+      var fs = {};
+      products.forEach(function (p) { if (p.function) fs[p.function] = (fs[p.function] || 0) + 1; });
+      Object.keys(fs).sort(function (a, b) { return fs[b] - fs[a]; }).forEach(function (k) {
+        var o = document.createElement("option");
+        o.value = k; o.textContent = k + "（" + fs[k] + "）";
+        ff.appendChild(o);
+      });
+      render();
+    })
+    .catch(function (e) { none.style.display = "block"; none.textContent = "数据加载失败：" + e; });
+
+  q.addEventListener("input", render);
+  ff.addEventListener("change", render);
+})();
+</script>
+</body>
+</html>
