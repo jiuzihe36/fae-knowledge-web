@@ -23,7 +23,8 @@
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
 
 /*.svg
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=600, must-revalidate
+# （2026-10-01: SVG=应用电路图，会持续精修 → 604800 改 600，避免改图后用户7天看不到新版）
 
 /*.png
   Cache-Control: public, max-age=604800
@@ -35,8 +36,6 @@
 /pins_webp/*
   Cache-Control: public, max-age=604800
 
-/circuits/*
-  Cache-Control: public, max-age=604800
 
 /
   Cache-Control: public, max-age=0, must-revalidate
