@@ -1250,7 +1250,9 @@
     var obs = new MutationObserver(function () {
       if (!panel.classList.contains("hidden")) apply();
     });
-    obs.observe(panel, { attributes: true, attributeFilter: ["class"] });
+    /* 子树也要看：图片区块是抽屉打开后才从 hidden 变为可见的，
+       只盯抽屉本身会在它们可见之前就算完，导致窄屏默认不出收起效果 */
+    obs.observe(panel, { attributes: true, attributeFilter: ["class"], subtree: true });
     apply();                     /* 深链/已打开：注册时立刻应用一次（观察器不会补发） */
     var rt = null;
     window.addEventListener("resize", function () {   /* 旋屏/拉窗口时重算 */
