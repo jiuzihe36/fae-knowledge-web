@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="3000" viewBox="0 0 3000 3000">
+<rect x="0" y="0" width="3000" height="3000" rx="0" fill="#ffffff" stroke="none" stroke-width="0"/>
+<rect x="0" y="0" width="3000" height="100" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="56" y="50" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="40" fill="#ffffff" text-anchor="start" font-weight="700">EMS4422RSB 典型应用电路</text>
+<text x="56" y="84" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#93c5fd" text-anchor="start" font-weight="500">4 差分通道 2:1 Mux/DeMux 高速开关 · QFN5x5-40L</text>
+<text x="2944" y="50" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24" fill="#ffffff" text-anchor="end" font-weight="600">1.5 V to 5 V · -40 °C to +85 °C</text>
+<text x="2944" y="84" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="20" fill="#94a3b8" text-anchor="end" font-weight="normal">依据 EMS4422_Product_DS_V1.1.pdf</text>
+<rect x="725.0" y="150" width="420" height="140" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.8"/>
+<text x="935.0" y="190" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" fill="#16a34a" text-anchor="middle" font-weight="700">JC  COM 公共口</text>
+<text x="935.0" y="218" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#64748b" text-anchor="middle" font-weight="normal">接显示器 / Sink</text>
+<text x="935.0" y="246" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="normal">4 组差分 + DDC + HPD</text>
+<text x="935.0" y="274" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="normal">高速差分走线须等长</text>
+<rect x="50" y="450" width="186" height="300" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.8"/>
+<text x="143" y="500" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" fill="#16a34a" text-anchor="middle" font-weight="700">JA  IN-A</text>
+<text x="143" y="530" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="normal">源 A / GPU</text>
+<text x="143" y="580" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#0f172a" text-anchor="middle" font-weight="normal">4 组差分</text>
+<text x="143" y="608" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#0f172a" text-anchor="middle" font-weight="normal">+ DDC + HPD</text>
+<text x="143" y="650" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle" font-weight="normal">HDMI / DP 输入</text>
+<text x="143" y="700" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#16a34a" text-anchor="middle" font-weight="600">源端</text>
+<rect x="1352" y="450" width="186" height="300" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.8"/>
+<text x="1445" y="500" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" fill="#16a34a" text-anchor="middle" font-weight="700">JB  IN-B</text>
+<text x="1445" y="530" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="normal">源 B / 另一路</text>
+<text x="1445" y="580" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#0f172a" text-anchor="middle" font-weight="normal">4 组差分</text>
+<text x="1445" y="608" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#0f172a" text-anchor="middle" font-weight="normal">+ DDC + HPD</text>
+<text x="1445" y="650" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle" font-weight="normal">HDMI / DP 输入</text>
+<text x="1445" y="700" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#16a34a" text-anchor="middle" font-weight="600">源端</text>
+<rect x="310" y="520.0" width="118" height="140" rx="5" fill="#fefce8" stroke="#ca8a04" stroke-width="2.6"/>
+<text x="375" y="550.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="19" fill="#ca8a04" text-anchor="middle" font-weight="700">D1</text>
+<text x="375" y="578.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="middle" font-weight="normal">ESD 阵列</text>
+<text x="375" y="604.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="middle" font-weight="600">100Ω</text>
+<text x="375" y="628.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#0f172a" text-anchor="middle" font-weight="normal">低容值</text>
+<text x="375" y="650.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0f172a" text-anchor="middle" font-weight="normal">靠近连接器</text>
+<rect x="1184" y="520.0" width="118" height="140" rx="5" fill="#fefce8" stroke="#ca8a04" stroke-width="2.6"/>
+<text x="1249" y="550.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="19" fill="#ca8a04" text-anchor="middle" font-weight="700">D2</text>
+<text x="1249" y="578.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="middle" font-weight="normal">ESD 阵列</text>
+<text x="1249" y="604.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="middle" font-weight="600">100Ω</text>
+<text x="1249" y="628.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#0f172a" text-anchor="middle" font-weight="normal">低容值</text>
+<text x="1249" y="650.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#0f172a" text-anchor="middle" font-weight="normal">靠近连接器</text>
+<rect x="700" y="450" width="470" height="580" rx="6" fill="#eef2ff" stroke="#4338ca" stroke-width="3.0"/>
+<text x="935.0" y="494" font-family="Menlo, Monaco, Consolas, monospace" font-size="22" fill="#4338ca" text-anchor="middle" font-weight="700">U1</text>
+<text x="935.0" y="530" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="29" fill="#0f172a" text-anchor="middle" font-weight="700">EMS4422RSB</text>
+<text x="935.0" y="554" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle" font-weight="normal">4 差分通道 2:1 Mux/DeMux 高速开关</text>
+<text x="935.0" y="574" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="normal">QFN5x5-40L</text>
+<line x1="726" y1="592" x2="1144" y2="592" stroke="#4338ca" stroke-width="1.4" stroke-dasharray="6 5"/>
+<text x="730" y="714" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">D0</text>
+<line x1="1084" y1="700" x2="1084" y2="674" stroke="#4338ca" stroke-width="2.2"/>
+<circle cx="1084" cy="700" r="3.6" fill="#4338ca"/>
+<line x1="1014" y1="766" x2="1014" y2="782" stroke="#4338ca" stroke-width="2.2"/>
+<line x1="1004" y1="782" x2="1024" y2="782" stroke="#4338ca" stroke-width="3.0"/>
+<text x="1014" y="802" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="700">A</text>
+<line x1="1154" y1="766" x2="1154" y2="782" stroke="#4338ca" stroke-width="2.2"/>
+<line x1="1144" y1="782" x2="1164" y2="782" stroke="#4338ca" stroke-width="3.0"/>
+<text x="1154" y="802" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="700">B</text>
+<line x1="1084" y1="700" x2="1026" y2="746" stroke="#4338ca" stroke-width="2.8"/>
+<circle cx="1026" cy="746" r="3.2" fill="#4338ca"/>
+<line x1="1084" y1="674" x2="1084" y2="290" stroke="#4338ca" stroke-width="2.4"/>
+<text x="730" y="814" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">D1</text>
+<line x1="1084" y1="800" x2="1084" y2="774" stroke="#4338ca" stroke-width="2.2"/>
+<circle cx="1084" cy="800" r="3.6" fill="#4338ca"/>
+<line x1="1014" y1="866" x2="1014" y2="882" stroke="#4338ca" stroke-width="2.2"/>
+<line x1="1004" y1="882" x2="1024" y2="882" stroke="#4338ca" stroke-width="3.0"/>
+<text x="1014" y="902" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="700">A</text>
+<line x1="1154" y1="866" x2="1154" y2="882" stroke="#4338ca" stroke-width="2.2"/>
+<line x1="1144" y1="882" x2="1164" y2="882" stroke="#4338ca" stroke-width="3.0"/>
+<text x="1154" y="902" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="700">B</text>
+<line x1="1084" y1="800" x2="1026" y2="846" stroke="#4338ca" stroke-width="2.8"/>
+<circle cx="1026" cy="846" r="3.2" fill="#4338ca"/>
+<line x1="1084" y1="774" x2="1084" y2="700" stroke="#4338ca" stroke-width="2.4"/>
+<text x="730" y="914" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">D2</text>
+<line x1="1084" y1="900" x2="1084" y2="874" stroke="#4338ca" stroke-width="2.2"/>
+<circle cx="1084" cy="900" r="3.6" fill="#4338ca"/>
+<line x1="1014" y1="966" x2="1014" y2="982" stroke="#4338ca" stroke-width="2.2"/>
+<line x1="1004" y1="982" x2="1024" y2="982" stroke="#4338ca" stroke-width="3.0"/>
+<text x="1014" y="1002" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="700">A</text>
+<line x1="1154" y1="966" x2="1154" y2="982" stroke="#4338ca" stroke-width="2.2"/>
+<line x1="1144" y1="982" x2="1164" y2="982" stroke="#4338ca" stroke-width="3.0"/>
+<text x="1154" y="1002" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="700">B</text>
+<line x1="1084" y1="900" x2="1026" y2="946" stroke="#4338ca" stroke-width="2.8"/>
+<circle cx="1026" cy="946" r="3.2" fill="#4338ca"/>
+<line x1="1084" y1="874" x2="1084" y2="800" stroke="#4338ca" stroke-width="2.4"/>
+<text x="730" y="1014" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">D3</text>
+<line x1="1084" y1="1000" x2="1084" y2="974" stroke="#4338ca" stroke-width="2.2"/>
+<circle cx="1084" cy="1000" r="3.6" fill="#4338ca"/>
+<line x1="1014" y1="1066" x2="1014" y2="1082" stroke="#4338ca" stroke-width="2.2"/>
+<line x1="1004" y1="1082" x2="1024" y2="1082" stroke="#4338ca" stroke-width="3.0"/>
+<text x="1014" y="1102" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="700">A</text>
+<line x1="1154" y1="1066" x2="1154" y2="1082" stroke="#4338ca" stroke-width="2.2"/>
+<line x1="1144" y1="1082" x2="1164" y2="1082" stroke="#4338ca" stroke-width="3.0"/>
+<text x="1154" y="1102" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="700">B</text>
+<line x1="1084" y1="1000" x2="1026" y2="1046" stroke="#4338ca" stroke-width="2.8"/>
+<circle cx="1026" cy="1046" r="3.2" fill="#4338ca"/>
+<line x1="1084" y1="974" x2="1084" y2="900" stroke="#4338ca" stroke-width="2.4"/>
+<text x="1110" y="674" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#4338ca" text-anchor="middle" font-weight="700">COM</text>
+<text x="730" y="1104" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">4 组 2:1 高速差分通道</text>
+<line x1="670" y1="772" x2="450" y2="772" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="670" cy="772" r="3.4" fill="#4338ca"/>
+<line x1="670" y1="792" x2="450" y2="792" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="670" cy="792" r="3.4" fill="#4338ca"/>
+<text x="740" y="760" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="start" font-weight="600">D0+/−</text>
+<line x1="670" y1="872" x2="450" y2="872" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="670" cy="872" r="3.4" fill="#4338ca"/>
+<line x1="670" y1="892" x2="450" y2="892" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="670" cy="892" r="3.4" fill="#4338ca"/>
+<text x="740" y="860" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="start" font-weight="600">D1+/−</text>
+<line x1="670" y1="972" x2="450" y2="972" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="670" cy="972" r="3.4" fill="#4338ca"/>
+<line x1="670" y1="992" x2="450" y2="992" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="670" cy="992" r="3.4" fill="#4338ca"/>
+<text x="740" y="960" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="start" font-weight="600">D2+/−</text>
+<line x1="670" y1="1072" x2="450" y2="1072" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="670" cy="1072" r="3.4" fill="#4338ca"/>
+<line x1="670" y1="1092" x2="450" y2="1092" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="670" cy="1092" r="3.4" fill="#4338ca"/>
+<text x="740" y="1060" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="start" font-weight="600">D3+/−</text>
+<line x1="1200" y1="772" x2="1172" y2="772" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1200" cy="772" r="3.4" fill="#4338ca"/>
+<line x1="1200" y1="792" x2="1172" y2="792" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1200" cy="792" r="3.4" fill="#4338ca"/>
+<text x="1060" y="760" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="end" font-weight="600">D0+/−B</text>
+<line x1="1200" y1="872" x2="1172" y2="872" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1200" cy="872" r="3.4" fill="#4338ca"/>
+<line x1="1200" y1="892" x2="1172" y2="892" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1200" cy="892" r="3.4" fill="#4338ca"/>
+<text x="1060" y="860" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="end" font-weight="600">D1+/−B</text>
+<line x1="1200" y1="972" x2="1172" y2="972" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1200" cy="972" r="3.4" fill="#4338ca"/>
+<line x1="1200" y1="992" x2="1172" y2="992" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1200" cy="992" r="3.4" fill="#4338ca"/>
+<text x="1060" y="960" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="end" font-weight="600">D2+/−B</text>
+<line x1="1200" y1="1072" x2="1172" y2="1072" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1200" cy="1072" r="3.4" fill="#4338ca"/>
+<line x1="1200" y1="1092" x2="1172" y2="1092" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1200" cy="1092" r="3.4" fill="#4338ca"/>
+<text x="1060" y="1060" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="end" font-weight="600">D3+/−B</text>
+<line x1="1084" y1="687" x2="1084" y2="280" stroke="#1e293b" stroke-width="2.2"/>
+<text x="1092" y="707" font-family="Menlo, Monaco, Consolas, monospace" font-size="11.5" fill="#0f172a" text-anchor="start" font-weight="600">D0+</text>
+<line x1="1084" y1="699" x2="1084" y2="280" stroke="#1e293b" stroke-width="2.2"/>
+<text x="1092" y="719" font-family="Menlo, Monaco, Consolas, monospace" font-size="11.5" fill="#0f172a" text-anchor="start" font-weight="600">D0-</text>
+<line x1="1084" y1="787" x2="1084" y2="280" stroke="#1e293b" stroke-width="2.2"/>
+<text x="1092" y="807" font-family="Menlo, Monaco, Consolas, monospace" font-size="11.5" fill="#0f172a" text-anchor="start" font-weight="600">D1+</text>
+<line x1="1084" y1="799" x2="1084" y2="280" stroke="#1e293b" stroke-width="2.2"/>
+<text x="1092" y="819" font-family="Menlo, Monaco, Consolas, monospace" font-size="11.5" fill="#0f172a" text-anchor="start" font-weight="600">D1-</text>
+<line x1="1084" y1="887" x2="1084" y2="280" stroke="#1e293b" stroke-width="2.2"/>
+<text x="1092" y="907" font-family="Menlo, Monaco, Consolas, monospace" font-size="11.5" fill="#0f172a" text-anchor="start" font-weight="600">D2+</text>
+<line x1="1084" y1="899" x2="1084" y2="280" stroke="#1e293b" stroke-width="2.2"/>
+<text x="1092" y="919" font-family="Menlo, Monaco, Consolas, monospace" font-size="11.5" fill="#0f172a" text-anchor="start" font-weight="600">D2-</text>
+<line x1="1084" y1="987" x2="1084" y2="280" stroke="#1e293b" stroke-width="2.2"/>
+<text x="1092" y="1007" font-family="Menlo, Monaco, Consolas, monospace" font-size="11.5" fill="#0f172a" text-anchor="start" font-weight="600">D3+</text>
+<line x1="1084" y1="999" x2="1084" y2="280" stroke="#1e293b" stroke-width="2.2"/>
+<text x="1092" y="1019" font-family="Menlo, Monaco, Consolas, monospace" font-size="11.5" fill="#0f172a" text-anchor="start" font-weight="600">D3-</text>
+<text x="730" y="1246" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#4338ca" text-anchor="start" font-weight="700">DDC / HPD 低速侧通道</text>
+<text x="730" y="1268" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="normal">SCL / SDA / HPD 随 SE…</text>
+<rect x="860" y="1296" width="100" height="56" rx="3" fill="#ffffff" stroke="#4338ca" stroke-width="2.0"/>
+<text x="910" y="1330" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#4338ca" text-anchor="middle" font-weight="700">COM</text>
+<rect x="990" y="1296" width="100" height="56" rx="3" fill="#ffffff" stroke="#4338ca" stroke-width="2.0"/>
+<text x="1040" y="1330" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#4338ca" text-anchor="middle" font-weight="700">A</text>
+<rect x="1120" y="1296" width="100" height="56" rx="3" fill="#ffffff" stroke="#4338ca" stroke-width="2.0"/>
+<text x="1170" y="1330" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#4338ca" text-anchor="middle" font-weight="700">B</text>
+<line x1="910" y1="1324" x2="1040" y2="1324" stroke="#4338ca" stroke-width="1.6"/>
+<line x1="1040" y1="1324" x2="1170" y2="1324" stroke="#4338ca" stroke-width="1.6"/>
+<text x="730" y="1396" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="normal">由 SEL 决定 DDC / HPD 接 COM 还是 A / B</text>
+<line x1="880" y1="1120" x2="880" y2="1030" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="880" cy="1030" r="4.0" fill="#4338ca"/>
+<text x="894" y="1160" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="start" font-weight="600">GPU_SEL (4)</text>
+<text x="866" y="1054" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">切换控制</text>
+<line x1="1020" y1="1120" x2="1020" y2="1030" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1020" cy="1030" r="4.0" fill="#4338ca"/>
+<text x="1034" y="1160" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="start" font-weight="600">SEL (14)</text>
+<path d="M1200.0,1140.0 L1200.0,1158.0 L1209.0,1164.3 L1191.0,1170.6 L1209.0,1176.9 L1191.0,1183.1 L1209.0,1189.4 L1191.0,1195.7 L1200.0,1202.0 L1200.0,1220.0" stroke="#1e293b" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1215" y="1179.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#0f172a" text-anchor="start" font-weight="700">10kΩ</text>
+<text x="1215" y="1196.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748b" text-anchor="start" font-weight="500">R1</text>
+<line x1="1200" y1="1220" x2="1200" y2="1228.8" stroke="#1e293b" stroke-width="3.0"/>
+<line x1="1189.6" y1="1228.8" x2="1210.4" y2="1228.8" stroke="#1e293b" stroke-width="3.0"/>
+<line x1="1193.2" y1="1233.6" x2="1206.8" y2="1233.6" stroke="#1e293b" stroke-width="3.0"/>
+<line x1="1196.8" y1="1238.4" x2="1203.2" y2="1238.4" stroke="#1e293b" stroke-width="3.0"/>
+<text x="1204" y="1292" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="normal">GPU_SEL 下拉定默认态</text>
+<line x1="1118" y1="1030" x2="1118" y2="1430" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1118" cy="1030" r="4.2" fill="#4338ca"/>
+<text x="1096" y="1440" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="end" font-weight="600">VCC (30)</text>
+<line x1="988" y1="1356" x2="988" y2="1345" stroke="#1e293b" stroke-width="2.6"/>
+<path d="M975,1345 L1001,1345 L988,1323 Z" stroke="#b91c1c" stroke-width="2.2" fill="#b91c1c" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="988" y="1316" font-family="Menlo, Monaco, Consolas, monospace" font-size="16" fill="#b91c1c" text-anchor="middle" font-weight="700">VCC</text>
+<line x1="988" y1="1356" x2="1118" y2="1356" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="1118" y1="1356" x2="1118" y2="1470" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="1178" y1="1390" x2="1178" y2="1428.0" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="1162.0" y1="1428.0" x2="1194.0" y2="1428.0" stroke="#1e293b" stroke-width="3.4"/>
+<line x1="1162.0" y1="1442.0" x2="1194.0" y2="1442.0" stroke="#1e293b" stroke-width="3.4"/>
+<line x1="1178" y1="1442.0" x2="1178" y2="1480" stroke="#1e293b" stroke-width="2.2"/>
+<text x="1163" y="1434.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#0f172a" text-anchor="end" font-weight="700">100nF</text>
+<text x="1163" y="1451.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748b" text-anchor="end" font-weight="500">C1</text>
+<line x1="1118" y1="1390" x2="1178" y2="1390" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="1178" y1="1490" x2="1178" y2="1520" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="1118" y1="1520" x2="1178" y2="1520" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="1118" y1="1520" x2="1118" y2="1529.9" stroke="#1e293b" stroke-width="3.0"/>
+<line x1="1106.3" y1="1529.9" x2="1129.7" y2="1529.9" stroke="#1e293b" stroke-width="3.0"/>
+<line x1="1110.35" y1="1535.3" x2="1125.65" y2="1535.3" stroke="#1e293b" stroke-width="3.0"/>
+<line x1="1114.4" y1="1540.7" x2="1121.6" y2="1540.7" stroke="#1e293b" stroke-width="3.0"/>
+<text x="1158" y="1578" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="normal">C1 紧靠 VCC 脚</text>
+<line x1="630" y1="1030" x2="630" y2="1230" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="630" cy="1030" r="4.2" fill="#4338ca"/>
+<text x="616" y="1086" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="end" font-weight="600">GND (21)</text>
+<line x1="630" y1="1230" x2="630" y2="1239.9" stroke="#1e293b" stroke-width="3.0"/>
+<line x1="618.3" y1="1239.9" x2="641.7" y2="1239.9" stroke="#1e293b" stroke-width="3.0"/>
+<line x1="622.35" y1="1245.3" x2="637.65" y2="1245.3" stroke="#1e293b" stroke-width="3.0"/>
+<line x1="626.4" y1="1250.7" x2="633.6" y2="1250.7" stroke="#1e293b" stroke-width="3.0"/>
+<text x="618" y="1286" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">GND 接地，散热焊盘亦为 GND</text>
+<rect x="60" y="1350" width="430" height="103" rx="5" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.8" stroke-dasharray="8 6"/>
+<text x="76" y="1376" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" text-anchor="start" font-weight="700">典型拓扑（源端切换）</text>
+<text x="76" y="1398" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">① 源端切换：COM 接 Sink，A / B 接两个源（本图）。</text>
+<text x="76" y="1417" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">② Sink 端切换：COM 接源，A / B 接两个 Sink。</text>
+<text x="76" y="1436" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">③ 串接复用：多颗级联扩展。</text>
+<rect x="60" y="1490" width="430" height="103" rx="5" fill="#faf5ff" stroke="#7c3aed" stroke-width="1.8" stroke-dasharray="8 6"/>
+<text x="76" y="1516" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" text-anchor="start" font-weight="700">本图位置与注意事项</text>
+<text x="76" y="1538" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">两路 TMDS 与 DDC/HPD 需同步切换，</text>
+<text x="76" y="1557" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">否则会出现 DDC 与视频来自不同源；</text>
+<text x="76" y="1576" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">切换时先断开 HPD 再切数据。</text>
+<rect x="60" y="1630" width="430" height="103" rx="5" fill="#fefce8" stroke="#ca8a04" stroke-width="1.8" stroke-dasharray="8 6"/>
+<text x="76" y="1656" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" text-anchor="start" font-weight="700">DDC 与 HPD 边带</text>
+<text x="76" y="1678" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">DDC（SCL/SDA）与 HPD 为低速辅助信号，</text>
+<text x="76" y="1697" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">随 SEL 与主通道同步切换；</text>
+<text x="76" y="1716" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">上拉由 Sink 侧提供，源端通常不加。</text>
+<rect x="60" y="1770" width="430" height="103" rx="5" fill="#fffbeb" stroke="#a16207" stroke-width="1.8" stroke-dasharray="8 6"/>
+<text x="76" y="1796" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" text-anchor="start" font-weight="700">关于本图数据</text>
+<text x="76" y="1818" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">引脚定义、导通真值表、RON / 带宽 / ESD</text>
+<text x="76" y="1837" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">等参数与封装信息均照录规格书；</text>
+<text x="76" y="1856" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">规格书未列出的项不做推测。</text>
+<rect x="1560" y="110" width="1384" height="1770" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="2.0"/>
+<text x="1580" y="150" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#0f172a" text-anchor="start" font-weight="700">① 引脚定义（Pin Description）</text>
+<line x1="1580" y1="162" x2="2080" y2="162" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="1574.0" y="164" width="250.0" height="28" rx="0" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<text x="1586.0" y="184" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">符号</text>
+<text x="1704.0" y="184" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">引脚号</text>
+<text x="1776.0" y="184" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">功能</text>
+<text x="1586.0" y="216" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">GPU_SEL</text>
+<text x="1704.0" y="216" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">4</text>
+<text x="1586.0" y="240" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">_EN</text>
+<text x="1704.0" y="240" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">5</text>
+<text x="1586.0" y="264" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">SCL_B</text>
+<text x="1704.0" y="264" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">11</text>
+<text x="1586.0" y="288" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">SCL</text>
+<text x="1704.0" y="288" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">12</text>
+<text x="1586.0" y="312" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">SCL_A</text>
+<text x="1704.0" y="312" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">13</text>
+<text x="1586.0" y="336" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">SEL</text>
+<text x="1704.0" y="336" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">14</text>
+<text x="1586.0" y="360" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">SDA_A</text>
+<text x="1704.0" y="360" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">18</text>
+<text x="1586.0" y="384" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">HPD_A</text>
+<text x="1704.0" y="384" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">20</text>
+<text x="1586.0" y="408" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D3-A</text>
+<text x="1704.0" y="408" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">32</text>
+<text x="1586.0" y="432" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D3+A</text>
+<text x="1704.0" y="432" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">33</text>
+<text x="1586.0" y="456" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D2-A</text>
+<text x="1704.0" y="456" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">34</text>
+<text x="1586.0" y="480" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D2+A</text>
+<text x="1704.0" y="480" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">35</text>
+<text x="1586.0" y="504" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D1-A</text>
+<text x="1704.0" y="504" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">36</text>
+<text x="1586.0" y="528" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D1+A</text>
+<text x="1704.0" y="528" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">37</text>
+<text x="1586.0" y="552" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D0-A</text>
+<text x="1704.0" y="552" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">38</text>
+<text x="1586.0" y="576" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D0+A</text>
+<text x="1704.0" y="576" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">39</text>
+<rect x="1574.0" y="582" width="250.0" height="24" rx="0" fill="#eef2f7" stroke="none" stroke-width="0"/>
+<text x="1586.0" y="600" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">GND</text>
+<text x="1704.0" y="600" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">21</text>
+<rect x="1574.0" y="606" width="250.0" height="24" rx="0" fill="#eef2f7" stroke="none" stroke-width="0"/>
+<text x="1586.0" y="624" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">GND</text>
+<text x="1704.0" y="624" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">31</text>
+<rect x="1574.0" y="630" width="250.0" height="24" rx="0" fill="#eef2f7" stroke="none" stroke-width="0"/>
+<text x="1586.0" y="648" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">VCC</text>
+<text x="1704.0" y="648" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">30</text>
+<rect x="1574.0" y="654" width="250.0" height="24" rx="0" fill="#eef2f7" stroke="none" stroke-width="0"/>
+<text x="1586.0" y="672" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">VCC</text>
+<text x="1704.0" y="672" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">10</text>
+<rect x="1824.0" y="164" width="250.0" height="28" rx="0" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<text x="1836.0" y="184" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">符号</text>
+<text x="1954.0" y="184" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">引脚号</text>
+<text x="2026.0" y="184" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">功能</text>
+<text x="1836.0" y="216" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D0+</text>
+<text x="1954.0" y="216" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">40</text>
+<text x="1836.0" y="240" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D0-</text>
+<text x="1954.0" y="240" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">1</text>
+<text x="1836.0" y="264" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D1+</text>
+<text x="1954.0" y="264" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">2</text>
+<text x="1836.0" y="288" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D1-</text>
+<text x="1954.0" y="288" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">3</text>
+<text x="1836.0" y="312" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D2+</text>
+<text x="1954.0" y="312" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">6</text>
+<text x="1836.0" y="336" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D2-</text>
+<text x="1954.0" y="336" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">7</text>
+<text x="1836.0" y="360" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D3+</text>
+<text x="1954.0" y="360" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">8</text>
+<text x="1836.0" y="384" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D3-</text>
+<text x="1954.0" y="384" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">9</text>
+<text x="1836.0" y="408" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">SDA_B</text>
+<text x="1954.0" y="408" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">15</text>
+<text x="1836.0" y="432" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">SDA</text>
+<text x="1954.0" y="432" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">16</text>
+<text x="1836.0" y="456" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">HPD_B</text>
+<text x="1954.0" y="456" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">17</text>
+<text x="1836.0" y="480" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">HPD</text>
+<text x="1954.0" y="480" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">19</text>
+<text x="1836.0" y="504" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D3-B</text>
+<text x="1954.0" y="504" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">22</text>
+<text x="1836.0" y="528" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D3+B</text>
+<text x="1954.0" y="528" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">23</text>
+<text x="1836.0" y="552" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D2-B</text>
+<text x="1954.0" y="552" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">24</text>
+<text x="1836.0" y="576" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D2+B</text>
+<text x="1954.0" y="576" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">25</text>
+<text x="1836.0" y="600" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D1-B</text>
+<text x="1954.0" y="600" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">26</text>
+<text x="1836.0" y="624" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D1+B</text>
+<text x="1954.0" y="624" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">27</text>
+<text x="1836.0" y="648" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D0-B</text>
+<text x="1954.0" y="648" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">28</text>
+<text x="1836.0" y="672" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D0+B</text>
+<text x="1954.0" y="672" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">29</text>
+<text x="1586" y="706" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">封装 QFN5x5-40L</text>
+<text x="1586" y="725" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">工作电压 1.5 V to 5 V</text>
+<text x="1586" y="744" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">工作温度 -40 °C to +85 °C</text>
+<text x="2110" y="150" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#0f172a" text-anchor="start" font-weight="700">③ ③ 关键电气参数</text>
+<line x1="2110" y1="162" x2="2560" y2="162" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="2114" y="180" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">静态电平</text>
+<text x="2120" y="200" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">I OFF Leakage under power off</text>
+<text x="2556" y="200" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">max=±10 μA</text>
+<text x="2120" y="222" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="start" font-weight="normal">…本组另有 1 项，见规格书</text>
+<text x="2114" y="250" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">其他参数</text>
+<text x="2120" y="270" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">RON on- resistance</text>
+<text x="2556" y="270" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">typ=6.5; max=9.5 Ω</text>
+<text x="2120" y="292" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">RON</text>
+<text x="2556" y="292" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">typ=6; max=9.5 Ω</text>
+<text x="2120" y="314" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">RON(flat) ON-state resistance fl…</text>
+<text x="2556" y="314" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">typ=1.5 Ω</text>
+<text x="2120" y="336" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">ΔR ON On-state resistance match…</text>
+<text x="2556" y="336" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">typ=0.4; max=1 Ω</text>
+<text x="2120" y="358" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="start" font-weight="normal">…本组另有 4 项，见规格书</text>
+<text x="2600" y="150" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#0f172a" text-anchor="start" font-weight="700">④ 封装引脚图</text>
+<line x1="2600" y1="162" x2="2944" y2="162" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="2604" y="188" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#0f172a" text-anchor="start" font-weight="700">QFN5x5-40L</text>
+<text x="2604" y="212" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">引脚数 40</text>
+<rect x="2604" y="246" width="250" height="250" rx="0" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+<rect x="2644" y="276" width="170" height="190" rx="3" fill="#ffffff" stroke="#0f172a" stroke-width="2.0"/>
+<text x="2729.0" y="377.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="700">顶视图</text>
+<circle cx="2644" cy="276" r="5.0" fill="#b91c1c"/>
+<rect x="2618.0" y="288.27272727272725" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2630.0" y="297.27272727272725" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">1</text>
+<rect x="2618.0" y="305.54545454545456" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2630.0" y="314.54545454545456" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">2</text>
+<rect x="2618.0" y="322.8181818181818" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2630.0" y="331.8181818181818" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">3</text>
+<rect x="2618.0" y="340.0909090909091" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2630.0" y="349.0909090909091" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">4</text>
+<rect x="2618.0" y="357.3636363636364" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2630.0" y="366.3636363636364" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">5</text>
+<rect x="2618.0" y="374.6363636363636" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2630.0" y="383.6363636363636" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">6</text>
+<rect x="2618.0" y="391.9090909090909" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2630.0" y="400.9090909090909" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">7</text>
+<rect x="2618.0" y="409.1818181818182" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2630.0" y="418.1818181818182" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">8</text>
+<rect x="2618.0" y="426.4545454545455" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2630.0" y="435.4545454545455" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">9</text>
+<rect x="2618.0" y="443.72727272727275" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2630.0" y="452.72727272727275" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">10</text>
+<rect x="2647.4545454545455" y="468.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2659.4545454545455" y="490.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">11</text>
+<rect x="2662.909090909091" y="468.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2674.909090909091" y="490.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">12</text>
+<rect x="2678.3636363636365" y="468.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2690.3636363636365" y="490.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">13</text>
+<rect x="2693.818181818182" y="468.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2705.818181818182" y="490.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">14</text>
+<rect x="2709.2727272727275" y="468.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2721.2727272727275" y="490.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">15</text>
+<rect x="2724.7272727272725" y="468.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2736.7272727272725" y="490.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">16</text>
+<rect x="2740.181818181818" y="468.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2752.181818181818" y="490.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">17</text>
+<rect x="2755.6363636363635" y="468.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2767.6363636363635" y="490.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">18</text>
+<rect x="2771.090909090909" y="468.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2783.090909090909" y="490.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">19</text>
+<rect x="2786.5454545454545" y="468.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2798.5454545454545" y="490.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">20</text>
+<rect x="2816.0" y="443.72727272727275" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2828.0" y="452.72727272727275" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">21</text>
+<rect x="2816.0" y="426.45454545454544" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2828.0" y="435.45454545454544" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">22</text>
+<rect x="2816.0" y="409.1818181818182" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2828.0" y="418.1818181818182" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">23</text>
+<rect x="2816.0" y="391.9090909090909" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2828.0" y="400.9090909090909" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">24</text>
+<rect x="2816.0" y="374.6363636363636" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2828.0" y="383.6363636363636" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">25</text>
+<rect x="2816.0" y="357.3636363636364" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2828.0" y="366.3636363636364" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">26</text>
+<rect x="2816.0" y="340.0909090909091" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2828.0" y="349.0909090909091" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">27</text>
+<rect x="2816.0" y="322.8181818181818" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2828.0" y="331.8181818181818" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">28</text>
+<rect x="2816.0" y="305.5454545454545" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2828.0" y="314.5454545454545" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">29</text>
+<rect x="2816.0" y="288.27272727272725" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2828.0" y="297.27272727272725" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">30</text>
+<rect x="2786.5454545454545" y="264.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2798.5454545454545" y="260.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">31</text>
+<rect x="2771.090909090909" y="264.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2783.090909090909" y="260.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">32</text>
+<rect x="2755.6363636363635" y="264.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2767.6363636363635" y="260.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">33</text>
+<rect x="2740.181818181818" y="264.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2752.181818181818" y="260.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">34</text>
+<rect x="2724.7272727272725" y="264.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2736.7272727272725" y="260.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">35</text>
+<rect x="2709.2727272727275" y="264.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2721.2727272727275" y="260.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">36</text>
+<rect x="2693.818181818182" y="264.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2705.818181818182" y="260.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">37</text>
+<rect x="2678.3636363636365" y="264.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2690.3636363636365" y="260.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">38</text>
+<rect x="2662.909090909091" y="264.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2674.909090909091" y="260.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">39</text>
+<rect x="2647.4545454545455" y="264.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="2659.4545454545455" y="260.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">40</text>
+<text x="2729.0" y="522" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="middle" font-weight="normal">QFN/DFN：逆时针均分四边</text>
+<text x="2604" y="550" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">引脚编号：左上起 1，逆时针</text>
+<text x="2604" y="570" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">封装 QFN5x5-40L</text>
+<text x="1580" y="801" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#0f172a" text-anchor="start" font-weight="700">② 真值表（Truth Table）</text>
+<line x1="1580" y1="813" x2="2944" y2="813" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="1574" y="821" width="1364" height="26" rx="0" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<text x="1588" y="839" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">Input EN</text>
+<text x="2036.0" y="839" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">Input GPU_SEL</text>
+<text x="2484.0" y="839" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">Function (D0 to D3)</text>
+<rect x="1574" y="838" width="1364" height="23" rx="0" fill="#eef2ff" stroke="none" stroke-width="0"/>
+<text x="1588" y="855" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">Input EN</text>
+<text x="2036.0" y="855" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">Input GPU_SEL</text>
+<text x="2484.0" y="855" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">Function (D0 to D3)</text>
+<text x="1588" y="879" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">H</text>
+<text x="2036.0" y="879" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">X</text>
+<text x="2484.0" y="879" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">Switch disabled. All channels are Hi-Z.</text>
+<rect x="1574" y="886" width="1364" height="23" rx="0" fill="#eef2ff" stroke="none" stroke-width="0"/>
+<text x="1588" y="903" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">L</text>
+<text x="2036.0" y="903" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">L</text>
+<text x="2484.0" y="903" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">All A channels are enabled. All B channels are Hi-Z.</text>
+<text x="1588" y="927" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">L</text>
+<text x="2036.0" y="927" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">H</text>
+<text x="2484.0" y="927" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">All B channels are enabled. All A channels are Hi-Z.</text>
+<rect x="1574" y="967" width="1364" height="26" rx="0" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<text x="1588" y="985" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">Input EN</text>
+<text x="2036.0" y="985" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">Input SEL</text>
+<text x="2484.0" y="985" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">Function (SCL, SDA, HPD)</text>
+<rect x="1574" y="984" width="1364" height="23" rx="0" fill="#eef2ff" stroke="none" stroke-width="0"/>
+<text x="1588" y="1001" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">Input EN</text>
+<text x="2036.0" y="1001" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">Input SEL</text>
+<text x="2484.0" y="1001" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">Function (SCL, SDA, HPD)</text>
+<text x="1588" y="1025" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">H</text>
+<text x="2036.0" y="1025" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">X</text>
+<text x="2484.0" y="1025" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">Switch disabled. All channels are Hi-Z.</text>
+<rect x="1574" y="1032" width="1364" height="23" rx="0" fill="#eef2ff" stroke="none" stroke-width="0"/>
+<text x="1588" y="1049" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">L</text>
+<text x="2036.0" y="1049" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">L</text>
+<text x="2484.0" y="1049" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">All A channels are enabled. All B channels are Hi-Z.</text>
+<text x="1588" y="1073" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">L</text>
+<text x="2036.0" y="1073" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">H</text>
+<text x="2484.0" y="1073" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">All B channels are enabled. All A channels are Hi-Z.</text>
+<text x="1580" y="1560" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#0f172a" text-anchor="start" font-weight="700">⑤ 典型拓扑与本图位置</text>
+<line x1="1580" y1="1572" x2="2944" y2="1572" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="1576" y="1574" width="1364" height="62" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.8"/>
+<text x="1584" y="1592" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#16a34a" text-anchor="start" font-weight="700">① 源端切换</text>
+<text x="1584" y="1612" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" text-anchor="start" font-weight="normal">COM 接 Sink，A / B 接两个源</text>
+<text x="1584" y="1630" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="normal">本图：① 源端切换</text>
+<rect x="1576" y="1644" width="1364" height="62" rx="4" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.8"/>
+<text x="1584" y="1662" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#1d4ed8" text-anchor="start" font-weight="700">② Sink 端切换</text>
+<text x="1584" y="1682" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" text-anchor="start" font-weight="normal">COM 接源，A / B 接两个 Sink</text>
+<text x="1584" y="1700" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="normal">本图：① 源端切换</text>
+<rect x="1576" y="1714" width="1364" height="62" rx="4" fill="#faf5ff" stroke="#7c3aed" stroke-width="1.8"/>
+<text x="1584" y="1732" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#7c3aed" text-anchor="start" font-weight="700">③ 串接复用</text>
+<text x="1584" y="1752" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" text-anchor="start" font-weight="normal">多颗级联做更多路切换</text>
+<text x="1584" y="1770" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="normal">本图：① 源端切换</text>
+<text x="1584" y="1806" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="normal">4 组差分通道，2:1 无源双向</text>
+<line x1="56" y1="1934" x2="2936" y2="1934" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="56" y="1964" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="26" fill="#0f172a" text-anchor="start" font-weight="700">设计要点 / Design Notes</text>
+<text x="56" y="2006" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 1  VCC 取值</text>
+<text x="56" y="2030" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">EMS4422RSB 的 VCC 有明确取值范围（1.5 V to 5 V）。边带 I/O 绝对最大值通常为 VCC+0.3V，供电电压偏低会直接限制可通过的信号摆幅，必须按规格书取值，不能凭 3.3V </text>
+<text x="56" y="2056" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">常规做法套用。</text>
+<text x="1556" y="2006" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 2  RON 的规格条件</text>
+<text x="1556" y="2030" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">导通电阻 RON 是在规格书规定的测试条件下给出的（如某个 VCC 值、某个电压范围）。实际设计须核对测试条件与自己的应用是否一致，条件不同不能直接套用该数值。</text>
+<text x="56" y="2216" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 3  上下拉电阻（默认态）</text>
+<text x="56" y="2240" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">EN / GPU_SEL / SEL 在 MCU 未上电或引脚浮空时电平不确定，会让开关停在未知通道，可能出现两侧图像异常。应加上下拉电阻固定默认接通的一路；具体极性按规格书真值表</text>
+<text x="56" y="2266" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">确定。</text>
+<text x="1556" y="2216" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 4  切换时序</text>
+<text x="1556" y="2240" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">切换时控制脚与数据信号之间有建立/保持时间要求。应在主通道切换稳定后再送出 DDC / HPD，避免显示器识别到不完整的能力信息。</text>
+<text x="56" y="2426" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 5  差分完整性</text>
+<text x="56" y="2450" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">4 组差分须严格等长、阻抗一致（如 100Ω 差分），避免模式转换引入共模噪声。同一组 +/− 的间距要小，走线周围保持完整参考平面，不要跨分割。</text>
+<text x="1556" y="2426" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 6  参考平面与回流</text>
+<text x="1556" y="2450" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">高速信号跨越电源/地平面分割会造成回流路径断裂，产生严重辐射与串扰。差分走线下方须有连续的完整地平面。</text>
+<text x="56" y="2636" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 7  防护等级</text>
+<text x="56" y="2660" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">选型时核对规格书的 ESD 等级（HBM / CDM）与工作温度范围。外部 ESD 阵列只是第一道防线，容值要低，否则会劣化信号。</text>
+<text x="1556" y="2636" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 8  DDC 上拉位置</text>
+<text x="1556" y="2660" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">DDC（SCL/SDA）的上拉电阻由 Sink 侧（显示器）提供，不应在源端额外并联上拉，否则会降低上拉强度、甚至在多源切换时形成冲突。切换器本身是无源的。</text>
+<line x1="56" y1="2944" x2="2944" y2="2944" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="56" y="2972" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#64748b" text-anchor="start" font-weight="normal">芯祥科技 EMS4422RSB · 4 差分通道 2:1 Mux/DeMux 高速开关 · QFN5x5-40L</text>
+<text x="2944" y="2972" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#64748b" text-anchor="end" font-weight="normal">数据来源：EMS4422_Product_DS_V1.1.pdf — 引脚 / 真值表 / 参数均照录</text>
+</svg>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="3000" viewBox="0 0 3000 3000">
+<rect x="0" y="0" width="3000" height="3000" rx="0" fill="#ffffff" stroke="none" stroke-width="0"/>
+<rect x="0" y="0" width="3000" height="100" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="56" y="50" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="40" fill="#ffffff" text-anchor="start" font-weight="700">EM74LV1T34GX 典型应用电路</text>
+<text x="56" y="84" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#93c5fd" text-anchor="start" font-weight="500">同相缓冲器 · DFN0.8x0.8-5L · VCC 1.6 V to 5.5 V</text>
+<text x="2944" y="50" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24" fill="#ffffff" text-anchor="end" font-weight="600">单门逻辑应用电路（CMOS输入）</text>
+<text x="2944" y="84" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="20" fill="#94a3b8" text-anchor="end" font-weight="normal">依据 EM74LV1T34_Product_DS_V1.0.pdf</text>
+<rect x="110" y="664.0" width="250" height="152.0" rx="4" fill="#ecfdf5" stroke="#047857" stroke-width="2.8"/>
+<text x="235.0" y="702.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="22" fill="#047857" text-anchor="middle" font-weight="700">J1</text>
+<text x="235.0" y="728.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" fill="#0f172a" text-anchor="middle" font-weight="700">输入源</text>
+<line x1="126" y1="742.0" x2="344" y2="742.0" stroke="#047857" stroke-width="1.2"/>
+<text x="340" y="740.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="end" font-weight="600">A (2)</text>
+<text x="235.0" y="786.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="middle" font-weight="normal">MCU / 传感器 / 上游逻辑输出</text>
+<rect x="600" y="500" width="700" height="420" rx="6" fill="#eef2ff" stroke="#4338ca" stroke-width="3.0"/>
+<text x="950.0" y="544" font-family="Menlo, Monaco, Consolas, monospace" font-size="22" fill="#4338ca" text-anchor="middle" font-weight="700">U1</text>
+<text x="950.0" y="580" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="29" fill="#0f172a" text-anchor="middle" font-weight="700">EM74LV1T34GX</text>
+<text x="950.0" y="604" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle" font-weight="normal">同相缓冲器</text>
+<text x="950.0" y="624" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="normal">DFN0.8x0.8-5L</text>
+<line x1="626" y1="642" x2="1274" y2="642" stroke="#4338ca" stroke-width="1.4" stroke-dasharray="6 5"/>
+<path d="M850,689.6 L1080,740.0 L850,790.4 Z" stroke="#0f172a" stroke-width="2.6" fill="#ffffff" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="950.0" y="850" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#4338ca" text-anchor="middle" font-weight="700">同相缓冲器</text>
+<line x1="360" y1="740.0" x2="850" y2="740.0" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="850" cy="740.0" r="4.0" fill="#4338ca"/>
+<text x="368" y="732.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="start" font-weight="600">A</text>
+<line x1="1080" y1="740.0" x2="1300" y2="740.0" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="1300" y1="740.0" x2="1330" y2="740.0" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1300" cy="740.0" r="4.0" fill="#4338ca"/>
+<text x="1310" y="732.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="start" font-weight="600">Y (4)</text>
+<line x1="720" y1="920" x2="720" y2="976" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="720" cy="920" r="4.2" fill="#4338ca"/>
+<text x="730" y="960" font-family="Menlo, Monaco, Consolas, monospace" font-size="15" fill="#0f172a" text-anchor="start" font-weight="600">VCC (5)</text>
+<line x1="610" y1="976" x2="720" y2="976" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="610" y1="976" x2="610" y2="965" stroke="#1e293b" stroke-width="2.6"/>
+<path d="M597,965 L623,965 L610,943 Z" stroke="#b91c1c" stroke-width="2.2" fill="#b91c1c" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="610" y="936" font-family="Menlo, Monaco, Consolas, monospace" font-size="17" fill="#b91c1c" text-anchor="middle" font-weight="700">VCC</text>
+<line x1="720" y1="976" x2="720" y2="1016.0" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="704.0" y1="1016.0" x2="736.0" y2="1016.0" stroke="#1e293b" stroke-width="3.4"/>
+<line x1="704.0" y1="1030.0" x2="736.0" y2="1030.0" stroke="#1e293b" stroke-width="3.4"/>
+<line x1="720" y1="1030.0" x2="720" y2="1070" stroke="#1e293b" stroke-width="2.2"/>
+<text x="736" y="1022.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="start" font-weight="700">100nF</text>
+<text x="736" y="1040.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="12" fill="#64748b" text-anchor="start" font-weight="500">C1</text>
+<line x1="720" y1="1070" x2="720" y2="1090" stroke="#1e293b" stroke-width="2.2"/>
+<text x="720" y="1166" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="middle" font-weight="normal">C1 紧靠 VCC 脚，回路 &lt; 5mm</text>
+<line x1="1180" y1="920" x2="1180" y2="1090" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1180" cy="920" r="4.2" fill="#4338ca"/>
+<text x="1190" y="960" font-family="Menlo, Monaco, Consolas, monospace" font-size="15" fill="#0f172a" text-anchor="start" font-weight="600">GND (3)</text>
+<line x1="1180" y1="1090" x2="1180" y2="1101.0" stroke="#1e293b" stroke-width="3.0"/>
+<line x1="1167.0" y1="1101.0" x2="1193.0" y2="1101.0" stroke="#1e293b" stroke-width="3.0"/>
+<line x1="1171.5" y1="1107.0" x2="1188.5" y2="1107.0" stroke="#1e293b" stroke-width="3.0"/>
+<line x1="1176.0" y1="1113.0" x2="1184.0" y2="1113.0" stroke="#1e293b" stroke-width="3.0"/>
+<text x="1180" y="1166" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="middle" font-weight="normal">所有 GND 脚必须接地</text>
+<line x1="720" y1="1090" x2="1180" y2="1090" stroke="#1e293b" stroke-width="2.2"/>
+<rect x="1330" y="622.0" width="200" height="236" rx="4" fill="#ecfdf5" stroke="#047857" stroke-width="2.8"/>
+<text x="1430.0" y="660.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="22" fill="#047857" text-anchor="middle" font-weight="700">J2</text>
+<text x="1430.0" y="684.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" fill="#0f172a" text-anchor="middle" font-weight="700">负载</text>
+<line x1="1346" y1="698.0" x2="1514" y2="698.0" stroke="#047857" stroke-width="1.2"/>
+<line x1="1330" y1="740.0" x2="1354" y2="740.0" stroke="#1e293b" stroke-width="2.2"/>
+<text x="1362" y="732.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="start" font-weight="600">Y (4)</text>
+<text x="1430.0" y="826.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="middle" font-weight="normal">推挽输出，可直接</text>
+<text x="1430.0" y="846.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="middle" font-weight="normal">驱动下级 CMOS 输入</text>
+<rect x="60" y="1200" width="420" height="122" rx="5" fill="#ecfdf5" stroke="#047857" stroke-width="1.8" stroke-dasharray="8 6"/>
+<text x="76" y="1226" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" text-anchor="start" font-weight="700">未用输入处理</text>
+<text x="76" y="1248" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">未用输入必须接 VCC 或 GND</text>
+<text x="76" y="1267" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">绝不可悬空：CMOS 栅极电流极小，</text>
+<text x="76" y="1286" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">悬空会在阈值附近振荡，</text>
+<text x="76" y="1305" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">增加功耗并使输出抖动。</text>
+<rect x="530" y="1200" width="420" height="103" rx="5" fill="#ecfdf5" stroke="#047857" stroke-width="1.8" stroke-dasharray="8 6"/>
+<text x="546" y="1226" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" text-anchor="start" font-weight="700">典型接法</text>
+<text x="546" y="1248" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VCC → 1.6 V to 5.5 V，GND → 0V；</text>
+<text x="546" y="1267" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">A/B 接 MCU 的 GPIO；</text>
+<text x="546" y="1286" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">Y 接后级使能 / 片选 / 数据线。</text>
+<rect x="530" y="1330" width="420" height="122" rx="5" fill="#eef2ff" stroke="#4338ca" stroke-width="1.8" stroke-dasharray="8 6"/>
+<text x="546" y="1356" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" text-anchor="start" font-weight="700">为什么需要输入缓冲</text>
+<text x="546" y="1378" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">长走线或边沿缓慢时，</text>
+<text x="546" y="1397" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">直接在远端加缓冲级，</text>
+<text x="546" y="1416" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">让信号源只驱动短距离，</text>
+<text x="546" y="1435" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">改善上升沿并降低串扰。</text>
+<rect x="530" y="1460" width="420" height="103" rx="5" fill="#f8fafc" stroke="#475569" stroke-width="1.8" stroke-dasharray="8 6"/>
+<text x="546" y="1486" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" text-anchor="start" font-weight="700">多余通道的处理</text>
+<text x="546" y="1508" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">多路封装中不用的通道：</text>
+<text x="546" y="1527" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">输入端接 VCC 或 GND，</text>
+<text x="546" y="1546" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">输出端悬空即可。</text>
+<rect x="1000" y="1200" width="440" height="122" rx="5" fill="#f1f5f9" stroke="#334155" stroke-width="1.8" stroke-dasharray="8 6"/>
+<text x="1016" y="1226" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" text-anchor="start" font-weight="700">输出端负载</text>
+<text x="1016" y="1248" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">推挽输出，静态电流极小；</text>
+<text x="1016" y="1267" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">但灌/拉电流有限（见③参数表），</text>
+<text x="1016" y="1286" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">带负载能力不足时应加</text>
+<text x="1016" y="1305" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">三极管或缓冲器驱动。</text>
+<rect x="1000" y="1390" width="440" height="103" rx="5" fill="#fffbeb" stroke="#a16207" stroke-width="1.8" stroke-dasharray="8 6"/>
+<text x="1016" y="1416" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" text-anchor="start" font-weight="700">关于本图数据</text>
+<text x="1016" y="1438" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">引脚定义、真值表、电气参数</text>
+<text x="1016" y="1457" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">与封装信息均照录规格书；</text>
+<text x="1016" y="1476" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">规格书未列出的项不做推测。</text>
+<rect x="1000" y="1580" width="440" height="122" rx="5" fill="#f5f3ff" stroke="#6d28d9" stroke-width="1.8" stroke-dasharray="8 6"/>
+<text x="1016" y="1606" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#0f172a" text-anchor="start" font-weight="700">扇出与级联</text>
+<text x="1016" y="1628" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">单门封装每片只提供一个</text>
+<text x="1016" y="1647" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">逻辑单元；需多路逻辑时</text>
+<text x="1016" y="1666" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">选多通道封装（如双/四门），</text>
+<text x="1016" y="1685" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">或用多颗拼接。</text>
+<rect x="1560" y="110" width="1384" height="1770" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="2.0"/>
+<text x="1580" y="150" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#0f172a" text-anchor="start" font-weight="700">① 引脚定义（Pin Description）</text>
+<line x1="1580" y1="162" x2="2100" y2="162" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="1574.0" y="164" width="520.0" height="28" rx="0" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<text x="1586.0" y="184" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">符号</text>
+<text x="1704.0" y="184" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">引脚号</text>
+<text x="1776.0" y="184" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">功能</text>
+<text x="1586.0" y="216" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">nc</text>
+<text x="1704.0" y="216" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">1</text>
+<text x="1586.0" y="240" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">A</text>
+<text x="1704.0" y="240" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">2</text>
+<rect x="1574.0" y="246" width="520.0" height="24" rx="0" fill="#eef2f7" stroke="none" stroke-width="0"/>
+<text x="1586.0" y="264" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">GND</text>
+<text x="1704.0" y="264" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">3</text>
+<rect x="1574.0" y="270" width="520.0" height="24" rx="0" fill="#eef2f7" stroke="none" stroke-width="0"/>
+<text x="1586.0" y="288" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">VCC</text>
+<text x="1704.0" y="288" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">5</text>
+<text x="1586.0" y="312" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">Y</text>
+<text x="1704.0" y="312" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">4</text>
+<text x="1586" y="346" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">封装 DFN0.8x0.8-5L</text>
+<text x="1586" y="365" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">工作电压 1.6 V to 5.5 V</text>
+<text x="1586" y="384" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">工作温度 -40 °C to +125 °C</text>
+<text x="2110" y="150" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#0f172a" text-anchor="start" font-weight="700">② 真值表（Truth Table）</text>
+<line x1="2110" y1="162" x2="2560" y2="162" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="2104" y="170" width="450" height="26" rx="0" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<text x="2118" y="188" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">Input</text>
+<text x="2333.0" y="188" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">Output</text>
+<rect x="2104" y="187" width="450" height="23" rx="0" fill="#eef2ff" stroke="none" stroke-width="0"/>
+<text x="2118" y="204" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">Input</text>
+<text x="2333.0" y="204" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">Output</text>
+<text x="2118" y="228" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">A</text>
+<text x="2333.0" y="228" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">Y</text>
+<rect x="2104" y="235" width="450" height="23" rx="0" fill="#eef2ff" stroke="none" stroke-width="0"/>
+<text x="2118" y="252" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">L</text>
+<text x="2333.0" y="252" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">L</text>
+<text x="2118" y="276" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">H</text>
+<text x="2333.0" y="276" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">H</text>
+<text x="2600" y="150" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#0f172a" text-anchor="start" font-weight="700">③ ③ 关键电气参数</text>
+<line x1="2600" y1="162" x2="2944" y2="162" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="2604" y="180" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">静态电平</text>
+<text x="2610" y="200" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VIH HIGH-level input vol…</text>
+<text x="2940" y="200" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">min=1.0 V</text>
+<text x="2610" y="222" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VIH HIGH-level input vol…</text>
+<text x="2940" y="222" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">min=1.03 V</text>
+<text x="2610" y="244" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VIH HIGH-level input vol…</text>
+<text x="2940" y="244" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">min=1.18 V</text>
+<text x="2610" y="266" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VIH HIGH-level input vol…</text>
+<text x="2940" y="266" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">min=1.25 V</text>
+<text x="2610" y="288" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VIH HIGH-level input vol…</text>
+<text x="2940" y="288" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">min=1.41 V</text>
+<text x="2610" y="310" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VIH HIGH-level input vol…</text>
+<text x="2940" y="310" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">min=1.49 V</text>
+<text x="2610" y="332" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VIH HIGH-level input vol…</text>
+<text x="2940" y="332" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">min=2.03 V</text>
+<text x="2610" y="354" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VIH HIGH-level input vol…</text>
+<text x="2940" y="354" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">min=2.11 V</text>
+<text x="2610" y="376" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VIL LOW-level input volt…</text>
+<text x="2940" y="376" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">max=0.49 V</text>
+<text x="2610" y="398" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="start" font-weight="normal">…本组另有 17 项，见规格书</text>
+<text x="1580" y="680" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#0f172a" text-anchor="start" font-weight="700">④ 封装引脚图</text>
+<line x1="1580" y1="692" x2="2100" y2="692" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="1584" y="718" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#0f172a" text-anchor="start" font-weight="700">DFN0.8x0.8-5L</text>
+<text x="1584" y="742" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">引脚数 5</text>
+<rect x="1584" y="776" width="300" height="300" rx="0" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+<rect x="1624" y="806" width="220" height="240" rx="3" fill="#ffffff" stroke="#0f172a" stroke-width="2.0"/>
+<text x="1734.0" y="932.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="700">顶视图</text>
+<circle cx="1624" cy="806" r="5.0" fill="#b91c1c"/>
+<rect x="1598.0" y="881.0" width="24" height="10" rx="0" fill="#94a3b8" stroke="none" stroke-width="0"/>
+<text x="1610.0" y="890.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">1</text>
+<rect x="1598.0" y="961.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="1610.0" y="970.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">2</text>
+<rect x="1722.0" y="1048.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="1734.0" y="1070.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">3</text>
+<rect x="1846.0" y="921.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="1858.0" y="930.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">4</text>
+<rect x="1722.0" y="794.0" width="24" height="10" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="1734.0" y="790.0" font-family="Menlo, Monaco, Consolas, monospace" font-size="10" fill="#0f172a" text-anchor="middle" font-weight="700">5</text>
+<text x="1734.0" y="1102" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b" text-anchor="middle" font-weight="normal">QFN/DFN：逆时针均分四边</text>
+<text x="1734.0" y="1060" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#475569" text-anchor="middle" font-weight="normal">灰色 = NC（1 脚，不接）</text>
+<text x="1584" y="1130" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">引脚编号：左上起 1，逆时针</text>
+<text x="1584" y="1150" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">封装 DFN0.8x0.8-5L</text>
+<text x="1580" y="1180" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#0f172a" text-anchor="start" font-weight="700">⑤ 典型拓扑与本图位置</text>
+<line x1="1580" y1="1192" x2="2100" y2="1192" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="1576" y="1194" width="520" height="62" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.8"/>
+<text x="1584" y="1212" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#16a34a" text-anchor="start" font-weight="700">① 源端切换</text>
+<text x="1584" y="1232" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" text-anchor="start" font-weight="normal">COM 接 Sink，A / B 接两个源</text>
+<text x="1584" y="1250" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="normal">本图：① 源端切换</text>
+<rect x="1576" y="1264" width="520" height="62" rx="4" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.8"/>
+<text x="1584" y="1282" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#1d4ed8" text-anchor="start" font-weight="700">② Sink 端切换</text>
+<text x="1584" y="1302" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" text-anchor="start" font-weight="normal">COM 接源，A / B 接两个 Sink</text>
+<text x="1584" y="1320" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="normal">本图：① 源端切换</text>
+<rect x="1576" y="1334" width="520" height="62" rx="4" fill="#faf5ff" stroke="#7c3aed" stroke-width="1.8"/>
+<text x="1584" y="1352" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#7c3aed" text-anchor="start" font-weight="700">③ 串接复用</text>
+<text x="1584" y="1372" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" text-anchor="start" font-weight="normal">多颗级联做更多路切换</text>
+<text x="1584" y="1390" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="normal">本图：① 源端切换</text>
+<text x="1584" y="1426" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="normal">1 组差分通道，2:1 无源双向</text>
+<line x1="56" y1="1934" x2="2936" y2="1934" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="56" y="1964" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="26" fill="#0f172a" text-anchor="start" font-weight="700">设计要点 / Design Notes</text>
+<text x="56" y="2006" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 1  去耦电容</text>
+<text x="56" y="2030" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">EM74LV1T34GX 为高扇出 CMOS 逻辑，DFN0.8x0.8-5L 封装引脚密集，VCC 脚必须就近放 100nF 去耦电容，回路面积尽量小；VCC 与 GND 不要共用过孔，多个 VCC 脚全部接上</text>
+<text x="56" y="2056" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">。</text>
+<text x="1556" y="2006" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 2  未使用输入</text>
+<text x="1556" y="2030" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">所有未用输入引脚必须固定到 VCC 或 GND，绝不能悬空。悬空输入会在阈值附近来回抖动，造成额外动态功耗与输出不确定。</text>
+<text x="56" y="2216" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 3  电平匹配</text>
+<text x="56" y="2240" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">输入 / 输出电平与 VCC 同域（1.6 V to 5.5 V）。若上游为 3.3V 而 VCC 供 5V，须确认该型号具备 5V 耐受，否则改用混压系列（如 AHC 的 5V 容忍输入）或降 VCC 至 3.3V。</text>
+<text x="1556" y="2216" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 4  未用输出</text>
+<text x="1556" y="2240" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">未用的输出引脚保持悬空即可（推挽输出不会因悬空产生额外电流），但不要把多个器件的输出直接并联驱动同一网络。</text>
+<text x="56" y="2426" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 5  NC 脚不接</text>
+<text x="56" y="2450" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">本封装含 NC 脚：nc（1）。NC = No Connect，内部无连接，必须保持悬空 —— 不要接地、不要接 VCC、也不要当作备用输入。（NC 脚已列在 ① 引脚表与 ④ 封装图，主电路图</text>
+<text x="56" y="2476" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">中不出现。）</text>
+<text x="1556" y="2426" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 6  电源与地</text>
+<text x="1556" y="2450" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">VCC 与 GND 的走线要宽、回路要短。多颗器件共用电源时，在电源入口处加一颗 10µF 储能电容，每颗芯片旁各配 100nF。</text>
+<line x1="56" y1="2944" x2="2944" y2="2944" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="56" y="2972" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#64748b" text-anchor="start" font-weight="normal">芯祥科技 EM74LV1T34GX · 同相缓冲器 · DFN0.8x0.8-5L</text>
+<text x="2944" y="2972" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#64748b" text-anchor="end" font-weight="normal">数据来源：EM74LV1T34_Product_DS_V1.0.pdf — 引脚 / 真值表 / 参数均照录</text>
+</svg>

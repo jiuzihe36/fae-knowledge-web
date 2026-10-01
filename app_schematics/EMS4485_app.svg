@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="3000" viewBox="0 0 3000 3000">
+<rect x="0" y="0" width="3000" height="3000" rx="0" fill="#ffffff" stroke="none" stroke-width="0"/>
+<rect x="0" y="0" width="3000" height="100" rx="0" fill="#0f172a" stroke="none" stroke-width="0"/>
+<text x="56" y="50" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="40" fill="#ffffff" text-anchor="start" font-weight="700">EMS4485 典型应用电路</text>
+<text x="56" y="84" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#93c5fd" text-anchor="start" font-weight="500">USB Type-C 模拟音频开关 · WLCSP-25L · 未标注(仅绝对最大-0.5~5.5V)</text>
+<text x="2944" y="50" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24" fill="#ffffff" text-anchor="end" font-weight="600">Type-C 耳机/USB 通路切换（I2C 配置）</text>
+<text x="2944" y="84" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="20" fill="#94a3b8" text-anchor="end" font-weight="normal">依据 EMS4485_Draft_DS_V0.9.pdf</text>
+<rect x="60" y="480" width="300" height="420" rx="6" fill="#ecfdf5" stroke="#047857" stroke-width="2.8"/>
+<text x="210.0" y="520" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" fill="#047857" text-anchor="middle" font-weight="700">J1  Type-C</text>
+<line x1="76" y1="536" x2="344" y2="536" stroke="#047857" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="210.0" y="572" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14.5" fill="#0f172a" text-anchor="middle" font-weight="600">系统侧 USB2.0</text>
+<text x="210.0" y="598" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="Menlo, Monaco, Consolas, monospace">DP1 / DN1 / DP2 / DN2</text>
+<text x="210.0" y="626" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="Menlo, Monaco, Consolas, monospace">SBU1_H / SBU2_H</text>
+<text x="210.0" y="664" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="normal">CC_IN 配件检测</text>
+<text x="210.0" y="860" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="middle" font-weight="normal">需 OVP 时外加保护</text>
+<rect x="1340" y="480" width="190" height="420" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.8"/>
+<text x="1435.0" y="520" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="19" fill="#16a34a" text-anchor="middle" font-weight="700">J2  耳机座</text>
+<line x1="1356" y1="536" x2="1514" y2="536" stroke="#16a34a" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="1435.0" y="572" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14.5" fill="#0f172a" text-anchor="middle" font-weight="600">模拟音频输出</text>
+<text x="1435.0" y="600" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" text-anchor="middle" font-weight="Menlo, Monaco, Consolas, monospace">R / L / MIC</text>
+<text x="1435.0" y="636" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" text-anchor="middle" font-weight="Menlo, Monaco, Consolas, monospace">SBU1 / SBU2</text>
+<text x="1435.0" y="664" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#475569" text-anchor="middle" font-weight="Menlo, Monaco, Consolas, monospace">GSBU1 / GSBU2</text>
+<text x="1435.0" y="860" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" text-anchor="middle" font-weight="normal">AGND1 / AGND2 单点接地</text>
+<rect x="660" y="420" width="640" height="640" rx="6" fill="#eef2ff" stroke="#4338ca" stroke-width="3.0"/>
+<text x="980.0" y="464" font-family="Menlo, Monaco, Consolas, monospace" font-size="22" fill="#4338ca" text-anchor="middle" font-weight="700">U1</text>
+<text x="980.0" y="500" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="29" fill="#0f172a" text-anchor="middle" font-weight="700">EMS4485</text>
+<text x="980.0" y="526" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#64748b" text-anchor="middle" font-weight="normal">USB Type-C 模拟音频开关 · WLCSP-25L</text>
+<line x1="686" y1="546" x2="1274" y2="546" stroke="#4338ca" stroke-width="1.4" stroke-dasharray="6 5"/>
+<text x="684" y="576" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#4338ca" text-anchor="start" font-weight="700">USB2.0 通路</text>
+<text x="1276" y="576" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">DP/R 差分与共用线</text>
+<text x="684" y="618" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#4338ca" text-anchor="start" font-weight="700">模拟音频</text>
+<text x="1276" y="618" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">R / L / MIC</text>
+<text x="684" y="660" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#4338ca" text-anchor="start" font-weight="700">SBU 侧带</text>
+<text x="1276" y="660" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">含 GSBU 星形接地感知</text>
+<text x="684" y="702" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#4338ca" text-anchor="start" font-weight="700">控制与检测</text>
+<text x="1276" y="702" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="end" font-weight="normal">SCL / SDA / INT / DET / CC_IN</text>
+<text x="684" y="964" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#4338ca" text-anchor="start" font-weight="700">电源与地</text>
+<line x1="360" y1="580" x2="660" y2="580" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="660" cy="580" r="3.6" fill="#6d28d9"/>
+<line x1="1300" y1="610" x2="1340" y2="610" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1300" cy="610" r="3.6" fill="#16a34a"/>
+<line x1="360" y1="640" x2="660" y2="640" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="660" cy="640" r="3.6" fill="#6d28d9"/>
+<line x1="1300" y1="670" x2="1340" y2="670" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1300" cy="670" r="3.6" fill="#16a34a"/>
+<line x1="360" y1="700" x2="660" y2="700" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="660" cy="700" r="3.6" fill="#6d28d9"/>
+<line x1="1300" y1="730" x2="1340" y2="730" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1300" cy="730" r="3.6" fill="#16a34a"/>
+<line x1="360" y1="760" x2="660" y2="760" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="660" cy="760" r="3.6" fill="#6d28d9"/>
+<line x1="1300" y1="790" x2="1340" y2="790" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="1300" cy="790" r="3.6" fill="#16a34a"/>
+<rect x="60" y="1680" width="900" height="200" rx="6" fill="#f5f3ff" stroke="#6d28d9" stroke-width="2.8"/>
+<text x="510" y="1720" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="20" fill="#6d28d9" text-anchor="middle" font-weight="700">U_P  主控 MCU（I2C 主机）</text>
+<line x1="80" y1="1736" x2="940" y2="1736" stroke="#6d28d9" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="120" y="1780" font-family="Menlo, Monaco, Consolas, monospace" font-size="15" fill="#0f172a" text-anchor="start" font-weight="600">SCL  → 时钟</text>
+<text x="420" y="1780" font-family="Menlo, Monaco, Consolas, monospace" font-size="15" fill="#0f172a" text-anchor="start" font-weight="600">SDA  → 数据</text>
+<text x="720" y="1780" font-family="Menlo, Monaco, Consolas, monospace" font-size="15" fill="#0f172a" text-anchor="start" font-weight="600">INT  ← 开漏中断，低有效</text>
+<text x="510" y="1826" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#64748b" text-anchor="middle" font-weight="normal">本器件由 I2C 寄存器配置（规格书见寄存器表），</text>
+<text x="510" y="1852" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" fill="#b91c1c" text-anchor="middle" font-weight="normal">无独立逻辑真值表 —— 功能由寄存器决定。</text>
+<line x1="120" y1="1680" x2="120" y2="1560" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="120" y1="1560" x2="780" y2="1560" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="780" y1="1560" x2="780" y2="1060" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="780" cy="1060" r="4.0" fill="#4338ca"/>
+<line x1="420" y1="1680" x2="420" y2="1560" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="420" y1="1560" x2="840" y2="1560" stroke="#1e293b" stroke-width="2.2"/>
+<line x1="840" y1="1560" x2="840" y2="1060" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="840" cy="1060" r="4.0" fill="#4338ca"/>
+<rect x="1560" y="110" width="1384" height="1770" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="2.0"/>
+<text x="1580" y="150" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#0f172a" text-anchor="start" font-weight="700">① 引脚定义（Pin Description）</text>
+<line x1="1580" y1="162" x2="2100" y2="162" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="1574.0" y="164" width="260.0" height="28" rx="0" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<text x="1586.0" y="184" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">符号</text>
+<text x="1704.0" y="184" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">引脚号</text>
+<text x="1776.0" y="184" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">功能</text>
+<text x="1586.0" y="216" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">A5</text>
+<text x="1704.0" y="216" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">VCC</text>
+<text x="1586.0" y="240" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">B5</text>
+<text x="1704.0" y="240" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">GND</text>
+<text x="1586.0" y="264" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D5</text>
+<text x="1704.0" y="264" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">DP_R</text>
+<text x="1586.0" y="288" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D4</text>
+<text x="1704.0" y="288" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">DN_L</text>
+<text x="1586.0" y="312" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">C5</text>
+<text x="1704.0" y="312" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">R</text>
+<text x="1586.0" y="336" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">C4</text>
+<text x="1704.0" y="336" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">L</text>
+<text x="1586.0" y="360" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">C1</text>
+<text x="1704.0" y="360" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">MIC</text>
+<text x="1586.0" y="384" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">E2</text>
+<text x="1704.0" y="384" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">SENSE</text>
+<text x="1586.0" y="408" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">C3</text>
+<text x="1704.0" y="408" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">INT/CMPOUT</text>
+<text x="1586.0" y="432" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D2</text>
+<text x="1704.0" y="432" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">CC_IN</text>
+<text x="1586.0" y="456" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">C2</text>
+<text x="1704.0" y="456" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">DET/CMPIN</text>
+<text x="1586.0" y="480" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D3</text>
+<text x="1704.0" y="480" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">SCL</text>
+<text x="1586.0" y="504" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">E3</text>
+<text x="1704.0" y="504" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">SDA</text>
+<rect x="1834.0" y="164" width="260.0" height="28" rx="0" fill="#e2e8f0" stroke="none" stroke-width="0"/>
+<text x="1846.0" y="184" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">符号</text>
+<text x="1964.0" y="184" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">引脚号</text>
+<text x="2036.0" y="184" font-family="Menlo, Monaco, Consolas, monospace" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">功能</text>
+<text x="1846.0" y="216" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">E5</text>
+<text x="1964.0" y="216" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">DP1</text>
+<text x="1846.0" y="240" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">E4</text>
+<text x="1964.0" y="240" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">DN1</text>
+<text x="1846.0" y="264" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">A3</text>
+<text x="1964.0" y="264" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">SBU1</text>
+<text x="1846.0" y="288" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">B3</text>
+<text x="1964.0" y="288" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">AGND1</text>
+<text x="1846.0" y="312" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">D1</text>
+<text x="1964.0" y="312" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">GSBU1</text>
+<text x="1846.0" y="336" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">A1</text>
+<text x="1964.0" y="336" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">SBU1_H</text>
+<text x="1846.0" y="360" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">A2</text>
+<text x="1964.0" y="360" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">SBU2</text>
+<text x="1846.0" y="384" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">B2</text>
+<text x="1964.0" y="384" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">AGND2</text>
+<text x="1846.0" y="408" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">E1</text>
+<text x="1964.0" y="408" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">GSBU2</text>
+<text x="1846.0" y="432" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">B1</text>
+<text x="1964.0" y="432" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">SBU2_H</text>
+<text x="1846.0" y="456" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">A4</text>
+<text x="1964.0" y="456" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">DP2</text>
+<text x="1846.0" y="480" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">B4</text>
+<text x="1964.0" y="480" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="start" font-weight="600">DN2</text>
+<text x="1586" y="538" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">封装 WLCSP-25L</text>
+<text x="1586" y="557" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">工作电压 未标注(仅绝对最大-0.5~5.5V)</text>
+<text x="1586" y="576" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">工作温度 -40 °C to +85 °C</text>
+<text x="2110" y="150" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#0f172a" text-anchor="start" font-weight="700">③ ③ 关键电气参数</text>
+<line x1="2110" y1="162" x2="2560" y2="162" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="2114" y="180" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">推荐工作</text>
+<text x="2120" y="200" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VCC VCC Supply voltage</text>
+<text x="2556" y="200" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">min=3; max=4.5 V</text>
+<text x="2120" y="222" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VCC VCC Supply voltage from VCC</text>
+<text x="2556" y="222" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">min=-0.5; max=5.5 V</text>
+<text x="2114" y="254" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">静态电平</text>
+<text x="2120" y="274" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VIL VIL Input voltage low</text>
+<text x="2556" y="274" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">0.3 V</text>
+<text x="2114" y="306" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#4338ca" text-anchor="start" font-weight="700">其他参数</text>
+<text x="2120" y="326" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VCC VCC_IN VCC_IN, to GND</text>
+<text x="2556" y="326" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">min=-0.5; max=20 V</text>
+<text x="2120" y="348" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VCC VSW_Audio VL to GND, VR to G…</text>
+<text x="2556" y="348" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">min=-3.3; max=5.5 V</text>
+<text x="2120" y="370" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VCC VSW_C VDP_R to GND, VDN_L to…</text>
+<text x="2556" y="370" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">min=-3.3; max=16 V</text>
+<text x="2120" y="392" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VCC VSW_UART VDP2 to GND, VDN2 t…</text>
+<text x="2556" y="392" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">min=-0.3; max=5.5 V</text>
+<text x="2120" y="414" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#475569" text-anchor="start" font-weight="normal">VCC VSW_USB VDP1 to GND, VDN1 to…</text>
+<text x="2556" y="414" font-family="Menlo, Monaco, Consolas, monospace" font-size="12.5" fill="#0f172a" text-anchor="end" font-weight="600">min=-0.3; max=5.5 V</text>
+<text x="2120" y="436" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="start" font-weight="normal">…本组另有 1 项，见规格书</text>
+<text x="2600" y="150" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#0f172a" text-anchor="start" font-weight="700">④ 封装引脚图</text>
+<line x1="2600" y1="162" x2="2944" y2="162" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="2604" y="188" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#0f172a" text-anchor="start" font-weight="700">WLCSP-25L</text>
+<text x="2604" y="212" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">引脚数 25</text>
+<rect x="2604" y="246" width="250" height="250" rx="0" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+<rect x="2634" y="270" width="190" height="202" rx="3" fill="#ffffff" stroke="#0f172a" stroke-width="2.0"/>
+<text x="2729.0" y="367.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="middle" font-weight="700">球阵封装</text>
+<text x="2729.0" y="389.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle" font-weight="normal">脚位见 ① 引脚表</text>
+<text x="2729.0" y="409.0" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle" font-weight="normal">（无球位坐标数据）</text>
+<text x="2729.0" y="462" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="#475569" text-anchor="middle" font-weight="normal">脚 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 规格书未给出</text>
+<text x="2604" y="550" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">引脚编号：左上起 1，逆时针</text>
+<text x="2604" y="570" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="start" font-weight="normal">封装 WLCSP-25L</text>
+<text x="1580" y="780" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#0f172a" text-anchor="start" font-weight="700">② 真值表（规格书未给出）</text>
+<line x1="1580" y1="792" x2="2944" y2="792" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="1586" y="826" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b" text-anchor="start" font-weight="normal">规格书未给出真值表</text>
+<text x="1580" y="1560" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#0f172a" text-anchor="start" font-weight="700">⑤ 典型拓扑与本图位置</text>
+<line x1="1580" y1="1572" x2="2944" y2="1572" stroke="#94a3b8" stroke-width="1.6"/>
+<rect x="1576" y="1574" width="1364" height="62" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.8"/>
+<text x="1584" y="1592" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#16a34a" text-anchor="start" font-weight="700">① 源端切换</text>
+<text x="1584" y="1612" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" text-anchor="start" font-weight="normal">COM 接 Sink，A / B 接两个源</text>
+<text x="1584" y="1630" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="normal">本图：① 源端切换</text>
+<rect x="1576" y="1644" width="1364" height="62" rx="4" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.8"/>
+<text x="1584" y="1662" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#1d4ed8" text-anchor="start" font-weight="700">② Sink 端切换</text>
+<text x="1584" y="1682" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" text-anchor="start" font-weight="normal">COM 接源，A / B 接两个 Sink</text>
+<text x="1584" y="1700" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="normal">本图：① 源端切换</text>
+<rect x="1576" y="1714" width="1364" height="62" rx="4" fill="#faf5ff" stroke="#7c3aed" stroke-width="1.8"/>
+<text x="1584" y="1732" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13.5" fill="#7c3aed" text-anchor="start" font-weight="700">③ 串接复用</text>
+<text x="1584" y="1752" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#475569" text-anchor="start" font-weight="normal">多颗级联做更多路切换</text>
+<text x="1584" y="1770" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="normal">本图：① 源端切换</text>
+<text x="1584" y="1806" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="normal">1 组差分通道，2:1 无源双向</text>
+<line x1="56" y1="1934" x2="2936" y2="1934" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="56" y="1964" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="26" fill="#0f172a" text-anchor="start" font-weight="700">设计要点 / Design Notes</text>
+<text x="56" y="2006" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 1  I2C 配置而非真值表</text>
+<text x="56" y="2030" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">本器件的功能由 I2C 寄存器位决定（规格书 0x12h 等寄存器表），没有逻辑真值表。上电后须先完成寄存器配置，音频与 USB 通路才处于预期状态。</text>
+<text x="1556" y="2006" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 2  开漏中断脚</text>
+<text x="1556" y="2030" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">INT/CMPOUT 为开漏输出且低有效，必须外接上拉电阻到 VCC；INT 与 CMPOUT 复用同一脚，由 0x12h bit[4] 选择输出类型，配置前要确认。</text>
+<text x="56" y="2216" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 3  地的处理</text>
+<text x="56" y="2240" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">AGND1 / AGND2 / SENSE / GND 要按规格书做模拟地与数字地的星形连接，SENSE 是模拟地回流感知，不能与模拟地就近短接。</text>
+<text x="1556" y="2216" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 4  模拟音频走线</text>
+<text x="1556" y="2240" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">R / L / MIC 为模拟音频，走线要远离 USB2.0 高速对与 SCL/SDA 时钟线，两侧用地保护线包络，避免数字噪声串入可闻频段。</text>
+<text x="56" y="2426" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 5  通路与保护</text>
+<text x="56" y="2450" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">DP1/DN1、DP2/DN2 为两组 USB2.0 通路，DP_R/DN_L 为音频/数据共用线；Type-C 侧需按系统要求评估 OVP 与 ESD（规格书未给出该值时按系统级要求选取）。</text>
+<text x="1556" y="2426" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#0f172a" text-anchor="start" font-weight="700">注 6  数据来源</text>
+<text x="1556" y="2450" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">引脚（球位↔信号名）与封装信息均照录规格书 EMS4485_Draft_DS_V0.9.pdf；该规格书未给出真值表，图上如实标注，未做任何推测。</text>
+<line x1="56" y1="2944" x2="2944" y2="2944" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="56" y="2972" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#64748b" text-anchor="start" font-weight="normal">芯祥科技 EMS4485 · USB Type-C 模拟音频开关 · WLCSP-25L</text>
+<text x="2944" y="2972" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" fill="#64748b" text-anchor="end" font-weight="normal">数据来源：EMS4485_Draft_DS_V0.9.pdf — 引脚 / 封装均照录，规格书未给出真值表</text>
+</svg>

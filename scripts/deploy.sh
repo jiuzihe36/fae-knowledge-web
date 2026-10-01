@@ -38,7 +38,8 @@ trap 'rm -rf "$PUB"' EXIT
 echo "📦 构造发布目录 $PUB"
 
 # 站点资源目录（代码里实际引用的：./circuits/ ./data/ ./datasheets/）
-for d in datasheets pins_webp pins circuits data; do
+# 应用电路图已按需求下线 (2026-09-30)：circuits/ 不再随站点发布
+for d in datasheets pins_webp pins data; do
   [ -d "$DIR/$d" ] && rsync -a --exclude '.DS_Store' "$DIR/$d/" "$PUB/$d/"
 done
 
