@@ -1,10 +1,16 @@
-/* 应用电路图画廊 —— 双入口共用：
-   - index.html（SPA 标签）：unified.js 在切换到 gallery 页时调用 window.__gallery.mount(host)
+/* 应用电路图画廊 —— 与「技术文档」同款列表布局。双入口共用：
+   - index.html（SPA 标签）：unified.js 切到 gallery 页时调用 window.__gallery.mount(host)
    - gallery.html（独立页）：文档中没有 #pageBody 时自动挂载到 #galhost
    数据只拉一次（模块级缓存），二次打开秒开；搜索词/筛选状态跨切换保留。 */
 (function () {
   var products = null, funcs = null, pending = null;
   var state = { k: "", f: "" };
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"]/g, function (ch) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch];
+    });
+  }
 
   function ensureData() {
     if (!pending) {
@@ -22,19 +28,21 @@
     return pending;
   }
 
-  function card(p) {
+  function row(p) {
     var a = document.createElement("a");
-    a.className = "card";
+    a.className = "doc-row";
     a.href = "./index.html?model=" + encodeURIComponent(p.model);
     a.innerHTML =
-      '<div class="thumb"><img loading="lazy" alt="' + p.model +
-      ' 应用原理图" src="./app_schematics/' + encodeURIComponent(p.model) + '_app.svg"></div>' +
-      '<div class="meta"><div class="m">' + p.model + '</div>' +
-      '<div class="d"><b>' + (p.function || "—") + '</b> · ' + (p.package || "—") + '</div>' +
-      '<div class="d"><a class="raw" href="./app_schematics/' + encodeURIComponent(p.model) +
-      '_app.svg" target="_blank" onclick="event.stopPropagation()">看原图 →</a></div></div>';
+      '<span class="doc-pn">' + esc(p.model) + '</span>' +
+      '<span class="doc-fn">' + esc(p.function || "—") + '</span>' +
+      '<span class="doc-pk">' + esc(p.package || "—") + '</span>' +
+      '<span class="doc-raw">原图 →</span>';
+    /* 整行 → 产品详情；点「原图」→ 新标签直接看 SVG */
     a.addEventListener("click", function (e) {
-      if (e.target.closest("a.raw")) e.preventDefault();
+      if (e.target.closest(".doc-raw")) {
+        e.preventDefault();
+        window.open("./app_schematics/" + encodeURIComponent(p.model) + "_app.svg", "_blank");
+      }
     });
     return a;
   }
@@ -43,12 +51,16 @@
     if (!host) return;
     host.classList.add("gal");
     host.innerHTML =
-      '<div class="bar">' +
-      '  <input id="q" type="search" placeholder="搜索型号 / 功能，如 EM74HC138、译码、电平转换">' +
-      '  <select id="ff"><option value="">全部功能</option></select>' +
-      '  <span class="cnt" id="cnt"></span>' +
+      '<div class="doc-sticky">' +
+      '  <div class="doc-tools">' +
+      '    <input id="q" class="page-search" type="search" placeholder="搜索型号 / 功能 / 封装，如 EM74HC138、译码、电平转换">' +
+      '    <select id="ff"><option value="">全部功能</option></select>' +
+      '    <span class="count-pill" id="cnt">—</span>' +
+      '  </div>' +
+      '  <div class="doc-head"><span class="doc-th">型号</span><span class="doc-th">功能</span>' +
+      '    <span class="doc-th">封装</span><span class="doc-th">图纸</span></div>' +
       '</div>' +
-      '<div id="root"></div>' +
+      '<div class="doc-list" id="root"></div>' +
       '<div class="empty" id="none" style="display:none">没有匹配的型号</div>';
 
     var root = host.querySelector("#root"),
@@ -66,26 +78,13 @@
         return (p.model || "").toUpperCase().indexOf(k) >= 0 ||
                (p.function || "").toUpperCase().indexOf(k) >= 0 ||
                (p.package || "").toUpperCase().indexOf(k) >= 0;
+      }).slice().sort(function (a, b) {
+        return (a.model || "").localeCompare(b.model || "");
       });
-      /* 按功能分组：审图时一次看同一类画法 */
-      var groups = {}, order = [];
-      list.forEach(function (p) {
-        var g = p.function || "其它";
-        if (!groups[g]) { groups[g] = []; order.push(g); }
-        groups[g].push(p);
-      });
+      var frag = document.createDocumentFragment();
+      list.forEach(function (p) { frag.appendChild(row(p)); });
       root.innerHTML = "";
-      order.sort(function (a, b) { return groups[b].length - groups[a].length; });
-      order.forEach(function (g) {
-        var h = document.createElement("div");
-        h.className = "grp";
-        h.innerHTML = "<h2>" + g + "</h2><span>" + groups[g].length + " 款</span>";
-        root.appendChild(h);
-        var grid = document.createElement("div");
-        grid.className = "grid";
-        groups[g].forEach(function (p) { grid.appendChild(card(p)); });
-        root.appendChild(grid);
-      });
+      root.appendChild(frag);
       none.style.display = list.length ? "none" : "block";
       cnt.textContent = list.length + " / " + products.length + " 款";
     }
