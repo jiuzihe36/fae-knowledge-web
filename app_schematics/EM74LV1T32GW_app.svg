@@ -6,28 +6,27 @@
 <text x="56" y="84" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" fill="#93c5fd" text-anchor="start" font-weight="500">或门 · SOT353 · VCC 1.6 V to 5.5 V</text>
 <text x="2944" y="50" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24" fill="#ffffff" text-anchor="end" font-weight="600">单门逻辑应用电路（CMOS输入）</text>
 <text x="2944" y="84" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="20" fill="#94a3b8" text-anchor="end" font-weight="normal">依据 EM74LV1T32_Product_DS_V1.0.pdf</text>
-<rect x="110" y="624.8" width="250" height="230.4000000000001" rx="4" fill="#ecfdf5" stroke="#047857" stroke-width="2.8"/>
-<text x="235.0" y="662.8" font-family="Menlo, Monaco, Consolas, monospace" font-size="22" fill="#047857" text-anchor="middle" font-weight="700">J1</text>
-<text x="235.0" y="688.8" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" fill="#0f172a" text-anchor="middle" font-weight="700">输入源</text>
-<line x1="126" y1="702.8" x2="344" y2="702.8" stroke="#047857" stroke-width="1.2"/>
-<text x="340" y="700.8" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="end" font-weight="600">B (1)</text>
-<text x="340" y="779.2" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="end" font-weight="600">A (2)</text>
-<text x="235.0" y="825.2" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="middle" font-weight="normal">MCU / 传感器 / 上游逻辑输出</text>
+<rect x="110" y="616.4" width="250" height="247.20000000000005" rx="4" fill="#ecfdf5" stroke="#047857" stroke-width="2.8"/>
+<text x="235.0" y="654.4" font-family="Menlo, Monaco, Consolas, monospace" font-size="22" fill="#047857" text-anchor="middle" font-weight="700">J1</text>
+<text x="235.0" y="680.4" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" fill="#0f172a" text-anchor="middle" font-weight="700">输入源</text>
+<line x1="126" y1="694.4" x2="344" y2="694.4" stroke="#047857" stroke-width="1.2"/>
+<text x="340" y="692.4" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="end" font-weight="600">B (1)</text>
+<text x="340" y="787.6" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="end" font-weight="600">A (2)</text>
+<text x="235.0" y="833.6" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12.5" fill="#64748b" text-anchor="middle" font-weight="normal">MCU / 传感器 / 上游逻辑输出</text>
 <rect x="600" y="500" width="700" height="420" rx="6" fill="#eef2ff" stroke="#4338ca" stroke-width="3.0"/>
 <text x="950.0" y="544" font-family="Menlo, Monaco, Consolas, monospace" font-size="22" fill="#4338ca" text-anchor="middle" font-weight="700">U1</text>
 <text x="950.0" y="580" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="29" fill="#0f172a" text-anchor="middle" font-weight="700">EM74LV1T32GW</text>
 <text x="950.0" y="604" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle" font-weight="normal">或门</text>
 <text x="950.0" y="624" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11.5" fill="#64748b" text-anchor="middle" font-weight="normal">SOT353</text>
 <line x1="626" y1="642" x2="1274" y2="642" stroke="#4338ca" stroke-width="1.4" stroke-dasharray="6 5"/>
-<path d="M850,692.4 Q946.6,740.0 919.0,692.4 L919.0,787.6 Q946.6,740.0 919.0,787.6 Z" stroke="#0f172a" stroke-width="2.6" fill="#ffffff" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M919.0,692.4 Q1015.6,740.0 1080,740.0 Q1015.6,740.0 919.0,787.6 Z" stroke="#0f172a" stroke-width="2.6" fill="#ffffff" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M850,692.4 Q946.6,740.0 850,787.6 L1080,740.0 L850,692.4 Z" stroke="#0f172a" stroke-width="2.6" fill="#ffffff" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="950.0" y="850" font-family="PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#4338ca" text-anchor="middle" font-weight="700">或门</text>
-<line x1="360" y1="700.8" x2="850" y2="700.8" stroke="#1e293b" stroke-width="2.2"/>
-<circle cx="850" cy="700.8" r="4.0" fill="#4338ca"/>
-<text x="368" y="692.8" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="start" font-weight="600">B</text>
-<line x1="360" y1="779.2" x2="850" y2="779.2" stroke="#1e293b" stroke-width="2.2"/>
-<circle cx="850" cy="779.2" r="4.0" fill="#4338ca"/>
-<text x="368" y="771.2" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="start" font-weight="600">A</text>
+<line x1="360" y1="692.4" x2="850" y2="692.4" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="850" cy="692.4" r="4.0" fill="#4338ca"/>
+<text x="368" y="684.4" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="start" font-weight="600">B</text>
+<line x1="360" y1="787.6" x2="850" y2="787.6" stroke="#1e293b" stroke-width="2.2"/>
+<circle cx="850" cy="787.6" r="4.0" fill="#4338ca"/>
+<text x="368" y="779.6" font-family="Menlo, Monaco, Consolas, monospace" font-size="14" fill="#0f172a" text-anchor="start" font-weight="600">A</text>
 <line x1="1080" y1="740.0" x2="1300" y2="740.0" stroke="#1e293b" stroke-width="2.2"/>
 <line x1="1300" y1="740.0" x2="1330" y2="740.0" stroke="#1e293b" stroke-width="2.2"/>
 <circle cx="1300" cy="740.0" r="4.0" fill="#4338ca"/>
