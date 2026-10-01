@@ -53,21 +53,21 @@
     host.innerHTML =
       '<div class="doc-sticky">' +
       '  <div class="doc-tools">' +
-      '    <input id="q" class="page-search" type="search" placeholder="搜索型号 / 功能 / 封装，如 EM74HC138、译码、电平转换">' +
-      '    <select id="ff"><option value="">全部功能</option></select>' +
-      '    <span class="count-pill" id="cnt">—</span>' +
+      '    <input id="gal-q" class="page-search" type="search" placeholder="搜索型号 / 功能 / 封装，如 EM74HC138、译码、电平转换">' +
+      '    <select id="gal-ff"><option value="">全部功能</option></select>' +
+      '    <span class="count-pill" id="gal-cnt">—</span>' +
       '  </div>' +
       '  <div class="doc-head"><span class="doc-th">型号</span><span class="doc-th">功能</span>' +
       '    <span class="doc-th">封装</span><span class="doc-th">图纸</span></div>' +
       '</div>' +
-      '<div class="doc-list" id="root"></div>' +
-      '<div class="empty" id="none" style="display:none">没有匹配的型号</div>';
+      '<div class="doc-list" id="gal-root"></div>' +
+      '<div class="empty" id="gal-none" style="display:none">没有匹配的型号</div>';
 
-    var root = host.querySelector("#root"),
-        q = host.querySelector("#q"),
-        ff = host.querySelector("#ff"),
-        cnt = host.querySelector("#cnt"),
-        none = host.querySelector("#none");
+    var root = host.querySelector("#gal-root"),
+        q = host.querySelector("#gal-q"),
+        ff = host.querySelector("#gal-ff"),
+        cnt = host.querySelector("#gal-cnt"),
+        none = host.querySelector("#gal-none");
 
     function render() {
       if (!products) return;
