@@ -2495,11 +2495,3 @@ body { background: var(--bg); }
 .app-star::after { content: ""; position: absolute; inset: -8px; }
 /* 移动端型号列过长时换行而不是被裁掉 */
 .doc-row .doc-pn { min-width: 0; overflow-wrap: anywhere; }
-/* 回到顶部（长列表页滚动后出现） */
-.to-top { position: fixed; right: 22px; bottom: 26px; z-index: 32;
-  padding: 9px 14px; border: 1px solid var(--line); border-radius: 999px;
-  background: var(--panel); color: var(--ink); font-size: 13px; cursor: pointer;
-  box-shadow: var(--shadow); opacity: 0; transform: translateY(6px);
-  pointer-events: none; transition: opacity .18s ease, transform .18s ease; }
-.to-top.show { opacity: 1; transform: none; pointer-events: auto; }
-.to-top:hover { border-color: var(--accent); color: var(--accent); }
