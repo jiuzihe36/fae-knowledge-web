@@ -763,9 +763,21 @@
   var PAGES = { apps: null, docs: null, quality: null };
 
   function loadPage(name) {
+    if (name === 'gallery') { renderGalleryPage(); return; }   /* 应用电路图画廊：无 JSON，直接渲染 */
     var f = name === 'apps' ? 'apps.json' : name === 'docs' ? 'docs.json' : 'quality.json';
     if (PAGES[name]) { renderPage(name); return; }
     loadJson("./data/" + f).then(function (d) { PAGES[name] = d; renderPage(name); });
+  }
+
+  /* 应用电路图画廊标签：与其他栏目同款 pageShell 版式，卡片逻辑复用 gallery.js 的 __gallery.mount */
+  function renderGalleryPage() {
+    el.pageBody.innerHTML = pageShell(
+      "应用电路图",
+      "全系列完整原理图：引脚表 / 真值表 / 电气参数 / 封装图 · 点卡片看大图 · 数据照录规格书",
+      '<div id="galhost"></div>');
+    if (window.__gallery) {
+      window.__gallery.mount(document.getElementById("galhost"));
+    }
   }
 
   function pageShell(title, sub, body) {
@@ -1073,7 +1085,7 @@
     });
     /* 栏目页：面包屑给「返回产品目录」+ 当前栏目名 */
     if (el.crumb && name !== "catalog") {
-      var TITLES = { apps: "应用", docs: "技术文档", quality: "封装与可靠性" };
+      var TITLES = { apps: "应用", docs: "技术文档", quality: "封装与可靠性", gallery: "应用电路图" };
       el.crumb.innerHTML = '<a href="#" data-crumb-back="home">产品目录</a>' +
         '<span class="sep">/</span><b>' + esc(TITLES[name] || "") + "</b>";
     } else {
