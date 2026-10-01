@@ -988,9 +988,10 @@
 
   function filterDocs(q) {
     if (!PAGES.docs) return [];
-    var s = norm(q);
-    var list = !s ? PAGES.docs.items.slice() : PAGES.docs.items.filter(function (it) {
-      return norm(it.m + " " + it.fn + " " + it.se + " " + it.pk).indexOf(s) >= 0;
+    var terms = norm(q).split(/\s+/).filter(Boolean);      /* 多关键词 = 且 */
+    var list = !terms.length ? PAGES.docs.items.slice() : PAGES.docs.items.filter(function (it) {
+      var hay = norm(it.m + " " + it.fn + " " + it.se + " " + it.pk + " " + (it.v || "") + " " + (it.t || ""));
+      return terms.every(function (t) { return hay.indexOf(t) >= 0; });
     });
     return sortDocs(list);
   }
@@ -1037,16 +1038,13 @@
   function hl(text, kw) {
     var t = esc(text == null ? "" : text);
     if (!kw) return t;
-    var k = esc(kw);
-    if (!k) return t;
-    var out = "", low = t.toLowerCase(), lowk = k.toLowerCase(), i = 0;
-    while (true) {
-      var p = low.indexOf(lowk, i);
-      if (p < 0) { out += t.slice(i); break; }
-      out += t.slice(i, p) + '<mark class="doc-hl">' + t.slice(p, p + k.length) + "</mark>";
-      i = p + k.length;
-    }
-    return out;
+    var terms = String(kw).split(/\s+/).filter(Boolean).map(function (x) { return esc(x); });
+    if (!terms.length) return t;
+    terms.sort(function (a, b) { return b.length - a.length; });
+    var re = new RegExp("(" + terms.map(function (x) {
+      return x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    }).join("|") + ")", "gi");
+    return t.replace(re, '<mark class="doc-hl">$1</mark>');
   }
 
   function docRow(it, kw) {
@@ -1083,6 +1081,8 @@
     document.querySelectorAll(".band-in a").forEach(function (a) {
       a.classList.toggle("on", a.getAttribute("data-page") === name);
     });
+    var onA = document.querySelector(".band-in a.on");
+    if (onA && onA.scrollIntoView) onA.scrollIntoView({ inline: "nearest", block: "nearest" });
     /* 栏目页：面包屑给「返回产品目录」+ 当前栏目名 */
     if (el.crumb && name !== "catalog") {
       var TITLES = { apps: "应用", docs: "技术文档", quality: "封装与可靠性", gallery: "应用电路图" };
@@ -1221,9 +1221,38 @@
     bindTree();
     boot();
     setupBackToTop();
+    initDetailCollapse();
   }
 
   /* 回到顶部：目录树/栏目页滚动超过一屏时出现 */
+  /* 详情抽屉：区块折叠。窄屏默认只展开第一个可见区块，其余收起，减少长滚动 */
+  function initDetailCollapse() {
+    var panel = document.getElementById("detail");
+    if (!panel) return;
+    panel.addEventListener("click", function (e) {
+      var h = e.target.closest(".collapsible > h3");
+      if (!h || e.target.closest("a,button")) return;
+      h.parentElement.classList.toggle("collapsed");
+    });
+    function apply() {
+      var secs = panel.querySelectorAll(".collapsible");
+      if (window.innerWidth > 720) {                       /* 桌面：全部展开 */
+        secs.forEach(function (s) { s.classList.remove("collapsed"); });
+        return;
+      }
+      var first = null;
+      secs.forEach(function (s) {
+        if (s.classList.contains("hidden")) return;
+        if (!first) { first = s; s.classList.remove("collapsed"); return; }
+        s.classList.add("collapsed");
+      });
+    }
+    var obs = new MutationObserver(function () {
+      if (!panel.classList.contains("hidden")) apply();
+    });
+    obs.observe(panel, { attributes: true, attributeFilter: ["class"] });
+  }
+
   function setupBackToTop() {
     var btn = document.getElementById("toTop");
     if (!btn) return;
