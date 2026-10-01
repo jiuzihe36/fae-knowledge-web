@@ -1251,6 +1251,12 @@
       if (!panel.classList.contains("hidden")) apply();
     });
     obs.observe(panel, { attributes: true, attributeFilter: ["class"] });
+    apply();                     /* 深链/已打开：注册时立刻应用一次（观察器不会补发） */
+    var rt = null;
+    window.addEventListener("resize", function () {   /* 旋屏/拉窗口时重算 */
+      clearTimeout(rt);
+      rt = setTimeout(apply, 150);
+    });
   }
 
   function setupBackToTop() {
