@@ -1225,7 +1225,9 @@
   }
 
   /* 回到顶部：目录树/栏目页滚动超过一屏时出现 */
-  /* 详情抽屉：区块折叠。窄屏默认只展开第一个可见区块，其余收起，减少长滚动 */
+  /* 详情抽屉：区块折叠。窄屏默认只展开第一个可见区块，其余收起，减少长滚动。
+     注意：不要用 subtree 观察 class —— 自己改 class 会再次触发观察，页面会卡死；
+     改为「打开时定时重算几次」的安全写法，且 apply 幂等（无变化就不改，避免回环）。 */
   function initDetailCollapse() {
     var panel = document.getElementById("detail");
     if (!panel) return;
@@ -1236,29 +1238,28 @@
     });
     function apply() {
       var secs = panel.querySelectorAll(".collapsible");
-      if (window.innerWidth > 720) {                       /* 桌面：全部展开 */
-        secs.forEach(function (s) { s.classList.remove("collapsed"); });
-        return;
-      }
-      var first = null;
+      var vis = [];
+      secs.forEach(function (s) { if (!s.classList.contains("hidden")) vis.push(s); });
+      /* 只有窄屏且可见区块多于一个时才收起后面的 */
+      var narrow = window.innerWidth <= 720 && vis.length > 1;
       secs.forEach(function (s) {
-        if (s.classList.contains("hidden")) return;
-        if (!first) { first = s; s.classList.remove("collapsed"); return; }
-        s.classList.add("collapsed");
+        var idx = vis.indexOf(s);
+        var want = narrow && idx > 0;
+        if (s.classList.contains("collapsed") !== want) s.classList.toggle("collapsed", want);
       });
     }
+    var timers = [];
+    function schedule() {
+      timers.forEach(clearTimeout);
+      timers = [setTimeout(apply, 60), setTimeout(apply, 350), setTimeout(apply, 900)];
+    }
     var obs = new MutationObserver(function () {
-      if (!panel.classList.contains("hidden")) apply();
+      if (!panel.classList.contains("hidden")) schedule();
+      else { timers.forEach(clearTimeout); }
     });
-    /* 子树也要看：图片区块是抽屉打开后才从 hidden 变为可见的，
-       只盯抽屉本身会在它们可见之前就算完，导致窄屏默认不出收起效果 */
-    obs.observe(panel, { attributes: true, attributeFilter: ["class"], subtree: true });
-    apply();                     /* 深链/已打开：注册时立刻应用一次（观察器不会补发） */
-    var rt = null;
-    window.addEventListener("resize", function () {   /* 旋屏/拉窗口时重算 */
-      clearTimeout(rt);
-      rt = setTimeout(apply, 150);
-    });
+    obs.observe(panel, { attributes: true, attributeFilter: ["class"] });
+    schedule();                                   /* 深链/已打开：立刻也算一次 */
+    window.addEventListener("resize", schedule);  /* 旋屏 / 拉窗口 */
   }
 
   function setupBackToTop() {
