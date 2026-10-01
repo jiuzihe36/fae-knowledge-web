@@ -44,7 +44,7 @@ for d in datasheets pins_webp pins data app_schematics; do
 done
 
 # 根文件（HTML/JS/CSS/图标，排除调试脚本）
-for f in index.html gallery.html app.js unified.js theme-init.js style.css favicon.svg apple-touch-icon.png og-cover.png; do
+for f in index.html gallery.html gallery.js app.js unified.js theme-init.js style.css favicon.svg apple-touch-icon.png og-cover.png; do
   [ -f "$DIR/$f" ] && cp "$DIR/$f" "$PUB/"
 done
 
