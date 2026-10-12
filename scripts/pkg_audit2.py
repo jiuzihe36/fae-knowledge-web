@@ -55,7 +55,7 @@ def main():
     print(f'PDF 总数: {len(pdfs)}', flush=True)
 
     web = {}
-    prod = json.load(open(os.path.expanduser('~/fae-knowledge-web/data/products.json'), encoding='utf-8'))
+    prod = json.load(open(os.path.expanduser('~/项目/站点/fae-knowledge-web/data/products.json'), encoding='utf-8'))
     for x in prod:
         web.setdefault(x['model'], []).append((x.get('package'), x.get('package_size')))
 

@@ -50,7 +50,7 @@ def main():
         stem = m.group(1) if m else pdf
         desc = t.split('||')[1].strip() if '||' in t else ''
         pdf_desc[stem] = desc
-    data = json.load(open('/Users/hu/fae-knowledge-web/data/products.json', encoding='utf-8'))
+    data = json.load(open('/Users/hu/项目/站点/fae-knowledge-web/data/products.json', encoding='utf-8'))
     SUFFIX = re.compile(r'(GV|GW|GX|GS|GM|DRL|PW|RGY|RSA|UD|MS|RSW|DRC|DRB|YFC|YFQ|YFG|MSV|RSV|N|Q|D)$')
     def base(m):
         return SUFFIX.sub('', m or '')
@@ -85,7 +85,7 @@ def main():
                 n_fix += 1
     print('标记' + str(n_flag) + '条' + ('，已修复' + str(n_fix) if apply else '（预览，未写回）'), flush=True)
     if apply:
-        json.dump(data, open('/Users/hu/fae-knowledge-web/data/products.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        json.dump(data, open('/Users/hu/项目/站点/fae-knowledge-web/data/products.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 
 if __name__ == '__main__':
     main()

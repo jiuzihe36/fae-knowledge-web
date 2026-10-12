@@ -1959,7 +1959,7 @@ body { background: var(--bg); }
 /* 表头：对齐 doc-row 栅格，滚动时吸顶悬浮 */
 .doc-head {
   display: grid;
-  grid-template-columns: minmax(0,1.9fr) minmax(0,1.1fr) minmax(0,.85fr) minmax(0,1.05fr) minmax(0,1.15fr) minmax(0,1.25fr) minmax(0,.9fr) minmax(0,1.4fr);
+  grid-template-columns: minmax(0,1.9fr) minmax(0,1.05fr) minmax(0,.7fr) minmax(0,1fr) minmax(0,1.05fr) minmax(0,1.15fr) minmax(0,.75fr) minmax(0,.65fr) minmax(0,1fr) minmax(0,1.2fr);
   gap: 10px; align-items: center;
   padding: 10px 14px; background: var(--ti-head-bg);
   border-bottom: 1px solid var(--ti-line);
@@ -1986,7 +1986,7 @@ body { background: var(--bg); }
 
 .doc-row {
   display: grid;
-  grid-template-columns: minmax(0,1.9fr) minmax(0,1.1fr) minmax(0,.85fr) minmax(0,1.05fr) minmax(0,1.15fr) minmax(0,1.25fr) minmax(0,.9fr) minmax(0,1.4fr);
+  grid-template-columns: minmax(0,1.9fr) minmax(0,1.05fr) minmax(0,.7fr) minmax(0,1fr) minmax(0,1.05fr) minmax(0,1.15fr) minmax(0,.75fr) minmax(0,.65fr) minmax(0,1fr) minmax(0,1.2fr);
   gap: 10px; align-items: center; width: 100%;
   padding: 11px 14px; border: 0; border-bottom: 1px solid var(--ti-line-soft);
   background: none; cursor: pointer; text-align: left; font: inherit; font-size: 13px;
@@ -2003,7 +2003,30 @@ body { background: var(--bg); }
   color: var(--muted); font-size: 11.5px;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
+/* 规格书最新版本号 / 该版本发布日期（照录规格书修订记录，不推测） */
+.doc-dv {
+  color: var(--ti-link); font-weight: 600; font-size: 12.5px;
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.doc-dd {
+  color: var(--muted); font-size: 12px;
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis;
+}
 .doc-badges { display: flex; gap: 6px; }
+/* 中窄屏（561–980px）：10 列在 820px 上会把封装/温度挤成省略号（改动前 820px 无截断，
+   不能倒退）。版本与更新日期是本轮新增的关键列，优先保它们 —— 收敛信息量最低的
+   系列 / 工作电压 / 工艺 三列，并把栅格同步收敛成 7 轨（隐藏列不占轨，不重定义就会串列）。 */
+@media (max-width: 980px) and (min-width: 561px) {
+  .doc-head, .doc-row {
+    grid-template-columns: minmax(0,1.9fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.05fr) minmax(0,.65fr) minmax(0,1.15fr) minmax(0,1.2fr);
+    gap: 8px;
+  }
+  .doc-se, .doc-v, .doc-lt { display: none; }
+  /* 表头 span 顺序同 DOC_COLS：1型号 2功能 3系列 4封装 5电压 6温度 7工艺 8版本 9更新日期 10文档 */
+  .doc-th:nth-child(3), .doc-th:nth-child(5), .doc-th:nth-child(7) { display: none; }
+  .doc-dd { font-size: 11.5px; }
+}
 .dbadge {
   font-size: 11px; padding: 2px 8px; border-radius: 999px;
   background: var(--soft); color: var(--muted);
@@ -2170,10 +2193,11 @@ body { background: var(--bg); }
     gap: 6px !important;
     padding-inline: 10px !important;
   }
-  .doc-se, .doc-v, .doc-t, .doc-lt { display: none !important; }
-  /* 表头 span 顺序同 DOC_COLS：1型号 2功能 3系列 4封装 5电压 6温度 7工艺 8文档 */
+  .doc-se, .doc-v, .doc-t, .doc-lt, .doc-dv, .doc-dd { display: none !important; }
+  /* 表头 span 顺序同 DOC_COLS：1型号 2功能 3系列 4封装 5电压 6温度 7工艺 8版本 9更新日期 10文档 */
   .doc-th:nth-child(3), .doc-th:nth-child(5),
-  .doc-th:nth-child(6), .doc-th:nth-child(7) { display: none !important; }
+  .doc-th:nth-child(6), .doc-th:nth-child(7),
+  .doc-th:nth-child(8), .doc-th:nth-child(9) { display: none !important; }
   .doc-fn { font-size: 12px; }
   .doc-pk { font-size: 11.5px; }
   .page-search { width: 100%; }

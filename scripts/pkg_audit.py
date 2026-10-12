@@ -46,7 +46,7 @@ def main():
     pdfs = sorted(glob.glob(LOGIC + '/*.pdf') + glob.glob(ANALOG + '/*.pdf'))
     pdfs = [p for p in pdfs if os.path.basename(p) != '.DS_Store']
     print(f'PDF总数: {len(pdfs)}', flush=True)
-    d = json.load(open(os.path.expanduser('~/fae-knowledge-web/data/products.json'), encoding='utf-8'))
+    d = json.load(open(os.path.expanduser('~/项目/站点/fae-knowledge-web/data/products.json'), encoding='utf-8'))
     web = {}
     for x in d:
         web.setdefault(x['model'], []).append((x.get('package'), x.get('package_size')))

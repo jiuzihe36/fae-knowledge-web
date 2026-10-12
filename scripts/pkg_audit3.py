@@ -93,7 +93,7 @@ def main():
     pdfs = [p for p in pdfs if not p.endswith('.DS_Store')]
     print(f'PDF 总数: {len(pdfs)}', flush=True)
 
-    prod = json.load(open(os.path.expanduser('~/fae-knowledge-web/data/products.json'), encoding='utf-8'))
+    prod = json.load(open(os.path.expanduser('~/项目/站点/fae-knowledge-web/data/products.json'), encoding='utf-8'))
     web = {}
     for x in prod:
         web.setdefault(x['model'], []).append((x.get('package'), x.get('package_size')))

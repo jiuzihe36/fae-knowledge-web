@@ -19,8 +19,8 @@
  */
 const fs = require('fs');
 
-const JS = process.argv[2] || '/Users/hu/fae-knowledge-web/unified.js';
-const CAT = process.argv[3] || '/Users/hu/fae-knowledge-web/data/catalog.json';
+const JS = process.argv[2] || '/Users/hu/项目/站点/fae-knowledge-web/unified.js';
+const CAT = process.argv[3] || '/Users/hu/项目/站点/fae-knowledge-web/data/catalog.json';
 const src = fs.readFileSync(JS, 'utf8');
 const cat = JSON.parse(fs.readFileSync(CAT, 'utf8'));
 

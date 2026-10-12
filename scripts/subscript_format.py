@@ -59,7 +59,7 @@ def sub_value(text):
     return s
 
 def main():
-    p = '/Users/hu/fae-knowledge-web/data/products.json'
+    p = '/Users/hu/项目/站点/fae-knowledge-web/data/products.json'
     d = json.load(open(p, encoding='utf-8'))
     n = 0
     for x in d:

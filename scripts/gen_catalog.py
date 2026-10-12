@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 生成主页产品目录树：三大类 → 功能 → 系列 → 型号
-输出: ~/fae-knowledge-web/data/catalog.json
+输出: ~/项目/站点/fae-knowledge-web/data/catalog.json
 结构:
 {
   "generated": "...",
@@ -23,7 +23,7 @@ from pathlib import Path
 from collections import OrderedDict, defaultdict
 from datetime import datetime
 
-WEB = Path('/Users/hu/fae-knowledge-web')
+WEB = Path('/Users/hu/项目/站点/fae-knowledge-web')
 prod = json.load(open(WEB / 'data' / 'products_lite.json'))
 
 ROUTE_ORDER = ['单路', '双路', '三路', '四路', '六路', '八路', '多路',

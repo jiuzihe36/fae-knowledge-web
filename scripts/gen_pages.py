@@ -10,7 +10,7 @@ import json, re
 from collections import Counter, defaultdict, OrderedDict
 from pathlib import Path
 
-W = Path('/Users/hu/fae-knowledge-web/data')
+W = Path('/Users/hu/项目/站点/fae-knowledge-web/data')
 prod = json.load(open(W / 'products.json', encoding='utf-8'))
 
 # ---------- ⓿ 电平转换器：按「几位」而非「几路」分组 ----------
@@ -50,16 +50,42 @@ for p in prod:
     if not pi:
         continue
     webp_path = pi.replace('/pins/', '/pins_webp/').replace('.png', '.webp')
-    disk = str(Path('/Users/hu/fae-knowledge-web') / webp_path.lstrip('./'))
+    disk = str(Path('/Users/hu/项目/站点/fae-knowledge-web') / webp_path.lstrip('./'))
     if Path(disk).exists():
         p.pop('pin_image_png', None)   # 不再保留 PNG 兜底（WebP 浏览器支持率 >97%）
         p['pin_image'] = webp_path
         _pin_ok += 1
 print(f'引脚图改 WebP: {_pin_ok} 款')
 
-# 落盘修正后的 products（保持缩进格式不变）
+# ---------- ⓿.5 规格书「最新版本号 + 该版本发布日期」注入 ----------
+# 数据来自 scripts/extract_ds_meta.py 逐份解析 datasheets/*.pdf 的修订记录表。
+# 详情抽屉与「技术文档」列表都读这两个字段（ds_ver / ds_date）。
+DS_META_PATH = W / 'ds_meta.json'
+DS_META = {}
+DS_STATS = {}
+if DS_META_PATH.exists():
+    _dm = json.load(open(DS_META_PATH, encoding='utf-8'))
+    DS_META = _dm.get('items', {})
+    DS_STATS = _dm.get('stats', {})
+_ds_hit = 0
+for p in prod:
+    _m = DS_META.get(p.get('source_label') or '')
+    if not _m or not _m.get('ver'):
+        p.pop('ds_ver', None)
+        p.pop('ds_date', None)
+        continue
+    p['ds_ver'] = 'V' + str(_m['ver'])
+    if _m.get('date'):
+        p['ds_date'] = _m['date']
+    _ds_hit += 1
+print(f'规格书版本注入: {_ds_hit} 款型号 ← {len(DS_META)} 份规格书（最新发布 {DS_STATS.get("latest_date")}）')
+
+# 落盘修正后的 products（沿用文件现有缩进风格：sync_from_wiki / clean_package_data 等
+# 都写 indent=1，这里若改成紧凑格式会让 products.json 每次同步产生 15 万行格式 diff）
+_p_txt = (W / 'products.json').read_text(encoding='utf-8') if (W / 'products.json').exists() else ''
+_p_indent = 1 if _p_txt.startswith('[\n ') else None
 json.dump(prod, open(W / 'products.json', 'w', encoding='utf-8'),
-          ensure_ascii=False, separators=(',', ':'))
+          ensure_ascii=False, indent=_p_indent, separators=None if _p_indent else (',', ':'))
 
 # ---------- ① 应用 ----------
 apps = defaultdict(list)
@@ -109,16 +135,23 @@ for p in prod:
              .replace('-40~85℃', '-40~+85℃').replace('-40~125℃', '-40~+125℃'),
         'lt': ('—' if '不适用' in (p.get('logic_type') or '') else (p.get('logic_type') or '')),
         'ps': p.get('package_size') or '',
+        # 规格书版本 / 该版本发布日期（照录规格书修订记录，供列表展示与排序）
+        'dv': p.get('ds_ver') or '',
+        'dd': p.get('ds_date') or '',
     }
     docs.append(rec)
 
 # 规格书文件实际存在性
-base = Path('/Users/hu/fae-knowledge-web')
+base = Path('/Users/hu/项目/站点/fae-knowledge-web')
 ds_dir = base / 'datasheets'
 doc_stats = {
     'total': len(docs),
     'with_ds': sum(1 for d in docs if d['ds']),
     'with_pin': sum(1 for d in docs if d['pin']),
+    'ds_files': DS_STATS.get('total', 0),
+    'ds_with_ver': DS_STATS.get('with_ver', 0),
+    'ds_with_date': DS_STATS.get('with_date', 0),
+    'ds_latest': DS_STATS.get('latest_date') or '',
 }
 json.dump({'generated': None, 'stats': doc_stats, 'items': docs},
           open(W / 'docs.json', 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))

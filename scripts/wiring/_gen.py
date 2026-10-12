@@ -9,8 +9,8 @@
 # 引脚100%来自 datasheet Pin description 表抽取。
 import fitz, json, os, re
 
-DS = '/Users/hu/fae-knowledge-web/datasheets'
-OUT = '/Users/hu/fae-knowledge-web/circuits'
+DS = '/Users/hu/项目/站点/fae-knowledge-web/datasheets'
+OUT = '/Users/hu/项目/站点/fae-knowledge-web/circuits'
 os.makedirs(OUT, exist_ok=True)
 
 BOX = (300, 130, 130, 240)          # x,y,w,h (盒中心 y=250)
@@ -393,7 +393,7 @@ def gen(model, pkg, pins, kind, func, volt, fd):
     return ''.join(s), None
 
 if __name__ == '__main__':
-    d = json.load(open('/Users/hu/fae-knowledge-web/data/products.json'))
+    d = json.load(open('/Users/hu/项目/站点/fae-knowledge-web/data/products.json'))
     prods = d if isinstance(d, list) else d.get('products', [])
     ok, bad = 0, []
     for m in ['EM74LVC00AD', 'EM74HC14D', 'EM74LVC245AD', 'EL3157GV']:

@@ -32,6 +32,24 @@ else
   echo "  (无 sync_from_wiki.py — 跳过重建, 沿用现有 products.json)"
 fi
 
+# 规格书「最新版本号 + 更新日期」：逐份解析 datasheets/*.pdf 的修订记录表
+# → data/ds_meta.json，再由 gen_pages.py 注入 products.json(ds_ver/ds_date)
+# 与 docs.json(dv/dd)。换新规格书 PDF 后本步自动跟随，无需手工维护。
+echo ""
+echo "📄 Step 1.2: 提取规格书版本/更新日期..."
+if [ -f "$DIR/scripts/extract_ds_meta.py" ]; then
+  python3 "$DIR/scripts/extract_ds_meta.py"
+else
+  echo "  (无 extract_ds_meta.py — 跳过规格书版本提取)"
+fi
+echo ""
+echo "🧩 Step 1.3: 重建栏目页数据 (apps/docs/quality + lite/specs)..."
+if [ -f "$DIR/scripts/gen_pages.py" ]; then
+  python3 "$DIR/scripts/gen_pages.py"
+else
+  echo "  (无 gen_pages.py — 跳过栏目页数据重建)"
+fi
+
 # P2P 替代数据已按需求彻底摘除（c479ea2：网页端不展示任何竞品信息）：
 # side-table(data/p2p_nxp.json、data/p2p_vcc.json)与 data/p2p.json 均已删除，
 # gen_p2p 步骤停用 —— 否则每次部署都会在对账处中止。

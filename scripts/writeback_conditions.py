@@ -36,7 +36,7 @@ def norm_sym(s):
 
 def main():
     raw = json.load(open('/tmp/conditions_raw.json', encoding='utf-8'))
-    p = '/Users/hu/fae-knowledge-web/data/products.json'
+    p = '/Users/hu/项目/站点/fae-knowledge-web/data/products.json'
     d = json.load(open(p, encoding='utf-8'))
     # 建索引：(symbol_norm, min, typ, max) -> conditions
     # 需先知道每个spec属于哪个PDF：用source_document_id映射？sid不可靠。

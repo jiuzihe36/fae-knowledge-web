@@ -248,7 +248,9 @@
   "applications_domains": [
    "通用模拟开关/多路复用"
   ],
-  "function_detail": "单路模拟开关"
+  "function_detail": "单路模拟开关",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-12"
  },
  {
   "id": 9392,
@@ -499,7 +501,9 @@
   "applications_domains": [
    "通用模拟开关/多路复用"
   ],
-  "function_detail": "单路模拟开关"
+  "function_detail": "单路模拟开关",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-12"
  },
  {
   "id": 9400,
@@ -711,7 +715,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与非门"
+  "function_detail": "单路2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9396,
@@ -923,7 +929,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与非门"
+  "function_detail": "单路2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9398,
@@ -1135,7 +1143,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与非门"
+  "function_detail": "单路2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9408,
@@ -1347,7 +1357,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或非门"
+  "function_detail": "单路2输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9404,
@@ -1559,7 +1571,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或非门"
+  "function_detail": "单路2输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9406,
@@ -1771,7 +1785,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或非门"
+  "function_detail": "单路2输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9418,
@@ -1983,7 +1999,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "反相器"
+  "function_detail": "反相器",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9414,
@@ -2195,7 +2213,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "反相器"
+  "function_detail": "反相器",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9416,
@@ -2407,7 +2427,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "反相器"
+  "function_detail": "反相器",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9426,
@@ -2621,7 +2643,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "反相器（开漏输出）"
+  "function_detail": "反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9422,
@@ -2835,7 +2859,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "反相器（开漏输出）"
+  "function_detail": "反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9424,
@@ -3049,7 +3075,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "反相器（开漏输出）"
+  "function_detail": "反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9434,
@@ -3263,7 +3291,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9430,
@@ -3477,7 +3507,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9432,
@@ -3691,7 +3723,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9442,
@@ -3910,7 +3944,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与门"
+  "function_detail": "单路2输入与门",
+  "ds_ver": "V1.5",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9438,
@@ -4129,7 +4165,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与门"
+  "function_detail": "单路2输入与门",
+  "ds_ver": "V1.5",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9440,
@@ -4348,7 +4386,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与门"
+  "function_detail": "单路2输入与门",
+  "ds_ver": "V1.5",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9450,
@@ -4562,7 +4602,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "双2输入与门（开漏输出）"
+  "function_detail": "双2输入与门（开漏输出）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9446,
@@ -4776,7 +4818,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "双2输入与门（开漏输出）"
+  "function_detail": "双2输入与门（开漏输出）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9448,
@@ -4990,7 +5034,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "双2输入与门（开漏输出）"
+  "function_detail": "双2输入与门（开漏输出）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9454,
@@ -5202,7 +5248,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入与门"
+  "function_detail": "单路3输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9456,
@@ -5414,7 +5462,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入与门"
+  "function_detail": "单路3输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9464,
@@ -5696,7 +5746,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9460,
@@ -5978,7 +6030,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9462,
@@ -6260,7 +6314,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9472,
@@ -6542,7 +6598,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9468,
@@ -6824,7 +6882,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9470,
@@ -7106,7 +7166,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9480,
@@ -7262,7 +7324,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "单路施密特反相器（施密特输入）"
+  "function_detail": "单路施密特反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-08-20"
  },
  {
   "id": 9476,
@@ -7418,7 +7482,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "单路施密特反相器（施密特输入）"
+  "function_detail": "单路施密特反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-08-20"
  },
  {
   "id": 9478,
@@ -7574,7 +7640,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "单路施密特反相器（施密特输入）"
+  "function_detail": "单路施密特反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-08-20"
  },
  {
   "id": 9488,
@@ -7786,7 +7854,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9484,
@@ -7998,7 +8068,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9486,
@@ -8210,7 +8282,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9496,
@@ -8366,7 +8440,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "单路缓冲器（施密特输入）"
+  "function_detail": "单路缓冲器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9492,
@@ -8522,7 +8598,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "单路缓冲器（施密特输入）"
+  "function_detail": "单路缓冲器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9494,
@@ -8678,7 +8756,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "单路缓冲器（施密特输入）"
+  "function_detail": "单路缓冲器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9500,
@@ -8939,7 +9019,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "单路反相器（三态输出）"
+  "function_detail": "单路反相器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2024-06-15"
  },
  {
   "id": 9502,
@@ -9200,7 +9282,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "单路反相器（三态输出）"
+  "function_detail": "单路反相器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2024-06-15"
  },
  {
   "id": 9512,
@@ -9412,7 +9496,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或门"
+  "function_detail": "单路2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9508,
@@ -9624,7 +9710,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或门"
+  "function_detail": "单路2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9510,
@@ -9836,7 +9924,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或门"
+  "function_detail": "单路2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9516,
@@ -10048,7 +10138,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入或门"
+  "function_detail": "单路3输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9518,
@@ -10260,7 +10352,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入或门"
+  "function_detail": "单路3输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9526,
@@ -10472,7 +10566,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "双路反相器"
+  "function_detail": "双路反相器",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9522,
@@ -10684,7 +10780,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "双路反相器"
+  "function_detail": "双路反相器",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9524,
@@ -10896,7 +10994,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "双路反相器"
+  "function_detail": "双路反相器",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9534,
@@ -11052,7 +11152,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "双路施密特反相器（施密特输入）"
+  "function_detail": "双路施密特反相器（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9530,
@@ -11208,7 +11310,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "双路施密特反相器（施密特输入）"
+  "function_detail": "双路施密特反相器（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9532,
@@ -11364,7 +11468,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "双路施密特反相器（施密特输入）"
+  "function_detail": "双路施密特反相器（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9542,
@@ -11576,7 +11682,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9538,
@@ -11788,7 +11896,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9540,
@@ -12000,7 +12110,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9550,
@@ -12212,7 +12324,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9546,
@@ -12424,7 +12538,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9548,
@@ -12636,7 +12752,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9401,
@@ -12848,7 +12966,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与非门"
+  "function_detail": "单路2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9397,
@@ -13060,7 +13180,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与非门"
+  "function_detail": "单路2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9399,
@@ -13272,7 +13394,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与非门"
+  "function_detail": "单路2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9409,
@@ -13484,7 +13608,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或非门"
+  "function_detail": "单路2输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9405,
@@ -13696,7 +13822,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或非门"
+  "function_detail": "单路2输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9407,
@@ -13908,7 +14036,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或非门"
+  "function_detail": "单路2输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9419,
@@ -14120,7 +14250,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "反相器"
+  "function_detail": "反相器",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9415,
@@ -14332,7 +14464,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "反相器"
+  "function_detail": "反相器",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9417,
@@ -14544,7 +14678,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "反相器"
+  "function_detail": "反相器",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9427,
@@ -14758,7 +14894,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "反相器（开漏输出）"
+  "function_detail": "反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9423,
@@ -14972,7 +15110,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "反相器（开漏输出）"
+  "function_detail": "反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9425,
@@ -15186,7 +15326,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "反相器（开漏输出）"
+  "function_detail": "反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9435,
@@ -15400,7 +15542,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9431,
@@ -15614,7 +15758,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9433,
@@ -15828,7 +15974,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9443,
@@ -16047,7 +16195,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与门"
+  "function_detail": "单路2输入与门",
+  "ds_ver": "V1.5",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9439,
@@ -16266,7 +16416,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与门"
+  "function_detail": "单路2输入与门",
+  "ds_ver": "V1.5",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9441,
@@ -16485,7 +16637,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与门"
+  "function_detail": "单路2输入与门",
+  "ds_ver": "V1.5",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9451,
@@ -16699,7 +16853,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "双2输入与门（开漏输出）"
+  "function_detail": "双2输入与门（开漏输出）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9447,
@@ -16913,7 +17069,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "双2输入与门（开漏输出）"
+  "function_detail": "双2输入与门（开漏输出）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9449,
@@ -17127,7 +17285,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "双2输入与门（开漏输出）"
+  "function_detail": "双2输入与门（开漏输出）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9455,
@@ -17339,7 +17499,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入与门"
+  "function_detail": "单路3输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9457,
@@ -17551,7 +17713,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入与门"
+  "function_detail": "单路3输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9465,
@@ -17833,7 +17997,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9461,
@@ -18115,7 +18281,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9463,
@@ -18397,7 +18565,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9473,
@@ -18679,7 +18849,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9469,
@@ -18961,7 +19133,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9471,
@@ -19243,7 +19417,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9481,
@@ -19399,7 +19575,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "单路施密特反相器（施密特输入）"
+  "function_detail": "单路施密特反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-08-20"
  },
  {
   "id": 9477,
@@ -19555,7 +19733,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "单路施密特反相器（施密特输入）"
+  "function_detail": "单路施密特反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-08-20"
  },
  {
   "id": 9479,
@@ -19711,7 +19891,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "单路施密特反相器（施密特输入）"
+  "function_detail": "单路施密特反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-08-20"
  },
  {
   "id": 9489,
@@ -19923,7 +20105,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9485,
@@ -20135,7 +20319,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9487,
@@ -20347,7 +20533,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9497,
@@ -20503,7 +20691,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "单路缓冲器（施密特输入）"
+  "function_detail": "单路缓冲器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9493,
@@ -20659,7 +20849,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "单路缓冲器（施密特输入）"
+  "function_detail": "单路缓冲器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9495,
@@ -20815,7 +21007,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "单路缓冲器（施密特输入）"
+  "function_detail": "单路缓冲器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9501,
@@ -21076,7 +21270,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "单路反相器（三态输出）"
+  "function_detail": "单路反相器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2024-06-15"
  },
  {
   "id": 9503,
@@ -21337,7 +21533,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "单路反相器（三态输出）"
+  "function_detail": "单路反相器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2024-06-15"
  },
  {
   "id": 9513,
@@ -21549,7 +21747,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或门"
+  "function_detail": "单路2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9509,
@@ -21761,7 +21961,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或门"
+  "function_detail": "单路2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9511,
@@ -21973,7 +22175,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或门"
+  "function_detail": "单路2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9517,
@@ -22185,7 +22389,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入或门"
+  "function_detail": "单路3输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9519,
@@ -22397,7 +22603,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入或门"
+  "function_detail": "单路3输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9527,
@@ -22609,7 +22817,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "双路反相器"
+  "function_detail": "双路反相器",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9523,
@@ -22821,7 +23031,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "双路反相器"
+  "function_detail": "双路反相器",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9525,
@@ -23033,7 +23245,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "双路反相器"
+  "function_detail": "双路反相器",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9535,
@@ -23189,7 +23403,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "双路施密特反相器（施密特输入）"
+  "function_detail": "双路施密特反相器（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9531,
@@ -23345,7 +23561,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "双路施密特反相器（施密特输入）"
+  "function_detail": "双路施密特反相器（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9533,
@@ -23501,7 +23719,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "双路施密特反相器（施密特输入）"
+  "function_detail": "双路施密特反相器（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9543,
@@ -23713,7 +23933,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9539,
@@ -23925,7 +24147,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9541,
@@ -24137,7 +24361,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9551,
@@ -24349,7 +24575,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9547,
@@ -24561,7 +24789,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9549,
@@ -24773,7 +25003,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-11"
  },
  {
   "id": 9556,
@@ -24947,7 +25179,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V0.1",
+  "ds_date": "2026-06-16"
  },
  {
   "id": 9555,
@@ -25121,7 +25355,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V0.1",
+  "ds_date": "2026-06-16"
  },
  {
   "id": 9553,
@@ -25295,7 +25531,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V0.1",
+  "ds_date": "2026-06-16"
  },
  {
   "id": 9554,
@@ -25469,7 +25707,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V0.1",
+  "ds_date": "2026-06-16"
  },
  {
   "id": 9557,
@@ -25643,7 +25883,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V0.1",
+  "ds_date": "2026-06-16"
  },
  {
   "id": 9559,
@@ -25894,7 +26136,9 @@
   "applications_domains": [
    "总线开关与隔离"
   ],
-  "function_detail": "四路模拟开关"
+  "function_detail": "四路模拟开关",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-01-30"
  },
  {
   "id": 9560,
@@ -26145,7 +26389,9 @@
   "applications_domains": [
    "总线开关与隔离"
   ],
-  "function_detail": "四路模拟开关"
+  "function_detail": "四路模拟开关",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-01-30"
  },
  {
   "id": 9562,
@@ -26284,7 +26530,9 @@
   "applications_domains": [
    "总线开关与隔离"
   ],
-  "function_detail": "四路总线开关"
+  "function_detail": "四路总线开关",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-28"
  },
  {
   "id": 9563,
@@ -26423,7 +26671,9 @@
   "applications_domains": [
    "总线开关与隔离"
   ],
-  "function_detail": "四路总线开关"
+  "function_detail": "四路总线开关",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-28"
  },
  {
   "id": 9565,
@@ -26562,7 +26812,9 @@
   "applications_domains": [
    "总线开关与隔离"
   ],
-  "function_detail": "四路总线开关"
+  "function_detail": "四路总线开关",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-29"
  },
  {
   "id": 9566,
@@ -26701,7 +26953,9 @@
   "applications_domains": [
    "总线开关与隔离"
   ],
-  "function_detail": "四路总线开关"
+  "function_detail": "四路总线开关",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-29"
  },
  {
   "id": 9568,
@@ -26868,7 +27122,9 @@
   "applications_domains": [
    "总线开关与隔离"
   ],
-  "function_detail": "双路多路复用器"
+  "function_detail": "双路多路复用器",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-07-02"
  },
  {
   "id": 9569,
@@ -27035,7 +27291,9 @@
   "applications_domains": [
    "总线开关与隔离"
   ],
-  "function_detail": "双路多路复用器"
+  "function_detail": "双路多路复用器",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-07-02"
  },
  {
   "id": 9571,
@@ -27202,7 +27460,9 @@
   "applications_domains": [
    "总线开关与隔离"
   ],
-  "function_detail": "四路多路复用器"
+  "function_detail": "四路多路复用器",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-03"
  },
  {
   "id": 9572,
@@ -27369,7 +27629,9 @@
   "applications_domains": [
    "总线开关与隔离"
   ],
-  "function_detail": "四路多路复用器"
+  "function_detail": "四路多路复用器",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-03"
  },
  {
   "id": 9660,
@@ -27644,7 +27906,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入与非门"
+  "function_detail": "四路2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9662,
@@ -27919,7 +28183,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入与非门"
+  "function_detail": "四路2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9667,
@@ -28194,7 +28460,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入或非门"
+  "function_detail": "四路2输入或非门",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9669,
@@ -28469,7 +28737,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入或非门"
+  "function_detail": "四路2输入或非门",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9674,
@@ -28716,7 +28986,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "四路2输入与非门（开漏输出、施密特输入）"
+  "function_detail": "四路2输入与非门（开漏输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9676,
@@ -28963,7 +29235,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "四路2输入与非门（开漏输出、施密特输入）"
+  "function_detail": "四路2输入与非门（开漏输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9680,
@@ -29238,7 +29512,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "六路反相器"
+  "function_detail": "六路反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9682,
@@ -29513,7 +29789,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "六路反相器"
+  "function_detail": "六路反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9686,
@@ -29760,7 +30038,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "六路反相器（开漏输出）"
+  "function_detail": "六路反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9688,
@@ -30007,7 +30287,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "六路反相器（开漏输出）"
+  "function_detail": "六路反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9692,
@@ -30254,7 +30536,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "六路反相器（开漏输出）"
+  "function_detail": "六路反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9694,
@@ -30501,7 +30785,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "六路反相器（开漏输出）"
+  "function_detail": "六路反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9698,
@@ -30748,7 +31034,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "六路缓冲器（开漏输出）"
+  "function_detail": "六路缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9700,
@@ -30995,7 +31283,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "六路缓冲器（开漏输出）"
+  "function_detail": "六路缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9705,
@@ -31270,7 +31560,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入与门"
+  "function_detail": "四路2输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9707,
@@ -31545,7 +31837,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入与门"
+  "function_detail": "四路2输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9711,
@@ -31792,7 +32086,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "四路2输入与门（开漏输出、施密特输入）"
+  "function_detail": "四路2输入与门（开漏输出、施密特输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2024-08-30"
  },
  {
   "id": 9713,
@@ -32039,7 +32335,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "四路2输入与门（开漏输出、施密特输入）"
+  "function_detail": "四路2输入与门（开漏输出、施密特输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2024-08-30"
  },
  {
   "id": 9718,
@@ -32314,7 +32612,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "三路3输入与非门"
+  "function_detail": "三路3输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9720,
@@ -32589,7 +32889,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "三路3输入与非门"
+  "function_detail": "三路3输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9725,
@@ -32864,7 +33166,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "三路3输入与门"
+  "function_detail": "三路3输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9727,
@@ -33139,7 +33443,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "三路3输入与门"
+  "function_detail": "三路3输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9731,
@@ -33512,7 +33818,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出、施密特输入）"
+  "function_detail": "四路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9733,
@@ -33885,7 +34193,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出、施密特输入）"
+  "function_detail": "四路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9737,
@@ -34258,7 +34568,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出、施密特输入）"
+  "function_detail": "四路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9739,
@@ -34631,7 +34943,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出、施密特输入）"
+  "function_detail": "四路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9743,
@@ -34897,7 +35211,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入与非门（施密特输入）"
+  "function_detail": "四路2输入与非门（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9745,
@@ -35163,7 +35479,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入与非门（施密特输入）"
+  "function_detail": "四路2输入与非门（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9749,
@@ -35527,7 +35845,9 @@
   "applications_domains": [
    "地址译码与片选"
   ],
-  "function_detail": "多路复用器"
+  "function_detail": "多路复用器",
+  "ds_ver": "V1.0",
+  "ds_date": "2024-09-24"
  },
  {
   "id": 9751,
@@ -35891,7 +36211,9 @@
   "applications_domains": [
    "地址译码与片选"
   ],
-  "function_detail": "多路复用器"
+  "function_detail": "多路复用器",
+  "ds_ver": "V1.0",
+  "ds_date": "2024-09-24"
  },
  {
   "id": 9755,
@@ -36157,7 +36479,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "六路施密特反相器（施密特输入）"
+  "function_detail": "六路施密特反相器（施密特输入）",
+  "ds_ver": "V1.4",
+  "ds_date": "2026-03-17"
  },
  {
   "id": 9757,
@@ -36423,7 +36747,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "六路施密特反相器（施密特输入）"
+  "function_detail": "六路施密特反相器（施密特输入）",
+  "ds_ver": "V1.4",
+  "ds_date": "2026-03-17"
  },
  {
   "id": 9574,
@@ -36789,7 +37115,9 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八移位寄存器"
+  "function_detail": "八移位寄存器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-06-15"
  },
  {
   "id": 9575,
@@ -37155,7 +37483,9 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八移位寄存器"
+  "function_detail": "八移位寄存器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-06-15"
  },
  {
   "id": 9577,
@@ -37535,7 +37865,9 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八移位寄存器"
+  "function_detail": "八移位寄存器",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-06-26"
  },
  {
   "id": 9578,
@@ -37915,7 +38247,9 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八移位寄存器"
+  "function_detail": "八移位寄存器",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-06-26"
  },
  {
   "id": 9580,
@@ -38281,7 +38615,9 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八移位寄存器"
+  "function_detail": "八移位寄存器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-10-10"
  },
  {
   "id": 9581,
@@ -38647,7 +38983,9 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八移位寄存器"
+  "function_detail": "八移位寄存器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-10-10"
  },
  {
   "id": 9762,
@@ -39031,7 +39369,9 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八移位寄存器"
+  "function_detail": "八移位寄存器",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-02-20"
  },
  {
   "id": 9764,
@@ -39415,7 +39755,9 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八移位寄存器"
+  "function_detail": "八移位寄存器",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-02-20"
  },
  {
   "id": 9768,
@@ -39820,7 +40162,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "六路触发器"
+  "function_detail": "六路触发器",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 9770,
@@ -40225,7 +40569,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "六路触发器"
+  "function_detail": "六路触发器",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 9775,
@@ -40566,7 +40912,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双路4输入与非门"
+  "function_detail": "双路4输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9777,
@@ -40907,7 +41255,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双路4输入与非门"
+  "function_detail": "双路4输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9782,
@@ -41248,7 +41598,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双路4输入与门"
+  "function_detail": "双路4输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9784,
@@ -41589,7 +41941,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双路4输入与门"
+  "function_detail": "双路4输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9788,
@@ -41979,7 +42333,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-20"
  },
  {
   "id": 9790,
@@ -42369,7 +42725,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-20"
  },
  {
   "id": 9794,
@@ -42759,7 +43117,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9796,
@@ -43149,7 +43509,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9800,
@@ -43533,7 +43895,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9802,
@@ -43917,7 +44281,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9806,
@@ -44287,7 +44653,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "八锁存器"
+  "function_detail": "八锁存器",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-04-28"
  },
  {
   "id": 9808,
@@ -44657,7 +45025,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "八锁存器"
+  "function_detail": "八锁存器",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-04-28"
  },
  {
   "id": 9812,
@@ -44976,7 +45346,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入异或非门（开漏输出、施密特输入）"
+  "function_detail": "四路2输入异或非门（开漏输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9814,
@@ -45295,7 +45667,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入异或非门（开漏输出、施密特输入）"
+  "function_detail": "四路2输入异或非门（开漏输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9819,
@@ -45636,7 +46010,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "三路3输入或非门"
+  "function_detail": "三路3输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9821,
@@ -45977,7 +46353,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "三路3输入或非门"
+  "function_detail": "三路3输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9825,
@@ -46318,7 +46696,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入或门"
+  "function_detail": "四路2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9827,
@@ -46659,7 +47039,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入或门"
+  "function_detail": "四路2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9831,
@@ -47032,7 +47414,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "六路缓冲器（三态输出、施密特输入）"
+  "function_detail": "六路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9833,
@@ -47405,7 +47789,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "六路缓冲器（三态输出、施密特输入）"
+  "function_detail": "六路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9838,
@@ -47778,7 +48164,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "六路缓冲器（三态输出）"
+  "function_detail": "六路缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9840,
@@ -48151,7 +48539,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "六路缓冲器（三态输出）"
+  "function_detail": "六路缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9844,
@@ -48524,7 +48914,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "六路缓冲器（三态输出、施密特输入）"
+  "function_detail": "六路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9846,
@@ -48897,7 +49289,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "六路缓冲器（三态输出、施密特输入）"
+  "function_detail": "六路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9851,
@@ -49270,7 +49664,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "六路缓冲器（三态输出）"
+  "function_detail": "六路缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9853,
@@ -49643,7 +50039,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "六路缓冲器（三态输出）"
+  "function_detail": "六路缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9857,
@@ -49984,7 +50382,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双路4输入或非门"
+  "function_detail": "双路4输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9859,
@@ -50325,7 +50725,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双路4输入或非门"
+  "function_detail": "双路4输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9863,
@@ -50666,7 +51068,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "三路3输入或门"
+  "function_detail": "三路3输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9865,
@@ -51007,7 +51411,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "三路3输入或门"
+  "function_detail": "三路3输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9869,
@@ -51419,7 +51825,9 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八与门"
+  "function_detail": "八与门",
+  "ds_ver": "V0.9",
+  "ds_date": "2024-10-11"
  },
  {
   "id": 9871,
@@ -51831,7 +52239,9 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八与门"
+  "function_detail": "八与门",
+  "ds_ver": "V0.9",
+  "ds_date": "2024-10-11"
  },
  {
   "id": 9875,
@@ -52203,7 +52613,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-11"
  },
  {
   "id": 9877,
@@ -52575,7 +52987,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-11"
  },
  {
   "id": 9881,
@@ -52947,7 +53361,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9883,
@@ -53319,7 +53735,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9887,
@@ -53752,7 +54170,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "八路锁存器（三态输出）"
+  "function_detail": "八路锁存器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 9889,
@@ -54185,7 +54605,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "八路锁存器（三态输出）"
+  "function_detail": "八路锁存器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 9893,
@@ -54597,7 +55019,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "八路触发器（三态输出）"
+  "function_detail": "八路触发器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 9897,
@@ -55009,7 +55433,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "八路D触发器（三态输出）"
+  "function_detail": "八路D触发器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 9895,
@@ -55421,7 +55847,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "八路触发器（三态输出）"
+  "function_detail": "八路触发器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 9583,
@@ -55773,7 +56201,9 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八移位寄存器"
+  "function_detail": "八移位寄存器",
+  "ds_ver": "V0.9",
+  "ds_date": "2024-08-20"
  },
  {
   "id": 9584,
@@ -56125,7 +56555,9 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八移位寄存器"
+  "function_detail": "八移位寄存器",
+  "ds_ver": "V0.9",
+  "ds_date": "2024-08-20"
  },
  {
   "id": 9586,
@@ -56444,7 +56876,9 @@
   "applications_domains": [
    "LED/数码管驱动"
   ],
-  "function_detail": "八移位寄存器（三态输出）"
+  "function_detail": "八移位寄存器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-06-07"
  },
  {
   "id": 9587,
@@ -56763,7 +57197,9 @@
   "applications_domains": [
    "LED/数码管驱动"
   ],
-  "function_detail": "八移位寄存器（三态输出）"
+  "function_detail": "八移位寄存器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-06-07"
  },
  {
   "id": 597,
@@ -57162,7 +57598,9 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八移位寄存器"
+  "function_detail": "八移位寄存器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-20"
  },
  {
   "id": 599,
@@ -57561,7 +57999,9 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八移位寄存器"
+  "function_detail": "八移位寄存器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-20"
  },
  {
   "id": 9913,
@@ -57827,7 +58267,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入与门（施密特输入）"
+  "function_detail": "四路2输入与门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9915,
@@ -58093,7 +58535,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入与门（施密特输入）"
+  "function_detail": "四路2输入与门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9919,
@@ -58359,7 +58803,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入或非门（施密特输入）"
+  "function_detail": "四路2输入或非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9921,
@@ -58625,7 +59071,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入或非门（施密特输入）"
+  "function_detail": "四路2输入或非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9925,
@@ -58891,7 +59339,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入或门（施密特输入）"
+  "function_detail": "四路2输入或门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9927,
@@ -59157,7 +59607,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入或门（施密特输入）"
+  "function_detail": "四路2输入或门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9931,
@@ -59498,7 +59950,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入异或非门"
+  "function_detail": "四路2输入异或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9933,
@@ -59839,7 +60293,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入异或非门"
+  "function_detail": "四路2输入异或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9937,
@@ -60179,7 +60635,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "双路触发器"
+  "function_detail": "双路触发器",
+  "ds_ver": "V1.2",
+  "ds_date": "2026-03-17"
  },
  {
   "id": 9939,
@@ -60519,7 +60977,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "双路触发器"
+  "function_detail": "双路触发器",
+  "ds_ver": "V1.2",
+  "ds_date": "2026-03-17"
  },
  {
   "id": 9943,
@@ -60860,7 +61320,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入或门"
+  "function_detail": "四路2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9945,
@@ -61201,7 +61663,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入或门"
+  "function_detail": "四路2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9589,
@@ -61394,7 +61858,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入与非门（施密特输入）"
+  "function_detail": "四路2输入与非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9590,
@@ -61587,7 +62053,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入与非门（施密特输入）"
+  "function_detail": "四路2输入与非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9592,
@@ -61780,7 +62248,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入或非门（施密特输入）"
+  "function_detail": "四路2输入或非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9593,
@@ -61973,7 +62443,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入或非门（施密特输入）"
+  "function_detail": "四路2输入或非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9595,
@@ -62140,7 +62612,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "四路2输入与非门（开漏输出、施密特输入）"
+  "function_detail": "四路2输入与非门（开漏输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9596,
@@ -62307,7 +62781,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "四路2输入与非门（开漏输出、施密特输入）"
+  "function_detail": "四路2输入与非门（开漏输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9598,
@@ -62500,7 +62976,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "六路反相器（施密特输入）"
+  "function_detail": "六路反相器（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9599,
@@ -62693,7 +63171,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "六路反相器（施密特输入）"
+  "function_detail": "六路反相器（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9601,
@@ -62860,7 +63340,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "六路反相器（开漏输出）"
+  "function_detail": "六路反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9602,
@@ -63027,7 +63509,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "六路反相器（开漏输出）"
+  "function_detail": "六路反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9604,
@@ -63220,7 +63704,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入与门（施密特输入）"
+  "function_detail": "四路2输入与门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9605,
@@ -63413,7 +63899,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入与门（施密特输入）"
+  "function_detail": "四路2输入与门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9607,
@@ -63580,7 +64068,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "四路2输入与门（开漏输出、施密特输入）"
+  "function_detail": "四路2输入与门（开漏输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9608,
@@ -63747,7 +64237,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "四路2输入与门（开漏输出、施密特输入）"
+  "function_detail": "四路2输入与门（开漏输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9610,
@@ -63940,7 +64432,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "三路3输入与非门（施密特输入）"
+  "function_detail": "三路3输入与非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9611,
@@ -64133,7 +64627,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "三路3输入与非门（施密特输入）"
+  "function_detail": "三路3输入与非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9613,
@@ -64326,7 +64822,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "三路3输入与门（施密特输入）"
+  "function_detail": "三路3输入与门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9614,
@@ -64519,7 +65017,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "三路3输入与门（施密特输入）"
+  "function_detail": "三路3输入与门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9616,
@@ -64763,7 +65263,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出、施密特输入）"
+  "function_detail": "四路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9617,
@@ -65007,7 +65509,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出、施密特输入）"
+  "function_detail": "四路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9619,
@@ -65251,7 +65755,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出、施密特输入）"
+  "function_detail": "四路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9620,
@@ -65495,7 +66001,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出、施密特输入）"
+  "function_detail": "四路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9622,
@@ -65688,7 +66196,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "双路4输入与非门（施密特输入）"
+  "function_detail": "双路4输入与非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9623,
@@ -65881,7 +66391,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "双路4输入与非门（施密特输入）"
+  "function_detail": "双路4输入与非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9625,
@@ -66074,7 +66586,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "双路4输入与门（施密特输入）"
+  "function_detail": "双路4输入与门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9626,
@@ -66267,7 +66781,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "双路4输入与门（施密特输入）"
+  "function_detail": "双路4输入与门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9628,
@@ -66434,7 +66950,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入异或非门（开漏输出、施密特输入）"
+  "function_detail": "四路2输入异或非门（开漏输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9629,
@@ -66601,7 +67119,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入异或非门（开漏输出、施密特输入）"
+  "function_detail": "四路2输入异或非门（开漏输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9631,
@@ -66794,7 +67314,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "三路3输入或非门（施密特输入）"
+  "function_detail": "三路3输入或非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9632,
@@ -66987,7 +67509,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "三路3输入或非门（施密特输入）"
+  "function_detail": "三路3输入或非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9634,
@@ -67180,7 +67704,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入或门（施密特输入）"
+  "function_detail": "四路2输入或门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9635,
@@ -67373,7 +67899,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入或门（施密特输入）"
+  "function_detail": "四路2输入或门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9637,
@@ -67617,7 +68145,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "六路缓冲器（三态输出、施密特输入）"
+  "function_detail": "六路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9638,
@@ -67861,7 +68391,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "六路缓冲器（三态输出、施密特输入）"
+  "function_detail": "六路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9640,
@@ -68105,7 +68637,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "六路缓冲器（三态输出、施密特输入）"
+  "function_detail": "六路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9641,
@@ -68349,7 +68883,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "六路缓冲器（三态输出、施密特输入）"
+  "function_detail": "六路缓冲器（三态输出、施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9643,
@@ -68542,7 +69078,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "三路3输入或门（施密特输入）"
+  "function_detail": "三路3输入或门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9644,
@@ -68735,7 +69273,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "三路3输入或门（施密特输入）"
+  "function_detail": "三路3输入或门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9646,
@@ -68928,7 +69468,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入异或非门（施密特输入）"
+  "function_detail": "四路2输入异或非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9647,
@@ -69121,7 +69663,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入异或非门（施密特输入）"
+  "function_detail": "四路2输入异或非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9649,
@@ -69314,7 +69858,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入或门（施密特输入）"
+  "function_detail": "四路2输入或门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9650,
@@ -69507,7 +70053,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入或门（施密特输入）"
+  "function_detail": "四路2输入或门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9661,
@@ -69782,7 +70330,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "四路2输入与非门（TTL输入）"
+  "function_detail": "四路2输入与非门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9663,
@@ -70057,7 +70607,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "四路2输入与非门（TTL输入）"
+  "function_detail": "四路2输入与非门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9668,
@@ -70332,7 +70884,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "四路2输入或非门（TTL输入）"
+  "function_detail": "四路2输入或非门（TTL输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9670,
@@ -70607,7 +71161,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "四路2输入或非门（TTL输入）"
+  "function_detail": "四路2输入或非门（TTL输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9675,
@@ -70854,7 +71410,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "四路2输入与非门（开漏输出、输入、TTL输入）"
+  "function_detail": "四路2输入与非门（开漏输出、输入、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9677,
@@ -71101,7 +71659,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "四路2输入与非门（开漏输出、输入、TTL输入）"
+  "function_detail": "四路2输入与非门（开漏输出、输入、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9681,
@@ -71376,7 +71936,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "六路反相器（TTL输入）"
+  "function_detail": "六路反相器（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9683,
@@ -71651,7 +72213,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "六路反相器（TTL输入）"
+  "function_detail": "六路反相器（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9687,
@@ -71898,7 +72462,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "六路反相器（开漏输出）"
+  "function_detail": "六路反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9689,
@@ -72145,7 +72711,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "六路反相器（开漏输出）"
+  "function_detail": "六路反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9693,
@@ -72392,7 +72960,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "六路反相器（开漏输出、TTL输入）"
+  "function_detail": "六路反相器（开漏输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9695,
@@ -72639,7 +73209,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "六路反相器（开漏输出、TTL输入）"
+  "function_detail": "六路反相器（开漏输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9699,
@@ -72886,7 +73458,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "六路缓冲器（开漏输出、TTL输入）"
+  "function_detail": "六路缓冲器（开漏输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9701,
@@ -73133,7 +73707,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "六路缓冲器（开漏输出、TTL输入）"
+  "function_detail": "六路缓冲器（开漏输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9706,
@@ -73408,7 +73984,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "四路2输入与门（TTL输入）"
+  "function_detail": "四路2输入与门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9708,
@@ -73683,7 +74261,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "四路2输入与门（TTL输入）"
+  "function_detail": "四路2输入与门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9712,
@@ -73930,7 +74510,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "四路2输入与门（开漏输出、输入、TTL输入）"
+  "function_detail": "四路2输入与门（开漏输出、输入、TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2024-08-30"
  },
  {
   "id": 9714,
@@ -74177,7 +74759,9 @@
   "applications_domains": [
    "开漏线与逻辑"
   ],
-  "function_detail": "四路2输入与门（开漏输出、输入、TTL输入）"
+  "function_detail": "四路2输入与门（开漏输出、输入、TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2024-08-30"
  },
  {
   "id": 9719,
@@ -74452,7 +75036,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "三路3输入与非门（TTL输入）"
+  "function_detail": "三路3输入与非门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9721,
@@ -74727,7 +75313,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "三路3输入与非门（TTL输入）"
+  "function_detail": "三路3输入与非门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9726,
@@ -75002,7 +75590,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "三路3输入与门（TTL输入）"
+  "function_detail": "三路3输入与门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9728,
@@ -75277,7 +75867,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "三路3输入与门（TTL输入）"
+  "function_detail": "三路3输入与门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9732,
@@ -75650,7 +76242,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出、输入、TTL输入）"
+  "function_detail": "四路缓冲器（三态输出、输入、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9734,
@@ -76023,7 +76617,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出、输入、TTL输入）"
+  "function_detail": "四路缓冲器（三态输出、输入、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9738,
@@ -76396,7 +76992,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出、输入、TTL输入）"
+  "function_detail": "四路缓冲器（三态输出、输入、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9740,
@@ -76769,7 +77367,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出、输入、TTL输入）"
+  "function_detail": "四路缓冲器（三态输出、输入、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9744,
@@ -77035,7 +77635,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入与非门（施密特输入）"
+  "function_detail": "四路2输入与非门（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9746,
@@ -77301,7 +77903,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入与非门（施密特输入）"
+  "function_detail": "四路2输入与非门（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9750,
@@ -77665,7 +78269,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "多路复用器（TTL输入）"
+  "function_detail": "多路复用器（TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2024-09-24"
  },
  {
   "id": 9752,
@@ -78029,7 +78635,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "多路复用器（TTL输入）"
+  "function_detail": "多路复用器（TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2024-09-24"
  },
  {
   "id": 9756,
@@ -78295,7 +78903,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "六路施密特反相器（施密特输入）"
+  "function_detail": "六路施密特反相器（施密特输入）",
+  "ds_ver": "V1.4",
+  "ds_date": "2026-03-17"
  },
  {
   "id": 9758,
@@ -78561,7 +79171,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "六路施密特反相器（施密特输入）"
+  "function_detail": "六路施密特反相器（施密特输入）",
+  "ds_ver": "V1.4",
+  "ds_date": "2026-03-17"
  },
  {
   "id": 9652,
@@ -78789,7 +79401,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "八移位寄存器（TTL输入）"
+  "function_detail": "八移位寄存器（TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-03-18"
  },
  {
   "id": 9653,
@@ -79017,7 +79631,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "八移位寄存器（TTL输入）"
+  "function_detail": "八移位寄存器（TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-03-18"
  },
  {
   "id": 9763,
@@ -79401,7 +80017,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "八移位寄存器（TTL输入）"
+  "function_detail": "八移位寄存器（TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-02-20"
  },
  {
   "id": 9765,
@@ -79785,7 +80403,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "八移位寄存器（TTL输入）"
+  "function_detail": "八移位寄存器（TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-02-20"
  },
  {
   "id": 9769,
@@ -80190,7 +80810,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "六路触发器（TTL输入）"
+  "function_detail": "六路触发器（TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 9771,
@@ -80595,7 +81217,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "六路触发器（TTL输入）"
+  "function_detail": "六路触发器（TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 9776,
@@ -80936,7 +81560,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "双路4输入与非门（TTL输入）"
+  "function_detail": "双路4输入与非门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9778,
@@ -81277,7 +81903,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "双路4输入与非门（TTL输入）"
+  "function_detail": "双路4输入与非门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9783,
@@ -81618,7 +82246,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "双路4输入与门（TTL输入）"
+  "function_detail": "双路4输入与门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9785,
@@ -81959,7 +82589,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "双路4输入与门（TTL输入）"
+  "function_detail": "双路4输入与门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9789,
@@ -82349,7 +82981,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "八路缓冲器（三态输出、TTL输入）"
+  "function_detail": "八路缓冲器（三态输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-20"
  },
  {
   "id": 9791,
@@ -82739,7 +83373,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "八路缓冲器（三态输出、TTL输入）"
+  "function_detail": "八路缓冲器（三态输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-20"
  },
  {
   "id": 9795,
@@ -83129,7 +83765,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出、TTL输入）"
+  "function_detail": "八路缓冲器（三态输出、TTL输入）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9797,
@@ -83519,7 +84157,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出、TTL输入）"
+  "function_detail": "八路缓冲器（三态输出、TTL输入）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9801,
@@ -83903,7 +84543,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出、TTL输入）"
+  "function_detail": "八路缓冲器（三态输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9803,
@@ -84287,7 +84929,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出、TTL输入）"
+  "function_detail": "八路缓冲器（三态输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9807,
@@ -84657,7 +85301,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "八锁存器（TTL输入）"
+  "function_detail": "八锁存器（TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-04-28"
  },
  {
   "id": 9809,
@@ -85027,7 +85673,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "八锁存器（TTL输入）"
+  "function_detail": "八锁存器（TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-04-28"
  },
  {
   "id": 9813,
@@ -85346,7 +85994,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入异或非门（开漏输出、输入、TTL输入）"
+  "function_detail": "四路2输入异或非门（开漏输出、输入、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9815,
@@ -85665,7 +86315,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入异或非门（开漏输出、输入、TTL输入）"
+  "function_detail": "四路2输入异或非门（开漏输出、输入、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9820,
@@ -86006,7 +86658,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "三路3输入或非门（TTL输入）"
+  "function_detail": "三路3输入或非门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9822,
@@ -86347,7 +87001,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "三路3输入或非门（TTL输入）"
+  "function_detail": "三路3输入或非门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9826,
@@ -86688,7 +87344,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "四路2输入或门（TTL输入）"
+  "function_detail": "四路2输入或门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9828,
@@ -87029,7 +87687,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "四路2输入或门（TTL输入）"
+  "function_detail": "四路2输入或门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9832,
@@ -87402,7 +88062,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "六路缓冲器（三态输出、输入、TTL输入）"
+  "function_detail": "六路缓冲器（三态输出、输入、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9834,
@@ -87775,7 +88437,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "六路缓冲器（三态输出、输入、TTL输入）"
+  "function_detail": "六路缓冲器（三态输出、输入、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9839,
@@ -88148,7 +88812,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "六路缓冲器（三态输出、TTL输入）"
+  "function_detail": "六路缓冲器（三态输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9841,
@@ -88521,7 +89187,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "六路缓冲器（三态输出、TTL输入）"
+  "function_detail": "六路缓冲器（三态输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9845,
@@ -88894,7 +89562,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "六路缓冲器（三态输出、输入、TTL输入）"
+  "function_detail": "六路缓冲器（三态输出、输入、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9847,
@@ -89267,7 +89937,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "六路缓冲器（三态输出、输入、TTL输入）"
+  "function_detail": "六路缓冲器（三态输出、输入、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9852,
@@ -89640,7 +90312,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "六路缓冲器（三态输出、TTL输入）"
+  "function_detail": "六路缓冲器（三态输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9854,
@@ -90013,7 +90687,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "六路缓冲器（三态输出、TTL输入）"
+  "function_detail": "六路缓冲器（三态输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9858,
@@ -90354,7 +91030,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "双路4输入或非门（TTL输入）"
+  "function_detail": "双路4输入或非门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9860,
@@ -90695,7 +91373,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "双路4输入或非门（TTL输入）"
+  "function_detail": "双路4输入或非门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9864,
@@ -91036,7 +91716,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "三路3输入或门（TTL输入）"
+  "function_detail": "三路3输入或门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9866,
@@ -91377,7 +92059,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "三路3输入或门（TTL输入）"
+  "function_detail": "三路3输入或门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9870,
@@ -91789,7 +92473,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "八与门（TTL输入）"
+  "function_detail": "八与门（TTL输入）",
+  "ds_ver": "V0.9",
+  "ds_date": "2024-10-11"
  },
  {
   "id": 9872,
@@ -92201,7 +92887,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "八与门（TTL输入）"
+  "function_detail": "八与门（TTL输入）",
+  "ds_ver": "V0.9",
+  "ds_date": "2024-10-11"
  },
  {
   "id": 9876,
@@ -92573,7 +93261,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "八路缓冲器（三态输出、TTL输入）"
+  "function_detail": "八路缓冲器（三态输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-11"
  },
  {
   "id": 9878,
@@ -92945,7 +93635,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "八路缓冲器（三态输出、TTL输入）"
+  "function_detail": "八路缓冲器（三态输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-11"
  },
  {
   "id": 9882,
@@ -93317,7 +94009,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出、TTL输入）"
+  "function_detail": "八路缓冲器（三态输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9884,
@@ -93689,7 +94383,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出、TTL输入）"
+  "function_detail": "八路缓冲器（三态输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9888,
@@ -94122,7 +94818,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "八路锁存器（三态输出、TTL输入）"
+  "function_detail": "八路锁存器（三态输出、TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 9890,
@@ -94555,7 +95253,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "八路锁存器（三态输出、TTL输入）"
+  "function_detail": "八路锁存器（三态输出、TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 9894,
@@ -94967,7 +95667,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "八路触发器（三态输出、TTL输入）"
+  "function_detail": "八路触发器（三态输出、TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 9898,
@@ -95379,7 +96081,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "八路D触发器（三态输出）"
+  "function_detail": "八路D触发器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 9896,
@@ -95791,7 +96495,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "八路触发器（三态输出、TTL输入）"
+  "function_detail": "八路触发器（三态输出、TTL输入）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 9655,
@@ -96028,7 +96734,9 @@
   "applications_domains": [
    "LED/数码管驱动"
   ],
-  "function_detail": "八移位寄存器（三态输出、TTL输入）"
+  "function_detail": "八移位寄存器（三态输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9657,
@@ -96265,7 +96973,9 @@
   "applications_domains": [
    "LED/数码管驱动"
   ],
-  "function_detail": "八位移位寄存器（三态输出）"
+  "function_detail": "八位移位寄存器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9656,
@@ -96502,7 +97212,9 @@
   "applications_domains": [
    "LED/数码管驱动"
   ],
-  "function_detail": "八移位寄存器（三态输出、TTL输入）"
+  "function_detail": "八移位寄存器（三态输出、TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 598,
@@ -96901,7 +97613,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "八移位寄存器（TTL输入）"
+  "function_detail": "八移位寄存器（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-20"
  },
  {
   "id": 600,
@@ -97300,7 +98014,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "八移位寄存器（TTL输入）"
+  "function_detail": "八移位寄存器（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-20"
  },
  {
   "id": 9914,
@@ -97566,7 +98282,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入与门（施密特输入）"
+  "function_detail": "四路2输入与门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9916,
@@ -97832,7 +98550,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入与门（施密特输入）"
+  "function_detail": "四路2输入与门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9920,
@@ -98098,7 +98818,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入或非门（施密特输入）"
+  "function_detail": "四路2输入或非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9922,
@@ -98364,7 +99086,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入或非门（施密特输入）"
+  "function_detail": "四路2输入或非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9926,
@@ -98630,7 +99354,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入或门（施密特输入）"
+  "function_detail": "四路2输入或门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9928,
@@ -98896,7 +99622,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入或门（施密特输入）"
+  "function_detail": "四路2输入或门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9932,
@@ -99237,7 +99965,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "四路2输入异或非门（TTL输入）"
+  "function_detail": "四路2输入异或非门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9934,
@@ -99578,7 +100308,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "四路2输入异或非门（TTL输入）"
+  "function_detail": "四路2输入异或非门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9938,
@@ -99918,7 +100650,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "双路触发器（TTL输入）"
+  "function_detail": "双路触发器（TTL输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2026-03-17"
  },
  {
   "id": 9940,
@@ -100258,7 +100992,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "双路触发器（TTL输入）"
+  "function_detail": "双路触发器（TTL输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2026-03-17"
  },
  {
   "id": 9944,
@@ -100599,7 +101335,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "四路2输入或门（TTL输入）"
+  "function_detail": "四路2输入或门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9946,
@@ -100940,7 +101678,9 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "四路2输入或门（TTL输入）"
+  "function_detail": "四路2输入或门（TTL输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9948,
@@ -101173,7 +101913,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与非门"
+  "function_detail": "双2输入与非门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-02"
  },
  {
   "id": 9949,
@@ -101406,7 +102148,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与非门"
+  "function_detail": "双2输入与非门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-02"
  },
  {
   "id": 9950,
@@ -101639,7 +102383,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与非门"
+  "function_detail": "双2输入与非门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-02"
  },
  {
   "id": 9952,
@@ -101900,7 +102646,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入或非门"
+  "function_detail": "双2输入或非门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-05"
  },
  {
   "id": 9953,
@@ -102161,7 +102909,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入或非门"
+  "function_detail": "双2输入或非门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-05"
  },
  {
   "id": 9954,
@@ -102422,7 +103172,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入或非门"
+  "function_detail": "双2输入或非门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-05"
  },
  {
   "id": 9956,
@@ -102655,7 +103407,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "单路反相器"
+  "function_detail": "单路反相器",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 9957,
@@ -102888,7 +103642,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "单路反相器"
+  "function_detail": "单路反相器",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 9958,
@@ -103121,7 +103877,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "单路反相器"
+  "function_detail": "单路反相器",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 9960,
@@ -103354,7 +104112,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与门"
+  "function_detail": "双2输入与门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-05"
  },
  {
   "id": 9961,
@@ -103587,7 +104347,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与门"
+  "function_detail": "双2输入与门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-05"
  },
  {
   "id": 9962,
@@ -103820,7 +104582,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与门"
+  "function_detail": "双2输入与门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-05"
  },
  {
   "id": 9964,
@@ -104137,7 +104901,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "单路缓冲器（三态输出）"
+  "function_detail": "单路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-04-16"
  },
  {
   "id": 9965,
@@ -104454,7 +105220,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "单路缓冲器（三态输出）"
+  "function_detail": "单路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-04-16"
  },
  {
   "id": 9966,
@@ -104771,7 +105539,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "单路缓冲器（三态输出）"
+  "function_detail": "单路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-04-16"
  },
  {
   "id": 9968,
@@ -105088,7 +105858,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "单路缓冲器（三态输出）"
+  "function_detail": "单路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-16"
  },
  {
   "id": 9969,
@@ -105405,7 +106177,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "单路缓冲器（三态输出）"
+  "function_detail": "单路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-16"
  },
  {
   "id": 9970,
@@ -105722,7 +106496,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "单路缓冲器（三态输出）"
+  "function_detail": "单路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-16"
  },
  {
   "id": 9972,
@@ -105983,7 +106759,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入或门"
+  "function_detail": "双2输入或门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-02-26"
  },
  {
   "id": 9973,
@@ -106244,7 +107022,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入或门"
+  "function_detail": "双2输入或门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-02-26"
  },
  {
   "id": 9974,
@@ -106505,7 +107285,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入或门"
+  "function_detail": "双2输入或门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-02-26"
  },
  {
   "id": 9976,
@@ -106738,7 +107520,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-05"
  },
  {
   "id": 9977,
@@ -106971,7 +107755,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-05"
  },
  {
   "id": 9978,
@@ -107204,7 +107990,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-05"
  },
  {
   "id": 9983,
@@ -107465,7 +108253,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门"
+  "function_detail": "双2输入或门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-15"
  },
  {
   "id": 9980,
@@ -107726,7 +108516,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门"
+  "function_detail": "双2输入或门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-15"
  },
  {
   "id": 9981,
@@ -107987,7 +108779,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门"
+  "function_detail": "双2输入或门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-15"
  },
  {
   "id": 9982,
@@ -108248,7 +109042,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门"
+  "function_detail": "双2输入或门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-15"
  },
  {
   "id": 9985,
@@ -108481,7 +109277,9 @@
   "applications_domains": [
    "可配置逻辑（替代多颗门）"
   ],
-  "function_detail": "双2输入或非门"
+  "function_detail": "双2输入或非门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-02"
  },
  {
   "id": 9986,
@@ -108714,7 +109512,9 @@
   "applications_domains": [
    "可配置逻辑（替代多颗门）"
   ],
-  "function_detail": "双2输入或非门"
+  "function_detail": "双2输入或非门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-02"
  },
  {
   "id": 9987,
@@ -108947,7 +109747,9 @@
   "applications_domains": [
    "可配置逻辑（替代多颗门）"
   ],
-  "function_detail": "双2输入或非门"
+  "function_detail": "双2输入或非门",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-02"
  },
  {
   "id": 9989,
@@ -109166,7 +109968,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入与非门"
+  "function_detail": "四路2输入与非门",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-11-05"
  },
  {
   "id": 9990,
@@ -109385,7 +110189,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入与非门"
+  "function_detail": "四路2输入与非门",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-11-05"
  },
  {
   "id": 9992,
@@ -109604,7 +110410,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入或非门"
+  "function_detail": "四路2输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2024-05-30"
  },
  {
   "id": 9993,
@@ -109823,7 +110631,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入或非门"
+  "function_detail": "四路2输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2024-05-30"
  },
  {
   "id": 9995,
@@ -110042,7 +110852,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "六路反相器"
+  "function_detail": "六路反相器",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-11-06"
  },
  {
   "id": 9996,
@@ -110261,7 +111073,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "六路反相器"
+  "function_detail": "六路反相器",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-11-06"
  },
  {
   "id": 9998,
@@ -110482,7 +111296,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "六路反相器（开漏输出）"
+  "function_detail": "六路反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 9999,
@@ -110703,7 +111519,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "六路反相器（开漏输出）"
+  "function_detail": "六路反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10001,
@@ -110924,7 +111742,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "六路缓冲器（开漏输出）"
+  "function_detail": "六路缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10002,
@@ -111145,7 +111965,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "六路缓冲器（开漏输出）"
+  "function_detail": "六路缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10004,
@@ -111364,7 +112186,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入与门"
+  "function_detail": "四路2输入与门",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-08-20"
  },
  {
   "id": 10005,
@@ -111583,7 +112407,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入与门"
+  "function_detail": "四路2输入与门",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-08-20"
  },
  {
   "id": 10006,
@@ -111802,7 +112628,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入与门"
+  "function_detail": "四路2输入与门",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-08-20"
  },
  {
   "id": 10008,
@@ -112014,7 +112842,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "三路3输入与非门"
+  "function_detail": "三路3输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-05-15"
  },
  {
   "id": 10009,
@@ -112226,7 +113056,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "三路3输入与非门"
+  "function_detail": "三路3输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-05-15"
  },
  {
   "id": 10011,
@@ -112438,7 +113270,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "三路3输入与门"
+  "function_detail": "三路3输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-05-30"
  },
  {
   "id": 10012,
@@ -112650,7 +113484,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "三路3输入与门"
+  "function_detail": "三路3输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-05-30"
  },
  {
   "id": 10014,
@@ -112922,7 +113758,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出）"
+  "function_detail": "四路缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-20"
  },
  {
   "id": 10015,
@@ -113194,7 +114032,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出）"
+  "function_detail": "四路缓冲器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-20"
  },
  {
   "id": 10017,
@@ -113466,7 +114306,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出）"
+  "function_detail": "四路缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10018,
@@ -113738,7 +114580,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "四路缓冲器（三态输出）"
+  "function_detail": "四路缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10020,
@@ -113910,7 +114754,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入与非门（施密特输入）"
+  "function_detail": "四路2输入与非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10021,
@@ -114082,7 +114928,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "四路2输入与非门（施密特输入）"
+  "function_detail": "四路2输入与非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10023,
@@ -114254,7 +115102,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "六路施密特反相器（施密特输入）"
+  "function_detail": "六路施密特反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-07-29"
  },
  {
   "id": 10024,
@@ -114426,7 +115276,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "六路施密特反相器（施密特输入）"
+  "function_detail": "六路施密特反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-07-29"
  },
  {
   "id": 10029,
@@ -114575,7 +115427,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与非门"
+  "function_detail": "单路2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10028,
@@ -114724,7 +115578,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与非门"
+  "function_detail": "单路2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10026,
@@ -114873,7 +115729,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与非门"
+  "function_detail": "单路2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10027,
@@ -115022,7 +115880,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与非门"
+  "function_detail": "单路2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10030,
@@ -115171,7 +116031,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与非门"
+  "function_detail": "单路2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10035,
@@ -115320,7 +116182,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或非门"
+  "function_detail": "单路2输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10034,
@@ -115469,7 +116333,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或非门"
+  "function_detail": "单路2输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10032,
@@ -115618,7 +116484,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或非门"
+  "function_detail": "单路2输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10033,
@@ -115767,7 +116635,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或非门"
+  "function_detail": "单路2输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10036,
@@ -115916,7 +116786,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或非门"
+  "function_detail": "单路2输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10041,
@@ -116065,7 +116937,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "单路反相器"
+  "function_detail": "单路反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-30"
  },
  {
   "id": 10040,
@@ -116214,7 +117088,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "单路反相器"
+  "function_detail": "单路反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-30"
  },
  {
   "id": 10038,
@@ -116363,7 +117239,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "单路反相器"
+  "function_detail": "单路反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-30"
  },
  {
   "id": 10039,
@@ -116512,7 +117390,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "单路反相器"
+  "function_detail": "单路反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-30"
  },
  {
   "id": 10042,
@@ -116661,7 +117541,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "单路反相器"
+  "function_detail": "单路反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-30"
  },
  {
   "id": 10048,
@@ -116810,7 +117692,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "反相器（开漏输出）"
+  "function_detail": "反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-09"
  },
  {
   "id": 10047,
@@ -116959,7 +117843,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "反相器（开漏输出）"
+  "function_detail": "反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-09"
  },
  {
   "id": 10045,
@@ -117108,7 +117994,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "反相器（开漏输出）"
+  "function_detail": "反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-09"
  },
  {
   "id": 10046,
@@ -117257,7 +118145,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "反相器（开漏输出）"
+  "function_detail": "反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-09"
  },
  {
   "id": 10049,
@@ -117406,7 +118296,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "反相器（开漏输出）"
+  "function_detail": "反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-09"
  },
  {
   "id": 10054,
@@ -117555,7 +118447,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-09"
  },
  {
   "id": 10053,
@@ -117704,7 +118598,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-09"
  },
  {
   "id": 10051,
@@ -117853,7 +118749,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-09"
  },
  {
   "id": 10052,
@@ -118002,7 +118900,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-09"
  },
  {
   "id": 10055,
@@ -118151,7 +119051,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-09"
  },
  {
   "id": 10060,
@@ -118300,7 +119202,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与门"
+  "function_detail": "单路2输入与门",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-09-15"
  },
  {
   "id": 10059,
@@ -118449,7 +119353,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与门"
+  "function_detail": "单路2输入与门",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-09-15"
  },
  {
   "id": 10057,
@@ -118598,7 +119504,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与门"
+  "function_detail": "单路2输入与门",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-09-15"
  },
  {
   "id": 10058,
@@ -118747,7 +119655,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与门"
+  "function_detail": "单路2输入与门",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-09-15"
  },
  {
   "id": 10061,
@@ -118896,7 +119806,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入与门"
+  "function_detail": "单路2输入与门",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-09-15"
  },
  {
   "id": 10066,
@@ -119045,7 +119957,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与门"
+  "function_detail": "双2输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10065,
@@ -119194,7 +120108,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与门"
+  "function_detail": "双2输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10063,
@@ -119343,7 +120259,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与门"
+  "function_detail": "双2输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10064,
@@ -119492,7 +120410,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与门"
+  "function_detail": "双2输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10067,
@@ -119641,7 +120561,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与门"
+  "function_detail": "双2输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10072,
@@ -119811,7 +120733,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入与非门"
+  "function_detail": "单路3输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10071,
@@ -119981,7 +120905,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入与非门"
+  "function_detail": "单路3输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10069,
@@ -120151,7 +121077,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入与非门"
+  "function_detail": "单路3输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10070,
@@ -120321,7 +121249,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入与非门"
+  "function_detail": "单路3输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10077,
@@ -120470,7 +121400,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入与门"
+  "function_detail": "单路3输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10076,
@@ -120619,7 +121551,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入与门"
+  "function_detail": "单路3输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10074,
@@ -120768,7 +121702,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入与门"
+  "function_detail": "单路3输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10075,
@@ -120917,7 +121853,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入与门"
+  "function_detail": "单路3输入与门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10082,
@@ -121017,7 +121955,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-06-20"
  },
  {
   "id": 10081,
@@ -121117,7 +122057,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-06-20"
  },
  {
   "id": 10079,
@@ -121217,7 +122159,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-06-20"
  },
  {
   "id": 10080,
@@ -121317,7 +122261,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-06-20"
  },
  {
   "id": 10083,
@@ -121417,7 +122363,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-06-20"
  },
  {
   "id": 10088,
@@ -121566,7 +122514,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10087,
@@ -121715,7 +122665,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10085,
@@ -121864,7 +122816,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10086,
@@ -122013,7 +122967,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10089,
@@ -122162,7 +123118,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "缓冲器（三态输出）"
+  "function_detail": "缓冲器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10094,
@@ -122314,7 +123272,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "单路2输入与非门（施密特输入）"
+  "function_detail": "单路2输入与非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10093,
@@ -122466,7 +123426,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "单路2输入与非门（施密特输入）"
+  "function_detail": "单路2输入与非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10091,
@@ -122618,7 +123580,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "单路2输入与非门（施密特输入）"
+  "function_detail": "单路2输入与非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10092,
@@ -122770,7 +123734,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "单路2输入与非门（施密特输入）"
+  "function_detail": "单路2输入与非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10095,
@@ -122922,7 +123888,9 @@
   "applications_domains": [
    "慢边沿/噪声环境整形"
   ],
-  "function_detail": "单路2输入与非门（施密特输入）"
+  "function_detail": "单路2输入与非门（施密特输入）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10100,
@@ -123057,7 +124025,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "单路反相器（施密特输入）"
+  "function_detail": "单路反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-09-15"
  },
  {
   "id": 10099,
@@ -123192,7 +124162,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "单路反相器（施密特输入）"
+  "function_detail": "单路反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-09-15"
  },
  {
   "id": 10097,
@@ -123327,7 +124299,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "单路反相器（施密特输入）"
+  "function_detail": "单路反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-09-15"
  },
  {
   "id": 10098,
@@ -123462,7 +124436,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "单路反相器（施密特输入）"
+  "function_detail": "单路反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-09-15"
  },
  {
   "id": 10101,
@@ -123597,7 +124573,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "单路反相器（施密特输入）"
+  "function_detail": "单路反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-09-15"
  },
  {
   "id": 10106,
@@ -123746,7 +124724,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10105,
@@ -123895,7 +124875,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10103,
@@ -124044,7 +125026,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10104,
@@ -124193,7 +125177,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10107,
@@ -124342,7 +125328,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10112,
@@ -124477,7 +125465,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "单路缓冲器（施密特输入）"
+  "function_detail": "单路缓冲器（施密特输入）",
+  "ds_ver": "V1.4",
+  "ds_date": "2025-12-20"
  },
  {
   "id": 10111,
@@ -124612,7 +125602,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "单路缓冲器（施密特输入）"
+  "function_detail": "单路缓冲器（施密特输入）",
+  "ds_ver": "V1.4",
+  "ds_date": "2025-12-20"
  },
  {
   "id": 10109,
@@ -124747,7 +125739,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "单路缓冲器（施密特输入）"
+  "function_detail": "单路缓冲器（施密特输入）",
+  "ds_ver": "V1.4",
+  "ds_date": "2025-12-20"
  },
  {
   "id": 10110,
@@ -124882,7 +125876,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "单路缓冲器（施密特输入）"
+  "function_detail": "单路缓冲器（施密特输入）",
+  "ds_ver": "V1.4",
+  "ds_date": "2025-12-20"
  },
  {
   "id": 10113,
@@ -125017,7 +126013,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "单路缓冲器（施密特输入）"
+  "function_detail": "单路缓冲器（施密特输入）",
+  "ds_ver": "V1.4",
+  "ds_date": "2025-12-20"
  },
  {
   "id": 10120,
@@ -125166,7 +126164,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "单路反相器（三态输出）"
+  "function_detail": "单路反相器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10119,
@@ -125315,7 +126315,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "单路反相器（三态输出）"
+  "function_detail": "单路反相器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10117,
@@ -125464,7 +126466,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "单路反相器（三态输出）"
+  "function_detail": "单路反相器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10118,
@@ -125613,7 +126617,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "单路反相器（三态输出）"
+  "function_detail": "单路反相器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10121,
@@ -125762,7 +126768,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "单路反相器（三态输出）"
+  "function_detail": "单路反相器（三态输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10126,
@@ -125932,7 +126940,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入或非门"
+  "function_detail": "单路3输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10125,
@@ -126102,7 +127112,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入或非门"
+  "function_detail": "单路3输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10123,
@@ -126272,7 +127284,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入或非门"
+  "function_detail": "单路3输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10124,
@@ -126442,7 +127456,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入或非门"
+  "function_detail": "单路3输入或非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10131,
@@ -126591,7 +127607,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或门"
+  "function_detail": "单路2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10130,
@@ -126740,7 +127758,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或门"
+  "function_detail": "单路2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10128,
@@ -126889,7 +127909,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或门"
+  "function_detail": "单路2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10129,
@@ -127038,7 +128060,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或门"
+  "function_detail": "单路2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10132,
@@ -127187,7 +128211,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路2输入或门"
+  "function_detail": "单路2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10137,
@@ -127336,7 +128362,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入或门"
+  "function_detail": "单路3输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10136,
@@ -127485,7 +128513,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入或门"
+  "function_detail": "单路3输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10134,
@@ -127634,7 +128664,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入或门"
+  "function_detail": "单路3输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10135,
@@ -127783,7 +128815,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "单路3输入或门"
+  "function_detail": "单路3输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10142,
@@ -127953,7 +128987,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10141,
@@ -128123,7 +129159,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10139,
@@ -128293,7 +129331,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10140,
@@ -128463,7 +129503,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10143,
@@ -128633,7 +129675,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "单路缓冲器"
+  "function_detail": "单路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10148,
@@ -128803,7 +129847,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与非门"
+  "function_detail": "双2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10147,
@@ -128973,7 +130019,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与非门"
+  "function_detail": "双2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10145,
@@ -129143,7 +130191,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与非门"
+  "function_detail": "双2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10146,
@@ -129313,7 +130363,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与非门"
+  "function_detail": "双2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10149,
@@ -129483,7 +130535,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "双2输入与非门"
+  "function_detail": "双2输入与非门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10151,
@@ -129648,7 +130702,9 @@
   "applications_domains": [
    "可配置逻辑（替代多颗门）"
   ],
-  "function_detail": "逻辑门"
+  "function_detail": "逻辑门",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10152,
@@ -129813,7 +130869,9 @@
   "applications_domains": [
    "可配置逻辑（替代多颗门）"
   ],
-  "function_detail": "逻辑门"
+  "function_detail": "逻辑门",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10154,
@@ -129965,7 +131023,9 @@
   "applications_domains": [
    "可配置逻辑（替代多颗门）"
   ],
-  "function_detail": "逻辑门"
+  "function_detail": "逻辑门",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10155,
@@ -130117,7 +131177,9 @@
   "applications_domains": [
    "可配置逻辑（替代多颗门）"
   ],
-  "function_detail": "逻辑门"
+  "function_detail": "逻辑门",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10160,
@@ -130287,7 +131349,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门"
+  "function_detail": "双2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10159,
@@ -130457,7 +131521,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门"
+  "function_detail": "双2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10157,
@@ -130627,7 +131693,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门"
+  "function_detail": "双2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10158,
@@ -130797,7 +131865,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门"
+  "function_detail": "双2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10161,
@@ -130967,7 +132037,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门"
+  "function_detail": "双2输入或门",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10164,
@@ -131132,7 +132204,9 @@
   "applications_domains": [
    "可配置逻辑（替代多颗门）"
   ],
-  "function_detail": "逻辑门"
+  "function_detail": "逻辑门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-06-20"
  },
  {
   "id": 10165,
@@ -131297,7 +132371,9 @@
   "applications_domains": [
    "可配置逻辑（替代多颗门）"
   ],
-  "function_detail": "逻辑门"
+  "function_detail": "逻辑门",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-06-20"
  },
  {
   "id": 10170,
@@ -131432,7 +132508,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "反相器"
+  "function_detail": "反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10169,
@@ -131567,7 +132645,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "反相器"
+  "function_detail": "反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10167,
@@ -131702,7 +132782,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "反相器"
+  "function_detail": "反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10168,
@@ -131837,7 +132919,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "反相器"
+  "function_detail": "反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10171,
@@ -131972,7 +133056,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "反相器"
+  "function_detail": "反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10235,
@@ -132247,7 +133333,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-07-12"
  },
  {
   "id": 10239,
@@ -132522,7 +133610,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-07-12"
  },
  {
   "id": 10237,
@@ -132797,7 +133887,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-07-12"
  },
  {
   "id": 10243,
@@ -133058,7 +134150,9 @@
   "applications_domains": [
    "总线双向收发"
   ],
-  "function_detail": "八路收发器（三态输出）"
+  "function_detail": "八路收发器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-04-10"
  },
  {
   "id": 10245,
@@ -133319,7 +134413,9 @@
   "applications_domains": [
    "总线双向收发"
   ],
-  "function_detail": "八路收发器（三态输出）"
+  "function_detail": "八路收发器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-04-10"
  },
  {
   "id": 10175,
@@ -133468,7 +134564,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "双路反相器"
+  "function_detail": "双路反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2024-04-30"
  },
  {
   "id": 10177,
@@ -133617,7 +134715,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "双路反相器"
+  "function_detail": "双路反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2024-04-30"
  },
  {
   "id": 10176,
@@ -133766,7 +134866,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "双路反相器"
+  "function_detail": "双路反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2024-04-30"
  },
  {
   "id": 10173,
@@ -133915,7 +135017,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "双路反相器"
+  "function_detail": "双路反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2024-04-30"
  },
  {
   "id": 10174,
@@ -134064,7 +135168,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "双路反相器"
+  "function_detail": "双路反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2024-04-30"
  },
  {
   "id": 10182,
@@ -134234,7 +135340,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "反相器（开漏输出）"
+  "function_detail": "反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10181,
@@ -134404,7 +135512,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "反相器（开漏输出）"
+  "function_detail": "反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10179,
@@ -134574,7 +135684,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "反相器（开漏输出）"
+  "function_detail": "反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10180,
@@ -134744,7 +135856,9 @@
   "applications_domains": [
    "I2C 总线与中断驱动"
   ],
-  "function_detail": "反相器（开漏输出）"
+  "function_detail": "反相器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10188,
@@ -134914,7 +136028,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10187,
@@ -135084,7 +136200,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10185,
@@ -135254,7 +136372,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10186,
@@ -135424,7 +136544,9 @@
   "applications_domains": [
    "开漏输出与电平转换"
   ],
-  "function_detail": "缓冲器（开漏输出）"
+  "function_detail": "缓冲器（开漏输出）",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10193,
@@ -135559,7 +136681,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "双路施密特反相器（施密特输入）"
+  "function_detail": "双路施密特反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10192,
@@ -135694,7 +136818,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "双路施密特反相器（施密特输入）"
+  "function_detail": "双路施密特反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10190,
@@ -135829,7 +136955,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "双路施密特反相器（施密特输入）"
+  "function_detail": "双路施密特反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10191,
@@ -135964,7 +137092,9 @@
   "applications_domains": [
    "按键去抖与振荡器"
   ],
-  "function_detail": "双路施密特反相器（施密特输入）"
+  "function_detail": "双路施密特反相器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10198,
@@ -136113,7 +137243,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10197,
@@ -136262,7 +137394,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10195,
@@ -136411,7 +137545,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10196,
@@ -136560,7 +137696,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10203,
@@ -136712,7 +137850,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "双路施密特缓冲器（施密特输入）"
+  "function_detail": "双路施密特缓冲器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-06-20"
  },
  {
   "id": 10202,
@@ -136864,7 +138004,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "双路施密特缓冲器（施密特输入）"
+  "function_detail": "双路施密特缓冲器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-06-20"
  },
  {
   "id": 10200,
@@ -137016,7 +138158,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "双路施密特缓冲器（施密特输入）"
+  "function_detail": "双路施密特缓冲器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-06-20"
  },
  {
   "id": 10201,
@@ -137168,7 +138312,9 @@
   "applications_domains": [
    "施密特输入（抗噪声）"
   ],
-  "function_detail": "双路施密特缓冲器（施密特输入）"
+  "function_detail": "双路施密特缓冲器（施密特输入）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-06-20"
  },
  {
   "id": 10208,
@@ -137317,7 +138463,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.2",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10207,
@@ -137466,7 +138614,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.2",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10205,
@@ -137615,7 +138765,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.2",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10206,
@@ -137764,7 +138916,9 @@
   "applications_domains": [
    "信号缓冲与长走线驱动"
   ],
-  "function_detail": "双路缓冲器"
+  "function_detail": "双路缓冲器",
+  "ds_ver": "V1.2",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10213,
@@ -137899,7 +139053,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "反相器"
+  "function_detail": "反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10212,
@@ -138034,7 +139190,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "反相器"
+  "function_detail": "反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10210,
@@ -138169,7 +139327,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "反相器"
+  "function_detail": "反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10211,
@@ -138304,7 +139464,9 @@
   "applications_domains": [
    "信号反相"
   ],
-  "function_detail": "反相器"
+  "function_detail": "反相器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10215,
@@ -138523,7 +139685,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入或门"
+  "function_detail": "四路2输入或门",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-11-05"
  },
  {
   "id": 10216,
@@ -138742,7 +139906,9 @@
   "applications_domains": [
    "通用逻辑门组合"
   ],
-  "function_detail": "四路2输入或门"
+  "function_detail": "四路2输入或门",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-11-05"
  },
  {
   "id": 10218,
@@ -138905,7 +140071,9 @@
   "applications_domains": [
    "总线双向收发"
   ],
-  "function_detail": "八路收发器（三态输出）"
+  "function_detail": "八路收发器（三态输出）",
+  "ds_ver": "V1.4",
+  "ds_date": "2025-10-20"
  },
  {
   "id": 10220,
@@ -139173,7 +140341,9 @@
   "applications_domains": [
    "总线双向收发"
   ],
-  "function_detail": "八路收发器（三态输出）"
+  "function_detail": "八路收发器（三态输出）",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-08-15"
  },
  {
   "id": 10222,
@@ -139441,7 +140611,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-08-28"
  },
  {
   "id": 10223,
@@ -139709,7 +140881,9 @@
   "applications_domains": [
    "三态反相与总线驱动"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-08-28"
  },
  {
   "id": 10225,
@@ -139977,7 +141151,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-08-28"
  },
  {
   "id": 10226,
@@ -140245,7 +141421,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-08-28"
  },
  {
   "id": 10228,
@@ -140520,7 +141698,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "双路触发器"
+  "function_detail": "双路触发器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 10229,
@@ -140795,7 +141975,9 @@
   "applications_domains": [
    "数据锁存与状态保持"
   ],
-  "function_detail": "双路触发器"
+  "function_detail": "双路触发器",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-05-20"
  },
  {
   "id": 10231,
@@ -141014,7 +142196,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入逻辑门"
+  "function_detail": "四路2输入逻辑门",
+  "ds_ver": "V1.1",
+  "ds_date": "2024-12-20"
  },
  {
   "id": 10232,
@@ -141233,7 +142417,9 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入逻辑门"
+  "function_detail": "四路2输入逻辑门",
+  "ds_ver": "V1.1",
+  "ds_date": "2024-12-20"
  },
  {
   "id": 10249,
@@ -141396,7 +142582,9 @@
   "applications_domains": [
    "总线双向收发"
   ],
-  "function_detail": "八收发器（三态输出）"
+  "function_detail": "八收发器（三态输出）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-05-12"
  },
  {
   "id": 10236,
@@ -141671,7 +142859,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-07-12"
  },
  {
   "id": 10240,
@@ -141946,7 +143136,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-07-12"
  },
  {
   "id": 10238,
@@ -142221,7 +143413,9 @@
   "applications_domains": [
    "总线隔离（三态使能）"
   ],
-  "function_detail": "八路缓冲器（三态输出）"
+  "function_detail": "八路缓冲器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-07-12"
  },
  {
   "id": 10244,
@@ -142482,7 +143676,9 @@
   "applications_domains": [
    "总线双向收发"
   ],
-  "function_detail": "八路收发器（三态输出）"
+  "function_detail": "八路收发器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-04-10"
  },
  {
   "id": 10246,
@@ -142743,7 +143939,9 @@
   "applications_domains": [
    "总线双向收发"
   ],
-  "function_detail": "八路收发器（三态输出）"
+  "function_detail": "八路收发器（三态输出）",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-04-10"
  },
  {
   "id": 10250,
@@ -142906,7 +144104,9 @@
   "applications_domains": [
    "总线双向收发"
   ],
-  "function_detail": "八收发器（三态输出）"
+  "function_detail": "八收发器（三态输出）",
+  "ds_ver": "V1.2",
+  "ds_date": "2025-05-12"
  },
  {
   "id": 10255,
@@ -143157,7 +144357,9 @@
   "applications_domains": [
    "通用模拟开关/多路复用"
   ],
-  "function_detail": "双路模拟开关"
+  "function_detail": "双路模拟开关",
+  "ds_ver": "V1.3",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10257,
@@ -143408,7 +144610,9 @@
   "applications_domains": [
    "通用模拟开关/多路复用"
   ],
-  "function_detail": "双路模拟开关"
+  "function_detail": "双路模拟开关",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 1813,
@@ -143659,7 +144863,9 @@
   "applications_domains": [
    "通用模拟开关/多路复用"
   ],
-  "function_detail": "单路模拟开关"
+  "function_detail": "单路模拟开关",
+  "ds_ver": "V1.8",
+  "ds_date": "2026-07-10"
  },
  {
   "id": 1814,
@@ -143910,7 +145116,9 @@
   "applications_domains": [
    "通用模拟开关/多路复用"
   ],
-  "function_detail": "单路模拟开关"
+  "function_detail": "单路模拟开关",
+  "ds_ver": "V1.8",
+  "ds_date": "2026-07-10"
  },
  {
   "id": 1812,
@@ -144161,7 +145369,9 @@
   "applications_domains": [
    "通用模拟开关/多路复用"
   ],
-  "function_detail": "单路模拟开关"
+  "function_detail": "单路模拟开关",
+  "ds_ver": "V1.8",
+  "ds_date": "2026-07-10"
  },
  {
   "id": 1811,
@@ -144412,7 +145622,9 @@
   "applications_domains": [
    "通用模拟开关/多路复用"
   ],
-  "function_detail": "单路模拟开关"
+  "function_detail": "单路模拟开关",
+  "ds_ver": "V1.8",
+  "ds_date": "2026-07-10"
  },
  {
   "id": 10271,
@@ -144631,7 +145843,9 @@
   "applications_domains": [
    "通用模拟开关/多路复用"
   ],
-  "function_detail": "单路模拟开关"
+  "function_detail": "单路模拟开关",
+  "ds_ver": "V1.8",
+  "ds_date": "2026-07-10"
  },
  {
   "id": 10273,
@@ -144946,7 +146160,9 @@
   "applications_domains": [
    "音频信号切换"
   ],
-  "function_detail": "音频/USB 多路复用器 (SPST, 负摆幅+过压保护)"
+  "function_detail": "音频/USB 多路复用器 (SPST, 负摆幅+过压保护)",
+  "ds_ver": "V0.1",
+  "ds_date": "2026-01-21"
  },
  {
   "id": 10274,
@@ -145018,7 +146234,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双多路复用器"
+  "function_detail": "双多路复用器",
+  "ds_ver": "V0.1",
+  "ds_date": "2025-09-28"
  },
  {
   "id": 1825,
@@ -145374,7 +146592,9 @@
   "applications_domains": [
    "音频信号切换"
   ],
-  "function_detail": "单路模拟开关"
+  "function_detail": "单路模拟开关",
+  "ds_ver": "V1.2",
+  "ds_date": "2026-03-04"
  },
  {
   "id": 10280,
@@ -145504,7 +146724,9 @@
   "applications_domains": [
    "音频信号切换"
   ],
-  "function_detail": "双路模拟开关"
+  "function_detail": "双路模拟开关",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-10-16"
  },
  {
   "id": 10282,
@@ -145779,7 +147001,9 @@
   "applications_domains": [
    "音频信号切换"
   ],
-  "function_detail": "四路模拟开关"
+  "function_detail": "四路模拟开关",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10283,
@@ -146054,7 +147278,9 @@
   "applications_domains": [
    "音频信号切换"
   ],
-  "function_detail": "四路模拟开关"
+  "function_detail": "四路模拟开关",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-03-10"
  },
  {
   "id": 10285,
@@ -146280,7 +147506,9 @@
   "applications_domains": [
    "音频信号切换"
   ],
-  "function_detail": "双路模拟开关"
+  "function_detail": "双路模拟开关",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-02-21"
  },
  {
   "id": 10287,
@@ -146447,7 +147675,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路模拟开关"
+  "function_detail": "双路模拟开关",
+  "ds_ver": "V1.8",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10290,
@@ -146614,7 +147844,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路模拟开关"
+  "function_detail": "双路模拟开关",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-12"
  },
  {
   "id": 10289,
@@ -146781,7 +148013,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路模拟开关"
+  "function_detail": "双路模拟开关",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-08-12"
  },
  {
   "id": 10293,
@@ -146948,7 +148182,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路模拟开关"
+  "function_detail": "双路模拟开关",
+  "ds_ver": "V1.3",
+  "ds_date": "2026-04-15"
  },
  {
   "id": 10292,
@@ -147115,7 +148351,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路模拟开关"
+  "function_detail": "双路模拟开关",
+  "ds_ver": "V1.3",
+  "ds_date": "2026-04-15"
  },
  {
   "id": 10294,
@@ -147282,7 +148520,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路模拟开关"
+  "function_detail": "双路模拟开关",
+  "ds_ver": "V1.3",
+  "ds_date": "2026-04-15"
  },
  {
   "id": 10298,
@@ -147467,7 +148707,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路多路复用器"
+  "function_detail": "双路多路复用器",
+  "ds_ver": "V1.7",
+  "ds_date": "2025-06-20"
  },
  {
   "id": 10299,
@@ -147652,7 +148894,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路多路复用器"
+  "function_detail": "双路多路复用器",
+  "ds_ver": "V1.7",
+  "ds_date": "2025-06-20"
  },
  {
   "id": 891,
@@ -147837,7 +149081,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路USB模拟开关"
+  "function_detail": "双路USB模拟开关",
+  "ds_ver": "V1.7",
+  "ds_date": "2025-06-20"
  },
  {
   "id": 10296,
@@ -148022,7 +149268,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路多路复用器"
+  "function_detail": "双路多路复用器",
+  "ds_ver": "V1.7",
+  "ds_date": "2025-06-20"
  },
  {
   "id": 10303,
@@ -148262,7 +149510,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路多路复用器"
+  "function_detail": "双路多路复用器",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-02-10"
  },
  {
   "id": 10304,
@@ -148502,7 +149752,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路多路复用器"
+  "function_detail": "双路多路复用器",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-02-10"
  },
  {
   "id": 10302,
@@ -148742,7 +149994,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路USB模拟开关"
+  "function_detail": "双路USB模拟开关",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-02-10"
  },
  {
   "id": 10301,
@@ -148982,7 +150236,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路多路复用器"
+  "function_detail": "双路多路复用器",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-02-10"
  },
  {
   "id": 10307,
@@ -149216,7 +150472,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双通道差分多路复用器"
+  "function_detail": "双通道差分多路复用器",
+  "ds_ver": "V1.4",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10306,
@@ -149450,7 +150708,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双通道差分多路复用器"
+  "function_detail": "双通道差分多路复用器",
+  "ds_ver": "V1.4",
+  "ds_date": "2025-12-15"
  },
  {
   "id": 10309,
@@ -149522,7 +150782,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双多路复用器"
+  "function_detail": "双多路复用器",
+  "ds_ver": "V0.1",
+  "ds_date": "2025-10-13"
  },
  {
   "id": 10311,
@@ -149629,7 +150891,9 @@
   "applications_domains": [
    "音频信号切换"
   ],
-  "function_detail": "USB2.0+HiFi 音频 DPDT 多路复用器"
+  "function_detail": "USB2.0+HiFi 音频 DPDT 多路复用器",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-01-30"
  },
  {
   "id": 10313,
@@ -149736,7 +151000,9 @@
   "applications_domains": [
    "音频信号切换"
   ],
-  "function_detail": "USB2.0+HiFi 音频 DPDT 多路复用器"
+  "function_detail": "USB2.0+HiFi 音频 DPDT 多路复用器",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-01-21"
  },
  {
   "id": 10315,
@@ -149829,7 +151095,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "多路 Mux/DeMux 开关"
+  "function_detail": "多路 Mux/DeMux 开关",
+  "ds_ver": "V1.1",
+  "ds_date": "2025-05-10"
  },
  {
   "id": 1865,
@@ -149915,7 +151183,9 @@
   "applications_domains": [
    "音频信号切换"
   ],
-  "function_detail": "USB Type-C 模拟音频开关"
+  "function_detail": "USB Type-C 模拟音频开关",
+  "ds_ver": "V0.9",
+  "ds_date": "2026-07-06"
  },
  {
   "id": 10319,
@@ -150127,7 +151397,9 @@
   "applications_domains": [
    "通用模拟开关/多路复用"
   ],
-  "function_detail": "四路模拟开关"
+  "function_detail": "四路模拟开关",
+  "ds_ver": "V1.0",
+  "ds_date": "2024-10-30"
  },
  {
   "id": 10321,
@@ -150294,7 +151566,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路模拟开关"
+  "function_detail": "双路模拟开关",
+  "ds_ver": "V1.2",
+  "ds_date": "2026-06-05"
  },
  {
   "id": 10323,
@@ -150408,7 +151682,9 @@
   "applications_domains": [
    "音频信号切换"
   ],
-  "function_detail": "音频耳机模拟开关"
+  "function_detail": "音频耳机模拟开关",
+  "ds_ver": "V1.0",
+  "ds_date": "2026-04-08"
  },
  {
   "id": 10325,
@@ -150575,7 +151851,9 @@
   "applications_domains": [
    "通用模拟开关/多路复用"
   ],
-  "function_detail": "四路模拟开关"
+  "function_detail": "四路模拟开关",
+  "ds_ver": "V1.4",
+  "ds_date": "2026-03-05"
  },
  {
   "id": 10328,
@@ -150855,7 +152133,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路 USB2.0 开关"
+  "function_detail": "双路 USB2.0 开关",
+  "ds_ver": "V0.1",
+  "ds_date": "2025-10-09"
  },
  {
   "id": 10327,
@@ -151135,7 +152415,9 @@
   "applications_domains": [
    "USB/HDMI 高速信号切换"
   ],
-  "function_detail": "双路 USB2.0 开关"
+  "function_detail": "双路 USB2.0 开关",
+  "ds_ver": "V0.1",
+  "ds_date": "2025-10-09"
  },
  {
   "id": 11001,
@@ -151228,7 +152510,9 @@
   "applications_domains": [
    "I2C/SPI/UART 电平转换"
   ],
-  "function_detail": "2 位电平转换收发器"
+  "function_detail": "2 位电平转换收发器",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-10-09"
  },
  {
   "id": 11002,
@@ -151321,7 +152605,9 @@
   "applications_domains": [
    "I2C/SPI/UART 电平转换"
   ],
-  "function_detail": "2 位电平转换收发器"
+  "function_detail": "2 位电平转换收发器",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-10-09"
  },
  {
   "id": 11004,
@@ -151414,7 +152700,9 @@
   "applications_domains": [
    "I2C/SPI/UART 电平转换"
   ],
-  "function_detail": "4 位电平转换收发器"
+  "function_detail": "4 位电平转换收发器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-27"
  },
  {
   "id": 11005,
@@ -151507,7 +152795,9 @@
   "applications_domains": [
    "I2C/SPI/UART 电平转换"
   ],
-  "function_detail": "4 位电平转换收发器"
+  "function_detail": "4 位电平转换收发器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-27"
  },
  {
   "id": 11006,
@@ -151600,7 +152890,9 @@
   "applications_domains": [
    "I2C/SPI/UART 电平转换"
   ],
-  "function_detail": "4 位电平转换收发器"
+  "function_detail": "4 位电平转换收发器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-27"
  },
  {
   "id": 11007,
@@ -151693,7 +152985,9 @@
   "applications_domains": [
    "I2C/SPI/UART 电平转换"
   ],
-  "function_detail": "4 位电平转换收发器"
+  "function_detail": "4 位电平转换收发器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-03-27"
  },
  {
   "id": 11009,
@@ -151786,7 +153080,9 @@
   "applications_domains": [
    "I2C/SPI/UART 电平转换"
   ],
-  "function_detail": "6 位电平转换收发器"
+  "function_detail": "6 位电平转换收发器",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-10-25"
  },
  {
   "id": 11011,
@@ -151879,7 +153175,9 @@
   "applications_domains": [
    "I2C/SPI/UART 电平转换"
   ],
-  "function_detail": "8 位电平转换收发器"
+  "function_detail": "8 位电平转换收发器",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-10-25"
  },
  {
   "id": 11012,
@@ -151972,7 +153270,9 @@
   "applications_domains": [
    "I2C/SPI/UART 电平转换"
   ],
-  "function_detail": "8 位电平转换收发器"
+  "function_detail": "8 位电平转换收发器",
+  "ds_ver": "V1.0",
+  "ds_date": "2025-10-25"
  },
  {
   "id": 11013,
@@ -152221,7 +153521,9 @@
   "applications_domains": [
    "通用模拟开关/多路复用"
   ],
-  "function_detail": "单路模拟开关"
+  "function_detail": "单路模拟开关",
+  "ds_ver": "V0.92",
+  "ds_date": "2025-11-25"
  },
  {
   "id": 11014,
@@ -152438,6 +153740,8 @@
   "applications_domains": [
    "通用模拟开关/多路复用"
   ],
-  "function_detail": "双路模拟开关"
+  "function_detail": "双路模拟开关",
+  "ds_ver": "V0.9",
+  "ds_date": "2025-08-20"
  }
 ]

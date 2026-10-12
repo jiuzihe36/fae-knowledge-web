@@ -10,7 +10,7 @@
      - 顶层数据是数组 → 注入 {products: liteArr} */
 const fs = require('fs');
 const { JSDOM, VirtualConsole } = require('jsdom');
-const ROOT = '/Users/hu/fae-knowledge-web';
+const ROOT = '/Users/hu/项目/站点/fae-knowledge-web';
 const liteArr = JSON.parse(fs.readFileSync(ROOT + '/data/products_lite.json', 'utf-8'));
 let html = fs.readFileSync(ROOT + '/index.html', 'utf-8');
 const uniJs = fs.readFileSync(ROOT + '/unified.js', 'utf-8');

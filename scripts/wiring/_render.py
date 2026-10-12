@@ -3,8 +3,8 @@
 import re, os
 from PIL import Image, ImageDraw, ImageFont
 
-OUT = '/Users/hu/fae-knowledge-web/circuits'          # SVG 源目录(站点上线目录)
-PNG_OUT = '/Users/hu/fae-knowledge-web/scripts/wiring'  # 自查 PNG 输出(不上线)
+OUT = '/Users/hu/项目/站点/fae-knowledge-web/circuits'          # SVG 源目录(站点上线目录)
+PNG_OUT = '/Users/hu/项目/站点/fae-knowledge-web/scripts/wiring'  # 自查 PNG 输出(不上线)
 FONT = '/System/Library/Fonts/STHeiti Medium.ttc'
 SC = 2
 

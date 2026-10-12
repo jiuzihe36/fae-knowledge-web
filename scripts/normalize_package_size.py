@@ -7,7 +7,7 @@
 import json, os, re, sys
 from collections import Counter, defaultdict
 
-W = os.path.expanduser('~/fae-knowledge-web')
+W = os.path.expanduser('~/项目/站点/fae-knowledge-web')
 
 
 def canon_size(pd_row):

@@ -4,7 +4,7 @@
 import re, os, sys
 from itertools import combinations
 
-OUT = '/Users/hu/fae-knowledge-web/circuits'
+OUT = '/Users/hu/项目/站点/fae-knowledge-web/circuits'
 
 def parse(svg):
     lines = []

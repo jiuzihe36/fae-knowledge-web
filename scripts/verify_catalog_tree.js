@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * 目录树折叠自检（芯祥 ~/fae-knowledge-web/data/catalog.json）
+ * 目录树折叠自检（芯祥 ~/项目/站点/fae-knowledge-web/data/catalog.json）
  *
  * 为什么需要：目录树有 6 层、每层都可折叠，渲染分支多。
  * 靠肉眼点开看会漏掉两类错：① 某层没被渲染（漏层）② 计数与实际条数不符（数据层错）。
@@ -21,7 +21,7 @@
  */
 const fs = require('fs');
 
-const P = process.argv[2] || '/Users/hu/fae-knowledge-web/data/catalog.json';
+const P = process.argv[2] || '/Users/hu/项目/站点/fae-knowledge-web/data/catalog.json';
 const cat = JSON.parse(fs.readFileSync(P, 'utf8'));
 
 let fails = [];

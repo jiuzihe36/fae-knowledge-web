@@ -1,8 +1,8 @@
 const fs = require('fs');
 const { JSDOM, VirtualConsole } = require('jsdom');
-const liteArr = JSON.parse(fs.readFileSync('/Users/hu/fae-knowledge-web/data/products_lite.json', 'utf-8'));
-let html = fs.readFileSync('/Users/hu/fae-knowledge-web/index.html', 'utf-8');
-const uniJs = fs.readFileSync('/Users/hu/fae-knowledge-web/unified.js', 'utf-8');
+const liteArr = JSON.parse(fs.readFileSync('/Users/hu/项目/站点/fae-knowledge-web/data/products_lite.json', 'utf-8'));
+let html = fs.readFileSync('/Users/hu/项目/站点/fae-knowledge-web/index.html', 'utf-8');
+const uniJs = fs.readFileSync('/Users/hu/项目/站点/fae-knowledge-web/unified.js', 'utf-8');
 html = html.replace(/<script src="\.\/app\.js\?v=[^"]*"><\/script>/, '')
            .replace(/<script src="\.\/unified\.js\?v=[^"]*"><\/script>/, '<script>' + uniJs + '</script>');
 const vc = new VirtualConsole();

@@ -29,7 +29,7 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
-W = Path('/Users/hu/fae-knowledge-web/data')
+W = Path('/Users/hu/项目/站点/fae-knowledge-web/data')
 PROD_FILE = W / 'products.json'
 
 # ---------- 官方模拟开关分类（与 gen_catalog.py 同源，来自宣讲 PPT p16-p18）----------

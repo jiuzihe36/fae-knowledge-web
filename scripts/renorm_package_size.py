@@ -7,7 +7,7 @@
 import json, os, sys
 from collections import Counter, defaultdict
 
-path = os.path.expanduser('~/fae-knowledge-web/data/products.json')
+path = os.path.expanduser('~/项目/站点/fae-knowledge-web/data/products.json')
 prod = json.load(open(path, encoding='utf-8'))
 before_path = '/tmp/products_before_fix.json'
 for i, a in enumerate(sys.argv):

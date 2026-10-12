@@ -4,10 +4,10 @@
 # - 输出: SVG 到本目录; 汇总打印到 stdout
 import json, os, re, sys, time
 from collections import Counter
-sys.path.insert(0, '/Users/hu/fae-knowledge-web/scripts/wiring')
+sys.path.insert(0, '/Users/hu/项目/站点/fae-knowledge-web/scripts/wiring')
 from _gen import extract_pins, func_type, gen, DS, OUT
 
-d = json.load(open('/Users/hu/fae-knowledge-web/data/products.json'))
+d = json.load(open('/Users/hu/项目/站点/fae-knowledge-web/data/products.json'))
 prods = d if isinstance(d, list) else d.get('products', [])
 cache, ok, fails = {}, [], []
 by_kind = {}

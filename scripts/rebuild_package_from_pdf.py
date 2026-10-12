@@ -120,7 +120,7 @@ def main():
     print('映射已存 /tmp/pkg_rebuild.json')
 
     if '--write' in sys.argv:
-        path = os.path.expanduser('~/fae-knowledge-web/data/products.json')
+        path = os.path.expanduser('~/项目/站点/fae-knowledge-web/data/products.json')
         prod = json.load(open(path, encoding='utf-8'))
         hit = chg = 0
         for p in prod:

@@ -3,7 +3,7 @@
 """封装接线图批量生成器 —— 自包含 v1.0
 输入:
   /tmp/pins_all.json   (extract_pins.py 产物: model -> [{'pins':[{pin,symbol,desc}]}])
-  ~/fae-knowledge-web/data/products.json (model+package+function)
+  ~/项目/站点/fae-knowledge-web/data/products.json (model+package+function)
 输出:
   /tmp/wiring_batch/svg/{model}_wiring.svg   (720×440, 行栅格对齐, VCC/GND轨, 凸起跳线)
 硬约定(用户7条+资深8条)全部落实于坐标:
@@ -95,7 +95,7 @@ def gen(model,title,pins,pkg):
 
 def main():
     pins_all=json.load(open('/tmp/pins_all.json',encoding='utf-8'))
-    prods=json.load(open(os.path.expanduser('~/fae-knowledge-web/data/products.json'),encoding='utf-8'))
+    prods=json.load(open(os.path.expanduser('~/项目/站点/fae-knowledge-web/data/products.json'),encoding='utf-8'))
     def norm(m): return re.sub(r'(GV|GW|GS|GX|GM|DRL|PW|D)$','',m).replace('-','_').replace(' ','_')
     outd=os.path.expanduser('/tmp/wiring_batch/svg'); os.makedirs(outd,exist_ok=True)
     done=0; skips=[]; norec=0

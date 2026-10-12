@@ -241,7 +241,10 @@ if (typeof document === "undefined") return;
       metaItem("工作温度", item.temp_range),
       metaItem("封装尺寸", item.package_size),
       appSceneItem(item),
-      dsUrl ? '<div class="meta-item"><div class="label">规格书</div><div class="value"><a href="' + esc(dsUrl) + '" target="_blank" rel="noopener">👁 查看</a> · <a href="' + esc(dsUrl) + '" download>⬇ 下载</a></div></div>' : ""
+      dsUrl ? '<div class="meta-item"><div class="label">规格书</div><div class="value"><a href="' + esc(dsUrl) + '" target="_blank" rel="noopener">👁 查看</a> · <a href="' + esc(dsUrl) + '" download>⬇ 下载</a></div></div>' : "",
+      /* 规格书版本 / 该版本发布日期：照录规格书修订记录（脚本 scripts/extract_ds_meta.py 提取） */
+      metaItem("规格书版本", item.ds_ver),
+      metaItem("版本更新日期", item.ds_date)
     ].join("");
 
     /* 竞品对标 / TI 对标 已按需求摘除（网页端不展示任何竞品信息） */

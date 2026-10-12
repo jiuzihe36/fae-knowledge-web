@@ -9,7 +9,7 @@
 import json, os, re, sys
 from collections import Counter
 
-W = os.path.expanduser('~/fae-knowledge-web')
+W = os.path.expanduser('~/项目/站点/fae-knowledge-web')
 
 # 尾缀 → 封装（PDF 与 wiki 字典互证；同尾缀多引脚数取最常见）
 # 参考: EM74LVC1G00GM=DFN1x1.45-6L, GV=SOT23-5L, GS=DFN1x1-6L, GX=DFN0.8x0.8-4L

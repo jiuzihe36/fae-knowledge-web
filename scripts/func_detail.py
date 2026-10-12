@@ -95,7 +95,7 @@ def main():
         stem = m.group(1) if m else pdf
         desc = t.split('||')[1].strip() if '||' in t else ''
         pdf_desc[stem] = desc
-    p = '/Users/hu/fae-knowledge-web/data/products.json'
+    p = '/Users/hu/项目/站点/fae-knowledge-web/data/products.json'
     d = json.load(open(p, encoding='utf-8'))
     SUFFIX = re.compile(r'(GV|GW|GX|GS|GM|DRL|PW|RGY|RSA|UD|MS|RSW|DRC|DRB|YFC|YFQ|YFG|MSV|RSV|N|Q|D)$')
     def base(m):

@@ -21,7 +21,7 @@ rsync -avz --exclude='_gen.py' --exclude='__pycache__' \
 
 ## 数据源关系
 
-- `datasheets/`、`pins/`、`circuits/`、`data/` 的权威源在 `~/fae-knowledge-web`（git 仓库，网页站用）；
+- `datasheets/`、`pins/`、`circuits/`、`data/` 的权威源在 `~/项目/站点/fae-knowledge-web`（git 仓库，网页站用）；
   本部署包是**副本**，更新先改仓库源，再重新拷贝。
 - `应用电路SVG/` 由 `_gen.py` 生成（用 `/tmp/p4/venv` 跑，依赖 pymupdf），真实引脚从 datasheet 抽取。
 - 网页站：https://logic-qbu.pages.dev

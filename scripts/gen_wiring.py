@@ -216,8 +216,8 @@ def gen(model, pkg, func, volt, pins):
 
 def main():
     plan = json.load(open('/tmp/pins_plan.json', encoding='utf-8'))
-    prods = json.load(open(os.path.join(os.path.expanduser('~/fae-knowledge-web'), 'data', 'products.json'), encoding='utf-8'))
-    outd = os.path.expanduser('~/fae-knowledge-web/circuits')
+    prods = json.load(open(os.path.join(os.path.expanduser('~/项目/站点/fae-knowledge-web'), 'data', 'products.json'), encoding='utf-8'))
+    outd = os.path.expanduser('~/项目/站点/fae-knowledge-web/circuits')
     args = sys.argv[1:]
     want = None
     if '--model' in args:

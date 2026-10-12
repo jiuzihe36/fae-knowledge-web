@@ -893,8 +893,10 @@
 
     if (name === "docs") {
       var st = d.stats;
+      var dsN = st.ds_files || st.with_ds;
+      var dsNote = st.ds_latest ? " · 版本/日期照录规格书修订记录（最新发布 " + st.ds_latest + "）" : "";
       html += pageShell("技术文档",
-        "规格书 " + st.with_ds + " 份 · 引脚图 " + st.with_pin + " 份 · 覆盖全部 " + st.total + " 款型号");
+        "规格书 " + dsN + " 份 · 覆盖全部 " + st.total + " 款型号 · 引脚图 " + st.with_pin + " 份" + dsNote);
       html += '<div class="doc-sticky"><div class="doc-tools">' +
         '<input id="docQ" class="page-search" type="search" ' +
         'placeholder="按型号 / 功能 / 系列 / 封装筛选" autocomplete="off">' +
@@ -992,10 +994,25 @@
     if (!PAGES.docs) return [];
     var terms = norm(q).split(/\s+/).filter(Boolean);      /* 多关键词 = 且 */
     var list = !terms.length ? PAGES.docs.items.slice() : PAGES.docs.items.filter(function (it) {
-      var hay = norm(it.m + " " + it.fn + " " + it.se + " " + it.pk + " " + (it.v || "") + " " + (it.t || ""));
+      var hay = norm(it.m + " " + it.fn + " " + it.se + " " + it.pk + " " + (it.v || "") + " " + (it.t || "") +
+                     " " + (it.dv || "") + " " + (it.dd || ""));
       return terms.every(function (t) { return hay.indexOf(t) >= 0; });
     });
     return sortDocs(list);
+  }
+
+  /* 版本号比较键：V1.10 > V1.9（按数值分段，不按字符串） */
+  function verKey(v) {
+    return String(v == null ? "" : v).replace(/^V/i, "").split(".")
+      .map(function (x) { return parseInt(x, 10) || 0; });
+  }
+  function cmpVer(a, b) {
+    var x = verKey(a), y = verKey(b), n = Math.max(x.length, y.length);
+    for (var i = 0; i < n; i++) {
+      var d = (x[i] || 0) - (y[i] || 0);
+      if (d) return d;
+    }
+    return 0;
   }
 
   /* 排序：字符串列按中文/字母，布尔列（技术文档）按有无 */
@@ -1010,6 +1027,8 @@
       }
       x = String(x == null ? "" : x); y = String(y == null ? "" : y);
       if (x === "—") x = ""; if (y === "—") y = "";
+      /* 规格书版本：按数值分段比较（V1.10 > V1.9） */
+      if (k === "dv") return cmpVer(x, y) * dir;
       /* 电压/温度：提取首个数值比较，否则按字符串 */
       if (k === "v" || k === "t") {
         var nx = parseFloat(x.replace(/[^0-9.\-]/g, " ").trim());
@@ -1023,7 +1042,8 @@
   /* 表头：列可点击排序（data-sort 对应 docs.json 字段） */
   var DOC_COLS = [
     ['型号', 'm'], ['功能', 'fn'], ['系列', 'se'], ['封装', 'pk'],
-    ['工作电压', 'v'], ['温度范围', 't'], ['工艺', 'lt'], ['技术文档', 'ds'],
+    ['工作电压', 'v'], ['温度范围', 't'], ['工艺', 'lt'],
+    ['规格书版本', 'dv'], ['更新日期', 'dd'], ['技术文档', 'ds'],
   ];
   var DOC_SORT = { key: '', dir: 1 };
   function docHeadHtml() {
@@ -1058,6 +1078,9 @@
       '<span class="doc-v" title="' + esc(it.v || "—") + '">' + esc(it.v || "—") + "</span>" +
       '<span class="doc-t" title="' + esc(it.t || "—") + '">' + esc(it.t || "—") + "</span>" +
       '<span class="doc-lt">' + esc(it.lt || "—") + "</span>" +
+      /* 规格书最新版本号 / 该版本发布日期（照录规格书修订记录） */
+      '<span class="doc-dv" title="规格书最新版本">' + esc(it.dv || "—") + "</span>" +
+      '<span class="doc-dd" title="该版本发布日期">' + esc(it.dd || "—") + "</span>" +
       '<span class="doc-badges">' +
       (it.ds ? '<span class="dbadge on">规格书</span>' : "") +
       (it.pin ? '<span class="dbadge on">引脚图</span>' : "") +

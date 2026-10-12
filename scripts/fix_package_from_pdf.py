@@ -56,7 +56,7 @@ def main():
             if pk and m not in pdf_pkg:
                 pdf_pkg[m] = pk
 
-    path = os.path.expanduser('~/fae-knowledge-web/data/products.json')
+    path = os.path.expanduser('~/项目/站点/fae-knowledge-web/data/products.json')
     prod = json.load(open(path, encoding='utf-8'))
 
     fixes = []

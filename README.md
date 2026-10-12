@@ -28,6 +28,7 @@
 - 🎛️ **筛选**：按系列（EM74 / EMS / EXS）、功能、封装、电压
 - 📌 **引脚图**：每个型号配真实规格书引脚图，悬停/点击放大
 - 📊 **电气参数**：VCC 范围、逻辑类型、温度范围、封装尺寸
+- 📄 **规格书版本**：每个型号标注所用规格书的最新版本号 + 该版本发布日期（照录规格书修订记录表，不推测），「技术文档」列表可按版本/日期排序与筛选
 
 **数据规模**：670 条型号记录 · 204 张引脚图 · 13 个产品系列。
 
@@ -40,7 +41,7 @@
 维护人员在本机执行一条命令即可完成全端发布：
 
 ```bash
-~/fae-knowledge-web/update.sh
+~/项目/站点/fae-knowledge-web/update.sh
 ```
 
 自动完成四步：
@@ -64,6 +65,8 @@
 ├── pins/               # 204 张引脚图
 ├── scripts/
 │   ├── sync_from_wiki.py   # wiki → products.json 同步
+│   ├── extract_ds_meta.py  # 规格书 PDF → 版本号/发布日期（data/ds_meta.json）
+│   ├── gen_pages.py        # 栏目页数据 + 注入规格书版本字段
 │   └── deploy.sh           # Cloudflare Pages 部署
 └── update.sh           # 一键全端更新（推荐入口）
 ```

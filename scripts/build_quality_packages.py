@@ -8,8 +8,8 @@
 import json, os, re, sys
 from collections import defaultdict
 
-W = os.path.expanduser('~/fae-knowledge-web')
-DICT_MD = os.path.expanduser('~/wiki/_meta/package-dimensions.md')
+W = os.path.expanduser('~/项目/站点/fae-knowledge-web')
+DICT_MD = os.path.expanduser('~/项目/资料/wiki/_meta/package-dimensions.md')
 
 
 def parse_dict():

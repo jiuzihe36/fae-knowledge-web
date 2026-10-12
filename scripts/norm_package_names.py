@@ -9,7 +9,7 @@
 import json, os, re, sys
 from collections import Counter
 
-path = os.path.expanduser('~/fae-knowledge-web/data/products.json')
+path = os.path.expanduser('~/项目/站点/fae-knowledge-web/data/products.json')
 prod = json.load(open(path, encoding='utf-8'))
 
 

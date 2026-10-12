@@ -3,8 +3,11 @@
 import json, os, re, glob
 from pathlib import Path
 
-WIKI = Path.home() / "wiki"
-WEB = Path.home() / "fae-knowledge-web"
+HERE = Path(__file__).resolve().parent.parent        # 站点根目录（脚本可随目录搬移）
+WEB = HERE
+# 本地 wiki 知识库（权威源）：项目归拢到 ~/项目/ 后旧路径 ~/wiki 已不存在
+_WIKI_CANDIDATES = [Path.home() / "项目" / "资料" / "wiki", Path.home() / "wiki"]
+WIKI = next((p for p in _WIKI_CANDIDATES if p.is_dir()), _WIKI_CANDIDATES[0])
 RAW_DIR = WIKI / "raw" / "datasheets"
 ENTITIES_DIR = WIKI / "entities"
 PRODUCTS_FILE = WEB / "data" / "products.json"
