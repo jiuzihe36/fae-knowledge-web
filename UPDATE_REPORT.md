@@ -1,3 +1,22 @@
+# 网页数据更新说明 (2026-10-12 · 应用电路图栏目整体删除)
+
+### 删除内容（按需求：应用电路图太丑，全部下线）
+| 位置 | 处理 |
+|------|------|
+| 顶部导航 | 移除「应用电路图」标签（现为 产品 / 应用 / 技术文档 / 封装与可靠性 四个） |
+| 独立页 | 删除 `gallery.html` + `gallery.js`（原 `/gallery` 入口） |
+| 详情抽屉 | 移除「应用电路图」区块（抽屉现只剩 引脚图 + 电气参数） |
+| 图片文件 | 删除 `app_schematics/` 652 张 SVG（27MB），部署体积相应减少 |
+| 发布清单 | `scripts/deploy.sh` 不再 rsync `app_schematics/`，不再拷贝 gallery 两文件 |
+| 老链接 | 新增 `_redirects`：`/gallery`、`/gallery.html` → 301 回首页，避免书签 404 |
+| 缓存头 | `/*.svg` 由 600s 恢复 604800s（SVG 只剩 favicon，不再持续精修） |
+| 其他 | 清理 `.gal*` / `#appSchematicImg` / `.app-schematic-note` 样式、`safeCircuitName()`、抽屉无用 `el` 引用；meta 描述与关键词去掉「应用电路图」 |
+
+版本号 bump 至 `?v=20261012b`。本地实测：导航 4 标签互切正常、抽屉引脚图与灯箱放大正常、全站 0 个失败请求（不再请求 `app_schematics/`）、各宽度无横向溢出。
+删除文件全部留在 git 历史（`git revert` / `git checkout HEAD~1 -- app_schematics` 可找回）。
+
+---
+
 # 网页数据更新说明 (2026-10-12 · 规格书最新版本号 + 版本发布日期全站上线)
 
 ### 1. 新增：每份规格书的最新版本号与该版本发布日期

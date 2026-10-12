@@ -18,10 +18,6 @@
   }
 
   /* 状态推导（不改 products.json）：Q100 优先，其次 Draft，其余 Product */
-  // 图纸文件名 = 型号原样 (已与 app_schematics/ 下文件逐一对齐); 仅过滤路径穿越字符
-  function safeCircuitName(model) {
-    return String(model || "").replace(/[\/\\]/g, "_");
-  }
 
   function deriveStatus(item) {
     if (!item) return "Product";
@@ -132,10 +128,6 @@ if (typeof document === "undefined") return;
     detailBadges: document.getElementById("detailBadges"),
     detailDesc: document.getElementById("detailDesc"),
     detailMeta: document.getElementById("detailMeta"),
-    circuitWrap: document.getElementById("circuitWrap"),
-    circuitImg: document.getElementById("circuitImg"),
-    appSchematicWrap: document.getElementById("appSchematicWrap"),
-    appSchematicImg: document.getElementById("appSchematicImg"),
     pinWrap: document.getElementById("pinWrap"),
     pinImg: document.getElementById("pinImg"),
     specTable: document.getElementById("specTable") && document.getElementById("specTable").querySelector("tbody"),
@@ -248,26 +240,7 @@ if (typeof document === "undefined") return;
     ].join("");
 
     /* 竞品对标 / TI 对标 已按需求摘除（网页端不展示任何竞品信息） */
-
-    /* 完整应用原理图: app_schematics/{model}_app.svg
-       与上面的简易接线图并存；文件不存在时该区块自动隐藏。 */
-    if (el.appSchematicWrap && el.appSchematicImg) {
-      /* 先隐藏，等 onload 确认真的取到图再显示；404 时 onerror 保持隐藏。
-         不用 onerror 单独控制 —— 那会因为加载时序被提前触发而误隐藏。 */
-      el.appSchematicWrap.classList.add("hidden");
-      el.appSchematicImg.onload = function () {
-        el.appSchematicWrap.classList.remove("hidden");
-        el.appSchematicImg.onload = null;
-      };
-      el.appSchematicImg.onerror = function () {
-        el.appSchematicWrap.classList.add("hidden");
-        el.appSchematicImg.onerror = null;
-      };
-      el.appSchematicImg.src = new URL(
-        "./app_schematics/" + safeCircuitName(item.model) + "_app.svg",
-        document.baseURI
-      ).href;
-    }
+    /* 应用电路图（app_schematics/*.svg）已按需求整体删除：导航栏目 / 独立页 / 抽屉区块 / 图片文件全部移除 */
 
     if (item.pin_image) {
       el.pinWrap.classList.remove("hidden");
@@ -402,7 +375,6 @@ if (typeof document === "undefined") return;
 
     // 空值保护: 浏览器缓存旧版 index.html 时新元素为 null, 直接 addEventListener 会抛错中断整个 init
     if (el.pinImg) el.pinImg.addEventListener("click", function () { openLightbox(el.pinImg); });
-    if (el.appSchematicImg) el.appSchematicImg.addEventListener("click", function () { openLightbox(el.appSchematicImg); });
     el.lightboxClose.addEventListener("click", closeLightbox);
     el.lightbox.addEventListener("click", function (event) {
       if (event.target === el.lightbox || event.target.classList.contains("lightbox-mask") || event.target === el.lightboxImg) {
@@ -461,8 +433,7 @@ if (typeof document === "undefined") return;
             || products.find(function (p) { return p.model.toUpperCase().indexOf(m) === 0; });
           if (item) openDetail(item.id);
         };
-        /* 支持 index.html?model=EM74HC138D 深链：便于分享单个型号，
-           也便于本地画廊页（gallery.html）点卡片直接跳到详情。 */
+        /* 支持 index.html?model=EM74HC138D 深链：便于分享单个型号直达详情。 */
         try {
           const want = new URLSearchParams(location.search).get("model");
           if (want) window.__xx.openByModel(want);

@@ -555,7 +555,7 @@
     document.querySelectorAll(".band-in a").forEach(function (a) {
       a.addEventListener("click", function (e) {
         var page = a.getAttribute("data-page");
-        if (!page) return;          // 无 data-page 的是站内跳转（如 gallery.html），走默认导航
+        if (!page) return;          // 无 data-page 的是站外/整页跳转，走浏览器默认导航
         e.preventDefault();
         goPage(page);
       });
@@ -577,7 +577,7 @@
       var mod = e.target.closest("[data-model]");
       if (mod) { openDetail(mod.getAttribute("data-model"), mod); return; }
       var card = e.target.closest(".app-card");
-      if (card && !card.classList.contains("gal-card")) {   /* 画廊分组卡由 gallery.js 自己处理 */
+      if (card) {
         var body = card.querySelector(".app-models");
         if (body) { body.classList.toggle("hidden"); card.classList.toggle("open"); }
         return;
@@ -684,8 +684,7 @@
     /* 技术文档页：点表头排序（升序 ↔ 降序） */
     if (el.pageBody) el.pageBody.addEventListener("click", function (e) {
       var th = e.target.closest(".doc-th");
-      /* 只有技术文档页在场时才接管：应用电路图也用 .doc-th，
-         不设这道护栏会把画廊的表头整个换成文档表头（排序随即失效） */
+      /* 只有技术文档页在场时才接管（.doc-th 由栏目页注入，护栏防串页接管） */
       if (th && PAGES.docs && document.getElementById("docList")) {
         var key = th.getAttribute("data-sort");
         if (DOC_SORT.key === key) DOC_SORT.dir = -DOC_SORT.dir;
@@ -765,21 +764,9 @@
   var PAGES = { apps: null, docs: null, quality: null };
 
   function loadPage(name) {
-    if (name === 'gallery') { renderGalleryPage(); return; }   /* 应用电路图画廊：无 JSON，直接渲染 */
     var f = name === 'apps' ? 'apps.json' : name === 'docs' ? 'docs.json' : 'quality.json';
     if (PAGES[name]) { renderPage(name); return; }
     loadJson("./data/" + f).then(function (d) { PAGES[name] = d; renderPage(name); });
-  }
-
-  /* 应用电路图画廊标签：与其他栏目同款 pageShell 版式，卡片逻辑复用 gallery.js 的 __gallery.mount */
-  function renderGalleryPage() {
-    el.pageBody.innerHTML = pageShell(
-      "应用电路图",
-      "全系列完整原理图：引脚表 / 真值表 / 电气参数 / 封装图 · 点卡片看大图 · 数据照录规格书",
-      '<div id="galhost"></div>');
-    if (window.__gallery) {
-      window.__gallery.mount(document.getElementById("galhost"));
-    }
   }
 
   function pageShell(title, sub, body) {
@@ -1110,7 +1097,7 @@
     if (onA && onA.scrollIntoView) onA.scrollIntoView({ inline: "nearest", block: "nearest" });
     /* 栏目页：面包屑给「返回产品目录」+ 当前栏目名 */
     if (el.crumb && name !== "catalog") {
-      var TITLES = { apps: "应用", docs: "技术文档", quality: "封装与可靠性", gallery: "应用电路图" };
+      var TITLES = { apps: "应用", docs: "技术文档", quality: "封装与可靠性" };
       el.crumb.innerHTML = '<a href="#" data-crumb-back="home">产品目录</a>' +
         '<span class="sep">/</span><b>' + esc(TITLES[name] || "") + "</b>";
     } else {

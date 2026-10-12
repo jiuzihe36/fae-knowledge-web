@@ -37,14 +37,15 @@ PUB="$(mktemp -d /tmp/fae_pub.XXXXXX)"
 trap 'rm -rf "$PUB"' EXIT
 echo "📦 构造发布目录 $PUB"
 
-# 站点资源目录（代码里实际引用的：./circuits/ ./data/ ./datasheets/）
-# 应用电路图上线 (2026-10-01)：发布 652 张实际应用电路图；接线图 circuits/ 已全部删除
-for d in datasheets pins_webp pins data app_schematics; do
+# 站点资源目录（代码里实际引用的：./data/ ./datasheets/ ./pins_webp/）
+# 2026-10-12：应用电路图（app_schematics/ 652 张 SVG，27MB）已按需求整体删除，不再发布；
+# 更早的接线图 circuits/ 也已删除。
+for d in datasheets pins_webp pins data; do
   [ -d "$DIR/$d" ] && rsync -a --exclude '.DS_Store' "$DIR/$d/" "$PUB/$d/"
 done
 
 # 根文件（HTML/JS/CSS/图标，排除调试脚本）
-for f in index.html gallery.html gallery.js app.js unified.js theme-init.js style.css favicon.svg apple-touch-icon.png og-cover.png; do
+for f in index.html app.js unified.js theme-init.js style.css favicon.svg apple-touch-icon.png og-cover.png; do
   [ -f "$DIR/$f" ] && cp "$DIR/$f" "$PUB/"
 done
 
