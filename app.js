@@ -132,8 +132,6 @@ if (typeof document === "undefined") return;
     pinImg: document.getElementById("pinImg"),
     specTable: document.getElementById("specTable") && document.getElementById("specTable").querySelector("tbody"),
     specEmpty: document.getElementById("specEmpty"),
-    relatedDoc: document.getElementById("relatedDoc"),
-    relatedFunc: document.getElementById("relatedFunc"),
     lightbox: document.getElementById("lightbox"),
     lightboxImg: document.getElementById("lightboxImg"),
     lightboxCap: document.getElementById("lightboxCap"),
@@ -270,18 +268,6 @@ if (typeof document === "undefined") return;
       });
     });
 
-    const docModels = products
-      .filter(function (p) { return p.source_label && p.source_label === item.source_label && p.id !== item.id; })
-      .sort(function (a, b) { return a.model.localeCompare(b.model); })
-      .slice(0, 12);
-    const funcModels = products
-      .filter(function (p) { return p.function && p.function === item.function && p.id !== item.id && p.source_document_id !== item.source_document_id; })
-      .sort(function (a, b) { return a.model.localeCompare(b.model); })
-      .slice(0, 12);
-
-    el.relatedDoc.innerHTML = relatedLinks(docModels, item.source_label);
-    el.relatedFunc.innerHTML = relatedLinks(funcModels, item.function);
-
     el.detail.classList.remove("hidden");
     el.detail.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
@@ -304,15 +290,6 @@ if (typeof document === "undefined") return;
       return '<a href="#" class="app-scene-link" data-app-scene="' + esc(s) + '">' + esc(s) + "</a>";
     }).join("、");
     return '<div class="meta-item"><div class="label">应用场景</div><div class="value">' + links + "</div></div>";
-  }
-
-  function relatedLinks(items, note) {
-    if (!items.length) {
-      return '<div class="empty">无</div>';
-    }
-    return items.map(function (item) {
-      return '<a href="#" data-id="' + item.id + '">' + esc(item.model) + "<small>" + esc(text(item.function)) + " / " + esc(text(item.package)) + "</small></a>";
-    }).join("");
   }
 
   function closeDetail() {
@@ -358,8 +335,6 @@ if (typeof document === "undefined") return;
 
     el.closeDetail.addEventListener("click", closeDetail);
     el.detailBackdrop.addEventListener("click", closeDetail);
-    el.relatedDoc.addEventListener("click", relatedClick);
-    el.relatedFunc.addEventListener("click", relatedClick);
 
     /* 详情里的「应用场景」点击 → 关抽屉 + 跳应用页筛出该场景 */
     if (el.detailMeta) el.detailMeta.addEventListener("click", function (event) {
@@ -390,13 +365,6 @@ if (typeof document === "undefined") return;
         closeDetail();
       }
     });
-  }
-
-  function relatedClick(event) {
-    const link = event.target.closest("[data-id]");
-    if (!link) return;
-    event.preventDefault();
-    openDetail(Number(link.dataset.id));
   }
 
   /* ---------- 数据加载 ---------- */
