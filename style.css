@@ -2567,3 +2567,12 @@ body { background: var(--bg); }
   .sel-tbl th:nth-child(3), .sel-tbl td:nth-child(3),
   .sel-tbl th:nth-child(7), .sel-tbl td:nth-child(7) { display: none; }  /* 窄屏隐藏系列/产品线 */
 }
+
+/* 可靠性三表并排（2026-11-06） */
+.rel-wrap { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 6px; }
+.rel-card { border: 1px solid var(--border, #e3e6e9); border-radius: 8px; overflow: hidden; }
+.rel-title { font-size: 12.5px; font-weight: 600; padding: 8px 10px; background: rgba(0,0,0,.02);
+  border-bottom: 1px solid var(--border, #e3e6e9); }
+.rel-card .q-tbl { margin: 0; }
+.rel-card .q-tbl th, .rel-card .q-tbl td { padding: 6px 10px !important; font-size: 12px; }
+@media (max-width: 860px) { .rel-wrap { grid-template-columns: 1fr; } }

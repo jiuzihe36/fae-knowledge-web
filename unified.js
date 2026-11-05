@@ -846,6 +846,16 @@
     });
   }
 
+  /* 可靠性小表：等级 / 型号数 / 占比 */
+  function relTable(title, rows, tot) {
+    return '<div class="rel-card"><div class="rel-title">' + esc(title) + '</div>' +
+      '<table class="param q-tbl"><thead><tr><th>等级</th><th class="num">型号数</th><th class="num">占比</th></tr></thead><tbody>' +
+      rows.map(function (r) {
+        return '<tr><td class="k">' + esc(r.k) + '</td><td class="v num">' + r.n +
+          '</td><td class="v num">' + (r.n / tot * 100).toFixed(1) + '%</td></tr>';
+      }).join("") + '</tbody></table></div>';
+  }
+
   function selTableHtml(rows) {
     if (!rows.length) return '<div class="empty">没有匹配的型号，请放宽筛选条件</div>';
     var head = '<thead><tr><th>型号</th><th>功能</th><th>系列</th><th>封装</th><th>工作电压</th><th>工作温度</th><th>产品线</th></tr></thead>';
@@ -1077,6 +1087,19 @@
               '</td><td class="v num">' + (t.n / tot * 100).toFixed(1) + '%</td></tr>';
           }).join("") + "</tbody></table>" +
           '<p class="page-note"><b>Draft</b> 表示该型号规格书仍为草稿版、尚未量产：可送样评估与参数对标，<b>不承诺量产交期</b>，报价前须向产品线确认。</p>';
+      }
+
+      /* ③c 可靠性：ESD / Latch-up（数据来自 data/esd.json，gen_pages 聚合） */
+      if (d.reliability) {
+        var rl = d.reliability;
+        html += '<h3 class="page-h3">可靠性：ESD 与 Latch-up</h3>';
+        html += '<p class="page-note">数据取自各规格书 <b>Features / ESD protection</b> 段（' + rl.covered + ' / ' + rl.total + ' 款有明确数值）；' +
+          '「规格书未列」表示该份规格书未给出该项，<b>不代表无防护</b>。ESD 分档按 JEDEC：HBM Class 2 = 2–4 kV、Class 3A = 4–8 kV、Class 3B ≥ 8 kV；CDM Class C3 ≥ 500 V。</p>';
+        html += '<div class="rel-wrap">' +
+          relTable("HBM（人体放电）", rl.hbm, tot) +
+          relTable("CDM（器件充电）", rl.cdm, tot) +
+          relTable("Latch-up（闩锁）", rl.latch, tot) +
+          '</div>';
       }
 
       /* ④ 型号尾缀对照（紧凑：主封装 + 其余折叠） */

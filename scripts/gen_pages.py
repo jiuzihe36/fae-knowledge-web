@@ -362,6 +362,38 @@ if _qpath.exists():
     except Exception:
         pass
 
+# ---------- ①b 可靠性（ESD / Latch-up）：data/esd.json 由规格书 Features/ESD 段提取 ----------
+try:
+    esd = json.load(open(W / 'esd.json', encoding='utf-8'))
+except Exception:
+    esd = {}
+if esd:
+    cnt_by_src = {}
+    for _p in prod:
+        _sl = _p.get('source_label') or ''
+        cnt_by_src[_sl] = cnt_by_src.get(_sl, 0) + 1
+    hbm, cdm, latch = Counter(), Counter(), Counter()
+    covered = 0
+    for _sl, _e in esd.items():
+        _n = cnt_by_src.get(_sl, 0)
+        if _n == 0:
+            continue
+        if _e.get('hbm') or _e.get('cdm') or _e.get('latchup'):
+            covered += _n
+        _hc = _e.get('hbm_class') or ''
+        hbm[('Class ' + _hc) if _hc else '规格书未列'] += _n
+        _cc = _e.get('cdm_class') or ''
+        cdm[('Class ' + _cc) if _cc.startswith('C') else (_cc or '规格书未列')] += _n
+        latch[_e.get('latch_ma') or '规格书未列'] += _n
+    quality['reliability'] = {
+        'covered': covered,
+        'total': len(prod),
+        'hbm': [{'k': k, 'n': v} for k, v in hbm.most_common()],
+        'cdm': [{'k': k, 'n': v} for k, v in cdm.most_common()],
+        'latch': [{'k': k, 'n': v} for k, v in latch.most_common()],
+    }
+    print('可靠性: 覆盖 %d/%d 款 | HBM %d 档 / CDM %d 档 / Latch-up %d 档' % (covered, len(prod), len(hbm), len(cdm), len(latch)))
+
 json.dump(quality, open(W / 'quality.json', 'w', encoding='utf-8'),
           ensure_ascii=False, separators=(',', ':'))
 

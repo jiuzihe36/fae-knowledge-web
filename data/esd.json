@@ -1,0 +1,1586 @@
+{
+ "EL3157_Product_DS_V1.1.pdf": {
+  "hbm": "",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT1G02_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT1G04_Product_DS_V1.3.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT1G06_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT1G07_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT1G08_Product_DS_V1.5.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT1G09_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT1G11_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT1G125_Product_DS_V1.3.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT1G126_Product_DS_V1.3.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT1G14_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT1G16_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT1G17_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT1G240_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 6000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT1G32_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT1G332_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT2G04_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT2G14_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT2G16_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AHC_AHCT2G34_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74AUP1G07_Draft_DS_V0.1.pdf": {
+  "hbm": "HBM: ANSI/ESDA/JEDEC JS-001 Class 2 exceeds 3000 V",
+  "cdm": "CDM: ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74CBT3257_Product_DS_V1.0.pdf": {
+  "hbm": "ESD protection: HBM ESDA/JEDEC JS-001 Class 2 exceeds 2000 V",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "2",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EM74CBTLV3125_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 6000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74CBTLV3126_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 6000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74CBTLV3253_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 6000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74CBTLV3257_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 6000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC164A_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 6500 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC164_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2 exceeds 3500 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC165A_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 4500 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC594_Draft_DS_V0.9.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2 exceeds 3500 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC595A_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 6000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS00_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2 exceeds 3500 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS02_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2 exceeds 3500 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS03_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2 exceeds 3500 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS04_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2 exceeds 3500 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS05_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2 exceeds 3500 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS08_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2 exceeds 3500 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS09_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2 exceeds 3500 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS10_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2 exceeds 3500 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS11_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS125_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS126_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS20_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS21_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS266_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS27_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS32_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS365_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS367_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS4075_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS7266_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCS86_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCT164_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HCT595_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT00_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT02_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT03_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT04_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT05_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT06_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT07_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT08_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT09_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT10_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT11_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT125_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT126_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT132_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT138_Product_DS_V1.0.pdf": {
+  "hbm": "HBM: ANSI/ESDA/JEDEC JS-001 class 2 exceeds 3500 V",
+  "cdm": "CDM: ANSI/ESDA/JEDEC JS-002 class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT14_Product_DS_V1.4.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT166_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT174_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT20_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT21_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT240_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT244_Product_DS_V1.3.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT245_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT259_Product_DS_V1.0.pdf": {
+  "hbm": "HBM: ANSI/ESDA/JEDEC JS-001 class 2 exceeds 3500 V",
+  "cdm": "CDM: ANSI/ESDA/JEDEC JS-002 class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT266_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT27_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT32_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT365_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT366_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT367_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT368_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT4002_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT4075_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT4094_Draft_DS_V0.9.pdf": {
+  "hbm": "HBM JESD22-A114F exceeds 2000 V",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "2",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EM74HC_HCT540_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT541_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT573_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT574_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT597_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT7001_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT7002_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT7032_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT7266_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT74_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74HC_HCT86_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LV1T00_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74LV1T02_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74LV1T04_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74LV1T08_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74LV1T125_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74LV1T126_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74LV1T32_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74LV1T34_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74LV1T86_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74LV1T87_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74LVC00A_Product_DS_V1.3.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC02A_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC04A_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC06A_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC07A_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC08A_Product_DS_V1.3.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC10A_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC11_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC125A_Product_DS_V1.3.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC126A_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC132A_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC14A_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC1G00_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G02_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G04_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G06_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G07_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G08_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G09_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G10_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G11_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G125_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G126_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G132_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G14_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G16_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G17_Product_DS_V1.4.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G240_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G27_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G32_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G332_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G34_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G38_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC1G57_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74LVC1G58_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74LVC1G86_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74LVC1G97_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EM74LVC1GU04_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC2G04_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC2G06_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC2G07_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC2G14_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC2G16_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC2G17_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC2G34_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC2GU04_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3B",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3B",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC32A_Product_DS_V1.3.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC4245A_Product_DS_V1.4.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC4245_Product_DS_V1.3.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC540A_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC541A_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC74A_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC86A_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC_LVCH1T45_Draft_DS_V0.3.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EM74LVC_LVCH244A_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC_LVCH245A_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC_LVCH8T245_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EMS23157-Q100_Drft_DS_V0.9.pdf": {
+  "hbm": "",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS23157_Product_DS_V1.3.pdf": {
+  "hbm": "",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS2750_Product_DS_V1.1.pdf": {
+  "hbm": "",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS3157-Q100_Draft_DS_V0.92.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EMS3157_Product_DS_V1.8.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 200 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "200 mA"
+ },
+ "EMS3218_Draft_DS_V0.1.pdf": {
+  "hbm": "",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS3412_Draft_DS_V0.1.pdf": {
+  "hbm": "2 kV HBM",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "2",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS3515_Product_DS_V1.2.pdf": {
+  "hbm": "HBM, JEDEC : JESD22-A114 I/O to GND±6 kV",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "3A",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS3518_Product_DS_V1.0.pdf": {
+  "hbm": "HBM Human-body model -5000 +5000 V",
+  "cdm": "CDM Charged-device model -2000 +2000 V",
+  "latchup": "Latch-up 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EMS3550_Product_DS_V1.0.pdf": {
+  "hbm": "HBM, JEDEC: JESD22-A114 -4 4 kV",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "3A",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS3580_Product_DS_V1.0.pdf": {
+  "hbm": "HBM±6000 V",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "3A",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS3900_Product_DS_V1.8.pdf": {
+  "hbm": "HBM ESDA/JEDEC JS-001 Class 2",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "2",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS3902_Product_DS_V1.1.pdf": {
+  "hbm": "HBM ESDA/JEDEC JS-001 Class 2",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "2",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS3905_Product_DS_V1.3.pdf": {
+  "hbm": "",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS4000_Product_DS_V1.7.pdf": {
+  "hbm": "HBM ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EMS4002_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EMS4100_Product_DS_V1.4.pdf": {
+  "hbm": "2kV HBM",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "2",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS4310_Draft_DS_V0.1.pdf": {
+  "hbm": "2 kV HBM",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "2",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS4320_Product_DS_V1.0.pdf": {
+  "hbm": "HBM -3000 3000 V",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "2",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS4321_Product_DS_V1.0.pdf": {
+  "hbm": "HBM -3000 3000 V",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "2",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS4422_Product_DS_V1.1.pdf": {
+  "hbm": "2kV HBM",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "2",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS4485_Draft_DS_V0.9.pdf": {
+  "hbm": "HBM, DP_R, DN_L, SENSE, MIC pins±5 kV",
+  "cdm": "",
+  "latchup": "Latch-up 800 mA",
+  "hbm_class": "3A",
+  "cdm_class": "",
+  "latch_ma": "800 mA"
+ },
+ "EMS4567_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ESDA/JEDEC JS-001 Class 2",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "2",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS4735_Product_DS_V1.2.pdf": {
+  "hbm": "HBM ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "3A",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS4798_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ESDA/JEDEC JS-001 Class 2",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": ""
+ },
+ "EMS4899_Product_DS_V1.4.pdf": {
+  "hbm": "HBM ESDA/JEDEC JS-001 Class 2",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "2",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EMS7227_Draft_DS_V0.1.pdf": {
+  "hbm": "Human Body Model, JEDEC: JESD22-A114 All Pins 7 kV",
+  "cdm": "",
+  "latchup": "",
+  "hbm_class": "3A",
+  "cdm_class": "",
+  "latch_ma": ""
+ },
+ "EXS0102_Product_DS_V1.1.pdf": {
+  "hbm": "HBM: ANSI/ESDA/JEDEC JS-001 class 2 exceeds 2500 V",
+  "cdm": "CDM: ANSI/ESDA/JEDEC JS-002 class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EXS0104_Product_DS_V1.1.pdf": {
+  "hbm": "HBM: ANSI/ESDA/JEDEC JS-001 class 2 exceeds 2500 V",
+  "cdm": "CDM: ANSI/ESDA/JEDEC JS-002 class C3 exceeds 1000 V",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EXS0106_Product_DS_V1.0.pdf": {
+  "hbm": "HBM: ANSI/ESDA/JEDEC JS-001 class 2 exceeds 2500 V",
+  "cdm": "CDM: ANSI/ESDA/JEDEC JS-002 class C3 exceeds 1000 V",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ },
+ "EXS0108_Product_DS_V1.0.pdf": {
+  "hbm": "HBM: ANSI/ESDA/JEDEC JS-001 class 2 exceeds 2500 V",
+  "cdm": "CDM: ANSI/ESDA/JEDEC JS-002 class C3 exceeds 1000 V",
+  "latchup": "Latch-up performance exceeds 100 mA",
+  "hbm_class": "2",
+  "cdm_class": "C3",
+  "latch_ma": "100 mA"
+ }
+}
