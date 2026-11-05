@@ -2328,6 +2328,26 @@ body { background: var(--bg); }
 .pkg-tbl th:nth-child(2), .pkg-tbl td:nth-child(2) { width: 80px; }
 .pkg-tbl .size-cell { word-break: break-word; line-height: 1.75; }
 
+/* 2026-11-05 修复：封装规格表「引脚」与「本体尺寸」两列视觉黏连（渲染成 "14 (宽)3.9"）。
+   原因：引脚列右对齐、本体尺寸列左对齐，两列之间只有 4px padding。
+   处理：整表加大列间距 + 列间加淡竖线（深色模式单独给色），并把本体尺寸列改为等宽字体便于对齐。 */
+.pkg-tbl th, .pkg-tbl td { padding-inline: 10px !important; }
+.pkg-tbl th:nth-child(3), .pkg-tbl td:nth-child(3) { padding-right: 14px !important; }
+.pkg-tbl th:nth-child(4), .pkg-tbl td:nth-child(4) { padding-left: 10px !important;
+  font-variant-numeric: tabular-nums; }
+.pkg-tbl th + th, .pkg-tbl td + td { border-left: 1px solid rgba(0, 0, 0, .12); }
+.pkg-tbl td { line-height: 1.65; }
+:root[data-theme="dark"] .pkg-tbl th + th,
+:root[data-theme="dark"] .pkg-tbl td + td { border-left-color: rgba(255, 255, 255, .16); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .pkg-tbl th + th,
+  :root:not([data-theme="light"]) .pkg-tbl td + td { border-left-color: rgba(255, 255, 255, .16); }
+}
+@media (max-width: 560px) {
+  .pkg-tbl th, .pkg-tbl td { padding-inline: 6px !important; }
+  .pkg-tbl th + th, .pkg-tbl td + td { border-left: 0; }
+}
+
 @media (max-width: 720px) {
   .q-overview { grid-template-columns: repeat(2, 1fr); }
   .q-tbl { table-layout: auto; }
