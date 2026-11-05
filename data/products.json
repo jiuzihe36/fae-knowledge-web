@@ -154363,24 +154363,5 @@
   ],
   "ds_ver": "V0.3",
   "ds_date": "2026-10-15"
- },
- {
-  "id": 20658,
-  "model": "EM74LVCH1T45",
-  "family": "逻辑芯片",
-  "series": "EM74",
-  "function": "其他",
-  "description": "EM74LVC1T45; EM74LVCH1T45",
-  "package": "BGA-6",
-  "package_size": null,
-  "voltage": null,
-  "pin_image": null,
-  "logic_type": "CMOS",
-  "temp_range": null,
-  "source_document_id": null,
-  "source_label": "EM74LVC_LVCH1T45_Draft_DS_V0.3.pdf",
-  "specs": [],
-  "ds_ver": "V0.3",
-  "ds_date": "2026-10-15"
  }
 ]

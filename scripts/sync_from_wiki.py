@@ -76,6 +76,13 @@ def main():
         if not pns:
             continue
         
+        # 护栏（2026-11-05）：一份规格书含多个 part_number（双变体，如 EM74LVC1T45/EM74LVCH1T45）时，
+        # 只要其中任一型号已在库（精确或同前缀带尾缀），就视为该实体已入库，**不再生成裸名占位**
+        # ——否则会给另一个变体加一条 package=BGA-6/voltage=None/function=其他 的脏条目。
+        if len(pns) > 1 and any(
+                any(m == pn or m.startswith(pn) for m in have_models) for pn in pns):
+            continue
+
         family, series = get_info(rn)
         slug = sl.replace(".pdf", "").lower().replace("_", "-")
         specs = parse_entity_specs(slug)
