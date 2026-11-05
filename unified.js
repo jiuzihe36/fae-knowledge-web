@@ -837,6 +837,7 @@
         'title="' + (fav ? "取消常用" : "标记常用") + '" aria-label="标记常用">' +
         (fav ? "★" : "☆") + "</button>" +
         '<span class="app-caret">▸</span></div>' +
+        (it.desc ? '<div class="app-desc">' + esc(it.desc) + '</div>' : '') +
         '<div class="app-count">' + it.count + " 款型号 · 点击展开</div>" +
         '<div class="app-models hidden">' + appModelsHtml(it.models) + "</div></div>";
     }).join("");

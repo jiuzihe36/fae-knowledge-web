@@ -2542,3 +2542,7 @@ body { background: var(--bg); }
   .q-tbl th, .q-tbl td { padding-inline: 6px !important; }
   .q-tbl th + th, .q-tbl td + td { border-left: 0; }
 }
+/* 2026-11-05：应用场景卡片加一句选型说明（.app-desc） */
+.app-desc { font-size: 12.5px; line-height: 1.55; color: var(--muted-foreground, #6b7280);
+  margin: 2px 0 6px; max-width: 92%; }
+.app-card.fav .app-desc { max-width: 88%; }
