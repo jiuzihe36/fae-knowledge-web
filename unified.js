@@ -897,14 +897,15 @@
     if (name === "quality") {
       var tot = d.total || 1;
       html += pageShell("封装与可靠性",
-        "温度等级 · 封装尺寸 · 工艺类型，共 " + d.total + " 款型号");
+        "温度等级 · 封装尺寸 · 产品状态，共 " + d.total + " 款型号");
 
       /* ① 概览卡片 */
+      var _draftN = ((d.status || []).filter(function (x) { return /Draft/i.test(x.k); })[0] || {}).n || 0;
       html += '<div class="q-overview">' +
         qCard(d.total, "在库型号") +
-        qCard(d.temp.length, "温度等级") +
         qCard(d.package.length, "封装形式") +
-        qCard(d.suffix ? d.suffix.length : 0, "尾缀种类") +
+        qCard(d.temp.length, "温度等级") +
+        qCard(_draftN, "Draft 未量产") +
         '</div>';
 
       /* ② 工作温度等级（含占比条） */
@@ -915,15 +916,30 @@
           return '<tr><td class="k">' + esc(t.k) + '</td><td class="v num">' + t.n +
             '</td><td class="v num">' + pct.toFixed(1) + '%</td>' +
             '<td class="bar-col"><span class="q-bar" style="width:' + Math.max(pct, 1).toFixed(1) + '%"></span></td></tr>';
-        }).join("") + "</tbody></table>";
+        }).join("") + "</tbody></table>" +
+        '<p class="page-note">温度范围取自各规格书 <b>Recommended Operating Conditions</b> 的 Tamb（-40 °C 起），全库只有两档：' +
+        d.temp.map(function (t) { return '<b>' + esc(t.k.replace(/\s*°C/g, '℃').replace(/ to /, '～')) + '</b>（' + t.n + ' 款）'; }).join(' 与 ') +
+        '。同系列不同封装可能共用同一档，选型以该型号规格书为准。</p>';
 
-      /* ③ 工艺类型 */
-      html += '<h3 class="page-h3">工艺类型</h3>' +
-        '<table class="param q-tbl"><thead><tr><th>类型</th><th class="num">型号数</th><th class="num">占比</th></tr></thead><tbody>' +
-        d.logic_type.map(function (t) {
+      /* ③ 产品线分布 */
+      var _lines = d.product_line || d.logic_type || [];
+      html += '<h3 class="page-h3">产品线分布</h3>' +
+        '<table class="param q-tbl"><thead><tr><th>产品线</th><th class="num">型号数</th><th class="num">占比</th></tr></thead><tbody>' +
+        _lines.map(function (t) {
           return '<tr><td class="k">' + esc(t.k) + '</td><td class="v num">' + t.n +
             '</td><td class="v num">' + (t.n / tot * 100).toFixed(1) + '%</td></tr>';
         }).join("") + "</tbody></table>";
+
+      /* ③b 产品状态（正式版 / Draft） */
+      if (d.status && d.status.length) {
+        html += '<h3 class="page-h3">产品状态</h3>' +
+          '<table class="param q-tbl"><thead><tr><th>状态</th><th class="num">型号数</th><th class="num">占比</th></tr></thead><tbody>' +
+          d.status.map(function (t) {
+            return '<tr><td class="k">' + esc(t.k) + '</td><td class="v num">' + t.n +
+              '</td><td class="v num">' + (t.n / tot * 100).toFixed(1) + '%</td></tr>';
+          }).join("") + "</tbody></table>" +
+          '<p class="page-note"><b>Draft</b> 表示该型号规格书仍为草稿版、尚未量产：可送样评估与参数对标，<b>不承诺量产交期</b>，报价前须向产品线确认。</p>';
+      }
 
       /* ④ 型号尾缀对照（紧凑：主封装 + 其余折叠） */
       if (d.suffix && d.suffix.length) {
@@ -957,7 +973,8 @@
           return '<tr><td class="k mono">' + esc(p.k) + '</td><td class="v num">' + p.n +
             '</td><td class="v num">—</td><td class="v sm size-cell">' + esc(fmtSize(p.size)) +
             '</td><td class="v num">—</td><td class="v num">—</td></tr>';
-        }).join("")) + "</tbody></table>";
+        }).join("")) + "</tbody></table>" +
+        '<p class="page-note">本体尺寸与高度取自各规格书 <b>Ordering Information</b> 描述行；<b>pitch</b> 为 SOT / SOP / TSSOP 等标准外形族的封装标准值（SOT23 0.95、SOP 1.27、TSSOP/SSOP 0.65、SOT353/363 0.65、SOT553/563 0.5 mm）；DFN / QFN / BGA / WLCSP 的 pitch 随型号不同，标 <b>—</b> 者须查对应型号规格书的 Package Outline。个别封装代码与规格书订货描述不一致（如 <b>DFN0.8x0.8-4L</b> 的描述写作 5 pins），表内按 <b>规格书描述</b> 录引脚数，量产前须向产品线确认。</p>';
 
       /* ⑥ 系列分布（温度档） */
       if (d.by_series && d.by_series.length) {

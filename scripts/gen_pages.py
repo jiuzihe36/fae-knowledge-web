@@ -161,13 +161,29 @@ temp = Counter()
 pkg = Counter()
 status = Counter()
 logic = Counter()
+product_line = Counter()
 by_series = defaultdict(lambda: {'n': 0, 'temp': Counter(), 'pkg': Counter()})
+def _is_draft(p):
+    """产品状态按源规格书判定：文件名含 Draft/Drft → 未量产；其余正式版。
+    （products 里的 status 字段历史为空，页面曾整块显示「未标注」）"""
+    return bool(re.search(r'draft|drft', p.get('source_label') or '', re.I))
+
+def _product_line(p):
+    s = (p.get('series') or '').upper()
+    if s == 'EXS':
+        return '电平转换'
+    if s in ('EMS', 'EL', 'EMBMS'):
+        return '模拟开关'
+    return '逻辑'
+
 for p in prod:
     t = p.get('temp_range') or '未标注'
     k = p.get('package') or '未标注'
-    st = p.get('status') or '未标注'
+    st = 'Draft（未量产）' if _is_draft(p) else '正式版'
     lt = p.get('logic_type') or ''
+    pl = _product_line(p)
     temp[t] += 1; pkg[k] += 1; status[st] += 1; logic[lt] += 1
+    product_line[pl] += 1
     s = p.get('series') or '未标注'
     by_series[s]['n'] += 1
     by_series[s]['temp'][t] += 1
@@ -195,6 +211,7 @@ quality = {
     'package': pk_rows,
     'status': [{'k': k, 'n': v} for k, v in status.most_common()],
     'logic_type': [{'k': k, 'n': v} for k, v in logic.most_common()],
+    'product_line': [{'k': k, 'n': v} for k, v in product_line.most_common()],
     'by_series': [{'k': s, 'n': d['n'],
                    'temp': [{'k': a, 'n': b} for a, b in d['temp'].most_common()],
                    'pkg': [{'k': a, 'n': b} for a, b in d['pkg'].most_common(6)]}
@@ -224,6 +241,9 @@ FAMILY = OrderedDict([
     ('RSV', ('QFN 1.8×2.6', '方形扁平无引脚')),
     ('RSA', ('QFN 1.7×2',  '方形扁平无引脚')),
     ('RGY', ('QFN 3.5×3.5', '方形扁平无引脚')),
+    ('ARGY', ('QFN 3.5×3.5', '方形扁平无引脚（A 变体型号，实际尾缀 RGY）')),
+    ('GE',  ('DFN',          '双侧无引脚扁平')),
+    ('YZP', ('BGA',          '球栅阵列（BGA）')),
     ('DRC', ('DFN 3×3',    '双侧无引脚扁平')),
     ('DRB', ('QFN 1.4×1.8', '方形扁平无引脚')),
     ('UD',  ('QFN 3×3',    '方形扁平无引脚')),
@@ -272,6 +292,9 @@ def _pkg_family(pkg_name):
     m = _re.match(r'^(QFN|DFN)$', n)
     if m:
         return m.group(1)
+    m = _re.match(r'^(BGA)', n)
+    if m:
+        return 'BGA'
     m = _re.match(r'^(WLCSP|WCSP|X\d?SON|SC|SOD)', n)
     if m:
         return m.group(1)
@@ -311,7 +334,7 @@ json.dump(quality, open(W / 'quality.json', 'w', encoding='utf-8'),
 
 print(f'应用: {len(app_items)} 个场景')
 print(f'文档: {doc_stats}')
-print(f'质量: 温度 {len(temp)} 档 / 封装 {len(pkg)} 种 / 状态 {len(status)} 种')
+print(f'质量: 温度 {len(temp)} 档 / 封装 {len(pkg)} 种 / 状态 ' + ' / '.join(f'{k} {v}' for k, v in status.most_common()) + ' / 产品线 ' + ' / '.join(f'{k} {v}' for k, v in product_line.most_common()))
 
 # ---------- 拆分：products_lite.json + specs.json ----------
 # specs（电气参数表）占 products.json 体积 95%，但只在下钻详情页时用。
