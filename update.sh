@@ -50,6 +50,17 @@ else
   echo "  (无 gen_pages.py — 跳过栏目页数据重建)"
 fi
 
+# 产品目录树 data/catalog.json：首页「产品」页的树读它，不是读 products.json。
+# 漏跑这一步的后果：新增型号在搜索/技术文档里能查到，但目录树的款数与型号列表停在上一版
+#（2026-11-05 实测：页头 658 而树显示 652，1T45 与 EXS0102GE 不在树里）。
+echo ""
+echo "🗂 Step 1.4: 重建产品目录树 (catalog.json)..."
+if [ -f "$DIR/scripts/gen_catalog.py" ]; then
+  python3 "$DIR/scripts/gen_catalog.py" 2>&1 | tail -3
+else
+  echo "  (无 gen_catalog.py — 跳过目录树重建)"
+fi
+
 # P2P 替代数据已按需求彻底摘除（c479ea2：网页端不展示任何竞品信息）：
 # side-table(data/p2p_nxp.json、data/p2p_vcc.json)与 data/p2p.json 均已删除，
 # gen_p2p 步骤停用 —— 否则每次部署都会在对账处中止。
