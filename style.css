@@ -2546,3 +2546,24 @@ body { background: var(--bg); }
 .app-desc { font-size: 12.5px; line-height: 1.55; color: var(--muted-foreground, #6b7280);
   margin: 2px 0 6px; max-width: 92%; }
 .app-card.fav .app-desc { max-width: 88%; }
+
+/* ============================================================
+   选型表（selector）：7 列固定布局 + 下拉筛选（2026-11-06）
+   ============================================================ */
+.sel-dd { height: 30px; padding: 0 8px; font-size: 12.5px; border-radius: 6px;
+  border: 1px solid var(--border, #d0d4d8); background: var(--card, #fff); color: inherit; }
+.sel-tbl { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 12.5px; }
+.sel-tbl th { text-align: left; font-weight: 600; padding: 8px 10px; font-size: 12px;
+  border-bottom: 1px solid var(--border, #e3e6e9); white-space: nowrap; }
+.sel-tbl td { padding: 7px 10px; border-bottom: 1px solid rgba(0,0,0,.06); vertical-align: top;
+  word-break: break-word; overflow-wrap: anywhere; }
+.sel-tbl td.num { font-variant-numeric: tabular-nums; }
+.sel-tbl td.k { font-weight: 600; }
+.sel-tbl tbody tr:hover td { background: rgba(0,0,0,.025); }
+:root[data-theme="dark"] .sel-tbl td, :root:not([data-theme="light"]) .sel-tbl td { border-bottom-color: rgba(255,255,255,.08); }
+:root[data-theme="dark"] .sel-tbl tbody tr:hover td, :root:not([data-theme="light"]) .sel-tbl tbody tr:hover td { background: rgba(255,255,255,.05); }
+@media (max-width: 720px) {
+  .sel-tbl { table-layout: auto; font-size: 12px; }
+  .sel-tbl th:nth-child(3), .sel-tbl td:nth-child(3),
+  .sel-tbl th:nth-child(7), .sel-tbl td:nth-child(7) { display: none; }  /* 窄屏隐藏系列/产品线 */
+}
