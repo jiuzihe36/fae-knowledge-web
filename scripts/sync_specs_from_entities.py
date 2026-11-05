@@ -258,6 +258,56 @@ def parse_entity(path):
         })
     return specs
 
+
+FAM_SET = {"AHC", "AHCT", "HC", "HCT", "LVC", "LVCH", "AUP", "AUP1T", "LV1T", "CBTLV", "CBT", "HCU"}
+
+def family_of(model):
+    m = re.match(r"^(?:EM74)?([A-Z0-9]+)", re.sub(r"[^A-Za-z0-9]", "", model or "").upper())
+    if not m:
+        return ""
+    f = re.match(r"^(AHCT|AHC|LVCH|LVC|HCU|HCT|HC|AUP1T|AUP|LV1T|CBTLV|CBT)", m.group(1))
+    return f.group(1) if f else ""
+
+def filter_variant(specs, model):
+    """双变体实体页（AHC/AHCT、HC/HCT、LVC/LVCH…）的参数行是合并的，
+    写到具体型号时必须只保留该型号所属变体的那一段，否则 AHC 型号会看到 AHCT 的参数。"""
+    fam = family_of(model)
+    if not fam:
+        return specs
+    out = []
+    for s in specs:
+        v = s.get("value") or ""
+        if "：" not in v or " ｜ " not in v:
+            out.append(s)
+            continue
+        parts_all = [x.strip() for x in v.split(" ｜ ")]
+        # 单位只出现在最后一个分段末尾（"… AHCT：min=4.5; max=5.5 V"），拆分后要给每段补上
+        unit = ""
+        mu = re.search(r"\s(V|mV|kV|mA|µA|uA|nA|ns|ps|µs|us|ms|pF|nF|Hz|kHz|MHz|GHz|°C|℃|%|Ω|W|mW|V/ns|ns/V)$", parts_all[-1])
+        if mu:
+            unit = " " + mu.group(1)
+        kept, has_variant = [], False
+        for part in parts_all:
+            m = re.match(r"^([A-Z0-9]+)：(.*)$", part)
+            if m and m.group(1) in FAM_SET:
+                has_variant = True
+                if m.group(1) == fam:
+                    seg = m.group(2)
+                    # 末尾「前面不是字母」才算已带单位（"VCC" 的 V 不算，"5.5 V" 才算）
+                    if unit and not re.search(r"(?<![A-Za-z])(V|mV|mA|µA|nA|ns|ps|ms|pF|nF|Hz|kHz|MHz|GHz|℃|°C|%|Ω|W)$", seg.strip()):
+                        seg = seg.rstrip() + unit
+                    kept.append(seg)
+            else:
+                kept.append(part)
+        if has_variant:
+            if not kept:
+                continue                      # 该型号这一项没有值（只属于另一个变体）→ 整行丢弃
+            s = dict(s)
+            s["value"] = " ｜ ".join(kept)
+            s["value_html"] = "<strong>" + sub_html(s["value"]) + "</strong>"
+        out.append(s)
+    return out
+
 def main():
     write = "--write" in sys.argv
     prod = json.load(open(PROD, encoding="utf-8"))
@@ -283,7 +333,7 @@ def main():
         if len(samples) < 3:
             samples.append((ef.stem, len(plist[0].get("specs") or []), len(specs), specs[:3]))
         for p in plist:
-            p["specs"] = specs
+            p["specs"] = filter_variant(specs, p["model"])
             updated_models += 1
 
     total_new = sum(len(p.get("specs") or []) for p in prod)
