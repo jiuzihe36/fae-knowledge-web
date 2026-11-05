@@ -25,9 +25,10 @@ MON = {m: i + 1 for i, m in enumerate(
     ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'])}
 
 REV_NUM = r'([0-9]+(?:\.[0-9]+)*)'
-MONTH = r'([A-Za-z]{3,9})\s+(\d{1,2}),\s*(\d{4})'
-# 末页修订记录表：「Rev. 1.1」换行「Dec 15, 2025」（可能夹着 Document ID）
-RE_TABLE = re.compile(r'Rev\.?\s*' + REV_NUM + r'\s*\n\s*' + MONTH)
+MONTH = r'([A-Za-z]{3,9})\s+(\d{1,2})\s*[.,]\s*(\d{4})'
+# 末页修订记录表：「Rev. 1.1」换行或同行「Dec 15, 2025」（可能夹着 Document ID；
+# 少数原厂把日/年写成「Oct 15.2026」用句点，MONTH 同时接受 , 与 . 分隔）
+RE_TABLE = re.compile(r'Rev\.?\s*' + REV_NUM + r'\s*' + MONTH)
 # 页眉抬头：「Rev. 1.1 – Dec 15, 2025」/「Rev1.1– Dec, 2025」（缺日期的退化形态也收）
 RE_HEAD = re.compile(r'Rev\.?\s*' + REV_NUM + r'\s*[–\-—]?\s*' + MONTH)
 RE_FILE = re.compile(r'_(?:Product|Draft|Drft)_DS_V(' + REV_NUM + r')\.pdf$')

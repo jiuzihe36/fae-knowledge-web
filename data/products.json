@@ -151189,7 +151189,7 @@
  },
  {
   "id": 10319,
-  "model": "EMS4567RSV",
+  "model": "EMS4567Q",
   "family": "逻辑芯片",
   "series": "EMS",
   "function": "模拟开关",
@@ -152433,7 +152433,7 @@
   "logic_type": "—",
   "temp_range": "-40 °C to +125 °C",
   "source_document_id": 202,
-  "source_label": "EXS0102_Product_DS_V1.0.pdf",
+  "source_label": "EXS0102_Product_DS_V1.1.pdf",
   "specs": [
    {
     "param": "VIH HIGH-level input voltage VCC(A)=1.3V to 1.95V; VCC(B)=1.65V to 5.5V;",
@@ -152511,8 +152511,8 @@
    "I2C/SPI/UART 电平转换"
   ],
   "function_detail": "2 位电平转换收发器",
-  "ds_ver": "V1.0",
-  "ds_date": "2025-10-09"
+  "ds_ver": "V1.1",
+  "ds_date": "2026-11-03"
  },
  {
   "id": 11002,
@@ -152528,7 +152528,7 @@
   "logic_type": "—",
   "temp_range": "-40 °C to +125 °C",
   "source_document_id": 202,
-  "source_label": "EXS0102_Product_DS_V1.0.pdf",
+  "source_label": "EXS0102_Product_DS_V1.1.pdf",
   "specs": [
    {
     "param": "VIH HIGH-level input voltage VCC(A)=1.3V to 1.95V; VCC(B)=1.65V to 5.5V;",
@@ -152606,8 +152606,8 @@
    "I2C/SPI/UART 电平转换"
   ],
   "function_detail": "2 位电平转换收发器",
-  "ds_ver": "V1.0",
-  "ds_date": "2025-10-09"
+  "ds_ver": "V1.1",
+  "ds_date": "2026-11-03"
  },
  {
   "id": 11004,
@@ -153743,5 +153743,644 @@
   "function_detail": "双路模拟开关",
   "ds_ver": "V0.9",
   "ds_date": "2025-08-20"
+ },
+ {
+  "id": 11015,
+  "model": "EXS0102GE",
+  "family": "逻辑芯片",
+  "series": "EXS",
+  "function": "电平转换收发器",
+  "description": "2 位双向电平转换收发器",
+  "package": "DFN-8L",
+  "package_size": "1.40×1.00 mm；0.4 mm (Max) height",
+  "voltage": "1.3 V to 5.5 V",
+  "pin_image": "./pins_webp/202.webp",
+  "logic_type": "—",
+  "temp_range": "-40 °C to +125 °C",
+  "source_document_id": 202,
+  "source_label": "EXS0102_Product_DS_V1.1.pdf",
+  "specs": [
+   {
+    "param": "VIH HIGH-level input voltage VCC(A)=1.3V to 1.95V; VCC(B)=1.65V to 5.5V;",
+    "value": "min=VCC(A)-0.2; max=VCC(A) V",
+    "kind": "静态",
+    "param_html": "V<sub>IH</sub> HIGH-level input voltage VCC(A)=1.3V to 1.95V; VCC(B)=1.65V to 5.5V;",
+    "value_html": "<strong>min=V<sub>CC</sub>(A)-0.2; max=V<sub>CC</sub>(A) V</strong>"
+   },
+   {
+    "param": "VIH HIGH-level input voltage VCC(A)=2.3V to 5.5V; VCC(B)=2.3V to 5.5V;",
+    "value": "min=VCC(A)-0.4; max=VCC(A) V",
+    "kind": "静态",
+    "param_html": "V<sub>IH</sub> HIGH-level input voltage VCC(A)=2.3V to 5.5V; VCC(B)=2.3V to 5.5V;",
+    "value_html": "<strong>min=V<sub>CC</sub>(A)-0.4; max=V<sub>CC</sub>(A) V</strong>"
+   },
+   {
+    "param": "VIH HIGH-level input voltage VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
+    "value": "min=VCC(B)-0.4; max=VCC(B) V",
+    "kind": "静态",
+    "param_html": "V<sub>IH</sub> HIGH-level input voltage VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
+    "value_html": "<strong>min=V<sub>CC</sub>(B)-0.4; max=V<sub>CC</sub>(B) V</strong>"
+   },
+   {
+    "param": "VIH HIGH-level input voltage VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
+    "value": "min=0.65×VCC(A); max=VCC(A) V",
+    "kind": "静态",
+    "param_html": "V<sub>IH</sub> HIGH-level input voltage VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
+    "value_html": "<strong>min=0.65×V<sub>CC</sub>(A); max=V<sub>CC</sub>(A) V</strong>"
+   },
+   {
+    "param": "VIL LOW-level input voltage VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
+    "value": "min=0; max=0.15 V",
+    "kind": "静态",
+    "param_html": "V<sub>IL</sub> LOW-level input voltage VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
+    "value_html": "<strong>min=0; max=0.15 V</strong>"
+   },
+   {
+    "param": "VIL LOW-level input voltage VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
+    "value": "min=0; max=0.35×VCC(A) V",
+    "kind": "静态",
+    "param_html": "V<sub>IL</sub> LOW-level input voltage VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
+    "value_html": "<strong>min=0; max=0.35×V<sub>CC</sub>(A) V</strong>"
+   },
+   {
+    "param": "VOH HIGH-level output voltage VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
+    "value": "min=0.67×VCC(A) V",
+    "kind": "静态",
+    "param_html": "V<sub>OH</sub> HIGH-level output voltage VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
+    "value_html": "<strong>min=0.67×V<sub>CC</sub>(A) V</strong>"
+   },
+   {
+    "param": "VOH HIGH-level output voltage VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
+    "value": "min=0.67×VCC(B) V",
+    "kind": "静态",
+    "param_html": "V<sub>OH</sub> HIGH-level output voltage VCC(A)=1.3V to 5.5V; VCC(B)=1.65V to 5.5V;",
+    "value_html": "<strong>min=0.67×V<sub>CC</sub>(B) V</strong>"
+   },
+   {
+    "param": "enabled",
+    "value": "typ=7 pF",
+    "kind": "动态",
+    "param_html": "enabled",
+    "value_html": "<strong>typ=7 pF</strong>"
+   },
+   {
+    "param": "disabled",
+    "value": "typ=3.1 pF",
+    "kind": "动态",
+    "param_html": "disabled",
+    "value_html": "<strong>typ=3.1 pF</strong>"
+   }
+  ],
+  "applications": "I2C/SPI/UART 电平转换",
+  "applications_domains": [
+   "I2C/SPI/UART 电平转换"
+  ],
+  "function_detail": "2 位电平转换收发器",
+  "ds_ver": "V1.1",
+  "ds_date": "2026-11-03"
+ },
+ {
+  "id": 11016,
+  "model": "EM74LVC1T45GV",
+  "family": "逻辑芯片",
+  "series": "74LVC",
+  "function": "收发器",
+  "function_detail": "单bit 双电源收发器（三态输出）",
+  "description": "Dual supply translating transceiver; 3-state",
+  "package": "SOT23-6L",
+  "package_size": "2.92×1.6 mm；1.25 mm (Max) height",
+  "voltage": "1.2 V to 5.5 V",
+  "pin_image": "./pins_webp/205.webp",
+  "logic_type": "CMOS",
+  "temp_range": "-40 °C to +125 °C",
+  "source_document_id": 205,
+  "source_label": "EM74LVC_LVCH1T45_Draft_DS_V0.3.pdf",
+  "specs": [
+   {
+    "param": "VCC(A) supply voltage A",
+    "value": "min=1.2; max=5.5 V",
+    "kind": "推荐工作条件",
+    "param_html": "V<sub>CC</sub>(A) supply voltage A",
+    "value_html": "<strong>min=1.2; max=5.5 V</strong>"
+   },
+   {
+    "param": "VCC(B) supply voltage B",
+    "value": "min=1.2; max=5.5 V",
+    "kind": "推荐工作条件",
+    "param_html": "V<sub>CC</sub>(B) supply voltage B",
+    "value_html": "<strong>min=1.2; max=5.5 V</strong>"
+   },
+   {
+    "param": "Tamb ambient temperature",
+    "value": "min=-40; max=125 °C",
+    "kind": "推荐工作条件",
+    "param_html": "Tamb ambient temperature",
+    "value_html": "<strong>min=-40; max=125 °C</strong>"
+   },
+   {
+    "param": "ICC supply current",
+    "value": "typ=0.1; max=16 μA",
+    "kind": "静态",
+    "param_html": "ICC supply current",
+    "value_html": "<strong>typ=0.1; max=16 μA</strong>"
+   },
+   {
+    "param": "VIH HIGH-level input voltage data input VCCI=1.4V to 1.95V",
+    "value": "min=0.65VCCI V",
+    "kind": "静态",
+    "param_html": "VIH HIGH-level input voltage data input VCCI=1.4V to 1.95V",
+    "value_html": "<strong>min=0.65VCCI V</strong>"
+   },
+   {
+    "param": "VIL LOW-level input voltage data input VCCI=1.4V to 1.95V",
+    "value": "max=0.35VCCI V",
+    "kind": "静态",
+    "param_html": "VIL LOW-level input voltage data input VCCI=1.4V to 1.95V",
+    "value_html": "<strong>max=0.35VCCI V</strong>"
+   },
+   {
+    "param": "VOH HIGH-level output voltage IO=-32mA; VCCO=4.5V",
+    "value": "min=3.8 V",
+    "kind": "静态",
+    "param_html": "VOH HIGH-level output voltage IO=-32mA; VCCO=4.5V",
+    "value_html": "<strong>min=3.8 V</strong>"
+   },
+   {
+    "param": "VOL LOW-level output voltage IO=32mA; VCCO=4.5V",
+    "value": "max=0.55 V",
+    "kind": "静态",
+    "param_html": "VOL LOW-level output voltage IO=32mA; VCCO=4.5V",
+    "value_html": "<strong>max=0.55 V</strong>"
+   },
+   {
+    "param": "tPLH LOW to HIGH propagation time A to B VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=5.3 ns",
+    "kind": "动态",
+    "param_html": "tPLH LOW to HIGH propagation time A to B V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=5.3 ns</strong>"
+   },
+   {
+    "param": "tPHL HIGH to LOW propagation time A to B VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=5.2 ns",
+    "kind": "动态",
+    "param_html": "tPHL HIGH to LOW propagation time A to B V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=5.2 ns</strong>"
+   },
+   {
+    "param": "tPLH LOW to HIGH propagation time B to A VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=8.3 ns",
+    "kind": "动态",
+    "param_html": "tPLH LOW to HIGH propagation time B to A V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=8.3 ns</strong>"
+   },
+   {
+    "param": "tPHL HIGH to LOW propagation time B to A VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=7.6 ns",
+    "kind": "动态",
+    "param_html": "tPHL HIGH to LOW propagation time B to A V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=7.6 ns</strong>"
+   }
+  ],
+  "ds_ver": "V0.3",
+  "ds_date": "2026-10-15"
+ },
+ {
+  "id": 11017,
+  "model": "EM74LVC1T45GW",
+  "family": "逻辑芯片",
+  "series": "74LVC",
+  "function": "收发器",
+  "function_detail": "单bit 双电源收发器（三态输出）",
+  "description": "Dual supply translating transceiver; 3-state",
+  "package": "SOT363",
+  "package_size": "2.1×1.25 mm；1.1 mm (Max) height",
+  "voltage": "1.2 V to 5.5 V",
+  "pin_image": "./pins_webp/205.webp",
+  "logic_type": "CMOS",
+  "temp_range": "-40 °C to +125 °C",
+  "source_document_id": 205,
+  "source_label": "EM74LVC_LVCH1T45_Draft_DS_V0.3.pdf",
+  "specs": [
+   {
+    "param": "VCC(A) supply voltage A",
+    "value": "min=1.2; max=5.5 V",
+    "kind": "推荐工作条件",
+    "param_html": "V<sub>CC</sub>(A) supply voltage A",
+    "value_html": "<strong>min=1.2; max=5.5 V</strong>"
+   },
+   {
+    "param": "VCC(B) supply voltage B",
+    "value": "min=1.2; max=5.5 V",
+    "kind": "推荐工作条件",
+    "param_html": "V<sub>CC</sub>(B) supply voltage B",
+    "value_html": "<strong>min=1.2; max=5.5 V</strong>"
+   },
+   {
+    "param": "Tamb ambient temperature",
+    "value": "min=-40; max=125 °C",
+    "kind": "推荐工作条件",
+    "param_html": "Tamb ambient temperature",
+    "value_html": "<strong>min=-40; max=125 °C</strong>"
+   },
+   {
+    "param": "ICC supply current",
+    "value": "typ=0.1; max=16 μA",
+    "kind": "静态",
+    "param_html": "ICC supply current",
+    "value_html": "<strong>typ=0.1; max=16 μA</strong>"
+   },
+   {
+    "param": "VIH HIGH-level input voltage data input VCCI=1.4V to 1.95V",
+    "value": "min=0.65VCCI V",
+    "kind": "静态",
+    "param_html": "VIH HIGH-level input voltage data input VCCI=1.4V to 1.95V",
+    "value_html": "<strong>min=0.65VCCI V</strong>"
+   },
+   {
+    "param": "VIL LOW-level input voltage data input VCCI=1.4V to 1.95V",
+    "value": "max=0.35VCCI V",
+    "kind": "静态",
+    "param_html": "VIL LOW-level input voltage data input VCCI=1.4V to 1.95V",
+    "value_html": "<strong>max=0.35VCCI V</strong>"
+   },
+   {
+    "param": "VOH HIGH-level output voltage IO=-32mA; VCCO=4.5V",
+    "value": "min=3.8 V",
+    "kind": "静态",
+    "param_html": "VOH HIGH-level output voltage IO=-32mA; VCCO=4.5V",
+    "value_html": "<strong>min=3.8 V</strong>"
+   },
+   {
+    "param": "VOL LOW-level output voltage IO=32mA; VCCO=4.5V",
+    "value": "max=0.55 V",
+    "kind": "静态",
+    "param_html": "VOL LOW-level output voltage IO=32mA; VCCO=4.5V",
+    "value_html": "<strong>max=0.55 V</strong>"
+   },
+   {
+    "param": "tPLH LOW to HIGH propagation time A to B VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=5.3 ns",
+    "kind": "动态",
+    "param_html": "tPLH LOW to HIGH propagation time A to B V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=5.3 ns</strong>"
+   },
+   {
+    "param": "tPHL HIGH to LOW propagation time A to B VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=5.2 ns",
+    "kind": "动态",
+    "param_html": "tPHL HIGH to LOW propagation time A to B V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=5.2 ns</strong>"
+   },
+   {
+    "param": "tPLH LOW to HIGH propagation time B to A VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=8.3 ns",
+    "kind": "动态",
+    "param_html": "tPLH LOW to HIGH propagation time B to A V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=8.3 ns</strong>"
+   },
+   {
+    "param": "tPHL HIGH to LOW propagation time B to A VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=7.6 ns",
+    "kind": "动态",
+    "param_html": "tPHL HIGH to LOW propagation time B to A V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=7.6 ns</strong>"
+   }
+  ],
+  "ds_ver": "V0.3",
+  "ds_date": "2026-10-15"
+ },
+ {
+  "id": 11018,
+  "model": "EM74LVC1T45GS",
+  "family": "逻辑芯片",
+  "series": "74LVC",
+  "function": "收发器",
+  "function_detail": "单bit 双电源收发器（三态输出）",
+  "description": "Dual supply translating transceiver; 3-state",
+  "package": "DFN1x1-6L",
+  "package_size": "1×1 mm；0.42 mm (Max) height",
+  "voltage": "1.2 V to 5.5 V",
+  "pin_image": "./pins_webp/205.webp",
+  "logic_type": "CMOS",
+  "temp_range": "-40 °C to +125 °C",
+  "source_document_id": 205,
+  "source_label": "EM74LVC_LVCH1T45_Draft_DS_V0.3.pdf",
+  "specs": [
+   {
+    "param": "VCC(A) supply voltage A",
+    "value": "min=1.2; max=5.5 V",
+    "kind": "推荐工作条件",
+    "param_html": "V<sub>CC</sub>(A) supply voltage A",
+    "value_html": "<strong>min=1.2; max=5.5 V</strong>"
+   },
+   {
+    "param": "VCC(B) supply voltage B",
+    "value": "min=1.2; max=5.5 V",
+    "kind": "推荐工作条件",
+    "param_html": "V<sub>CC</sub>(B) supply voltage B",
+    "value_html": "<strong>min=1.2; max=5.5 V</strong>"
+   },
+   {
+    "param": "Tamb ambient temperature",
+    "value": "min=-40; max=125 °C",
+    "kind": "推荐工作条件",
+    "param_html": "Tamb ambient temperature",
+    "value_html": "<strong>min=-40; max=125 °C</strong>"
+   },
+   {
+    "param": "ICC supply current",
+    "value": "typ=0.1; max=16 μA",
+    "kind": "静态",
+    "param_html": "ICC supply current",
+    "value_html": "<strong>typ=0.1; max=16 μA</strong>"
+   },
+   {
+    "param": "VIH HIGH-level input voltage data input VCCI=1.4V to 1.95V",
+    "value": "min=0.65VCCI V",
+    "kind": "静态",
+    "param_html": "VIH HIGH-level input voltage data input VCCI=1.4V to 1.95V",
+    "value_html": "<strong>min=0.65VCCI V</strong>"
+   },
+   {
+    "param": "VIL LOW-level input voltage data input VCCI=1.4V to 1.95V",
+    "value": "max=0.35VCCI V",
+    "kind": "静态",
+    "param_html": "VIL LOW-level input voltage data input VCCI=1.4V to 1.95V",
+    "value_html": "<strong>max=0.35VCCI V</strong>"
+   },
+   {
+    "param": "VOH HIGH-level output voltage IO=-32mA; VCCO=4.5V",
+    "value": "min=3.8 V",
+    "kind": "静态",
+    "param_html": "VOH HIGH-level output voltage IO=-32mA; VCCO=4.5V",
+    "value_html": "<strong>min=3.8 V</strong>"
+   },
+   {
+    "param": "VOL LOW-level output voltage IO=32mA; VCCO=4.5V",
+    "value": "max=0.55 V",
+    "kind": "静态",
+    "param_html": "VOL LOW-level output voltage IO=32mA; VCCO=4.5V",
+    "value_html": "<strong>max=0.55 V</strong>"
+   },
+   {
+    "param": "tPLH LOW to HIGH propagation time A to B VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=5.3 ns",
+    "kind": "动态",
+    "param_html": "tPLH LOW to HIGH propagation time A to B V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=5.3 ns</strong>"
+   },
+   {
+    "param": "tPHL HIGH to LOW propagation time A to B VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=5.2 ns",
+    "kind": "动态",
+    "param_html": "tPHL HIGH to LOW propagation time A to B V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=5.2 ns</strong>"
+   },
+   {
+    "param": "tPLH LOW to HIGH propagation time B to A VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=8.3 ns",
+    "kind": "动态",
+    "param_html": "tPLH LOW to HIGH propagation time B to A V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=8.3 ns</strong>"
+   },
+   {
+    "param": "tPHL HIGH to LOW propagation time B to A VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=7.6 ns",
+    "kind": "动态",
+    "param_html": "tPHL HIGH to LOW propagation time B to A V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=7.6 ns</strong>"
+   }
+  ],
+  "ds_ver": "V0.3",
+  "ds_date": "2026-10-15"
+ },
+ {
+  "id": 11019,
+  "model": "EM74LVC1T45GM",
+  "family": "逻辑芯片",
+  "series": "74LVC",
+  "function": "收发器",
+  "function_detail": "单bit 双电源收发器（三态输出）",
+  "description": "Dual supply translating transceiver; 3-state",
+  "package": "DFN1x1.45-6L",
+  "package_size": "1.45×1 mm；0.6 mm (Max) height",
+  "voltage": "1.2 V to 5.5 V",
+  "pin_image": "./pins_webp/205.webp",
+  "logic_type": "CMOS",
+  "temp_range": "-40 °C to +125 °C",
+  "source_document_id": 205,
+  "source_label": "EM74LVC_LVCH1T45_Draft_DS_V0.3.pdf",
+  "specs": [
+   {
+    "param": "VCC(A) supply voltage A",
+    "value": "min=1.2; max=5.5 V",
+    "kind": "推荐工作条件",
+    "param_html": "V<sub>CC</sub>(A) supply voltage A",
+    "value_html": "<strong>min=1.2; max=5.5 V</strong>"
+   },
+   {
+    "param": "VCC(B) supply voltage B",
+    "value": "min=1.2; max=5.5 V",
+    "kind": "推荐工作条件",
+    "param_html": "V<sub>CC</sub>(B) supply voltage B",
+    "value_html": "<strong>min=1.2; max=5.5 V</strong>"
+   },
+   {
+    "param": "Tamb ambient temperature",
+    "value": "min=-40; max=125 °C",
+    "kind": "推荐工作条件",
+    "param_html": "Tamb ambient temperature",
+    "value_html": "<strong>min=-40; max=125 °C</strong>"
+   },
+   {
+    "param": "ICC supply current",
+    "value": "typ=0.1; max=16 μA",
+    "kind": "静态",
+    "param_html": "ICC supply current",
+    "value_html": "<strong>typ=0.1; max=16 μA</strong>"
+   },
+   {
+    "param": "VIH HIGH-level input voltage data input VCCI=1.4V to 1.95V",
+    "value": "min=0.65VCCI V",
+    "kind": "静态",
+    "param_html": "VIH HIGH-level input voltage data input VCCI=1.4V to 1.95V",
+    "value_html": "<strong>min=0.65VCCI V</strong>"
+   },
+   {
+    "param": "VIL LOW-level input voltage data input VCCI=1.4V to 1.95V",
+    "value": "max=0.35VCCI V",
+    "kind": "静态",
+    "param_html": "VIL LOW-level input voltage data input VCCI=1.4V to 1.95V",
+    "value_html": "<strong>max=0.35VCCI V</strong>"
+   },
+   {
+    "param": "VOH HIGH-level output voltage IO=-32mA; VCCO=4.5V",
+    "value": "min=3.8 V",
+    "kind": "静态",
+    "param_html": "VOH HIGH-level output voltage IO=-32mA; VCCO=4.5V",
+    "value_html": "<strong>min=3.8 V</strong>"
+   },
+   {
+    "param": "VOL LOW-level output voltage IO=32mA; VCCO=4.5V",
+    "value": "max=0.55 V",
+    "kind": "静态",
+    "param_html": "VOL LOW-level output voltage IO=32mA; VCCO=4.5V",
+    "value_html": "<strong>max=0.55 V</strong>"
+   },
+   {
+    "param": "tPLH LOW to HIGH propagation time A to B VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=5.3 ns",
+    "kind": "动态",
+    "param_html": "tPLH LOW to HIGH propagation time A to B V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=5.3 ns</strong>"
+   },
+   {
+    "param": "tPHL HIGH to LOW propagation time A to B VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=5.2 ns",
+    "kind": "动态",
+    "param_html": "tPHL HIGH to LOW propagation time A to B V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=5.2 ns</strong>"
+   },
+   {
+    "param": "tPLH LOW to HIGH propagation time B to A VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=8.3 ns",
+    "kind": "动态",
+    "param_html": "tPLH LOW to HIGH propagation time B to A V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=8.3 ns</strong>"
+   },
+   {
+    "param": "tPHL HIGH to LOW propagation time B to A VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=7.6 ns",
+    "kind": "动态",
+    "param_html": "tPHL HIGH to LOW propagation time B to A V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=7.6 ns</strong>"
+   }
+  ],
+  "ds_ver": "V0.3",
+  "ds_date": "2026-10-15"
+ },
+ {
+  "id": 11020,
+  "model": "EM74LVC1T45YZP",
+  "family": "逻辑芯片",
+  "series": "74LVC",
+  "function": "收发器",
+  "function_detail": "单bit 双电源收发器（三态输出）",
+  "description": "Dual supply translating transceiver; 3-state",
+  "package": "BGA1.39x0.89-6B",
+  "package_size": "1.39×0.89 mm；0.5 mm (Max) height",
+  "voltage": "1.2 V to 5.5 V",
+  "pin_image": "./pins_webp/205.webp",
+  "logic_type": "CMOS",
+  "temp_range": "-40 °C to +125 °C",
+  "source_document_id": 205,
+  "source_label": "EM74LVC_LVCH1T45_Draft_DS_V0.3.pdf",
+  "specs": [
+   {
+    "param": "VCC(A) supply voltage A",
+    "value": "min=1.2; max=5.5 V",
+    "kind": "推荐工作条件",
+    "param_html": "V<sub>CC</sub>(A) supply voltage A",
+    "value_html": "<strong>min=1.2; max=5.5 V</strong>"
+   },
+   {
+    "param": "VCC(B) supply voltage B",
+    "value": "min=1.2; max=5.5 V",
+    "kind": "推荐工作条件",
+    "param_html": "V<sub>CC</sub>(B) supply voltage B",
+    "value_html": "<strong>min=1.2; max=5.5 V</strong>"
+   },
+   {
+    "param": "Tamb ambient temperature",
+    "value": "min=-40; max=125 °C",
+    "kind": "推荐工作条件",
+    "param_html": "Tamb ambient temperature",
+    "value_html": "<strong>min=-40; max=125 °C</strong>"
+   },
+   {
+    "param": "ICC supply current",
+    "value": "typ=0.1; max=16 μA",
+    "kind": "静态",
+    "param_html": "ICC supply current",
+    "value_html": "<strong>typ=0.1; max=16 μA</strong>"
+   },
+   {
+    "param": "VIH HIGH-level input voltage data input VCCI=1.4V to 1.95V",
+    "value": "min=0.65VCCI V",
+    "kind": "静态",
+    "param_html": "VIH HIGH-level input voltage data input VCCI=1.4V to 1.95V",
+    "value_html": "<strong>min=0.65VCCI V</strong>"
+   },
+   {
+    "param": "VIL LOW-level input voltage data input VCCI=1.4V to 1.95V",
+    "value": "max=0.35VCCI V",
+    "kind": "静态",
+    "param_html": "VIL LOW-level input voltage data input VCCI=1.4V to 1.95V",
+    "value_html": "<strong>max=0.35VCCI V</strong>"
+   },
+   {
+    "param": "VOH HIGH-level output voltage IO=-32mA; VCCO=4.5V",
+    "value": "min=3.8 V",
+    "kind": "静态",
+    "param_html": "VOH HIGH-level output voltage IO=-32mA; VCCO=4.5V",
+    "value_html": "<strong>min=3.8 V</strong>"
+   },
+   {
+    "param": "VOL LOW-level output voltage IO=32mA; VCCO=4.5V",
+    "value": "max=0.55 V",
+    "kind": "静态",
+    "param_html": "VOL LOW-level output voltage IO=32mA; VCCO=4.5V",
+    "value_html": "<strong>max=0.55 V</strong>"
+   },
+   {
+    "param": "tPLH LOW to HIGH propagation time A to B VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=5.3 ns",
+    "kind": "动态",
+    "param_html": "tPLH LOW to HIGH propagation time A to B V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=5.3 ns</strong>"
+   },
+   {
+    "param": "tPHL HIGH to LOW propagation time A to B VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=5.2 ns",
+    "kind": "动态",
+    "param_html": "tPHL HIGH to LOW propagation time A to B V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=5.2 ns</strong>"
+   },
+   {
+    "param": "tPLH LOW to HIGH propagation time B to A VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=8.3 ns",
+    "kind": "动态",
+    "param_html": "tPLH LOW to HIGH propagation time B to A V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=8.3 ns</strong>"
+   },
+   {
+    "param": "tPHL HIGH to LOW propagation time B to A VCC(A)=1.2V; VCC(B)=3.3V",
+    "value": "typ=7.6 ns",
+    "kind": "动态",
+    "param_html": "tPHL HIGH to LOW propagation time B to A V<sub>CC</sub>(A)=1.2V; V<sub>CC</sub>(B)=3.3V",
+    "value_html": "<strong>typ=7.6 ns</strong>"
+   }
+  ],
+  "ds_ver": "V0.3",
+  "ds_date": "2026-10-15"
+ },
+ {
+  "id": 20658,
+  "model": "EM74LVCH1T45",
+  "family": "逻辑芯片",
+  "series": "EM74",
+  "function": "其他",
+  "description": "EM74LVC1T45; EM74LVCH1T45",
+  "package": "BGA-6",
+  "package_size": null,
+  "voltage": null,
+  "pin_image": null,
+  "logic_type": "CMOS",
+  "temp_range": null,
+  "source_document_id": null,
+  "source_label": "EM74LVC_LVCH1T45_Draft_DS_V0.3.pdf",
+  "specs": [],
+  "ds_ver": "V0.3",
+  "ds_date": "2026-10-15"
  }
 ]
