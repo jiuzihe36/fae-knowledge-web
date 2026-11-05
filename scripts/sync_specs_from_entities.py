@@ -65,12 +65,131 @@ def fmt_value(rest):
     # 「条件 + min + max」形态（如 "Active mode · 0 · VCC"）：首个非数值项视为条件
     if len(items) >= 3 and not num.match(items[0]) and not UNIT_RE.match(items[0]):
         cond = items.pop(0) + " · "
+    def _n(x):
+        try:
+            return float(str(x).replace("−", "-").replace("–", "-"))
+        except Exception:
+            return None
+
     if items and all(num.match(x) for x in items):
         if len(items) == 2:
+            a, b = _n(items[0]), _n(items[1])
+            if a is not None and b is not None and a > b:
+                return " · ".join(items) + (f" {unit}" if unit else "")   # min>max → 不标，原样
             return cond + f"min={items[0]}; max={items[1]}" + (f" {unit}" if unit else "")
         if len(items) == 3:
+            a, b, c = _n(items[0]), _n(items[1]), _n(items[2])
+            if a is not None and c is not None and a > c:
+                return " · ".join(items) + (f" {unit}" if unit else "")
             return cond + f"min={items[0]}; typ={items[1]}; max={items[2]}" + (f" {unit}" if unit else "")
     return cond + " · ".join(items) + (f" {unit}" if unit and not any(unit in x for x in items) else "")
+
+
+# 长前缀必须排在短前缀前（AHCT 先于 AHC、LVCH 先于 LVC），否则 EM74AHCT 会被截成 AHC，两组变体被合并成一组
+FAMILY_RE = re.compile(r"^(?:EM74)?(AHCT|AHC|LVCH|LVC|HCU|HCT|HC|AUP1T|AUP|LV1T|CBTLV|CBT)", re.I)
+
+def col_groups(header):
+    """从表头（第 4 列起、去掉 Unit 列）解析每个数值列的「组名 + Min/Typ/Max」。
+    例："EM74HC365 Min","EM74HC365 Typ","EM74HC365 Max","EM74HCT365 Min"… →
+        [("HC","min"),("HC","typ"),("HC","max"),("HCT","min"),…]
+    单变体表头（只有 Min/Typ/Max）→ 组名为空。"""
+    if not header or len(header) < 5:
+        return []
+    cols = header[3:]
+    # 去掉末尾单位列（Unit/单位/℃/V…）
+    if cols and re.search(r"unit|单位", cols[-1], re.I):
+        cols = cols[:-1]
+    out = []
+    for c in cols:
+        m = re.search(r"\b(min|typ|max)\b\.?$", c, re.I)
+        if m:
+            role = m.group(1).lower()
+            label = c[: m.start()].strip(" .·")
+        else:
+            role = None
+            label = c.strip(" .·")
+        fam = ""
+        fm = FAMILY_RE.match(label.replace(" ", ""))
+        if fm:
+            fam = fm.group(1).upper()
+        elif re.search(r"°C|℃", label):
+            fam = label.replace(" ", "")
+        out.append((fam, role))
+    return out
+
+def fmt_grouped(rest, groups):
+    """按列组格式化：HC：min=2.0; typ=5.0; max=6.0 ｜ HCT：min=4.5; typ=5.0; max=5.5 V"""
+    # 关键：**保留空位**（— 占位），否则与列组 zip 会整体错位（VI 的 typ=— 会导致 max 落到 typ 位）
+    items = [x.strip() for x in rest]
+    unit = ""
+    if items and UNIT_RE.match(items[-1]):
+        unit = items[-1]
+        items = items[:-1]
+    if not groups or len(groups) != len(items):
+        # 列组与数值个数必须严格相等；不等说明表头结构特殊（温度档×Min/Typ/Max 混排），
+        # 宁可原样连接也不要错标（曾出现 min=1.2; max=1.05 这种 min>max 的荒谬结果）
+        return None
+    # 按组聚集
+    from collections import OrderedDict
+    bucket = OrderedDict()
+    for (fam, role), val in zip(groups, items):
+        if val in ("", "—", "–", "-", "－", "/"):
+            continue
+        bucket.setdefault(fam or "", {})[role or "val"] = val
+    if len(bucket) == 1:
+        fam0, d0 = next(iter(bucket.items()))
+        if not fam0:
+            # 单变体表：仍按 Min/Typ/Max 角色标注（比原样连接可读）
+            segs = [f"{r}={d0[r]}" for r in ("min", "typ", "max") if r in d0]
+            if "val" in d0:
+                segs.append(d0["val"])
+            return "; ".join(segs) + (f" {unit}" if unit else "") if segs else None
+    if len(bucket) < 2:
+        return None          # 多组但组名相同 → 交给原 fmt_value
+    def _num(x):
+        try:
+            return float(str(x).replace("−", "-").replace("–", "-"))
+        except Exception:
+            return None
+
+    parts = []
+    for fam, d in bucket.items():
+        if "min" in d and "max" in d:
+            a, b = _num(d["min"]), _num(d["max"])
+            if a is not None and b is not None and a > b:
+                return None      # 数值顺序反常 → 不做格式化
+        segs = []
+        for role in ("min", "typ", "max"):
+            if role in d:
+                segs.append(f"{role}={d[role]}")
+        if "val" in d:
+            segs.append(d["val"])
+        if not segs:
+            continue
+        parts.append((fam + "：" if fam else "") + "; ".join(segs))
+    return " ｜ ".join(parts) + (f" {unit}" if unit else "") if parts else None
+
+
+def fix_sub(s):
+    """实体页从 PDF 抄录时下标被拆成两个 token（V CC、I IK、T amb），这里拼回去。"""
+    s = re.sub(r"\bV\s+(CC|I|O|IH|IL|OH|OL|SW)\b", r"V\1", s)
+    s = re.sub(r"\bI\s+(IK|OK|CC|GND)\b", r"I\1", s)
+    s = re.sub(r"\bT\s+(amb|stg|j|J)\b", r"T\1", s)
+    return s
+
+
+def cond_index(header, ncols):
+    """返回条件列的下标；数值列从该下标 +1 开始。
+    表头含「条件/Conditions」→ 用其位置；否则默认第 3 列（index 2）有条件列，
+    但只有列表长度与表头一致时才信任表头。"""
+    if header and len(header) == ncols:
+        for i, c in enumerate(header):
+            if re.search(r"条件|condition", c, re.I):
+                return i
+        # 表头是 符号|参数|min|… 这种没有条件列的
+        if len(header) >= 4 and re.search(r"\b(min|typ|max)\b", header[2], re.I):
+            return 1
+    return 2
 
 def split_row(line):
     cells = [c.strip() for c in line.strip().strip("|").split("|")]
@@ -102,7 +221,8 @@ def parse_entity(path):
         if not cells or not any(cells):
             continue
         head = " ".join(cells).lower()
-        if ("符号" in cells[0] or "参数" in cells[0]) and ("条件" in head or "限制" in head or "单位" in head or len(cells) <= 3):
+        if ("符号" in cells[0] or "参数" in cells[0] or "symbol" in cells[0].lower()
+                or "parameter" in cells[0].lower()):
             cur_header = cells
             continue
         if len(cells) < 2:
@@ -110,18 +230,25 @@ def parse_entity(path):
         sym = cells[0]
         if sym in ("符号", "参数", "—", "-", ""):
             continue
-        # param = 符号 + 参数名（第二列不是纯数值时视为参数名/条件）
-        col2 = cells[1]
-        numeric = bool(re.fullmatch(r"[-—–\d.\s~+/]*", col2))
-        if numeric:
-            param = sym
-            rest = cells[1:]
-        else:
-            param = f"{sym} {col2}".strip()
+        ci = cond_index(cur_header, len(cells))
+        ci = min(ci, len(cells) - 1)
+        # param = 符号 + 参数名 + 条件；rest = 纯数值列（+ 末尾单位）
+        param = " ".join(x for x in cells[: ci + 1] if x not in ("—", "-", "")).strip()
+        rest = cells[ci + 1:]
+        if not rest and len(cells) >= 3:
+            # 3 列表（符号 | 参数 | 值/限制），没有独立条件列 → 第 3 列就是值
+            param = " ".join(x for x in cells[:2] if x not in ("—", "-", "")).strip()
             rest = cells[2:]
-        value = fmt_value(rest)
+        if not rest:
+            continue
+        groups = col_groups(cur_header)
+        value = fmt_grouped(rest, groups) if groups else None
+        if value is None:
+            value = fmt_value(rest)
         if not value:
             continue
+        param = fix_sub(param)
+        value = fix_sub(value)
         specs.append({
             "param": param[:180],
             "value": value[:220],
