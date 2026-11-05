@@ -195,6 +195,47 @@ def split_row(line):
     cells = [c.strip() for c in line.strip().strip("|").split("|")]
     return cells
 
+
+REC_KEY_MAP = {
+    "VCC": "VCC supply voltage", "VDD": "VDD supply voltage",
+    "VI": "VI input voltage", "VO": "VO output voltage",
+    "VSEL": "VSEL control input voltage", "VA": "VA signal input voltage",
+    "Tamb": "Tamb ambient temperature", "TA": "TA ambient temperature",
+    "Δt/ΔV": "Δt/ΔV input transition rise and fall rate",
+    "RθJA": "RθJA thermal resistance",
+}
+
+def parse_text_recommendations(body):
+    """很多 HC/HCT/模拟开关实体页的「推荐工作条件」是纯文本行（无表格），
+    形如 `- VCC: HC 2.0–6.0 V / HCT 4.5–5.5 V；Tamb -40~+125 ℃`。
+    这类页原先在 specs 里完全没有推荐条件参数（92 个实体页），这里补上。"""
+    specs = []
+    KNOWN = set(REC_KEY_MAP) | {"RθJA", "CIN", "CIO", "TA"}
+    for idx, seg in enumerate(re.split(r"[；;]\s*", body)):
+        seg = seg.strip()
+        if not seg:
+            continue
+        had_dash = seg.startswith("-")
+        seg = seg.lstrip("- ").strip()
+        if not had_dash and idx > 0:
+            pass      # 同一条文本里分号后的段（如「；Tamb -40~+125 ℃」）不以 - 开头，照样解析
+        elif not had_dash and idx == 0:
+            continue  # 第一段必须来自 "- " 列表项，避免把普通段落当参数
+        m = re.match(r"^([A-Za-zΔθ/]+)\s*[:：]\s*(.+)$", seg)
+        if not m:
+            m = re.match(r"^([A-Za-zΔθ/]+)\s+(.+)$", seg)
+        if not m:
+            continue
+        key, val = m.group(1).strip(), m.group(2).strip()
+        if not val:
+            continue
+        param = REC_KEY_MAP.get(key, key)
+        specs.append({
+            "param": param, "value": val, "kind": "推荐工作条件",
+            "param_html": sub_html(param), "value_html": "<strong>" + sub_html(val) + "</strong>",
+        })
+    return specs
+
 def parse_entity(path):
     t = path.read_text(encoding="utf-8")
     m = re.search(r"## 电气特性全集(.*?)(?=\n## (?!.*特性)|$)", t, re.S)
@@ -211,9 +252,11 @@ def parse_entity(path):
             cur_header = None
             continue
         if not line.startswith("|"):
-            # 小节内的表题（如「Table 6. Static characteristics」）
             if line.lower().startswith("table"):
                 cur_kind = cur_kind or "电气特性"
+            # 纯文本形式的推荐工作条件（无表格的 HC/HCT/模拟开关页）
+            if line.startswith("-") and "推荐工作" in (cur_kind or ""):
+                specs.extend(parse_text_recommendations(line))
             continue
         if re.fullmatch(r"\|[\s\-:|]+\|", line):
             continue
@@ -277,6 +320,17 @@ def filter_variant(specs, model):
     out = []
     for s in specs:
         v = s.get("value") or ""
+        # 形式 A：纯文本双变体 "HC 2.0–6.0 V / HCT 4.5–5.5 V" → 按型号取对应段
+        mv = re.match(r"^(AHCT|AHC|LVCH|LVC|HCT|HC)\s+(.+?)\s*/\s*(AHCT|AHC|LVCH|LVC|HCT|HC)\s+(.+)$", v)
+        if mv:
+            pairs = {mv.group(1): mv.group(2), mv.group(3): mv.group(4)}
+            if fam in pairs:
+                s = dict(s)
+                s["value"] = pairs[fam]
+                s["value_html"] = "<strong>" + sub_html(s["value"]) + "</strong>"
+            out.append(s)
+            continue
+        # 形式 B：表格双变体 "AHC：min=… ｜ AHCT：min=…" → 拆段取对应段
         if "：" not in v or " ｜ " not in v:
             out.append(s)
             continue
