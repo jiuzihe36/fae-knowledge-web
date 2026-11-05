@@ -2520,4 +2520,25 @@ body { background: var(--bg); }
   animation: skelShift 1.4s ease-in-out infinite; }
 @keyframes skelShift { 0% { background-position: 100% 50%; } 100% { background-position: 0 50%; } }
 
-
+/* ============================================================
+   封装与可靠性页表格：列间距与列分隔（2026-11-05）
+   背景：.q-tbl 的「右对齐数字列 + 左对齐文本列」只有 4px 间距时，
+   会渲染成「型号数 204」与「-40℃~+125℃ 204」、「引脚 14」与「(宽)3.9」黏连。
+   注意：这段必须放在文件末尾（所有 @media 之后），
+   放错到 @media (max-width:560px) 块里会只在手机上生效（已踩过）。
+   ============================================================ */
+.q-tbl th, .q-tbl td { padding-inline: 10px !important; }
+.q-tbl th + th, .q-tbl td + td { border-left: 1px solid rgba(0, 0, 0, .12); }
+.q-tbl th:first-child, .q-tbl td:first-child { padding-left: 4px !important; }
+.q-tbl th:last-child, .q-tbl td:last-child { padding-right: 4px !important; }
+.q-tbl td b { margin-left: 5px; }
+:root[data-theme="dark"] .q-tbl th + th,
+:root[data-theme="dark"] .q-tbl td + td { border-left-color: rgba(255, 255, 255, .16); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .q-tbl th + th,
+  :root:not([data-theme="light"]) .q-tbl td + td { border-left-color: rgba(255, 255, 255, .16); }
+}
+@media (max-width: 560px) {
+  .q-tbl th, .q-tbl td { padding-inline: 6px !important; }
+  .q-tbl th + th, .q-tbl td + td { border-left: 0; }
+}
