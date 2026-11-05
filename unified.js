@@ -975,7 +975,7 @@
             '</td><td class="v num">—</td><td class="v sm size-cell">' + esc(fmtSize(p.size)) +
             '</td><td class="v num">—</td><td class="v num">—</td></tr>';
         }).join("")) + "</tbody></table>" +
-        '<p class="page-note">本体尺寸与高度取自各规格书 <b>Ordering Information</b> 描述行；<b>pitch</b> 为 SOT / SOP / TSSOP 等标准外形族的封装标准值（SOT23 0.95、SOP 1.27、TSSOP/SSOP 0.65、SOT353/363 0.65、SOT553/563 0.5 mm）；DFN / QFN / BGA / WLCSP 的 pitch 随型号不同，标 <b>—</b> 者须查对应型号规格书的 Package Outline。个别封装代码与规格书订货描述不一致（如 <b>DFN0.8x0.8-4L</b> 的描述写作 5 pins），表内按 <b>规格书描述</b> 录引脚数，量产前须向产品线确认。</p>';
+        '<p class="page-note">本体尺寸与高度取自各规格书 <b>Ordering Information</b> 描述行或 <b>Package Outline</b> 尺寸表；<b>pitch</b> 优先取规格书尺寸表的 e 值（BSC/TYP），SOT23 0.95、SOT353/363 0.65、SOT553/563 0.5、SOP/SSOP 1.27、TSSOP 0.65、VSSOP/MSOP 0.5 mm 为标准外形族的封装标准值。注意 <b>DFN0.8x0.8-4L</b> 的订购描述写 5 pins 而封装图只有 4 个焊盘，表内按规格书描述录引脚数，量产前须向产品线确认。</p>';
 
       /* ⑥ 系列分布（温度档） */
       if (d.by_series && d.by_series.length) {
