@@ -205,7 +205,7 @@ for p in prod:
     pk_temp[p.get('package') or '未标注'][p.get('temp_range') or '未标注'] += 1
 
 quality = {
-    'generated': None,
+    'generated': __import__('datetime').datetime.now().strftime('%Y-%m-%d %H:%M'),
     'total': len(prod),
     'temp': [{'k': k, 'n': v} for k, v in temp.most_common()],
     'package': pk_rows,

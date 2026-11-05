@@ -897,7 +897,8 @@
     if (name === "quality") {
       var tot = d.total || 1;
       html += pageShell("封装与可靠性",
-        "温度等级 · 封装尺寸 · 产品状态，共 " + d.total + " 款型号");
+        "温度等级 · 封装尺寸 · 产品状态，共 " + d.total + " 款型号" +
+        (d.generated ? " · 数据更新 " + esc(d.generated) : ""));
 
       /* ① 概览卡片 */
       var _draftN = ((d.status || []).filter(function (x) { return /Draft/i.test(x.k); })[0] || {}).n || 0;
