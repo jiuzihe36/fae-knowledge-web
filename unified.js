@@ -970,7 +970,7 @@
       '<th class="sortable" data-sort="temp">工作温度' + (_so && SEL_SORT.key === "temp" ? _so : "") + '</th>' +
       '<th class="sortable" data-sort="line">产品线' + (_so && SEL_SORT.key === "line" ? _so : "") + '</th></tr></thead>';
     var body = rows.slice(0, 400).map(function (p) {
-      return '<tr><td class="cmp-col"><input type="checkbox" class="cmp-ck" data-cmp="' + esc(p.model) + '"' +
+      return '<tr><td class="cmp-col"><input type="checkbox" class="cmp-ck" aria-label="对比 ' + esc(p.model) + '" data-cmp="' + esc(p.model) + '"' +
         (CMP_SEL.indexOf(p.model) >= 0 ? ' checked' : '') + '></td>' +
         '<td class="k">' + esc(p.model) + '</td>' +
         '<td>' + esc(p.function_detail || p.function || "") + '</td>' +
@@ -1505,7 +1505,9 @@
     }
     /* 横条高亮 */
     document.querySelectorAll(".band-in a").forEach(function (a) {
-      a.classList.toggle("on", a.getAttribute("data-page") === name);
+      var _on = a.getAttribute("data-page") === name;
+      a.classList.toggle("on", _on);
+      if (_on) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
     });
     /* 深链接：切页写进 hash，便于把「选型表/应用/更新记录」的地址直接发人 */
     if (window.__xx && window.__xx.setHash) {

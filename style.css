@@ -2622,3 +2622,59 @@ body { background: var(--bg); }
 .sel-tbl th.sortable:hover { background: rgba(0, 0, 0, .05); }
 :root[data-theme="dark"] .sel-tbl th.sortable:hover,
 :root:not([data-theme="light"]) .sel-tbl th.sortable:hover { background: rgba(255, 255, 255, .08); }
+
+/* ============================================================
+   2026-11-06 移动端与可访问性修复（依据 /tmp/mobile-audit.md 与 a11y 审查）
+   根因两类：① 未定义 CSS 变量导致深色下 1.66:1 / 1:1；
+             ② .doc-tools 是 nowrap、多列表格没有横滑容器。
+   ============================================================ */
+
+/* ① 补未定义变量（--body 导致 .doc-fn 等深色下 #333 on #000；--card 导致对比条白底白字） */
+:root { --body: var(--ink, #1f2328); --card: #ffffff; }
+:root[data-theme="dark"] { --body: #e6e8ea; --card: #0d0f11; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --body: #e6e8ea; --card: #0d0f11; }
+}
+
+/* ② 指南页：行内代码长路径不换行会把整页顶到 485px（390 屏被缩到 80%） */
+.guide-body code { overflow-wrap: anywhere; word-break: break-all; }
+.guide-body pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+@media (max-width: 640px) { .guide-body pre { font-size: 11px; } }
+
+/* ③ 筛选工具条：窄屏换行，下拉/搜索不再被压成 41px */
+@media (max-width: 720px) {
+  .doc-tools { flex-wrap: wrap !important; row-gap: 8px; }
+  .doc-tools select.sel-dd { flex: 1 1 46%; min-width: 0; }
+  .doc-tools .page-search { flex: 1 1 100%; min-width: 0; }
+  .doc-tools .btn-ghost { flex: 0 0 auto; white-space: nowrap; }
+  .doc-tools .count-pill { flex: 0 0 auto; white-space: nowrap; }
+}
+
+/* ④ 对比弹层：首列吸左 + 面板不超屏 + 关闭按钮 ≥44px */
+.cmp-body { overflow-x: auto; }
+.cmp-tbl th:first-child, .cmp-tbl td.k { position: sticky; left: 0; z-index: 1; background: var(--card, #fff); }
+@media (max-width: 720px) {
+  .cmp-panel { width: 100vw; max-width: 100vw; border-radius: 0; max-height: 100vh; }
+  .cmp-x { min-width: 44px; min-height: 44px; }
+  .cmp-tbl { min-width: 520px; }
+}
+
+/* ⑤ 多列表格窄屏横滑（table 自身不能滚，用 display:block 包一层） */
+@media (max-width: 720px) {
+  .q-tbl { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .q-tbl thead, .q-tbl tbody { display: table; width: 100%; min-width: 560px; }
+  #selTable { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .sel-tbl { min-width: 700px; }
+  .sel-tbl td.k, .sel-tbl th:nth-child(n) { white-space: nowrap; }
+}
+
+/* ⑥ 详情抽屉头部：长型号不再把按钮挤到第二行散架 */
+.drawer-head { flex-wrap: wrap; row-gap: 6px; }
+#detailModel { flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; }
+
+/* ⑦ 对比条不要压住「↑ 顶部」悬浮钮 */
+.to-top { z-index: 46; }
+@media (max-width: 720px) { .to-top { bottom: 92px; } }
+
+/* ⑧ 焦点可见性：目录行焦点环被 overflow:hidden 裁掉 */
+.cat-node { overflow: visible; }
