@@ -15,7 +15,7 @@ const liteArr = JSON.parse(fs.readFileSync(ROOT + '/data/products_lite.json', 'u
 let html = fs.readFileSync(ROOT + '/index.html', 'utf-8');
 const uniJs = fs.readFileSync(ROOT + '/unified.js', 'utf-8');
 html = html.replace(/<script src="\.\/app\.js\?v=[^"]*"><\/script>/, '')
-           .replace(/<script src="\.\/unified\.js\?v=[^"]*"><\/script>/, '<script>' + uniJs + '</script>');
+           .replace(/<script src="\.\/unified\.js\?v=[^"]*"><\/script>/, function () { return '<script>' + uniJs + '</script>'; });
 const vc = new VirtualConsole();
 vc.on('jsdomError', e => console.log('[jsdomError]', e.message));
 const dom = new JSDOM(html, {

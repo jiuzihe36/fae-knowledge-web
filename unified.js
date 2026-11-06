@@ -1032,7 +1032,8 @@
     if (!rows.length) return '<div class="empty">没有匹配的型号，请放宽筛选条件</div>';
     rows = applySelSort(rows);
     var _so = SEL_SORT.key ? (SEL_SORT.dir > 0 ? " ▲" : " ▼") : "";
-    var head = '<thead><tr><th class="cmp-col">对比</th>' +
+    var head = '<caption class="sr-only">型号选型表，可按列排序，勾选可对比</caption>' +
+      '<thead><tr><th class="cmp-col">对比</th>' +
       '<th class="sortable" data-sort="model">型号' + (_so && SEL_SORT.key === "model" ? _so : "") + '</th>' +
       '<th class="sortable" data-sort="fn">功能' + (_so && SEL_SORT.key === "fn" ? _so : "") + '</th>' +
       '<th class="sortable" data-sort="series">系列' + (_so && SEL_SORT.key === "series" ? _so : "") + '</th>' +
@@ -1320,7 +1321,7 @@
         "共 " + d.total + " 个应用场景，覆盖 " + d.total_models + " 款型号。点击场景展开对应型号。");
       /* 场景筛选框：输入关键词（如 USB / I2C / 缓冲）即时过滤场景 */
       html += '<div class="doc-sticky"><div class="doc-tools">' +
-        '<input id="appQ" class="page-search" type="search" ' +
+        '<input id="appQ" class="page-search" type="search" aria-label="按场景名或型号筛选应用场景" ' +
         'placeholder="按场景名 / 型号 / 功能筛选（如 USB、I2C、缓冲）" autocomplete="off">' +
         '<span id="appCount" class="count-pill">' + d.total + " 个场景</span></div></div>";
       html += '<div id="appGrid" class="app-grid">' + appCardsHtml(d.items, PENDING_APP_Q) + "</div>";
@@ -1336,7 +1337,7 @@
       html += pageShell("技术文档",
         "规格书 " + dsN + " 份 · 覆盖全部 " + st.total + " 款型号 · 引脚图 " + st.with_pin + " 份" + dsNote);
       html += '<div class="doc-sticky"><div class="doc-tools">' +
-        '<input id="docQ" class="page-search" type="search" ' +
+        '<input id="docQ" class="page-search" type="search" aria-label="按型号、功能、系列或封装筛选规格书" ' +
         'placeholder="按型号 / 功能 / 系列 / 封装筛选" autocomplete="off">' +
         '<button id="docAllBtn" class="btn-ghost" type="button">显示全部</button>' +
         '<span id="docCount" class="count-pill">' + d.items.length + " 款 · 显示前 200</span></div>" +
@@ -1377,7 +1378,7 @@
         '<select id="selL" class="sel-dd"><option value="">全部产品线</option>' +
         SEL_LINES.map(function (b) { return '<option value="' + esc(b) + '">' + esc(b) + '</option>'; }).join("") +
         '</select>' +
-        '<input id="selQ" class="page-search" type="search" placeholder="型号 / 功能关键词" autocomplete="off">' +
+        '<input id="selQ" class="page-search" type="search" aria-label="按型号或功能搜索选型表" placeholder="型号 / 功能关键词" autocomplete="off">' +
         '<button id="selCsv" class="btn-ghost" type="button">⬇ 导出 CSV</button>' +
         '<span id="selCount" class="count-pill">' + selRows().length + ' 款</span></div></div>' +
         '<div id="selTable">' + selTableHtml(selRows()) + '</div>' +

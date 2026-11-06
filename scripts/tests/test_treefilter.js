@@ -4,7 +4,7 @@ const liteArr = JSON.parse(fs.readFileSync('/Users/hu/项目/站点/fae-knowledg
 let html = fs.readFileSync('/Users/hu/项目/站点/fae-knowledge-web/index.html', 'utf-8');
 const uniJs = fs.readFileSync('/Users/hu/项目/站点/fae-knowledge-web/unified.js', 'utf-8');
 html = html.replace(/<script src="\.\/app\.js\?v=[^"]*"><\/script>/, '')
-           .replace(/<script src="\.\/unified\.js\?v=[^"]*"><\/script>/, '<script>' + uniJs + '</script>');
+           .replace(/<script src="\.\/unified\.js\?v=[^"]*"><\/script>/, function () { return '<script>' + uniJs + '</script>'; });
 const vc = new VirtualConsole();
 vc.on('jsdomError', e => console.log('[jsdomError]', e.message));
 const dom = new JSDOM(html, {
