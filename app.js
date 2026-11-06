@@ -484,6 +484,9 @@ if (typeof document === "undefined") return;
 
   function hydrateDisplayFields(item) {
     if (!item) return;
+    /* 用了 index.json（含 description/source_label/pin_image/applications_domains）时
+       字段本就齐全，直接返回 —— 否则首屏会白拉一次 374 KB 的 products_lite.json */
+    if (INDEX) return;
     if (HYDRATED) {
       if (HYDRATED.has(item)) return;
       HYDRATED.add(item);
@@ -981,8 +984,17 @@ if (typeof document === "undefined") return;
       INDEX = payload;   /* 保留 chunks_meta，供按块加载用 */
       return list;
     }).catch(function () {
-      INDEX = null;
-      return fetchJson("./data/products_lite.json");
+      /* 网络抖动时 index.json 可能超时（实测 305 KB 在本机偶发 3 s+），
+         重试一次再回退，避免整站退化成 products_lite 且 INDEX=null 导致块加载失效 */
+      return fetchJson("./data/index.json").then(function (payload2) {
+        var list2 = normalizeProductList(payload2);
+        if (!list2 || !list2.length) throw new Error("retry empty");
+        INDEX = payload2;
+        return list2;
+      }).catch(function () {
+        INDEX = null;
+        return fetchJson("./data/products_lite.json");
+      });
     });
   }
 
