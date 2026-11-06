@@ -17,6 +17,10 @@
   .guide-body h2 { font-size: 18px; margin: 28px 0 10px; padding-top: 8px; border-top: 1px solid var(--border, #eee); }
   .guide-body h3 { font-size: 15.5px; margin: 20px 0 8px; }
   .guide-body table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; display: block; overflow-x: auto; }
+  @media (max-width: 720px) {
+    .guide-body table { min-width: 620px; }
+    .guide-body th, .guide-body td { white-space: nowrap; }
+  }
   .guide-body th, .guide-body td { border: 1px solid var(--border, #e3e6e9); padding: 7px 10px; text-align: left; vertical-align: top; }
   .guide-body th { background: rgba(0,0,0,.03); }
   .guide-body code { background: rgba(0,0,0,.05); padding: 1px 5px; border-radius: 4px; font-size: .92em; }
