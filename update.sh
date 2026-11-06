@@ -125,6 +125,15 @@ else
 fi
 
 echo ""
+echo "🧱 Step 1.8: 参数分块（index.json + specs/chunk-*.json）+ 对账门禁..."
+if [ -f "$DIR/scripts/build_chunks.py" ]; then
+  python3 "$DIR/scripts/build_chunks.py" 2>&1 | tail -3 || { echo "❌ 分块构建失败，已中止部署（数据未发布）"; exit 1; }
+  python3 "$DIR/scripts/build_chunks.py" --check 2>&1 | tail -2 || { echo "❌ 分块校验失败，已中止部署"; exit 1; }
+else
+  echo "  (无 build_chunks.py — 跳过)"
+fi
+
+echo ""
 echo "🏷 Step 1.6: 静态资源版本戳（内容哈希）..."
 python3 - "$DIR" <<'PY'
 import sys, re, hashlib

@@ -2724,3 +2724,26 @@ body { background: var(--bg); }
 /* 电气参数加载占位（2026-11-06） */
 .spec-loading td { padding: 18px 12px !important; text-align: center; font-size: 12.5px;
   color: var(--muted, #6b7176); }
+
+/* ============================================================
+   打印视图（2026-11-06）：选型表/技术文档可直接 Cmd+P 打成纸质表
+   去掉导航、工具条、悬浮钮、弹层与勾选框；表格改成黑白细线。
+   ============================================================ */
+@media print {
+  .band, .topbar, .brand, .doc-sticky, .cmp-bar, .to-top, .theme-btn,
+  #detail, #lightbox, #cmpModal, .guide-nav, .skip-link, #a11yLive { display: none !important; }
+  html, body { background: #fff !important; color: #000 !important; }
+  .shell { max-width: none; padding: 0; margin: 0; }
+  .cat-hero h2 { font-size: 16pt; margin: 0 0 4pt; }
+  .cat-hero p { font-size: 9pt; color: #444 !important; }
+  .sel-tbl, .q-tbl { width: 100% !important; table-layout: auto !important; min-width: 0 !important;
+    display: table !important; font-size: 8.5pt; }
+  .sel-tbl th, .sel-tbl td, .q-tbl th, .q-tbl td {
+    border: 1px solid #999 !important; background: #fff !important; color: #000 !important;
+    padding: 3pt 5pt !important; white-space: normal !important; }
+  .sel-tbl th, .q-tbl th { background: #eee !important; -webkit-print-color-adjust: exact; }
+  .cmp-col, .bar-col, .sel-tbl td.cmp-col, .sel-tbl th.cmp-col { display: none !important; }
+  a { color: #000 !important; text-decoration: none !important; }
+  .page-note { font-size: 8pt; color: #444 !important; }
+  @page { margin: 12mm 10mm; }
+}

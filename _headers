@@ -7,6 +7,11 @@
   Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'self'; upgrade-insecure-requests
   Cross-Origin-Opener-Policy: same-origin
 
+# 参数块：文件名带内容哈希（chunk-00.a1b2c3d4.json），内容变则文件名变 → 可永久缓存
+/data/specs/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
 # 数据文件每次部署都会变 —— 不能长缓存，否则用户看到旧数据
 # （曾误设 max-age=3600，导致新数据 1 小时不生效）
 /data/*

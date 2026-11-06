@@ -52,9 +52,51 @@
     return keys.map(function (k) { return { kind: k, items: map[k] }; });
   }
 
+  /* 数据层已不再预渲染 HTML（只留 param/value/kind），这里现算：
+     先 esc() 转义，再把 VCC / VIH / Tamb 等转成下标，效果同旧 param_html/value_html。 */
+
+  var SPEC_SUB_TOKENS = [
+    "VCC", "VDD", "VSS", "VIH", "VIL", "VOH", "VOL", "VT+", "VT-", "VT−",
+    "VI", "VO", "ICC", "IDD", "IOH", "IOL", "IIK", "IOK", "IOZ", "IOFF",
+    "II", "IO", "Tamb"
+  ];
+
+  /* 长词在前，避免 VI 抢先吃掉 VIH；前后限定非英文字母，避免误伤单词（VCCI 等） */
+  var SPEC_SUB_RE = new RegExp(
+    "(^|[^A-Za-z])(" + SPEC_SUB_TOKENS.map(function (t) { return t.replace(/\+/g, "\\+"); }).join("|") + ")(?![A-Za-z])",
+    "g"
+  );
+
+  function specSubMarkup(token) {
+    if (token === "Tamb") return "T<sub>amb</sub>";
+    if (token === "VT+") return "V<sub>T+</sub>";
+    if (token === "VT-" || token === "VT−") return "V<sub>T−</sub>";
+    if (token.charAt(0) === "V") return "V<sub>" + token.slice(1) + "</sub>";
+    return "I<sub>" + token.slice(1) + "</sub>";
+  }
+
+  /* 已转义文本 → 下标化 */
+  function specSubscript(escaped) {
+    return String(escaped == null ? "" : escaped).replace(SPEC_SUB_RE, function (m, lead, token) {
+      return lead + specSubMarkup(token);
+    });
+  }
+
+  /* 参数名：spec 对象或原始字符串均可 */
+  function renderParam(spec) {
+    var raw = spec && typeof spec === "object" ? spec.param : spec;
+    return specSubscript(esc(raw));
+  }
+
+  /* 参数值：转义 + 下标 + <strong>（与旧 value_html 的包裹一致） */
+  function renderValue(spec) {
+    var raw = spec && typeof spec === "object" ? spec.value : spec;
+    return "<strong>" + specSubscript(esc(raw)) + "</strong>";
+  }
+
   function specHtml(spec) {
     if (!spec) return "";
-    const v = spec.value_html || ("<strong>" + esc(spec.value) + "</strong>");
+    const v = spec.value_html || renderValue(spec);
     let c = "";
     if (spec.conditions_html) {
       c = '<br><span class="spec-cond">[' + spec.conditions_html + "]</span>";
@@ -109,6 +151,7 @@ if (typeof document === "undefined") return;
   const RENDER_LIMIT = 500;
 
   const products = [];
+  var INDEX = null;   /* data/index.json 原始对象（chunks_meta / items 等） */
   /* 竞品/P2P 数据已整体摘除 */
   let filtered = [];
   let debounceTimer = null;   /* 保留：历史变量，现由 unified.js 的 timer 承担 */
@@ -183,29 +226,394 @@ if (typeof document === "undefined") return;
     applyTheme(next);
   }
 
-  /* ---------- specs 懒加载：首次开详情才拉（3.7MB，占 products 原体积 95%） ---------- */
-  var SPECS = null, SPECS_PROMISE = null;
-  function ensureSpecs() {
-    if (SPECS) return Promise.resolve(SPECS);
-    if (SPECS_PROMISE) return SPECS_PROMISE;
-    SPECS_PROMISE = fetch("./data/specs.json?t=" + Math.floor(Date.now() / 60000))
-      .then(function (r) { return r.ok ? r.json() : {}; })
-      .then(function (m) {
-        SPECS = m || {};
-        /* 回填到每个产品，后续代码无感知 */
-        products.forEach(function (p) {
-          if (SPECS[String(p.id)]) p.specs = SPECS[String(p.id)];
-        });
-        /* 顺带把参数总数补上（首屏占位 "-"） */
-        if (el.statSpecs) {
-          var n = 0;
-          products.forEach(function (p) { if (Array.isArray(p.specs)) n += p.specs.length; });
-          el.statSpecs.textContent = n;
+  /* ---------- 型号收藏（localStorage: xx_fav_models，纯本地、不上传） ---------- */
+
+  var FAV_KEY = "xx_fav_models";
+  var FAV_CACHE = null;          /* 内存缓存；storage 事件时置空重读 */
+
+  function favRead() {
+    if (FAV_CACHE) return FAV_CACHE.slice();
+    var list = [];
+    try {
+      var raw = window.localStorage.getItem(FAV_KEY);
+      var parsed = raw ? JSON.parse(raw) : [];
+      if (Array.isArray(parsed)) {
+        list = parsed.map(function (x) { return String(x == null ? "" : x).trim(); })
+          .filter(function (x) { return !!x; });
+      }
+    } catch (e) { list = []; }
+    /* 去重（大小写不敏感），保留首次写入的写法 */
+    var seen = Object.create(null), out = [];
+    list.forEach(function (m) {
+      var k = m.toUpperCase();
+      if (!seen[k]) { seen[k] = 1; out.push(m); }
+    });
+    FAV_CACHE = out;
+    return out.slice();
+  }
+
+  function favWrite(list) {
+    FAV_CACHE = list.slice();
+    try {
+      window.localStorage.setItem(FAV_KEY, JSON.stringify(FAV_CACHE));
+    } catch (e) { /* 隐私模式 / 配额满：内存态仍然可用 */ }
+  }
+
+  function isFav(model) {
+    var m = String(model == null ? "" : model).trim().toUpperCase();
+    if (!m) return false;
+    return favRead().some(function (x) { return x.toUpperCase() === m; });
+  }
+
+  function favModels() {
+    return favRead();
+  }
+
+  function toggleFav(model) {
+    var m = String(model == null ? "" : model).trim();
+    if (!m) return false;
+    var list = favRead();
+    var upper = m.toUpperCase();
+    var idx = -1;
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].toUpperCase() === upper) { idx = i; break; }
+    }
+    var on;
+    if (idx >= 0) { list.splice(idx, 1); on = false; }
+    else { list.push(m); on = true; }
+    favWrite(list);
+    syncFavButton();
+    decorateFavRows();
+    try {
+      document.dispatchEvent(new CustomEvent("xx:favchange", { detail: { model: m, fav: on } }));
+    } catch (e) { /* 老浏览器不支持 CustomEvent 构造：忽略 */ }
+    return on;
+  }
+
+  /* 抽屉头部的星标按钮：运行时插入到 #detailModel 与「复制」之间，
+     不改 index.html 结构；老缓存页面没有 .head-line 时静默跳过。 */
+  var favBtn = null;
+
+  function ensureFavButton() {
+    if (favBtn && favBtn.isConnected !== false && favBtn.parentNode) return favBtn;
+    if (document.getElementById("favModelBtn")) {
+      favBtn = document.getElementById("favModelBtn");
+      return favBtn;
+    }
+    var head = el.detail && el.detail.querySelector(".head-line");
+    if (!head) return null;
+    var btn = document.createElement("button");
+    btn.id = "favModelBtn";
+    btn.type = "button";
+    btn.className = "copy-btn fav-btn";
+    btn.setAttribute("aria-label", "收藏该型号");
+    btn.setAttribute("aria-pressed", "false");
+    btn.title = "收藏该型号（只存本机，不上传）";
+    btn.textContent = "☆";
+    /* 星号字形在 12px 下偏小，内联补齐尺寸，避免依赖 style.css 改动 */
+    btn.style.fontSize = "14px";
+    btn.style.lineHeight = "1";
+    btn.style.minWidth = "34px";
+    btn.style.padding = "3px 8px";
+    var anchor = document.getElementById("copyModelBtn");
+    if (anchor && anchor.parentNode === head) head.insertBefore(btn, anchor);
+    else head.appendChild(btn);
+    btn.addEventListener("click", function () {
+      var model = el.detailModel ? el.detailModel.textContent.trim() : "";
+      if (model) toggleFav(model);
+    });
+    favBtn = btn;
+    return btn;
+  }
+
+  function syncFavButton(model) {
+    var btn = ensureFavButton();
+    if (!btn) return;
+    var want = model == null
+      ? (el.detailModel ? el.detailModel.textContent.trim() : "")
+      : String(model).trim();
+    var on = want ? isFav(want) : false;
+    btn.textContent = on ? "★" : "☆";
+    btn.setAttribute("aria-pressed", on ? "true" : "false");
+    btn.title = on ? "取消收藏该型号" : "收藏该型号（只存本机，不上传）";
+    btn.classList.toggle("fav-on", on);
+    btn.style.color = on ? "#E8A33D" : "";
+    btn.style.borderColor = on ? "#E8A33D" : "";
+  }
+
+  /* 列表行星标：unified.js 负责渲染 .rcard / .mod-row，这里只往型号名前面
+     插入自己的 <span>，不改它的渲染逻辑；重渲染后由 MutationObserver 补回。 */
+  var FAV_MARK_CLASS = "xx-fav-mark";
+
+  function favRowRoots() {
+    var roots = [];
+    ["results", "catTree", "tableBody"].forEach(function (id) {
+      var n = document.getElementById(id);
+      if (n) roots.push(n);
+    });
+    return roots;
+  }
+
+  function decorateFavRows() {
+    var roots = favRowRoots();
+    if (!roots.length) return;
+    var favs = Object.create(null);
+    favRead().forEach(function (m) { favs[m.toUpperCase()] = 1; });
+    roots.forEach(function (root) {
+      Array.prototype.forEach.call(root.querySelectorAll("[data-model]"), function (row) {
+        var model = String(row.getAttribute("data-model") || "").trim();
+        var on = !!favs[model.toUpperCase()];
+        row.classList.toggle("is-fav", on);
+        var nameEl = row.querySelector(".rcard-model, .mod-name") || row.querySelector("td");
+        if (on && nameEl && !nameEl.querySelector("." + FAV_MARK_CLASS)) {
+          var mark = document.createElement("span");
+          mark.className = FAV_MARK_CLASS;
+          mark.setAttribute("aria-hidden", "true");
+          mark.textContent = "★";
+          mark.style.color = "#E8A33D";
+          mark.style.marginRight = "3px";
+          mark.style.fontSize = "0.92em";
+          mark.style.lineHeight = "1";
+          nameEl.insertBefore(mark, nameEl.firstChild);
+        } else if (!on) {
+          Array.prototype.forEach.call(row.querySelectorAll("." + FAV_MARK_CLASS), function (n) {
+            if (n.parentNode) n.parentNode.removeChild(n);
+          });
         }
+      });
+    });
+  }
+
+  function watchFavRows() {
+    if (typeof MutationObserver === "undefined") return;
+    var pending = null;
+    var schedule = function () {
+      if (pending) return;
+      pending = setTimeout(function () { pending = null; decorateFavRows(); }, 80);
+    };
+    favRowRoots().forEach(function (root) {
+      new MutationObserver(schedule).observe(root, { childList: true, subtree: true });
+    });
+    decorateFavRows();
+  }
+
+  /* ---------- specs 懒加载：按 id 分块（data/specs/chunk-NN[.hash].json） ----------
+     块文件 {"<id>": [specs...]} 约 42 款；index.json 的 item.chunk 给块号，
+     chunks_meta[{i,file,n}] 给真实文件名（带 hash）。
+     一次加载服务同块所有型号；已加载块记在 Set 里，不重复请求。
+     三级回退：块文件 → 全量 data/specs.json（老路径）→ 参数区「参数暂缺」。
+     块文件可能尚未生成：404/网络错误静默回退，不报错。 */
+
+  var SPECS = null;                        /* id -> 参数数组（块/全量共用缓存） */
+  var SPECS_FULL = false;                  /* 全量 specs.json 是否已成功加载 */
+  var SPECS_FULL_ERROR = false;            /* 全量兜底也失败 → 渲染「参数暂缺」 */
+  var SPECS_FULL_PROMISE = null;
+  var CHUNKS = new Set();                  /* 已加载块号："0" … "15" */
+  var CHUNK_PROMISE = Object.create(null); /* 块号 -> 进行中的请求 */
+  var SPEC_MISSING = Object.create(null);  /* MODEL -> true：块 + 全量都失败 */
+
+  function modelKey(model) {
+    return String(model == null ? "" : model).trim().toUpperCase();
+  }
+
+  /* 块号：数字或数字字符串；缺省/越界返回 ""（→ 全量回退） */
+  function chunkKey(value) {
+    if (value === null || value === undefined || value === "") return "";
+    var n = Number(value);
+    if (!isFinite(n) || n < 0 || n > 99 || Math.floor(n) !== n) return "";
+    return String(n);
+  }
+
+  function pad2(n) { return n < 10 ? "0" + n : String(n); }
+
+  /* 块文件名以 index.json 的 chunks_meta 为准：[{i, file, n}]，file 带 hash。
+     （兼容别名 chunks 也是数组的情况；chunks 为纯数字时忽略。）
+     chunks_meta 不存在时退回旧命名 chunk-XX.json；存在但没有该块 → 视为不可用。 */
+  function chunkFile(value) {
+    var key = chunkKey(value);
+    if (!key) return "";
+    var meta = INDEX ? (INDEX.chunks_meta || INDEX.chunks) : null;
+    if (Array.isArray(meta) && meta.length) {
+      for (var i = 0; i < meta.length; i++) {
+        var m = meta[i];
+        if (m && Number(m.i) === Number(key) && m.file) {
+          /* 只取文件名，剥掉任何路径部分 */
+          return "./data/specs/" + encodeURIComponent(String(m.file).split("/").pop());
+        }
+      }
+      return "";
+    }
+    return "./data/specs/chunk-" + pad2(Number(key)) + ".json";
+  }
+
+  function fetchJson(url, immutable) {
+    /* immutable=true 用于内容哈希命名的块（chunk-00.a1b2c3d4.json）：
+       文件名已随内容变，不能再加时间戳，否则每次都算新 URL，_headers 的长缓存失效。 */
+    var sep = url.indexOf("?") >= 0 ? "&" : "?";
+    var full = immutable ? url : url + sep + "t=" + Math.floor(Date.now() / 60000);
+    return fetch(full).then(function (r) {
+      if (!r.ok) {
+        var err = new Error("HTTP " + r.status);
+        err.status = r.status;
+        throw err;
+      }
+      return r.json();
+    });
+  }
+
+  function applyChunkSpecs(map) {
+    if (!map || typeof map !== "object") return;
+    SPECS = SPECS || {};
+    var n = 0;
+    Object.keys(map).forEach(function (id) {
+      if (Array.isArray(map[id])) { SPECS[id] = map[id]; n++; }
+    });
+    if (!n) return;
+    /* 整块回填：同块约 42 款一次到位，后续打开不再请求 */
+    products.forEach(function (p) {
+      var s = SPECS[String(p.id)];
+      if (s) p.specs = s;
+    });
+  }
+
+  /* index.json 若只带列表字段（缺 description / source_label），首次开详情
+     按需补一次 products_lite.json：只补缺、不覆盖 index。
+     index 字段齐全时不会触发，也不产生额外请求。 */
+  var LITE_PROMISE = null;
+  var HYDRATED = typeof WeakSet !== "undefined" ? new WeakSet() : null;
+
+  function hydrateDisplayFields(item) {
+    if (!item) return;
+    if (HYDRATED) {
+      if (HYDRATED.has(item)) return;
+      HYDRATED.add(item);
+    } else {
+      if (item.__fieldsHydrated) return;
+      item.__fieldsHydrated = true;
+    }
+    if (item.description !== undefined && item.source_label !== undefined) return;
+    if (!LITE_PROMISE) {
+      LITE_PROMISE = fetchJson("./data/products_lite.json").then(function (lite) {
+        if (!Array.isArray(lite)) return false;
+        var byId = Object.create(null);
+        lite.forEach(function (p) { if (p && p.id != null) byId[String(p.id)] = p; });
+        products.forEach(function (p) {
+          var src = byId[String(p.id)];
+          if (!src) return;
+          Object.keys(src).forEach(function (k) {
+            if (k === "specs" || k === "haystack") return;
+            var v = src[k];
+            if (v === undefined || v === null || v === "") return;
+            if (Array.isArray(v) && !v.length) return;
+            var cur = p[k];
+            if (cur === undefined || cur === null || cur === "" || (Array.isArray(cur) && !cur.length)) p[k] = v;
+          });
+          p.haystack = buildHaystack(p);
+        });
+        return true;
+      }).catch(function () { return false; });
+    }
+    LITE_PROMISE.then(function (ok) {
+      if (!ok) return;
+      /* 抽屉正停在这个型号：用补齐后的字段重绘（openDetail 幂等，不重置焦点） */
+      if (el.detail && !el.detail.classList.contains("hidden") &&
+          el.detailModel && el.detailModel.textContent === item.model) {
+        openDetail(item.id);
+      }
+    });
+  }
+
+  function mergeFullSpecs(map) {
+    if (!map || typeof map !== "object") return;
+    SPECS = SPECS || {};
+    var n = 0;
+    Object.keys(map).forEach(function (id) {
+      if (map[id]) { SPECS[id] = map[id]; n++; }
+    });
+    if (!n) return;
+    /* 回填到每个产品，后续代码无感知 */
+    products.forEach(function (p) {
+      var s = SPECS[String(p.id)];
+      if (s) p.specs = s;
+    });
+    /* 参数总数只有全量时才是全站口径；分块阶段保持首屏占位 "-" */
+    if (SPECS_FULL && el.statSpecs) {
+      var total = 0;
+      products.forEach(function (p) { if (Array.isArray(p.specs)) total += p.specs.length; });
+      el.statSpecs.textContent = total;
+    }
+  }
+
+  function loadFullSpecs() {
+    if (SPECS_FULL) return Promise.resolve(SPECS || {});
+    if (SPECS_FULL_PROMISE) return SPECS_FULL_PROMISE;
+    SPECS_FULL_PROMISE = fetchJson("./data/specs.json")
+      .then(function (m) { mergeFullSpecs(m); SPECS_FULL = true; return SPECS || {}; })
+      .catch(function (e) {
+        /* 兜底也失败：不再重试，渲染层显示「参数暂缺」 */
+        console.warn("[specs] 全量兜底加载失败", e);
+        SPECS_FULL_ERROR = true;
+        SPECS = SPECS || {};
         return SPECS;
-      })
-      .catch(function (e) { console.warn("[specs] 加载失败", e); SPECS = {}; return SPECS; });
-    return SPECS_PROMISE;
+      });
+    return SPECS_FULL_PROMISE;
+  }
+
+  function loadChunk(key, url) {
+    if (CHUNKS.has(key)) return Promise.resolve(true);
+    if (CHUNK_PROMISE[key]) return CHUNK_PROMISE[key];
+    var p = fetchJson(url, true).then(function (map) {
+      applyChunkSpecs(map);
+      CHUNKS.add(key);
+      return true;
+    }).catch(function () {
+      /* 块文件缺失/损坏：静默走二级回退（全量 specs.json） */
+      return loadFullSpecs().then(function () { return SPECS_FULL; });
+    });
+    CHUNK_PROMISE[key] = p;
+    return p;
+  }
+
+  /* 从 products 里取该型号当前的参数数组（块回填后就是最新值） */
+  function specsFor(item) {
+    var key = modelKey(item.model);
+    for (var i = 0; i < products.length; i++) {
+      if (modelKey(products[i].model) === key) {
+        return Array.isArray(products[i].specs) ? products[i].specs : [];
+      }
+    }
+    return Array.isArray(item.specs) ? item.specs : [];
+  }
+
+  function resolveItem(target) {
+    if (target && typeof target === "object") return target;
+    if (target == null) return null;
+    var key = modelKey(target);
+    if (!key) return null;
+    for (var i = 0; i < products.length; i++) {
+      if (modelKey(products[i].model) === key) return products[i];
+    }
+    return { model: String(target).trim() };
+  }
+
+  /* target 可以是产品对象或型号字符串；不传 = 要全量（老调用点语义不变） */
+  function ensureSpecs(target) {
+    var item = resolveItem(target);
+    if (!item) return loadFullSpecs();
+    var url = chunkFile(item.chunk);
+    if (!url) {
+      /* 块号未知 / chunks_meta 缺项（index.json 不可用）→ 回退全量 specs.json */
+      return loadFullSpecs().then(function () {
+        var specs = specsFor(item);
+        if (!specs.length && SPECS_FULL_ERROR) SPEC_MISSING[modelKey(item.model)] = true;
+        return specs;
+      });
+    }
+    return loadChunk(chunkKey(item.chunk), url).then(function () {
+      var specs = specsFor(item);
+      if (!specs.length && SPECS_FULL_ERROR) SPEC_MISSING[modelKey(item.model)] = true;
+      return specs;
+    });
   }
 
   function openDetail(id) {
@@ -219,6 +627,10 @@ if (typeof document === "undefined") return;
        客户点了没任何反馈。现在先渲染基础信息 + 参数区占位，加载完成再填充。 */
 
     el.detailModel.textContent = item.model;
+    /* 星标状态跟随当前型号（同一个按钮，不重建 DOM） */
+    syncFavButton(item.model);
+    /* index.json 若只带列表字段，按需补齐描述/规格书/引脚图等（只触发一次） */
+    hydrateDisplayFields(item);
     el.detailBadges.innerHTML = statusBadgeHtml(deriveStatus(item), true);
     el.detailDesc.textContent = text(item.description);
     const dsUrl = item.source_label ? new URL("./datasheets/" + item.source_label, document.baseURI).href : "";
@@ -264,23 +676,36 @@ if (typeof document === "undefined") return;
     if (window.__xx && window.__xx.setHash) window.__xx.setHash("model=" + encodeURIComponent(item.model));
   }
 
-  /* 电气参数区：已就绪直接填，未就绪先占位再异步填（2026-11-06） */
+  /* 电气参数区：按块懒加载（chunk-NN.json → specs.json → 参数暂缺） */
   function renderSpecBlock(item) {
     var specs = Array.isArray(item.specs) ? item.specs : [];
-    if (SPECS || specs.length) { fillSpecTable(specs); return; }
+    var ck = chunkKey(item.chunk);
+    var known = SPECS_FULL || (!!ck && CHUNKS.has(ck));
+    if (known || specs.length) {
+      showSpecTable(specs, !!SPEC_MISSING[modelKey(item.model)]);
+      return;
+    }
     el.specTable.innerHTML = '<tr class="spec-loading"><td colspan="2">' +
-      '电气参数加载中…（首次打开需下载约 5 MB，之后秒开）</td></tr>';
+      '电气参数加载中…（按块按需加载，之后秒开）</td></tr>';
     el.specEmpty.classList.add("hidden");
     var want = item.model;
-    ensureSpecs().then(function () {
+    ensureSpecs(item).then(function (list) {
       if (el.detail.classList.contains("hidden")) return;
       if (el.detailModel && el.detailModel.textContent !== want) return;
-      fillSpecTable(Array.isArray(item.specs) ? item.specs : []);
+      var arr = Array.isArray(list) ? list : (Array.isArray(item.specs) ? item.specs : []);
+      showSpecTable(arr, !!SPEC_MISSING[modelKey(item.model)]);
     });
+  }
+
+  function showSpecTable(specs, missing) {
+    fillSpecTable(specs);
+    /* 三级回退都失败才提示「参数暂缺」；型号本身确实无参数时仍显示「无参数」 */
+    if (missing && !specs.length && el.specEmpty) el.specEmpty.textContent = "参数暂缺";
   }
 
   function fillSpecTable(specs) {
     el.specTable.innerHTML = "";
+    if (el.specEmpty) el.specEmpty.textContent = "无参数";
     el.specEmpty.classList.toggle("hidden", specs.length > 0);
     var groups = groupSpecs(specs.slice(0, 300));
     groups.forEach(function (group) {
@@ -290,7 +715,7 @@ if (typeof document === "undefined") return;
       el.specTable.appendChild(head);
       group.items.forEach(function (spec) {
         var row = document.createElement("tr");
-        row.innerHTML = "<td>" + (spec.param_html || esc(spec.param)) + "</td><td>" + specHtml(spec) + "</td>";
+        row.innerHTML = "<td>" + (spec.param_html || renderParam(spec)) + "</td><td>" + specHtml(spec) + "</td>";
         el.specTable.appendChild(row);
       });
     });
@@ -515,17 +940,55 @@ if (typeof document === "undefined") return;
     enhanceCollapsibles();
     document.addEventListener("keydown", onDetailKeydown);
     document.addEventListener("keydown", onCollapseKeydown);
+
+    /* 型号收藏：抽屉星标按钮、列表行补星标、跨标签页同步 */
+    ensureFavButton();
+    watchFavRows();
+    window.addEventListener("storage", function (event) {
+      if (event.key !== FAV_KEY && event.key !== null) return;
+      FAV_CACHE = null;
+      syncFavButton();
+      decorateFavRows();
+    });
   }
 
   /* ---------- 数据加载 ---------- */
 
+  /* 列表数据源：优先 data/index.json（轻量索引，含展示字段、不含 specs），
+     缺失/为空/结构不符时回退 data/products_lite.json（老路径）。 */
+  function normalizeProductList(payload) {
+    if (Array.isArray(payload)) return payload;
+    if (!payload || typeof payload !== "object") return null;
+    var keys = ["products", "items", "models", "list", "data"];
+    for (var i = 0; i < keys.length; i++) {
+      var v = payload[keys[i]];
+      if (Array.isArray(v)) return v;
+      if (v && typeof v === "object") {
+        var vals = Object.keys(v).map(function (k) { return v[k]; });
+        if (vals.length && vals.every(function (x) { return x && typeof x === "object"; })) return vals;
+      }
+    }
+    return null;
+  }
+
+  function loadProductList() {
+    return fetchJson("./data/index.json").then(function (payload) {
+      var list = normalizeProductList(payload);
+      if (!list || !list.length) throw new Error("index.json 为空");
+      /* 详情与跳转都依赖 id + model；索引字段不全时宁可回退，也不要半个列表 */
+      var usable = list.every(function (p) { return p && p.model && p.id != null; });
+      if (!usable) throw new Error("index.json 字段不全");
+      INDEX = payload;   /* 保留 chunks_meta，供按块加载用 */
+      return list;
+    }).catch(function () {
+      INDEX = null;
+      return fetchJson("./data/products_lite.json");
+    });
+  }
+
   function load() {
-    /* 首屏只拉精简版（446KB vs 4.16MB，specs 占 95% 已拆到 specs.json 懒加载） */
-    fetch("./data/products_lite.json?t=" + Math.floor(Date.now() / 60000))
-      .then(function (response) {
-        if (!response.ok) throw new Error("HTTP " + response.status);
-        return response.json();
-      })
+    /* 首屏只拉列表（index.json 约 180KB；specs 已拆成 16 个块，按需加载） */
+    loadProductList()
       .then(function (data) {
         data.forEach(function (item) {
           item.haystack = buildHaystack(item);
@@ -537,10 +1000,8 @@ if (typeof document === "undefined") return;
         el.statSpecs.textContent = "-";
         if (el.meta) el.meta.textContent = "离线数据库 · 静态网页版";
 
-        /* 首屏渲染完成后空闲时预取 specs（不阻塞首屏，点开详情时已就绪） */
-        var prefetch = function () { ensureSpecs(); };
-        if (window.requestIdleCallback) window.requestIdleCallback(prefetch, { timeout: 3000 });
-        else setTimeout(prefetch, 1200);
+        /* specs 按块懒加载：首屏不预取参数，点开型号时才拉 data/specs/chunk-NN；
+           块缺失自动回退全量 specs.json，再失败显示「参数暂缺」。 */
 
         /* 桥接给 unified.js：数据 + 按型号打开详情 */
         window.__xx = window.__xx || {};
@@ -568,6 +1029,14 @@ if (typeof document === "undefined") return;
 
   // 启动时按时间（或已存的手动选择）应用主题
   applyTheme(getStoredTheme());
+
+  /* 桥接给 unified.js：收藏状态/切换（列表星标可直接调用），specs 预热入口 */
+  window.__xx = window.__xx || {};
+  window.__xx.isFav = isFav;
+  window.__xx.toggleFav = toggleFav;
+  window.__xx.favModels = favModels;
+  window.__xx.ensureSpecs = ensureSpecs;
+  window.__xx.syncFavButton = syncFavButton;
 
   // 每整分钟检查：若用户未手动锁定，随时间自动切换纯白/纯黑
   setInterval(function () {

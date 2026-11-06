@@ -16,6 +16,16 @@
   function norm(s) {
     return String(s == null ? "" : s).toUpperCase().replace(/[\s\-_]/g, "");
   }
+  /* 关键词高亮：先整体转义、再在转义后的文本里插 <mark>（不拼接原始 HTML，避免 XSS）。
+     关键词同样先转义再转正则，大小写不敏感。kw 为空时原样返回。 */
+  function hlKw(text, kw) {
+    var t = esc(text == null ? "" : text);
+    var q = String(kw == null ? "" : kw).trim();
+    if (!q) return t;
+    var needle = esc(q).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    var re = new RegExp(needle, "gi");
+    return t.replace(re, function (m) { return '<mark class="hl">' + m + "</mark>"; });
+  }
   /* 去厂商前缀：SGM74HC541 → 74HC541 */
   var VENDOR_PRE = ["AIP", "SGM", "DIO", "EMS", "EXS", "EM", "EL", "CD", "HEF", "MC", "SN", "TS", "TXS"];
   function stripVendor(s) {
@@ -266,18 +276,18 @@
     console.warn("[目录] 找不到型号详情入口:", model);
   }
 
-  function productCard(p) {
+  function productCard(p, kw) {
     var badges = [];
     if (p.status) badges.push('<span class="mini-badge">' + esc(p.status) + "</span>");
     if (p.logic_type) badges.push('<span class="mini-badge">' + esc(p.logic_type) + "</span>");
     return '<button type="button" class="rcard" data-model="' + esc(p.model) + '">' +
-      '<div class="rcard-top"><span class="rcard-model mono">' + esc(p.model) + "</span>" +
-      '<span class="rcard-func">' + esc(p.function || "") + "</span></div>" +
+      '<div class="rcard-top"><span class="rcard-model mono">' + hlKw(p.model, kw) + "</span>" +
+      '<span class="rcard-func">' + hlKw(p.function || "", kw) + "</span></div>" +
       '<div class="rcard-meta">' +
       (p.series ? "<span>系列 " + esc(p.series) + "</span>" : "") +
       (p.package ? "<span>" + esc(p.package) + "</span>" : "") +
       (p.vcc ? "<span>" + esc(p.vcc) + "</span>" : "") +
-      (p.function_detail ? "<span>" + esc(p.function_detail) + "</span>" : "") +
+      (p.function_detail ? "<span>" + hlKw(p.function_detail, kw) + "</span>" : "") +
       "</div>" +
       (badges.length ? '<div class="rcard-badges">' + badges.join("") + "</div>" : "") +
       "</button>";
@@ -631,6 +641,14 @@
 
     /* 应用卡片展开 / 型号跳详情 */
     if (el.pageBody) el.pageBody.addEventListener("click", function (e) {
+      /* 按器件类型浏览：跳选型表并预填关键词。拦下冒泡，避免被下方 .catcard 搜索逻辑当成首页入口 */
+      var dt = e.target.closest("[data-devtype]");
+      if (dt) {
+        e.preventDefault();
+        e.stopPropagation();
+        goSelectorByType(dt.getAttribute("data-devtype"));
+        return;
+      }
       var star = e.target.closest("[data-fav]");
       if (star) {
         var nm = star.getAttribute("data-fav");
@@ -827,11 +845,12 @@
     });
     document.addEventListener("change", function (e) {
       var id = e.target.id;
-      if (id !== "selV" && id !== "selP" && id !== "selL") return;
+      if (id !== "selV" && id !== "selP" && id !== "selL" && id !== "selS") return;
       if (!PAGES.selector) return;
       if (id === "selV") SEL_STATE.v = e.target.value;
       if (id === "selP") SEL_STATE.p = e.target.value;
       if (id === "selL") SEL_STATE.l = e.target.value;
+      if (id === "selS") SEL_STATE.s = e.target.value;
       selRefresh();
     });
     document.addEventListener("click", function (e) {
@@ -943,7 +962,7 @@
   var SEL_V_BUCKETS = ["≤1.2 V", "1.2–1.8 V", "1.8–2.7 V", "2.7–3.6 V", "≥3.6 V"];
   var SEL_P_FAMS = ["SOT", "SOP", "TSSOP", "SSOP", "DFN", "QFN", "WLCSP", "BGA", "其他"];
   var SEL_LINES = ["逻辑", "电平转换", "模拟开关"];
-  var SEL_STATE = { v: "", p: "", l: "", q: "" };
+  var SEL_STATE = { v: "", p: "", l: "", s: "", q: "" };
 
   function selVbucket(v) {
     var m = String(v || "").match(/([\d.]+)\s*V/i);
@@ -977,11 +996,17 @@
     return "逻辑";
   }
 
+  /* 产品状态：与「封装与可靠性」页同口径 —— 规格书文件名含 Draft/Drft 即未量产 */
+  function selStatus(p) {
+    return /draft|drft/i.test(String((p && p.source_label) || "")) ? "Draft" : "正式版";
+  }
+
   function selRows() {
     return (DATA.products || []).filter(function (p) {
       if (SEL_STATE.v && selVbucket(p.voltage) !== SEL_STATE.v) return false;
       if (SEL_STATE.p && selPfam(p.package) !== SEL_STATE.p) return false;
       if (SEL_STATE.l && selLine(p.series) !== SEL_STATE.l) return false;
+      if (SEL_STATE.s && selStatus(p) !== SEL_STATE.s) return false;
       if (SEL_STATE.q) {
         var hay = [p.model, p.function, p.function_detail, p.series, p.package].join(" ").toLowerCase();
         if (hay.indexOf(SEL_STATE.q.toLowerCase()) < 0) return false;
@@ -1014,6 +1039,7 @@
       return m ? parseFloat(m[1]) : 999;
     }
     if (key === "temp") return p.temp_range || "";
+    if (key === "status") return selStatus(p);
     if (key === "line") return selLine(p.series);
     return "";
   }
@@ -1040,6 +1066,7 @@
       '<th class="sortable" data-sort="pkg">封装' + (_so && SEL_SORT.key === "pkg" ? _so : "") + '</th>' +
       '<th class="sortable" data-sort="vcc">工作电压' + (_so && SEL_SORT.key === "vcc" ? _so : "") + '</th>' +
       '<th class="sortable" data-sort="temp">工作温度' + (_so && SEL_SORT.key === "temp" ? _so : "") + '</th>' +
+      '<th class="sortable" data-sort="status">产品状态' + (_so && SEL_SORT.key === "status" ? _so : "") + '</th>' +
       '<th class="sortable" data-sort="line">产品线' + (_so && SEL_SORT.key === "line" ? _so : "") + '</th></tr></thead>';
     var body = rows.slice(0, 400).map(function (p) {
       return '<tr><td class="cmp-col"><input type="checkbox" class="cmp-ck" aria-label="对比 ' + esc(p.model) + '" data-cmp="' + esc(p.model) + '"' +
@@ -1050,9 +1077,10 @@
         '<td>' + esc(p.package || "") + '</td>' +
         '<td class="num">' + esc(p.voltage || "") + '</td>' +
         '<td class="num">' + esc(p.temp_range || "") + '</td>' +
+        '<td>' + esc(selStatus(p)) + '</td>' +
         '<td>' + esc(selLine(p.series)) + '</td></tr>';
     }).join("");
-    return '<table class="sel-tbl"><colgroup><col style="width:6%"><col style="width:15%"><col style="width:23%"><col style="width:8%"><col style="width:12%"><col style="width:12%"><col style="width:13%"><col style="width:11%"></colgroup>' +
+    return '<table class="sel-tbl"><colgroup><col style="width:6%"><col style="width:14%"><col style="width:20%"><col style="width:7%"><col style="width:11%"><col style="width:11%"><col style="width:11%"><col style="width:9%"><col style="width:11%"></colgroup>' +
       head + '<tbody>' + body + '</tbody></table>' +
       (rows.length > 300 ? '<p class="page-note">显示前 300 行（共 ' + rows.length + ' 行），请用筛选或搜索缩小范围。</p>' : '');
   }
@@ -1192,10 +1220,10 @@
 
   function selExportCsv() {
     var rows = selRows();
-    var head = ["型号", "功能", "功能详细", "系列", "封装", "工作电压", "工作温度", "产品线", "规格书"];
+    var head = ["型号", "功能", "功能详细", "系列", "封装", "工作电压", "工作温度", "产品线", "产品状态", "规格书"];
     var lines = [head.join(",")];
     rows.forEach(function (p) {
-      var cells = [p.model, p.function, p.function_detail, p.series, p.package, p.voltage, p.temp_range, selLine(p.series), p.source_label];
+      var cells = [p.model, p.function, p.function_detail, p.series, p.package, p.voltage, p.temp_range, selLine(p.series), selStatus(p), p.source_label];
       lines.push(cells.map(function (x) {
         x = String(x == null ? "" : x);
         return /[",\n]/.test(x) ? '"' + x.replace(/"/g, '""') + '"' : x;
@@ -1291,6 +1319,70 @@
     }).join("");
   }
 
+  /* ---- 按器件类型浏览（应用页顶部入口）：从 products.function 聚合 ---- */
+  /* 顺序即匹配优先级：「异或非门」含「或非门」、「异或门」含「或门」，
+     必须先匹配更长的名字；「电平转换器」用「电平转换」以覆盖「电平转换收发器」。 */
+  var DEV_TYPES = [
+    { name: "与非门", kw: "与非门" },
+    { name: "异或非门", kw: "异或非门" },
+    { name: "或非门", kw: "或非门" },
+    { name: "与门", kw: "与门" },
+    { name: "异或门", kw: "异或门" },
+    { name: "或门", kw: "或门" },
+    { name: "反相器", kw: "反相器" },
+    { name: "缓冲器", kw: "缓冲器" },
+    { name: "电平转换器", kw: "电平转换" },
+    { name: "收发器", kw: "收发器" },
+    { name: "锁存器", kw: "锁存器" },
+    { name: "触发器", kw: "触发器" },
+    { name: "移位寄存器", kw: "移位寄存器" },
+    { name: "译码器", kw: "译码器" },
+    { name: "模拟开关", kw: "模拟开关" },
+    { name: "多路复用器", kw: "多路复用器" },
+    { name: "多功能可配置门", kw: "多功能可配置门" }
+  ];
+
+  function devTypeOf(p) {
+    var f = String((p && p.function) || "");
+    for (var i = 0; i < DEV_TYPES.length; i++) {
+      if (f.indexOf(DEV_TYPES[i].kw) >= 0) return DEV_TYPES[i].name;
+    }
+    return "";
+  }
+
+  function devTypeList() {
+    var n = Object.create(null);
+    DEV_TYPES.forEach(function (t) { n[t.name] = 0; });
+    (DATA.products || []).forEach(function (p) {
+      var k = devTypeOf(p);
+      if (k) n[k]++;
+    });
+    return DEV_TYPES.map(function (t) { return { name: t.name, kw: t.kw, n: n[t.name] }; })
+      .filter(function (t) { return t.n > 0; });
+  }
+
+  function devTypeSectionHtml() {
+    var list = devTypeList();
+    if (!list.length) return "";
+    return '<h3 class="page-h3">按器件类型浏览</h3>' +
+      '<p class="page-note">按功能把全部型号归到器件大类，点击直接进入选型表并预填关键词。</p>' +
+      '<div class="cat-grid">' + list.map(function (t) {
+        return '<button type="button" class="catcard" data-devtype="' + esc(t.kw) + '">' +
+          '<b>' + esc(t.name) + '</b><span>' + t.n + ' 款</span></button>';
+      }).join("") + '</div>';
+  }
+
+  /* 跳到选型表并复用 selQ 的关键词筛选（不清空电压/封装/产品线/状态筛选） */
+  function goSelectorByType(kw) {
+    SEL_STATE.q = String(kw || "");
+    goPage("selector");
+    var input = document.getElementById("selQ");
+    if (input) input.value = SEL_STATE.q;
+    selRefresh();
+    announce("已按「" + SEL_STATE.q + "」筛选选型表");
+  }
+
+
   /* ---- 封装与可靠性页小工具 ---- */
   function qCard(n, label) {
     return '<div class="q-card"><b>' + esc(String(n)) + '</b><span>' + esc(label) + '</span></div>';
@@ -1319,6 +1411,8 @@
     if (name === "apps") {
       html += pageShell("按应用场景选型",
         "共 " + d.total + " 个应用场景，覆盖 " + d.total_models + " 款型号。点击场景展开对应型号。");
+      /* 顶部：按器件类型浏览（功能大类 → 选型表） */
+      html += devTypeSectionHtml();
       /* 场景筛选框：输入关键词（如 USB / I2C / 缓冲）即时过滤场景 */
       html += '<div class="doc-sticky"><div class="doc-tools">' +
         '<input id="appQ" class="page-search" type="search" aria-label="按场景名或型号筛选应用场景" ' +
@@ -1367,18 +1461,22 @@
     }
 
     if (name === "selector") {
-      html += pageShell("选型表", "共 " + (DATA.products || []).length + " 款型号 · 按电压 / 封装 / 产品线筛选，可导出 CSV");
+      html += pageShell("选型表", "共 " + (DATA.products || []).length + " 款型号 · 按电压 / 封装 / 产品线 / 产品状态筛选，可导出 CSV");
       html += '<div class="doc-sticky"><div class="doc-tools">' +
-        '<select id="selV" class="sel-dd"><option value="">最低工作电压</option>' +
-        SEL_V_BUCKETS.map(function (b) { return '<option value="' + esc(b) + '">' + esc(b) + '</option>'; }).join("") +
+        '<select id="selV" class="sel-dd"><option value=""' + (SEL_STATE.v ? "" : " selected") + '>最低工作电压</option>' +
+        SEL_V_BUCKETS.map(function (b) { return '<option value="' + esc(b) + '"' + (SEL_STATE.v === b ? " selected" : "") + '>' + esc(b) + '</option>'; }).join("") +
         '</select>' +
-        '<select id="selP" class="sel-dd"><option value="">全部封装</option>' +
-        SEL_P_FAMS.map(function (b) { return '<option value="' + esc(b) + '">' + esc(b) + '</option>'; }).join("") +
+        '<select id="selP" class="sel-dd"><option value=""' + (SEL_STATE.p ? "" : " selected") + '>全部封装</option>' +
+        SEL_P_FAMS.map(function (b) { return '<option value="' + esc(b) + '"' + (SEL_STATE.p === b ? " selected" : "") + '>' + esc(b) + '</option>'; }).join("") +
         '</select>' +
-        '<select id="selL" class="sel-dd"><option value="">全部产品线</option>' +
-        SEL_LINES.map(function (b) { return '<option value="' + esc(b) + '">' + esc(b) + '</option>'; }).join("") +
+        '<select id="selL" class="sel-dd"><option value=""' + (SEL_STATE.l ? "" : " selected") + '>全部产品线</option>' +
+        SEL_LINES.map(function (b) { return '<option value="' + esc(b) + '"' + (SEL_STATE.l === b ? " selected" : "") + '>' + esc(b) + '</option>'; }).join("") +
         '</select>' +
-        '<input id="selQ" class="page-search" type="search" aria-label="按型号或功能搜索选型表" placeholder="型号 / 功能关键词" autocomplete="off">' +
+        '<select id="selS" class="sel-dd" aria-label="按产品状态筛选"><option value=""' + (SEL_STATE.s ? "" : " selected") + '>全部状态</option>' +
+        '<option value="正式版"' + (SEL_STATE.s === "正式版" ? " selected" : "") + '>正式版</option>' +
+        '<option value="Draft"' + (SEL_STATE.s === "Draft" ? " selected" : "") + '>Draft（未量产）</option>' +
+        '</select>' +
+        '<input id="selQ" class="page-search" type="search" aria-label="按型号或功能搜索选型表" placeholder="型号 / 功能关键词" autocomplete="off" value="' + esc(SEL_STATE.q) + '">' +
         '<button id="selCsv" class="btn-ghost" type="button">⬇ 导出 CSV</button>' +
         '<span id="selCount" class="count-pill">' + selRows().length + ' 款</span></div></div>' +
         '<div id="selTable">' + selTableHtml(selRows()) + '</div>' +
@@ -1711,13 +1809,13 @@
 
 
 
-  function renderList(list, summary) {
+  function renderList(list, summary, kw) {
     if (!list.length) {
       render('<div class="empty">没有匹配的型号。试试只输入型号主体，例如 74AHC1G00、LVC1G08。</div>', summary);
       return;
     }
     var shown = list.slice(0, 60);
-    render(shown.map(productCard).join("") +
+    render(shown.map(function (p) { return productCard(p, kw); }).join("") +
       (list.length > shown.length ? '<div class="more-note">共 ' + list.length + " 条，显示前 60 条 —— 继续输入可缩小范围</div>" : ""),
       summary);
   }
@@ -1734,12 +1832,12 @@
 
     if (prods.length) {
       if (el.filterBar) el.filterBar.classList.remove("hidden");
-      render(prods.map(productCard).join(""), prods.length + " 个芯祥型号");
+      render(prods.map(function (p) { return productCard(p, q); }).join(""), prods.length + " 个芯祥型号");
       return;
     }
     if (funcs.length) {
       if (el.filterBar) el.filterBar.classList.add("hidden");
-      renderList(funcs, funcs.length + ' 款产品含「' + q + '」');
+      renderList(funcs, funcs.length + ' 款产品含「' + q + '」', q);
       return;
     }
     if (el.filterBar) el.filterBar.classList.add("hidden");
