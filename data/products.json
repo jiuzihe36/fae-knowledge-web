@@ -10258,9 +10258,10 @@
     "value_html": "<strong>-40~+85℃：min=0.4; max=1.4 ｜ -40~+125℃：min=0.35; max=1.4 V</strong>"
    }
   ],
-  "applications": "施密特输入（抗噪声）",
+  "applications": "施密特输入（抗噪声）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "施密特输入（抗噪声）"
+   "施密特输入（抗噪声）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "单路缓冲器（施密特输入）",
   "ds_ver": "V1.2",
@@ -10521,9 +10522,10 @@
     "value_html": "<strong>-40~+85℃：min=0.4; max=1.4 ｜ -40~+125℃：min=0.35; max=1.4 V</strong>"
    }
   ],
-  "applications": "施密特输入（抗噪声）",
+  "applications": "施密特输入（抗噪声）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "施密特输入（抗噪声）"
+   "施密特输入（抗噪声）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "单路缓冲器（施密特输入）",
   "ds_ver": "V1.2",
@@ -10784,9 +10786,10 @@
     "value_html": "<strong>-40~+85℃：min=0.4; max=1.4 ｜ -40~+125℃：min=0.35; max=1.4 V</strong>"
    }
   ],
-  "applications": "施密特输入（抗噪声）",
+  "applications": "施密特输入（抗噪声）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "施密特输入（抗噪声）"
+   "施密特输入（抗噪声）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "单路缓冲器（施密特输入）",
   "ds_ver": "V1.2",
@@ -25438,9 +25441,10 @@
     "value_html": "<strong>-40~+85℃：min=0.4; max=1.4 ｜ -40~+125℃：min=0.35; max=1.4 V</strong>"
    }
   ],
-  "applications": "施密特输入（抗噪声）",
+  "applications": "施密特输入（抗噪声）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "施密特输入（抗噪声）"
+   "施密特输入（抗噪声）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "单路缓冲器（施密特输入）",
   "ds_ver": "V1.2",
@@ -25701,9 +25705,10 @@
     "value_html": "<strong>-40~+85℃：min=0.4; max=1.4 ｜ -40~+125℃：min=0.35; max=1.4 V</strong>"
    }
   ],
-  "applications": "施密特输入（抗噪声）",
+  "applications": "施密特输入（抗噪声）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "施密特输入（抗噪声）"
+   "施密特输入（抗噪声）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "单路缓冲器（施密特输入）",
   "ds_ver": "V1.2",
@@ -25964,9 +25969,10 @@
     "value_html": "<strong>-40~+85℃：min=0.4; max=1.4 ｜ -40~+125℃：min=0.35; max=1.4 V</strong>"
    }
   ],
-  "applications": "施密特输入（抗噪声）",
+  "applications": "施密特输入（抗噪声）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "施密特输入（抗噪声）"
+   "施密特输入（抗噪声）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "单路缓冲器（施密特输入）",
   "ds_ver": "V1.2",
@@ -48605,9 +48611,10 @@
     "value_html": "<strong>4.0 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.3",
@@ -48798,9 +48805,10 @@
     "value_html": "<strong>4.0 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.3",
@@ -53583,9 +53591,10 @@
     "value_html": "<strong>4.0 pF</strong>"
    }
   ],
-  "applications": "三态反相与总线驱动",
+  "applications": "三态反相与总线驱动;信号缓冲与长走线驱动",
   "applications_domains": [
-   "三态反相与总线驱动"
+   "三态反相与总线驱动",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.1",
@@ -53776,9 +53785,10 @@
     "value_html": "<strong>4.0 pF</strong>"
    }
   ],
-  "applications": "三态反相与总线驱动",
+  "applications": "三态反相与总线驱动;信号缓冲与长走线驱动",
   "applications_domains": [
-   "三态反相与总线驱动"
+   "三态反相与总线驱动",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.1",
@@ -53969,9 +53979,10 @@
     "value_html": "<strong>4.0 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.1",
@@ -54162,9 +54173,10 @@
     "value_html": "<strong>4.0 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.1",
@@ -81650,9 +81662,10 @@
     "value_html": "<strong>4.0 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出、TTL输入）",
   "ds_ver": "V1.3",
@@ -81843,9 +81856,10 @@
     "value_html": "<strong>4.0 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出、TTL输入）",
   "ds_ver": "V1.3",
@@ -86628,9 +86642,10 @@
     "value_html": "<strong>4.0 pF</strong>"
    }
   ],
-  "applications": "三态反相与总线驱动",
+  "applications": "三态反相与总线驱动;信号缓冲与长走线驱动",
   "applications_domains": [
-   "三态反相与总线驱动"
+   "三态反相与总线驱动",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出、TTL输入）",
   "ds_ver": "V1.1",
@@ -86821,9 +86836,10 @@
     "value_html": "<strong>4.0 pF</strong>"
    }
   ],
-  "applications": "三态反相与总线驱动",
+  "applications": "三态反相与总线驱动;信号缓冲与长走线驱动",
   "applications_domains": [
-   "三态反相与总线驱动"
+   "三态反相与总线驱动",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出、TTL输入）",
   "ds_ver": "V1.1",
@@ -87014,9 +87030,10 @@
     "value_html": "<strong>4.0 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出、TTL输入）",
   "ds_ver": "V1.1",
@@ -87207,9 +87224,10 @@
     "value_html": "<strong>4.0 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出、TTL输入）",
   "ds_ver": "V1.1",
@@ -136809,9 +136827,10 @@
     "value_html": "<strong>-40~+85℃：min=0.26 ｜ max=0.62; 0.5 ｜ -40~+125℃：min=0.19 V</strong>"
    }
   ],
-  "applications": "施密特输入（抗噪声）",
+  "applications": "施密特输入（抗噪声）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "施密特输入（抗噪声）"
+   "施密特输入（抗噪声）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "单路缓冲器（施密特输入）",
   "ds_ver": "V1.4",
@@ -137030,9 +137049,10 @@
     "value_html": "<strong>-40~+85℃：min=0.26 ｜ max=0.62; 0.5 ｜ -40~+125℃：min=0.19 V</strong>"
    }
   ],
-  "applications": "施密特输入（抗噪声）",
+  "applications": "施密特输入（抗噪声）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "施密特输入（抗噪声）"
+   "施密特输入（抗噪声）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "单路缓冲器（施密特输入）",
   "ds_ver": "V1.4",
@@ -137251,9 +137271,10 @@
     "value_html": "<strong>-40~+85℃：min=0.26 ｜ max=0.62; 0.5 ｜ -40~+125℃：min=0.19 V</strong>"
    }
   ],
-  "applications": "施密特输入（抗噪声）",
+  "applications": "施密特输入（抗噪声）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "施密特输入（抗噪声）"
+   "施密特输入（抗噪声）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "单路缓冲器（施密特输入）",
   "ds_ver": "V1.4",
@@ -137472,9 +137493,10 @@
     "value_html": "<strong>-40~+85℃：min=0.26 ｜ max=0.62; 0.5 ｜ -40~+125℃：min=0.19 V</strong>"
    }
   ],
-  "applications": "施密特输入（抗噪声）",
+  "applications": "施密特输入（抗噪声）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "施密特输入（抗噪声）"
+   "施密特输入（抗噪声）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "单路缓冲器（施密特输入）",
   "ds_ver": "V1.4",
@@ -137693,9 +137715,10 @@
     "value_html": "<strong>-40~+85℃：min=0.26 ｜ max=0.62; 0.5 ｜ -40~+125℃：min=0.19 V</strong>"
    }
   ],
-  "applications": "施密特输入（抗噪声）",
+  "applications": "施密特输入（抗噪声）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "施密特输入（抗噪声）"
+   "施密特输入（抗噪声）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "单路缓冲器（施密特输入）",
   "ds_ver": "V1.4",
@@ -150452,9 +150475,10 @@
     "value_html": "<strong>20.4 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.0",
@@ -151072,9 +151096,10 @@
     "value_html": "<strong>20.4 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.0",
@@ -151692,9 +151717,10 @@
     "value_html": "<strong>20.4 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.0",
@@ -160769,9 +160795,10 @@
     "value_html": "<strong>-40~+85℃：min=0.47 ｜ max=0.88; 0.6 ｜ -40~+125℃：min=0.41 V</strong>"
    }
   ],
-  "applications": "施密特输入（抗噪声）",
+  "applications": "施密特输入（抗噪声）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "施密特输入（抗噪声）"
+   "施密特输入（抗噪声）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "双路施密特缓冲器（施密特输入）",
   "ds_ver": "V1.2",
@@ -161165,9 +161192,10 @@
     "value_html": "<strong>-40~+85℃：min=0.47 ｜ max=0.88; 0.6 ｜ -40~+125℃：min=0.41 V</strong>"
    }
   ],
-  "applications": "施密特输入（抗噪声）",
+  "applications": "施密特输入（抗噪声）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "施密特输入（抗噪声）"
+   "施密特输入（抗噪声）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "双路施密特缓冲器（施密特输入）",
   "ds_ver": "V1.2",
@@ -161561,9 +161589,10 @@
     "value_html": "<strong>-40~+85℃：min=0.47 ｜ max=0.88; 0.6 ｜ -40~+125℃：min=0.41 V</strong>"
    }
   ],
-  "applications": "施密特输入（抗噪声）",
+  "applications": "施密特输入（抗噪声）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "施密特输入（抗噪声）"
+   "施密特输入（抗噪声）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "双路施密特缓冲器（施密特输入）",
   "ds_ver": "V1.2",
@@ -161957,9 +161986,10 @@
     "value_html": "<strong>-40~+85℃：min=0.47 ｜ max=0.88; 0.6 ｜ -40~+125℃：min=0.41 V</strong>"
    }
   ],
-  "applications": "施密特输入（抗噪声）",
+  "applications": "施密特输入（抗噪声）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "施密特输入（抗噪声）"
+   "施密特输入（抗噪声）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "双路施密特缓冲器（施密特输入）",
   "ds_ver": "V1.2",
@@ -166279,9 +166309,10 @@
     "value_html": "<strong>18 pF</strong>"
    }
   ],
-  "applications": "三态反相与总线驱动",
+  "applications": "三态反相与总线驱动;信号缓冲与长走线驱动",
   "applications_domains": [
-   "三态反相与总线驱动"
+   "三态反相与总线驱动",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.0",
@@ -166507,9 +166538,10 @@
     "value_html": "<strong>18 pF</strong>"
    }
   ],
-  "applications": "三态反相与总线驱动",
+  "applications": "三态反相与总线驱动;信号缓冲与长走线驱动",
   "applications_domains": [
-   "三态反相与总线驱动"
+   "三态反相与总线驱动",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.0",
@@ -166735,9 +166767,10 @@
     "value_html": "<strong>18 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.0",
@@ -166963,9 +166996,10 @@
     "value_html": "<strong>18 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.0",
@@ -169171,9 +169205,10 @@
     "value_html": "<strong>20.4 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.0",
@@ -169791,9 +169826,10 @@
     "value_html": "<strong>20.4 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.0",
@@ -170411,9 +170447,10 @@
     "value_html": "<strong>20.4 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;信号缓冲与长走线驱动",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "信号缓冲与长走线驱动"
   ],
   "function_detail": "八路缓冲器（三态输出）",
   "ds_ver": "V1.0",
