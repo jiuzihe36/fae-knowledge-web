@@ -54,6 +54,13 @@ fi
 # 漏跑这一步的后果：新增型号在搜索/技术文档里能查到，但目录树的款数与型号列表停在上一版
 #（2026-11-05 实测：页头 658 而树显示 652，1T45 与 EXS0102GE 不在树里）。
 echo ""
+echo "📊 Step 1.4b: 重建选型对比与更新记录数据 (specs_cmp / recent)..."
+if [ -f "$DIR/scripts/build_cmp_and_recent.py" ]; then
+  python3 "$DIR/scripts/build_cmp_and_recent.py" 2>&1 | tail -3
+else
+  echo "  (无 build_cmp_and_recent.py — 跳过)"
+fi
+echo ""
 echo "🗂 Step 1.4: 重建产品目录树 (catalog.json)..."
 if [ -f "$DIR/scripts/gen_catalog.py" ]; then
   python3 "$DIR/scripts/gen_catalog.py" 2>&1 | tail -3

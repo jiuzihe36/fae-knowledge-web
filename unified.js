@@ -796,11 +796,12 @@
   /* ============================================================
      三个栏目页：应用 / 技术文档 / 封装与可靠性
      ============================================================ */
-  var PAGES = { apps: null, docs: null, quality: null, selector: null };
+  var PAGES = { apps: null, docs: null, quality: null, selector: null, updates: null };
 
   function loadPage(name) {
     if (name === 'selector') { PAGES.selector = true; renderPage('selector'); return; }  /* 选型表直接用 DATA.products，不加载 JSON */
-    var f = name === 'apps' ? 'apps.json' : name === 'docs' ? 'docs.json' : 'quality.json';
+    var f = name === 'apps' ? 'apps.json' : name === 'docs' ? 'docs.json'
+          : name === 'updates' ? 'recent.json' : 'quality.json';
     if (PAGES[name]) { renderPage(name); return; }
     loadJson("./data/" + f).then(function (d) { PAGES[name] = d; renderPage(name); });
   }
@@ -911,6 +912,34 @@
     if (c) c.textContent = "已选 " + CMP_SEL.length + " 款";
   }
 
+  var CMP_DATA = null;
+
+  function cmpAppendSpecs(picked) {
+    var t = document.querySelector(".cmp-tbl tbody");
+    if (!t || !CMP_DATA) return;
+    if (t.querySelector("tr[data-spec]")) return;   /* 已追加过，避免重复 */
+    var rows = [
+      ["工作电压（推荐）", "vcc"],
+      ["传输延时 tpd", "tpd"],
+      ["驱动电流", "drive"],
+      ["导通电阻 Ron", "ron"],
+      ["带宽", "bw"],
+      ["静态电流 ICC", "icc"],
+      ["工作温度（表值）", "tamb"]
+    ];
+    rows.forEach(function (r) {
+      var tr = document.createElement("tr");
+      tr.setAttribute("data-spec", "1");
+      var html = '<td class="k">' + esc(r[0]) + '</td>';
+      picked.forEach(function (p) {
+        var v = (CMP_DATA[p.model] || {})[r[1]] || "—";
+        html += "<td>" + esc(v) + "</td>";
+      });
+      tr.innerHTML = html;
+      t.appendChild(tr);
+    });
+  }
+
   function cmpOpen() {
     if (CMP_SEL.length < 2) { window.alert("请至少勾选 2 款型号"); return; }
     if (CMP_SEL.length > 4) { window.alert("最多同时对比 4 款"); return; }
@@ -936,6 +965,15 @@
       }).join("") + "</tbody></table>";
     var box = document.getElementById("cmpBody");
     if (box) box.innerHTML = html;
+    /* 关键参数行：懒加载 79KB 的 specs_cmp.json（不拉 6.8MB 全量） */
+    if (CMP_DATA) {
+      cmpAppendSpecs(picked);
+    } else {
+      loadJson("./data/specs_cmp.json").then(function (sd) {
+        CMP_DATA = sd || {};
+        if (document.getElementById("cmpBody")) cmpAppendSpecs(picked);
+      });
+    }
     var m = document.getElementById("cmpModal");
     if (m) { m.classList.remove("hidden"); m.setAttribute("aria-hidden", "false"); }
   }
@@ -1092,6 +1130,26 @@
         docHeadHtml() + '</div>';
       html += '<div id="docList" class="doc-list">' +
         d.items.slice(0, 200).map(function(x){return docRow(x, "");}).join("") + "</div>";
+    }
+
+    if (name === "updates") {
+      var rn = d || { buckets: [], total: 0, latest: "" };
+      html += pageShell("更新记录",
+        "共 " + rn.total + " 份规格书 · 最新发布 " + (rn.latest || "—") + " · 按规格书修订日期分组");
+      html += '<p class="page-note">下列日期为规格书修订记录里的 <b>Rev. 日期</b>，不是上传日期。' +
+        '同一份规格书覆盖多个封装型号时会合并显示。需要具体版本号与变更内容，请打开对应规格书查看修订历史页。</p>';
+      var _up = rn.buckets || [];
+      _up.forEach(function (b) {
+        if (!b.items || !b.items.length) return;
+        html += '<h3 class="page-h3">' + esc(b.label) + '（' + b.items.length + ' 份）</h3>';
+        html += '<table class="param q-tbl"><thead><tr><th>修订日期</th><th>版本</th><th>系列</th><th>功能</th><th class="num">型号数</th><th>型号</th></tr></thead><tbody>' +
+          b.items.map(function (x) {
+            var ms = (x.models || []);
+            var show = ms.slice(0, 6).join("、") + (ms.length > 6 ? " 等 " + ms.length + " 款" : "");
+            return '<tr><td class="k">' + esc(x.dd) + '</td><td>' + esc(x.dv) + '</td><td>' + esc(x.se) + '</td>' +
+              '<td>' + esc(x.fn) + '</td><td class="v num">' + ms.length + '</td><td>' + esc(show) + '</td></tr>';
+          }).join("") + '</tbody></table>';
+      });
     }
 
     if (name === "selector") {
