@@ -1634,7 +1634,7 @@
     if (onA && onA.scrollIntoView) onA.scrollIntoView({ inline: "nearest", block: "nearest" });
     /* 栏目页：面包屑给「返回产品目录」+ 当前栏目名 */
     if (el.crumb && name !== "catalog") {
-      var TITLES = { apps: "应用", docs: "技术文档", quality: "封装与可靠性" };
+      var TITLES = { apps: "应用", docs: "技术文档", quality: "封装与可靠性", selector: "选型表", updates: "更新记录" };
       el.crumb.innerHTML = '<a href="#" data-crumb-back="home">产品目录</a>' +
         '<span class="sep">/</span><b>' + esc(TITLES[name] || "") + "</b>";
     } else {

@@ -50,7 +50,7 @@ for f in index.html app.js unified.js theme-init.js style.css favicon.svg apple-
 done
 
 # 站点根目录若还有其它必需静态文件（如 robots.txt / _headers），一并带上
-for f in robots.txt _headers _redirects; do
+for f in robots.txt sitemap.xml _headers _redirects; do
   [ -f "$DIR/$f" ] && cp "$DIR/$f" "$PUB/"
 done
 

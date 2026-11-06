@@ -215,11 +215,8 @@ if (typeof document === "undefined") return;
        抽屉已打开时的重复调用（specs 懒加载回调 / 上一个·下一个）不覆盖 lastTrigger。 */
     const wasOpen = !el.detail.classList.contains("hidden");
     if (!wasOpen) lastTrigger = document.activeElement;
-    /* 详情页只需要 specs（参数表）。竞品/P2P 已摘除，不再加载。 */
-    if (!SPECS) {
-      ensureSpecs().then(function () { openDetail(id); });
-      return;
-    }
+    /* specs 未就绪时**不再直接 return**：旧逻辑会让抽屉等 3–4 秒才出现（手机更久），
+       客户点了没任何反馈。现在先渲染基础信息 + 参数区占位，加载完成再填充。 */
 
     el.detailModel.textContent = item.model;
     el.detailBadges.innerHTML = statusBadgeHtml(deriveStatus(item), true);
@@ -256,21 +253,7 @@ if (typeof document === "undefined") return;
       el.pinImg.alt = "Pin diagram";
     }
 
-    const specs = Array.isArray(item.specs) ? item.specs : [];
-    el.specTable.innerHTML = "";
-    el.specEmpty.classList.toggle("hidden", specs.length > 0);
-    const groups = groupSpecs(specs.slice(0, 300));
-    groups.forEach(function (group) {
-      const head = document.createElement("tr");
-      head.className = "spec-group";
-      head.innerHTML = '<td colspan="2">' + esc(group.kind) + " · " + group.items.length + "</td>";
-      el.specTable.appendChild(head);
-      group.items.forEach(function (spec) {
-        const row = document.createElement("tr");
-        row.innerHTML = "<td>" + (spec.param_html || esc(spec.param)) + "</td><td>" + specHtml(spec) + "</td>";
-        el.specTable.appendChild(row);
-      });
-    });
+    renderSpecBlock(item);
 
     el.detail.classList.remove("hidden");
     el.detail.setAttribute("aria-hidden", "false");
@@ -279,6 +262,38 @@ if (typeof document === "undefined") return;
     if (!wasOpen) focusTrapEnter();
     /* 深链接：地址栏写成 #model=型号，客户/销售可直接复制分享 */
     if (window.__xx && window.__xx.setHash) window.__xx.setHash("model=" + encodeURIComponent(item.model));
+  }
+
+  /* 电气参数区：已就绪直接填，未就绪先占位再异步填（2026-11-06） */
+  function renderSpecBlock(item) {
+    var specs = Array.isArray(item.specs) ? item.specs : [];
+    if (SPECS || specs.length) { fillSpecTable(specs); return; }
+    el.specTable.innerHTML = '<tr class="spec-loading"><td colspan="2">' +
+      '电气参数加载中…（首次打开需下载约 5 MB，之后秒开）</td></tr>';
+    el.specEmpty.classList.add("hidden");
+    var want = item.model;
+    ensureSpecs().then(function () {
+      if (el.detail.classList.contains("hidden")) return;
+      if (el.detailModel && el.detailModel.textContent !== want) return;
+      fillSpecTable(Array.isArray(item.specs) ? item.specs : []);
+    });
+  }
+
+  function fillSpecTable(specs) {
+    el.specTable.innerHTML = "";
+    el.specEmpty.classList.toggle("hidden", specs.length > 0);
+    var groups = groupSpecs(specs.slice(0, 300));
+    groups.forEach(function (group) {
+      var head = document.createElement("tr");
+      head.className = "spec-group";
+      head.innerHTML = '<td colspan="2">' + esc(group.kind) + " · " + group.items.length + "</td>";
+      el.specTable.appendChild(head);
+      group.items.forEach(function (spec) {
+        var row = document.createElement("tr");
+        row.innerHTML = "<td>" + (spec.param_html || esc(spec.param)) + "</td><td>" + specHtml(spec) + "</td>";
+        el.specTable.appendChild(row);
+      });
+    });
   }
 
   /* 族规范化：优先用数据里的族名表做「最长前缀」匹配，避免正则猜封装后缀。
