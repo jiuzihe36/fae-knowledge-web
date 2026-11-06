@@ -248,10 +248,10 @@ def write_chunk(data_dir: Path, ci: int, part, report: bool = True):
         return False, 0, "", "；".join(errors)
 
     fname = f"chunk-{ci:02d}.{file_hash(blob)}.json"
-    atomic_write(data_dir / CHUNK_SUBDIR / fname, blob)
+    atomic_write(data_dir.parent / CHUNK_SUBDIR / fname, blob)
     # 内容变则文件名变：清理同块号的旧 hash / 旧命名文件
     removed = []
-    for path in chunk_variants(data_dir / CHUNK_SUBDIR, ci):
+    for path in chunk_variants(data_dir.parent / CHUNK_SUBDIR, ci):
         if path.name != fname:
             try:
                 path.unlink()
@@ -311,7 +311,7 @@ def find_chunk_files(spec_dir: Path):
 
 def load_all_chunks(data_dir: Path, n_chunks: int):
     """返回 {ci: (payload|None, path, error)}；优先选 hash 校验通过的文件。"""
-    spec_dir = data_dir / CHUNK_SUBDIR
+    spec_dir = data_dir.parent / CHUNK_SUBDIR
     files, _ = find_chunk_files(spec_dir)
     out = {}
     for ci in range(n_chunks):
@@ -479,7 +479,7 @@ def cmd_build(args, data_dir: Path, products) -> int:
     # 全量模式清理超出当前范围的旧块 / 无法识别的块文件
     pruned = []
     if not args.only:
-        spec_dir = data_dir / CHUNK_SUBDIR
+        spec_dir = data_dir.parent / CHUNK_SUBDIR
         files_by, extras = find_chunk_files(spec_dir)
         stale = [p for ci, paths in files_by.items() if ci >= n_chunks for p in paths]
         stale += [spec_dir / name for name in extras]
@@ -527,7 +527,7 @@ def cmd_check(data_dir: Path, products) -> int:
     n_chunks = len(chunks)
     issues = []
 
-    spec_dir = data_dir / CHUNK_SUBDIR
+    spec_dir = data_dir.parent / CHUNK_SUBDIR
     files_by, extras = find_chunk_files(spec_dir)
     if extras:
         issues.append(f"多 {len(extras)} 个无法识别的块文件：{cap(extras)}")

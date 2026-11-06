@@ -438,7 +438,7 @@ if (typeof document === "undefined") return;
         var m = meta[i];
         if (m && Number(m.i) === Number(key) && m.file) {
           /* 只取文件名，剥掉任何路径部分 */
-          return "./data/specs/" + encodeURIComponent(String(m.file).split("/").pop());
+          return "./specs/" + encodeURIComponent(String(m.file).split("/").pop());
         }
       }
       return "";

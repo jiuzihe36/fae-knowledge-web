@@ -40,7 +40,7 @@ echo "📦 构造发布目录 $PUB"
 # 站点资源目录（代码里实际引用的：./data/ ./datasheets/ ./pins_webp/）
 # 2026-10-12：应用电路图（app_schematics/ 652 张 SVG，27MB）已按需求整体删除，不再发布；
 # 更早的接线图 circuits/ 也已删除。
-for d in datasheets pins_webp pins data guides; do
+for d in datasheets pins_webp pins data guides specs; do
   [ -d "$DIR/$d" ] && rsync -a --exclude '.DS_Store' "$DIR/$d/" "$PUB/$d/"
 done
 
