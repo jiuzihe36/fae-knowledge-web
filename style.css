@@ -2605,3 +2605,14 @@ body { background: var(--bg); }
 @media (max-width: 720px) {
   .cmp-panel { width: 100vw; max-height: 92vh; border-radius: 12px 12px 0 0; }
 }
+
+/* 应用指南卡片（2026-11-06） */
+.guide-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(258px, 1fr)); gap: 10px; margin: 8px 0 20px; }
+.guide-card { display: flex; flex-direction: column; gap: 4px; padding: 12px 14px;
+  border: 1px solid var(--border, #e3e6e9); border-radius: 10px; text-decoration: none; color: inherit; }
+.guide-card:hover { border-color: var(--accent, #888); background: rgba(0, 0, 0, .02); }
+.guide-card b { font-size: 13.5px; line-height: 1.4; }
+.guide-card span { font-size: 12.5px; opacity: .72; line-height: 1.5; }
+.guide-card em { font-size: 11.5px; opacity: .5; font-style: normal; }
+.muted { opacity: .6; font-size: 13px; }
+:root[data-theme="dark"] .guide-card:hover, :root:not([data-theme="light"]) .guide-card:hover { background: rgba(255, 255, 255, .05); }

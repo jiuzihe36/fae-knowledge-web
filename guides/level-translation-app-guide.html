@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>电平转换（Level Translation）选型与应用指导 · 芯祥应用指南</title>
+<meta name="description" content="- 首选 EXS0102DC（VSSOP-8L）/ EXS0102GE（DFN-8L，2026-11 新增）：每 I/O 内部 10 kΩ 上拉 + 单稳加速，省外部上拉。">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .guide-wrap { max-width: 980px; margin: 0 auto; padding: 0 20px 64px; }
+  .guide-nav { position: sticky; top: 0; z-index: 10; padding: 12px 0; margin-bottom: 8px;
+    background: var(--bg, #fff); border-bottom: 1px solid var(--border, #e3e6e9); font-size: 13px; }
+  .guide-nav a { color: inherit; text-decoration: none; opacity: .75; }
+  .guide-nav a:hover { opacity: 1; text-decoration: underline; }
+  .guide-body { font-size: 14.5px; line-height: 1.75; }
+  .guide-body h1 { font-size: 24px; margin: 24px 0 8px; }
+  .guide-body h2 { font-size: 18px; margin: 28px 0 10px; padding-top: 8px; border-top: 1px solid var(--border, #eee); }
+  .guide-body h3 { font-size: 15.5px; margin: 20px 0 8px; }
+  .guide-body table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; display: block; overflow-x: auto; }
+  .guide-body th, .guide-body td { border: 1px solid var(--border, #e3e6e9); padding: 7px 10px; text-align: left; vertical-align: top; }
+  .guide-body th { background: rgba(0,0,0,.03); }
+  .guide-body code { background: rgba(0,0,0,.05); padding: 1px 5px; border-radius: 4px; font-size: .92em; }
+  .guide-body pre { background: rgba(0,0,0,.04); padding: 12px 14px; border-radius: 8px; overflow-x: auto; }
+  .guide-body blockquote { margin: 12px 0; padding: 8px 14px; border-left: 3px solid var(--accent, #888); background: rgba(0,0,0,.025); }
+  .guide-body ul, .guide-body ol { padding-left: 22px; }
+  :root[data-theme="dark"] .guide-body th, :root:not([data-theme="light"]) .guide-body th { background: rgba(255,255,255,.06); }
+  :root[data-theme="dark"] .guide-body code, :root:not([data-theme="light"]) .guide-body code,
+  :root[data-theme="dark"] .guide-body pre, :root:not([data-theme="light"]) .guide-body pre { background: rgba(255,255,255,.07); }
+</style>
+</head>
+<body>
+<div class="guide-wrap">
+  <nav class="guide-nav"><a href="../index.html">← 返回产品目录</a> · <a href="../index.html#page=apps">应用场景</a></nav>
+  <article class="guide-body">
+<h1 id="level-translation">电平转换（Level Translation）选型与应用指导</h1>
+<blockquote>
+<p>面向 FAE 与系统工程师。覆盖芯祥四条转换路线：<strong>EXS 自动方向</strong>、<strong>EM74LVC1T45 固定方向（Draft）</strong>、<strong>LVC8T245 / LVC4245 双电源收发器</strong>、<strong>LV1T 单电源升压</strong>。
+参数取自 <code>entities/</code> 各页实读值；关键指标以对应规格书为准。</p>
+</blockquote>
+<h2 id="1">1. 先判三件事，再选型</h2>
+<table>
+<thead>
+<tr>
+<th>判据</th>
+<th>问题</th>
+<th>决定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 方向</td>
+<td>信号是单向固定、双向分时，还是开漏总线？</td>
+<td>固定→1T45；分时双向→EXS/8T245；开漏（I²C/1-Wire）→EXS（带内部上拉）</td>
+</tr>
+<tr>
+<td>② 电压域</td>
+<td>A 侧、B 侧各自多少伏？谁高谁低？</td>
+<td>EXS：A 侧 1.3–5.5 V、B 侧 1.65–5.5 V；8T245：两侧各 1.3–5.5 V 独立</td>
+</tr>
+<tr>
+<td>③ 速率</td>
+<td>推挽多少 Mbps？开漏多少？</td>
+<td><strong>EXS 全系封顶 40 Mbps（推挽）/ 2 Mbps（开漏）</strong>；要更快只能上 8T245</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>三条铁律：<strong>EXS 没有更快的料</strong>（40 Mbps 是上限）；<strong>8T245 是 DIR+OE 架构</strong>，不是自动方向；<strong>1T45 是 Draft，可送样评估、不承诺量产交期</strong>。</p>
+</blockquote>
+<h2 id="2">2. 四条路线对比</h2>
+<table>
+<thead>
+<tr>
+<th>路线</th>
+<th>代表型号（带尾缀）</th>
+<th>通道</th>
+<th>电压</th>
+<th>速率</th>
+<th>方向控制</th>
+<th>封装</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>自动方向（开漏为主）</td>
+<td>[[exs0102]] <code>EXS0102DC/DCN/GE</code></td>
+<td>2 bit</td>
+<td>A 1.3–5.5 / B 1.65–5.5 V</td>
+<td>推挽 40 Mbps / 开漏 2 Mbps</td>
+<td>自动（无需 DIR）</td>
+<td>VSSOP-8L / SOT23-8L / DFN-8L</td>
+</tr>
+<tr>
+<td>自动方向</td>
+<td>[[exs0104]]</td>
+<td>4 bit</td>
+<td>同上</td>
+<td>同上</td>
+<td>自动</td>
+<td>QFN1.7×2-12 / QFN3.5×3.5-14 / SSOP-14 / TSSOP-14</td>
+</tr>
+<tr>
+<td>自动方向</td>
+<td>[[exs0106]]</td>
+<td>6 bit</td>
+<td>同上</td>
+<td>同上</td>
+<td>自动</td>
+<td>TSSOP-16</td>
+</tr>
+<tr>
+<td>自动方向</td>
+<td>[[exs0108]]</td>
+<td>8 bit</td>
+<td>同上</td>
+<td>同上</td>
+<td>自动</td>
+<td>QFN3×3-20 / TSSOP-20</td>
+</tr>
+<tr>
+<td>固定方向（Draft）</td>
+<td>[[lvc1t45]] <code>EM74LVC1T45GV</code> 等 5 封装</td>
+<td>1 bit</td>
+<td>A/B 各 1.2–5.5 V</td>
+<td>推挽，tpd 5.3 ns（A→B @VCC(B)=3.3 V typ）</td>
+<td><strong>DIR</strong>（高 A→B / 低 B→A）</td>
+<td>SOT23-6L / SOT363 / DFN6L / BGA-6B</td>
+</tr>
+<tr>
+<td>双电源收发器</td>
+<td>[[em74lvc8t245-em74lvch8t245]] <code>EM74LVC8T245PW</code> / <code>EM74LVCH8T245PW</code></td>
+<td>8 bit</td>
+<td>A/B 各 1.3–5.5 V</td>
+<td>420 / 200 / 140 / 75 Mbps（按方向与目标电压）</td>
+<td><strong>DIR + OE</strong></td>
+<td>TSSOP-24L</td>
+</tr>
+<tr>
+<td>双电源收发器</td>
+<td>[[em74lvc4245a]] <code>EM74LVC4245APW</code></td>
+<td>8 bit</td>
+<td>A 1.4–5.5 / B 1.2–5.5 V</td>
+<td>视档位</td>
+<td>DIR + OE</td>
+<td>TSSOP-24L</td>
+</tr>
+<tr>
+<td>单电源升压</td>
+<td>[[em74lv1t04]] 等 LV1T 全系</td>
+<td>1 门</td>
+<td>1.6–5.5 V（单电源，靠输入阈值升压）</td>
+<td>tpd 3.7 ns @3.3 V typ</td>
+<td>无（单向）</td>
+<td>SOT23-5 / SOT353 / DFN0.8×0.8-5</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>LVCH 与 LVC 的区别</strong>：LVCH 带总线保持（Active bus hold），浮空输入不会漂；原设计省了外部上下拉才用 H 件，<strong>LVC ↔ LVCH 只可 H 对 H 替</strong>，反过来会丢保持能力。</p>
+</blockquote>
+<h2 id="3">3. 逐场景选型</h2>
+<h3 id="31-i2c-smbus-1-wire">3.1 I²C / SMBus / 1-Wire（开漏双向）</h3>
+<ul>
+<li><strong>首选 <code>EXS0102DC</code>（VSSOP-8L）/ <code>EXS0102GE</code>（DFN-8L，2026-11 新增）</strong>：每 I/O 内部 10 kΩ 上拉 + 单稳加速，省外部上拉。</li>
+<li>注意：<strong>OE 无内部下拉</strong>，规格书要求经电阻接 GND；靠 OE 浮空默认关断的板子必须补下拉。</li>
+<li>通道不够按位数升级：4 bit → <code>EXS0104</code>，6 bit → <code>EXS0106</code>，8 bit → <code>EXS0108</code>。</li>
+<li>开漏速率只有 2 Mbps，I²C Fast-mode Plus（1 Mbps）够用；<strong>不要拿 EXS 当 SPI 转换器</strong>。</li>
+</ul>
+<h3 id="32-spi-qspi">3.2 SPI / QSPI（推挽单向为主）</h3>
+<ul>
+<li>40 Mbps 以内：<code>EXS0102/0104/0106/0108</code>（自动方向，省 GPIO）。</li>
+<li><strong>超过 40 Mbps 或时序预算紧 → 必须换 8T245 路线</strong>：<code>EM74LVC8T245PW</code>（或需要总线保持时 <code>EM74LVCH8T245PW</code>）。</li>
+<li>8T245 三个必讲差异：① <strong>DIR + OE 架构</strong>，OE 低有效须下拉/接地，不许浮空；② 封装由 TSSOP-16 变 <strong>TSSOP-24</strong>（本体 4.4 mm），已 layout 要核改板；③ <strong>tpd 最坏 26.3 ns</strong>（VCC(A)=1.8 / VCC(B)=3.3，−40~85 ℃），数据率与 tpd 是两个数，别只报 Mbps。</li>
+<li>空余通道：A 侧接 GND 或 VCC(A)，B 侧悬空。</li>
+</ul>
+<h3 id="33-gpio">3.3 单向固定方向（GPIO、时钟、使能）</h3>
+<ul>
+<li><strong><code>EM74LVC1T45GV</code>（SOT23-6L）</strong>：单 bit、DIR 固定电平即当单向转换器；1.2–5.5 V 两侧独立、ICC ≤16 μA、tpd 5.3 ns（A→B @VCC(B)=3.3 V typ）。</li>
+<li>需要更小封装：<code>GW</code>(SOT363) / <code>GS</code>(DFN1×1-6L) / <code>GM</code>(DFN1.45×1-6L) / <code>YZP</code>(BGA1.39×0.89-6B)。</li>
+<li><strong>Draft 口径</strong>：可按 Draft 报型号与参数、可送样，<strong>不承诺量产交期</strong>；LVCH 版订单尾缀 Draft 未单列，报料前须产品线确认。</li>
+</ul>
+<h3 id="34">3.4 电压域跨度大 / 需要双向总线</h3>
+<ul>
+<li>8 位双向总线（数据总线、并口）：<code>EM74LVC8T245PW</code> / <code>EM74LVC4245APW</code>。</li>
+<li>单电源升压（1.8 V 逻辑驱动 3.3 V/5 V 门电路，不需双向）：LV1T 全系，按功能号选（00 NAND / 02 NOR / 04 反相 / 08 AND / 32 OR / 34 缓冲 / 86 XOR / 87 XNOR / 125·126 三态缓冲）。</li>
+</ul>
+<h2 id="4">4. 接线与设计要点</h2>
+<h3 id="41-exs">4.1 EXS 侧</h3>
+<ul>
+<li>VCC(A) 与 VCC(B) <strong>无上电顺序要求</strong>（任一侧先上电可）。</li>
+<li>未用通道：A/B 两侧接同一电平（VCCI 或 GND），不要单边悬空。</li>
+<li>每个电源脚就近 0.1 µF 去耦；OE 经 10 kΩ 下拉到 GND（<strong>必须</strong>）。</li>
+</ul>
+<h3 id="42-8t245">4.2 8T245 侧</h3>
+<ul>
+<li>DIR 决定方向（A→B / B→A），OE 低有效使能；两脚都要确定电平，<strong>不许浮空</strong>。</li>
+<li>总线可能浮空（拔卡、长线）时选 <code>EM74LVCH8T245PW</code>（总线保持）。</li>
+<li>方向切换时先拉高 OE 关断输出，再改 DIR，避免两端对驱。</li>
+</ul>
+<h3 id="43-1t45">4.3 1T45 侧</h3>
+<ul>
+<li>DIR 接固定电平即可当单向用；DIR 不许浮空（无内部下拉）。</li>
+<li>5 V 掉电靠 IOFF 防反灌，但 B 端不要继续被驱动。</li>
+</ul>
+<h2 id="5">5. 常见误区</h2>
+<ol>
+<li><strong>把 EXS 当高速转换器</strong>：40 Mbps 是硬上限，客户要 100 Mbps 只能改 8T245 架构。</li>
+<li><strong>拿 8T245 顶自动方向件</strong>：8T245 需要 DIR 信号，I²C/SDIO 这类每根线双向翻转的总线在架构上不成立。</li>
+<li><strong>只看 Mbps 不看 tpd</strong>：8T245 的 26.3 ns 进不了紧时序预算；SPI 读回路要按「半周期 − Flash tCLQV」算。</li>
+<li><strong>OE / DIR 浮空</strong>：EXS 的 OE 必须下拉；8T245 的 OE、1T45 的 DIR 都必须确定电平。</li>
+<li><strong>LVCH 当 LVC 替</strong>：带 H 的件每个数据脚要 125 µA~900 µA 过驱动才翻得动，大阻值上下拉或高阻源会失效——<strong>H 只对 H</strong>。</li>
+<li><strong>1T45 当量产料报</strong>：目前 Draft V0.3（2026-10-15），官方目录未列，报交期会翻车。</li>
+</ol>
+<h2 id="6">6. 选型核对清单</h2>
+<ul>
+<li>[ ] 方向：固定 / 分时双向 / 开漏总线</li>
+<li>[ ] 电压：A、B 两侧实际电压与谁高谁低</li>
+<li>[ ] 速率：推挽 Mbps / 开漏 kbps，是否 ≤ 40 Mbps</li>
+<li>[ ] 时序：tpd 是否进预算（8T245 26.3 ns、1T45 5.3 ns typ）</li>
+<li>[ ] 控制脚：OE / DIR 是否有确定电平，谁提供</li>
+<li>[ ] 位数与封装：通道数、封装尺寸、是否已 layout</li>
+<li>[ ] 总线保持：原设计是否依赖内部上下拉（决定 LVC vs LVCH）</li>
+<li>[ ] 状态：是否 Draft（1T45），能否承诺量产</li>
+</ul>
+<h2 id="7">7. 来源</h2>
+<ul>
+<li>实体页：[[exs0102]]、[[exs0104]]、[[exs0106]]、[[exs0108]]、[[lvc1t45]]、[[em74lvc8t245-em74lvch8t245]]、[[em74lvc4245a]]、[[em74lv1t04]]</li>
+<li>概念页：[[level-shifter]]、[[transceiver]]</li>
+<li>原始规格书：<code>raw/datasheets/EXS0102_Product_DS_V1.1.json</code>、<code>EM74LVC_LVCH1T45_Draft_DS_V0.3.json</code>、<code>EM74LVC_LVCH8T245_Product_DS_V1.2.json</code></li>
+</ul>
+<blockquote>
+<p>本文为应用指导，不替代数据手册。对外报料一律带封装尾缀；交期与价格走销售。</p>
+</blockquote>
+  </article>
+</div>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>总线隔离与热插拔应用指南 · 芯祥应用指南</title>
+<meta name="description" content="三条必须记住的差别：">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .guide-wrap { max-width: 980px; margin: 0 auto; padding: 0 20px 64px; }
+  .guide-nav { position: sticky; top: 0; z-index: 10; padding: 12px 0; margin-bottom: 8px;
+    background: var(--bg, #fff); border-bottom: 1px solid var(--border, #e3e6e9); font-size: 13px; }
+  .guide-nav a { color: inherit; text-decoration: none; opacity: .75; }
+  .guide-nav a:hover { opacity: 1; text-decoration: underline; }
+  .guide-body { font-size: 14.5px; line-height: 1.75; }
+  .guide-body h1 { font-size: 24px; margin: 24px 0 8px; }
+  .guide-body h2 { font-size: 18px; margin: 28px 0 10px; padding-top: 8px; border-top: 1px solid var(--border, #eee); }
+  .guide-body h3 { font-size: 15.5px; margin: 20px 0 8px; }
+  .guide-body table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; display: block; overflow-x: auto; }
+  .guide-body th, .guide-body td { border: 1px solid var(--border, #e3e6e9); padding: 7px 10px; text-align: left; vertical-align: top; }
+  .guide-body th { background: rgba(0,0,0,.03); }
+  .guide-body code { background: rgba(0,0,0,.05); padding: 1px 5px; border-radius: 4px; font-size: .92em; }
+  .guide-body pre { background: rgba(0,0,0,.04); padding: 12px 14px; border-radius: 8px; overflow-x: auto; }
+  .guide-body blockquote { margin: 12px 0; padding: 8px 14px; border-left: 3px solid var(--accent, #888); background: rgba(0,0,0,.025); }
+  .guide-body ul, .guide-body ol { padding-left: 22px; }
+  :root[data-theme="dark"] .guide-body th, :root:not([data-theme="light"]) .guide-body th { background: rgba(255,255,255,.06); }
+  :root[data-theme="dark"] .guide-body code, :root:not([data-theme="light"]) .guide-body code,
+  :root[data-theme="dark"] .guide-body pre, :root:not([data-theme="light"]) .guide-body pre { background: rgba(255,255,255,.07); }
+</style>
+</head>
+<body>
+<div class="guide-wrap">
+  <nav class="guide-nav"><a href="../index.html">← 返回产品目录</a> · <a href="../index.html#page=apps">应用场景</a></nav>
+  <article class="guide-body">
+<h1 id="_1">总线隔离与热插拔应用指南</h1>
+<blockquote>
+<p>「隔离」在电路上有三种完全不同的实现：<strong>有源三态缓冲</strong>（245/541）、<strong>无源总线开关</strong>（CBT/CBTLV）、<strong>模拟开关</strong>（EMS/EL）。
+三者都能让一段总线「消失」，但一个有驱动、一个只有 2.5 Ω 电阻、一个是为信号路由而生。<strong>选错的代价不是不工作，而是上电瞬间直通、断电倒灌、长线塌边沿。</strong>
+本文所有数值取自芯祥实体页；CBT/CBTLV 的核心事实是：<strong>无源、不放大、tpd 0.3 ns</strong>。</p>
+</blockquote>
+<h2 id="1">1. 三种隔离手段对比</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>三态缓冲（有源）</th>
+<th>无源总线开关</th>
+<th>模拟开关</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>代表型号</td>
+<td><code>EM74LVC245APW</code>、<code>EM74LVCH245APW</code>、<code>EM74HC541PW</code>、<code>EM74HCT541PW</code></td>
+<td><code>EM74CBTLV3257PW</code>、<code>EM74CBTLV3253PW</code>、<code>EM74CBTLV3125PW</code>、<code>EM74CBTLV3126PW</code></td>
+<td><code>EMS3157GW</code>、<code>EMS23157MS</code> 等（见 [[ems-analog-switch-app-guide]]）</td>
+</tr>
+<tr>
+<td>隔离机制</td>
+<td>OE 关断，输出级进高阻</td>
+<td>传输管关断，A/B 两端高阻</td>
+<td>传输管关断（部分型号标 True Isolation）</td>
+</tr>
+<tr>
+<td>有源/增益</td>
+<td><strong>有源</strong>，有驱动、有整形</td>
+<td><strong>无源，不放大、不整形</strong></td>
+<td>无源通路，不放大</td>
+</tr>
+<tr>
+<td>传输延迟</td>
+<td>245：7.0 ns typ @3.0–3.6 V（max 9.7 ns）</td>
+<td><strong>tpd ≤0.3 ns（−40~+85 ℃）</strong>，实为 RON×CL 的 RC 估算</td>
+<td>按型号，本文不取数</td>
+</tr>
+<tr>
+<td>驱动能力</td>
+<td>245：24 mA @3.0 V，VOH ≥2.4 V；541（HCT）：6 mA @4.5 V，VOH ≥3.84 V</td>
+<td><strong>无驱动</strong>，只有 RON 2.5 Ω typ（3.0–3.6 V，24/64 mA）</td>
+<td>无驱动</td>
+</tr>
+<tr>
+<td>电压范围</td>
+<td>245：1.65–5.5 V；541：HC 2.0–6.0 V / HCT 4.5–5.5 V</td>
+<td><strong>2.3–3.6 V</strong>，VSW 限 0–VCC</td>
+<td>按型号</td>
+</tr>
+<tr>
+<td>VCC=0 时</td>
+<td>245 有 IOFF（±10 µA @85 ℃）</td>
+<td>有 IOFF（±10 µA @85 ℃）</td>
+<td>按型号</td>
+</tr>
+<tr>
+<td>方向</td>
+<td>245 双向（DIR 控制）；541 单向</td>
+<td>双向，A/B 对称</td>
+<td>双向</td>
+</tr>
+<tr>
+<td>典型位置</td>
+<td>长线、扇出、板内 8 位隔离</td>
+<td>热插拔、总线分段、近零延迟隔离</td>
+<td>音频/USB/负压信号路由</td>
+</tr>
+</tbody>
+</table>
+<p>三条必须记住的差别：</p>
+<ol>
+<li><strong>tpd 0.3 ns 不是「更快的门」</strong>。数据手册脚注写明：该 tpd 是按典型通态电阻与负载电容算出的 RC 时间常数（理想零阻源驱动）。它描述的是「一个电阻加一个电容」，不是推挽级的延时。负载一变，实际边沿就变。</li>
+<li><strong>无源开关不会把 1 写得更像 1</strong>。3.3 V 进来、减去 RON 上的压降、3.3 V 出去；没有再生、没有整形、没有扇出。</li>
+<li><strong>有源缓冲的「高阻」只在 VCC 正常时成立</strong>。VCC=0 时，输出级和输入钳位二极管仍挂在总线上——这正是 IOFF 要解决的问题，也是 541 不能用于断电板卡的原因（见 §3.4）。</li>
+</ol>
+<h2 id="2">2. 什么时候用哪种</h2>
+<p>按顺序问五个问题，答案唯一：</p>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>是</th>
+<th>否</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 需要驱动长线 / 扇出 / 整形边沿？</td>
+<td><strong>245 / 541</strong></td>
+<td>下一题</td>
+</tr>
+<tr>
+<td>② 只需要「接通/断开」，信号始终在 0–VCC、要近零延迟？</td>
+<td><strong>CBT / CBTLV</strong></td>
+<td>下一题</td>
+</tr>
+<tr>
+<td>③ 信号是模拟量、负压、音频或高速差分？</td>
+<td><strong>EMS 模拟开关</strong></td>
+<td>下一题</td>
+</tr>
+<tr>
+<td>④ 需要真正的电平转换（1.8 V ↔ 3.3 V 且要驱动）？</td>
+<td>三者都不行 → EXS / 8T245</td>
+<td>下一题</td>
+</tr>
+<tr>
+<td>⑤ 总线是 5 V？</td>
+<td><strong>541 / 245</strong>（CBT 上限 3.6 V）</td>
+<td>245 或 CBTLV</td>
+</tr>
+</tbody>
+</table>
+<p>几条硬边界：</p>
+<ul>
+<li><strong>1.8 V 总线不能用 CBTLV</strong>：CBTLV 推荐工作下限 2.3 V。1.8 V 域选 <code>EM74LVC245APW</code>（1.65–5.5 V）。</li>
+<li><strong>5 V 总线不能用 CBTLV</strong>：VSW 推荐 0–VCC，绝对最大 VCC+0.5 = 4.1 V。5 V 侧用 <code>EM74HCT541PW</code>（4.5–5.5 V，VIH 2.1 V，可直收 3.3 V）或 <code>EM74LVC245APW</code>（输入耐 5.5 V）。</li>
+<li><strong>CBT/CBTLV 不做电平转换</strong>：无源器件的输出永远 ≤ 输入，且被 VCC 钳住。要转换去 [[level-shifter]]。</li>
+<li><strong>要「断电板卡仍挂在带电总线上」</strong>：只能用带 IOFF 的 <code>EM74LVC245APW</code> 或 CBTLV；<code>EM74HC541PW</code> / <code>EM74HCT541PW</code> 页面无 IOFF，且有输入钳位二极管，禁用。</li>
+</ul>
+<h2 id="3">3. 热插拔设计要点</h2>
+<h3 id="31">3.1 上电顺序</h3>
+<p>CBTLV 的推荐工作条件写死了两件事：VCC 2.3–3.6 V，<strong>VSW 0–VCC</strong>。绝对最大额定值给到 VSW = VCC + 0.5 V。这意味着：</p>
+<ul>
+<li><strong>先给开关 VCC，再让信号到达</strong>。VCC=0 而信号先到，VSW 同时越过「0–VCC」的推荐条件和「VCC+0.5 V」的绝对最大值；手册允许超压的唯一前提是钳位电流受控，而这一路只给了 ISK（VI &lt; −0.5 V）−50 mA，等于没有可用余量。</li>
+<li><strong>OE 必须在 VCC 建立之前就是关断电平</strong>，靠电阻实现，不能靠 MCU GPIO——MCU 未初始化时 GPIO 是高阻。</li>
+<li>顺序无法保证时，串限流电阻或做预充，<strong>不要指望开关限流</strong>。</li>
+</ul>
+<h3 id="32-oe">3.2 OE 默认态（按型号查表，不要按名字猜）</h3>
+<table>
+<thead>
+<tr>
+<th>型号</th>
+<th>OE 脚</th>
+<th>关断电平</th>
+<th>上电默认接法</th>
+<th>实体页原文依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EM74CBTLV3125PW</code></td>
+<td>nOE（1OE–4OE 独立）</td>
+<td><strong>HIGH</strong></td>
+<td>上拉至 VCC</td>
+<td>disabled when nOE is HIGH；nOE should be tied to the VCC through a pull-up resistor</td>
+</tr>
+<tr>
+<td><code>EM74CBTLV3126PW</code></td>
+<td>nOE（1OE–4OE 独立）</td>
+<td><strong>LOW</strong></td>
+<td>下拉至 GND</td>
+<td>disabled when nOE is LOW；nOE should be tied to the GND through a pull-down resistor</td>
+</tr>
+<tr>
+<td><code>EM74CBTLV3257PW</code></td>
+<td>OE（公共）</td>
+<td>HIGH</td>
+<td>上拉至 VCC</td>
+<td>When pin OE = HIGH, all switches are in the high-impedance OFF-state</td>
+</tr>
+<tr>
+<td><code>EM74CBTLV3253PW</code></td>
+<td>nOE（1OE/2OE）</td>
+<td>HIGH</td>
+<td>上拉至 VCC</td>
+<td>When pin nOE = HIGH, all switches are in the high-impedance OFF-state</td>
+</tr>
+<tr>
+<td><code>EM74LVC245APW</code></td>
+<td>OE</td>
+<td>HIGH</td>
+<td>上拉；<strong>DIR 另定电平</strong></td>
+<td>A HIGH on OE causes the outputs to assume a high-impedance OFF-state</td>
+</tr>
+<tr>
+<td><code>EM74HC541PW</code> / <code>EM74HCT541PW</code></td>
+<td>OE1、OE2</td>
+<td>HIGH</td>
+<td>两脚各自上拉</td>
+<td>A HIGH on OEn causes the outputs to assume a high-impedance OFF-state</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>3126 是最容易踩的一颗</strong>：脚名叫 nOE，实际却是<strong>低电平使能、高电平关断</strong>。按「n 前缀 = 低有效」的直觉接下拉，等于上电即导通。
+电阻取值：数据手册只给「下限由该脚电流决定」，不给具体值。按 II ≤ ±20 µA（125 ℃）估算，10 kΩ 上的压降约 0.2 V（估算值，非手册数据），3.3 V 轨仍远高于 VIH 2.0 V——可作起点，但必须按实际温度档复核。</p>
+</blockquote>
+<h3 id="33-ioff">3.3 IOFF 的边界</h3>
+<p>IOFF 的定义是 <strong>VCC = 0 V 时，I/O 对电源的漏电</strong>：CBTLV 系列 ±10 µA（85 ℃）/ ±50 µA（125 ℃）；<code>EM74LVC245APW</code> ±10 µA（85 ℃）/ ±20 µA（125 ℃）。</p>
+<p>它能做的：让一块<strong>已完全断电</strong>的板卡不给在用总线加载。
+它不能做的：</p>
+<ul>
+<li>不是热插拔控制器——没有软启动、没有限流、没有短路保护。</li>
+<li>不覆盖 VCC 爬坡的中间态（0 → 2.3 V，CBTLV 的最低工作电压），那段时间只有 OE 默认态在保命。</li>
+<li>不替代连接器的先接地、后电源、再信号的长短针设计。</li>
+</ul>
+<h3 id="34">3.4 浪涌与钳位</h3>
+<ul>
+<li><code>EM74CBTLV3125PW</code>/<code>3126PW</code>/<code>3257PW</code>/<code>3253PW</code>：ISW 绝对最大 <strong>±128 mA</strong>（VSW = 0 V to VCC）。子卡大电容的充电电流会直接穿过开关，必须预充或用热插拔控制器。</li>
+<li><code>EM74LVC245APW</code>：IO 绝对最大 <strong>±50 mA</strong>，同样不是限流器件。</li>
+<li><code>EM74HC541PW</code>/<code>EM74HCT541PW</code>：<strong>输入端有钳位二极管</strong>（概述原文：Inputs include clamp diodes）。本板断电、总线仍带电时，电流经钳位二极管灌进 VCC 轨——这是「无 IOFF + 有钳位」的组合，不能用于断电隔离。</li>
+</ul>
+<h3 id="35">3.5 布局</h3>
+<p>每颗 0.1 µF 就近 VCC；OE 走线远离被切总线，避免耦合造成半导通（CMOS 输入停在中间电平时 ΔICC 可达 300 µA，125 ℃ 档 2000 µA）。</p>
+<h2 id="4">4. 三个典型场景</h2>
+<h3 id="41-33-v">4.1 子卡热插拔：3.3 V 局部总线</h3>
+<ul>
+<li>4 位一组：<code>EM74CBTLV3125PW</code>（nOE 高关断，上拉）或 <code>EM74CBTLV3126PW</code>（nOE 低关断，下拉）；8 位用两颗。</li>
+<li>nOE 电阻给默认关断，MCU 在 VCC 稳定后再接管；插入检测信号晚于电源有效。</li>
+<li>子卡储能电容先预充——开关只保证 2.5 Ω 通路，不保证浪涌。</li>
+<li>顺序：GND → VCC → 信号 → 再拉 OE 使能。</li>
+</ul>
+<h3 id="42">4.2 总线分段 / 双主切换</h3>
+<ul>
+<li><code>EM74CBTLV3257PW</code>：四路 1-of-2，共用一个 S 和一个 OE。一片切 4 根线，适合 I²C 的 SCL/SDA 加两根中断/复位。</li>
+<li><code>EM74CBTLV3253PW</code>：双 1-of-4，S0/S1 共用、1OE/2OE 独立。适合 4 选 1 的管理总线或地址线汇聚，两组可分别关断。</li>
+<li><strong>无源开关不产生上拉</strong>：两侧上拉电阻必须保留，不能去掉上拉指望开关驱动开漏总线。</li>
+<li>数据手册没有给「S 切换时先断后通」的保证。要热切换，先用 OE 关断整组，改 S，再使能——ten/tdis 约 3–5 ns 量级（3257：ten 2.8 ns typ、tdis 2.9 ns typ @3.0–3.6 V），代价可以忽略。</li>
+</ul>
+<h3 id="43-8">4.3 板内 8 位隔离 / 单向扇出</h3>
+<ul>
+<li>双向、需要驱动：<code>EM74LVC245APW</code>（DIR + OE，1.65–5.5 V，24 mA @3.0 V）。总线浮空易漂的场合换 <code>EM74LVCH245APW</code>（总线保持，IBHLO 500 µA @3.6 V）。</li>
+<li>单向、5 V 系统：<code>EM74HCT541PW</code>（4.5–5.5 V，VIH 2.1 V，可直接收 3.3 V 输出）；纯 5 V CMOS 电平用 <code>EM74HC541PW</code>（2.0–6.0 V）。</li>
+<li>541 有 OE1/OE2 两路使能，可分组关断——<strong>具体哪几位归哪组看引脚图</strong>，不要按功能号想当然。</li>
+<li>541 无 IOFF：只用于「整板一起上电」的场合。</li>
+</ul>
+<h2 id="5">5. 常见误区</h2>
+<ol>
+<li><strong>拿 CBT 当缓冲器</strong>。它是无源开关：RON 2.5 Ω typ、无增益、无整形。驱动 50 Ω 负载或长线时，边沿由外部源和负载电容决定，塌了就是塌了，换更快的型号没用。tpd 0.3 ns 是 RC 估算，不是它能「推」多快的证明。</li>
+<li><strong>OE 悬空</strong>。CMOS 输入悬空会停在中间电平：状态不确定（可能上电即导通），且 ΔICC 从 300 µA 涨到 2000 µA（125 ℃）。所有 OE/nOE 必须有电阻默认态，MCU 只做「接管」，不做「初始化」。</li>
+<li><strong>按型号名猜 OE 极性</strong>。<code>EM74CBTLV3126PW</code> 的 nOE 是低电平使能；<code>EM74CBTLV3125PW</code> 的 nOE 是高电平关断。两颗同封装、同功能，默认接法相反。</li>
+<li><strong>认为 CBT 能过 5 V</strong>。上限 3.6 V，VSW 绝对最大 VCC+0.5。5 V 总线请用 541。</li>
+<li><strong>把 IOFF 当热插拔保护</strong>。IOFF 只是 VCC=0 时的漏电指标，不限制流、不软启动、不管爬坡中间态。</li>
+<li><strong>用 541 做断电隔离</strong>。输入钳位二极管 + 无 IOFF = 给断电板卡上的 VCC 轨倒灌。</li>
+<li><strong>用 CBT 做电平转换</strong>。无源、双向、输出 ≤ 输入，且被 VCC 钳位。要转换用 [[level-shifter]] 里的双向方案。</li>
+</ol>
+<h2 id="6">6. 核对清单</h2>
+<ul>
+<li>[ ] 总线电压落在器件范围内（CBTLV 2.3–3.6 V；245 1.65–5.5 V；541 HC 2.0–6.0 / HCT 4.5–5.5 V）</li>
+<li>[ ] 选了「有源」还是「无源」：需要驱动就必须 245/541，不能选 CBT</li>
+<li>[ ] 每个 OE/nOE 都有电阻默认态，且阻值按 II 与 VIH 复核过</li>
+<li>[ ] OE 极性按实体页核对过（尤其 3125 与 3126 相反）</li>
+<li>[ ] 245 的 DIR 有确定电平，不是悬空</li>
+<li>[ ] 上电顺序：开关 VCC 先于信号；OE 在 VCC 建立前已关断</li>
+<li>[ ] 断电场景核对 IOFF（245/CBTLV 有，541 无）与输入钳位二极管</li>
+<li>[ ] 浪涌路径核对了 ISW/IO 绝对最大值（CBTLV ±128 mA，245 ±50 mA），必要时加预充</li>
+<li>[ ] VSW 不超过 VCC（CBTLV 无负压、无过压能力）</li>
+<li>[ ] 型号带封装尾缀且与焊盘一致（<code>PW</code> = TSSOP，<code>D</code> = SOP）</li>
+<li>[ ] 车规需求单独确认（本线无 Q100 料）</li>
+</ul>
+<h2 id="7">7. 来源</h2>
+<ul>
+<li>实体页：[[em74cbtlv3257]]、[[em74cbtlv3253]]、[[em74cbtlv3125]]、[[em74cbtlv3126]]、[[em74lvc245a-em74lvch245a]]、[[em74hc541-em74hct541]]</li>
+<li>概念页：[[bus-buffer]]、[[transceiver]]、[[line-driver]]、[[analog-switch]]、[[mux]]、[[level-shifter]]</li>
+<li>相关指南：[[logic-gates-app-guide]]（家族定位）、[[ems-analog-switch-app-guide]]（模拟开关选型）、[[level-translation-app-guide]]（电平转换）</li>
+<li>原始规格书：<code>raw/datasheets/EM74CBTLV3257_Product_DS_V1.0.json</code>、<code>EM74CBTLV3253_Product_DS_V1.0.json</code>、<code>EM74CBTLV3125_Product_DS_V1.0.json</code>、<code>EM74CBTLV3126_Product_DS_V1.0.json</code>、<code>EM74LVC_LVCH245A_Product_DS_V1.0.json</code>、<code>EM74HC_HCT541_Product_DS_V1.1.json</code></li>
+</ul>
+<blockquote>
+<p><strong>取数边界</strong>：<code>em74hc541-em74hct541</code> 实体页的动态特性节只保留了表头与符号名，未列 tpd/ten/tdis 数值，本文因此不给 541 的延迟数字，引用前请回规格书 Table 7 核对。模拟开关一栏只做定性对比，参数以对应实体页为准。
+本文为应用指导，不替代数据手册。</p>
+</blockquote>
+  </article>
+</div>
+</body>
+</html>

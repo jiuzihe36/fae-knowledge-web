@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>USB / HDMI 高速信号切换与 Type-C 端口 选型与应用指导 · 芯祥应用指南</title>
+<meta name="description" content="- 经验值：NRZ 信号需要约 0.7 × 数据率 的 -3 dB 带宽才有可接受的眼图；插损、连接器、走线会再吃掉余量，留 20–30% 余量。">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .guide-wrap { max-width: 980px; margin: 0 auto; padding: 0 20px 64px; }
+  .guide-nav { position: sticky; top: 0; z-index: 10; padding: 12px 0; margin-bottom: 8px;
+    background: var(--bg, #fff); border-bottom: 1px solid var(--border, #e3e6e9); font-size: 13px; }
+  .guide-nav a { color: inherit; text-decoration: none; opacity: .75; }
+  .guide-nav a:hover { opacity: 1; text-decoration: underline; }
+  .guide-body { font-size: 14.5px; line-height: 1.75; }
+  .guide-body h1 { font-size: 24px; margin: 24px 0 8px; }
+  .guide-body h2 { font-size: 18px; margin: 28px 0 10px; padding-top: 8px; border-top: 1px solid var(--border, #eee); }
+  .guide-body h3 { font-size: 15.5px; margin: 20px 0 8px; }
+  .guide-body table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; display: block; overflow-x: auto; }
+  .guide-body th, .guide-body td { border: 1px solid var(--border, #e3e6e9); padding: 7px 10px; text-align: left; vertical-align: top; }
+  .guide-body th { background: rgba(0,0,0,.03); }
+  .guide-body code { background: rgba(0,0,0,.05); padding: 1px 5px; border-radius: 4px; font-size: .92em; }
+  .guide-body pre { background: rgba(0,0,0,.04); padding: 12px 14px; border-radius: 8px; overflow-x: auto; }
+  .guide-body blockquote { margin: 12px 0; padding: 8px 14px; border-left: 3px solid var(--accent, #888); background: rgba(0,0,0,.025); }
+  .guide-body ul, .guide-body ol { padding-left: 22px; }
+  :root[data-theme="dark"] .guide-body th, :root:not([data-theme="light"]) .guide-body th { background: rgba(255,255,255,.06); }
+  :root[data-theme="dark"] .guide-body code, :root:not([data-theme="light"]) .guide-body code,
+  :root[data-theme="dark"] .guide-body pre, :root:not([data-theme="light"]) .guide-body pre { background: rgba(255,255,255,.07); }
+</style>
+</head>
+<body>
+<div class="guide-wrap">
+  <nav class="guide-nav"><a href="../index.html">← 返回产品目录</a> · <a href="../index.html#page=apps">应用场景</a></nav>
+  <article class="guide-body">
+<h1 id="usb-hdmi-type-c">USB / HDMI 高速信号切换与 Type-C 端口 选型与应用指导</h1>
+<blockquote>
+<p>覆盖三件事：<strong>USB2.0 路由</strong>（EMS3902/EMS4000）、<strong>USB3.x / HDMI 高速切换</strong>（EMS4100/EMS4422/EMS3412）、<strong>Type-C 音频+数据复用与端口保护</strong>（EMS4320）。
+一条铁律：<strong>带宽先过关，再谈 Ron 和封装</strong>——高速差分链路上，带宽不够的开关是「能通但眼图闭」的隐形故障。</p>
+</blockquote>
+<h2 id="1">1. 型号速查（按速率档）</h2>
+<table>
+<thead>
+<tr>
+<th>速率档</th>
+<th>型号（带尾缀）</th>
+<th>拓扑</th>
+<th>电压</th>
+<th>关键指标</th>
+<th>封装</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USB2.0 480 Mbps</td>
+<td><code>EMS3902RSW</code></td>
+<td>双路 DPDT（2:1）</td>
+<td>1.5–5.5 V</td>
+<td>Ron 1.9 Ω @5.5 V；C_ON 12 pF；<strong>BW 800 MHz</strong>；静态 &lt;1 µA @3.3 V；1.8 V 逻辑控制</td>
+<td>MSOP-10 / QFN1.4×1.8-10</td>
+</tr>
+<tr>
+<td>USB2.0 + 端口保护</td>
+<td><code>EMS4000RSW</code></td>
+<td>差分 2:1 / 1:2</td>
+<td>2.5–4.5 V</td>
+<td><strong>DC 7 V OVP</strong>（C0± 端口）；IEC 61000-4-5 浪涌 <strong>±20 V 无需外置 TVS</strong>；系统侧钳位 &lt;8 V / &lt;300 ns</td>
+<td>QFN1.4×1.8-10 / QFN1.5×2.0-10 / DFN3×3-10 / MSOP-10</td>
+</tr>
+<tr>
+<td>USB3.1 10 Gbps</td>
+<td><code>EMS4100N</code></td>
+<td>双差分 1:2 / 2:1</td>
+<td>1.5–5.0 V</td>
+<td><strong>BW 3.5 GHz @-3dB</strong>；隔离 -24 dB @1.25 Gbps；支持 AC/DC 耦合</td>
+<td>QFN1.8×2.6-16 / QFN2×3-18</td>
+</tr>
+<tr>
+<td>HDMI2.1</td>
+<td><code>EMS4422RSB</code></td>
+<td>4 差分 2:1</td>
+<td>1.5–5.0 V</td>
+<td><strong>BW 5.7 GHz @-3dB</strong>；隔离 <strong>-40 dB @2.0 Gbps</strong>；HDMI2.1 兼容</td>
+<td>QFN5×5-40</td>
+</tr>
+<tr>
+<td>多协议 5.1 GHz</td>
+<td><code>EMS3412</code>（<strong>Draft</strong>）</td>
+<td>双差分 1:2 / 2:1</td>
+<td>1.5–5.0 V</td>
+<td>USB2.0/3.0/HDMI2.1/SATA/DP 兼容；BW 5.1 GHz；隔离 -27 dB @1.2 Gbps</td>
+<td>QFN4×4-24</td>
+</tr>
+<tr>
+<td>Type-C 音频+USB</td>
+<td><code>EMS4320RSW</code></td>
+<td>音频/USB 复用</td>
+<td>2.5–5.5 V</td>
+<td>音频 Ron <strong>0.9 Ω</strong>；USB Ron 3.4 Ω；VBUS 耐压 13 V；D+/R、D-/L OVP 阈值 4.8 V</td>
+<td>QFN1.4×1.8-10</td>
+</tr>
+<tr>
+<td>通用信号/音频切换</td>
+<td><code>EMS23157MS</code></td>
+<td>双 SPDT</td>
+<td>低压</td>
+<td>真隔离、低 Ron</td>
+<td>MSOP-10 等</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Draft 提示</strong>：<code>EMS3412</code>（含 <code>EMS4310</code> 同类）目前是 Draft，可按参数评估、可送样，<strong>不承诺量产交期</strong>。其余型号为正式版。</p>
+</blockquote>
+<h2 id="2">2. 带宽怎么定（最常错的地方）</h2>
+<table>
+<thead>
+<tr>
+<th>信号</th>
+<th>数据率</th>
+<th>建议开关带宽</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>USB2.0 High-Speed</td>
+<td>480 Mbps</td>
+<td><strong>≥ 800 MHz</strong>（EMS3902 / EMS4000 达标）</td>
+</tr>
+<tr>
+<td>USB3.1 Gen1/Gen2</td>
+<td>5 / 10 Gbps</td>
+<td><strong>≥ 3.5 GHz</strong>（EMS4100 达标）</td>
+</tr>
+<tr>
+<td>HDMI2.1</td>
+<td>12 Gbps/lane</td>
+<td><strong>≥ 5.7 GHz</strong>（EMS4422 达标）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>经验值：NRZ 信号需要约 <code>0.7 × 数据率</code> 的 -3 dB 带宽才有可接受的眼图；插损、连接器、走线会再吃掉余量，<strong>留 20–30% 余量</strong>。</li>
+<li>「能通」≠「能过眼图」：客户用低速开关顶高速链路，常表现为「偶尔识别、跑满带宽就掉」。</li>
+</ul>
+<h2 id="3">3. 三个典型场景</h2>
+<h3 id="31-usb20-otg">3.1 USB2.0 端口切换（双主机 / OTG / 外设复用）</h3>
+<ul>
+<li>2:1 切换：<code>EMS3902RSW</code>，SEL 选通道，EN 使能；1.8 V 逻辑可直接驱动控制脚（省电平转换）。</li>
+<li>带浪涌保护需求（外露 USB 口）：换 <code>EMS4000RSW</code>，C0± 端口自带 ±20 V 浪涌耐受，<strong>可省外置 TVS</strong>。</li>
+<li>走线：D+/D- 90 Ω 差分、等长；开关靠近连接器，SEL/EN 走线远离差分对。</li>
+</ul>
+<h3 id="32-usb3x-hdmi">3.2 USB3.x / HDMI 高速通道</h3>
+<ul>
+<li>USB3.1 10 Gbps：<code>EMS4100N</code>，双差分 1:2。</li>
+<li>HDMI2.1：<code>EMS4422RSB</code>，4 差分 2:1；隔离度 -40 dB @2 Gbps，是长通道的关键指标。</li>
+<li><strong>AC/DC 耦合都支持</strong>，但要注意共模电平：AC 耦合时开关侧需要偏置网络，DC 耦合时核对共模范围。</li>
+</ul>
+<h3 id="33-type-c">3.3 Type-C 音频 + 数据复用</h3>
+<ul>
+<li><code>EMS4320RSW</code>：一路走音频（Ron 0.9 Ω，保音质），一路走 USB2.0（Ron 3.4 Ω）。</li>
+<li>端口保护：D+/R、D-/L 的 OVP 阈值 4.8 V，VBUS 耐压 13 V——<strong>VBUS 上仍需要系统级过压/过流保护</strong>，这颗不是电源开关。</li>
+<li>耳机插入检测与防潮检测属于 <code>EMS4485</code>（WLCSP-25，Draft）方向，量门前先确认状态。</li>
+</ul>
+<h2 id="4">4. 设计要点</h2>
+<ol>
+<li><strong>差分对</strong>：90 Ω（USB）/ 100 Ω（HDMI）差分阻抗，对内等长 ≤5 mil，对间不交叉；开关两侧走线尽量对称。</li>
+<li><strong>ESD 与浪涌</strong>：<code>EMS4000</code> 宣称 ±20 V 浪涌耐受（无需外置 TVS），但<strong>不等于可以省掉系统 ESD 设计</strong>；接触放电仍按整机 IEC 61000-4-2 要求评估。</li>
+<li><strong>控制脚电平</strong>：EMS3902 支持 1.8 V 逻辑；其他型号按 VCC 比例，1.8 V MCU 直驱前先核 VIH。</li>
+<li><strong>电源去耦</strong>：0.1 µF + 1 µF 就近放置；高速开关对电源噪声敏感。</li>
+<li><strong>热插拔</strong>：外露端口建议先做 VBUS 检测再使能开关，避免带电插拔瞬间的浪涌进入 SoC。</li>
+<li><strong>不要让模拟开关切 VBUS</strong>：本线全部是信号开关，没有电源开关/负载开关；VBUS 通断另选器件。</li>
+</ol>
+<h2 id="5">5. 常见误区</h2>
+<ol>
+<li><strong>把 OVP 的「20 V」当 DC 耐压</strong>：<code>EMS4000</code> 的 20 V 是 IEC 61000-4-5 浪涌（8/20 µs），<strong>DC OVP 关断点是 7 V</strong>。</li>
+<li><strong>只看 Ron 不看带宽</strong>：USB3.x 上 Ron 差 1 Ω 影响不大，带宽差 1 GHz 直接眼图闭。</li>
+<li><strong>用 USB2.0 开关顶 USB3.0</strong>：800 MHz 对 5 Gbps 完全不够，必选 EMS4100。</li>
+<li><strong>Draft 料当量产料报</strong>：<code>EMS3412</code>/<code>EMS4310</code> 是 Draft，报价前必须确认。</li>
+<li><strong>省掉共模/偏置设计</strong>：AC 耦合时忘记加偏置，表现为「链路能枚举但不传输」。</li>
+</ol>
+<h2 id="6">6. 选型核对清单</h2>
+<ul>
+<li>[ ] 数据率与带宽（≥0.7×数据率，留 20–30% 余量）</li>
+<li>[ ] 通道数：单差分 / 双差分 / 4 差分</li>
+<li>[ ] 拓扑：2:1 / 1:2 / DPDT / 4:1</li>
+<li>[ ] 是否需要 OVP / 浪涌（外露端口）</li>
+<li>[ ] 控制脚电平与 MCU IO 匹配</li>
+<li>[ ] 隔离度 / 串扰指标（长通道、多路复用）</li>
+<li>[ ] AC/DC 耦合与共模范围</li>
+<li>[ ] 状态：正式版 / Draft（3412、4310、4485）</li>
+</ul>
+<h2 id="7">7. 来源</h2>
+<ul>
+<li>实体页：[[ems3902]]、[[ems4000]]、[[ems4100]]、[[ems4422]]、[[ems3412]]、[[ems4320]]、[[ems23157]]</li>
+<li>概念页：[[usb20-switch]]、[[usb30-switch]]、[[analog-switch]]、[[mux]]</li>
+<li>原始规格书：<code>raw/datasheets/EMS3902_Product_DS_V1.1.json</code>、<code>EMS4000_Product_DS_V1.7.json</code>、<code>EMS4100_Product_DS_V1.4.json</code>、<code>EMS4422_Product_DS_V1.1.json</code></li>
+</ul>
+<blockquote>
+<p>本文为应用指导，不替代数据手册。带宽/隔离度/OVP 阈值以对应规格书 AC 特性表为准。</p>
+</blockquote>
+  </article>
+</div>
+</body>
+</html>

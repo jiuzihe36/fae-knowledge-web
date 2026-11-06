@@ -543,6 +543,32 @@
       } else fallbackCopy(txt, done);
     });
 
+    /* 复制参数：型号 + 元信息 + 电气参数全表（从当前抽屉 DOM 抓，不重复拉数据） */
+    var copyAllBtn = document.getElementById("copyAllBtn");
+    if (copyAllBtn) copyAllBtn.addEventListener("click", function () {
+      var modelEl = document.getElementById("detailModel");
+      var metaEl = document.getElementById("detailMeta");
+      var head = "型号：" + ((modelEl && modelEl.textContent) || "").trim();
+      var meta = (metaEl && metaEl.innerText || "")
+        .split("\n").map(function (x) { return x.trim(); })
+        .filter(function (x) { return x; }).join("\n");
+      var rows = [].slice.call(document.querySelectorAll("#specTable tbody tr")).map(function (tr) {
+        var c = tr.querySelectorAll("td");
+        if (c.length !== 2) return "";
+        var k = (c[0].innerText || "").trim(), v = (c[1].innerText || "").trim();
+        return k && v ? k + "：" + v : "";
+      }).filter(function (x) { return x; });
+      var txt = head + (meta ? "\n" + meta : "") +
+        (rows.length ? "\n\n【电气参数】\n" + rows.join("\n") : "");
+      var done = function () {
+        copyAllBtn.textContent = "已复制";
+        setTimeout(function () { copyAllBtn.textContent = "复制参数"; }, 1400);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(txt).then(done).catch(function () { fallbackCopy(txt, done); });
+      } else fallbackCopy(txt, done);
+    });
+
     function fallbackCopy(txt, done) {
       var ta = document.createElement("textarea");
       ta.value = txt; ta.style.position = "fixed"; ta.style.opacity = "0";
@@ -809,6 +835,28 @@
   function pageShell(title, sub, body) {
     return '<div class="cat-hero"><h2>' + esc(title) + "</h2>" +
       (sub ? "<p>" + esc(sub) + "</p>" : "") + "</div>" + (body || "");
+  }
+
+  /* ---- 应用指南卡片（guides.json 由 scripts/build_guides.py 生成） ---- */
+  function guideListHtml(g) {
+    if (!g || !g.items || !g.items.length) return '<span class="muted">暂无指南</span>';
+    return g.items.map(function (x) {
+      return '<a class="guide-card" href="' + esc(x.url) + '">' +
+        '<b>' + esc(x.title) + '</b>' +
+        '<span>' + esc(x.desc ? x.desc.slice(0, 66) + (x.desc.length > 66 ? "…" : "") : "") + '</span>' +
+        '<em>' + x.scenes.length + ' 个场景 · ' + x.words + ' 字</em></a>';
+    }).join("");
+  }
+
+  function loadGuideList() {
+    var box = document.getElementById("guideBox");
+    if (!box) return;
+    if (PAGES.guides) { box.innerHTML = guideListHtml(PAGES.guides); return; }
+    loadJson("./data/guides.json").then(function (g) {
+      PAGES.guides = g;
+      var b2 = document.getElementById("guideBox");
+      if (b2) b2.innerHTML = guideListHtml(g);
+    });
   }
 
   /* ---- 选型表：电压/封装/产品线筛选 + CSV 导出（2026-11-06） ---- */
@@ -1114,6 +1162,9 @@
         'placeholder="按场景名 / 型号 / 功能筛选（如 USB、I2C、缓冲）" autocomplete="off">' +
         '<span id="appCount" class="count-pill">' + d.total + " 个场景</span></div></div>";
       html += '<div id="appGrid" class="app-grid">' + appCardsHtml(d.items, PENDING_APP_Q) + "</div>";
+      /* 应用指南（14 篇，来自 wiki applications，由 build_guides.py 渲染成 guides/ 静态页） */
+      html += '<h3 class="page-h3">应用指南</h3><div id="guideBox" class="guide-list">' +
+        '<span class="muted">加载中…</span></div>';
     }
 
     if (name === "docs") {
@@ -1290,6 +1341,7 @@
     }
 
     el.pageBody.innerHTML = html;
+    if (name === "apps") loadGuideList();
     window.scrollTo(0, 0);
   }
 
@@ -1409,6 +1461,10 @@
     document.querySelectorAll(".band-in a").forEach(function (a) {
       a.classList.toggle("on", a.getAttribute("data-page") === name);
     });
+    /* 深链接：切页写进 hash，便于把「选型表/应用/更新记录」的地址直接发人 */
+    if (window.__xx && window.__xx.setHash) {
+      window.__xx.setHash(name === "catalog" ? "" : "page=" + name);
+    }
     var onA = document.querySelector(".band-in a.on");
     if (onA && onA.scrollIntoView) onA.scrollIntoView({ inline: "nearest", block: "nearest" });
     /* 栏目页：面包屑给「返回产品目录」+ 当前栏目名 */
@@ -1426,7 +1482,44 @@
     if (el.searchMode) el.searchMode.classList.toggle("hidden", !searching);
   }
 
+  /* ---- 深链接（2026-11-06）：#model=型号 / #page=页面 / #scene=场景 ---- */
+  var HASH_GUARD = false;
+
+  function applyHash() {
+    var h = (location.hash || "").replace(/^#/, "");
+    if (!h) return;
+    var i = h.indexOf("=");
+    if (i < 0) return;
+    var k = h.slice(0, i), v = decodeURIComponent(h.slice(i + 1));
+    if (k === "page") { goPage(v); return; }
+    if (k === "model" && window.__xx && window.__xx.openByModel) { window.__xx.openByModel(v); return; }
+    if (k === "scene" && window.__xx && window.__xx.goAppScene) { window.__xx.goAppScene(v); return; }
+  }
+
+  function setHash(h) {
+    HASH_GUARD = true;
+    try {
+      if (history.replaceState) history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
+      else location.hash = h;
+    } catch (e) { /* 某些环境禁止改 URL，忽略 */ }
+    setTimeout(function () { HASH_GUARD = false; }, 0);
+  }
+
+  window.__xx = window.__xx || {};
+  window.__xx.setHash = setHash;
+  window.__xx.applyHash = applyHash;
+  window.addEventListener("hashchange", function () { if (!HASH_GUARD) applyHash(); });
+
   /* 跨文件桥接：详情抽屉里点「应用场景」可跳到应用页并筛出该场景 */
+  /* 首屏应用 hash：数据是异步加载的，重试直到 products 就绪 */
+  var _hashTries = 0;
+  (function tryHash() {
+    var ready = window.__xx && window.__xx.products && window.__xx.products.length;
+    if (ready || _hashTries > 25) { applyHash(); return; }
+    _hashTries++;
+    setTimeout(tryHash, 200);
+  })();
+
   window.__xx = window.__xx || {};
   var PENDING_APP_Q = "";
   window.__xx.goAppScene = function (sceneName) {

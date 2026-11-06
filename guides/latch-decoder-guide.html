@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>锁存、译码与片选应用指南 · 芯祥应用指南</title>
+<meta name="description" content="- 尾缀含义：D = SOP-20L / SOP-16L（体宽 7.5 mm / 3.9 mm），PW = TSSOP-20L / TSSOP-16L（体宽 4.4 mm），DB = SSOP-20L（体宽 5.3 mm">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .guide-wrap { max-width: 980px; margin: 0 auto; padding: 0 20px 64px; }
+  .guide-nav { position: sticky; top: 0; z-index: 10; padding: 12px 0; margin-bottom: 8px;
+    background: var(--bg, #fff); border-bottom: 1px solid var(--border, #e3e6e9); font-size: 13px; }
+  .guide-nav a { color: inherit; text-decoration: none; opacity: .75; }
+  .guide-nav a:hover { opacity: 1; text-decoration: underline; }
+  .guide-body { font-size: 14.5px; line-height: 1.75; }
+  .guide-body h1 { font-size: 24px; margin: 24px 0 8px; }
+  .guide-body h2 { font-size: 18px; margin: 28px 0 10px; padding-top: 8px; border-top: 1px solid var(--border, #eee); }
+  .guide-body h3 { font-size: 15.5px; margin: 20px 0 8px; }
+  .guide-body table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; display: block; overflow-x: auto; }
+  .guide-body th, .guide-body td { border: 1px solid var(--border, #e3e6e9); padding: 7px 10px; text-align: left; vertical-align: top; }
+  .guide-body th { background: rgba(0,0,0,.03); }
+  .guide-body code { background: rgba(0,0,0,.05); padding: 1px 5px; border-radius: 4px; font-size: .92em; }
+  .guide-body pre { background: rgba(0,0,0,.04); padding: 12px 14px; border-radius: 8px; overflow-x: auto; }
+  .guide-body blockquote { margin: 12px 0; padding: 8px 14px; border-left: 3px solid var(--accent, #888); background: rgba(0,0,0,.025); }
+  .guide-body ul, .guide-body ol { padding-left: 22px; }
+  :root[data-theme="dark"] .guide-body th, :root:not([data-theme="light"]) .guide-body th { background: rgba(255,255,255,.06); }
+  :root[data-theme="dark"] .guide-body code, :root:not([data-theme="light"]) .guide-body code,
+  :root[data-theme="dark"] .guide-body pre, :root:not([data-theme="light"]) .guide-body pre { background: rgba(255,255,255,.07); }
+</style>
+</head>
+<body>
+<div class="guide-wrap">
+  <nav class="guide-nav"><a href="../index.html">← 返回产品目录</a> · <a href="../index.html#page=apps">应用场景</a></nav>
+  <article class="guide-body">
+<h1 id="_1">锁存、译码与片选应用指南</h1>
+<blockquote>
+<p>四颗料干的是四件事：<strong>573 是"门"</strong>（LE 高就透明）、<strong>574 是"快门"</strong>（CP 上升沿拍一张）、<strong>259 是"8 个抽屉 + 一把钥匙"</strong>（3 根地址选一路）、<strong>138 是"分线器"</strong>（3 根地址分 8 路片选，<strong>输出低有效</strong>）。
+现场翻车基本只有两类：<strong>把 573 的 LE 当时钟用</strong>（或把 574 的 CP 当电平使能），以及<strong>忘了 138 的输出是低有效</strong>。
+本文覆盖 4 个型号组、18 个订购尾缀（573 四个、574 六个、259 四个、138 四个）；电气值全部取自实体页，未做换算。</p>
+</blockquote>
+<h2 id="1">1. 四颗料速查</h2>
+<table>
+<thead>
+<tr>
+<th>型号（带尾缀）</th>
+<th>是什么</th>
+<th>控制语义</th>
+<th>关键电气（实体页）</th>
+<th>封装</th>
+<th>一句话定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EM74HC573D</code> / <code>EM74HC573PW</code>（<code>EM74HCT573D</code> / <code>PW</code> 同档）</td>
+<td>8 位 D 透明锁存，三态输出</td>
+<td><strong>LE 高 = 透明（Q 跟 D）；LE 低 = 锁存</strong>；OE 高 = 高阻</td>
+<td>I_O ±35 mA、P_tot 500 mW、4.5 V 下 0.33 V @6 mA</td>
+<td>SOP-20L / TSSOP-20L</td>
+<td>总线/端口的"数据保持"</td>
+</tr>
+<tr>
+<td><code>EM74HC574D</code> / <code>PW</code> / <code>DB</code>（<code>EM74HCT574D</code> / <code>PW</code> / <code>DB</code> 同档）</td>
+<td>8 位 D 边沿触发触发器，三态输出</td>
+<td><strong>CP 上升沿采样一次</strong>；OE 高 = 高阻，且不影响内部状态</td>
+<td>同 573</td>
+<td>SOP-20L / TSSOP-20L / SSOP-20L</td>
+<td>时钟沿抓数、抗总线毛刺</td>
+</tr>
+<tr>
+<td><code>EM74HC259D</code> / <code>PW</code>（<code>EM74HCT259D</code> / <code>PW</code> 同档）</td>
+<td>8 位可寻址锁存（3→8 译码 + 8 锁存 + 公共复位）</td>
+<td>A0–A2 选中一路，LE 高时被选中那路跟随 D；MR 低全清</td>
+<td>I_O ±25 mA、4.5 V 下 0.33 V @4 mA、<strong>无三态</strong></td>
+<td>SOP-16L / TSSOP-16L</td>
+<td>省线的一路一路改</td>
+</tr>
+<tr>
+<td><code>EM74HC138D</code> / <code>PW</code>（<code>EM74HCT138D</code> / <code>PW</code> 同档）</td>
+<td>3→8 译码/解复用，<strong>输出低有效</strong></td>
+<td>E1、E2 为低且 E3 为高才译码，否则 8 路全高</td>
+<td>I_O ±25 mA、4.5 V 下 0.33 V @4 mA</td>
+<td>SOP-16L / TSSOP-16L</td>
+<td>片选 / 地址译码</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>尾缀含义：<code>D</code> = SOP-20L / SOP-16L（体宽 7.5 mm / 3.9 mm），<code>PW</code> = TSSOP-20L / TSSOP-16L（体宽 4.4 mm），<code>DB</code> = SSOP-20L（体宽 5.3 mm）。</li>
+<li><strong>573 没有 <code>DB</code> 尾缀</strong>（只有 D 与 PW），574 才有。板子上是 SSOP-20L 焊盘时不能直接换 573。</li>
+<li><code>HC</code> 尾缀 2.0–6.0 V，<code>HCT</code> 尾缀 4.5–5.5 V（TTL 阈值）。<strong>3.3 V MCU 驱动 5 V 供电的片子，选 HCT</strong>：HCT 的 V_IH 是 2.0 V，HC 的输入阈值随 V_CC 走（实体页给的是 V_CC = 2.0 V 时 1.5 V），5 V 下余量不够。</li>
+</ul>
+<h3 id="11">1.1 电气边界对照（全部引自实体页静态/绝对最大额定值表）</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>573 / 574</th>
+<th>259</th>
+<th>138</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HC 供电 / HCT 供电</td>
+<td>2.0–6.0 V / 4.5–5.5 V</td>
+<td>2.0–6.0 V / 4.5–5.5 V</td>
+<td>2.0–6.0 V / 4.5–5.5 V</td>
+</tr>
+<tr>
+<td>V_IH（HC @2.0 V / HCT @4.5–5.5 V）</td>
+<td>1.5 V / 2.0 V</td>
+<td>1.5 V / 2.0 V</td>
+<td>1.5 V / 2.0 V</td>
+</tr>
+<tr>
+<td>V_IL（HC / HCT）</td>
+<td>0.5 V / 0.8 V</td>
+<td>0.5 V / 0.8 V</td>
+<td>0.5 V / 0.8 V</td>
+</tr>
+<tr>
+<td>V_OH / V_OL @V_CC = 4.5 V</td>
+<td>3.84 V @−6 mA / 0.33 V @6 mA</td>
+<td>3.84 V @−4 mA / 0.33 V @4 mA</td>
+<td>同 259</td>
+</tr>
+<tr>
+<td>I_O 绝对最大</td>
+<td>±35 mA</td>
+<td>±25 mA</td>
+<td>±25 mA</td>
+</tr>
+<tr>
+<td>I_CC 最大</td>
+<td>70 mA</td>
+<td>70 mA</td>
+<td>50 mA</td>
+</tr>
+<tr>
+<td>P_tot</td>
+<td>500 mW</td>
+<td>500 mW</td>
+<td>500 mW</td>
+</tr>
+<tr>
+<td>C_I</td>
+<td>3.5 pF</td>
+<td>6.5 pF</td>
+<td>4.0 pF</td>
+</tr>
+<tr>
+<td>三态输出</td>
+<td>有（OE 控制）</td>
+<td>无</td>
+<td>无（常态输出）</td>
+</tr>
+<tr>
+<td>HCT 每脚附加 I_CC</td>
+<td>450 µA</td>
+<td>450 µA</td>
+<td>400 µA（25 °C 档）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>6 mA 与 4 mA 是"测试条件"，不是"能力上限"</strong>：573/574 的 V_OL 指标在 6 mA 下给出，259/138 在 4 mA 下给出。I_O ±35 mA / ±25 mA 是绝对最大额定值，是"不能超过"，不是"可以常年跑"。</p>
+</blockquote>
+<h2 id="2-573-574">2. 573 与 574：同封装同引脚，语义完全不同</h2>
+<h3 id="21">2.1 一句话区别</h3>
+<ul>
+<li><strong>573（<code>EM74HC573D</code>）= 电平敏感</strong>：LE 高的一整段时间里，Q 一直等于 D，D 变几次 Q 就变几次（含毛刺）；LE 从高变低的那一刻，锁住当时的 D。</li>
+<li><strong>574（<code>EM74HC574D</code>）= 边沿敏感</strong>：只在 CP 由低变高的那一瞬采样 D，其余时间（包括 CP 一直保持高）Q 一律不动。</li>
+</ul>
+<h3 id="22">2.2 波形（示意，非按比例）</h3>
+<p><strong>573 透明锁存 —— LE 是"门"，不是"时钟"</strong></p>
+<pre><code class="language-text">                      ┌── LE 下降沿：锁住此刻的 D
+LE   ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\________________________________
+D    ──1────2────3────4────5────6────7────8────
+Q    ──1────2────3────4────4────4────4────4────
+     └──── LE = H：Q = D，逐个跟随 ────┘└─ LE = L：冻结 ─┘
+</code></pre>
+<p><strong>574 边沿触发 —— CP 是"快门"，只在 ↑ 拍一张</strong></p>
+<pre><code class="language-text">              ↑           ↑        ← CP 上升沿采样
+CP ______________/‾‾‾‾‾\_____/‾‾‾‾‾\___________
+D  ────────1─────2─────3─────4─────5─────6─────
+Q  ────────1─────2─────2─────4─────4─────4─────
+   └ 沿与沿之间 D 从 2 变到 3，Q 仍是 2 ┘
+</code></pre>
+<h3 id="23-573574">2.3 时序参数对准谁（573/574 实体页动态特性表）</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>573</th>
+<th>574</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>传输延迟 t_pd</td>
+<td>Dn → Qn（Fig. 6）</td>
+<td><strong>CP → Qn</strong>（Fig. 6）</td>
+</tr>
+<tr>
+<td>建立/保持 t_SU / t_h</td>
+<td>Dn 相对 <strong>LE</strong>（Fig. 9）</td>
+<td>Dn 相对 <strong>CP</strong>（Fig. 7）</td>
+</tr>
+<tr>
+<td>脉宽 t_W</td>
+<td><strong>LE 高电平</strong>宽度</td>
+<td><strong>CP 高或低</strong>宽度</td>
+</tr>
+<tr>
+<td>使能/禁止 t_en / t_dis</td>
+<td>OE → Qn（Fig. 8）</td>
+<td>OE → Qn（Fig. 8）</td>
+</tr>
+<tr>
+<td>输出跳变 t_t</td>
+<td>Qn</td>
+<td>Qn</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>数值查各自规格书动态表；<strong>建立/保持时间是相对"哪个沿"</strong>才是选型时真正要看的——同一个 t_SU，573 是相对 LE 下降沿，574 是相对 CP 上升沿。</p>
+</blockquote>
+<h3 id="24">2.4 引脚兼容，但不是"可以直接换逻辑"</h3>
+<p>两者同为 20 脚：D0–D7 在一侧、Q0–Q7 在另一侧、<strong>OE 在同一脚位</strong>、<strong>LE / CP 占同一个脚位（第 11 脚）</strong>、V_CC/GND 相同。所以：</p>
+<ul>
+<li><strong>PCB 可以不改</strong>，换料只在 BOM 上换尾缀；</li>
+<li><strong>固件不能不改</strong>。573 的位置换成 574，原来"LE 拉高做直通"的写法立刻失效：CP 保持高电平期间 D 怎么变都不响应，只在下一个上升沿才更新 → 现象是"写入丢拍 / 少写一次 / 上电后一直是旧值"。</li>
+<li>反向换（574 → 573）更危险：原本靠边沿隔离的总线毛刺，会全部穿透到输出。</li>
+</ul>
+<blockquote>
+<p>注意：实体页 <code>em74hc574-em74hct574</code> 的「概述」首句沿用了 573 的措辞（"transparent latches"），但同段功能描述写的是 "the flip-flops will store the state ... on the LOW-to-HIGH clock (CP) transition"，动态表给的也是 <code>t_SU/t_h: Dn to CP</code>、<code>t_W: CP HIGH or LOW</code>。<strong>以功能描述和动态表为准：574 是边沿触发。</strong></p>
+</blockquote>
+<h3 id="25">2.5 什么时候选谁</h3>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>选</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>地址/数据复用总线解复用，数据在整个写周期有效</td>
+<td>573</td>
+<td>LE 当门控，窗口内直通，落沿锁存</td>
+</tr>
+<tr>
+<td>数据是"脉冲式"出现，或总线上有毛刺</td>
+<td>574</td>
+<td>只在沿上采样，毛刺不进门</td>
+</tr>
+<tr>
+<td>多片挂同一条总线，按地址分时写</td>
+<td>574</td>
+<td>边沿定位明确，不会因地址切换误锁</td>
+</tr>
+<tr>
+<td>需要"写进去立刻从 Q 看到"（如驱动数码管段码）</td>
+<td>573</td>
+<td>透明期即可见，无一拍延迟</td>
+</tr>
+<tr>
+<td>需要"上电后第一次写之前保持未知值不动作"</td>
+<td>574</td>
+<td>没有沿就不动（但仍需初始化写一次）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-259-3-8">3. 259：用 3 根地址线换 8 路保持</h2>
+<h3 id="31">3.1 结构</h3>
+<p><code>EM74HC259D</code> 内部 = <strong>3→8 译码器 + 8 个独立锁存 + 公共复位（MR）</strong>，16 脚：8 路输出 + V_CC/GND 已占 10 脚，剩下 6 脚正好是 D、LE、MR 和 3 位地址。</p>
+<blockquote>
+<p>实体页「概述」写作 "inputs A0 to A3"，但同页「主要特性」写的是 "Useful as a 3-to-8 active HIGH decoder"，且 16 脚封装的引脚预算只够 3 位地址——<strong>按 A0–A2 三位设计</strong>，概述里的 A3 是笔误，别照抄到原理图上。</p>
+</blockquote>
+<h3 id="32">3.2 四种工作模式（实体页概述原文归纳）</h3>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>行为</th>
+<th>典型用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>地址锁存</td>
+<td>D 写入 A0–A2 选中的那一路；<strong>被选中的跟随 D，未选中的保持原值</strong></td>
+<td>一路一路改状态</td>
+</tr>
+<tr>
+<td>存储（memory）</td>
+<td>全部保持，D 与地址都不影响</td>
+<td>写完就"冻结"整个面板</td>
+</tr>
+<tr>
+<td>3→8 译码 / 解复用</td>
+<td>被选中的输出跟随 D，其余全部为低</td>
+<td>当<strong>高有效</strong>译码器用（D 恒高），或做 1→8 解复用</td>
+</tr>
+<tr>
+<td>复位</td>
+<td>MR 拉低，8 路全部强制为低</td>
+<td>上电初始化、急停全关</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-8-16-32">3.3 省线账（同样做 8 路/16 路/32 路"保持型输出"）</h3>
+<table>
+<thead>
+<tr>
+<th>方案</th>
+<th>8 路</th>
+<th>16 路</th>
+<th>32 路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>573 方案（数据总线共用，每片一根 LE）</td>
+<td>8 D + 1 LE = <strong>9 根</strong></td>
+<td>8 D + 2 LE = 10 根</td>
+<td>8 D + 4 LE = 12 根</td>
+</tr>
+<tr>
+<td>259 方案（D 与地址共用，每片一根 LE）</td>
+<td>1 D + 3 A + 1 LE = <strong>5 根</strong>（+MR 可共用）</td>
+<td>1 D + 3 A + 2 LE = 6 根</td>
+<td>1 D + 3 A + 4 LE = 8 根</td>
+</tr>
+</tbody>
+</table>
+<p>省线的本质：<strong>573 是"8 位一起刷新"，259 是"点名改一个"</strong>。要改的位越稀疏，259 越省；要整字节刷新，573 更快（一次写 8 位，259 要 8 次地址循环）。</p>
+<h3 id="34">3.4 三个代价（选型前必须认）</h3>
+<ol>
+<li><strong>没有三态、没有 OE</strong>：259 的输出只能驱动负载，不能挂到共享总线上当端口；要"可读回"的端口只能用 573/574。</li>
+<li><strong>驱动弱一档</strong>：4.5 V 下 V_OL 指标按 4 mA 给（573/574 是 6 mA），I_O 绝对最大 ±25 mA（573/574 ±35 mA）。</li>
+<li><strong>写入是串行的</strong>：改 8 路要 8 个地址周期；对时间敏感的并行刷新（如 8 位并行数据）不合适。</li>
+</ol>
+<blockquote>
+<p>附带能力：259 具备 <strong>serial-to-parallel</strong>（实体页特性表）——LE 保持高、地址 0→7 递增、D 上一位一位送，就能用 3 根线（D/LE/地址）当慢速串入并出用；地址可以用 MCU 的 3 根 GPIO 或小计数器产生。</p>
+</blockquote>
+<h2 id="4-13838">4. 138：3→8 片选，输出低有效</h2>
+<h3 id="41">4.1 必须先记住的一件事</h3>
+<p><strong><code>EM74HC138D</code> 的 8 个输出是低有效（active LOW）、互斥的。</strong> 平时 8 路全是高电平，只有"被地址选中 + 三个使能都满足"的那一路才变低。</p>
+<ul>
+<li>选中 = 输出 <strong>LOW</strong>，不是 HIGH；</li>
+<li>未选中/未使能 = 输出 <strong>HIGH</strong>；</li>
+<li>所以它天然适配<strong>低有效片选（CS#、CE#、WE#）</strong>，接高有效使能必须加反相器。</li>
+</ul>
+<h3 id="42-e1e2-e3">4.2 真值表（E1、E2 低有效，E3 高有效）</h3>
+<table>
+<thead>
+<tr>
+<th>E1</th>
+<th>E2</th>
+<th>E3</th>
+<th>A2</th>
+<th>A1</th>
+<th>A0</th>
+<th>拉低的输出</th>
+<th>其余 7 路</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>L</td>
+<td>L</td>
+<td>H</td>
+<td>L</td>
+<td>L</td>
+<td>L</td>
+<td><strong>Y0</strong></td>
+<td>H</td>
+</tr>
+<tr>
+<td>L</td>
+<td>L</td>
+<td>H</td>
+<td>L</td>
+<td>L</td>
+<td>H</td>
+<td><strong>Y1</strong></td>
+<td>H</td>
+</tr>
+<tr>
+<td>L</td>
+<td>L</td>
+<td>H</td>
+<td>L</td>
+<td>H</td>
+<td>L</td>
+<td><strong>Y2</strong></td>
+<td>H</td>
+</tr>
+<tr>
+<td>L</td>
+<td>L</td>
+<td>H</td>
+<td>L</td>
+<td>H</td>
+<td>H</td>
+<td><strong>Y3</strong></td>
+<td>H</td>
+</tr>
+<tr>
+<td>L</td>
+<td>L</td>
+<td>H</td>
+<td>H</td>
+<td>L</td>
+<td>L</td>
+<td><strong>Y4</strong></td>
+<td>H</td>
+</tr>
+<tr>
+<td>L</td>
+<td>L</td>
+<td>H</td>
+<td>H</td>
+<td>L</td>
+<td>H</td>
+<td><strong>Y5</strong></td>
+<td>H</td>
+</tr>
+<tr>
+<td>L</td>
+<td>L</td>
+<td>H</td>
+<td>H</td>
+<td>H</td>
+<td>L</td>
+<td><strong>Y6</strong></td>
+<td>H</td>
+</tr>
+<tr>
+<td>L</td>
+<td>L</td>
+<td>H</td>
+<td>H</td>
+<td>H</td>
+<td>H</td>
+<td><strong>Y7</strong></td>
+<td>H</td>
+</tr>
+<tr>
+<td><strong>H</strong></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>无</td>
+<td>全 H</td>
+</tr>
+<tr>
+<td>X</td>
+<td><strong>H</strong></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>无</td>
+<td>全 H</td>
+</tr>
+<tr>
+<td>X</td>
+<td>X</td>
+<td><strong>L</strong></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>无</td>
+<td>全 H</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>使能没满足时不是"输出不确定"，而是<strong>8 路全部为高 = 一个都不选中</strong>。所以悬空 E1/E2（可能被拉低）或把 E3 接地（永远不满足）的结果都是"片选全无"，现象是"所有从机都读不到"。</p>
+</blockquote>
+<h3 id="43-bank">4.3 级联扩 bank</h3>
+<p><strong>1-of-32（实体页原文）</strong>：4 片 138 + 1 个反相器，5 根地址线（A0–A4）——利用 E1/E2 低有效、E3 高有效的组合做片间选择。</p>
+<p><strong>1-of-64（本文推荐画法）</strong>：一级 1 片做 bank 译码 + 每个 bank 1 片做片内译码，共 9 片、6 根地址线。</p>
+<pre><code class="language-text">A3–A5 ──► [138 #0]  bank 译码（E1/E2 = GND，E3 = VCC）
+             │
+             ├─ Y0 ──► E1 of [138 #1] ──► Y0..Y7 = bank0 的 8 个低有效片选
+             ├─ Y1 ──► E1 of [138 #2] ──► bank1 的 8 个低有效片选
+             ├─ ...
+             └─ Y7 ──► E1 of [138 #8] ──► bank7 的 8 个低有效片选
+
+A0–A2 ──────────────► 全部 9 片的 A0–A2（并联，9 片一起译码）
+每片 bank：E2 = GND，E3 = VCC；上级 Yn 低有效，正好直连下一级的低有效 E1
+</code></pre>
+<ul>
+<li><strong>为什么低有效反而好用</strong>：上一级 138 的 Y 输出是低有效，正好直接驱动下一级 138 的 E1/E2（也是低有效），<strong>一根线不用加反相器</strong>；如果下一级的使能是高有效（E3），就必须加反相器。</li>
+<li>8 片 bank × 8 路 = 64 路片选，只花 6 根地址 + 9 片 138；MCU 侧不增加引脚。</li>
+</ul>
+<h3 id="44-259">4.4 与 259 的极性正好相反</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><code>EM74HC138D</code></th>
+<th><code>EM74HC259D</code>（译码模式）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>选中输出电平</td>
+<td><strong>低（LOW）</strong></td>
+<td><strong>高（HIGH）</strong></td>
+</tr>
+<tr>
+<td>未选中输出</td>
+<td>全高</td>
+<td>全低</td>
+</tr>
+<tr>
+<td>是否带锁存</td>
+<td>无（纯组合）</td>
+<td>有（8 个锁存）</td>
+</tr>
+<tr>
+<td>用途</td>
+<td>片选、地址译码</td>
+<td>输出扩展、状态保持</td>
+</tr>
+</tbody>
+</table>
+<p>两者不能互换：拿 259 当 138 用，未选中的 7 路是低不是高；拿 138 当 259 用，地址一变输出就跟着变，没有"保持"。</p>
+<h3 id="45-138">4.5 片选毛刺：138 的输出不能直接当写脉冲</h3>
+<p>地址切换时，A0–A2 的三位不会同时到达，138 的输出会有一段"先选错、再选对"的过渡（各输出 t_pd 不完全相等）。因此：</p>
+<ul>
+<li><strong>不要</strong>把 <code>Yn</code> 直接接到 573 的 LE 或 574 的 CP 上当写信号——过渡期会产生一个错误的窄脉冲，把数据写进错误的从机；</li>
+<li><strong>要</strong>把 <code>Yn</code> 与写选通（WR#，低有效）做"与"：<code>Yn</code> 和 <code>WR#</code> 同时有效才算一次写。用低有效逻辑时就是 <strong>NOR（如 74HC02）</strong>：两路都低 → 输出高 → 正好是 573 需要的高有效 LE 窗口；</li>
+<li>只读的片选（CS# 接存储器/ADC）可以直接用 <code>Yn</code>，因为读操作本身由 RD# 再限定一次。</li>
+</ul>
+<h2 id="5">5. 三个典型场景</h2>
+<h3 id="51-led-573-574">5.1 LED / 继电器驱动（573 或 574 做输出口）</h3>
+<pre><code class="language-text">MCU D0–D7 ──► 573/574 D0–D7
+              Q0–Q7 ──► R(1 kΩ) ──► NPN 基极 ──► 继电器线圈（并续流二极管）
+              LE/CP ◄── 写选通（见 4.5，务必与地址译码&quot;与&quot;过）
+              OE    ── GND（常使能）
+</code></pre>
+<ul>
+<li><strong>LED 直驱</strong>：单路按 6 mA / 4.5 V（V_OL 0.33 V）算限流电阻；整片 8 路全亮要按 I_CC 最大 70 mA、P_tot 500 mW 复核。</li>
+<li><strong>继电器/蜂鸣器</strong>：线圈电流远超 6 mA，必须加三极管/MOS + 续流二极管；573/574 只出基极电流。</li>
+<li><strong>上电态</strong>：573/574 规格书没有给上电复位值或上电默认电平 → <strong>按"不确定"设计</strong>，MCU 初始化时必须先写一次已知值（通常写 0），不能靠"上电全 0"。</li>
+<li>静态显示（写完不动）用 573 更省事（LE 直接当 WR）；有毛刺的总线或需要严格时序对齐时用 574。</li>
+</ul>
+<h3 id="52">5.2 总线数据保持（地址/数据复用、最后写入值保持）</h3>
+<pre><code class="language-text">MCU 数据总线 D0–D7 ──┬──► 573 D0–D7 ──► Q 到外设/显示/驱动
+                     └──► 574 D0–D7 ──► Q 到另一组负载
+573：LE = 地址译码 &amp; WR（高有效窗口，窗口必须完整覆盖数据有效期）
+574：CP = 写选通上升沿（D 必须在沿前 t_SU 稳定、沿后保持 t_h）
+两者 OE 高 = 高阻，可把不用的那组从总线上&quot;摘下来&quot;
+</code></pre>
+<ul>
+<li><strong>573 的坑</strong>：LE 窗口如果开到了地址阶段，锁进去的就是地址而不是数据；窗口如果太窄（短于数据建立时间），锁到的是中间值。LE 必须在数据有效期内保持高、在数据撤走前落下。</li>
+<li><strong>574 的坑</strong>：CP 上升沿必须落在数据有效窗口内。用 WR 的下降沿当时钟沿时，要确认数据已经先于 WR 有效；否则把写选通反相后再接 CP，让上升沿落在写结束、数据仍有效的时刻。</li>
+<li>多片共享总线时靠 OE 分区：573/574 的 I_OZ 在 5.5 V、85 °C 下为 ±5 µA，十几片并联的漏电流仍可忽略；但高阻节点要有确定电平（上拉或总线保持），否则 CMOS 输入会漂。</li>
+</ul>
+<h3 id="53-138-573574">5.3 多从机片选（138 分地址，573/574 收数据）</h3>
+<pre><code class="language-text">A0–A2 ──► 138 A0–A2 ；E1、E2 ── GND ；E3 ── VCC（或高位地址做 bank）
+Y0 ──► 从机0 CS#（低有效）
+Y1 ──► 从机1 CS#
+...
+Yn ──┐
+WR# ─┴──► NOR(74HC02) ──► 573 的 LE（高有效窗口）
+                       └─► 574 的 CP（上升沿）
+</code></pre>
+<ul>
+<li><strong>从机 CS 是高有效</strong>：<code>Yn</code> 必须经反相器，不能直连。直连的结果是"平时全选中、选中时全放开"，表现为总线冲突或全部写不进。</li>
+<li><strong>注意极性别接反</strong>：<code>Yn</code> 平时是高，直接接 573 的 LE 会变成"平时透明、选中时锁存"——正好相反。这就是 4.5 要用 NOR 门控的原因。</li>
+<li>8 个从机以上就按 4.3 扩 bank，不要用 GPIO 硬撑片选。</li>
+</ul>
+<h2 id="6">6. 常见误区</h2>
+<ol>
+<li><strong>把 573 当 574 用</strong>：给 LE 一个窄脉冲当时钟，但数据在脉冲期间还在变 → 锁到中间值；或者反过来把 LE 长期拉高当"直通"，总线上的每个毛刺都进了锁存器。<strong>573 要的是"窗口"，不是"沿"。</strong></li>
+<li><strong>把 574 当 573 用</strong>：以为 CP 拉高就透明，结果 CP 保持高电平期间 D 变化完全不响应，只在下一个上升沿更新 → "少写一拍""写不进去""上电后一直旧值"。</li>
+<li><strong>138 输出当高有效使能</strong>：<code>Yn</code> 平时高、选中低。接高有效 CE/LE 时极性全反——未选中反而使能，选中反而关断。现象是"所有从机同时被写"或"一个都写不进"。</li>
+<li><strong>138 的使能接错</strong>：E1/E2 必须为低、E3 必须为高才译码。E3 接地 → 8 路永远全高，片选全无；E1/E2 悬空 → 电平不确定，可能长期被使能，表现为"多个从机同时被选中、总线打架"。<strong>三个使能脚一个都不许悬空。</strong></li>
+<li><strong>拿 138 的 Y 直接驱动 573 的 LE</strong>：选中时 LE 变低 = 锁存，未选中时 LE 高 = 透明，逻辑正好反了。必须经 NOR/OR 与 WR 合成。</li>
+<li><strong>拿 259 当 573 用</strong>：259 只有一路 D + 3 位地址，没有 D0–D7 并行口，也没有三态 OE。想"一次写 8 位"做不到，只能 8 次地址循环。</li>
+<li><strong>259 按 4 位地址画图</strong>：8 路只需 A0–A2（16 脚封装的引脚预算也只够 3 位）。多接的那一位是无效的，白占一根 IO。</li>
+<li><strong>假设上电默认态</strong>：573/574/259 的规格书都没有给上电复位值/上电电平，必须由 MCU 初始化写一次。</li>
+<li><strong>拿 573/574 直驱继电器线圈</strong>：I_O ±35 mA 是绝对最大额定值，不是工作电流；线圈要加驱动管和续流二极管。</li>
+<li><strong>3.3 V MCU 直驱 5 V 供电的 HC 版</strong>：HC 的 V_IH 随 V_CC 升高，5 V 下 3.3 V 高电平余量不足 → 选 HCT 尾缀（V_IH = 2.0 V）。</li>
+</ol>
+<h2 id="7">7. 核对清单</h2>
+<ul>
+<li>[ ] 要"电平透明"还是"边沿采样"（573 vs 574）——<strong>决定了 LE/CP 的驱动方式</strong></li>
+<li>[ ] 板子焊盘是 SOP-20L / TSSOP-20L 还是 SSOP-20L（SSOP-20L 只有 574 的 <code>DB</code> 尾缀）</li>
+<li>[ ] 573/574 换料时，固件里的 LE/CP 语义是否同步改过</li>
+<li>[ ] 是"整字节刷新"还是"点名改一位"（前者 573/574，后者 259）</li>
+<li>[ ] 输出要不要挂共享总线 / 要不要读回（要 → 573/574；不要 → 259）</li>
+<li>[ ] 138 的 8 个输出是否接到了<strong>低有效</strong>的 CS#/CE#；高有效使能是否加了反相器</li>
+<li>[ ] 138 的 E1、E2 是否确定接地，E3 是否确定接 V_CC（不允许悬空）</li>
+<li>[ ] 138 的 <code>Yn</code> 是否与 WR# 做了门控（不能直接当 LE/CP）</li>
+<li>[ ] 片选数量与 bank 方案（≤8 一片；32 用 4 片 + 反相器；64 用 9 片 + 6 根地址）</li>
+<li>[ ] 供电域：HC 2.0–6.0 V / HCT 4.5–5.5 V；3.3 V 驱动 5 V 系统是否已选 HCT</li>
+<li>[ ] 负载电流是否按 6 mA（573/574）或 4 mA（259/138）核算，整片 I_CC / P_tot 是否复核</li>
+<li>[ ] 上电初始化是否写了确定值（不依赖"上电全 0"）</li>
+<li>[ ] 时序：t_SU / t_h 是否对准了正确的沿（573 对 LE，574 对 CP），数值查各自规格书动态表</li>
+</ul>
+<h2 id="8">8. 来源</h2>
+<ul>
+<li>实体页：[[em74hc573-em74hct573]]、[[em74hc574-em74hct574]]、[[em74hc259-em74hct259]]、[[em74hc138-em74hct138]]</li>
+<li>概念页：[[latch]]、[[flip-flop]]、[[decoder]]</li>
+<li>相关指南：[[shift-register-io-guide]]（595/165 的串行扩展，与本篇的并行扩展互补）</li>
+<li>原始规格书：<code>raw/datasheets/EM74HC_HCT573_Product_DS_V1.0.json</code>、<code>EM74HC_HCT574_Product_DS_V1.0.json</code>、<code>EM74HC_HCT259_Product_DS_V1.0.json</code>、<code>EM74HC_HCT138_Product_DS_V1.0.json</code></li>
+</ul>
+<blockquote>
+<p>本文为应用指导，不替代数据手册。所有电气值取自对应实体页（逐字自 PDF，无换算）；时序数值、建立/保持时间与绝对最大额定值以规格书原表为准。</p>
+</blockquote>
+  </article>
+</div>
+</body>
+</html>

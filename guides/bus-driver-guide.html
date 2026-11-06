@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>总线驱动与缓冲选型应用指南 · 芯祥应用指南</title>
+<meta name="description" content="三条读表规则：">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .guide-wrap { max-width: 980px; margin: 0 auto; padding: 0 20px 64px; }
+  .guide-nav { position: sticky; top: 0; z-index: 10; padding: 12px 0; margin-bottom: 8px;
+    background: var(--bg, #fff); border-bottom: 1px solid var(--border, #e3e6e9); font-size: 13px; }
+  .guide-nav a { color: inherit; text-decoration: none; opacity: .75; }
+  .guide-nav a:hover { opacity: 1; text-decoration: underline; }
+  .guide-body { font-size: 14.5px; line-height: 1.75; }
+  .guide-body h1 { font-size: 24px; margin: 24px 0 8px; }
+  .guide-body h2 { font-size: 18px; margin: 28px 0 10px; padding-top: 8px; border-top: 1px solid var(--border, #eee); }
+  .guide-body h3 { font-size: 15.5px; margin: 20px 0 8px; }
+  .guide-body table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; display: block; overflow-x: auto; }
+  .guide-body th, .guide-body td { border: 1px solid var(--border, #e3e6e9); padding: 7px 10px; text-align: left; vertical-align: top; }
+  .guide-body th { background: rgba(0,0,0,.03); }
+  .guide-body code { background: rgba(0,0,0,.05); padding: 1px 5px; border-radius: 4px; font-size: .92em; }
+  .guide-body pre { background: rgba(0,0,0,.04); padding: 12px 14px; border-radius: 8px; overflow-x: auto; }
+  .guide-body blockquote { margin: 12px 0; padding: 8px 14px; border-left: 3px solid var(--accent, #888); background: rgba(0,0,0,.025); }
+  .guide-body ul, .guide-body ol { padding-left: 22px; }
+  :root[data-theme="dark"] .guide-body th, :root:not([data-theme="light"]) .guide-body th { background: rgba(255,255,255,.06); }
+  :root[data-theme="dark"] .guide-body code, :root:not([data-theme="light"]) .guide-body code,
+  :root[data-theme="dark"] .guide-body pre, :root:not([data-theme="light"]) .guide-body pre { background: rgba(255,255,255,.07); }
+</style>
+</head>
+<body>
+<div class="guide-wrap">
+  <nav class="guide-nav"><a href="../index.html">← 返回产品目录</a> · <a href="../index.html#page=apps">应用场景</a></nav>
+  <article class="guide-body">
+<h1 id="_1">总线驱动与缓冲选型应用指南</h1>
+<blockquote>
+<p>缓冲器选型失败，九成不是「选错功能」，而是<strong>把 6 mA 的件当 24 mA 用</strong>、<strong>把 24 mA 当成同一个 VOH</strong>、<strong>把 OE 悬空</strong>。
+本文覆盖三条路线：<strong>单向缓冲/线驱动</strong>（541/540）、<strong>双向收发</strong>（245A/8T245/4245A）、<strong>独立通道缓冲</strong>（125A/126A）。
+所有数值取自芯祥实体页；实体页没有的，一律写「以规格书为准」，不补、不推、不换算。</p>
+</blockquote>
+<h2 id="1">1. 选型速查表</h2>
+<table>
+<thead>
+<tr>
+<th>型号（带封装尾缀）</th>
+<th>位宽</th>
+<th>方向控制</th>
+<th>三态</th>
+<th>驱动能力（−40~+85 ℃）</th>
+<th>封装</th>
+<th>定位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EM74LVC245AD</code> / <code>EM74LVC245APW</code></td>
+<td>8</td>
+<td>DIR + OE</td>
+<td>是</td>
+<td>±24 mA @3.0 V，VOH ≥2.4 V</td>
+<td>SOP-20L / TSSOP-20L</td>
+<td>单电源双向总线，板内首选</td>
+</tr>
+<tr>
+<td><code>EM74LVCH245AD</code> / <code>EM74LVCH245APW</code></td>
+<td>8</td>
+<td>DIR + OE</td>
+<td>是</td>
+<td>同上 + 总线保持</td>
+<td>SOP-20L / TSSOP-20L</td>
+<td>总线会浮空、不想加外部上下拉</td>
+</tr>
+<tr>
+<td><code>EM74LVC541AD</code> / <code>EM74LVC541APW</code></td>
+<td>8</td>
+<td>单向</td>
+<td>OE1 / OE2</td>
+<td>±24 mA @3.0 V，VOH ≥2.2 V</td>
+<td>SOP-20L / TSSOP-20L</td>
+<td>有 IOFF 的单向驱动</td>
+</tr>
+<tr>
+<td><code>EM74HC541D</code> / <code>EM74HC541PW</code></td>
+<td>8</td>
+<td>单向</td>
+<td>OE1 / OE2</td>
+<td>±6 mA @4.5 V，VOH ≥3.84 V</td>
+<td>SOP-20L / TSSOP-20L</td>
+<td>2.0–6.0 V 宽压、CMOS 输入</td>
+</tr>
+<tr>
+<td><code>EM74HCT541D</code> / <code>EM74HCT541PW</code></td>
+<td>8</td>
+<td>单向</td>
+<td>OE1 / OE2</td>
+<td>±6 mA @4.5 V，VOH ≥3.84 V</td>
+<td>SOP-20L / TSSOP-20L</td>
+<td>5 V 系统直收 3.3 V（VIH 2.1 V）</td>
+</tr>
+<tr>
+<td><code>EM74HC540D</code> / <code>EM74HC540PW</code></td>
+<td>8（反相）</td>
+<td>单向</td>
+<td>OE1 / OE2</td>
+<td>±6 mA @4.5 V</td>
+<td>SOP-20L / TSSOP-20L</td>
+<td>反相三态、低有效信号</td>
+</tr>
+<tr>
+<td><code>EM74HCT540D</code> / <code>EM74HCT540PW</code></td>
+<td>8（反相）</td>
+<td>单向</td>
+<td>OE1 / OE2</td>
+<td>±6 mA @4.5 V</td>
+<td>SOP-20L / TSSOP-20L</td>
+<td>反相 + TTL 输入</td>
+</tr>
+<tr>
+<td><code>EM74LVC125AD</code> / <code>EM74LVC125APW</code></td>
+<td>4</td>
+<td>单向，每通道 nOE</td>
+<td>是</td>
+<td>±24 mA @3.0 V，VOH ≥2.4 V</td>
+<td>SOP-14L / TSSOP-14L</td>
+<td>独立通道、施密特输入</td>
+</tr>
+<tr>
+<td><code>EM74LVC126AD</code> / <code>EM74LVC126APW</code></td>
+<td>4</td>
+<td>单向，每通道 nOE</td>
+<td>是</td>
+<td>同 125A</td>
+<td>SOP-14L / TSSOP-14L</td>
+<td>同 125A，<strong>极性须核实</strong>（§5.2）</td>
+</tr>
+<tr>
+<td><code>EM74LVC8T245PW</code></td>
+<td>8</td>
+<td>DIR + OE</td>
+<td>是</td>
+<td>±20 mA @3.0 V，VOH ≥2.4 V</td>
+<td>TSSOP-24L</td>
+<td>双电源 1.3–5.5 V，双向电平转换</td>
+</tr>
+<tr>
+<td><code>EM74LVCH8T245PW</code></td>
+<td>8</td>
+<td>DIR + OE</td>
+<td>是</td>
+<td>同上 + 总线保持</td>
+<td>TSSOP-24L</td>
+<td>双电源 + 浮空总线</td>
+</tr>
+<tr>
+<td><code>EM74LVC4245APW</code></td>
+<td>8</td>
+<td>DIR + OE</td>
+<td>是</td>
+<td>±20 mA @3.0 V，VOH ≥2.4 V</td>
+<td>TSSOP-24L</td>
+<td>3 V ↔ 5 V 总线接口</td>
+</tr>
+</tbody>
+</table>
+<p>三条读表规则：</p>
+<ol>
+<li><strong>"±24 mA"不是一族</strong>。同为 24 mA @3.0 V，<code>EM74LVC245APW</code> 的 VOH 是 2.4 V，<code>EM74LVC541APW</code> 只有 2.2 V（125 ℃ 档分别降到 2.2 V / 2.0 V）。VOH 差 0.2 V，抗噪余量就差 0.2 V。</li>
+<li><strong>HC/HCT 只有 6 mA</strong>。<code>EM74HC541PW</code> / <code>EM74HCT541PW</code> 的 6 mA 是 4.5 V 条件下的值，不是 3.3 V 下的 6 mA；3.3 V 供电请直接用 LVC 系列。</li>
+<li><strong>8T245 / 4245A 是 20 mA，不是 24 mA</strong>。静态表按 −20 mA / +20 mA 给 VOH/VOL；4245A 特性栏另写 "±24 mA output drive"，两处不一致，设计按静态表 20 mA 算（见 §8 取数边界）。</li>
+</ol>
+<h2 id="2">2. 扇出与驱动能力怎么算</h2>
+<h3 id="21">2.1 第一步：直流扇出（几乎永远不是瓶颈）</h3>
+<pre><code>N_DC = min( IOH(min) / IIH(max) , IOL(max) / IIL(max) )
+</code></pre>
+<p>以 <code>EM74LVC245APW</code> 驱动 <code>EM74HC541PW</code> 的输入为例：</p>
+<ul>
+<li>IOH = 24 mA（@3.0 V，VOH ≥2.4 V）；IIH = ±1 µA（HC541 静态表 II）</li>
+<li>N_DC = 24 mA / 1 µA = <strong>24000</strong></li>
+</ul>
+<p>即 85 ℃ 档算出来是 2.4 万个输入，125 ℃ 档（245A 的 II 放宽到 ±10 µA）也有 2400 个。<strong>直流扇出没有工程意义</strong>——真正限制扇出的是电容和边沿，不是电流。</p>
+<blockquote>
+<p>用 <code>EM74LVC125APW</code> 时 II 更宽：±5 µA（85 ℃）/ ±20 µA（125 ℃），但 24 mA 除下来仍是千级，结论不变。</p>
+</blockquote>
+<h3 id="22">2.2 第二步：电容扇出（真正的限制）</h3>
+<pre><code>C_total = Σ C_in(每颗负载) + C_trace + C_stub + C_connector
+t_r ≈ C_total × ΔV / I_OH        （一阶估算，假设驱动器在整段摆幅内保持额定 IOH）
+</code></pre>
+<p>算例（全部用实体页的引脚电容，走线电容按实际叠层提取后代入）：</p>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>C_total</th>
+<th>驱动器</th>
+<th>t_r 估算</th>
+<th>对应 Δt/ΔV 上限</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 颗 245A 驱 8 颗 HC541 输入</td>
+<td>8 × 7.7 pF = 61.6 pF</td>
+<td><code>EM74LVC245APW</code>，24 mA，ΔV 2.4 V</td>
+<td>61.6 pF × 2.4 V / 24 mA ≈ <strong>6.2 ns</strong></td>
+<td>10 ns/V × 3.3 V = 33 ns</td>
+<td>余量足够</td>
+</tr>
+<tr>
+<td>1 颗 541A 驱 8 颗 541A 输入</td>
+<td>8 × 7.5 pF = 60 pF</td>
+<td><code>EM74LVC541APW</code>，24 mA，ΔV 2.2 V</td>
+<td>60 pF × 2.2 V / 24 mA ≈ <strong>5.5 ns</strong></td>
+<td>10 ns/V × 3.3 V = 33 ns</td>
+<td>余量足够</td>
+</tr>
+<tr>
+<td>1 颗 HCT541 驱 8 颗 HC541 输入</td>
+<td>61.6 pF</td>
+<td><code>EM74HCT541PW</code>，6 mA，ΔV 3.84 V</td>
+<td>61.6 pF × 3.84 V / 6 mA ≈ <strong>39.4 ns</strong></td>
+<td>139 ns/V × 5 V = 695 ns</td>
+<td>合规，但边沿是 LVC 的 6 倍</td>
+</tr>
+<tr>
+<td>1 颗 245A 驱 4 张卡（每卡 1 颗 541）</td>
+<td>4 × 7.7 pF = 30.8 pF</td>
+<td>24 mA，ΔV 2.4 V</td>
+<td>≈ <strong>3.1 ns</strong></td>
+<td>33 ns</td>
+<td>板内 8 位扩展的典型量级</td>
+</tr>
+</tbody>
+</table>
+<p>读法：<strong>电容翻倍，边沿翻倍</strong>（线性）。8 颗负载 6.2 ns，16 颗就是 12.4 ns；此时虽仍小于 33 ns 的 Δt/ΔV 上限，但已开始吃掉时序预算。</p>
+<p>三条假设必须一起报给客户，否则算例会被当成保证值：</p>
+<ul>
+<li>电流按<strong>恒定 IOH</strong> 取，实际 MOS 输出电流随 VOH 上升而下降，所以真实边沿比算例<strong>更慢</strong>；</li>
+<li>ΔV 取到 VOH(min)，不是 VCC，摆到 VCC 的尾段更慢；</li>
+<li>不含封装电感与地弹，多输出同时翻转时边沿会进一步恶化。</li>
+</ul>
+<h3 id="23">2.3 第三步：动态功耗（决定封装能不能扛）</h3>
+<p>实体页给的公式（245A 脚注 [4]、541A 脚注 [3] 原文）：</p>
+<pre><code>P_D = CPD × VCC² × fi × N + Σ( CL × VCC² × fo )
+</code></pre>
+<p>算例：<code>EM74LVC245APW</code>，VCC = 3.3 V，8 位全翻，f = 10 MHz，负载 61.6 pF：</p>
+<ul>
+<li>内部：18.5 pF × 3.3² × 10 MHz × 8 ≈ <strong>16.1 mW</strong></li>
+<li>负载：61.6 pF × 3.3² × 10 MHz ≈ <strong>6.7 mW</strong></li>
+<li>合计 ≈ <strong>22.8 mW</strong>，远低于 Ptot 500 mW</li>
+</ul>
+<p>功耗不是本族器件的瓶颈；<strong>但它是「能不能把 8 位全速翻转」的检查项</strong>，不是「能不能驱动」的检查项。</p>
+<h3 id="24">2.4 什么时候直流扇出才会咬人</h3>
+<p>只有一种情况：输出被当成<strong>电阻负载的电源</strong>用（LED 串阻、上拉电阻、分压网络）。此时按 IOH/IOL 直接算：</p>
+<ul>
+<li><code>EM74LVC245APW</code> @3.0 V：24 mA，VOH 只剩 2.4 V（125 ℃ 档 2.2 V）</li>
+<li><code>EM74HCT541PW</code> @4.5 V：6 mA，VOH 3.84 V（125 ℃ 档 3.7 V）</li>
+</ul>
+<p><strong>6 mA 推不动继电器、推不动光耦、也推不动低阻 LED 串</strong>。这些场合加三极管/MOS，不要指望 541。</p>
+<h2 id="3">3. 长走线与反射</h2>
+<blockquote>
+<p>本节只给定性判据与做法。<strong>任何具体的端接阻值、走线阻抗、单位延迟都必须由叠层与 IBIS/实测确定</strong>，本文不给欧姆数——给了就是编。</p>
+</blockquote>
+<h3 id="31">3.1 什么时候必须当传输线处理</h3>
+<p>判据是<strong>边沿时间与走线延迟的比较</strong>，不是线长本身：</p>
+<ul>
+<li>当 <code>t_r</code>（驱动器输出上升时间）短到与走线<strong>单程延迟</strong>同一量级时，反射不可忽略；工程惯例取 <code>t_r &lt; 2 × 单程延迟</code> 为界，阈值随可接受的过冲而变；</li>
+<li>单程延迟 = 线长 × 单位延迟，往返延迟 = 2 × 单程；单位延迟由板材 εr 与叠层决定，用 SI 工具提取，不要拍脑袋；</li>
+<li>本族器件的 t_r 由 §2 的 <code>C_total × ΔV / IOH</code> 决定：<strong>负载越重、边沿越慢、越不容易反射</strong>；负载越轻、边沿越快，短线和长线都可能出问题。</li>
+</ul>
+<p>一个反直觉但重要的结论：<strong>把 8 张卡挂上去，边沿变慢，反射反而减轻；把卡拔到只剩 1 张，边沿变快，反射才暴露</strong>。所以长线问题常在「轻载 + 长线」组合上出现，而不是满载。</p>
+<h3 id="32">3.2 串联电阻做什么、不做什么</h3>
+<ul>
+<li><strong>做</strong>：放在<strong>驱动器输出端、紧贴引脚</strong>，让驱动器输出阻抗与线阻抗接近，吸收负载端的二次反射；对时钟、地址、片选这类单向线最有效。</li>
+<li><strong>不做</strong>：不改变直流电平（没有直流电流时无压降），因此不能靠它修 VOH 不足；与负载电容形成 RC，会让边沿更慢——<strong>它和 §2 的边沿预算是互相挤占的</strong>。</li>
+<li><strong>阻值不给</strong>：取决于驱动器输出阻抗、叠层阻抗、负载数量。照抄网上的「万能串阻值」在 3.3 V 轻载板上通常过阻尼，在 5 V 重载板上又不够，而且没有任何一颗料的数据手册能背书这个值。必须仿真或实测过冲/眼图后定。</li>
+<li><strong>位置错了等于没加</strong>：串阻放在连接器远端或接收端，是端接不是源端匹配，效果完全不同。</li>
+</ul>
+<h3 id="33">3.3 背板与连接器</h3>
+<ul>
+<li>每插一张卡，总负载电容就加一份（按 §2.2 累加，单卡按接收器件 An 输入电容估：541A 7.5 pF、HC541 7.7 pF，另加连接器与桩线）；</li>
+<li>桩线（stub）越短越好，背板上的分支是反射的主要来源；</li>
+<li>地回流路径与信号同层成对走，连接器地针数量不能省；</li>
+<li><strong>不要用 541 直接驱一个 10 卡背板而不做任何端接</strong>：6 mA 的 <code>EM74HCT541PW</code> 在 61.6 pF 上已是 39.4 ns 边沿；10 卡（单卡按 7.7 pF 计，77 pF）约 49 ns。距 Δt/ΔV 上限（139 ns/V × 5 V = 695 ns）还远，但<strong>几十 ns 的边沿已经吃掉系统时序</strong>，此时反射与桩线开始主导。</li>
+</ul>
+<h3 id="34">3.4 接收端的选择也是抗反射手段</h3>
+<p><code>EM74LVC125APW</code> / <code>EM74LVC126APW</code> 的概述明确写 <strong>Schmitt-trigger action at all inputs</strong>，对慢边沿和轻微过冲的容忍度高于普通 CMOS 输入。长线、慢边沿、轻负载的场合，优先用带施密特输入的 125A/126A，而不是硬把 245A 的边沿做快。</p>
+<h2 id="4">4. 四个典型场景</h2>
+<h3 id="41-8-33-v">4.1 板内 8 位总线扩展（单电源 3.3 V）</h3>
+<ul>
+<li>需求：MCU 8 位总线扇出到 4 张卡，单向地址/控制 + 双向数据。</li>
+<li><strong>双向数据 → <code>EM74LVC245APW</code></strong>：1.65–5.5 V 单电源、DIR + OE、24 mA @3.0 V、VOH ≥2.4 V；负载 4 × 7.7 pF = 30.8 pF，边沿约 3.1 ns（§2.2）。</li>
+<li><strong>单向地址/控制 → <code>EM74LVC541APW</code></strong>：OE1/OE2 可分组关断，带 IOFF（±10 µA @85 ℃），整板断电时不给总线加载。</li>
+<li><strong>要更大 VOH 余量选 245A 而不是 541A</strong>：同为 24 mA，245A 的 VOH 2.4 V vs 541A 的 2.2 V（均 85 ℃ 档）。</li>
+<li><strong>5 V 侧不要用 LVC 硬扛</strong>：VCC = 5 V 时 245A 的 VIH = 0.7VCC ≈ 3.5 V，3.3 V 逻辑未必够；要 5 V 系统直收 3.3 V，选 <code>EM74HCT541PW</code>（VIH 2.1 V，VCC 4.5–5.5 V）。</li>
+</ul>
+<h3 id="42">4.2 背板驱动（多卡、长线、单向为主）</h3>
+<ul>
+<li>地址/控制/片选：<code>EM74HC541PW</code>（2.0–6.0 V，CMOS 输入）或 <code>EM74HCT541PW</code>（5 V TTL 输入）；反相极性用 <code>EM74HC540PW</code> / <code>EM74HCT540PW</code>。</li>
+<li>数据：<code>EM74LVC245APW</code>（双向）或 <code>EM74LVC541APW</code>（单向、有 IOFF）。</li>
+<li><strong>先算电容再选型</strong>：n 卡 × 7.7 pF，代入 §2.2；HCT541 的 6 mA 在 61.6 pF 上已是 39.4 ns，卡数再翻倍就接近 139 ns/V × 5 V 的上限。</li>
+<li><strong>HC541/HCT541 的 tpd/ten/tdis 实体页没有数值</strong>（动态表只保留符号与 CPD 18 pF），背板时序预算必须回规格书 Table 7 取数，不能引用本文。</li>
+<li>背板热插拔、断电隔离：见 [[bus-isolation-guide]]——<strong>541/540 无 IOFF 且有输入钳位二极管，不能用于断电板卡挂带电总线</strong>。</li>
+</ul>
+<h3 id="43">4.3 双向总线（同电压域 / 跨电压域）</h3>
+<table>
+<thead>
+<tr>
+<th>需求</th>
+<th>型号</th>
+<th>关键依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.3 V 板内双向数据</td>
+<td><code>EM74LVC245APW</code></td>
+<td>单电源 1.65–5.5 V，DIR + OE，24 mA</td>
+</tr>
+<tr>
+<td>3.3 V ↔ 5 V 双向</td>
+<td><code>EM74LVC8T245PW</code> 或 <code>EM74LVC4245APW</code></td>
+<td>双电源，A/B 各 1.3–5.5 V（4245A 为 1.4–5.5 V）</td>
+</tr>
+<tr>
+<td>1.8 V ↔ 3.3 V 双向</td>
+<td><code>EM74LVC8T245PW</code></td>
+<td>双侧下限 1.3 V，低于 4245A 的 1.4 V</td>
+</tr>
+<tr>
+<td>总线会浮空（拔卡/长线）</td>
+<td><code>EM74LVCH245APW</code> / <code>EM74LVCH8T245PW</code></td>
+<td>总线保持，IBHLO 500 µA @3.6 V</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>8T245 与 4245A 速度相同</strong>：VCC(A) = VCC(B) = 3.3 V 档 tpd 均为 0.7 ns（min）/ 14.5 ns（max，85 ℃）/ 15.5 ns（125 ℃）。选型差异在低压下限（1.3 vs 1.4 V）与 IOFF（±2 vs ±3 µA），不在速度。</li>
+<li><strong>换向必须"先关后改"</strong>：VCC(A) = VCC(B) = 3.3 V 档，OE 关断时间 tdis 为 20.2 ns（max，85 ℃）/ 24.3 ns（125 ℃）；使能 ten 为 21.1 ns / 25.2 ns（8T245 与 4245A 同表）。所以 DIR 切换前至少留 <strong>25 ns 量级</strong>的关断等待，不能同拍改 DIR。</li>
+<li><strong>双电源 ≠ 自动方向</strong>：8T245/4245A 仍要 DIR 定方向，I²C 这种每根线双向翻转的总线在架构上不成立（见 [[level-translation-app-guide]]）。</li>
+<li><strong>suspend 行为</strong>：8T245 概述写明任一侧 VCC 为 GND 时 A/B 双端进高阻；4245A 静态表也列了 suspend mode 的 IOZ（±2 µA / ±10 µA）。单侧掉电不会把另一侧拖死，但<strong>不等于热插拔保护</strong>。</li>
+</ul>
+<h3 id="44">4.4 反相三态（低有效驱动）</h3>
+<ul>
+<li>型号：<code>EM74HC540PW</code>（CMOS 输入）或 <code>EM74HCT540PW</code>（TTL 输入，5 V 系统直收 3.3 V）。</li>
+<li>用途：低有效使能、低有效中断/复位汇总、反相后驱动 LED 灌电流等。</li>
+<li><strong>驱动能力只有 6 mA @4.5 V</strong>：<code>EM74HC540PW</code> 不能直接推继电器、蜂鸣器、光耦；这些负载加三极管/MOS。</li>
+<li><strong>反相不带来速度优势</strong>：540 与 541 的动态表在实体页都只有符号名，无 tpd/ten/tdis 数值——以规格书为准。</li>
+<li><strong>540 与 541 功能相反</strong>（反相 vs 同相）：换料/改板必须逐脚核对引脚图，不要假设 20 脚一一对应。</li>
+<li>反相级的<strong>上电默认态</strong>要一起看：OE 高阻时输出既不是高也不是低，下游若把「反相后的低」当有效信号，必须靠下拉保证无效态。</li>
+</ul>
+<h2 id="5-oe-dir">5. OE / DIR 接法</h2>
+<h3 id="51">5.1 关断电平与默认接法</h3>
+<table>
+<thead>
+<tr>
+<th>型号</th>
+<th>控制脚</th>
+<th>高阻（关断）电平</th>
+<th>上电默认接法</th>
+<th>实体页依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EM74LVC245APW</code> / <code>EM74LVCH245APW</code></td>
+<td>OE；DIR</td>
+<td>OE = <strong>HIGH</strong></td>
+<td>OE 上拉至 VCC；DIR 按方向定电平</td>
+<td>"A HIGH on OE causes the outputs to assume a high-impedance OFF-state"</td>
+</tr>
+<tr>
+<td><code>EM74LVC541APW</code></td>
+<td>OE1、OE2</td>
+<td><strong>HIGH</strong></td>
+<td>两脚各自上拉</td>
+<td>"A HIGH on OEn causes the associated outputs to assume a high-impedance OFF-state"</td>
+</tr>
+<tr>
+<td><code>EM74HC541PW</code> / <code>EM74HCT541PW</code></td>
+<td>OE1、OE2</td>
+<td><strong>HIGH</strong></td>
+<td>两脚各自上拉</td>
+<td>"A HIGH on OEn causes the outputs to assume a high-impedance OFF-state"</td>
+</tr>
+<tr>
+<td><code>EM74HC540PW</code> / <code>EM74HCT540PW</code></td>
+<td>OE1、OE2</td>
+<td><strong>HIGH</strong></td>
+<td>两脚各自上拉</td>
+<td>同上</td>
+</tr>
+<tr>
+<td><code>EM74LVC125APW</code></td>
+<td>nOE（每通道）</td>
+<td><strong>HIGH</strong></td>
+<td>上拉（上电即高阻）</td>
+<td>"A HIGH on nOE causes the outputs to assume a high impedance OFF-state"</td>
+</tr>
+<tr>
+<td><code>EM74LVC126APW</code></td>
+<td>nOE（每通道）</td>
+<td>实体页写 <strong>HIGH</strong></td>
+<td>上拉，但<strong>极性必须核实</strong>（§5.2）</td>
+<td>与 125A 描述逐字相同</td>
+</tr>
+<tr>
+<td><code>EM74LVC8T245PW</code> / <code>EM74LVCH8T245PW</code></td>
+<td>OE；DIR</td>
+<td>实体页未写极性</td>
+<td>OE、DIR 都必须有确定电平</td>
+<td>静态表只给 DIR/OE 的 VIH/VIL</td>
+</tr>
+<tr>
+<td><code>EM74LVC4245APW</code></td>
+<td>OE；DIR</td>
+<td>OE = <strong>HIGH</strong></td>
+<td>OE 上拉；DIR 定电平</td>
+<td>"A HIGH on OE causes the outputs to assume a high-impedance OFF-state"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="52">5.2 两颗必须人工核对的料</h3>
+<ol>
+<li><strong><code>EM74LVC126APW</code></strong>：实体页的 OE 描述与 125A <strong>逐字相同</strong>（都写 nOE、高电平关断）。125 与 126 在标准 74 系列里是互补极性，不可能完全相同；本文不替规格书下结论。<strong>用 126A 前，按规格书功能表确认 nOE/OE 真值，再决定上拉还是下拉</strong>——接反的后果是上电即导通或永远关断。</li>
+<li><strong><code>EM74LVC8T245PW</code></strong>：概述只写 "an output enable input (OE)"，没有给高阻电平的文字。同族 4245A 明写 HIGH = Hi-Z，但不能据此推断 8T245。<strong>按规格书功能表接</strong>。</li>
+</ol>
+<h3 id="53">5.3 电阻取值</h3>
+<ul>
+<li>数据手册只给「下限由该脚电流决定」，不给具体阻值。</li>
+<li>估算方法：按该脚 II(max) 与目标 VIH 算压降。<code>EM74LVC245APW</code> 的 II 为 ±2 µA（85 ℃）/ ±10 µA（125 ℃），10 kΩ 上压降 0.02 V / 0.1 V（<strong>估算值，非手册数据</strong>）；<code>EM74LVC125APW</code> 的 II 为 ±5 µA / ±20 µA，10 kΩ 上最多 0.2 V。</li>
+<li>3.3 V 轨减去 0.2 V 仍远高于 VIH 2.0 V，可作起点；<strong>高温档、长走线、强干扰场合必须按实际复核</strong>，不要直接把 10 kΩ 写进所有设计。</li>
+<li>电阻的作用是「上电默认关断」，不是「平时关断」。MCU 初始化后应由 GPIO 接管，但 GPIO 未初始化时必须是高阻——所以电阻不能省。</li>
+</ul>
+<h3 id="54">5.4 浮空禁令（有数可依）</h3>
+<ul>
+<li>CMOS 输入悬空会停在中间电平：状态不确定，且 <strong>ΔICC 从 500 µA 涨到 5000 µA（125 ℃，每输入脚）</strong>（245A / 541A / 125A 静态表同值）。</li>
+<li>8 位数据输入全停在 VCC − 0.6 V 附近（ΔICC 的测试条件）、125 ℃ 时，按 5000 µA/脚 算就是 8 × 5000 µA = 40 mA 量级——足以让一颗小封装器件发热，也会把「低功耗待机」指标毁掉。</li>
+<li>OE 浮空还可能在上电瞬间导通：MCU 复位期间 GPIO 是高阻，<strong>不能靠 GPIO 做默认态</strong>。</li>
+<li>DIR 浮空 = 方向随机：双向总线上可能出现两端同时驱动（对驱），瞬时电流只受输出阻抗限制。</li>
+</ul>
+<h3 id="55">5.5 双电源器件的单侧掉电</h3>
+<ul>
+<li><code>EM74LVC8T245PW</code>：任一侧 VCC 为 GND 时，A/B 双端进高阻（概述原文）。</li>
+<li><code>EM74LVC4245APW</code>：静态表列了 suspend mode 下 A 口/B 口的 IOZ（±2 µA / ±10 µA），IOFF 为 ±3 µA / ±10 µA。</li>
+<li>这解决的是「一侧断电不拖死另一侧」，<strong>不解决</strong>上电顺序、浪涌、热插拔——那部分见 [[bus-isolation-guide]]。</li>
+</ul>
+<h2 id="6">6. 常见误区</h2>
+<ol>
+<li><strong>「都是 24 mA，可以互换」</strong>。<code>EM74LVC245APW</code> 的 VOH 2.4 V vs <code>EM74LVC541APW</code> 的 2.2 V（同 24 mA @3.0 V，85 ℃）；125 ℃ 档分别降到 2.2 V / 2.0 V。驱动同一个负载，余量差 0.2 V。</li>
+<li><strong>「541 是线驱动，肯定比 245 强」</strong>。HC/HCT541 只有 6 mA @4.5 V；245A 是 24 mA @3.0 V。名字里的 "line driver" 不代表电流大。</li>
+<li><strong>「LVC 输入耐 5.5 V，所以能当 5 V→3.3 V 转换」</strong>。输入耐压 ≠ 输出电平。VCC = 3.3 V 时输出最高 3.3 V（可以）；VCC = 5 V 时 VIH = 0.7VCC ≈ 3.5 V，3.3 V 源未必够（不行）。要 5 V 收 3.3 V，用 <code>EM74HCT541PW</code>（VIH 2.1 V）。</li>
+<li><strong>OE 悬空</strong>。状态不确定 + ΔICC 5000 µA/脚（125 ℃）。所有 OE/nOE 必须有电阻默认态。</li>
+<li><strong>DIR 悬空</strong>。方向随机，双向总线可能对驱。</li>
+<li><strong>「LVCH 只是多了个上拉」</strong>。它是总线保持：IBHLO 500 µA @3.6 V（245A / 8T245 同值），要翻转必须由外部驱动源<strong>提供至少 IBHLO/IBHHO 的过驱动电流</strong>（8T245 脚注 [3] 原文）。100 kΩ 上拉、高阻源、弱驱动都翻不动。<strong>替代只能 LVCH 换 LVCH</strong>：LVCH 换 LVC 会丢保持能力；LVC 换 LVCH 则要求上游驱动能给出 IBHLO 量级的过驱动电流，原来靠大阻值上下拉定值的设计会翻不动。</li>
+<li><strong>125A 与 126A 直接互换</strong>。实体页描述逐字相同，极性实际可能相反；不核对功能表就换，等于赌上电默认态。</li>
+<li><strong>拿 540 当功率驱动</strong>。反相三态仍是 6 mA 逻辑输出，推继电器/光耦/LED 串必须加级。</li>
+<li><strong>用 541/540 做断电隔离</strong>。两颗都无 IOFF，且输入端有钳位二极管（概述原文 "Inputs include clamp diodes"），断电板卡会把电流灌进 VCC 轨。</li>
+<li><strong>只报 Mbps 不报 tpd</strong>。245A 在 3.3 V 档 tpd max 9.7 ns（85 ℃）/ 11.3 ns（125 ℃），8 位并行翻转还有 tsk(o) 1 ns / 1.5 ns 的偏斜；时序预算要按 max + 偏斜算。</li>
+</ol>
+<h2 id="7">7. 核对清单</h2>
+<ul>
+<li>[ ] 位宽、方向（单向/双向）、是否需要独立通道（125A/126A 是 4 通道独立 nOE）</li>
+<li>[ ] 电压域：单电源还是双电源；VCC 是否落在推荐范围（245A/541A/125A 1.65–5.5 V；HC 2.0–6.0 V；HCT 4.5–5.5 V；8T245 1.3–5.5 V；4245A 1.4–5.5 V）</li>
+<li>[ ] 驱动电流按 <strong>IOH/IOL + VOH/VOL 成对</strong>核对，不只看 mA 数</li>
+<li>[ ] 负载电容按 §2.2 累加（含走线/连接器），t_r 估算值与 Δt/ΔV 上限比较过</li>
+<li>[ ] 8 位同时翻转的动态功耗按 CPD 公式估过，Ptot 500 mW 有余量</li>
+<li>[ ] 长线是否按传输线处理（t_r vs 往返延迟），串阻位置在源端、阻值由仿真/实测定</li>
+<li>[ ] OE/nOE 有电阻默认态，极性与实体页逐颗核对（重点 126A、8T245）</li>
+<li>[ ] DIR 有确定电平，换向前先关 OE 并留 ≥25 ns 量级等待</li>
+<li>[ ] 浮空总线是否上 LVCH（245A/8T245），并确认外部驱动能过驱动 IBHLO 500 µA</li>
+<li>[ ] 断电/热插拔场景是否误用 541/540（无 IOFF）</li>
+<li>[ ] 5 V 系统是否误用 LVC 直收 3.3 V（VIH 0.7VCC）</li>
+<li>[ ] 型号带封装尾缀且与焊盘一致（<code>PW</code> = TSSOP，<code>D</code> = SOP；8T245/4245A 只有 <code>PW</code>）</li>
+<li>[ ] 车规需求单独确认（本线无 Q100 料，见 [[automotive-q100-guide]]）</li>
+</ul>
+<h2 id="8">8. 来源</h2>
+<ul>
+<li>实体页：[[em74lvc245a-em74lvch245a]]、[[em74hc541-em74hct541]]、[[em74lvc541a]]、[[em74hc540-em74hct540]]、[[em74lvc125a]]、[[em74lvc126a]]、[[em74lvc8t245-em74lvch8t245]]、[[em74lvc4245a]]</li>
+<li>概念页：[[buffer]]、[[line-driver]]、[[transceiver]]、[[bus-buffer]]</li>
+<li>相关指南：[[bus-isolation-guide]]（三态隔离与热插拔）、[[level-translation-app-guide]]（双电源转换路线）、[[logic-gates-app-guide]]（家族定位）</li>
+<li>原始规格书：<code>raw/datasheets/EM74LVC_LVCH245A_Product_DS_V1.0.json</code>、<code>EM74HC_HCT541_Product_DS_V1.1.json</code>、<code>EM74LVC541A_Product_DS_V1.0.json</code>、<code>EM74HC_HCT540_Product_DS_V1.1.json</code>、<code>EM74LVC125A_Product_DS_V1.3.json</code>、<code>EM74LVC126A_Product_DS_V1.1.json</code>、<code>EM74LVC_LVCH8T245_Product_DS_V1.2.json</code>、<code>EM74LVC4245A_Product_DS_V1.4.json</code></li>
+</ul>
+<blockquote>
+<p><strong>取数边界</strong>（引用前必读）：
+① <code>em74hc541-em74hct541</code> 与 <code>em74hc540-em74hct540</code> 实体页的动态特性节只有符号名与 CPD 18 pF，<strong>没有 tpd/ten/tdis 数值</strong>，本文不给这两族的延迟数字。
+② <code>EM74LVC4245A</code> 特性栏写 "±24 mA output drive (VCC = 3.0 V)"，静态表却按 −20 mA/+20 mA 给 VOH/VOL；本文统一按静态表 20 mA 表述，报数前回规格书确认。
+③ <code>EM74LVC126A</code> 的 OE 描述与 125A 逐字相同，极性未经功能表验证；<code>EM74LVC8T245</code> 的 OE 高阻电平实体页未写。
+④ 本文所有 t_r、功耗、扇出算例均为<strong>估算</strong>，假设已写在 §2；不替代 IBIS 仿真与实测。
+本文为应用指导，不替代数据手册。对外报料一律带封装尾缀；交期与价格走销售。</p>
+</blockquote>
+  </article>
+</div>
+</body>
+</html>

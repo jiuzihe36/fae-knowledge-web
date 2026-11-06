@@ -271,6 +271,8 @@ if (typeof document === "undefined") return;
     el.detail.classList.remove("hidden");
     el.detail.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
+    /* 深链接：地址栏写成 #model=型号，客户/销售可直接复制分享 */
+    if (window.__xx && window.__xx.setHash) window.__xx.setHash("model=" + encodeURIComponent(item.model));
   }
 
   /* 族规范化：优先用数据里的族名表做「最长前缀」匹配，避免正则猜封装后缀。
@@ -296,6 +298,7 @@ if (typeof document === "undefined") return;
     el.detail.classList.add("hidden");
     el.detail.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
+    if (window.__xx && window.__xx.setHash) window.__xx.setHash("");
   }
 
   /* ---------- 引脚图灯箱 ---------- */

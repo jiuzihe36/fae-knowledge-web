@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>车规 AEC-Q100 应用指南 · 芯祥应用指南</title>
+<meta name="description" content="在册口径（对外只认这几条）">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .guide-wrap { max-width: 980px; margin: 0 auto; padding: 0 20px 64px; }
+  .guide-nav { position: sticky; top: 0; z-index: 10; padding: 12px 0; margin-bottom: 8px;
+    background: var(--bg, #fff); border-bottom: 1px solid var(--border, #e3e6e9); font-size: 13px; }
+  .guide-nav a { color: inherit; text-decoration: none; opacity: .75; }
+  .guide-nav a:hover { opacity: 1; text-decoration: underline; }
+  .guide-body { font-size: 14.5px; line-height: 1.75; }
+  .guide-body h1 { font-size: 24px; margin: 24px 0 8px; }
+  .guide-body h2 { font-size: 18px; margin: 28px 0 10px; padding-top: 8px; border-top: 1px solid var(--border, #eee); }
+  .guide-body h3 { font-size: 15.5px; margin: 20px 0 8px; }
+  .guide-body table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; display: block; overflow-x: auto; }
+  .guide-body th, .guide-body td { border: 1px solid var(--border, #e3e6e9); padding: 7px 10px; text-align: left; vertical-align: top; }
+  .guide-body th { background: rgba(0,0,0,.03); }
+  .guide-body code { background: rgba(0,0,0,.05); padding: 1px 5px; border-radius: 4px; font-size: .92em; }
+  .guide-body pre { background: rgba(0,0,0,.04); padding: 12px 14px; border-radius: 8px; overflow-x: auto; }
+  .guide-body blockquote { margin: 12px 0; padding: 8px 14px; border-left: 3px solid var(--accent, #888); background: rgba(0,0,0,.025); }
+  .guide-body ul, .guide-body ol { padding-left: 22px; }
+  :root[data-theme="dark"] .guide-body th, :root:not([data-theme="light"]) .guide-body th { background: rgba(255,255,255,.06); }
+  :root[data-theme="dark"] .guide-body code, :root:not([data-theme="light"]) .guide-body code,
+  :root[data-theme="dark"] .guide-body pre, :root:not([data-theme="light"]) .guide-body pre { background: rgba(255,255,255,.07); }
+</style>
+</head>
+<body>
+<div class="guide-wrap">
+  <nav class="guide-nav"><a href="../index.html">← 返回产品目录</a> · <a href="../index.html#page=apps">应用场景</a></nav>
+  <article class="guide-body">
+<h1 id="aec-q100">车规 AEC-Q100 应用指南</h1>
+<blockquote>
+<p>面向 FAE 与系统工程师。<strong>芯祥在册的车规料只有两颗</strong>：<code>EMS3157GW-Q100</code>（单 SPDT）与 <code>EMS23157MS-Q100</code>（双 SPDT），且两份规格书都是 Draft。本文只回答三件事：客户问车规怎么答、料怎么选、样怎么送。
+参数取自实体页与 Draft 规格书；关键指标以正式版规格书为准。</p>
+</blockquote>
+<h2 id="1-2026-11-draft">1. 车规料清单（截至 2026-11，全部为 Draft）</h2>
+<table>
+<thead>
+<tr>
+<th>型号</th>
+<th>功能</th>
+<th>通道</th>
+<th>电压</th>
+<th>关键指标</th>
+<th>温度</th>
+<th>封装 / SPQ</th>
+<th>文档状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EMS3157GW-Q100</code></td>
+<td>单 SPDT 模拟开关，True Isolation</td>
+<td>1×SPDT</td>
+<td>1.5–5.5 V</td>
+<td>RON 1.9 Ω @5.5 V；BW 800 MHz；OIRR −80 dB @10 kHz；XTALK −82 dB @10 kHz；ICC &lt;1 µA</td>
+<td>−40~+125 °C</td>
+<td>SOT363 2.1×1.25 mm / 3000 pcs</td>
+<td>Draft V0.92（10 页）</td>
+</tr>
+<tr>
+<td><code>EMS23157MS-Q100</code></td>
+<td>双 SPDT 模拟开关，True Isolation</td>
+<td>2×SPDT</td>
+<td>1.5–5.5 V</td>
+<td>RON 1.9 Ω @5.5 V；BW 800 MHz；OIRR −80 dB @10 kHz；XTALK −82 dB @10 kHz；ICC &lt;1 µA；标注适合 USB2.0 High-Speed 路由</td>
+<td>−40~+125 °C</td>
+<td>MSOP-10L 3.0×3.0 mm / 3000 pcs</td>
+<td>Draft V0.9（9 页）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>两颗均按 <strong>AEC-Q100 Grade 1</strong> 口径：<code>EMS3157-Q100</code> 规格书 p1 明确写 "AEC-Q100 Grade 1"；<code>EMS23157-Q100</code> 在公司对外口径中同列 Grade 1，规格书 Recommended Operating Conditions 的 Tamb 均为 −40~+125 °C。</p>
+</blockquote>
+<p><strong>在册口径（对外只认这几条）</strong></p>
+<ul>
+<li>在册车规料<strong>只有这两颗</strong>。客户报任何其它料号——标准版 [[ems3157]] / [[ems23157]]、USB/HDMI 开关、电平转换、74 逻辑、负载开关——一律答 <strong>「无车规版本，转产品线评估」</strong>，不接参数讨论、不承诺"可以做车规"。</li>
+<li>两颗均为 Draft：<strong>规格书仍为草稿、量产前须确认</strong>。可送样评估，不承诺量产交期与价格。</li>
+<li>标准版与 Q100 版是两套文档：EMS3157 标准版 V1.8 / Q100 版 V0.92；EMS23157 标准版 V1.3 / Q100 版 V0.9。参数不可互套，报料必须带 <code>-Q100</code> 尾缀。</li>
+<li>车规身份落在完整订购号上：<code>EMS3157GW-Q100</code>（SOT363，丝印 7Q+YW）、<code>EMS23157MS-Q100</code>（MSOP-10L，丝印 23157Q+XYYWW）。</li>
+</ul>
+<h2 id="2-aec-q100">2. AEC-Q100 到底是什么</h2>
+<h3 id="21">2.1 定义：一份应力测试标准，不是一张证书</h3>
+<p>AEC-Q100 是汽车电子委员会（AEC）发布的<strong>车用封装集成电路应力测试认证标准</strong>，全称 "Failure Mechanism Based Stress Test Qualification for Packaged Integrated Circuits"。三个要点：</p>
+<ol>
+<li>它是<strong>基于失效机理的应力试验标准</strong>，不是安规认证、不是第三方证书，也没有"证书编号"。供应商按标准完成试验并出具 qualification 报告，客户审核承认。</li>
+<li>它只管<strong>封装 IC</strong>；分立器件、被动件分别走 AEC-Q101 / AEC-Q200，不要混用。</li>
+<li>"通过 AEC-Q100" 必须带 Grade 与报告范围；只讲"车规"不算证据。</li>
+</ol>
+<h3 id="22-grade">2.2 Grade：按环境工作温度分四档</h3>
+<table>
+<thead>
+<tr>
+<th>Grade</th>
+<th>环境工作温度范围（Ta）</th>
+<th>常见安装位置（经验）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Grade 0</td>
+<td>−40~+150 °C</td>
+<td>发动机舱、逆变器/动力总成</td>
+</tr>
+<tr>
+<td>Grade 1</td>
+<td>−40~+125 °C</td>
+<td>底盘、BMS、域控、ADAS、座舱热区</td>
+</tr>
+<tr>
+<td>Grade 2</td>
+<td>−40~+105 °C</td>
+<td>车身控制、HVAC、仪表</td>
+</tr>
+<tr>
+<td>Grade 3</td>
+<td>−40~+85 °C</td>
+<td>座舱/信息娱乐等热环境可控处</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Grade 是任务剖面分档，不是质量好坏等级。</strong> Grade 2 的件不能顶 Grade 1 的应用，哪怕台架上"看起来能用"。旧版曾列 Grade 4（0~+70 °C），Rev-H 起已取消，现在不要报 Grade 4。</p>
+</blockquote>
+<h3 id="23-aec-q100-8">2.3 AEC-Q100 看哪些试验（与公司 8 项口径对照）</h3>
+<table>
+<thead>
+<tr>
+<th>应力项</th>
+<th>考什么</th>
+<th>公司质量考核口径（对外可写）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTOL</td>
+<td>高温工作寿命、长期失效机理</td>
+<td>125 °C / 1000 h，3 lots</td>
+</tr>
+<tr>
+<td>TC</td>
+<td>温度循环、焊点与界面疲劳</td>
+<td>−65~150 °C / 500 cycles，3 lots</td>
+</tr>
+<tr>
+<td>HAST</td>
+<td>湿热偏压</td>
+<td>130 °C / 85%RH / 96 h，3 lots</td>
+</tr>
+<tr>
+<td>HTSL</td>
+<td>高温存储</td>
+<td>150 °C / 1000 h，3 lots</td>
+</tr>
+<tr>
+<td>PreCon</td>
+<td>预处理 + 回流</td>
+<td>Bake 125 °C 24 h → 85 °C/85%RH 168 h → 回流 3×260 °C</td>
+</tr>
+<tr>
+<td>ELFR</td>
+<td>早期寿命失效率</td>
+<td>125 °C / 48 h，800 pcs</td>
+</tr>
+<tr>
+<td>ESD</td>
+<td>静电放电</td>
+<td>HBM 8 kV / CDM 2 kV</td>
+</tr>
+<tr>
+<td>Latch-up</td>
+<td>闩锁</td>
+<td>25/125 °C，250 mA</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>AEC-Q100 的完整试验矩阵比这 8 项更多。公司 8 项是可对外说明的质量考核口径，<strong>不能当作某颗料的完整 Q100 报告</strong>；同名项目也不等于同一份报告，对客户只报报告里实际有的条件、样本数与结论。</p>
+</blockquote>
+<h2 id="3">3. 车规料与消费料的差异，在客户侧意味着什么</h2>
+<h3 id="31-125-c">3.1 温度：不是"标到 125 °C"，而是全温区有保证</h3>
+<ul>
+<li>消费/工业常见 0~70 °C 或 −40~85 °C；Grade 1 是 −40~125 °C 环境温度，比常见工业级（−40~85 °C）高 40 °C，对应座舱热区、底盘、BMS、域控等位置。</li>
+<li>客户审表看<strong>全温区列</strong>，不是 25 °C Typ。<code>EMS3157-Q100</code> Draft 给的是双温列：RON @5.5 V 为 Typ 1.9 Ω（25 °C）、Max 3.0 Ω（−40~85 °C 列）、Max 3.5 Ω（−40~125 °C 列）；tON/tOFF Max 从 600/200 ns（−40~85 °C 列）升到 650/250 ns（−40~125 °C 列）；tBBM Max 从 1000 ns 升到 1100 ns。</li>
+<li><strong><code>EMS23157-Q100</code> Draft V0.9 的 DC 表只有 25 °C 单列，AC 表仅给 Typ、无温度列与 Max</strong>。客户若要 −40~125 °C 的 AC 保证，先向产品线取完整数据，<strong>不能把 Typ 当 Max 报</strong>。这是两颗料目前在证据上的主要差异。</li>
+<li>设计余量按 125 °C Max 算：RON 上升直接影响音频插损、增益误差与信号幅度；tON/tBBM 影响切换时序与 pop 噪声。</li>
+</ul>
+<h3 id="32">3.2 认证与证据：客户要的是报告包</h3>
+<ul>
+<li>车规客户（Tier1/车厂）通常要：AEC-Q100 qualification report（应力项、条件、样本数、lot 数、判据）、ESD/latch-up 报告、可靠性总结、材料声明（IMDS/RoHS/REACH）、PCN 变更通知、批次追溯。</li>
+<li>器件页现有：<code>EMS3157-Q100</code> 列 ESD HBM JS-001 Class 2 &gt;3000 V、CDM JS-002 Class C3 &gt;2000 V、Latch-up &gt;200 mA；<strong><code>EMS23157-Q100</code> 的 Draft 特性页没有 ESD/latch-up 数值</strong>，报客户前向产品线取报告，不要拿同系列 3157 的数套用。</li>
+<li>公司质量考核 8 项（HTOL/TC/HAST/HTSL/PreCon/ELFR/ESD/Latch-up，条件见 2.3）是<strong>能力口径，不是单颗料的 Q100 报告</strong>。两套 ESD 数字——器件页 Class 2/C3 与考核口径 8 kV/2 kV——不要混着报，对外按器件页规格书写。</li>
+<li>体系：对外口径是 ISO 9001；IATF 16949 未见对外表述，客户体系审核问到时转质量部门，不自行承诺。</li>
+<li>对外话术只能是"<strong>部分产品通过 AEC-Q100 Grade 1</strong>"，不能说"全线车规"。</li>
+</ul>
+<h3 id="33-ppapdraft">3.3 PPAP：Draft 阶段签不了</h3>
+<ul>
+<li>PPAP（Production Part Approval Process）是量产放行文件包，AIAG 口径含 18 项要素（设计记录、PFMEA、控制计划、MSA、尺寸报告、材料/性能试验、初始过程研究、PSW 等），客户按 Level 提交，常用 Level 3。</li>
+<li>客户侧含义：没有 PPAP 就没有量产承认；PPAP 的前提是<strong>量产件、固化 BOM、固化工艺</strong>。</li>
+<li>对 Draft 料的正确答复：现阶段只到"样品 + Draft 规格书 + 已有测试报告"，<strong>不签 PPAP 承诺、不报提交等级</strong>；设计冻结后由产品线/质量按客户等级准备。</li>
+<li>时间线讲清楚：样品评估 → 设计冻结 → 量产件 → PPAP 批准 → SOP。任何一段都不能拿 Draft 文档当量产依据。</li>
+</ul>
+<h2 id="4">4. 选型与送样流程</h2>
+<h3 id="41">4.1 五步选型</h3>
+<ol>
+<li><strong>定功能</strong>：单路 SPDT（3157）还是双路 SPDT（23157）；是否需要 True Isolation、break-before-make。</li>
+<li><strong>定信号</strong>：音频/视频/UART/USB2.0 路由；信号幅度 ≤ VCC，控制脚 1.8 V 兼容。</li>
+<li><strong>定温度</strong>：安装位置环境温度 → Grade 1（−40~125 °C）是否覆盖；超 125 °C 无在册料，转产品线评估。</li>
+<li><strong>定封装</strong>：SOT363（2.1×1.25 mm）还是 MSOP-10L（3.0×3.0 mm）；SPQ 均 3000 pcs；核对丝印。</li>
+<li><strong>定状态</strong>：Draft V0.92 / V0.9，按"可送样评估、规格书仍为草稿、量产前须确认"口径报。</li>
+</ol>
+<h3 id="42">4.2 送样流程</h3>
+<ol>
+<li>客户给出应用、信号类型、电压/温度/封装、年用量、项目节点。</li>
+<li>FAE 核对是否在册两颗之内；不在册 → <strong>「无车规版本，转产品线评估」</strong>，登记需求反馈产品线。</li>
+<li>在册 → 出 Draft 规格书 + 已有测试报告，明确 Draft 状态与量产前确认项。</li>
+<li>走销售/FAE 样品流程；样品型号必须带 <code>-Q100</code> 完整订购号，不给标准版样品。</li>
+<li>客户评估通过 → 设计冻结 → 产品线确认正式版规格书、交期、价格、PPAP 等级 → 量产。</li>
+</ol>
+<h3 id="43">4.3 客户问答口径</h3>
+<table>
+<thead>
+<tr>
+<th>客户问</th>
+<th>标准答法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"这颗有车规版吗？"</td>
+<td>在册车规料只有 <code>EMS3157GW-Q100</code>、<code>EMS23157MS-Q100</code> 两颗模拟开关；您这颗不在册，<strong>无车规版本，转产品线评估</strong>。</td>
+</tr>
+<tr>
+<td>"Q100 是 Grade 几？"</td>
+<td>在册两颗按 <strong>Grade 1（−40~+125 °C）</strong>；规格书仍是草稿、量产前须确认。</td>
+</tr>
+<tr>
+<td>"能量产交货吗？"</td>
+<td>现阶段可送样评估；量产前须确认正式版规格书、交期与价格。</td>
+</tr>
+<tr>
+<td>"有 PPAP / IATF 16949 吗？"</td>
+<td>Draft 阶段不签 PPAP、不报提交等级；体系口径为 ISO 9001，IATF 与 PPAP 转质量/产品线确认。</td>
+</tr>
+<tr>
+<td>"和标准版参数一样吗？"</td>
+<td>功能同族，但文档与订购号不同；车规参数以 <code>-Q100</code> Draft 规格书为准，不能套标准版。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5">5. 常见误区</h2>
+<ol>
+<li><strong>拿消费级/工业级料顶车规</strong>：标准版 [[ems3157]] / [[ems23157]] 参数再好也不是 Q100 件；"同一 die、只是封测不同"不能作为交付依据，没有 Q100 报告与 <code>-Q100</code> 订购号就不是车规料。</li>
+<li><strong>以为 Q100 只是温度不同</strong>：Grade 只是温度分档；Q100 还包含应力试验矩阵、样本/lot 要求与随附报告。只改标称温度 = 假车规。</li>
+<li><strong>把 Draft 当量产料报</strong>：两颗都是 Draft（V0.92 / V0.9），<strong>规格书仍为草稿、量产前须确认</strong>；报交期/价格/PPAP 会翻车。</li>
+<li><strong>用 Typ 顶 Max</strong>：<code>EMS23157-Q100</code> Draft 的 AC 表只有 Typ；在拿到全温区数据前，不能用 25 °C Typ 代替 125 °C Max 做设计承诺。</li>
+<li><strong>把 Q100 当 ISO 26262 功能安全认证</strong>：Q100 证明可靠性，不等于 ASIL 能力；客户要 ASIL/功能安全资料，转产品线/质量。</li>
+<li><strong>把"部分产品通过"说成"全线车规"</strong>：公司口径只在册两颗；74 逻辑、电平转换、其它模拟开关一律<strong>无车规版本，转产品线评估</strong>。</li>
+<li><strong>混用标准版与 Q100 文档</strong>：报料带 <code>-Q100</code> 尾缀；引用页码/参数前先确认是哪一版（V1.8 vs V0.92、V1.3 vs V0.9）。</li>
+<li><strong>混报两套 ESD 口径</strong>：器件页是 HBM Class 2 &gt;3000 V / CDM C3 &gt;2000 V（仅 3157 列）；公司考核口径是 HBM 8 kV / CDM 2 kV。对外按器件页，测试能力问题转质量。</li>
+</ol>
+<h2 id="6">6. 核对清单</h2>
+<p><strong>料号与状态</strong></p>
+<ul>
+<li>[ ] 订购号是否 <code>-Q100</code> 尾缀且在册（<code>EMS3157GW-Q100</code> / <code>EMS23157MS-Q100</code>）</li>
+<li>[ ] 不在册是否已答「无车规版本，转产品线评估」并登记需求</li>
+<li>[ ] 是否说明 Draft：「规格书仍为草稿、量产前须确认」</li>
+</ul>
+<p><strong>温度与参数</strong></p>
+<ul>
+<li>[ ] 安装位置环境温度是否 ≤ +125 °C（Grade 1）</li>
+<li>[ ] RON / tON / tOFF / tBBM 是否按 125 °C Max 核算</li>
+<li>[ ] 23157 的 AC 数据是否已向产品线取全温区值（不得用 Typ 顶 Max）</li>
+</ul>
+<p><strong>电气与封装</strong></p>
+<ul>
+<li>[ ] VCC 1.5–5.5 V、信号 ≤ VCC、控制 1.8 V 兼容</li>
+<li>[ ] 单/双 SPDT、True Isolation、break-before-make 是否匹配</li>
+<li>[ ] 封装 SOT363 / MSOP-10L、丝印、SPQ 3000 是否核对</li>
+</ul>
+<p><strong>证据与商务</strong></p>
+<ul>
+<li>[ ] ESD / latch-up / 可靠性报告是否齐（23157 必查）</li>
+<li>[ ] 是否只讲"部分产品通过"，未扩大为全线车规</li>
+<li>[ ] 交期/价格/PPAP 等级/IATF 是否转销售与质量，未口头承诺</li>
+</ul>
+<h2 id="7">7. 来源</h2>
+<ul>
+<li>实体页：[[ems3157-q100]]、[[ems23157-q100]]</li>
+<li>原始规格书：<code>raw/datasheets/EMS3157-Q100_Draft_DS_V0.92.json</code>、<code>raw/datasheets/EMS23157-Q100_Drft_DS_V0.9.json</code></li>
+<li>公司质量与对外口径：<code>~/.hermes/skills/xinxiang-fae/references/company-profile.md</code>（202610 版）</li>
+<li>相关应用指南：[[ems-analog-switch-app-guide]]（通用模拟开关选型；车规仅 Q100 两颗）</li>
+<li>标准依据：AEC-Q100 Base Document（AEC 官方；Grade 定义见表 1，本文不引认证编号）</li>
+</ul>
+<blockquote>
+<p>本文为应用指导，不替代数据手册。Draft 规格书参数可能变更；对外报料带完整订购号，交期/价格/PPAP 走销售与质量。</p>
+</blockquote>
+  </article>
+</div>
+</body>
+</html>

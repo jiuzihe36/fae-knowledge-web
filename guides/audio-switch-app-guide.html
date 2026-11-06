@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>音频信号切换（负压摆幅）应用指南 · 芯祥应用指南</title>
+<meta name="description" content="- EMS3515YFQ：实体页原文「Depletion technology enables the device to conduct signals in the absence of VDD and to iso">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .guide-wrap { max-width: 980px; margin: 0 auto; padding: 0 20px 64px; }
+  .guide-nav { position: sticky; top: 0; z-index: 10; padding: 12px 0; margin-bottom: 8px;
+    background: var(--bg, #fff); border-bottom: 1px solid var(--border, #e3e6e9); font-size: 13px; }
+  .guide-nav a { color: inherit; text-decoration: none; opacity: .75; }
+  .guide-nav a:hover { opacity: 1; text-decoration: underline; }
+  .guide-body { font-size: 14.5px; line-height: 1.75; }
+  .guide-body h1 { font-size: 24px; margin: 24px 0 8px; }
+  .guide-body h2 { font-size: 18px; margin: 28px 0 10px; padding-top: 8px; border-top: 1px solid var(--border, #eee); }
+  .guide-body h3 { font-size: 15.5px; margin: 20px 0 8px; }
+  .guide-body table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; display: block; overflow-x: auto; }
+  .guide-body th, .guide-body td { border: 1px solid var(--border, #e3e6e9); padding: 7px 10px; text-align: left; vertical-align: top; }
+  .guide-body th { background: rgba(0,0,0,.03); }
+  .guide-body code { background: rgba(0,0,0,.05); padding: 1px 5px; border-radius: 4px; font-size: .92em; }
+  .guide-body pre { background: rgba(0,0,0,.04); padding: 12px 14px; border-radius: 8px; overflow-x: auto; }
+  .guide-body blockquote { margin: 12px 0; padding: 8px 14px; border-left: 3px solid var(--accent, #888); background: rgba(0,0,0,.025); }
+  .guide-body ul, .guide-body ol { padding-left: 22px; }
+  :root[data-theme="dark"] .guide-body th, :root:not([data-theme="light"]) .guide-body th { background: rgba(255,255,255,.06); }
+  :root[data-theme="dark"] .guide-body code, :root:not([data-theme="light"]) .guide-body code,
+  :root[data-theme="dark"] .guide-body pre, :root:not([data-theme="light"]) .guide-body pre { background: rgba(255,255,255,.07); }
+</style>
+</head>
+<body>
+<div class="guide-wrap">
+  <nav class="guide-nav"><a href="../index.html">← 返回产品目录</a> · <a href="../index.html#page=apps">应用场景</a></nav>
+  <article class="guide-body">
+<h1 id="_1">音频信号切换（负压摆幅）应用指南</h1>
+<blockquote>
+<p>音频开关和普通模拟开关的分水岭只有一个：<strong>信号能不能过零往下走</strong>。单电源供电不代表信号不能为负，但「能过零」和「能过多少」是两件事——而且<strong>导通态与隔离态的负压能力往往不是同一个数</strong>。本文把 5 颗料的负压边界、口径（Vrms 还是 Vpeak）和踩坑点摊开讲。</p>
+</blockquote>
+<h2 id="1">1. 型号速查</h2>
+<table>
+<thead>
+<tr>
+<th>型号（带尾缀）</th>
+<th>类型 / 刀位</th>
+<th>负压能力（推荐工作）</th>
+<th>供电</th>
+<th>RON (typ.)</th>
+<th>封装</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EMS3515YFQ</code></td>
+<td>SPST 耗尽型，常闭</td>
+<td>VSW −4.2 ~ 5.5 V</td>
+<td>2.0–5.5 V（隔离供电）</td>
+<td>0.85 Ω</td>
+<td>WLCSP4，0.93×0.93 mm</td>
+</tr>
+<tr>
+<td><code>EMS3550UD</code> / <code>EMS3550YFC</code></td>
+<td>4×SPST（4-PST）耗尽型，常闭</td>
+<td>VSW −3.0 ~ 4.7 V</td>
+<td>2.5–5.0 V（隔离供电）</td>
+<td>1.2 Ω</td>
+<td>QFN-16L 3×3 / WLCSP-12 1.45×1.86 mm</td>
+</tr>
+<tr>
+<td><code>EMS3580RSV</code></td>
+<td>双 SPDT 立体声，带 pop/click 抑制</td>
+<td>VIS −3.3 V ~ VCC</td>
+<td>3.0–4.5 V</td>
+<td>0.16 Ω @3.3 V</td>
+<td>QFN1.8×2.6-16L</td>
+</tr>
+<tr>
+<td><code>EMS4320RSW</code></td>
+<td>DPDT（音频 + USB2.0 HS 复用）</td>
+<td>VAUDIO −2.5 ~ +2.5 V</td>
+<td>2.5–5.5 V</td>
+<td>音频 0.9 Ω / USB 3.4 Ω</td>
+<td>QFN1.4×1.8-10L</td>
+</tr>
+<tr>
+<td><code>EMS4485</code>（WLCSP-25）</td>
+<td>Type-C 音频开关 + OVP + 湿度/耳机检测</td>
+<td>VSW_Audio −3.3 ~ 5 V</td>
+<td>3.0–4.5 V</td>
+<td>音频 1 Ω</td>
+<td>WLCSP-25，2×2 mm</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong><code>EMS4485</code> 为 Draft 未量产</strong>：来源为 <code>EMS4485_Draft_DS_V0.9</code>（Rev.0.9），实体页 tags 标 <code>draft</code>、confidence <code>low</code>，且 Draft 规格书的订购表只给了 <code>EMS4485</code> 主型号（WLCSP-25），<strong>未给出封装尾缀</strong>。设计选型请以量产版规格书为准。</p>
+<p><code>EMS3550UD</code>（QFN-16L）与 <code>EMS3550YFC</code>（WLCSP-12）是同 die 的两种封装，电气参数相同。</p>
+</blockquote>
+<h2 id="2">2. 核心指标：负压摆幅到底怎么读</h2>
+<h3 id="21">2.1 两种「能过零」的实现路径</h3>
+<table>
+<thead>
+<tr>
+<th>架构</th>
+<th>逻辑</th>
+<th>代表型号</th>
+<th>关键后果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>耗尽型（depletion）</strong></td>
+<td>无 VDD 时<strong>导通</strong>，有 VDD 时<strong>隔离</strong></td>
+<td><code>EMS3515YFQ</code>、<code>EMS3550UD</code> / <code>EMS3550YFC</code></td>
+<td>控制逻辑是反的；系统掉电 = 信号直通</td>
+</tr>
+<tr>
+<td><strong>常规模拟开关 + 负压设计</strong></td>
+<td>有 VDD 才工作，靠内部设计让音频摆到地以下</td>
+<td><code>EMS3580RSV</code>、<code>EMS4320RSW</code></td>
+<td>负压边界由 VIS/VAUDIO 额定值定；掉电行为以规格书为准</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><code>EMS3515YFQ</code>：实体页原文「Depletion technology enables the device to conduct signals in the absence of VDD and to isolate signals in the presence of VDD」，特性写 <strong>Normally closed when VDD &lt; 0.5 V</strong>。</li>
+<li><code>EMS3550UD</code>：原文「conduct signals when there is no VDD available and to isolate the signals when VDD is present」，特性写 <strong>Normally closed when VDD &lt; 0.2 V</strong>。</li>
+<li><code>EMS3580RSV</code>：概述明确「negative swing audio signals capacity」，靠内部 pop/click shunt + 音频通路软开/关实现。</li>
+<li><code>EMS4320RSW</code>：概述「The architecture is designed to allow audio signals to swing below ground」，为 USB-C 共用连接器的模拟音频而设。</li>
+<li><code>EMS4485</code>：<strong>实体页未把「负压摆幅」写进特性</strong>，只给了 VL/VR 绝对最大 −3.3 ~ 5.5 V。按引脚耐压理解，实际可用负向摆幅<strong>以规格书为准</strong>。</li>
+</ul>
+<h3 id="22">2.2 负压边界对照（注意口径）</h3>
+<table>
+<thead>
+<tr>
+<th>型号</th>
+<th>负压下限（推荐）</th>
+<th>负压下限（绝对最大）</th>
+<th>手册口径</th>
+<th>换算后峰值（√2，非手册值）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EMS3515YFQ</code></td>
+<td>导通 3.0 Vrms（&lt;30 kHz）；隔离按 VDD 分档 1.5→3.0 Vrms</td>
+<td>−4.5 V</td>
+<td><strong>Vrms</strong></td>
+<td>3.0 Vrms ≈ ±4.24 V</td>
+</tr>
+<tr>
+<td><code>EMS3550UD</code> / <code>EMS3550YFC</code></td>
+<td>导通 −3.0 V；隔离 −1.5 / −2.5 / −3.0 V</td>
+<td>−3.5 V</td>
+<td><strong>DC V</strong></td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>EMS3580RSV</code></td>
+<td>VIS 下限 −3.3 V（上限 = VCC）</td>
+<td>−4.0 V</td>
+<td>信号范围 2.5 Vrms</td>
+<td>2.5 Vrms ≈ ±3.54 V</td>
+</tr>
+<tr>
+<td><code>EMS4320RSW</code></td>
+<td>−2.5 V</td>
+<td>−3.0 V</td>
+<td><strong>DC V</strong>（±2.5 V）</td>
+<td>±2.5 V ≈ 1.77 Vrms</td>
+</tr>
+<tr>
+<td><code>EMS4485</code>（Draft）</td>
+<td>−3.3 V</td>
+<td>−3.3 V</td>
+<td><strong>DC V</strong></td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>三个必须记住的结论：</p>
+<ol>
+<li><strong><code>EMS3515YFQ</code> 的 −4.2 V 与 3.0 Vrms 是同一条边界</strong>。3.0 Vrms 正弦峰值是 ±4.24 V，和特性表「as low as −4.2 V」基本重合——一个是有效值口径，一个是电压口径。</li>
+<li><strong><code>EMS3550UD</code> 隔离态的负压能力随 VDD 收缩</strong>：VDD = 2.5 / 3.3 / 5.0 V 时，隔离态只保证 −1.5 / −2.5 / −3.0 V（对应上限 2.5 / 3.3 / 4.7 V）。导通态才是 −3.0 ~ 4.7 V。<strong>3.3 V 供电时按 −2.5 V 设计，不是 −3 V。</strong></li>
+<li><strong><code>EMS4320RSW</code> 的 ±2.5 V 是峰值不是有效值</strong>，折算只有 1.77 Vrms。拿它跑 2 Vrms（±2.83 V）信号会超出推荐工作区。</li>
+</ol>
+<h3 id="23">2.3 音质与隔离（同口径对比）</h3>
+<table>
+<thead>
+<tr>
+<th>型号</th>
+<th>THD+N (typ.)</th>
+<th>关断隔离 OIRR</th>
+<th>串扰 / 带宽</th>
+<th>通路电容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EMS3515YFQ</code></td>
+<td>−102 dB</td>
+<td>−115 dB（32 Ω）/ −100~−108 dB（1 kΩ）</td>
+<td>BW 80 MHz</td>
+<td>CON 17 / COFF 25 pF</td>
+</tr>
+<tr>
+<td><code>EMS3550UD</code></td>
+<td>−104 dB（0.7 Vrms, 32 Ω, 1 kHz）</td>
+<td>−100 dB @1 kHz / −85 dB @20 kHz（1 Vrms, 32 Ω）</td>
+<td>BW 21 MHz</td>
+<td>CON 42 / COFF 31 pF</td>
+</tr>
+<tr>
+<td><code>EMS3580RSV</code></td>
+<td>−118 dB（100 kΩ, 2 Vrms）/ −114 dB（32 Ω, 2 Vrms）</td>
+<td>145 dB（muting, 100 kΩ）/ 127 dB（32 Ω）</td>
+<td>串扰 145 dB；SNR 132 dBA；BW 50 MHz</td>
+<td>COFF 56 / CON 84 pF</td>
+</tr>
+<tr>
+<td><code>EMS4320RSW</code></td>
+<td>−105 dB（32 Ω, 0.7 Vrms）/ −110 dB（1 kΩ, 1.5 Vrms）</td>
+<td>音频 −100 dB / USB −40 dB</td>
+<td>音频串扰 −80 dB；USB BW 1000 MHz</td>
+<td>CON 5 / COFF 3（USB）/ 4（音频）pF</td>
+</tr>
+<tr>
+<td><code>EMS4485</code>（Draft）</td>
+<td>−108 / −105 / −101 dB（600 Ω/2 Vrms、32 Ω/1 Vrms、16 Ω/0.5 Vrms）</td>
+<td>−108 dB（1 kHz, 50 Ω）</td>
+<td>串扰 −88 dB；音频 BW 900 MHz</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="24">2.4 切换时间与静态电流</h3>
+<table>
+<thead>
+<tr>
+<th>型号</th>
+<th>开启 / 关断</th>
+<th>静态电流</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EMS3515YFQ</code></td>
+<td>tON 1 μs / tOFF 170 μs</td>
+<td>IOFF 0.2 μA（VDD=3.3–4.5 V）</td>
+<td>1 kΩ, 10 pF 条件；另有 0.7 / 0.5 μA 两档</td>
+</tr>
+<tr>
+<td><code>EMS3550UD</code></td>
+<td>tON 40 μs / tOFF 400 μs</td>
+<td>IDD 67 / 92 / 158 μA @2.5/3.3/5.0 V（SEL=0）</td>
+<td>断电 IDIS 0.1 μA</td>
+</tr>
+<tr>
+<td><code>EMS3580RSV</code></td>
+<td>TOFF 3.5 μs / TON 47 ms / TBBM 45 ms</td>
+<td>ICC 160 μA（MUTE=0）/ 80 μA（MUTE=VCC）</td>
+<td>另有 TTRS-OM 57 ms、TTRS-MO 35 ms</td>
+</tr>
+<tr>
+<td><code>EMS4320RSW</code></td>
+<td>手册未给音频 tON/tOFF</td>
+<td>ICC-A 66 μA / ICC-U 35 μA</td>
+<td>以规格书为准</td>
+</tr>
+<tr>
+<td><code>EMS4485</code>（Draft）</td>
+<td>音频 tdelay 410 μs / trise 230 μs / tOFF 45 ns</td>
+<td>ICC 55 μA（USB+SBUx_H）/ 68 μA（音频）；待机 5 μA</td>
+<td>Draft</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><code>EMS3580RSV</code> 的 45 ms（TBBM）静音窗口是刻意做的 pop 抑制，不是缺陷——但<strong>不能当无缝切换用</strong>。</p>
+</blockquote>
+<h2 id="3">3. 三个典型场景</h2>
+<h3 id="31-35-mm-hifi">3.1 耳机：3.5 mm 耳麦 / HiFi 便携</h3>
+<pre><code>音源 L/R ──► EMS3580RSV（双 SPDT，pop/click 抑制）──► 耳机座 L/R
+                    ▲ SEL / MUTE
+耳机座 MIC / AGND ──► EMS3550UD 的两刀（余下两刀空置）
+</code></pre>
+<ul>
+<li><strong>主路立体声切换 → <code>EMS3580RSV</code></strong>：0.16 Ω 导通电阻、−118 dB THD+N（100 kΩ/2 Vrms）、145 dB 关断隔离（100 kΩ），内置每个信号脚的 pop/click 泄放 + 音频通路软开/关。适合「HiFi 手机/便携、SACD/DVD、家庭影院」这类对爆音和失真都敏感的位置。</li>
+<li><strong>单点静音 / 隔离 → <code>EMS3515YFQ</code></strong>：SPST 常闭，0.85 Ω、−102 dB，WLCSP4 仅 0.93×0.93 mm，适合贴着耳机座放。</li>
+<li><strong>四极整体切断（L/R/MIC/AGND）→ <code>EMS3550UD</code></strong>：一颗 4-PST 同时切四根线，避免只切 L/R 而 AGND 仍连通造成的共模串音；面积敏感可选 <code>EMS3550YFC</code>。</li>
+<li>注意：<code>EMS3550UD</code> 的 <code>SEL0/SEL1</code> <strong>不是通道选择</strong>，是把内部振荡器在 790 kHz–1.12 MHz 之间按 110 kHz 步进微调，用于 EMI 优化。</li>
+</ul>
+<h3 id="32-usb-type-c">3.2 USB Type-C 音频</h3>
+<pre><code>Type-C 座 ──D+/D−──► EMS4320RSW（USB2.0 HS 通路，3.4 Ω / 1000 MHz）
+          ──R/L────►         （音频通路，0.9 Ω，−2.5~+2.5 V）
+          ──VBUS───►         （VBUS 脚耐 13 V，推荐 12 V）
+</code></pre>
+<ul>
+<li><strong><code>EMS4320RSW</code>：音频与 USB 共用同一个连接器</strong>。DPDT 结构，音频通路 0.9 Ω / THD+N −105 dB（32 Ω, 0.7 Vrms），USB 通路 3.4 Ω / −3 dB 带宽 1000 MHz，够 USB2.0 HS。D+/R 与 D−/L 带 <strong>4.8 V OVP 阈值</strong>，VBUS 脚绝对最大 13 V。SEL 内部 4 MΩ 下拉，默认态明确。</li>
+<li><strong><code>EMS4485</code>（Draft 未量产）：需要「识别 + 保护」时才考虑</strong>。支持 OMTP / CTIA / 3-pole 耳机自动识别与引脚重配，OVP 阈值 4.4 V 默认、4.4–5.0 V 可配（DP_R、DN_L、SBUx、GSBUx），带湿度检测（单/多引脚、轮询周期可经 I2C 配），VCC_IN 推荐 0–18 V、绝对最大 20 V。但只有 Draft V0.9，<strong>不能直接投产</strong>。</li>
+<li>取舍：只要「USB 数据 / 模拟音频二选一」→ <code>EMS4320RSW</code> 足够且已量产；要「耳机类型自动识别、湿度检测、SBU 高压保护」→ 评估 <code>EMS4485</code>，同时准备量产版替换路径。</li>
+</ul>
+<h3 id="33">3.3 车载音频路由（主机 / 功放输入切换）</h3>
+<pre><code>收音 / 蓝牙 / 导航提示音 ──► EMS3550UD（4 刀：L、R、MIC、AGND）──► 功放输入
+                                    ▲ SEL0/SEL1 调振荡器降 EMI
+功放输入端二次切换 ──────────► EMS3580RSV（双 SPDT，消上电爆音）
+</code></pre>
+<ul>
+<li><strong>多源选切 → <code>EMS3550UD</code></strong>：四刀一颗，L/R 加 MIC/AGND 一起切，避免地环路；QFN-16L 3×3 便于贴装与散热；IDD 67/92/158 μA（2.5/3.3/5.0 V），待机 IDIS 0.1 μA，适合常电待机。<code>SEL0/SEL1</code> 的 110 kHz 步进频偏可用于避开车内 AM 波段干扰点。</li>
+<li><strong>功放输入端 → <code>EMS3580RSV</code></strong>：pop/click 泄放 + 软开/关，专治上电/切换爆音；145 dB 关断隔离可防止未选通音源串入。</li>
+<li><strong>必须确认的前提</strong>：这 5 颗料的实体页<strong>均未声明 AEC-Q100</strong>（芯祥车规另有 <code>-Q100</code> 后缀系列）。工作温度方面 <code>EMS3515YFQ</code>/<code>EMS3550UD</code>/<code>EMS3580RSV</code>/<code>EMS4320RSW</code> 均为 TA −40~+85 ℃，<code>EMS3550UD</code> 的 ESD 为 ±4 kV，车载长线束场景建议外加保护。是否可用于车载项目<strong>以规格书与车规版本为准</strong>。</li>
+</ul>
+<h2 id="4">4. 设计要点</h2>
+<ol>
+<li><strong>先定供电，再定负压指标</strong>。<code>EMS3550UD</code> 隔离态负压 = −1.5 / −2.5 / −3.0 V 对应 VDD 2.5 / 3.3 / 5.0 V；<code>EMS3515YFQ</code> 隔离态 1.5 → 3.0 Vrms 对应 VDD 2.0 → 5.0 V。用 3.3 V 供电却按 −3 V 隔离设计，是最常见的过设计。</li>
+<li><strong>Vrms 与 Vpeak 分开算</strong>。<code>EMS3515YFQ</code> 的 3.0 Vrms 已是 ±4.24 V 峰值，距 −4.5 V 绝对最大只剩约 0.26 V 余量；供电纹波与瞬态要一起评估。</li>
+<li><strong>耗尽型的控制逻辑是反的</strong>。<code>EMS3515YFQ</code>（VDD &lt; 0.5 V 导通）、<code>EMS3550UD</code>（VDD &lt; 0.2 V 导通）：断电 = 直通。如果系统用「关掉这颗料的电源」来静音，结果会正好相反。</li>
+<li><strong>尊重内部默认电平，不要外加冲突电阻</strong>。<code>EMS4320RSW</code> SEL 4 MΩ 下拉；<code>EMS3580RSV</code> SEL 4 MΩ 下拉、MUTE 43 MΩ 上拉。悬空即默认态，加 100 kΩ 上拉反而会改变上电行为。</li>
+<li><strong>逻辑电平核对</strong>：<code>EMS3550UD</code> VIH/VIL = 1.6/0.4 V；<code>EMS4320RSW</code> 1.3–1.5 / 0.3–0.5 V（按 2.5–3 V 与 3–3.5 V 分档）；<code>EMS3580RSV</code> VIH 1.6（3.6–4.5 V）/ 1.5（3–3.6 V），VIL 0.5 / 0.4 V，概述标 1.8 V logic compatible。1.8 V MCU 可直驱，无需电平转换。</li>
+<li><strong>ESD 分档差异很大</strong>：<code>EMS3515YFQ</code> ±6 kV（I/O–GND）、<code>EMS3580RSV</code> ±6 kV（I/O–VCC/GND）、<code>EMS3550UD</code> ±4 kV、<code>EMS4320RSW</code> ±3 kV、<code>EMS4485</code> ±5 kV（仅 DP_R/DN_L/SENSE/MIC，其他脚 ±2.5 kV）。外露的耳机座与 Type-C 口按最外露通路加 TVS，别只依赖芯片。</li>
+<li><strong>电流与热</strong>：峰值电流 <code>EMS3515YFQ</code>/<code>EMS3550UD</code> 500 mA（1 ms，&lt;10%）；<code>EMS3580RSV</code> ±300 mA 连续 / ±500 mA 峰值，PD 250 mW、RθJA 80 ℃/W；<code>EMS4320RSW</code> 音频 ±200 mA、USB ±100 mA、RθJA 250 ℃/W；<code>EMS4485</code> 音频 250 mA max。小封装（WLCSP4 0.93 mm、QFN1.4×1.8）靠 PCB 散热，铜箔要够。</li>
+<li><strong>布局</strong>：去耦电容贴 VDD 脚；音频差分对对称走线，远离 VBUS 与 USB D±；<code>EMS4320RSW</code> 的 VBUS 脚按 12 V 处理爬电间距。<code>EMS4320RSW</code> USB 通路 CON/COFF 仅 5/3 pF，寄生电容预算很紧，走线越短越好。</li>
+<li><strong>测试时避开软启动窗口</strong>。<code>EMS3580RSV</code> TON 47 ms、TBBM 45 ms，上电后 50 ms 内测 THD+N 会读到异常值。</li>
+</ol>
+<h2 id="5">5. 常见误区</h2>
+<ol>
+<li><strong>把「支持负压」当「轨到轨」</strong>。负压下限是独立指标，且<strong>导通态 ≠ 隔离态</strong>：<code>EMS3550UD</code> 导通 −3.0 V，3.3 V 供电时隔离只到 −2.5 V；<code>EMS3515YFQ</code> 隔离态还要按 VDD 查 Vrms 分档表。</li>
+<li><strong>把 Vrms 当 Vpeak 用</strong>。<code>EMS3515YFQ</code> 的 3.0 Vrms 是 ±4.24 V 峰值；按「峰值 3.0 V」估需求会低估约 41%；而按峰值 4.24 V 选型时又已贴近 −4.5 V 绝对最大。</li>
+<li><strong>把 <code>EMS4320RSW</code> 的 ±2.5 V 当 2.5 Vrms</strong>。它是 DC 电压摆幅，折算 1.77 Vrms；要跑 2 Vrms（±2.83 V）就超推荐工作区了。</li>
+<li><strong>把耗尽型的「加电」当「导通」</strong>。<code>EMS3515YFQ</code>/<code>EMS3550UD</code> 是加电隔离、掉电导通，控制极性与普通 EN 相反。</li>
+<li><strong>把 <code>EMS3550UD</code> 的 SEL0/SEL1 当通道选择</strong>。它们只调内部振荡器频率（790 kHz–1.12 MHz，110 kHz 步进）做 EMI 优化，不改变通断。</li>
+<li><strong><code>EMS3580RSV</code> 的 45 ms 静音窗口被当成故障</strong>。TBBM 45 ms / TON 47 ms 是消 pop 的代价，做「实时 A/B 切换」会听到明显断音，需要无缝就换方案。</li>
+<li><strong>外露连接器只靠芯片 ESD</strong>。<code>EMS4320RSW</code> 只有 ±3 kV HBM，明显低于 <code>EMS3515YFQ</code>/<code>EMS3580RSV</code> 的 ±6 kV，Type-C 口必须外加保护。</li>
+<li><strong><code>EMS4485</code> 直接排产</strong>。它是 Draft V0.9、未量产，且推荐 VCC 只有 3.0–4.5 V（比 <code>EMS4320RSW</code> 的 2.5–5.5 V 窄），OVP/寄存器映射都可能变。</li>
+<li><strong>忽略 <code>EMS3580RSV</code> 两处摆幅口径不一致</strong>。推荐工作写 VIS −3.3 V ~ VCC、绝对最大 −4.0 V，但 p8 Table 7 的摆幅推荐给到 3.1 Vrms（±4.38 V 峰值）。<strong>按更严的一侧（−3.3 V）设计，最终以规格书为准。</strong></li>
+</ol>
+<h2 id="6">6. 选型核对清单</h2>
+<ul>
+<li>[ ] 信号负向峰值是多少（先换成 Vpeak，再对比推荐值而不是绝对最大值）</li>
+<li>[ ] 需要几刀：单点（<code>EMS3515YFQ</code>）/ 四刀含 AGND（<code>EMS3550UD</code>）/ 立体声双 SPDT（<code>EMS3580RSV</code>）/ 音频+USB 复用（<code>EMS4320RSW</code>）</li>
+<li>[ ] 负压发生在导通态还是隔离态，两者是否都满足</li>
+<li>[ ] 供电电压是否落在推荐区间（<code>EMS3550UD</code> 2.5–5.0 V、<code>EMS3580RSV</code> 3.0–4.5 V、<code>EMS4320RSW</code> 2.5–5.5 V）</li>
+<li>[ ] 控制逻辑极性（耗尽型：加电=断开）</li>
+<li>[ ] 掉电行为是否可接受（<code>EMS3515YFQ</code>/<code>EMS3550UD</code> 掉电直通）</li>
+<li>[ ] THD+N 与负载阻抗（32 Ω 耳机 vs 100 kΩ 功放输入，手册分档不同）</li>
+<li>[ ] 关断隔离度与串扰（多源并联时必须核）</li>
+<li>[ ] 切换时间是否落在可听范围内（<code>EMS3580RSV</code> 45 ms 静音窗口）</li>
+<li>[ ] ESD 等级 vs 连接器是否外露</li>
+<li>[ ] 封装与面积（WLCSP4 0.93 mm / QFN1.4×1.8 / QFN-16L 3×3）</li>
+<li>[ ] 是否车规项目（本组均未声明 AEC-Q100，另找 <code>-Q100</code> 系列）</li>
+<li>[ ] 是否 Draft 料（<code>EMS4485</code> 不可量产）</li>
+</ul>
+<h2 id="7">7. 来源</h2>
+<ul>
+<li>实体页：[[ems3515]]、[[ems3550]]、[[ems3580]]、[[ems4320]]、[[ems4485]]</li>
+<li>概念页：[[audio-switch]]、[[analog-switch]]、[[spst]]、[[spdt]]、[[dpdt]]</li>
+<li>原始规格书：<code>raw/datasheets/EMS3515_Product_DS_V1.2.json</code>、<code>EMS3550_Product_DS_V1.0.json</code>、<code>EMS3580_Product_DS_V1.0.json</code>、<code>EMS4320_Product_DS_V1.0.json</code>、<code>EMS4485_Draft_DS_V0.9.json</code></li>
+</ul>
+<h2 id="8">8. 免责</h2>
+<blockquote>
+<p>本文为应用指导，不替代数据手册。文中数值均取自上述实体页（其数值逐字提取自对应 PDF），换算值（Vrms ↔ Vpeak）已单独标注为「非手册值」。负压摆幅、隔离度分档、切换时间与电流限值最终以对应规格书的最新版本为准；<code>EMS4485</code> 仅依据 Draft Rev.0.9，量产版参数可能变更。车规应用须另行确认 AEC-Q100 版本。</p>
+</blockquote>
+  </article>
+</div>
+</body>
+</html>

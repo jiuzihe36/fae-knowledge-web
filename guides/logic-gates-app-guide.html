@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>74 逻辑门与总线缓冲 选型与应用指导 · 芯祥应用指南</title>
+<meta name="description" content="- 8 位双向：EM74LVC245APW（1.2–5.5 V）或 EM74HC245D（2.0–6.0 V）；注意 245 的 DIR + OE 双控制。">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .guide-wrap { max-width: 980px; margin: 0 auto; padding: 0 20px 64px; }
+  .guide-nav { position: sticky; top: 0; z-index: 10; padding: 12px 0; margin-bottom: 8px;
+    background: var(--bg, #fff); border-bottom: 1px solid var(--border, #e3e6e9); font-size: 13px; }
+  .guide-nav a { color: inherit; text-decoration: none; opacity: .75; }
+  .guide-nav a:hover { opacity: 1; text-decoration: underline; }
+  .guide-body { font-size: 14.5px; line-height: 1.75; }
+  .guide-body h1 { font-size: 24px; margin: 24px 0 8px; }
+  .guide-body h2 { font-size: 18px; margin: 28px 0 10px; padding-top: 8px; border-top: 1px solid var(--border, #eee); }
+  .guide-body h3 { font-size: 15.5px; margin: 20px 0 8px; }
+  .guide-body table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; display: block; overflow-x: auto; }
+  .guide-body th, .guide-body td { border: 1px solid var(--border, #e3e6e9); padding: 7px 10px; text-align: left; vertical-align: top; }
+  .guide-body th { background: rgba(0,0,0,.03); }
+  .guide-body code { background: rgba(0,0,0,.05); padding: 1px 5px; border-radius: 4px; font-size: .92em; }
+  .guide-body pre { background: rgba(0,0,0,.04); padding: 12px 14px; border-radius: 8px; overflow-x: auto; }
+  .guide-body blockquote { margin: 12px 0; padding: 8px 14px; border-left: 3px solid var(--accent, #888); background: rgba(0,0,0,.025); }
+  .guide-body ul, .guide-body ol { padding-left: 22px; }
+  :root[data-theme="dark"] .guide-body th, :root:not([data-theme="light"]) .guide-body th { background: rgba(255,255,255,.06); }
+  :root[data-theme="dark"] .guide-body code, :root:not([data-theme="light"]) .guide-body code,
+  :root[data-theme="dark"] .guide-body pre, :root:not([data-theme="light"]) .guide-body pre { background: rgba(255,255,255,.07); }
+</style>
+</head>
+<body>
+<div class="guide-wrap">
+  <nav class="guide-nav"><a href="../index.html">← 返回产品目录</a> · <a href="../index.html#page=apps">应用场景</a></nav>
+  <article class="guide-body">
+<h1 id="74">74 逻辑门与总线缓冲 选型与应用指导</h1>
+<blockquote>
+<p>覆盖芯祥 74 逻辑线的六条家族：<strong>HC/HCT</strong>（宽压通用）、<strong>AHC/AHCT</strong>（宽压提速）、<strong>LVC/LVCH</strong>（低压高速）、<strong>HCS</strong>（施密特输入）、<strong>LV1T</strong>（单电源升压）、<strong>CBT/CBTLV</strong>（总线开关）。
+同一功能号在不同家族里引脚兼容、参数不同——<strong>先定家族，再定功能号，最后定封装尾缀</strong>。</p>
+</blockquote>
+<h2 id="1-90">1. 家族定位（决定 90% 的选型）</h2>
+<table>
+<thead>
+<tr>
+<th>家族</th>
+<th>电压</th>
+<th>速度量级</th>
+<th>输入</th>
+<th>典型用途</th>
+<th>何时别选</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HC</strong></td>
+<td>2.0–6.0 V</td>
+<td>慢（tpd 十几 ns @4.5 V）</td>
+<td>CMOS 比例阈值</td>
+<td>5 V 系统、成本敏感、慢速控制</td>
+<td>3.3 V 高速、1.8 V</td>
+</tr>
+<tr>
+<td><strong>HCT</strong></td>
+<td>4.5–5.5 V</td>
+<td>同 HC</td>
+<td><strong>TTL 阈值</strong>（可直收 3.3 V 信号）</td>
+<td>5 V 系统接 TTL/3.3 V 驱动</td>
+<td>低于 4.5 V</td>
+</tr>
+<tr>
+<td><strong>AHC/AHCT</strong></td>
+<td>2.0–5.5 V</td>
+<td>比 HC 快约 3 倍</td>
+<td>CMOS / TTL</td>
+<td>3.3 V/5 V 混合、需要提速</td>
+<td>1.8 V 域、超低功耗</td>
+</tr>
+<tr>
+<td><strong>LVC/LVCH</strong></td>
+<td>1.65–5.5 V（LVCH 同）</td>
+<td><strong>最快</strong>（单门 tpd 数 ns）</td>
+<td>CMOS，5.5 V 容限</td>
+<td>1.8/2.5/3.3 V 高速、单门小封装</td>
+<td>6 V 系统（超压）</td>
+</tr>
+<tr>
+<td><strong>HCS</strong></td>
+<td>2.0–6.0 V</td>
+<td>中（tpd max 35/20/15 ns @2/4.5/6 V）</td>
+<td><strong>施密特</strong>（VT+ 0.7/1.21/1.5 V @2/4.5/6 V）</td>
+<td>慢边沿、噪声环境、5 V 整形</td>
+<td>需要 1.8 V 域</td>
+</tr>
+<tr>
+<td><strong>LV1T</strong></td>
+<td>1.6–5.5 V（单电源）</td>
+<td>快（tpd 3.7 ns @3.3 V typ）</td>
+<td>低阈值，靠输入阈值升压</td>
+<td>1.8 V 逻辑驱动 3.3/5 V 门</td>
+<td>需要真正双电源转换（用 EXS/8T245）</td>
+</tr>
+<tr>
+<td><strong>CBT/CBTLV</strong></td>
+<td>2.3–3.6 V（CBTLV）</td>
+<td>极快（tpd 0.3 ns typ）</td>
+<td>无（无源总线开关）</td>
+<td>总线隔离、热插拔、电平不转换的开关</td>
+<td>需要驱动能力（它不放大）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>HCT 与 AHCT 的隐藏价值</strong>：TTL 阈值（VIH≈2.0 V）让它能直接吃 3.3 V 输出，是 5 V 系统收 3.3 V 信号最省事的办法——不需要电平转换器。
+<strong>LVCH 不是 LVC 的升级版</strong>：LVCH 带总线保持，浮空输入不漂；但每个数据脚要 125 µA~900 µA 过驱动才翻得动，<strong>H 只对 H 替</strong>。</p>
+</blockquote>
+<h2 id="2">2. 功能号速查（按需求找门）</h2>
+<table>
+<thead>
+<tr>
+<th>需求</th>
+<th>功能号</th>
+<th>代表实体</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>反相</td>
+<td>04 / 1G04 / 2G04 / 14（施密特反相）/ 1G14</td>
+<td>[[em74lvc1g04]]、[[em74lvc1g14]]</td>
+</tr>
+<tr>
+<td>缓冲 / 线驱动</td>
+<td>34 / 1G34 / 2G34 / 17（施密特缓冲）/ 1G17 / 125·126（三态）</td>
+<td>[[em74lvc1g17]]、[[em74lvc1g125]]</td>
+</tr>
+<tr>
+<td>与非</td>
+<td>00 / 1G00 / 2G00 / 10（三路） / 1G10</td>
+<td>[[em74hc00-em74hct00]]、[[em74lvc1g00]]</td>
+</tr>
+<tr>
+<td>或非</td>
+<td>02 / 1G02 / 2G02 / 1G27（三输入）</td>
+<td>[[em74lvc1g02]] 等</td>
+</tr>
+<tr>
+<td>与</td>
+<td>08 / 1G08 / 2G08 / 1G11（三输入）</td>
+<td>[[em74lvc1g08]]</td>
+</tr>
+<tr>
+<td>或</td>
+<td>32 / 1G32 / 2G32</td>
+<td>[[em74lvc1g32]]</td>
+</tr>
+<tr>
+<td>异或 / 同或</td>
+<td>86 / 1G86 / 1G87</td>
+<td>—</td>
+</tr>
+<tr>
+<td>可配置（替代多颗门）</td>
+<td>1G57（可配置多功能）/ 1G58 / 1G97</td>
+<td>—</td>
+</tr>
+<tr>
+<td>施密特反相</td>
+<td>14 / 1G14 / 2G14 / HCS14</td>
+<td>[[em74hc14-em74hct14]]</td>
+</tr>
+<tr>
+<td>施密特缓冲</td>
+<td>17 / 1G17 / 2G17 / HCS 系列</td>
+<td>[[em74lvc1g17]]、[[em74ahc1g17-em74ahct1g17]]</td>
+</tr>
+<tr>
+<td>八路缓冲/线驱动</td>
+<td>244（双 4 路）/ 245（双向收发）/ 541（同相）/ 540（反相）</td>
+<td>[[em74hc245-em74hct245]]、[[em74lvc245a-em74lvch245a]]</td>
+</tr>
+<tr>
+<td>三态缓冲</td>
+<td>125（低有效 OE）/ 126（高有效 OE）/ 1G125·1G126</td>
+<td>[[em74lvc1g125]]</td>
+</tr>
+<tr>
+<td>译码</td>
+<td>138（3-8 译码）/ 139（双 2-4）</td>
+<td>[[em74hc138-em74hct138]]</td>
+</tr>
+<tr>
+<td>总线开关</td>
+<td>CBT3257（四路 2:1）/ CBT3253（双 4:1）/ CBTLV3125·3126</td>
+<td>[[em74cbtlv3257]]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3">3. 三个高频场景</h2>
+<h3 id="31">3.1 三态总线隔离（多主/热插拔）</h3>
+<ul>
+<li>8 位双向：<code>EM74LVC245APW</code>（1.2–5.5 V）或 <code>EM74HC245D</code>（2.0–6.0 V）；<strong>注意 245 的 DIR + OE 双控制</strong>。</li>
+<li>单向缓冲：<code>EM74LVC541APW</code>（同相）/ <code>EM74LVC540APW</code>（反相），OE 控制整组三态。</li>
+<li>单根线隔离：<code>EM74LVC1G125GV</code>（低有效 OE）/ <code>EM74LVC1G126GV</code>（高有效 OE）。</li>
+<li><strong>上电默认态</strong>：OE 必须由电阻拉到「关断」电平，避免上电瞬间总线争用；MCU 未初始化前 GPIO 是高阻，不能让 OE 悬空。</li>
+</ul>
+<h3 id="32">3.2 信号缓冲与长走线驱动</h3>
+<ul>
+<li>1.8/3.3 V 高速：LVC 家族，单门 <code>±24 mA</code>（@3.0 V，1G17/1G14 档）足以驱动 50 Ω 传输线的一端。</li>
+<li>5 V 系统：HC/AHC，驱动能力约 ±5.2 mA 量级，长线要核算上升时间（t_r ≈ 2.2·R·C）。</li>
+<li><strong>不要用「多级并联」凑驱动</strong>：并联门会因阈值/延时差异产生直通电流。</li>
+</ul>
+<h3 id="33">3.3 译码与片选</h3>
+<ul>
+<li><code>EM74HC138D/PW</code>：3-8 译码，低有效输出；三根地址线扩展 8 个片选。</li>
+<li>多片级联用使能脚（E1/E2/E3）做 bank 选择。</li>
+</ul>
+<h2 id="4">4. 设计要点</h2>
+<ol>
+<li><strong>未用输入必须定电平</strong>：CMOS 输入悬空会因中间电平产生直通电流；接 VCC 或 GND（经 10 kΩ 亦可）。</li>
+<li><strong>去耦</strong>：每颗 0.1 µF 就近电源脚；多门封装每 2–3 门加一颗。</li>
+<li><strong>扇出与负载</strong>：按 DC 表 IOH/IOL 与输入漏电流算扇出；容性负载按 tpd 增量估。</li>
+<li><strong>热插拔</strong>：需要「先断电再插」的场合用 CBT/CBTLV 总线开关（无源、不放大、tpd 0.3 ns），不要用带驱动的 245。</li>
+<li><strong>HCT 收 3.3 V</strong>：VIH≈2.0 V，3.3 V 高电平有 1.3 V 余量；但 <strong>HCT 不能低于 4.5 V 工作</strong>。</li>
+<li><strong>LV1T 是单电源升压</strong>：靠输入低阈值把 1.8 V 信号「认成高」，输出摆到 VCC（3.3/5 V）；<strong>不是双向转换器</strong>，I²C 这类开漏双向总线不能用。</li>
+</ol>
+<h2 id="5">5. 常见误区</h2>
+<ol>
+<li><strong>把 HC 用在 1.8 V 域</strong>：HC 最低 2.0 V，1.8 V 系统必须 LVC/LVCH 或 LV1T。</li>
+<li><strong>HCT 当万能 5 V 收</strong>：HCT 最低 4.5 V，3.3 V 供电不工作。</li>
+<li><strong>CBT 当缓冲器</strong>：CBT 是无源开关，不提供驱动，长线仍会塌。</li>
+<li><strong>245 的 DIR 悬空</strong>：方向不确定会导致总线争用；DIR 与 OE 都要定电平。</li>
+<li><strong>拿 74 逻辑做电平转换</strong>：单向逻辑可以（HCT/LV1T 靠阈值），双向/开漏必须 EXS 或 8T245。</li>
+</ol>
+<h2 id="6">6. 选型核对清单</h2>
+<ul>
+<li>[ ] 供电电压落在家族范围内（HC 2–6 / HCT 4.5–5.5 / AHC 2–5.5 / LVC 1.65–5.5 / HCS 2–6 / LV1T 1.6–5.5）</li>
+<li>[ ] 速度：tpd 是否进预算（查该家族动态表，不要跨家族套数）</li>
+<li>[ ] 驱动：IOH/IOL 是否够（长线/大容性负载另算）</li>
+<li>[ ] 输入类型：是否需要施密特（慢边沿/噪声）</li>
+<li>[ ] 控制脚：OE / DIR / LE 是否有默认态</li>
+<li>[ ] 封装：D/PW/DB 等尾缀与 PCB 焊盘一致</li>
+<li>[ ] 车规：需要 AEC-Q100 时先确认是否硬性（本线无 Q100 料）</li>
+</ul>
+<h2 id="7">7. 来源</h2>
+<ul>
+<li>实体页：[[em74hc00-em74hct00]]、[[em74hc245-em74hct245]]、[[em74lvc245a-em74lvch245a]]、[[em74hc541-em74hct541]]、[[em74hcs125]]、[[em74lv1t04]]、[[em74cbtlv3257]]、[[em74hc138-em74hct138]]</li>
+<li>概念页：[[buffer]]、[[bus-buffer]]、[[line-driver]]、[[decoder]]</li>
+<li>原始规格书：<code>raw/datasheets/EM74HC_HCT245_Product_DS_V1.1.json</code> 等</li>
+</ul>
+<blockquote>
+<p>本文为应用指导，不替代数据手册。tpd/驱动电流必须回对应家族规格书动态表与 DC 表核对。</p>
+</blockquote>
+  </article>
+</div>
+</body>
+</html>

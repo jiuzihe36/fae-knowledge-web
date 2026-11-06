@@ -117,6 +117,14 @@ echo "  如需恢复, 先清洗 raw_apps_authoritative.json 再启用本步。"
 # （2026-11-06 教训：改完 unified.js 忘了 bump 版本，浏览器跑旧 JS，
 #   新加的「更新记录」导航点了是空白——因为旧代码里没有这个页面分支。）
 echo ""
+echo "📘 Step 1.7: 渲染应用指南（wiki applications → guides/ + guides.json）..."
+if [ -f "$DIR/scripts/build_guides.py" ]; then
+  python3 "$DIR/scripts/build_guides.py" 2>&1 | head -2
+else
+  echo "  (无 build_guides.py — 跳过)"
+fi
+
+echo ""
 echo "🏷 Step 1.6: 静态资源版本戳（内容哈希）..."
 python3 - "$DIR" <<'PY'
 import sys, re, hashlib

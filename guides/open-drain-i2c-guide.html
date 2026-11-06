@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>开漏输出与 I²C 总线 应用指南 · 芯祥应用指南</title>
+<meta name="description" content="覆盖面：开漏输出与电平转换（32 款，§1–§3）、开漏线与逻辑（18 款，§1.2(b) 与 §5.2）、I²C 总线与中断驱动（21 款，§4）。">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .guide-wrap { max-width: 980px; margin: 0 auto; padding: 0 20px 64px; }
+  .guide-nav { position: sticky; top: 0; z-index: 10; padding: 12px 0; margin-bottom: 8px;
+    background: var(--bg, #fff); border-bottom: 1px solid var(--border, #e3e6e9); font-size: 13px; }
+  .guide-nav a { color: inherit; text-decoration: none; opacity: .75; }
+  .guide-nav a:hover { opacity: 1; text-decoration: underline; }
+  .guide-body { font-size: 14.5px; line-height: 1.75; }
+  .guide-body h1 { font-size: 24px; margin: 24px 0 8px; }
+  .guide-body h2 { font-size: 18px; margin: 28px 0 10px; padding-top: 8px; border-top: 1px solid var(--border, #eee); }
+  .guide-body h3 { font-size: 15.5px; margin: 20px 0 8px; }
+  .guide-body table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; display: block; overflow-x: auto; }
+  .guide-body th, .guide-body td { border: 1px solid var(--border, #e3e6e9); padding: 7px 10px; text-align: left; vertical-align: top; }
+  .guide-body th { background: rgba(0,0,0,.03); }
+  .guide-body code { background: rgba(0,0,0,.05); padding: 1px 5px; border-radius: 4px; font-size: .92em; }
+  .guide-body pre { background: rgba(0,0,0,.04); padding: 12px 14px; border-radius: 8px; overflow-x: auto; }
+  .guide-body blockquote { margin: 12px 0; padding: 8px 14px; border-left: 3px solid var(--accent, #888); background: rgba(0,0,0,.025); }
+  .guide-body ul, .guide-body ol { padding-left: 22px; }
+  :root[data-theme="dark"] .guide-body th, :root:not([data-theme="light"]) .guide-body th { background: rgba(255,255,255,.06); }
+  :root[data-theme="dark"] .guide-body code, :root:not([data-theme="light"]) .guide-body code,
+  :root[data-theme="dark"] .guide-body pre, :root:not([data-theme="light"]) .guide-body pre { background: rgba(255,255,255,.07); }
+</style>
+</head>
+<body>
+<div class="guide-wrap">
+  <nav class="guide-nav"><a href="../index.html">← 返回产品目录</a> · <a href="../index.html#page=apps">应用场景</a></nav>
+  <article class="guide-body">
+<h1 id="i2c">开漏输出与 I²C 总线 应用指南</h1>
+<blockquote>
+<p>开漏只有一个主动作：<strong>把线拉低</strong>。高电平不是它给的，是上拉电阻给的。
+这一句推出全文：上拉怎么选、电平怎么变、总线为什么必须开漏、为什么线一长就慢。</p>
+<p><strong>数据口径</strong>：电气数值（VCC/VI/VO 范围、VOL/IOL、II、IOZ、IOFF、ICC、tpd、CI）全部取自下列 6 个实体页的规格表，不外加、不插值当保证值。
+<strong>I²C 的 400 pF、3 mA、t_r = 1000/300/120 ns 是总线规范常数，不是芯祥器件参数</strong>，凡出现都单独标注。
+文中所有电阻、时间、电流都是把实体页保证值代入公式的<strong>计算结果，不是实测</strong>（电容估算与上拉初值在文中单独标为「假设」）；定型前用 min/max 复核，并在样机上量上升沿与真实 VOL。</p>
+</blockquote>
+<p><strong>覆盖面</strong>：开漏输出与电平转换（32 款，§1–§3）、开漏线与逻辑（18 款，§1.2(b) 与 §5.2）、I²C 总线与中断驱动（21 款，§4）。</p>
+<h2 id="1">1. 开漏输出到底是什么</h2>
+<h3 id="11">1.1 输出级只有半座桥</h3>
+<pre><code>   推挽（push-pull）                开漏（open-drain）
+        VCC                              VCC
+         │                                │
+      [PMOS]  ← 上管                  [R_p]  ← 上拉必须在片外
+         │                                │
+   A ────┼──── Y                   A ─────┼──── Y
+         │                                │
+      [NMOS]  ← 下管                 [NMOS]  ← 只有下管
+         │                                │
+        GND                              GND
+</code></pre>
+<p>推挽输出有两只管子：上管把节点<strong>拉高</strong>到 VCC，下管把节点<strong>拉低</strong>到 GND。开漏只有下管——<strong>没有上管，所以它没有能力输出高电平</strong>，只能「放手」让外部上拉把节点拉高。</p>
+<p>三个状态，不是两个：</p>
+<table>
+<thead>
+<tr>
+<th>输入</th>
+<th>下管</th>
+<th>输出节点</th>
+<th>谁决定电平</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>导通条件成立</td>
+<td>导通</td>
+<td>被拉到 GND（= VOL，不是 0 V）</td>
+<td>器件</td>
+</tr>
+<tr>
+<td>导通条件不成立</td>
+<td>关断</td>
+<td><strong>高阻</strong>（浮空）</td>
+<td>外部上拉（有）／不确定（没有）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>「关断」不等于「输出高」</strong>。这是开漏所有误区的源头：没有上拉电阻，节点就是一根天线，电压由漏电、耦合、下一次谁碰它决定。</p>
+<h3 id="12">1.2 三条直接推论</h3>
+<p><strong>(a) 高电平由外部电源决定 → 天然的电平转换器。</strong>
+<code>EM74LVC1G06/1G07/1G09/2G06/2G07</code> 的推荐工作条件都写着：VCC 1.65–5.5 V、VI 0–5.5 V、<strong>VO（开漏）0–5.5 V</strong>。意思是：器件可以吃 1.8 V 的电，却让输出节点被拉到 5 V。五个 LVC 实体页的概述原话就是「used as translators in mixed 3.3 V and 5 V environments」。这不是技巧，是规格书明写的用法。</p>
+<p><strong>(b) 多个输出可以并到一根线上（线与）。</strong>
+只要有一个拉低，整条线就是低；全都不拉，上拉把它抬到高。推挽输出绝对不能并联：一个拉高、一个拉低，等于 VCC 经上管直接短到 GND 经下管，电流只受两只管子的 R_on 限制。</p>
+<p><strong>(c) 上升沿不由器件决定。</strong>
+下降沿是 NMOS 在驱动（<code>1G06/1G07</code> @3.0–3.6 V：tpd 2.5 ns typ / 4.0 ns max），上升沿是 R_p·C 在驱动。同样一条线，<code>R_p = 4.7 kΩ、C = 100 pF</code> 时上升沿 <strong>398 ns</strong>——比下降沿慢两个数量级。开漏系统的速度永远是「上升沿定的」，不是「tpd 定的」。</p>
+<h3 id="13-vol-0-v">1.3 VOL 是一个带条件的保证值，不是 0 V</h3>
+<p>LVC 1G/2G 五个型号（<code>EM74LVC1G06/1G07/1G09/2G06/2G07</code>）的 VOL 表逐字相同：</p>
+<table>
+<thead>
+<tr>
+<th>测试条件（VI = VIH 或 VIL）</th>
+<th>VOL max @ −40~85 °C</th>
+<th>VOL max @ −40~125 °C</th>
+<th>折算等效电阻 @85 °C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IO = 100 µA，VCC = 1.65–5.5 V</td>
+<td>0.10 V</td>
+<td>0.10 V</td>
+<td>1000 Ω</td>
+</tr>
+<tr>
+<td>IO = 4 mA，VCC = 1.65 V</td>
+<td>0.45 V</td>
+<td>0.70 V</td>
+<td>113 Ω</td>
+</tr>
+<tr>
+<td>IO = 8 mA，VCC = 2.3 V</td>
+<td>0.30 V</td>
+<td>0.45 V</td>
+<td>38 Ω</td>
+</tr>
+<tr>
+<td>IO = 12 mA，VCC = 2.7 V</td>
+<td>0.40 V</td>
+<td>0.60 V</td>
+<td>33 Ω</td>
+</tr>
+<tr>
+<td>IO = 24 mA，VCC = 3.0 V</td>
+<td>0.55 V</td>
+<td>0.80 V</td>
+<td>23 Ω</td>
+</tr>
+<tr>
+<td>IO = 32 mA，VCC = 4.5 V</td>
+<td>0.55 V</td>
+<td>0.80 V</td>
+<td>17 Ω</td>
+</tr>
+</tbody>
+</table>
+<p><strong>最后那列不要当成 R_on 用。</strong> 它从 1000 Ω 掉到 17 Ω，跨度 60 倍——因为 VOL 是「一个固定失调 + 电流×导通电阻」，低电流时失调项占主导。同样，把 23 Ω 当常数外推到 1 mA 会算出 0.023 V，可表里 100 µA 时 VOL 就已经是 0.10 V，1 mA 只会在 0.10–0.45 V 之间（单调，不可能更低）。<strong>只能在表里的测试点上引用，中间值靠实测，不靠插值。</strong></p>
+<p><code>EM74AUP1G07</code> 是另一张表（VCC 0.8–3.6 V，绝对最大 IO 仅 20 mA）：</p>
+<table>
+<thead>
+<tr>
+<th>测试条件</th>
+<th>VOL max @85 °C</th>
+<th>VOL max @125 °C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IO = 20 µA，VCC = 0.8–3.6 V</td>
+<td>0.10 V</td>
+<td>0.11 V</td>
+</tr>
+<tr>
+<td>IO = 1.1 mA，VCC = 1.1 V</td>
+<td>0.3·VCC</td>
+<td>0.33·VCC</td>
+</tr>
+<tr>
+<td>IO = 1.7 mA，VCC = 1.4 V</td>
+<td>0.37 V</td>
+<td>0.41 V</td>
+</tr>
+<tr>
+<td>IO = 1.9 mA，VCC = 1.65 V</td>
+<td>0.35 V</td>
+<td>0.39 V</td>
+</tr>
+<tr>
+<td>IO = 2.3 mA，VCC = 2.3 V</td>
+<td>0.33 V</td>
+<td>0.36 V</td>
+</tr>
+<tr>
+<td>IO = 3.1 mA，VCC = 2.3 V</td>
+<td>0.45 V</td>
+<td>0.50 V</td>
+</tr>
+<tr>
+<td>IO = 2.7 mA，VCC = 3.0 V</td>
+<td>0.33 V</td>
+<td>0.36 V</td>
+</tr>
+<tr>
+<td>IO = 4.0 mA，VCC = 3.0 V</td>
+<td>0.45 V</td>
+<td>0.50 V</td>
+</tr>
+</tbody>
+</table>
+<p>同一电流下 AUP 的 VOL 明显更高：AUP 在 4 mA 就要 0.45 V，LVC 24 mA 才 0.55 V——<strong>同样的 VOL 预算下，AUP 能灌的电流只有 LVC 的 1/6 量级</strong>。AUP 是省电的，不是灌电流的，别拿它顶 LVC 的驱动位置。</p>
+<h3 id="14">1.4 开漏、三态、推挽的区别（一句话版）</h3>
+<ul>
+<li><strong>推挽</strong>：能拉高也能拉低，不能并联。</li>
+<li><strong>三态</strong>：有上管，但可以被 OE 关掉，关掉后也是高阻；能并联但需要协议保证同一时刻只有一个在驱动。</li>
+<li><strong>开漏</strong>：根本没有上管，天生高阻，天生能并联，但高电平必须外挂。</li>
+</ul>
+<p>I²C 选开漏不是「习惯」，是因为<strong>多主仲裁和时钟拉伸要求「谁都能拉低、谁都不能强行拉高」</strong>——见 §4.5。</p>
+<h2 id="2">2. 上拉电阻怎么选</h2>
+<h3 id="21">2.1 两个方向的边界</h3>
+<pre><code>下限（不能太小）：输出低电平时，灌进去的电流仍要让 VOL 留在门限以内
+                  R_p(min) = (VCC − VOL(max)) / IOL
+
+上限（不能太大）：释放后，节点电压要在规定时间内越过接收端 VIH
+                  R_p(max) = t_r / (0.8473 · C)
+</code></pre>
+<p><code>0.8473 = ln(0.7/0.3)</code>，来自 30%→70% 的上升沿定义：v(t) = VCC·(1 − e^(−t/RC))，从 0.3VCC 走到 0.7VCC 需要 0.8473·RC。I²C 规范把 <strong>VIH 定为 0.7·VCC</strong>，所以 70% 那一点就是判定点，30% 只是测量起点。它的倒数 1.18 就是 I²C 规范里 <code>R_max·C = 1.18·t_r</code> 的那个 1.18——<strong>同一个式子的两种写法</strong>。</p>
+<p>换成别的判决点，系数要换：</p>
+<table>
+<thead>
+<tr>
+<th>判决区间</th>
+<th>系数 k（t = k·R·C）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 → 30% VCC</td>
+<td>0.357</td>
+</tr>
+<tr>
+<td>0 → 50% VCC</td>
+<td>0.693</td>
+</tr>
+<tr>
+<td>0 → 70% VCC</td>
+<td>1.204</td>
+</tr>
+<tr>
+<td><strong>30% → 70%（I²C 定义）</strong></td>
+<td><strong>0.847</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-rpminiol">2.2 Rp(min)：IOL 只能从实体页的表里取</h3>
+<p>代入 §1.3 的表，得到「器件不脱离规格」的底线：</p>
+<table>
+<thead>
+<tr>
+<th>上拉域</th>
+<th>电流点（实体页测试 VCC）</th>
+<th>VOL max</th>
+<th>Rp(min) = (VCC − VOLmax) / IOL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.3 V</td>
+<td>24 mA（3.0 V 档），85 °C</td>
+<td>0.55 V</td>
+<td><strong>115 Ω</strong></td>
+</tr>
+<tr>
+<td>3.3 V</td>
+<td>24 mA（3.0 V 档），125 °C</td>
+<td>0.80 V</td>
+<td><strong>104 Ω</strong></td>
+</tr>
+<tr>
+<td>5.0 V</td>
+<td>32 mA（4.5 V 档），85 °C</td>
+<td>0.55 V</td>
+<td><strong>139 Ω</strong></td>
+</tr>
+<tr>
+<td>1.8 V</td>
+<td>4 mA（1.65 V 档），85 °C</td>
+<td>0.45 V</td>
+<td><strong>338 Ω</strong></td>
+</tr>
+<tr>
+<td>1.8 V</td>
+<td>4 mA（1.65 V 档），125 °C</td>
+<td>0.70 V</td>
+<td><strong>275 Ω</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>分子用实际上拉域电压，而 VOL 的保证点规定在 3.0 V / 4.5 V / 1.65 V 档——3.3 V 供电时规格书并不额外给出 24 mA 的 VOL 点。这是「按最近档位核算」的工程做法，<strong>不是规格书原表</strong>，对外解释时要说明。</p>
+</blockquote>
+<p><strong>这几个数不是「推荐值」，是「再小就出规格」的红线。</strong> 真正该用的下限通常比它大一个数量级，因为还有两条约束：</p>
+<ul>
+<li><strong>绝对最大额定值 IO = 50 mA</strong>（VO = 0–6.5 V）。上拉再小就只受这个限制：3.3 V 时 R_p ≥ 66 Ω、5 V 时 ≥ 100 Ω、1.8 V 时 ≥ 36 Ω。低于这个值，器件在输出低时就在绝对最大值边缘工作。</li>
+<li><strong>VOL 门限是系统给的，不是器件给的</strong>。I²C 规范把低电平门限定在 VOL ≤ 0.4 V @ IOL = 3 mA（Standard/Fast mode，<strong>总线规范常数</strong>）。按这个口径：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>域</th>
+<th>Rp(min) = (VCC − 0.4) / 3 mA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.8 V</td>
+<td>467 Ω</td>
+</tr>
+<tr>
+<td>2.5 V</td>
+<td>700 Ω</td>
+</tr>
+<tr>
+<td>3.3 V</td>
+<td><strong>967 Ω</strong></td>
+</tr>
+<tr>
+<td>5.0 V</td>
+<td>1533 Ω</td>
+</tr>
+</tbody>
+</table>
+<p>注意 3.3 V 时「总线规范口径 967 Ω」比「器件能力口径 115 Ω」严 8 倍。<strong>取两者中较大的那个</strong>——除非上升沿预算逼你放宽（§4.3 会出现这种冲突）。</p>
+<h3 id="23-rpmax">2.3 Rp(max)：一条线能拉多长，全看这个表</h3>
+<p><code>R_p(max) = t_r / (0.8473·C)</code>，t_r 取总线规范：</p>
+<table>
+<thead>
+<tr>
+<th>总线速率（规范常数）</th>
+<th>t_r max</th>
+<th>C = 50 pF</th>
+<th>100 pF</th>
+<th>200 pF</th>
+<th>400 pF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard 100 kHz</td>
+<td>1000 ns</td>
+<td>23.6 kΩ</td>
+<td>11.8 kΩ</td>
+<td>5.9 kΩ</td>
+<td><strong>3.0 kΩ</strong></td>
+</tr>
+<tr>
+<td>Fast 400 kHz</td>
+<td>300 ns</td>
+<td>7.1 kΩ</td>
+<td>3.5 kΩ</td>
+<td>1.8 kΩ</td>
+<td><strong>885 Ω</strong></td>
+</tr>
+<tr>
+<td>Fast-mode Plus 1 MHz</td>
+<td>120 ns</td>
+<td>2.8 kΩ</td>
+<td>1.4 kΩ</td>
+<td>707 Ω</td>
+<td>354 Ω</td>
+</tr>
+</tbody>
+</table>
+<p>反过来查更直观——给定上拉，看上升沿：</p>
+<table>
+<thead>
+<tr>
+<th>R_p</th>
+<th>C = 50 pF</th>
+<th>C = 100 pF</th>
+<th>C = 400 pF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0 kΩ</td>
+<td>42 ns</td>
+<td>85 ns</td>
+<td>339 ns</td>
+</tr>
+<tr>
+<td>2.2 kΩ</td>
+<td>93 ns</td>
+<td>186 ns</td>
+<td>746 ns</td>
+</tr>
+<tr>
+<td>4.7 kΩ</td>
+<td>199 ns</td>
+<td>398 ns</td>
+<td>1593 ns</td>
+</tr>
+<tr>
+<td>10 kΩ</td>
+<td>424 ns</td>
+<td>847 ns</td>
+<td>3389 ns</td>
+</tr>
+<tr>
+<td>47 kΩ</td>
+<td>1991 ns</td>
+<td>3982 ns</td>
+<td>15929 ns</td>
+</tr>
+</tbody>
+</table>
+<p><strong>读法</strong>：4.7 kΩ + 100 pF 只能跑 100 kHz（398 ns &lt; 1000 ns），跑 400 kHz 要 300 ns 以内 → 不行。这条线在无数板子上「能用但偶尔丢包」，原因就在这里。</p>
+<h3 id="24">2.4 第三、第四个边界：漏电与功耗</h3>
+<p><strong>漏电</strong>：总线是高阻节点，每个挂在上面的器件都在往外吐漏电。LVC 全系 II max = ±1 µA、<strong>IOZ max = ±2 µA</strong>（VI = VIH 或 VIL，输出关断）；AUP1G07 是 ±0.75 µA。N 个节点叠加后把高电平往下拽：</p>
+<pre><code>ΔV = N · IOZ(max) · R_p      要求 ΔV &lt; 0.3·VCC − 余量
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>N（节点数）</th>
+<th>R_p = 2.2 kΩ</th>
+<th>4.7 kΩ</th>
+<th>10 kΩ</th>
+<th>47 kΩ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>9 mV</td>
+<td>19 mV</td>
+<td>40 mV</td>
+<td>188 mV</td>
+</tr>
+<tr>
+<td>4</td>
+<td>18 mV</td>
+<td>38 mV</td>
+<td>80 mV</td>
+<td>376 mV</td>
+</tr>
+<tr>
+<td>8</td>
+<td>35 mV</td>
+<td>75 mV</td>
+<td>160 mV</td>
+<td><strong>752 mV</strong></td>
+</tr>
+<tr>
+<td>16</td>
+<td>70 mV</td>
+<td>150 mV</td>
+<td>320 mV</td>
+<td>1504 mV</td>
+</tr>
+</tbody>
+</table>
+<p>8 个节点 + 47 kΩ 上拉 = 高电平被拽掉 0.75 V。3.3 V 系统里 VIH 是 2.0 V，还撑得住；1.8 V 系统里 VIH 是 1.17 V，1.8 − 0.75 = 1.05 V，<strong>已经翻了</strong>。这是「小板上好好的，扩到 8 个从机就不认」的典型原因。</p>
+<p><strong>功耗</strong>：输出低时电流 VCC/R_p 是常流的，不是开关损耗。</p>
+<table>
+<thead>
+<tr>
+<th>R_p</th>
+<th>1.8 V</th>
+<th>3.3 V</th>
+<th>5.0 V</th>
+<th>5 V 时单线功耗</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>470 Ω</td>
+<td>3.8 mA</td>
+<td>7.0 mA</td>
+<td>10.6 mA</td>
+<td>53 mW</td>
+</tr>
+<tr>
+<td>1 kΩ</td>
+<td>1.8 mA</td>
+<td>3.3 mA</td>
+<td>5.0 mA</td>
+<td>25 mW</td>
+</tr>
+<tr>
+<td>2.2 kΩ</td>
+<td>0.82 mA</td>
+<td>1.5 mA</td>
+<td>2.3 mA</td>
+<td>11 mW</td>
+</tr>
+<tr>
+<td>4.7 kΩ</td>
+<td>0.38 mA</td>
+<td>0.70 mA</td>
+<td>1.06 mA</td>
+<td>5.3 mW</td>
+</tr>
+<tr>
+<td>10 kΩ</td>
+<td>0.18 mA</td>
+<td>0.33 mA</td>
+<td>0.50 mA</td>
+<td>2.5 mW</td>
+</tr>
+<tr>
+<td>47 kΩ</td>
+<td>0.04 mA</td>
+<td>0.07 mA</td>
+<td>0.11 mA</td>
+<td>0.5 mW</td>
+</tr>
+</tbody>
+</table>
+<p>I²C 传输时 SCL 大约一半时间为低，SDA 随数据变。按 50% 占空比粗算平均：3.3 V + 470 Ω 的两线总线，<strong>平均就有 7 mA</strong>——对纽扣电池是灾难，对 USB 供电的板子无所谓。选上拉前先问一句「这板子谁供电」。</p>
+<h3 id="25">2.5 取值窗口汇总</h3>
+<p>把四个边界叠在一张表上（C 取 100 pF 的常见短线，Fast 400 kHz）：</p>
+<table>
+<thead>
+<tr>
+<th>域</th>
+<th>Rp(min) 器件能力</th>
+<th>Rp(min) 总线规范</th>
+<th>Rp(max) @100 pF</th>
+<th><strong>可用窗口</strong></th>
+<th>推荐起点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.8 V</td>
+<td>338 Ω（4 mA 点）</td>
+<td>467 Ω</td>
+<td>3.5 kΩ</td>
+<td>467 Ω – 3.5 kΩ</td>
+<td><strong>1–2.2 kΩ</strong></td>
+</tr>
+<tr>
+<td>3.3 V</td>
+<td>115 Ω（24 mA 点）</td>
+<td>967 Ω</td>
+<td>3.5 kΩ</td>
+<td>967 Ω – 3.5 kΩ</td>
+<td><strong>1.8–2.2 kΩ</strong></td>
+</tr>
+<tr>
+<td>5.0 V</td>
+<td>139 Ω（32 mA 点）</td>
+<td>1533 Ω</td>
+<td>3.5 kΩ</td>
+<td>1.5 kΩ – 3.5 kΩ</td>
+<td><strong>2.2–3.3 kΩ</strong></td>
+</tr>
+</tbody>
+</table>
+<p>100 kHz 的场合整条窗口往右移，可以直接用 4.7–10 kΩ。</p>
+<p><strong>典型值假设（工程起点，不是实测，也不是规格书推荐）</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>假设的上拉</th>
+<th>前提</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100 kHz、≤3 个器件、≤10 cm</td>
+<td>4.7 kΩ @3.3 V / 10 kΩ @5 V</td>
+<td>C ≈ 30 pF，t_r ≈ 120–250 ns</td>
+</tr>
+<tr>
+<td>400 kHz、≤6 个器件、≤20 cm</td>
+<td>2.2 kΩ @3.3 V</td>
+<td>C ≈ 60 pF，t_r ≈ 112 ns</td>
+</tr>
+<tr>
+<td>400 kHz、接近 400 pF 满载</td>
+<td>820 Ω–1 kΩ</td>
+<td>见 §4.3 的窗口冲突</td>
+</tr>
+<tr>
+<td>1.8 V 域</td>
+<td>2.2 kΩ 起；1 kΩ 是硬下限（1.8 mA），宽温建议 ≥2.2 kΩ</td>
+<td>VOL 在低压域更紧张，见 §4.2</td>
+</tr>
+<tr>
+<td>中断线（不要求速度）</td>
+<td>10 kΩ（≤4 节点）/ 4.7 kΩ（更多）</td>
+<td>受 §2.4 漏电限制，不是受速度</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3">3. 电平转换</h2>
+<h3 id="31">3.1 开漏 + 上拉 = 单向变电平</h3>
+<pre><code>   1.8 V ────► VCC
+   MCU GPIO ─► A   1G07   Y ──┬─────────► 3.3 V 器件输入
+   GND ──────► GND            │
+                              │  R_p 4.7 kΩ
+                              │
+                              3.3 V
+</code></pre>
+<ul>
+<li>器件 <strong>VCC 接低压域</strong>（1.8 V），上拉接<strong>高压域</strong>（3.3 V）。输出关断时节点被抬到 3.3 V，<code>VO</code> 推荐上限 5.5 V，完全在规格内。</li>
+<li>器件输入 VIH 按自己的 VCC 算：VCC = 1.65–1.95 V 时 <strong>VIH min = 0.65·VCC = 1.07–1.27 V</strong>，1.8 V 摆幅够。</li>
+<li>反过来接就错：<strong>VCC = 3.3 V 时 VIH min = 2.0 V，1.8 V 摆幅不够</strong>（见 §4.2 的表）。这是「明明加了转换器还是不认」的第一嫌疑。</li>
+<li>5 V 域同理：VCC = 4.5–5.5 V 时 VIH min = 0.7·VCC = 3.15–3.85 V，<strong>3.3 V 逻辑直驱 5 V 供电的 LVC 是不行的</strong>。要 5 V 输入阈值低，得用 HCT 系列或把 VCC 接 3.3 V。</li>
+</ul>
+<p><strong>选型细节（来自实体页的测试条件差异）</strong>：<code>1G07</code> / <code>1G09</code> 的 IOZ 行把条件写到 <strong>VO = 5.5 V</strong>，也就是「输出被拉到自己 VCC 以上」时关断漏电仍有 ±2 µA 上限；<code>1G06</code> 与 <code>2G06/2G07</code> 的 IOZ 条件只写到 <strong>VO = VCC 或 GND</strong>。跨域上拉（输出节点电压高于器件 VCC）时，优先用 IOZ 条件覆盖 5.5 V 的 <code>1G07</code>/<code>1G09</code>；非要用 <code>1G06</code>/<code>2G</code>，把跨域漏电当未规定项，样机实测。</p>
+<h3 id="32-1g06-i2c">3.2 极性：1G06 是反相，别拿它做 I²C</h3>
+<table>
+<thead>
+<tr>
+<th>型号</th>
+<th>关系</th>
+<th>A = L</th>
+<th>A = H</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EM74LVC1G06</code></td>
+<td><strong>Y = /A（反相）</strong></td>
+<td>高阻（被上拉抬到高）</td>
+<td><strong>拉低</strong></td>
+</tr>
+<tr>
+<td><code>EM74LVC1G07</code></td>
+<td>Y = A（同相缓冲）</td>
+<td><strong>拉低</strong></td>
+<td>高阻</td>
+</tr>
+<tr>
+<td><code>EM74LVC1G09</code></td>
+<td>Y = A·B（开漏与门）</td>
+<td>拉低</td>
+<td>见 §5.1</td>
+</tr>
+<tr>
+<td><code>EM74LVC2G06</code></td>
+<td>双路 /A</td>
+<td>同上 ×2</td>
+<td>同上 ×2</td>
+</tr>
+<tr>
+<td><code>EM74LVC2G07</code></td>
+<td>双路 A</td>
+<td>同上 ×2</td>
+<td>同上 ×2</td>
+</tr>
+<tr>
+<td><code>EM74AUP1G07</code></td>
+<td>Y = A（同相，超低功耗）</td>
+<td>拉低</td>
+<td>高阻</td>
+</tr>
+</tbody>
+</table>
+<p><code>1G06</code> 在电平转换里不是不能用，而是<strong>转换完信号是反的</strong>：低有效复位转成高有效、LED 低边驱动、反相使能，这些场合正好；一旦接到 SDA/SCL 上，整条总线的协议位全反，表现为「地址永远不对、ACK 永远错」。</p>
+<h3 id="33">3.3 双向：开漏本身不分方向，但电压域要分开</h3>
+<p>开漏节点天然双向：两边都能拉低，谁拉低都生效。所以 <strong>I²C 的 SDA 不需要方向控制</strong>。真正的问题在电压：两侧 VIH/VIL 不一样时，一根线满足不了两边。</p>
+<table>
+<thead>
+<tr>
+<th>做法</th>
+<th>器件</th>
+<th>方向</th>
+<th>代价 / 边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单节点 + 上拉到高压域</td>
+<td>1 颗 <code>1G07</code>/<code>1G09</code></td>
+<td>单向（低压→高压）</td>
+<td>最省。只能升压：上拉到高压域后，低压侧只剩「驱动」角色；反方向（高压→低压）要把上拉改接低压域，那时高压侧 VIH 不再满足（3.3 V 器件 VIH = 2.0 V &gt; 1.8 V 摆幅）</td>
+</tr>
+<tr>
+<td>单节点 + <strong>两侧各一个上拉</strong></td>
+<td>—</td>
+<td>看似双向</td>
+<td><strong>错的</strong>：两个上拉把两个电源经电阻连起来，节点停在 (VH+VL)/2 附近，还持续灌电流进低压轨</td>
+</tr>
+<tr>
+<td>单 N-MOS 栅极接低压域，两侧各自上拉</td>
+<td>分立 MOS（不在本文器件范围）</td>
+<td>真双向</td>
+<td>经典 I²C 做法；速度低、依赖 MOS 的 VGS(th) 与体二极管，BOM 多一颗</td>
+</tr>
+<tr>
+<td><strong>EXS 自动方向</strong>（双电源、内部上拉、单稳加速）</td>
+<td><code>EXS0102/0104/0106/0108</code></td>
+<td>真双向</td>
+<td>成本；开漏速率有上限。选型与 OE 处理见 [[level-translation-app-guide]]</td>
+</tr>
+</tbody>
+</table>
+<p>一句话：<strong>开漏 + 上拉解决「电平」，不解决「双向跨域」</strong>。双向跨域要么用分立 MOS 的无源方案，要么用 EXS 这类自动方向器件。</p>
+<h3 id="34-tpd">3.4 速率账：tpd 是个小数目，上升沿才是大头</h3>
+<p><code>1G07</code> @3.0–3.6 V：tpd 2.5 ns typ / 4.0 ns max（85 °C）/ 4.2 ns max（125 °C）。而 <code>R_p = 2.2 kΩ、C = 100 pF</code> 的上升沿是 <strong>186 ns</strong>——<strong>tpd 只占 1.3%</strong>。</p>
+<p>所以：
+- 算开漏链路的速度，用 <code>t_r</code>（§2.3 表），不要用 tpd；
+- 想把开漏跑快，只有三条路：减小 R_p（功耗换速度）、减小 C（缩短线、少挂器件）、换有源上拉/加速器（EXS 内部就有单稳加速）；
+- 开漏不适合做 SPI/QSPI 这类几十 MHz 的链路——4.7 kΩ + 30 pF 已经是 120 ns 量级，对应不到 10 Mbps。</p>
+<h2 id="4-i2c">4. I²C 总线设计</h2>
+<h3 id="41">4.1 电气结构</h3>
+<pre><code>  SDA:  VCC ── R_p 2.2k ──┬─────────┬─────────┬─────
+                          │         │         │
+                        MASTER    SLAVE1    SLAVE2
+
+  SCL:  VCC ── R_p 2.2k ──┬─────────┬─────────┬─────
+                          │         │         │
+                        MASTER    SLAVE1    SLAVE2
+                        （所有节点都是开漏）
+</code></pre>
+<p>两根线、各自一个上拉、所有器件开漏。<strong>「1」是上拉给的，「0」是任一器件拉的。</strong></p>
+<h3 id="42-vcc">4.2 器件侧的输入门限（决定 VCC 接哪一侧）</h3>
+<p>LVC 1G/2G 五型号的 VIH/VIL 表逐字相同：</p>
+<table>
+<thead>
+<tr>
+<th>VCC</th>
+<th>VIH min</th>
+<th>VIL max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.65–1.95 V</td>
+<td>0.65·VCC（1.07–1.27 V）</td>
+<td>0.35·VCC（0.58–0.68 V）</td>
+</tr>
+<tr>
+<td>2.3–2.7 V</td>
+<td>1.7 V</td>
+<td>0.7 V</td>
+</tr>
+<tr>
+<td><strong>2.7–3.6 V</strong></td>
+<td><strong>2.0 V</strong></td>
+<td><strong>0.8 V</strong></td>
+</tr>
+<tr>
+<td>4.5–5.5 V</td>
+<td>0.7·VCC（3.15–3.85 V）</td>
+<td>0.3·VCC（1.35–1.65 V）</td>
+</tr>
+</tbody>
+</table>
+<p>两条直接用法：</p>
+<ol>
+<li><strong>3.3 V 供电的 LVC 不能被 1.8 V 逻辑直驱</strong>（1.8 &lt; 2.0）。做跨域时器件 VCC 必须跟低压侧。</li>
+<li><strong>低电平预算只有 0.8 V</strong>（3.3 V 域）。上拉造成的 VOL 抬高、地弹、串联电阻，全在这 0.8 V 里挤。1.8 V 域更紧：VIL = 0.63 V，而 <code>1G07</code> 在 1.65 V/4 mA 时 VOL 可以到 0.70 V（125 °C）——<strong>1.8 V 的 I²C 不能按 4 mA 设计</strong>，上拉要放大到 4.7 kΩ 以上，让灌电流落在 1 mA 以内。</li>
+</ol>
+<h3 id="43-400-pf">4.3 满载 400 pF 时窗口会闭合</h3>
+<p>I²C 规范给 Standard/Fast mode 的总线电容上限是 <strong>400 pF</strong>（总线规范常数）。把 §2.5 的两个边界代进去：</p>
+<table>
+<thead>
+<tr>
+<th>域</th>
+<th>Rp(min)（3 mA 口径）</th>
+<th>Rp(max) @400 pF / 400 kHz</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.8 V</td>
+<td>467 Ω</td>
+<td>885 Ω</td>
+<td>窗口存在，很窄</td>
+</tr>
+<tr>
+<td>3.3 V</td>
+<td>967 Ω</td>
+<td>885 Ω</td>
+<td><strong>闭合：下限 &gt; 上限</strong></td>
+</tr>
+<tr>
+<td>5.0 V</td>
+<td>1533 Ω</td>
+<td>885 Ω</td>
+<td><strong>闭合</strong></td>
+</tr>
+</tbody>
+</table>
+<p>这不是器件不行，是「3 mA 的上拉预算」撑不住 300 ns。此时必须让器件多灌：<code>1G07</code> 在 2.7 V/12 mA 时 85 °C 仍保证 VOL ≤ 0.40 V（125 °C 是 0.60 V），3.0 V/24 mA 时 0.55 V / 0.80 V。按 12 mA 口径重算，3.3 V 的 Rp(min) 掉到 <strong>(3.3 − 0.40)/12 mA = 242 Ω</strong>（125 °C 用 0.60 V 算是 225 Ω），窗口重新打开（242 Ω – 885 Ω）。</p>
+<p><strong>代价</strong>：885 Ω 上拉在 3.3 V 下常流 3.7 mA/线，两线 7.5 mA。所以真实设计里没人愿意跑到 400 pF——<strong>控制在 100–150 pF 以内，2.2 kΩ 就够，功耗和速度都舒服</strong>。400 pF 是「还能跑」的上限，不是设计目标。</p>
+<p><strong>电容怎么估</strong>（都是估算，不是实测）：每个节点 CI = 5 pF（LVC 实体页 typ；AUP1G07 是 2.0 pF）+ PCB 走线约 1 pF/cm + 连接器/排线 5–20 pF。6 个器件 + 20 cm + 连接器 ≈ <strong>60 pF</strong>，2.2 kΩ 下 t_r ≈ 112 ns，400 kHz 有 2.7 倍余量。</p>
+<h3 id="44">4.4 中断线与：最省引脚的多源汇总</h3>
+<p>多个器件的开漏 INT 输出并到一根线 + 一个上拉，MCU 读这根线，再逐个读状态寄存器定位源。这是开漏线与最典型的用法。</p>
+<p>要点：</p>
+<ul>
+<li><strong>上拉只有一个</strong>，接到 MCU 的电压域。3.3 V 传感器 + 1.8 V MCU：上拉接 1.8 V，节点高电平就是 1.8 V，传感器只负责拉低——<code>VO</code> 允许 0–5.5 V，被拉到 1.8 V 完全在范围内，不需要额外器件。</li>
+<li><strong>每个器件都要单独校核 IOL</strong>：线与节点被拉低时，全部上拉电流只由「正在拉低的那一个」承担，不是 N 个分摊。<code>R_p = 2.2 kΩ @3.3 V</code> → 1.5 mA，LVC 轻松；<code>R_p = 220 Ω</code> → 15 mA，已经接近 24 mA 点的边界，且只有那一个器件在发热。</li>
+<li><strong>漏电按节点数叠加</strong>（§2.4 表）。8 个中断源 + 47 kΩ → 高电平掉 0.75 V，1.8 V 域直接失效。</li>
+<li><strong>不能把推挽中断并线</strong>。两个推挽输出一个高一个低就是短路，轻则大电流、重则烧管。要么选开漏型号，要么每根中断线独占一个 MCU 引脚。</li>
+<li>中断线不要求速度，<code>R_p</code> 可以取大（省电），但上限由漏电和「MCU 输入的 VIH」定，不由 t_r 定。</li>
+<li>开漏节点送进 MCU 的施密特输入最稳；送进普通 CMOS 输入时，慢边沿会在阈值区反复抖动（同一块板子「中断进两次」的常见原因）。</li>
+</ul>
+<h3 id="45">4.5 多主仲裁与时钟拉伸：为什么必须开漏</h3>
+<ul>
+<li>主机发「1」= 释放总线（放手让上拉抬），发「0」= 拉低。</li>
+<li>仲裁时两个主机同时发；某一位一个发 1、一个发 0，<strong>线与结果就是 0</strong>，发 1 的那个读回 0 → 知道自己输了 → 立即退出。这套机制只在开漏下成立。</li>
+<li>时钟拉伸：从机拉低 SCL 让主机等，主机必须能读回 SCL 的实际电平。推挽输出会让主机「以为自己赢了」，直接冲过去。</li>
+<li><strong>推挽的后果</strong>：一台主机拉高、另一台拉低，电流 = VCC/(R_on(P) + R_on(N))，只受 MOS 限制，几十 mA 起，直接烧输出级。I²C 上用推挽不是「可能有问题」，是「一定会烧」。</li>
+</ul>
+<h3 id="46-r_p">4.6 上升沿预算表（选 R_p 用这张）</h3>
+<table>
+<thead>
+<tr>
+<th>目标速率</th>
+<th>t_r 预算（规范）</th>
+<th>C = 60 pF</th>
+<th>C = 100 pF</th>
+<th>C = 200 pF</th>
+<th>C = 400 pF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100 kHz</td>
+<td>1000 ns</td>
+<td>≤ 19.7 kΩ</td>
+<td>≤ 11.8 kΩ</td>
+<td>≤ 5.9 kΩ</td>
+<td>≤ 3.0 kΩ</td>
+</tr>
+<tr>
+<td>400 kHz</td>
+<td>300 ns</td>
+<td>≤ 5.9 kΩ</td>
+<td>≤ 3.5 kΩ</td>
+<td>≤ 1.8 kΩ</td>
+<td>≤ 885 Ω</td>
+</tr>
+<tr>
+<td>1 MHz（Fm+）</td>
+<td>120 ns</td>
+<td>≤ 2.4 kΩ</td>
+<td>≤ 1.4 kΩ</td>
+<td>≤ 707 Ω</td>
+<td>≤ 354 Ω</td>
+</tr>
+</tbody>
+</table>
+<p>（数值 = <code>t_r/(0.8473·C)</code>，把 §2.3 的表按 60 pF 补了一列。）</p>
+<h2 id="5">5. 型号速查表</h2>
+<h3 id="51">5.1 六个型号的差异</h3>
+<table>
+<thead>
+<tr>
+<th>型号（尾缀示例）</th>
+<th>功能</th>
+<th>逻辑关系</th>
+<th>通道</th>
+<th>VCC</th>
+<th>VOL 保证点</th>
+<th>tpd @3.0–3.6 V</th>
+<th>IOZ 条件</th>
+<th>用它 / 别用它</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EM74LVC1G06GV</code> 等</td>
+<td>单路<strong>反相</strong>开漏</td>
+<td>Y = /A</td>
+<td>1</td>
+<td>1.65–5.5 V</td>
+<td>24 mA→0.55/0.80 V</td>
+<td>2.5 typ / 4.0 max</td>
+<td>VO = VCC 或 GND</td>
+<td>要「输入高=线低」：LED 低边、反相复位、反相使能。<strong>别用于 I²C</strong></td>
+</tr>
+<tr>
+<td><code>EM74LVC1G07GV</code> 等</td>
+<td>单路<strong>同相</strong>开漏缓冲</td>
+<td>Y = A</td>
+<td>1</td>
+<td>1.65–5.5 V</td>
+<td>同上</td>
+<td>同上</td>
+<td><strong>VO = 5.5 V</strong></td>
+<td>I²C 节点、中断线、单向升压转换。开漏的「标准件」</td>
+</tr>
+<tr>
+<td><code>EM74LVC1G09GV</code> 等</td>
+<td>双输入<strong>与门</strong>开漏</td>
+<td>A·B=1 → 高阻；否则拉低</td>
+<td>1 门</td>
+<td>1.65–5.5 V</td>
+<td>同上</td>
+<td><strong>3.9 typ / 6.0 max</strong></td>
+<td><strong>VO = 5.5 V</strong></td>
+<td>两路信号先在片内与再上线与，省节点/省一颗门。单输入场合别用（多一个输入要处理）</td>
+</tr>
+<tr>
+<td><code>EM74LVC2G06GV</code> 等</td>
+<td>双路反相开漏</td>
+<td>Y = /A ×2</td>
+<td>2</td>
+<td>1.65–5.5 V</td>
+<td>同上</td>
+<td>2.5 typ / 4.0 max</td>
+<td>VO = VCC 或 GND</td>
+<td>双路反相/互补驱动。别用于需要 0.8×0.8 封装的场合（无 GX）</td>
+</tr>
+<tr>
+<td><code>EM74LVC2G07GV</code> 等</td>
+<td>双路同相开漏</td>
+<td>Y = A ×2</td>
+<td>2</td>
+<td>1.65–5.5 V</td>
+<td>同上</td>
+<td>同上</td>
+<td>VO = VCC 或 GND</td>
+<td>双路 I²C 中继、双中断。单路够用时选 1G（少一个脚）</td>
+</tr>
+<tr>
+<td><code>EM74AUP1G07GV</code> 等</td>
+<td>单路同相开漏（超低功耗，<strong>Draft V0.1</strong>）</td>
+<td>Y = A</td>
+<td>1</td>
+<td><strong>0.8–3.6 V</strong></td>
+<td>4 mA→0.45/0.50 V；IO abs max <strong>20 mA</strong></td>
+<td>3.2 typ（5 pF，仅 typ）</td>
+<td>VO = 0–3.6 V</td>
+<td>电池设备、1.8 V 域、节点电容敏感（CI 2 pF）。<strong>别用于 5 V 域</strong>（3.6 V 上限）、别要大灌电流</td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-1g07-1g09">5.2 1G07 和 1G09 到底差在哪</h3>
+<p>这是最容易报错的一对，两者封装、电压、VOL、IOZ 条件全都一样，<strong>差别在输入结构（tpd 也随之不同）</strong>：</p>
+<pre><code>1G07（缓冲）              1G09（与门）
+   A ──► Y                  A ──┐
+                                ├─AND──► Y（开漏）
+                           B ──┘
+</code></pre>
+<ul>
+<li><strong>1G07</strong>：一个输入。做线与只能靠「多个开漏输出并到同一节点」。想让 4 路信号汇总，需要 4 颗（或 2 颗 2G07）。</li>
+<li><strong>1G09</strong>：两个输入先在片内做与，再开漏输出。<strong>4 路汇总只要 2 颗</strong>（两两进 1G09，输出并联），省一半节点、一半电容、一半漏电。</li>
+<li><strong>代价是延迟</strong>：<code>1G09</code> @3.0–3.6 V 是 3.9 ns typ / 6.0 ns max，比 <code>1G07</code> 的 2.5/4.0 ns 慢 56%。对 I²C 可忽略（上升沿是几百 ns），对高速线要考虑。</li>
+<li><strong>1G09 的两个输入都必须有确定电平</strong>。空着的那个输入浮空 = 输出状态不定，可能一直拉低总线——这是「换了个物料，总线就死」的经典事故。不用就接 VCC 或 GND，不能悬空。</li>
+<li>逻辑上：<code>1G09</code> 的输出节点 = A·B（配上拉），所以 <code>1G09 + 1G09</code> 并联 = A·B·C·D，正好是四输入线与。低有效故障信号（低=故障）直接并联即可，「任一路故障 → 节点低」。</li>
+</ul>
+<h3 id="53">5.3 封装与丝印（逐字取自各页订购表）</h3>
+<table>
+<thead>
+<tr>
+<th>型号</th>
+<th>GV</th>
+<th>GW</th>
+<th>GS</th>
+<th>GM</th>
+<th>GX</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EM74LVC1G06</code></td>
+<td>SOT23-5L / V4YW</td>
+<td>SOT353 / V4YW</td>
+<td>DFN1×1-6L / V4</td>
+<td>DFN1.45×1-6L / V4YW</td>
+<td>DFN0.8×0.8 / V4</td>
+</tr>
+<tr>
+<td><code>EM74LVC1G07</code></td>
+<td>SOT23-5L / V5YW</td>
+<td>SOT353 / V5YW</td>
+<td>DFN1×1-6L / V5</td>
+<td>DFN1.45×1-6L / V5YW</td>
+<td>DFN0.8×0.8 / V5</td>
+</tr>
+<tr>
+<td><code>EM74LVC1G09</code></td>
+<td>SOT23-5L / V7YW</td>
+<td>SOT353 / V7YW</td>
+<td>DFN1×1-6L / V7</td>
+<td>DFN1.45×1-6L / V7YW</td>
+<td>DFN0.8×0.8 / V7</td>
+</tr>
+<tr>
+<td><code>EM74LVC2G06</code></td>
+<td>SOT23-6L / VZYW</td>
+<td>SOT363 / VZYW</td>
+<td>DFN1×1-6L / VZ</td>
+<td>DFN1.45×1-6L / VZYW</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>EM74LVC2G07</code></td>
+<td>SOT23-6L / VaYW</td>
+<td>SOT363 / VaYW</td>
+<td>DFN1×1-6L / Va</td>
+<td>DFN1.45×1-6L / VaYW</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>EM74AUP1G07</code></td>
+<td>SOT23-5L / P5YW</td>
+<td>SOT353 / P5YW</td>
+<td>DFN1×1-6L / P5</td>
+<td>DFN1.45×1-6L / P5YW</td>
+<td>DFN0.8×0.8-5L / P5</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>1G 系列 5 个尾缀、2G 系列 4 个（无 GX）。丝印照录原文，<code>VaYW</code> 原文如此。</p>
+</blockquote>
+<h3 id="54">5.4 一句话选型</h3>
+<ol>
+<li><strong>I²C / SMBus 节点、中断线、单向升压</strong> → <code>EM74LVC1G07GV</code>（更小：<code>GS</code> = DFN1×1，最小 <code>GX</code> = DFN0.8×0.8；要最省电且 ≤3.6 V 就 <code>EM74AUP1G07GS</code>）。</li>
+<li><strong>要反相</strong>（LED 低边、低有效使能反相） → <code>EM74LVC1G06GV</code>。<strong>不要</strong>接到 I²C 上。</li>
+<li><strong>多路信号先与再上线</strong> → <code>EM74LVC1G09GV</code>，两个输入都给确定电平。</li>
+<li><strong>双路同封装</strong> → <code>EM74LVC2G07GV</code> / <code>EM74LVC2G06GV</code>。</li>
+<li><strong>5 V 域</strong> → 只能 LVC（5.5 V），AUP 不行（3.6 V）。</li>
+<li><strong>电池/1.8 V 域且节点多</strong> → <code>EM74AUP1G07</code>：CI 2 pF、ICC 0.9 µA max、II/IOZ ±0.75 µA，对总线电容和漏电都最友好；但它是 <strong>Draft V0.1，报料要先说明状态</strong>。</li>
+</ol>
+<h2 id="6">6. 常见误区</h2>
+<ol>
+<li><strong>上拉越小越好</strong>：3.3 V 配 470 Ω 是 7 mA/线，两线 14 mA 常流；<code>VOL</code> 还被抬到 24 mA 点附近（0.55 V），低电平余量从 0.8 V 掉到 0.25 V。上拉只该小到「满足 t_r」，不该更小。</li>
+<li><strong>开漏直接驱动 MOS 栅极、不加任何上拉</strong>：输出关断时栅极浮空，电荷无处泄放，管子可能一直导通；即使不导通，栅极电压也在阈值附近漂。<strong>必须有上拉（或对地电阻）给栅极一个确定电位</strong>，关断速度由 <code>R_p × C_iss</code> 决定——10 kΩ 拉 1 nF 栅容是 8.5 µs，别指望它做高频开关。</li>
+<li><strong>I²C 用推挽</strong>：§4.5，多主/时钟拉伸/ACK 任意一个时刻对驱就是短路。<strong>不是风险，是必然烧</strong>。</li>
+<li><strong>把 1G06 当同相用</strong>：它是反相开漏。接到总线上位全反，表现为「地址全错、ACK 全错」。看丝印（V4 vs V5）比看型号后缀快。</li>
+<li><strong>1G09 的空输入悬空</strong>：输出状态不定，可能长期拉低总线。两个输入都要接定电平。</li>
+<li><strong>上拉接到器件 VCC 而不是目标域</strong>：器件 VCC = 1.8 V、上拉也接 1.8 V，那 3.3 V 侧永远看不到高电平。上拉接<strong>接收端</strong>的电源。</li>
+<li><strong>忘记 IOZ 叠加</strong>：N 个节点每个 ±2 µA，47 kΩ 上拉下 8 个节点就掉 0.75 V（§2.4）。</li>
+<li><strong>用 AUP 顶 LVC 的灌电流</strong>：AUP 绝对最大 IO 只有 20 mA，4 mA 时 VOL 已 0.45 V；LVC 24 mA 才 0.55 V。同样是「开漏缓冲」，驱动能力差一个档。</li>
+<li><strong>按 tpd 算开漏速度</strong>：tpd 2.5 ns、上升沿 186 ns，差 74 倍。速度账要按 §2.3 算。</li>
+<li><strong>以为「开漏输出低」就是 0 V</strong>：VOL 是 0.10–0.80 V 的区间，随电流和温度变。Rp(min) 公式里必须减掉 VOL，不能当 0。</li>
+<li><strong>忽略 CI 对总线电容的贡献</strong>：5 pF/节点看着小，20 个节点就是 100 pF，直接把 400 kHz 的余量吃光。AUP 的 2 pF 在这里是真实优势。</li>
+<li><strong>5 V 域拿 3.3 V 逻辑直驱 LVC</strong>：VCC = 5 V 时 VIH = 3.5 V，3.3 V 摆幅不够。要么 VCC 接 3.3 V，要么换 HCT。</li>
+</ol>
+<h2 id="7">7. 核对清单</h2>
+<p><strong>功能与极性</strong></p>
+<ul>
+<li>[ ] 选的是 1G06（反相）/ 1G07（同相）/ 1G09（与门开漏），三者不可互换</li>
+<li>[ ] 1G09 的两个输入都有确定电平，没有悬空</li>
+<li>[ ] 双路需求选了 2G06/2G07，没有用两颗 1G 硬凑（除非要 GX 封装）</li>
+<li>[ ] VCC 跟的是<strong>低压侧</strong>（3.3 V 供电时 VIH = 2.0 V，1.8 V 逻辑驱不动）</li>
+</ul>
+<p><strong>上拉</strong></p>
+<ul>
+<li>[ ] 上拉存在，且接到<strong>接收端</strong>的电源域</li>
+<li>[ ] Rp(min) 算过：<code>(VCC − VOLmax)/IOL</code>，IOL 取自实体页保证点</li>
+<li>[ ] Rp(max) 算过：<code>t_r/(0.8473·C)</code>，t_r 按目标速率</li>
+<li>[ ] 两个窗口有交集（400 pF + 400 kHz 时会闭合，见 §4.3）</li>
+<li>[ ] 总电容估过：N×CI（LVC 5 pF / AUP 2 pF）+ 走线 + 连接器 &lt; 400 pF</li>
+<li>[ ] 漏电校核：N×IOZ(max)×Rp 没有吃掉 VIH 余量</li>
+<li>[ ] 功耗校核：VCC/Rp × 低电平占空比，电池设备尤其要看</li>
+</ul>
+<p><strong>电平与跨域</strong></p>
+<ul>
+<li>[ ] 输出节点电压 ≤ VO 推荐上限（LVC 5.5 V / AUP 3.6 V）</li>
+<li>[ ] 跨域时优先选 IOZ 条件覆盖 5.5 V 的 1G07/1G09</li>
+<li>[ ] 双向跨域没有用「两侧各一个上拉」的错误接法（§3.3）</li>
+<li>[ ] 需要真双向时走 EXS 路线，见 [[level-translation-app-guide]]</li>
+</ul>
+<p><strong>I²C 专项</strong></p>
+<ul>
+<li>[ ] SDA/SCL 全部开漏，没有任何推挽输出挂上去</li>
+<li>[ ] 两根线各自独立上拉，没有共用一颗电阻</li>
+<li>[ ] 多主场景确认仲裁与时钟拉伸可用（依赖开漏线与）</li>
+<li>[ ] 中断线并线时，每个器件的 IOL 单独校核，不是按 N 分摊</li>
+<li>[ ] 1.8 V 域的 I²C 上拉 ≥ 4.7 kΩ（4 mA 时 VOL 可达 0.70 V，超过 VIL 0.63 V）</li>
+</ul>
+<p><strong>温度与状态</strong></p>
+<ul>
+<li>[ ] 用 −40~125 °C 列的 min/max 复核，不只看 25 °C typ</li>
+<li>[ ] AUP1G07 是 Draft V0.1，报料时说明状态</li>
+<li>[ ] 对外报型号带封装尾缀（GV/GW/GS/GM/GX）</li>
+</ul>
+<h2 id="8">8. 来源</h2>
+<ul>
+<li>实体页：[[em74lvc1g06]]、[[em74lvc1g07]]、[[em74lvc1g09]]、[[em74lvc2g06]]、[[em74lvc2g07]]、[[em74aup1g07]]</li>
+<li>原始规格书：<code>raw/datasheets/EM74LVC1G06_Product_DS_V1.1.json</code>、<code>EM74LVC1G07_Product_DS_V1.1.json</code>、<code>EM74LVC1G09_Product_DS_V1.1.json</code>、<code>EM74LVC2G06_Product_DS_V1.1.json</code>、<code>EM74LVC2G07_Product_DS_V1.1.json</code>、<code>EM74AUP1G07_Draft_DS_V0.1.json</code></li>
+<li>参数出处：各页「静态特性」（VOL/II/IOZ/IOFF/ICC/ΔICC/CI）与「动态特性」（tpd/CPD）表；推荐工作条件（VCC/VI/VO/Δt/ΔV）；绝对最大额定值（IO/IOK/Ptot）</li>
+<li>概念页：[[inverter]]、[[buffer]]、[[and-gate]]、[[level-shifter]]</li>
+<li>同主题：[[level-translation-app-guide]]（EXS 自动方向与 8T245 路线）、[[logic-gates-app-guide]]（家族定位）</li>
+<li>总线规范常数（<strong>非芯祥器件参数</strong>）：I²C Standard/Fast mode，t_r 1000/300 ns、Cb 400 pF、IOL 3 mA；Fast-mode Plus t_r 120 ns、Cb 550 pF、IOL 20 mA</li>
+</ul>
+<blockquote>
+<p>本文的 Rp 表、t_r 表、功耗与漏电表均为<strong>把实体页保证值代入本文公式的计算结果</strong>，不是实测数据。定型前请用 min/max 极值复核，并在样机上用示波器实测上升沿、总线高电平与真实 VOL。</p>
+</blockquote>
+  </article>
+</div>
+</body>
+</html>

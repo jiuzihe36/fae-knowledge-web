@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>按键去抖与 RC 振荡器 应用指南 · 芯祥应用指南</title>
+<meta name="description" content="金属弹片闭合时先撞、再弹、再撞。电气上表现为在几毫秒的窗口内多次通断，每次通断的宽度从几十微秒到几百微秒不等。整串抖动持续时间随机，跟开关结构、按压力度、使用年限都有关。">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .guide-wrap { max-width: 980px; margin: 0 auto; padding: 0 20px 64px; }
+  .guide-nav { position: sticky; top: 0; z-index: 10; padding: 12px 0; margin-bottom: 8px;
+    background: var(--bg, #fff); border-bottom: 1px solid var(--border, #e3e6e9); font-size: 13px; }
+  .guide-nav a { color: inherit; text-decoration: none; opacity: .75; }
+  .guide-nav a:hover { opacity: 1; text-decoration: underline; }
+  .guide-body { font-size: 14.5px; line-height: 1.75; }
+  .guide-body h1 { font-size: 24px; margin: 24px 0 8px; }
+  .guide-body h2 { font-size: 18px; margin: 28px 0 10px; padding-top: 8px; border-top: 1px solid var(--border, #eee); }
+  .guide-body h3 { font-size: 15.5px; margin: 20px 0 8px; }
+  .guide-body table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; display: block; overflow-x: auto; }
+  .guide-body th, .guide-body td { border: 1px solid var(--border, #e3e6e9); padding: 7px 10px; text-align: left; vertical-align: top; }
+  .guide-body th { background: rgba(0,0,0,.03); }
+  .guide-body code { background: rgba(0,0,0,.05); padding: 1px 5px; border-radius: 4px; font-size: .92em; }
+  .guide-body pre { background: rgba(0,0,0,.04); padding: 12px 14px; border-radius: 8px; overflow-x: auto; }
+  .guide-body blockquote { margin: 12px 0; padding: 8px 14px; border-left: 3px solid var(--accent, #888); background: rgba(0,0,0,.025); }
+  .guide-body ul, .guide-body ol { padding-left: 22px; }
+  :root[data-theme="dark"] .guide-body th, :root:not([data-theme="light"]) .guide-body th { background: rgba(255,255,255,.06); }
+  :root[data-theme="dark"] .guide-body code, :root:not([data-theme="light"]) .guide-body code,
+  :root[data-theme="dark"] .guide-body pre, :root:not([data-theme="light"]) .guide-body pre { background: rgba(255,255,255,.07); }
+</style>
+</head>
+<body>
+<div class="guide-wrap">
+  <nav class="guide-nav"><a href="../index.html">← 返回产品目录</a> · <a href="../index.html#page=apps">应用场景</a></nav>
+  <article class="guide-body">
+<h1 id="rc">按键去抖与 RC 振荡器 应用指南</h1>
+<blockquote>
+<p>去抖和振荡器是同一个电路的两种用法：<strong>RC 决定「什么时候到」，施密特决定「翻不翻」</strong>。
+去抖要它「慢，但只翻一次」；振荡器要它「慢到自己能翻回来」。判据、公式、边界都在下面。</p>
+<p>全文阈值取自实体页实测表（典型值），<strong>所有时间/频率数字都是把阈值代入公式算出来的，不是实测</strong>；设计定型必须用 min/max 极值复核，并在样机上量波形。</p>
+</blockquote>
+<h2 id="1">1. 为什么机械触点必须用施密特</h2>
+<h3 id="11">1.1 触点抖动是「一串边沿」，不是一个边沿</h3>
+<p>金属弹片闭合时先撞、再弹、再撞。电气上表现为在几毫秒的窗口内多次通断，每次通断的宽度从几十微秒到几百微秒不等。整串抖动持续时间随机，跟开关结构、按压力度、使用年限都有关。</p>
+<pre><code>理想      ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+实际      ‾‾|_|‾|_|‾‾|_|‾‾‾‾‾‾‾‾‾‾‾‾‾     ← 一次按下，5~20 次通断
+普通门    ‾‾|_|‾|_|‾‾|_|‾‾‾‾‾‾‾‾‾‾‾‾‾     ← 每个边沿都翻 → MCU 计 6 次
+RC 后      ‾‾╲__╱‾╲__╱‾‾‾‾‾‾‾‾‾‾‾‾‾‾     ← 幅度压小了，但慢边沿在阈值带里泡着
+施密特    ‾‾‾‾‾‾‾‾‾‾‾‾╲____________     ← 只翻一次
+</code></pre>
+<p>（示意图，非实测波形。）</p>
+<h3 id="12-cmos">1.2 普通 CMOS 门在阈值附近是一台「高增益放大器」</h3>
+<p>普通门只有一个阈值（约 0.5·VCC）。输入在阈值附近时，几毫伏的噪声就能推翻判决；而慢边沿恰好让信号在阈值带里停留最久。结果是：<strong>边沿越慢，翻转次数越多</strong>——和直觉相反。</p>
+<p>数学上，一次翻转需要输入穿过阈值带。普通门的<strong>迟滞是 0</strong>，所以在阈值点上的任何微小扰动都会变成一次完整翻转。施密特把「一个阈值」换成「两个阈值」：上升要过 VT+，下降要过 VT−，中间 VH 的区间里<strong>输出保持不动</strong>。这就是「记忆」。</p>
+<h3 id="13-rc">1.3 只加 RC 反而更糟（如果后面是普通门）</h3>
+<p>RC 低通压制的是<strong>幅度</strong>，不是<strong>次数</strong>。它把陡边沿变成缓边沿，等于把信号「泡」在阈值区更久，普通门反而更容易被噪声反复触发。所以：</p>
+<ul>
+<li>RC 单独用 → 只适合后面接<strong>有迟滞</strong>的输入；</li>
+<li>施密特单独用 → 只解决「判决」，不解决「抖动能量」（抖动幅度接近满幅时，VH 挡不住）；</li>
+<li><strong>RC + 施密特</strong> → RC 把抖动压到 VH 以内，施密特保证只翻一次。两者缺一不可。</li>
+</ul>
+<h3 id="14">1.4 数据手册的背书</h3>
+<p><code>EM74LVC1G14</code>、<code>EM74LVC1G17</code>、<code>EM74HC14</code>、<code>EM74HCS10/11</code> 的特性表都写了同一句：<strong>Unlimited rise and fall times</strong>（输入转换时间无限制）。这不是营销话术，是「输入可以无限慢」的正式承诺。</p>
+<p>对照组很明确：普通门 <code>EM74LVC1G04</code> 的推荐工作条件里写死 <strong>Δt/ΔV ≤ 20 ns/V（1.65–2.7 V）/ 10 ns/V（2.7–5.5 V）</strong>。按 3.3 V 算，0→3.3 V 的边沿至少要 33 ns 才「在保证范围内」；而 RC 去抖的边沿是<strong>毫秒级</strong>，比这个上限慢了五个数量级。<strong>把 RC 直接接到普通门输入，等于把器件用在规格书明确不保证的区域。</strong></p>
+<h2 id="2">2. 器件选型</h2>
+<h3 id="21">2.1 候选器件对比</h3>
+<table>
+<thead>
+<tr>
+<th>型号</th>
+<th>功能</th>
+<th>VCC</th>
+<th>阈值 / 迟滞（数值出处见 2.2–2.4）</th>
+<th>输出</th>
+<th>适合</th>
+<th>不适合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EM74LVC1G14</code></td>
+<td>单路<strong>反相</strong>施密特</td>
+<td>1.65–5.5 V</td>
+<td>VT+ 1.5 / VT− 1.0 / VH 0.6 V @3.0 V</td>
+<td>±24 mA @3.0 V</td>
+<td>单键去抖、RC 振荡器、小封装</td>
+<td>需要同相极性时</td>
+</tr>
+<tr>
+<td><code>EM74LVC1G17</code></td>
+<td>单路<strong>同相</strong>施密特</td>
+<td>1.65–5.5 V</td>
+<td>同上（同表）</td>
+<td>±24 mA @3.0 V</td>
+<td>极性要求同相的去抖/整形</td>
+<td><strong>不能单独做 RC 振荡器</strong>（见 6.4）</td>
+</tr>
+<tr>
+<td><code>EM74AHC1G17</code> / <code>AHCT1G17</code></td>
+<td>单路同相施密特</td>
+<td>2.0–5.5 V / 4.5–5.5 V</td>
+<td>VT+ ≤2.2 / VT− ≥0.85 / VH 0.3–1.2 V @3.0 V</td>
+<td>±8 mA 量级</td>
+<td>5 V 系统、需要宽迟滞上限</td>
+<td>2.5 V 摆幅进 3.0 V 供电（余量不足）</td>
+</tr>
+<tr>
+<td><code>EM74HC14</code> / <code>HCT14</code></td>
+<td>六路反相施密特</td>
+<td>2.0–6.0 V / 4.5–5.5 V</td>
+<td>实体页未收录 VT 表，按规格书核对</td>
+<td>±4 mA 量级</td>
+<td>多键键盘、5 V 系统、成本敏感</td>
+<td>1.8/2.5 V 域</td>
+</tr>
+<tr>
+<td><code>EM74HCS10</code></td>
+<td>三路 3 输入<strong>与非</strong>施密特</td>
+<td>2.0–6.0 V</td>
+<td>VT+ 2.39 / VT− 1.41 / VH 0.97 V @4.5 V</td>
+<td>±6 mA 量级</td>
+<td><strong>门控振荡器</strong>、多路复用按键</td>
+<td>需要单路最小封装时</td>
+</tr>
+<tr>
+<td><code>EM74HCS11</code></td>
+<td>三路 3 输入<strong>与</strong>施密特</td>
+<td>2.0–6.0 V</td>
+<td>同 HCS10（同表）</td>
+<td>±6 mA 量级</td>
+<td>门控振荡器（低有效使能）</td>
+<td>同上</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>HCS 的 ICC max 只有 1 µA @6.0 V（85 °C）/ 2 µA（125 °C），静态功耗比 LVC（4 µA max @5.5 V）更低，适合电池设备。</p>
+</blockquote>
+<h3 id="22-lvc1g14-lvc1g17-typ">2.2 LVC1G14 / LVC1G17 阈值（typ，两型号同表）</h3>
+<table>
+<thead>
+<tr>
+<th>VCC</th>
+<th>VT+（上升）</th>
+<th>VT−（下降）</th>
+<th>VH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.8 V</td>
+<td>1.0 V</td>
+<td>0.6 V</td>
+<td>0.5 V</td>
+</tr>
+<tr>
+<td>2.3 V</td>
+<td>1.2 V</td>
+<td>0.7 V</td>
+<td>0.5 V</td>
+</tr>
+<tr>
+<td><strong>3.0 V</strong></td>
+<td><strong>1.5 V</strong></td>
+<td><strong>1.0 V</strong></td>
+<td><strong>0.6 V</strong></td>
+</tr>
+<tr>
+<td>4.5 V</td>
+<td>2.2 V</td>
+<td>1.6 V</td>
+<td>0.6 V</td>
+</tr>
+<tr>
+<td>5.5 V</td>
+<td>2.6 V</td>
+<td>1.9 V</td>
+<td>0.6 V</td>
+</tr>
+</tbody>
+</table>
+<p>@3.0 V 的 <strong>min/max</strong>（−40~+85 °C）：VT+ 1.29–1.71 V，VT− 0.88–1.24 V，VH 0.31–0.70 V。<strong>设计必须按这组极值，不能拿 typ 当保证值</strong>——§4.4 会看到这一项的破坏力有多大。</p>
+<h3 id="23-hcs10-hcs11-typ">2.3 HCS10 / HCS11 阈值（typ，两型号同表）</h3>
+<table>
+<thead>
+<tr>
+<th>VCC</th>
+<th>VT+</th>
+<th>VT−</th>
+<th>VH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.0 V</td>
+<td>1.21 V</td>
+<td>0.6 V</td>
+<td>0.61 V</td>
+</tr>
+<tr>
+<td>4.5 V</td>
+<td>2.39 V</td>
+<td>1.41 V</td>
+<td>0.97 V</td>
+</tr>
+<tr>
+<td>6.0 V</td>
+<td>3.05 V</td>
+<td>1.9 V</td>
+<td>1.16 V</td>
+</tr>
+</tbody>
+</table>
+<p>min/max @4.5 V：VT+ 1.7–3.15 V，VT− 0.9–2.0 V，VH 0.4–1.4 V。HCS 的迟滞绝对值最大（近 1 V @4.5 V），噪声环境里最稳，代价是阈值随 VCC 走得很开。</p>
+<h3 id="24-ahc1g17">2.4 AHC1G17 的一个坑</h3>
+<p>AHC1G17 在 3.0 V 供电时 <strong>VT+ 最大可达 2.2 V</strong>。如果信号摆幅只有 2.5 V（很多低功耗 MCU 的 GPIO），高电平余量只剩 0.3 V，温度一漂就不翻。<strong>2.5 V 摆幅请用 LVC，不要用 AHC。</strong></p>
+<p>另外：按 datasheet 的 <strong>VH min</strong> 核算，AHC（0.3 V @3.0 V）和 LVC（0.31 V @3.0 V）几乎一样；AHC 的「宽迟滞」体现在上限（1.2 V vs 0.7 V）。所以「抗噪选 AHC」这句话只在典型条件下成立，<strong>按最坏情况算并不会更宽</strong>。</p>
+<h3 id="25">2.5 选型决策树</h3>
+<ol>
+<li><strong>单键、3.3 V/1.8 V</strong> → <code>EM74LVC1G17GV</code>（同相）或 <code>EM74LVC1G14GV</code>（反相）。</li>
+<li><strong>多键、5 V</strong> → <code>EM74HC14D</code>（六路，配 10 kΩ 排阻）；要 TTL 阈值收 3.3 V 信号 → <code>EM74HCT14D</code>。</li>
+<li><strong>工业噪声、3.3 V</strong> → <code>EM74AHC1G17</code>，但先确认信号摆幅 ≥ VT+ max + 0.5 V。</li>
+<li><strong>要门控/多路</strong> → <code>EM74HCS10</code>（NAND，低电平关断）或 <code>EM74HCS11</code>（AND，低电平关断输出）。</li>
+<li><strong>要振荡器</strong> → 只能用<strong>反相</strong>施密特（1G14 / HC14）或 NAND 施密特（HCS10）。同相缓冲 1G17 不行。</li>
+</ol>
+<h2 id="3-rc">3. RC 去抖参数怎么算</h2>
+<h3 id="31">3.1 拓扑与两个时间常数</h3>
+<p>最常用接法：R 上拉到 VCC，按键到 GND，C 与按键并联到地，RC 节点直接进施密特输入。</p>
+<pre><code>        VCC
+         │
+       R_p 47 kΩ
+         │
+   ┌─────┴──────┬─────────────► A  EM74LVC1G17 ──► Y ──► MCU GPIO
+   │            │
+  SW1          C 0.47 µF
+   │            │
+  GND          GND
+</code></pre>
+<p>设 τ = R_p·C，则：</p>
+<pre><code>按下（C 从 VCC 放电到 VT−）：  v(t) = VCC·e^(−t/τ)
+                             t_fall = τ·ln( VCC / VT− )
+
+释放（C 从 0 充电到 VT+）：   v(t) = VCC·(1 − e^(−t/τ))
+                             t_rise = τ·ln( VCC / (VCC − VT+) )
+</code></pre>
+<p><strong>公式的假设</strong>（不满足就要修正）：开关导通电阻为 0；门输入漏电流可忽略（|II|·R ≪ VH）；C 为理想电容（无 ESR、介质吸收可忽略）；阈值在充放电期间恒定；输出侧负载不反过来改变输入阈值；按键与 C 之间无串联电阻。</p>
+<p>把 LVC1G14 的 typ 阈值代进去，得到「时间系数」表——<strong>这个表是本文最有用的东西</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>VCC</th>
+<th>t_fall / τ</th>
+<th>t_rise / τ</th>
+<th>不对称比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.8 V</td>
+<td>1.10</td>
+<td>0.81</td>
+<td>1.35</td>
+</tr>
+<tr>
+<td>2.3 V</td>
+<td>1.19</td>
+<td>0.74</td>
+<td>1.61</td>
+</tr>
+<tr>
+<td><strong>3.0 V</strong></td>
+<td><strong>1.10</strong></td>
+<td><strong>0.69</strong></td>
+<td><strong>1.58</strong></td>
+</tr>
+<tr>
+<td>4.5 V</td>
+<td>1.03</td>
+<td>0.67</td>
+<td>1.54</td>
+</tr>
+<tr>
+<td>5.5 V</td>
+<td>1.06</td>
+<td>0.64</td>
+<td>1.66</td>
+</tr>
+</tbody>
+</table>
+<p>两个直接结论：</p>
+<ul>
+<li><strong>按下比释放慢约 1.6 倍</strong>（@3.0 V，1.10τ vs 0.69τ）。原因是 VT+ 与 VT− 并不互补（1.5 V 和 1.0 V 到 VCC 的距离不同）。把电路镜像成「下拉 + 按键到 VCC」只是把这个不对称<strong>换了个方向</strong>，不会消除。</li>
+<li>3.0 V 下用极值算，t_fall 落在 <strong>0.88τ–1.23τ</strong>，t_rise 落在 <strong>0.56τ–0.84τ</strong>。做延迟预算用慢角（1.23τ），做「够不够灵敏」检查用快角（0.88τ）。</li>
+</ul>
+<h3 id="32">3.2 两个判据：不误翻 + 响应够快</h3>
+<p><strong>判据 A（不误翻）</strong>：一次抖动脉冲宽度 t_p 内，C 上的跌落不能吃掉整个迟滞带。</p>
+<pre><code>ΔV = VCC·(1 − e^(−t_p/τ))  &lt;  VH_min
+⇒  τ &gt; t_p / ln( VCC / (VCC − VH_min) )
+</code></pre>
+<p>代入极值：</p>
+<table>
+<thead>
+<tr>
+<th>条件</th>
+<th>VH_min</th>
+<th>系数</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LVC @3.0 V</td>
+<td>0.31 V</td>
+<td><strong>9.1 × t_p</strong></td>
+<td>抖动 100 µs → τ &gt; 0.91 ms</td>
+</tr>
+<tr>
+<td>LVC @5.5 V</td>
+<td>0.47 V</td>
+<td>11.2 × t_p</td>
+<td>抖动 100 µs → τ &gt; 1.1 ms</td>
+</tr>
+<tr>
+<td>HCS @4.5 V</td>
+<td>0.40 V</td>
+<td>10.7 × t_p</td>
+<td>抖动 100 µs → τ &gt; 1.1 ms</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注意区分两个「抖动时间」：<strong>单次脉冲 t_p</strong>（几十~几百 µs，进上面的公式）和<strong>整串抖动 T_b</strong>（1~10 ms 量级，决定总响应延迟）。数据手册给的往往是后者，代入前先确认口径。</p>
+</blockquote>
+<p><strong>判据 B（响应延迟）</strong>：</p>
+<pre><code>按键响应 = T_b + t_fall ≈ T_b + 1.1τ（typ）/ 1.23τ（max）  @3.0 V
+</code></pre>
+<p>人手能感知的延迟约 50 ms，按键体验建议总响应 ≤ 30 ms。</p>
+<p><strong>判据 C（漏电流）</strong>：高阻节点上，输入漏电流会把工作点顶偏：</p>
+<pre><code>ΔV_offset = II · R_p    要求 &lt; 0.1·VH_min
+</code></pre>
+<p>LVC 的 II max = ±1 µA（全温区），typ ±0.1 µA。@3.0 V、VH_min = 0.31 V：</p>
+<ul>
+<li>R = 47 kΩ → 47 mV（15% VH_min），全温区可接受；</li>
+<li>R = 100 kΩ → 100 mV（32% VH_min），常温没问题，<strong>125 °C 要复核</strong>；</li>
+<li>R = 330 kΩ → 330 mV（超过 VH_min），<strong>任何温度都不该用</strong>。</li>
+</ul>
+<p>结论：<strong>R_p 上限 100 kΩ（消费级）/ 47 kΩ（宽温、车规）</strong>。</p>
+<h3 id="33">3.3 常用取值</h3>
+<p>@3.0 V，LVC1G14/1G17，按下/释放延迟按下式算（typ / 极值慢角）：</p>
+<table>
+<thead>
+<tr>
+<th>R_p</th>
+<th>C</th>
+<th>τ</th>
+<th>按下 typ / max</th>
+<th>释放 typ / max</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10 kΩ</td>
+<td>0.1 µF</td>
+<td>1.0 ms</td>
+<td>1.1 / 1.2 ms</td>
+<td>0.69 / 0.84 ms</td>
+<td>快速响应键、矩阵键盘扫描</td>
+</tr>
+<tr>
+<td>22 kΩ</td>
+<td>0.47 µF</td>
+<td>10.3 ms</td>
+<td>11.4 / 12.7 ms</td>
+<td>7.2 / 8.7 ms</td>
+<td><strong>通用推荐</strong></td>
+</tr>
+<tr>
+<td>47 kΩ</td>
+<td>0.47 µF</td>
+<td>22.1 ms</td>
+<td>24.3 / 27.1 ms</td>
+<td>15.3 / 18.6 ms</td>
+<td>面板键、长线</td>
+</tr>
+<tr>
+<td>100 kΩ</td>
+<td>0.1 µF</td>
+<td>10.0 ms</td>
+<td>11.0 / 12.3 ms</td>
+<td>6.9 / 8.4 ms</td>
+<td>省容值（C 小、R 大）</td>
+</tr>
+<tr>
+<td>100 kΩ</td>
+<td>1 µF</td>
+<td>100 ms</td>
+<td>110 / 123 ms</td>
+<td>69 / 84 ms</td>
+<td>防误触、长按判定</td>
+</tr>
+</tbody>
+</table>
+<p>推荐区间：<strong>τ = 10–22 ms</strong>（覆盖绝大多数轻触开关），R 取 22–47 kΩ，C 取 0.1–0.47 µF。C 用 X7R 就够（去抖不要求容值精确）；要精确延时才上 C0G，但 0.47 µF 的 C0G 体积和价格都不划算——那种场合应该改方案。</p>
+<h3 id="34">3.4 边界条件</h3>
+<ul>
+<li><strong>C 的放电电流</strong>：按下瞬间 C 通过开关放电，峰值只受开关电阻和走线电感限制。C = 1 µF、3 V、开关 50 mΩ，理论上 60 A——实际会打火、烧蚀触点。串电阻的位置决定它影响哪一段，<strong>别混</strong>：</li>
+<li>R_s 串在<strong>按键与 C 之间</strong>：只进入放电回路，放电 τ = R_s·C，充电 τ = R_p·C 不变（§5.2 用这种）；</li>
+<li>R_s 串在 <strong>RC 节点与门输入之间</strong>：充放电都要过它，两个 τ 都变成 (R_p + R_s)·C，同时兼顾 ESD 限流，但<strong>不限制 C 的放电电流</strong>。</li>
+<li>典型取 100 Ω–1 kΩ，放电峰值降到 3–30 mA。</li>
+<li><strong>C 的介质</strong>：X7R 在接近额定电压时容值可掉 30%~50%（看厂家 DC-bias 曲线），Y5V 更差。定时用途选 <strong>C0G/NP0</strong>，或把 X7R 降额到 1/3 额定电压使用。</li>
+<li><strong>湿电流</strong>：R 太大时触点电流只有几 µA，某些开关（尤其镀银、大功率）要求最小湿电流才能破氧化膜。这类开关要么选低 R（≤10 kΩ）+ 大 C，要么在规格书里确认低电平信号能力。</li>
+<li><strong>MCU 内部上拉</strong>：如果 GPIO 开了内部上拉（典型 20–50 kΩ），它会和 R_p 并联，τ 直接算错。<strong>外部有上拉就关内部上拉</strong>，或把并联值代进公式。</li>
+<li><strong>省成本方案</strong>：能软件消抖就别加硬件。硬件 RC + 施密特只在三种场合必要：强干扰现场、低功耗唤醒（MCU 睡着时也要干净边沿）、按键线缆长（&gt;20 cm，易拾噪）。</li>
+</ul>
+<h3 id="35">3.5 精度预算</h3>
+<table>
+<thead>
+<tr>
+<th>误差项</th>
+<th>对 t_fall 的影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>阈值 min/max</td>
+<td>0.88τ~1.23τ（相对 typ −20%/+12%）</td>
+</tr>
+<tr>
+<td>R 容差</td>
+<td>±1%（金属膜）~ ±5%（厚膜）</td>
+</tr>
+<tr>
+<td>C 容差 + DC-bias</td>
+<td>C0G ±5%；X7R 未降额可到 −40%</td>
+</tr>
+<tr>
+<td>漏电流</td>
+<td>折算成阈值偏移 II·R</td>
+</tr>
+<tr>
+<td>温度</td>
+<td>已含在 min/max 列</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结论：去抖时间不要指望优于 ±15%，也不需要。</strong>去抖的设计目标是「最坏情况仍然够长」，不是「精确」。用 C0G + 1% 电阻，按 0.88τ 检查灵敏度、按 1.23τ 检查响应延迟，就够了。需要精确延时的场合（比如长按 2 s 开机），把 RC 只当「粗定时 + 去抖」，精确计时交给 MCU。</p>
+<h2 id="4-rc">4. RC 振荡器频率估算与误差来源</h2>
+<h3 id="41">4.1 拓扑</h3>
+<p>反相施密特 + R 从输出反馈到输入 + C 从输入到地。这是唯一能用单门实现的 RC 振荡器拓扑，因为环路里必须有 180° 反相。</p>
+<pre><code>              R = 100 kΩ
+        ┌──────────────────┐
+        │                  │
+        │   ┌──────┐       │
+        ├───┤A    Y├───────┴──────► f_out
+        │   │ 1G14 │
+        │   └──────┘
+       ─┴─ C = 1 nF
+        │
+       GND
+</code></pre>
+<p>工作过程：C 从 VT− 充电到 VT+ 期间输出为高（经 R 拉高 C）；越过 VT+ 输出翻低，C 经 R 放电到 VT−；再翻高，循环。<strong>迟滞提供的是判决记忆</strong>——没有 VH，单门 RC 环路会停在线性区，不起振。</p>
+<h3 id="42">4.2 频率公式</h3>
+<pre><code>充电（VT− → VT+，输出 VOH）：t1 = RC·ln( (VOH − VT−) / (VOH − VT+) )
+放电（VT+ → VT−，输出 VOL）：t2 = RC·ln( (VT+ − VOL) / (VT− − VOL) )
+
+T = t1 + t2 ,  f = 1/T
+</code></pre>
+<p><strong>假设</strong>：VOH = VCC、VOL = 0（空载、轨到轨）；阈值在一周期内恒定；R ≫ 输出阻抗；C ≫ C_I + 杂散；漏电流忽略；tpd ≪ T。</p>
+<p>令 α = VT+/VCC、β = VT−/VCC，并取 VOH = VCC、VOL = 0：</p>
+<pre><code>T = RC · [ ln((1−β)/(1−α)) + ln(α/β) ]
+</code></pre>
+<p><strong>VCC 从式子里消掉了</strong>——这是一阶「频率与电源无关」的来源，也是 RC 振荡器唯一的美德。但它只在阈值严格按比例缩放时成立，见 4.3。</p>
+<h3 id="43-frc">4.3 不同器件的 f·RC 常数</h3>
+<p>把实体页的 typ 阈值代入，得到（<strong>这些是算出来的，不是实测</strong>）：</p>
+<table>
+<thead>
+<tr>
+<th>器件</th>
+<th>VCC</th>
+<th>VT+</th>
+<th>VT−</th>
+<th>T / RC</th>
+<th><strong>f·RC</strong></th>
+<th>占空比（高）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LVC1G14 / 1G17</td>
+<td>1.8 V</td>
+<td>1.0</td>
+<td>0.6</td>
+<td>0.916</td>
+<td>1.09</td>
+<td>44.3%</td>
+</tr>
+<tr>
+<td>LVC1G14 / 1G17</td>
+<td>2.3 V</td>
+<td>1.2</td>
+<td>0.7</td>
+<td>0.914</td>
+<td>1.09</td>
+<td>41.0%</td>
+</tr>
+<tr>
+<td><strong>LVC1G14 / 1G17</strong></td>
+<td><strong>3.0 V</strong></td>
+<td><strong>1.5</strong></td>
+<td><strong>1.0</strong></td>
+<td><strong>0.693</strong></td>
+<td><strong>1.44</strong></td>
+<td><strong>41.5%</strong></td>
+</tr>
+<tr>
+<td>LVC1G14 / 1G17</td>
+<td>4.5 V</td>
+<td>2.2</td>
+<td>1.6</td>
+<td>0.550</td>
+<td>1.82</td>
+<td>42.1%</td>
+</tr>
+<tr>
+<td>LVC1G14 / 1G17</td>
+<td>5.5 V</td>
+<td>2.6</td>
+<td>1.9</td>
+<td>0.530</td>
+<td>1.89</td>
+<td>40.8%</td>
+</tr>
+<tr>
+<td>HCS10 / HCS11</td>
+<td>2.0 V</td>
+<td>1.21</td>
+<td>0.6</td>
+<td>1.274</td>
+<td>0.79</td>
+<td>44.9%</td>
+</tr>
+<tr>
+<td>HCS10 / HCS11</td>
+<td>4.5 V</td>
+<td>2.39</td>
+<td>1.41</td>
+<td>0.909</td>
+<td>1.10</td>
+<td>42.0%</td>
+</tr>
+<tr>
+<td>HCS10 / HCS11</td>
+<td>6.0 V</td>
+<td>3.05</td>
+<td>1.9</td>
+<td>0.802</td>
+<td>1.25</td>
+<td>41.0%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>工程记忆值：LVC1G14 @3.0 V，f ≈ 1.44 / (R·C)。</strong></p>
+<p><strong>这张表推翻了一句流行话</strong>：f 并不是「与 VCC 无关」。阈值的比例 α 从 1.8 V 时的 0.556 掉到 5.5 V 时的 0.473，β 从 0.333 到 0.345，于是同一个 R·C 在 1.8 V 和 5.5 V 下的频率差 <strong>1.09 → 1.89，约 1.7 倍</strong>。所以：</p>
+<ul>
+<li><strong>同一块板、固定 VCC 下</strong>，频率重复性不错（R、C 精度决定）；</li>
+<li><strong>换电源电压</strong>（比如电池从 4.2 V 掉到 3.0 V），频率会明显变——这对电池设备是致命的。</li>
+</ul>
+<h3 id="44">4.4 误差来源（按影响排序）</h3>
+<p>@3.0 V、LVC1G14、R = 100 kΩ、C = 1 nF：</p>
+<table>
+<thead>
+<tr>
+<th>误差项</th>
+<th>量级</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>阈值 min/max</strong></td>
+<td><strong>f·RC 1.04 ~ 2.27（−28% / +57%）</strong></td>
+<td>最大项。用一致角算：VT+ min 1.29 配 VH min 0.31（VT− = 0.98）→ 2.27；VT+ max 1.71 配 VH max 0.70（VT− = 1.01）→ 1.04</td>
+</tr>
+<tr>
+<td>VOH/VOL 非轨到轨</td>
+<td>−7%（VOH 2.9 / VOL 0.1）、−15%（2.8 / 0.2）</td>
+<td>负载越重越差；VOH 低、VOL 高都使 T 变长、f 变低</td>
+</tr>
+<tr>
+<td>杂散 + 输入电容</td>
+<td>−13% @C = 100 pF；−1.5% @1 nF</td>
+<td>C_I = 5 pF + 布线 5~15 pF；<strong>C 至少取 1 nF</strong></td>
+</tr>
+<tr>
+<td>R / C 容差</td>
+<td>±1%~±10%</td>
+<td>C0G ±5%，X7R ±10% 且带 DC-bias</td>
+</tr>
+<tr>
+<td>温度（−40~125 °C）</td>
+<td>已含在阈值 min/max</td>
+<td>见同表第一行的极值角</td>
+</tr>
+<tr>
+<td>tpd</td>
+<td>0.4%（1 MHz）/ 0.04%（100 kHz）</td>
+<td>4.3 ns typ、7 ns max @3.0 V，低频可忽略</td>
+</tr>
+<tr>
+<td>电源变化</td>
+<td>1.7×（1.8→5.5 V）</td>
+<td>见 4.3，不是小数</td>
+</tr>
+</tbody>
+</table>
+<p><strong>总账：不校准 ±30%~±50%，校准后可做到 ±10%~±15%。</strong> 想再准就得换晶振/陶瓷谐振器，或者用 MCU 定时器。</p>
+<h3 id="45">4.5 适用边界</h3>
+<p><strong>能用</strong>：蜂鸣器驱动、LED 闪烁、上电延时、电荷泵时钟、看门狗「心跳」、玩具/小家电的节奏源。</p>
+<p><strong>不能用</strong>：UART/SPI/CAN 等通信时钟、MCU 主时钟、任何需要 ppm 级或跨温度稳定的定时、需要精确 50% 占空比的场合（本拓扑典型占空比 41%~45%，且随阈值变）。</p>
+<p><strong>频率上下限</strong>：</p>
+<ul>
+<li>上限 ~1–2 MHz：再高 tpd 和输出摆率开始吃掉周期，杂散电容占比也失控；</li>
+<li>下限 ~1 Hz：再低 R·C 就得取到 1 s 以上，R 受漏电流限制、C 受漏电和体积限制。<strong>低于 10 Hz 建议用 MCU 定时器或加计数器分频</strong>。</li>
+</ul>
+<p><strong>提高稳定性的四件事</strong>：稳压供电（或用 LDO）、C0G 电容、1% 电阻、样机实测后微调 R（逐台校准）。做完这四件，<strong>同一温度下</strong>的初始频率一致性可以到 ±5%；但<strong>跨温度、跨批次仍是 ±15% 量级</strong>——校准只消除初始偏差，消不掉温漂。</p>
+<p><strong>平均电流</strong>：I ≈ C·VCC·f（每个周期给 C 充一次电）。100 kΩ + 1 nF @3.0 V → 14.4 kHz、约 43 µA；10 kΩ + 1 nF → 144 kHz、约 430 µA。低功耗场合优先大 R 小 C。</p>
+<h2 id="5">5. 三个典型电路</h2>
+<h3 id="51-gpio">5.1 单键去抖到 GPIO（标准型）</h3>
+<pre><code>        VCC
+         │
+       R_p 47 kΩ
+         │
+   ┌─────┴──────┬─────────────► A  EM74LVC1G17 ──► Y ──► MCU GPIO
+   │            │
+  SW1          C 0.47 µF
+   │            │
+  GND          GND
+</code></pre>
+<ul>
+<li>τ = 47 kΩ × 0.47 µF = 22.1 ms；按下延迟 24.3 ms（typ）/ 27.1 ms（max），释放 15.3 / 18.6 ms。</li>
+<li>1G17 同相 → 按下为低。要「按下为高」换 <code>EM74LVC1G14</code>（反相）。</li>
+<li>长线或面板引出：A 前串 100 Ω–1 kΩ，C 端并 TVS 到地。</li>
+<li><strong>关掉 MCU 内部上拉</strong>，否则 40 kΩ 与 47 kΩ 并联成 21.5 kΩ，τ 从 22 ms 掉到约 10 ms，和设计值差一倍。</li>
+<li>施密特输出直连 GPIO，不要再串普通门——多一级普通门就多一个阈值判决点，前功尽弃。</li>
+</ul>
+<h3 id="52-rc">5.2 长按开机 / 单键使能（RC 当定时器）</h3>
+<pre><code>        VCC
+         │
+       R 100 kΩ
+         │
+   ┌─────┴──────┬─────────────► A  EM74LVC1G14 ──► Y ──► /EN（低有效使能）
+   │            │
+  SW1          C 4.7 µF
+   │            │
+  R_s 100 Ω    GND
+   │
+  GND
+</code></pre>
+<p>（R_s 与 SW1 串联，只在按下时限制 C 的放电电流，不影响充电 τ。）</p>
+<ul>
+<li>上电时 C = 0，反相器输出高 → 系统关断；按住 SW1 后 C 经 R 充电，越过 VT+ 输出翻低 → 使能。τ = 100 kΩ × 4.7 µF = 470 ms，<strong>按住时间 326 ms（typ），264–397 ms（极值）</strong>。</li>
+<li>松开后 C 经 R_s + 开关快速放电（τ = 0.47 ms），系统立即关断——天然实现「按住才运行」。</li>
+<li><strong>R_s 必须有</strong>：没有它，4.7 µF 通过触点放电的峰值电流只受接触电阻限制，会烧蚀触点。</li>
+<li><strong>R 不能取 470 kΩ</strong>：II·R = 0.47 V，已经超过 VH（0.6 V typ / 0.31 V min），阈值被漏电流顶飞。要更长延时，加 C 而不是加 R（C ≤ 10 µF，再大漏电和体积都不划算）。</li>
+<li>这个电路的延时精度就是 §3.5 的 ±15%~±40%，别用它做「精确 2 秒」。</li>
+</ul>
+<h3 id="53-rc">5.3 RC 振荡器（基本型 + 门控型）</h3>
+<p><strong>基本型</strong>（1G14）：</p>
+<pre><code>              R = 100 kΩ
+        ┌──────────────────┐
+        │                  │
+        │   ┌──────┐       │
+        ├───┤A    Y├───────┴──────► f_out ≈ 14.4 kHz
+        │   │ 1G14 │
+        │   └──────┘
+       ─┴─ C = 1 nF
+        │
+       GND
+</code></pre>
+<ul>
+<li>f = 1.44 / (100 kΩ × 1 nF) = 14.4 kHz（typ @3.0 V）。</li>
+<li>R 取 10 kΩ–100 kΩ，C 取 1 nF–1 µF。<strong>C 低于 500 pF 时杂散电容误差 &gt;3%，不要用</strong>。</li>
+<li>输出可直驱 LED（串限流电阻）或蜂鸣器三极管基极；±24 mA @3.0 V 的能力够了。</li>
+</ul>
+<p><strong>门控型</strong>（HCS10，NAND）：</p>
+<pre><code>        ┌──────── R = 100 kΩ ────────┐
+        │                            │
+   ┌────┴─────┐                      │
+EN ►┤A         │                      │
+   │  B     Y ├──────────────────────┴──► f_out（EN=H 时振荡）
+   └────┬─────┘
+        │  B = RC 节点
+       ─┴─ C = 1 nF
+        │
+       GND
+</code></pre>
+<ul>
+<li>EN = 低 → Y 恒高 → C 充到 VCC 停振，输出静态高；EN = 高 → 起振。</li>
+<li>HCS10 是<strong>三路</strong> NAND，一颗封装可以做三路独立振荡器（或两路 + 一路备用门）。</li>
+<li>HCS11（AND）极性相反：EN = 低时输出恒低，停振在低电平。</li>
+<li>门控端（A）必须是干净的逻辑电平，<strong>不能接 RC 节点</strong>——那会把 NAND 变成模拟比较器，行为不可预测。</li>
+<li>HCS 在 4.5 V 时 f ≈ 1.10/(RC)，比同电压的 LVC（1.82）低约 40%——迟滞宽了近一倍，周期自然长。算频率时用 §4.3 的表，别套 1.44。</li>
+</ul>
+<h2 id="6">6. 常见误区</h2>
+<ol>
+<li><strong>用普通门做整形</strong>：<code>HC04</code>/<code>LVC1G04</code> 没有迟滞，慢边沿 + 噪声 = 多次翻转。这是「按一次跳好几个数」的第一嫌疑。</li>
+<li><strong>只加 C 不加 R</strong>：C 直接并在按键上，按下瞬间靠触点给电容放电，峰值电流几十安，触点很快烧黑。必须串 R。</li>
+<li><strong>τ 取得比抖动窗口还短</strong>：R = 1 kΩ + C = 100 nF → τ = 0.1 ms，对 5 ms 的抖动串毫无作用，只是把边沿变慢、让普通门更容易抖。</li>
+<li><strong>拿 1G17 搭 RC 振荡器</strong>：同相缓冲 + R 反馈是<strong>正反馈</strong>，一上电就锁死在一个状态，不起振。振荡器必须用反相施密特（1G14/HC14）或 NAND 施密特（HCS10）。</li>
+<li><strong>把 RC 振荡器当通信时钟</strong>：§4.4 的总误差 −28%/+57%，UART 直接丢帧。要时钟就上晶振或有源振荡器。</li>
+<li><strong>用 typ 阈值算时间</strong>：3.0 V 下 t_fall 的极值范围是 0.88τ–1.23τ，typ 1.10τ 只是中间值。批量一致性要求高时必须按极值设计。</li>
+<li><strong>忽略内部上拉并联</strong>：外部 47 kΩ + 内部 40 kΩ = 21.5 kΩ，τ 直接减半。调试时「怎么比算的快一倍」多半是这个。</li>
+<li><strong>R 取得太大还怪芯片</strong>：330 kΩ 上拉 + 1 µA 漏电流 = 0.33 V 偏移，超过 VH，阈值完全跑偏。高阻节点是漏电流和噪声的放大器。</li>
+<li><strong>忽略 C 的 DC-bias</strong>：标称 1 µF 的 X7R 在 3.3 V 下可能只剩 0.6 µF，τ 短 40%。定时用途用 C0G，或按降额曲线修正。</li>
+<li><strong>以为频率与电源无关</strong>：见 4.3，1.8 V 和 5.5 V 差 1.7 倍。电池供电的振荡器频率会随电量一路漂。</li>
+</ol>
+<h2 id="7">7. 核对清单</h2>
+<p><strong>通用</strong></p>
+<ul>
+<li>[ ] 输入信号幅度是否覆盖 VT+ max 与 VT− min，并留 ≥0.3 V 余量</li>
+<li>[ ] 噪声/纹波峰峰值是否 &lt; VH_min（不是 typ）</li>
+<li>[ ] 供电域是否匹配（1.8/2.5/3.3 V → LVC；5 V → AHC/HC/HCS）</li>
+<li>[ ] 极性是否正确（1G14 反相 / 1G17 同相 / HCS10 NAND 反相 / HCS11 AND 同相）</li>
+<li>[ ] 输出负载电流是否在 ±24 mA（LVC）/ ±6 mA（HCS）以内</li>
+<li>[ ] 是否核对过 −40~+125 °C 列的 min/max，而不是只看 25 °C typ</li>
+</ul>
+<p><strong>去抖</strong></p>
+<ul>
+<li>[ ] τ 是否 ≥ 9× 单次抖动脉冲宽度（@3.0 V，VH_min 0.31 V）</li>
+<li>[ ] 总响应（T_b + 1.23τ）是否 ≤ 30 ms</li>
+<li>[ ] R_p 是否 ≤ 100 kΩ（宽温 ≤ 47 kΩ），II·R 是否 &lt; 0.1·VH_min</li>
+<li>[ ] 按键与 C 之间是否串了 100 Ω–1 kΩ</li>
+<li>[ ] MCU 内部上拉是否已关闭，或已并入 τ 计算</li>
+<li>[ ] C 是否为 C0G/X7R 降额使用，容差是否进预算</li>
+<li>[ ] 长线/面板引出是否加了串阻 + TVS</li>
+</ul>
+<p><strong>振荡器</strong></p>
+<ul>
+<li>[ ] 是否用了<strong>反相</strong>施密特（1G17 不行）</li>
+<li>[ ] f·RC 常数是否按实际 VCC 查表（不是一律 1.44）</li>
+<li>[ ] C 是否 ≥ 1 nF（杂散占比 &lt;2%）</li>
+<li>[ ] R 是否在 10 kΩ–100 kΩ（漏电流与输出阻抗的夹缝）</li>
+<li>[ ] 目标频率是否在 1 Hz–2 MHz 内</li>
+<li>[ ] 负载是否会让 VOH 掉、VOL 抬（掉了要重算 f）</li>
+<li>[ ] 是否接受 ±30% 的初始误差，或已安排产线校准</li>
+<li>[ ] 占空比是否可接受（41%~45%，不是 50%）</li>
+</ul>
+<h2 id="8">8. 来源</h2>
+<ul>
+<li>实体页：[[em74lvc1g14]]、[[em74lvc1g17]]、[[em74ahc1g17-em74ahct1g17]]、[[em74hc14-em74hct14]]、[[em74hcs10]]、[[em74hcs11]]</li>
+<li>对照组（无迟滞的普通门，用于 Δt/ΔV 比较）：[[em74lvc1g04]]</li>
+<li>概念页：[[schmitt-trigger]]</li>
+<li>同主题总览：[[schmitt-trigger-app-guide]]（器件谱系与整形判据）、[[logic-gates-app-guide]]（家族定位）</li>
+<li>原始规格书：<code>raw/datasheets/EM74LVC1G14_Product_DS_V1.2.json</code>、<code>EM74LVC1G17_Product_DS_V1.4.json</code>、<code>EM74AHC_AHCT1G17_Product_DS_V1.2.json</code>、<code>EM74HC_HCT14_Product_DS_V1.4.json</code>、<code>EM74HCS10_Product_DS_V1.1.json</code>、<code>EM74HCS11_Product_DS_V1.1.json</code></li>
+<li>阈值出处：各实体页「传输特性 VT+/VT−/VH」表（LVC p10 Table 10；HCS p10 Table 10；AHC p10 Table 10）</li>
+<li>输入电容：LVC1G14/1G17 CI = 5 pF typ（静态特性表）；HCS = 7 pF typ；HCT14 = 10 pF typ</li>
+<li>tpd：LVC @3.0–3.6 V，4.3 ns typ / 7 ns max（动态特性表）</li>
+</ul>
+<blockquote>
+<p>本文的系数表、f·RC 表、延迟表均为<strong>把实体页 typ 阈值代入本文公式的计算结果</strong>，不是实测数据。定型前请用 min/max 极值复核，并在样机上用示波器实测按键波形与振荡频率。</p>
+</blockquote>
+  </article>
+</div>
+</body>
+</html>

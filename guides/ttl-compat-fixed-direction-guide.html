@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TTL 电平兼容与固定方向电平转换 选型与应用指导 · 芯祥应用指南</title>
+<meta name="description" content="一句话：HC 的 VIH 是 0.7·VCC（比例式），HCT 的 VIH 是固定 2.0 V（绝对值）。 5 V 供电时两者差 1.5 V，这一条差值就是&quot;3.3 V 能不能直进 5 V 器件&quot;的全部答案。">
+<link rel="stylesheet" href="../style.css">
+<style>
+  .guide-wrap { max-width: 980px; margin: 0 auto; padding: 0 20px 64px; }
+  .guide-nav { position: sticky; top: 0; z-index: 10; padding: 12px 0; margin-bottom: 8px;
+    background: var(--bg, #fff); border-bottom: 1px solid var(--border, #e3e6e9); font-size: 13px; }
+  .guide-nav a { color: inherit; text-decoration: none; opacity: .75; }
+  .guide-nav a:hover { opacity: 1; text-decoration: underline; }
+  .guide-body { font-size: 14.5px; line-height: 1.75; }
+  .guide-body h1 { font-size: 24px; margin: 24px 0 8px; }
+  .guide-body h2 { font-size: 18px; margin: 28px 0 10px; padding-top: 8px; border-top: 1px solid var(--border, #eee); }
+  .guide-body h3 { font-size: 15.5px; margin: 20px 0 8px; }
+  .guide-body table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13px; display: block; overflow-x: auto; }
+  .guide-body th, .guide-body td { border: 1px solid var(--border, #e3e6e9); padding: 7px 10px; text-align: left; vertical-align: top; }
+  .guide-body th { background: rgba(0,0,0,.03); }
+  .guide-body code { background: rgba(0,0,0,.05); padding: 1px 5px; border-radius: 4px; font-size: .92em; }
+  .guide-body pre { background: rgba(0,0,0,.04); padding: 12px 14px; border-radius: 8px; overflow-x: auto; }
+  .guide-body blockquote { margin: 12px 0; padding: 8px 14px; border-left: 3px solid var(--accent, #888); background: rgba(0,0,0,.025); }
+  .guide-body ul, .guide-body ol { padding-left: 22px; }
+  :root[data-theme="dark"] .guide-body th, :root:not([data-theme="light"]) .guide-body th { background: rgba(255,255,255,.06); }
+  :root[data-theme="dark"] .guide-body code, :root:not([data-theme="light"]) .guide-body code,
+  :root[data-theme="dark"] .guide-body pre, :root:not([data-theme="light"]) .guide-body pre { background: rgba(255,255,255,.07); }
+</style>
+</head>
+<body>
+<div class="guide-wrap">
+  <nav class="guide-nav"><a href="../index.html">← 返回产品目录</a> · <a href="../index.html#page=apps">应用场景</a></nav>
+  <article class="guide-body">
+<h1 id="ttl">TTL 电平兼容与固定方向电平转换 选型与应用指导</h1>
+<blockquote>
+<p>这一页只解决两件事：<strong>① 5 V 器件听不懂 3.3 V 的高电平，改阈值够不够；② 输出电平也必须跟着变时，固定方向怎么接。</strong>
+四条路线的全景对比见 [[level-translation-app-guide]]，本文不重复；这里只做阈值判据与固定方向（DIR）的落地细节。
+<strong>凡是提到 1T45 的地方都是 Draft 口径</strong>：可按 Draft 报型号与参数、可送样评估，<strong>不承诺量产交期</strong>。
+场景规模（产品线内部归类口径）：5 V TTL 电平兼容 44 款；单向（DIR 型）固定方向 5 款 = 1T45（<strong>Draft</strong>）的 5 个封装尾缀。计数为归类口径，本页只对下列逐条实读的型号负责。</p>
+</blockquote>
+<h2 id="1-hc-hctahct">1. HC 与 HCT/AHCT 的阈值差异</h2>
+<p>一句话：<strong>HC 的 VIH 是 0.7·VCC（比例式），HCT 的 VIH 是固定 2.0 V（绝对值）。</strong> 5 V 供电时两者差 1.5 V，这一条差值就是"3.3 V 能不能直进 5 V 器件"的全部答案。</p>
+<table>
+<thead>
+<tr>
+<th>型号（带尾缀）</th>
+<th>VCC 范围</th>
+<th>VIH min</th>
+<th>VIL max</th>
+<th>3.3 V 驱动直收？</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EM74HC00D</code>（SOP-14L）</td>
+<td>2.0–6.0 V</td>
+<td><strong>3.15 V @4.5 V；4.2 V @6.0 V</strong>（0.7·VCC）</td>
+<td>1.35 V @4.5 V；1.8 V @6.0 V</td>
+<td><strong>否</strong></td>
+</tr>
+<tr>
+<td><code>EM74HCT00D</code>（SOP-14L）</td>
+<td>4.5–5.5 V</td>
+<td><strong>2.0 V（4.5–5.5 V 全档不变）</strong></td>
+<td><strong>0.8 V</strong></td>
+<td><strong>是，余量 ≥0.97 V</strong></td>
+</tr>
+<tr>
+<td><code>EM74AHC1G00GV</code>（SOT23-5L）</td>
+<td>2.0–5.5 V</td>
+<td>2.1 V @3.0 V；3.85 V @5.5 V</td>
+<td>0.9 V @3.0 V；1.65 V @5.5 V</td>
+<td>否（5 V 供电时）</td>
+</tr>
+<tr>
+<td><code>EM74AHCT1G00GV</code>（SOT23-5L）</td>
+<td>4.5–5.5 V</td>
+<td><strong>2.0 V</strong></td>
+<td><strong>0.8 V</strong></td>
+<td><strong>是</strong></td>
+</tr>
+<tr>
+<td><code>EM74HCT245D</code>（SOP-20L）</td>
+<td><strong>2.7</strong>–5.5 V</td>
+<td>2.0 V @3.0/4.5 V；2.1 V @5.5 V</td>
+<td>0.8 V</td>
+<td>是（但输出仍是 5 V 摆幅）</td>
+</tr>
+<tr>
+<td><code>EM74LV1T04GV</code>（SOT23-5L）</td>
+<td>1.6–5.5 V</td>
+<td><strong>1.41 V @3.0–3.3 V；2.03 V @4.5–5.0 V</strong></td>
+<td>0.75 V @3.0–3.6 V；0.80 V @4.5–5.5 V</td>
+<td>是，且<strong>输出跟随 VCC</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="11-hct-33-v">1.1 为什么 HCT 能直收 3.3 V</h3>
+<p>HCT 的输入级不是按 VCC/2 设计的互补对，而是按 TTL 兼容设计的比例输入级，所以规格书把阈值写成<strong>与 VCC 无关的绝对值</strong>：<code>EM74HCT00D</code> 在 4.5 V 和 5.5 V 下 VIH 都是 2.0 V、VIL 都是 0.8 V（<code>EM74AHCT1G00GV</code> 同为 2.0/0.8 V）。</p>
+<p>算余量（按 −10% 电源容差）：</p>
+<ul>
+<li>3.3 V −10% = 2.97 V，对 VIH 2.0 V → <strong>高电平余量 0.97 V</strong>；对 VIL 0.8 V，3.3 V 驱动 VOL ≤0.4 V → <strong>低电平余量 0.4 V</strong>。</li>
+<li>同样 3.3 V 进 <code>EM74HC00D</code>：4.5 V 供电时 VIH 3.15 V，3.3 V −5% = 3.135 V 已经<strong>越界</strong>；5.0 V 供电按 0.7·VCC 推算 VIH ≈3.5 V，差 0.2 V。<strong>名义值看着"差不多"，容差内直接挂</strong>——这是现场最常见的误判。</li>
+</ul>
+<h3 id="12-33-v-icc">1.2 直收 3.3 V 不是免费的：ΔICC</h3>
+<p>HCT 输入在阈值带内是部分导通的，3.3 V 恰好落在 5 V 域的阈值带里，于是<strong>静态多出一股电源电流</strong>（规格书用 ΔICC 单列）：</p>
+<table>
+<thead>
+<tr>
+<th>型号</th>
+<th>ΔICC（每输入脚，max）</th>
+<th>测试条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EM74HCT00D</code></td>
+<td><strong>1.55 mA</strong>（−40~85 ℃）/ 1.85 mA（125 ℃）</td>
+<td>VI = VCC−2.1 V，VCC = 5.5 V</td>
+</tr>
+<tr>
+<td><code>EM74AHCT1G00GV</code></td>
+<td><strong>1.35 mA</strong></td>
+<td>VI = 3.4 V，VCC = 5.5 V，其余脚接 VCC/GND</td>
+</tr>
+<tr>
+<td><code>EM74HCT245D</code></td>
+<td><strong>400 µA</strong></td>
+<td>VI = VCC−2.1 V，VCC = 4.5–5.5 V</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>8 位总线全部为 3.3 V 高电平，按 <code>EM74HCT245D</code> 的每脚限值就是 <strong>8 × 400 µA = 3.2 mA</strong> 的静态增量；换 <code>EM74HCT00D</code> 这类门，4 个输入就能到 6 mA 量级。电池/低功耗待机产品必须先算这一笔，再决定用 HCT 还是真转换器。</p>
+</blockquote>
+<h3 id="13">1.3 两个容易踩的家族差异</h3>
+<ul>
+<li><strong>HCT 的 VCC 下限不是家族统一值</strong>：<code>EM74HCT00D</code> 推荐 4.5–5.5 V，<code>EM74HCT245D</code> 是 <strong>2.7</strong>–5.5 V。按"HCT 都能 2.7 V 起"或"都得 4.5 V 起"报料都会错，逐页核。</li>
+<li><strong>输入是否 5.5 V 容限要分开看</strong>：<code>EM74HC00D</code>/<code>EM74HCT00D</code> 的输入带钳位二极管，规格书明说"可用限流电阻把输入接到高于 VCC 的电压"——意思是要串电阻；<code>EM74AHC1G00GV</code>/<code>EM74AHCT1G00GV</code> 是 <strong>overvoltage tolerant inputs to 5.5 V</strong>（推荐 VI 0–5.5 V，与 VCC 无关）；<code>EM74HCT245D</code> 的推荐 VI 上限就是 <strong>VCC</strong>，5 V 打进 3.3 V 供电的 HCT245 属于超推荐值。</li>
+</ul>
+<h2 id="2-ttl">2. 什么时候只需 TTL 兼容，什么时候必须真转换</h2>
+<p>判据不是"电压差多少"，而是<strong>输出端要不要跟着变</strong>。TTL 兼容只改"接收门槛"，不改"输出摆幅"——HCT 门在 5 V 供电下输出永远是 5 V。</p>
+<h3 id="21-ttl">2.1 只需 TTL 兼容（不加转换器）</h3>
+<p>同时满足这四条才成立：</p>
+<ol>
+<li><strong>信号方向固定且单向</strong>（门/缓冲没有 DIR，回头路走不了）；</li>
+<li><strong>接收端在 5 V 域</strong>，且这个接收器件本身可以换成 HCT/AHCT（不是客户已定死的芯片）；</li>
+<li><strong>发送端高电平 ≥ 2.0 V、低电平 ≤ 0.8 V</strong>（3.3 V CMOS 推挽天然满足）；</li>
+<li><strong>速率低于门的 tpd 预算</strong>：<code>EM74HCT00D</code> tpd max 19 ns（4.5 V）、<code>EM74AHCT1G00GV</code> 8.0 ns（4.5–5.5 V）——GPIO/片选/使能这类低速控制信号没问题，时钟与 SPI 高速线不要走这条路（19 ns 的 tpd 会直接吃掉建立/保持余量）。</li>
+</ol>
+<p>典型成立场景：3.3 V MCU 的 GPIO/片选/使能送进 5 V 侧的 HCT 门、缓冲、触发器、译码器。<strong>用一颗本来就要用的逻辑门顺手把阈值问题解决掉，是成本最低的方案</strong>。</p>
+<h3 id="22">2.2 必须真转换（五条红线，碰一条就上转换器）</h3>
+<table>
+<thead>
+<tr>
+<th>红线</th>
+<th>为什么 TTL 兼容救不了</th>
+<th>该上什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>输出必须降到 3.3 V/1.8 V</strong></td>
+<td>HCT 输出仍是 5 V 摆幅，超下级 VI 绝对最大值</td>
+<td><code>EM74LV1T04GV</code>（VCC=3.3 V，VIH 1.41 V）或 1T45（<strong>Draft</strong>）/EXS 的低压侧</td>
+</tr>
+<tr>
+<td><strong>双向或开漏</strong>（I²C、1-Wire、SDIO CMD/DAT）</td>
+<td>门与缓冲没有方向感，也没有开漏输出</td>
+<td><code>EXS0102DC</code> / <code>EXS0104PW</code>（自动方向）</td>
+</tr>
+<tr>
+<td><strong>≥20 Mbps 或时序预算紧</strong></td>
+<td><code>EM74HCT00D</code> 19 ns、HC 25 ns 的 tpd 吃不消</td>
+<td>1T45（<strong>Draft</strong>，tpd 5.3 ns typ）/ EXS（40 Mbps）/ 8T245</td>
+</tr>
+<tr>
+<td><strong>需要掉电高阻/防反灌</strong></td>
+<td>HCT 逻辑件没有 IOFF 这一项（HCT00/HCT245 规格书均未列）</td>
+<td>1T45（<strong>Draft</strong>，IOFF ±10 µA）/ EXS（IOFF ±4 µA）</td>
+</tr>
+<tr>
+<td><strong>需要运行时切方向或 OE 关断</strong></td>
+<td>HCT 门的"方向"是布线决定的</td>
+<td>8T245（DIR+OE）或 EXS</td>
+</tr>
+</tbody>
+</table>
+<h3 id="23">2.3 两个边界情形，别硬塞进上面两类</h3>
+<ul>
+<li><strong>5 V 器件 → 3.3 V MCU 的 GPIO（只做输入）</strong>：很多 3.3 V MCU 的 VIH 按 0.7·VCC ≈2.3 V 标，真正的双极 TTL 输出 VOH min 只有 2.4 V，余量只剩 0.1 V，<strong>不建议直接接</strong>。此时最稳的是 <code>EM74LV1T04GV</code>（VCC=3.3 V 时 VIH 1.41 V，余量约 1 V），或 1T45（<strong>Draft</strong>，3.3 V 侧 VIH 2.2 V，对 2.4 V 只剩 0.2 V；若对方是 5 V CMOS 输出 ≥4.4 V 则余量充足）。</li>
+<li><strong>3.3 V → 5 V，但要保留逻辑功能</strong>（反相、与、或、施密特）：<code>EM74LV1T04GV</code> 这类单电源件既换电平又给功能，VCC 接 5 V 时 VIH 2.03 V，3.3 V 输入直进，输出 5 V。它比"1T45（<strong>Draft</strong>）+ 单独一颗门"省一颗料，但没有方向控制、没有 OE。</li>
+</ul>
+<h2 id="3-1t45-draft">3. 1T45 固定方向用法（<strong>Draft</strong>）</h2>
+<p><code>EM74LVC1T45GV</code>（SOT23-6L，<strong>Draft</strong>）是单 bit、双电源、DIR 控制、3 态输出的转换收发器；<code>EM74LVCH1T45GV</code>（<strong>Draft</strong>）是同规格带总线保持的版本。<strong>它只有一个方向脚 DIR，没有 OE</strong>——这一条决定了它的全部用法边界。</p>
+<h3 id="31-dir">3.1 DIR 接固定电平 = 单向转换器</h3>
+<table>
+<thead>
+<tr>
+<th>需求</th>
+<th>接法</th>
+<th>依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.3 V → 5 V</td>
+<td>A 侧 VCC(A)=3.3 V 收信号，B 侧 VCC(B)=5 V 输出，<strong>DIR 接 VCC(A)（高）</strong></td>
+<td>DIR 高 = A→B；A、DIR 参考 VCC(A)，B 参考 VCC(B)</td>
+</tr>
+<tr>
+<td>5 V → 3.3 V</td>
+<td>B 侧 VCC(B)=5 V 收信号，A 侧 VCC(A)=3.3 V 输出，<strong>DIR 接 GND（低）</strong></td>
+<td>DIR 低 = B→A</td>
+</tr>
+</tbody>
+</table>
+<p><strong>唯一要背下来的规则：哪一侧收信号，哪一侧的 VCC 就必须等于来信号的摆幅。</strong> 因为它的输入阈值是比例式（不是 HCT 那样的固定 2.0 V）：</p>
+<table>
+<thead>
+<tr>
+<th>该侧 VCCI</th>
+<th>VIH min（data）</th>
+<th>VIL max（data）</th>
+<th>VIH min（DIR）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0–3.6 V</td>
+<td><strong>2.2 V</strong></td>
+<td>0.8 V</td>
+<td>2.0 V</td>
+</tr>
+<tr>
+<td>4.5–5.5 V</td>
+<td><strong>0.7·VCCI</strong>（4.5 V 时 3.15 V）</td>
+<td>0.3·VCCI（4.5 V 时 1.35 V）</td>
+<td>0.7·VCC(A)</td>
+</tr>
+</tbody>
+</table>
+<p>所以：<strong>3.3 V 逻辑不能直接打进 VCC=5 V 的那一侧</strong>（5.0 V 档要 3.5 V 才够；4.5 V 档 3.15 V，名义刚过、容差内不过），必须把 3.3 V 放在 A 侧并把 DIR 拉高。这条搞反，现象是"输出一直是高的、怎么都不翻转"。</p>
+<h3 id="32">3.2 电气边界</h3>
+<ul>
+<li><strong>双侧 1.2–5.5 V 各自独立</strong>，任意两个低压节点之间都能转（1.2/1.5/1.8/2.5/3.3/5.0 V）；输入可耐受 5.5 V。</li>
+<li><strong>tpd 只有 typ，没有 max</strong>：A→B 为 tPLH 5.3 ns / tPHL 5.2 ns（VCC(A)=1.2 V、VCC(B)=3.3 V、25 ℃、typ）；B→A 同条件 8.3/7.6 ns。<strong>Draft 表没给极值，时序预算要自己加余量并实测</strong>。</li>
+<li><strong>ICC ≤16 µA</strong>，IOFF 掉电漏电 ±10 µA；任一侧 VCC 掉到 GND，A/B 两口自动进高阻（suspend mode）——这点是它相对 HCT 的真实优势，适合分域上电。</li>
+<li><strong>suspend/3-state 时 VO 绝对最大只有 4.6 V</strong>：5 V 总线上做热插拔，别让 5 V 直接顶在已掉电的 1T45（<strong>Draft</strong>）输出上。</li>
+<li><strong>DIR 不许浮空</strong>（无内部下拉），必须接 VCC(A) 或 GND。</li>
+<li><strong>没有 OE</strong>：想在保持供电的情况下把输出关掉，只能翻 DIR（改成对侧驱动）或者掉电。要"OE + 方向"两个控制脚，只能上 8T245。</li>
+</ul>
+<h3 id="33-draft">3.3 封装与状态（<strong>Draft</strong>）</h3>
+<p><strong>Draft</strong> 版本提供 5 个订购尾缀，全部 3000/卷：<code>EM74LVC1T45GV</code>（SOT23-6L，2.92×1.6）、<code>EM74LVC1T45GW</code>（SOT363，2.1×1.25）、<code>EM74LVC1T45GS</code>（DFN1×1-6L）、<code>EM74LVC1T45GM</code>（DFN1.45×1-6L）、<code>EM74LVC1T45YZP</code>（BGA1.39×0.89-6B）。</p>
+<blockquote>
+<p><strong>口径</strong>：本地只有 Draft Rev 0.3（2026-10-15），官方目录未收录。<strong>可送样、不承诺量产交期</strong>；对外报价前须向产品线确认正式版。LVCH 版的订购尾缀 Draft 表未单列，按同族推定，报料前同样要确认。</p>
+</blockquote>
+<h2 id="4-exs-vs-1t45-draft">4. EXS 自动方向 vs 1T45 固定方向（<strong>Draft</strong>）</h2>
+<p>不是"自动的更好"，两者对<strong>驱动摆幅</strong>的要求完全相反：EXS 是开关型，阈值贴着电源轨（VIH = VCC−0.2/−0.4 V、VIL ≤0.15 V），要求驱动方<strong>满摆幅</strong>；1T45（<strong>Draft</strong>）是比例阈值（0.7/0.3·VCC），留的余量宽得多，但必须"哪侧收信号哪侧供对应电压"。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th><code>EXS0102DC</code>（VSSOP-8L）</th>
+<th><code>EM74LVC1T45GV</code>（SOT23-6L，<strong>Draft</strong>）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>通道</td>
+<td>2 bit（4 bit → <code>EXS0104PW</code>）</td>
+<td>1 bit</td>
+</tr>
+<tr>
+<td>电压</td>
+<td>A 1.3–5.5 V / B 1.65–5.5 V，要求 <strong>VCC(A) ≤ VCC(B)</strong></td>
+<td>A/B <strong>各 1.2–5.5 V，无高低约束</strong></td>
+</tr>
+<tr>
+<td>输入阈值</td>
+<td>A 口 VCC(A)−0.2 V min、B 口 VCC(B)−0.4 V min；VIL ≤0.15 V</td>
+<td>0.7·VCCI / 0.3·VCCI（3.3 V 档 2.2/0.8 V）</td>
+</tr>
+<tr>
+<td>输出结构</td>
+<td>开关型 + 内部 10 kΩ 上拉 + 单稳加速（开漏友好）</td>
+<td>真推挽 CMOS（VOH 20 mA 时 2.4 V @3.0 V）</td>
+</tr>
+<tr>
+<td>方向</td>
+<td>自动（无需 DIR）</td>
+<td>DIR 给固定电平定方向（<strong>无 OE</strong>，本文只按单向用）</td>
+</tr>
+<tr>
+<td>速率</td>
+<td>推挽 40 Mbps / 开漏 2 Mbps</td>
+<td>tpd 5.3 ns typ（无 max）</td>
+</tr>
+<tr>
+<td>静态电流</td>
+<td>ICC(A)+ICC(B) ≤21 µA（typ 0.16 µA 级）</td>
+<td>ICC ≤16 µA</td>
+</tr>
+<tr>
+<td>掉电</td>
+<td>IOFF ±4 µA</td>
+<td>IOFF ±10 µA，suspend 双高阻</td>
+</tr>
+<tr>
+<td>状态</td>
+<td>量产 Rev 1.1</td>
+<td><strong>Draft V0.3，可送样、不承诺量产</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>三条判断，按顺序问：</strong></p>
+<ol>
+<li><strong>方向在设计期能定死吗？</strong> 能（GPIO 输出、时钟、复位、使能、SPI 的 MOSI/SCLK/CS）→ 1T45（<strong>Draft</strong>）；不能（I²C SDA、1-Wire、SDIO 数据线）→ EXS。</li>
+<li><strong>驱动方是开漏还是推挽、摆幅够不够满？</strong> 开漏总线 → EXS 天然合适；推挽但 VOL 只有 0.2~0.3 V 的驱动器，EXS 的 VIL ≤0.15 V 可能过不了，反而 1T45（<strong>Draft</strong>，VIL 0.8 V @3.3 V）更稳。</li>
+<li><strong>要几路、能不能接受 Draft？</strong> 2 路以上且要量产交期 → EXS0102/0104；单路、可送样评估 → 1T45（<strong>Draft</strong>）。</li>
+</ol>
+<h2 id="5">5. 选型决策树</h2>
+<pre><code>信号要跨电压域吗？
+├─ 不跨（同一 VCC 域，只想加驱动 / 三态 / 隔离逻辑）
+│    → 不用转换器：按驱动电流和 OE 选缓冲/收发器，如 EM74HCT245D
+└─ 跨
+   ├─ 只是&quot;3.3 V 送进 5 V 器件的输入&quot;，输出不用变、方向固定、低速控制信号
+   │    → HCT / AHCT 门或缓冲（VIH 2.0 V）——最便宜，白捡一个门
+   │      前提：接收器件可换、下级不被 5 V 反打、ΔICC 可接受
+   ├─ 输出电平也必须变
+   │   ├─ 单向、方向设计期定死、单路
+   │   │    ├─ 还要逻辑功能（反相/与/或/施密特）→ EM74LV1T04GV（单电源，输出=VCC）
+   │   │    └─ 纯传输、要低功耗/掉电高阻 → EM74LVC1T45GV（Draft）
+   │   ├─ 单向、多 bit 同封装、要 OE
+   │   │    → EM74LVC8T245PW / EM74LVC4245APW（见 level-translation-app-guide）
+   │   ├─ 双向 / 开漏（I²C、1-Wire、SDIO）
+   │   │    → EXS0102DC（2 bit）/ EXS0104PW（4 bit）
+   │   └─ &gt;40 Mbps
+   │        → EM74LVC8T245PW（见 level-translation-app-guide）
+   └─ 有一侧可能掉电
+        → 只能选带 IOFF 的：1T45（Draft）或 EXS；HCT 逻辑件没有 IOFF
+</code></pre>
+<h2 id="6">6. 常见误区</h2>
+<ol>
+<li><strong>拿 <code>EM74HCT245D</code> 当"双向电平转换器"</strong>。它只有一个 VCC（2.7–5.5 V），DIR 改的是<strong>同一电压域内</strong>的传输方向，两侧不可能一个 3.3 V 一个 5 V。名字里的 transceiver 和"电平转换"是两件事。</li>
+<li><strong>拿 <code>EM74LVC1T45GV</code>（Draft）做 I²C</strong>。DIR 固定时反向那一侧是<strong>输出</strong>，从机拉低就是两个输出对顶；而且它没有内部上拉、没有开漏模式。开漏双向只能 EXS。</li>
+<li><strong>忽略输入容限</strong>。5 V 打进 3.3 V 供电的 <code>EM74HCT245D</code>（推荐 VI 上限 = VCC）是超推荐值；<code>EM74HC00D</code>/<code>EM74HCT00D</code> 的输入带钳位二极管，接高于 VCC 的电压必须串限流电阻；真正 5.5 V 容限的是 <code>EM74AHC1G00GV</code>/<code>EM74AHCT1G00GV</code> 和 <code>EM74LV1T04GV</code>（VI 0–5.5 V）。</li>
+<li><strong>以为 HCT 直收 3.3 V 是零成本</strong>。ΔICC 每脚 0.4–1.55 mA（按型号），8 位总线就是几毫安静态电流，低功耗产品会被这一项拖死。</li>
+<li><strong>以为 1T45（Draft）的 VIH 也是 TTL 的 2.0 V</strong>。它是 0.7·VCCI 的比例阈值，5 V 侧要 3.5 V 才认，3.3 V 直接打进去不翻转。</li>
+<li><strong>以为 1T45（Draft）能当"带 OE 的隔离器件"</strong>。它没有 OE 脚，只有 DIR；要输出关断只能翻 DIR 或掉电。另外 suspend 时 VO 绝对最大 4.6 V，5 V 总线热插拔要另做保护。</li>
+<li><strong>把 HCT 的 VCC 下限当家族统一值报</strong>。<code>EM74HCT00D</code> 是 4.5–5.5 V，<code>EM74HCT245D</code> 是 2.7–5.5 V，差一个量级的使用场景。</li>
+</ol>
+<h2 id="7">7. 核对清单</h2>
+<ul>
+<li>[ ] 方向：设计期固定 / 运行时翻转 / 开漏总线（决定 1T45（<strong>Draft</strong>）还是 EXS）</li>
+<li>[ ] 输出电平要不要变（只改门槛 → HCT；要变 → 转换器）</li>
+<li>[ ] 接收端 VIH 实值，与发送端 VOH <strong>在电源容差下</strong>是否还有余量（HCT 2.0 V vs HC 3.15 V）</li>
+<li>[ ] 发送端是推挽还是开漏，VOL 能否满足接收端 VIL（EXS ≤0.15 V 这一条最容易漏）</li>
+<li>[ ] 哪一侧收信号，那一侧 VCC 是否等于来信号摆幅（1T45 <strong>Draft</strong> 的硬规则）</li>
+<li>[ ] DIR / OE 是否有确定电平，谁提供（1T45（<strong>Draft</strong>）的 DIR 无内部下拉）</li>
+<li>[ ] 是否需要掉电高阻 / 防反灌（要 → 只能选带 IOFF 的；HCT 逻辑件规格书未列该项）</li>
+<li>[ ] 速率与 tpd：HCT00 19 ns max、AHCT1G00 8 ns max、1T45 5.3 ns typ（<strong>Draft</strong>，无 max）</li>
+<li>[ ] 静态电流增量：HCT ΔICC 每脚 0.4–1.55 mA</li>
+<li>[ ] 输入容限：目标器件 VI 上限是 VCC 还是 5.5 V</li>
+<li>[ ] 型号尾缀与封装（<code>EM74HCT245D</code> SOP-20L / <code>EM74AHCT1G00GV</code> SOT23-5L / <code>EM74LVC1T45GV</code> <strong>Draft</strong> SOT23-6L）</li>
+<li>[ ] 状态：1T45 系列为 <strong>Draft</strong>，可送样、不承诺量产交期</li>
+</ul>
+<h2 id="8">8. 来源</h2>
+<ul>
+<li>实体页：[[em74hc00-em74hct00]]（HC/HCT 阈值与 ΔICC）、[[em74ahc1g00-em74ahct1g00]]（AHCT 阈值、5.5 V 容限）、[[em74hc245-em74hct245]]（HCT245 的 2.7 V 下限与单 VCC 架构）、[[em74lv1t04]]（单电源低阈值升/降压）、[[lvc1t45]]（<strong>Draft Rev 0.3</strong>，固定方向全部参数）、[[exs0102]]、[[exs0104]]（自动方向、阈值与 10 kΩ 上拉）</li>
+<li>关联指导：[[level-translation-app-guide]]（四条路线全景、8T245/4245 的高速与大位宽场景）</li>
+<li>概念页：[[level-shifter]]、[[transceiver]]</li>
+<li>原始规格书：<code>raw/datasheets/EM74HC_HCT00_Product_DS_V1.1.json</code>、<code>EM74AHC_AHCT1G00_Product_DS_V1.1.json</code>、<code>EM74HC_HCT245_Product_DS_V1.1.json</code>、<code>EM74LV1T04_Product_DS_V1.0.json</code>、<code>EM74LVC_LVCH1T45_Draft_DS_V0.3.json</code>、<code>EXS0102_Product_DS_V1.1.json</code>、<code>EXS0104_Product_DS_V1.1.json</code></li>
+</ul>
+<blockquote>
+<p>本文为应用指导，不替代数据手册。阈值、ΔICC、tpd 均须回对应规格书 Static/Dynamic characteristics 表按极值复核；1T45 全系为 Draft，对外承诺前走产品线确认。</p>
+</blockquote>
+  </article>
+</div>
+</body>
+</html>
