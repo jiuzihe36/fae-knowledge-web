@@ -390,8 +390,49 @@
     }).join("");
   }
 
+  /* ---- 无障碍：目录树焦点保持 + 结果计数播报 ---- */
+  /* 重绘前记录焦点节点的「结构指纹」（标签 + data-* 标识），重绘后按指纹找回同一节点。
+     只比标签和数据属性、不比 class：hit/open 这类 class 会随重绘变化，不能参与比对。 */
+  var TREE_FOCUS_ATTRS = ["data-cat", "data-proc", "data-path", "data-func",
+                          "data-ser", "data-model", "data-series"];
+  function treeFocusSig(node) {
+    if (!node || node === document.body || !el.catTree || !el.catTree.contains(node)) return "";
+    var head = String(node.tagName || "").toLowerCase();
+    var parts = [];
+    TREE_FOCUS_ATTRS.forEach(function (a) {
+      var v = node.getAttribute(a);
+      if (v != null) parts.push(a + "=" + v);
+    });
+    return parts.length ? head + "|" + parts.join("|") : "";
+  }
+  /* 焦点还原：节点还在且可见 → 还原；被折叠/筛掉 → 交还树容器（别让焦点掉回 body） */
+  function treeRestoreFocus(sig) {
+    var root = el.catTree;
+    if (!root || !sig) return;
+    var nodes = root.querySelectorAll("[data-cat],[data-model],[data-series]");
+    for (var i = 0; i < nodes.length; i++) {
+      if (treeFocusSig(nodes[i]) === sig) {
+        if (nodes[i].offsetWidth || nodes[i].offsetHeight) { focusQuiet(nodes[i]); return; }
+        break;
+      }
+    }
+    if (!root.hasAttribute("tabindex")) root.setAttribute("tabindex", "-1");
+    focusQuiet(root);
+  }
+  function focusQuiet(node) {
+    if (!node || !node.focus) return;
+    try { node.focus({ preventScroll: true }); } catch (e) { try { node.focus(); } catch (e2) {} }
+  }
+  /* 结果计数播报：页面没有 #a11yLive 时静默跳过 */
+  function announce(msg) {
+    var live = document.getElementById("a11yLive");
+    if (live) live.textContent = msg;
+  }
+
   function renderCatalog() {
     if (!CATALOG || !el.catTree) return;
+    /* 整棵子树会被重建：先记下键盘用户在哪个节点上 */
+    var focusSig = treeFocusSig(document.activeElement);
     /* 手机端收紧筛选框提示（长提示在窄屏被截断） */
     if (window.innerWidth <= 560) {
       var tf = document.getElementById("treeFilter");
@@ -415,6 +456,7 @@
         '<div class="cat-body">' + renderProcs(c.key, c.procs) + "</div></div>";
     }).join("");
     el.catTree.innerHTML = html;
+    treeRestoreFocus(focusSig);
     renderCrumb();
   }
 
@@ -603,11 +645,19 @@
       var mod = e.target.closest("[data-model]");
       if (mod) { openDetail(mod.getAttribute("data-model"), mod); return; }
       var card = e.target.closest(".app-card");
-      if (card) {
-        var body = card.querySelector(".app-models");
-        if (body) { body.classList.toggle("hidden"); card.classList.toggle("open"); }
-        return;
-      }
+      if (card) { toggleAppCard(card); return; }
+    });
+
+    /* 场景卡键盘可达：Enter / Space 与点击同效（卡片内星标、型号按钮各有自己的行为，不抢） */
+    if (el.pageBody) el.pageBody.addEventListener("keydown", function (e) {
+      if (e.key !== "Enter" && e.key !== " " && e.key !== "Spacebar") return;
+      var t = e.target;
+      if (!t || !t.closest) return;
+      if (t.closest("button, a")) return;
+      var card = t.closest(".app-card");
+      if (!card) return;
+      e.preventDefault();
+      toggleAppCard(card);
     });
 
     /* 目录树内联筛选：命中时自动展开路径，并高亮
@@ -623,6 +673,7 @@
     if (!q) {
       if (info) info.textContent = "";
       resetTreeDefault();
+      announce("共 " + (CATALOG ? CATALOG.total : 0) + " 款");
       return;
     }
     /* 精准展开：只展开「含命中结果」的层级路径，其余保持默认折叠。
@@ -640,6 +691,7 @@
       });
     }
     if (info) info.textContent = hits ? "命中 " + hits + " 款" : "无匹配";
+    announce("共 " + hits + " 款");
   });
 
   /* 关键词是否精确等于目录里某个系列名（搜系列名时不误伤同前缀系列） */
@@ -750,6 +802,7 @@
         '<div class="empty">没有匹配的型号</div>';
       if (cnt) cnt.textContent = list.length > 200
         ? list.length + " 款 · 显示前 200" : list.length + " 款";
+      announce("共 " + list.length + " 款");
     });
 
     /* 应用场景页筛选（场景名 / 型号 / 功能任一命中） */
@@ -760,10 +813,11 @@
       var cnt = document.getElementById("appCount");
       var shown = appCardsHtml(PAGES.apps.items, q);
       if (grid) grid.innerHTML = shown;
+      var n = q ? (grid ? grid.querySelectorAll(".app-card").length : 0) : PAGES.apps.items.length;
       if (cnt) {
-        var n = q ? (grid ? grid.querySelectorAll(".app-card").length : 0) : PAGES.apps.items.length;
         cnt.textContent = q ? n + " / " + PAGES.apps.items.length + " 个场景" : PAGES.apps.items.length + " 个场景";
       }
+      announce("共 " + n + " 个场景");
     });
     /* 选型表：下拉/搜索/导出（2026-11-06） */
     document.addEventListener("input", function (e) {
@@ -791,7 +845,7 @@
         return;
       }
       if (e.target.id === "selCsv") { e.preventDefault(); selExportCsv(); return; }
-      if (e.target.id === "cmpOpen") { e.preventDefault(); cmpOpen(); return; }
+      if (e.target.id === "cmpOpen") { e.preventDefault(); cmpOpen(e.target); return; }
       if (e.target.id === "cmpClear") { e.preventDefault(); cmpClear(); return; }
       if (e.target.id === "cmpClose" || e.target.hasAttribute("data-cmp-close")) { e.preventDefault(); cmpClose(); return; }
     });
@@ -807,7 +861,24 @@
       cmpRenderBar();
     });
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") cmpClose();
+      if (e.key === "Escape") { cmpClose(); return; }
+      if (e.key !== "Tab") return;
+      /* 弹层可见时把 Tab/Shift+Tab 圈在 .cmp-panel 内 */
+      var m = document.getElementById("cmpModal");
+      if (!m || m.classList.contains("hidden")) return;
+      var panel = m.querySelector(".cmp-panel");
+      if (!panel) return;
+      var stops = cmpTabStops(panel);
+      var act = document.activeElement;
+      if (!stops.length) { e.preventDefault(); focusQuiet(panel); return; }
+      var first = stops[0], last = stops[stops.length - 1];
+      if (e.shiftKey) {
+        if (act === first || act === panel || !panel.contains(act)) {
+          e.preventDefault(); focusQuiet(last);
+        }
+      } else if (act === last || !panel.contains(act)) {
+        e.preventDefault(); focusQuiet(first);
+      }
     });
 
     /* 面包屑点击 = 收起该层以下 */
@@ -1034,7 +1105,19 @@
     });
   }
 
-  function cmpOpen() {
+  /* 对比弹层焦点管理：打开记触发元素，关闭归还；Tab 在面板内循环 */
+  var CMP_LAST_TRIGGER = null;
+
+  /* 面板内可聚焦元素（Tab 循环边界；tabindex="-1" 的面板自身不算停靠点） */
+  function cmpTabStops(root) {
+    var sel = 'a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),' +
+              'textarea:not([disabled]),[tabindex]:not([tabindex="-1"])';
+    return [].slice.call(root.querySelectorAll(sel)).filter(function (n) {
+      return !!(n.offsetWidth || n.offsetHeight || n.getClientRects().length);
+    });
+  }
+
+  function cmpOpen(trigger) {
     if (CMP_SEL.length < 2) { window.alert("请至少勾选 2 款型号"); return; }
     if (CMP_SEL.length > 4) { window.alert("最多同时对比 4 款"); return; }
     var picked = (DATA.products || []).filter(function (p) { return CMP_SEL.indexOf(p.model) >= 0; });
@@ -1069,12 +1152,34 @@
       });
     }
     var m = document.getElementById("cmpModal");
-    if (m) { m.classList.remove("hidden"); m.setAttribute("aria-hidden", "false"); }
+    if (!m) return;
+    var act = trigger || document.activeElement;
+    if (!act || act === document.body) act = document.getElementById("cmpOpen");
+    CMP_LAST_TRIGGER = act;
+    m.classList.remove("hidden");
+    m.setAttribute("aria-hidden", "false");
+    var panel = m.querySelector(".cmp-panel");
+    if (panel) {
+      if (!panel.hasAttribute("tabindex")) panel.setAttribute("tabindex", "-1");
+      if (!panel.hasAttribute("role")) panel.setAttribute("role", "dialog");
+      if (!panel.hasAttribute("aria-modal")) panel.setAttribute("aria-modal", "true");
+      if (!panel.hasAttribute("aria-label")) panel.setAttribute("aria-label", "型号对比");
+      focusQuiet(panel);
+    }
   }
 
   function cmpClose() {
     var m = document.getElementById("cmpModal");
-    if (m) { m.classList.add("hidden"); m.setAttribute("aria-hidden", "true"); }
+    /* 本来就关着：直接返回（否则页面里每次 Esc 都会把焦点拽走） */
+    if (!m || m.classList.contains("hidden")) return;
+    m.classList.add("hidden");
+    m.setAttribute("aria-hidden", "true");
+    var t = CMP_LAST_TRIGGER;
+    CMP_LAST_TRIGGER = null;
+    if (t && t !== document.body && t.focus && document.contains(t)) { focusQuiet(t); return; }
+    /* 触发点被重绘抹掉：退回到对比条入口（可见才给，别把焦点塞进隐藏元素） */
+    var open = document.getElementById("cmpOpen");
+    if (open && (open.offsetWidth || open.offsetHeight)) focusQuiet(open);
   }
 
   function cmpClear() {
@@ -1139,6 +1244,16 @@
       "</button>";
   }
 
+  /* 场景卡展开 / 收起：鼠标点击、Enter、Space 共用同一套逻辑，并同步 aria-expanded */
+  function toggleAppCard(card) {
+    if (!card) return;
+    var body = card.querySelector(".app-models");
+    if (!body) return;
+    var nowHidden = body.classList.toggle("hidden");
+    card.classList.toggle("open", !nowHidden);
+    card.setAttribute("aria-expanded", nowHidden ? "false" : "true");
+  }
+
   function appCardsHtml(items, filter) {
     var q = String(filter || "").trim().toLowerCase();
     var favs = favList();
@@ -1162,7 +1277,8 @@
     if (!list.length) return '<div class="empty">没有匹配的应用场景</div>';
     return list.map(function (it) {
       var fav = favs.indexOf(it.name) >= 0;
-      return '<div class="app-card' + (fav ? " fav" : "") + '" data-app="' + esc(it.name) + '">' +
+      return '<div class="app-card' + (fav ? " fav" : "") + '" role="button" tabindex="0" ' +
+        'aria-expanded="false" data-app="' + esc(it.name) + '">' +
         '<div class="app-head"><span class="app-name">' + esc(it.name) + "</span>" +
         '<button class="app-star" type="button" data-fav="' + esc(it.name) + '" ' +
         'title="' + (fav ? "取消常用" : "标记常用") + '" aria-label="标记常用">' +

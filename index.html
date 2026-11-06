@@ -32,6 +32,7 @@
   <script src="./theme-init.js?v=20260926n"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">跳到正文</a>
   <header class="topbar">
     <div class="topbar-inner">
       <div class="brand">
@@ -72,36 +73,38 @@
   </nav>
 
   <div class="shell">
-    <!-- 搜索模式的结果区（默认隐藏，输入时接管） -->
-    <div id="searchMode" class="hidden">
-      <div id="resultBar" class="result-bar">
-        <span id="resultSummary" class="result-summary"></span>
-        <span id="resultCount" class="count-pill">0</span>
-        <button id="clearBtn" class="btn-ghost" type="button">返回目录</button>
-      </div>
-      <div id="results" class="results"></div>
-    </div>
-
-    <!-- 目录模式：主页（只展示芯祥自有产品） -->
-    <div id="catalogMode">
-      <div class="cat-hero">
-        <h2>产品目录</h2>
-        <p id="catIntro">按大类逐层展开：工艺组 → 系列 → 功能 → 路数 → 型号。点击型号查看详情。</p>
-        <div class="cat-tools">
-          <button id="expandAll" class="btn-ghost" type="button">全部展开</button>
-          <button id="collapseAll" class="btn-ghost" type="button">全部折叠</button>
-          <input id="treeFilter" class="tree-filter" type="search"
-                 placeholder="在目录里筛选：型号 / 功能 / 封装" autocomplete="off">
-          <span id="treeFilterInfo" class="tree-filter-info"></span>
-          <span id="catCount" class="count-pill">-</span>
+    <main id="main" tabindex="-1">
+      <!-- 搜索模式的结果区（默认隐藏，输入时接管） -->
+      <div id="searchMode" class="hidden">
+        <div id="resultBar" class="result-bar">
+          <span id="resultSummary" class="result-summary"></span>
+          <span id="resultCount" class="count-pill">0</span>
+          <button id="clearBtn" class="btn-ghost" type="button">返回目录</button>
         </div>
+        <div id="results" class="results"></div>
       </div>
-      <div id="catTree" class="cat-tree"><div class="skel-list"><div class="skel-bar"></div><div class="skel-bar"></div><div class="skel-bar"></div><div class="skel-bar"></div><div class="skel-bar"></div><div class="skel-bar"></div></div></div>
-    </div>
 
-    <!-- 栏目页：应用 / 技术文档 / 封装与可靠性 -->
-    <div id="pageBody" class="page-body hidden"></div>
+      <!-- 目录模式：主页（只展示芯祥自有产品） -->
+      <div id="catalogMode">
+        <div class="cat-hero">
+          <h2>产品目录</h2>
+          <p id="catIntro">按大类逐层展开：工艺组 → 系列 → 功能 → 路数 → 型号。点击型号查看详情。</p>
+          <div class="cat-tools">
+            <button id="expandAll" class="btn-ghost" type="button">全部展开</button>
+            <button id="collapseAll" class="btn-ghost" type="button">全部折叠</button>
+            <input id="treeFilter" class="tree-filter" type="search"
+                   placeholder="在目录里筛选：型号 / 功能 / 封装" autocomplete="off">
+            <span id="treeFilterInfo" class="tree-filter-info"></span>
+            <span id="catCount" class="count-pill">-</span>
+          </div>
+        </div>
+        <div id="catTree" class="cat-tree"><div class="skel-list"><div class="skel-bar"></div><div class="skel-bar"></div><div class="skel-bar"></div><div class="skel-bar"></div><div class="skel-bar"></div><div class="skel-bar"></div></div></div>
+      </div>
 
+      <!-- 栏目页：应用 / 技术文档 / 封装与可靠性 -->
+      <div id="pageBody" class="page-body hidden"></div>
+
+    </main>
   </div>
 
   <div id="detail" class="drawer hidden" aria-hidden="true">
@@ -162,6 +165,8 @@
 
   <!-- 回到顶部：目录树滚动超过一屏时出现 -->
   <button id="toTop" class="to-top" type="button" aria-label="回到顶部" title="回到顶部">↑ 顶部</button>
+
+  <div id="a11yLive" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 
 </body>
 </html>

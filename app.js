@@ -211,6 +211,10 @@ if (typeof document === "undefined") return;
   function openDetail(id) {
     const item = products.find(function (p) { return p.id === id; });
     if (!item) return;
+    /* 焦点管理：真正「打开」时记住触发元素，关闭后把焦点还回去。
+       抽屉已打开时的重复调用（specs 懒加载回调 / 上一个·下一个）不覆盖 lastTrigger。 */
+    const wasOpen = !el.detail.classList.contains("hidden");
+    if (!wasOpen) lastTrigger = document.activeElement;
     /* 详情页只需要 specs（参数表）。竞品/P2P 已摘除，不再加载。 */
     if (!SPECS) {
       ensureSpecs().then(function () { openDetail(id); });
@@ -271,6 +275,8 @@ if (typeof document === "undefined") return;
     el.detail.classList.remove("hidden");
     el.detail.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
+    /* 打开后把焦点移进抽屉（panel 加 tabindex=-1），Tab 才有出发点 */
+    if (!wasOpen) focusTrapEnter();
     /* 深链接：地址栏写成 #model=型号，客户/销售可直接复制分享 */
     if (window.__xx && window.__xx.setHash) window.__xx.setHash("model=" + encodeURIComponent(item.model));
   }
@@ -295,10 +301,118 @@ if (typeof document === "undefined") return;
   }
 
   function closeDetail() {
+    const wasVisible = !el.detail.classList.contains("hidden");
     el.detail.classList.add("hidden");
     el.detail.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
     if (window.__xx && window.__xx.setHash) window.__xx.setHash("");
+    /* 焦点还给打开抽屉的那个元素（行/按钮/输入框） */
+    if (wasVisible) focusTrapExit();
+  }
+
+  /* ---------- 焦点管理 + 键盘可达（详情抽屉） ---------- */
+
+  var lastTrigger = null;
+
+  function focusTrapPanel() {
+    return el.detail ? el.detail.querySelector(".drawer-panel") : null;
+  }
+
+  /* 抽屉内所有当前可聚焦（且确实可见）的元素，按 DOM 顺序 */
+  function focusTrapItems(panel) {
+    if (!panel) return [];
+    const sel = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), ' +
+      'textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+    return Array.prototype.filter.call(panel.querySelectorAll(sel), function (node) {
+      if (node.hasAttribute("hidden")) return false;
+      if (node.getAttribute("aria-hidden") === "true") return false;
+      return node.getClientRects().length > 0;   /* display:none / 隐藏区块里的元素直接排除 */
+    });
+  }
+
+  function focusTrapEnter() {
+    const panel = focusTrapPanel();
+    if (!panel) return;
+    if (!panel.hasAttribute("tabindex")) panel.setAttribute("tabindex", "-1");
+    try { panel.focus({ preventScroll: true }); } catch (e) { panel.focus(); }
+  }
+
+  function focusTrapExit() {
+    const panel = focusTrapPanel();
+    const target = lastTrigger;
+    lastTrigger = null;
+    const ok = target && target !== document.body && target.isConnected !== false &&
+      typeof target.focus === "function" && target.getClientRects && target.getClientRects().length > 0;
+    if (ok) {
+      try { target.focus({ preventScroll: true }); } catch (e) { target.focus(); }
+      return;
+    }
+    /* 触发元素已不可见（列表重渲染 / 换页）：焦点回 body，并清掉抽屉上的临时 tabindex */
+    if (panel) panel.removeAttribute("tabindex");
+    try { document.body.focus(); } catch (e) { /* 忽略 */ }
+  }
+
+  /* Tab / Shift+Tab 在抽屉内循环，不跑到底下的列表页 */
+  function onDetailKeydown(event) {
+    if (!el.detail || el.detail.classList.contains("hidden")) return;
+    if (event.key !== "Tab") return;
+    /* 灯箱盖在抽屉上时不开抽屉的焦点圈，否则会把焦点从图片上抢走 */
+    if (el.lightbox && !el.lightbox.classList.contains("hidden")) return;
+    const panel = focusTrapPanel();
+    if (!panel) return;
+    const items = focusTrapItems(panel);
+    if (!items.length) { event.preventDefault(); panel.focus(); return; }
+    const first = items[0];
+    const last = items[items.length - 1];
+    const active = document.activeElement;
+    if (!panel.contains(active)) {
+      event.preventDefault();
+      (event.shiftKey ? last : first).focus();
+      return;
+    }
+    if (event.shiftKey && (active === first || active === panel)) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && (active === panel || active === last)) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
+
+  /* 折叠区块：h3 变成键盘可达的按钮，aria-expanded 跟随 .collapsed */
+  function syncCollapseAria() {
+    if (!el.detail) return;
+    Array.prototype.forEach.call(el.detail.querySelectorAll(".collapsible > h3"), function (h) {
+      if (!h.parentElement) return;
+      h.setAttribute("aria-expanded", h.parentElement.classList.contains("collapsed") ? "false" : "true");
+    });
+  }
+
+  function enhanceCollapsibles() {
+    if (!el.detail) return;
+    Array.prototype.forEach.call(el.detail.querySelectorAll(".collapsible > h3"), function (h) {
+      if (!h.hasAttribute("tabindex")) h.setAttribute("tabindex", "0");
+      h.setAttribute("role", "button");
+    });
+    syncCollapseAria();
+    if (typeof MutationObserver === "undefined") return;
+    /* 只读 class、只写 aria-expanded：不会触发自身回调死循环。
+       unified.js 的窄屏自动折叠和鼠标点击切换都会让 aria-expanded 同步更新。 */
+    new MutationObserver(syncCollapseAria).observe(el.detail, {
+      attributes: true,
+      attributeFilter: ["class"],
+      subtree: true
+    });
+  }
+
+  function onCollapseKeydown(event) {
+    if (event.key !== "Enter" && event.key !== " " && event.key !== "Spacebar") return;
+    const t = event.target;
+    const h = t && t.closest ? t.closest(".collapsible > h3") : null;
+    if (!h || h.getAttribute("tabindex") !== "0") return;
+    if (!el.detail || !el.detail.contains(h)) return;
+    event.preventDefault();   /* Space 默认会滚动页面 */
+    h.click();                /* 复用 unified.js 现有的折叠点击逻辑，行为与鼠标一致 */
   }
 
   /* ---------- 引脚图灯箱 ---------- */
@@ -352,7 +466,20 @@ if (typeof document === "undefined") return;
     });
 
     // 空值保护: 浏览器缓存旧版 index.html 时新元素为 null, 直接 addEventListener 会抛错中断整个 init
-    if (el.pinImg) el.pinImg.addEventListener("click", function () { openLightbox(el.pinImg); });
+    if (el.pinImg) {
+      /* 引脚图键盘可达：Tab 能停，Enter/Space 等同点击放大 */
+      el.pinImg.setAttribute("tabindex", "0");
+      el.pinImg.setAttribute("role", "button");
+      el.pinImg.setAttribute("aria-label", "放大引脚图");
+      el.pinImg.addEventListener("click", function () { openLightbox(el.pinImg); });
+      el.pinImg.addEventListener("keydown", function (event) {
+        if (event.key !== "Enter" && event.key !== " " && event.key !== "Spacebar") return;
+        event.preventDefault();   /* Space 默认滚动页面 */
+        openLightbox(el.pinImg);
+        /* 键盘打开时把焦点交给灯箱关闭按钮，避免焦点留在背后的抽屉里 */
+        if (el.lightboxClose) el.lightboxClose.focus();
+      });
+    }
     el.lightboxClose.addEventListener("click", closeLightbox);
     el.lightbox.addEventListener("click", function (event) {
       if (event.target === el.lightbox || event.target.classList.contains("lightbox-mask") || event.target === el.lightboxImg) {
@@ -368,6 +495,11 @@ if (typeof document === "undefined") return;
         closeDetail();
       }
     });
+
+    /* 键盘可达：抽屉焦点圈 + 折叠区块 Enter/Space 切换 */
+    enhanceCollapsibles();
+    document.addEventListener("keydown", onDetailKeydown);
+    document.addEventListener("keydown", onCollapseKeydown);
   }
 
   /* ---------- 数据加载 ---------- */
