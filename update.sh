@@ -113,6 +113,37 @@ echo "  含 ◼ PUA/题头噪音的 PDF 原文 (与全库 630 条中文口径不
 echo "  如需恢复, 先清洗 raw_apps_authoritative.json 再启用本步。"
 # python3 "$DIR/scripts/inject_applications.py" 2>&1 | tail -3
 
+# 静态资源版本戳：用内容 md5 前 8 位自动更新 index.html 的 ?v=
+# （2026-11-06 教训：改完 unified.js 忘了 bump 版本，浏览器跑旧 JS，
+#   新加的「更新记录」导航点了是空白——因为旧代码里没有这个页面分支。）
+echo ""
+echo "🏷 Step 1.6: 静态资源版本戳（内容哈希）..."
+python3 - "$DIR" <<'PY'
+import sys, re, hashlib
+from pathlib import Path
+site = Path(sys.argv[1])
+idx = site / "index.html"
+if not idx.exists():
+    sys.exit(0)
+s = idx.read_text(encoding="utf-8")
+changed = []
+for f in ("unified.js", "style.css", "app.js"):
+    fp = site / f
+    if not fp.exists():
+        continue
+    ver = hashlib.md5(fp.read_bytes()).hexdigest()[:8]
+    new = re.sub(re.escape(f) + r"\?v=[A-Za-z0-9]+", f + "?v=" + ver, s)
+    if new != s:
+        changed.append((f, ver))
+        s = new
+if changed:
+    idx.write_text(s, encoding="utf-8")
+    for f, v in changed:
+        print(f"  {f} -> v={v}")
+else:
+    print("  （版本戳已是最新，无变化）")
+PY
+
 echo ""
 echo "📤 Step 2: 提交并推送 GitHub + 部署 Cloudflare (双端)..."
 bash "$DIR/scripts/deploy.sh"
