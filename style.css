@@ -2576,3 +2576,32 @@ body { background: var(--bg); }
 .rel-card .q-tbl { margin: 0; }
 .rel-card .q-tbl th, .rel-card .q-tbl td { padding: 6px 10px !important; font-size: 12px; }
 @media (max-width: 860px) { .rel-wrap { grid-template-columns: 1fr; } }
+
+/* ============================================================
+   选型对比：勾选条 + 并排对比弹层（2026-11-06）
+   ============================================================ */
+.cmp-col { width: 44px; text-align: center; padding-left: 4px !important; }
+.cmp-ck { width: 15px; height: 15px; cursor: pointer; }
+.cmp-bar { position: sticky; bottom: 8px; z-index: 40; display: flex; gap: 10px; align-items: center;
+  padding: 10px 14px; margin-top: 12px; background: var(--card, #fff);
+  border: 1px solid var(--border, #e3e6e9); border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .10); font-size: 13px; }
+.cmp-bar #cmpCount { margin-right: auto; font-weight: 600; }
+.cmp-modal { position: fixed; inset: 0; z-index: 95; display: flex; align-items: center; justify-content: center; }
+.cmp-mask { position: absolute; inset: 0; background: rgba(0, 0, 0, .45); }
+.cmp-panel { position: relative; background: var(--card, #fff); border-radius: 12px;
+  width: min(1100px, 94vw); max-height: 86vh; overflow: auto; padding: 16px 18px 20px; }
+.cmp-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.cmp-head h3 { margin: 0; font-size: 16px; }
+.cmp-x { border: 0; background: none; font-size: 24px; line-height: 1; cursor: pointer; color: inherit; padding: 0 4px; }
+.cmp-tbl { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+.cmp-tbl th, .cmp-tbl td { border: 1px solid var(--border, #e3e6e9); padding: 8px 12px;
+  text-align: left; vertical-align: top; word-break: break-word; }
+.cmp-tbl th { background: rgba(0, 0, 0, .03); font-weight: 600; white-space: nowrap; }
+.cmp-tbl td.k { font-weight: 600; white-space: nowrap; background: rgba(0, 0, 0, .015); }
+:root[data-theme="dark"] .cmp-tbl th, :root:not([data-theme="light"]) .cmp-tbl th { background: rgba(255, 255, 255, .06); }
+:root[data-theme="dark"] .cmp-tbl td.k, :root:not([data-theme="light"]) .cmp-tbl td.k { background: rgba(255, 255, 255, .03); }
+:root[data-theme="dark"] .cmp-panel, :root:not([data-theme="light"]) .cmp-panel { background: #0d0f11; }
+@media (max-width: 720px) {
+  .cmp-panel { width: 100vw; max-height: 92vh; border-radius: 12px 12px 0 0; }
+}

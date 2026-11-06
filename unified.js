@@ -755,9 +755,24 @@
       selRefresh();
     });
     document.addEventListener("click", function (e) {
-      if (e.target.id !== "selCsv") return;
-      e.preventDefault();
-      selExportCsv();
+      if (e.target.id === "selCsv") { e.preventDefault(); selExportCsv(); return; }
+      if (e.target.id === "cmpOpen") { e.preventDefault(); cmpOpen(); return; }
+      if (e.target.id === "cmpClear") { e.preventDefault(); cmpClear(); return; }
+      if (e.target.id === "cmpClose" || e.target.hasAttribute("data-cmp-close")) { e.preventDefault(); cmpClose(); return; }
+    });
+    document.addEventListener("change", function (e) {
+      if (!e.target.classList || !e.target.classList.contains("cmp-ck")) return;
+      var m = e.target.getAttribute("data-cmp");
+      if (e.target.checked) {
+        if (CMP_SEL.length >= 4) { e.target.checked = false; window.alert("最多对比 4 款"); return; }
+        if (CMP_SEL.indexOf(m) < 0) CMP_SEL.push(m);
+      } else {
+        CMP_SEL = CMP_SEL.filter(function (x) { return x !== m; });
+      }
+      cmpRenderBar();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") cmpClose();
     });
 
     /* 面包屑点击 = 收起该层以下 */
@@ -858,9 +873,11 @@
 
   function selTableHtml(rows) {
     if (!rows.length) return '<div class="empty">没有匹配的型号，请放宽筛选条件</div>';
-    var head = '<thead><tr><th>型号</th><th>功能</th><th>系列</th><th>封装</th><th>工作电压</th><th>工作温度</th><th>产品线</th></tr></thead>';
+    var head = '<thead><tr><th class="cmp-col">对比</th><th>型号</th><th>功能</th><th>系列</th><th>封装</th><th>工作电压</th><th>工作温度</th><th>产品线</th></tr></thead>';
     var body = rows.slice(0, 400).map(function (p) {
-      return '<tr><td class="k">' + esc(p.model) + '</td>' +
+      return '<tr><td class="cmp-col"><input type="checkbox" class="cmp-ck" data-cmp="' + esc(p.model) + '"' +
+        (CMP_SEL.indexOf(p.model) >= 0 ? ' checked' : '') + '></td>' +
+        '<td class="k">' + esc(p.model) + '</td>' +
         '<td>' + esc(p.function_detail || p.function || "") + '</td>' +
         '<td>' + esc(p.series || "") + '</td>' +
         '<td>' + esc(p.package || "") + '</td>' +
@@ -868,7 +885,7 @@
         '<td class="num">' + esc(p.temp_range || "") + '</td>' +
         '<td>' + esc(selLine(p.series)) + '</td></tr>';
     }).join("");
-    return '<table class="sel-tbl"><colgroup><col style="width:15%"><col style="width:24%"><col style="width:9%"><col style="width:13%"><col style="width:13%"><col style="width:14%"><col style="width:12%"></colgroup>' +
+    return '<table class="sel-tbl"><colgroup><col style="width:6%"><col style="width:15%"><col style="width:23%"><col style="width:8%"><col style="width:12%"><col style="width:12%"><col style="width:13%"><col style="width:11%"></colgroup>' +
       head + '<tbody>' + body + '</tbody></table>' +
       (rows.length > 300 ? '<p class="page-note">显示前 300 行（共 ' + rows.length + ' 行），请用筛选或搜索缩小范围。</p>' : '');
   }
@@ -877,8 +894,62 @@
     var rows = selRows();
     var box = document.getElementById("selTable");
     if (box) box.innerHTML = selTableHtml(rows);
+    cmpRenderBar();
     var c = document.getElementById("selCount");
     if (c) c.textContent = rows.length + " 款";
+  }
+
+  /* ---- 选型对比：勾选 2–4 款并排比较 ---- */
+  var CMP_SEL = [];
+
+  function cmpRenderBar() {
+    var bar = document.getElementById("cmpBar");
+    if (!bar) return;
+    if (!CMP_SEL.length) { bar.classList.add("hidden"); return; }
+    bar.classList.remove("hidden");
+    var c = document.getElementById("cmpCount");
+    if (c) c.textContent = "已选 " + CMP_SEL.length + " 款";
+  }
+
+  function cmpOpen() {
+    if (CMP_SEL.length < 2) { window.alert("请至少勾选 2 款型号"); return; }
+    if (CMP_SEL.length > 4) { window.alert("最多同时对比 4 款"); return; }
+    var picked = (DATA.products || []).filter(function (p) { return CMP_SEL.indexOf(p.model) >= 0; });
+    if (picked.length < 2) return;
+    var rows = [
+      ["型号", function (p) { return p.model; }],
+      ["功能", function (p) { return p.function_detail || p.function || ""; }],
+      ["系列", function (p) { return p.series || ""; }],
+      ["封装", function (p) { return p.package || ""; }],
+      ["工作电压", function (p) { return p.voltage || ""; }],
+      ["工作温度", function (p) { return p.temp_range || ""; }],
+      ["产品线", function (p) { return selLine(p.series); }],
+      ["应用场景", function (p) { return (p.applications_domains || []).join("、"); }],
+      ["规格书", function (p) { return p.source_label || ""; }]
+    ];
+    var html = '<table class="cmp-tbl"><thead><tr><th>属性</th>' +
+      picked.map(function (p) { return "<th>" + esc(p.model) + "</th>"; }).join("") + "</tr></thead><tbody>" +
+      rows.map(function (r) {
+        return "<tr><td class=\"k\">" + esc(r[0]) + "</td>" +
+          picked.map(function (p) { return "<td>" + esc(String(r[1](p) == null ? "" : r[1](p))) + "</td>"; }).join("") +
+          "</tr>";
+      }).join("") + "</tbody></table>";
+    var box = document.getElementById("cmpBody");
+    if (box) box.innerHTML = html;
+    var m = document.getElementById("cmpModal");
+    if (m) { m.classList.remove("hidden"); m.setAttribute("aria-hidden", "false"); }
+  }
+
+  function cmpClose() {
+    var m = document.getElementById("cmpModal");
+    if (m) { m.classList.add("hidden"); m.setAttribute("aria-hidden", "true"); }
+  }
+
+  function cmpClear() {
+    CMP_SEL = [];
+    var cks = document.querySelectorAll(".cmp-ck");
+    for (var i = 0; i < cks.length; i++) cks[i].checked = false;
+    cmpRenderBar();
   }
 
   function selExportCsv() {
@@ -1038,7 +1109,15 @@
         '<input id="selQ" class="page-search" type="search" placeholder="型号 / 功能关键词" autocomplete="off">' +
         '<button id="selCsv" class="btn-ghost" type="button">⬇ 导出 CSV</button>' +
         '<span id="selCount" class="count-pill">' + selRows().length + ' 款</span></div></div>' +
-        '<div id="selTable">' + selTableHtml(selRows()) + '</div>';
+        '<div id="selTable">' + selTableHtml(selRows()) + '</div>' +
+        '<div id="cmpBar" class="cmp-bar hidden"><span id="cmpCount"></span>' +
+        '<button id="cmpOpen" class="btn-ghost" type="button">对比所选</button>' +
+        '<button id="cmpClear" class="btn-ghost" type="button">清空</button></div>' +
+        '<div id="cmpModal" class="cmp-modal hidden" aria-hidden="true">' +
+        '<div class="cmp-mask" data-cmp-close></div>' +
+        '<div class="cmp-panel"><div class="cmp-head"><h3>型号对比</h3>' +
+        '<button id="cmpClose" class="cmp-x" type="button" aria-label="关闭">×</button></div>' +
+        '<div id="cmpBody" class="cmp-body"></div></div></div>';
     }
 
     if (name === "quality") {
