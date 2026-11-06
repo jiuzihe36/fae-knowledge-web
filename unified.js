@@ -1486,7 +1486,8 @@
   var HASH_GUARD = false;
 
   function applyHash() {
-    var h = (location.hash || "").replace(/^#/, "");
+    /* hash 里允许带 & 附加参数（如 #page=apps&t=123），只取第一段 */
+    var h = (location.hash || "").replace(/^#/, "").split("&")[0];
     if (!h) return;
     var i = h.indexOf("=");
     if (i < 0) return;
