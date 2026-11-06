@@ -2716,3 +2716,7 @@ body { background: var(--bg); }
 .crumb a, .crumb b { min-height: 44px; display: inline-flex; align-items: center; }
 /* 顶部图标按钮（主题切换等） */
 .theme-btn { min-width: 44px; min-height: 44px; }
+
+/* 顶部搜索框触控目标（2026-11-06 收尾）：原 min-height 34/36px，被 .topbar-search input 锁死 */
+.topbar-search input { min-height: 40px; }
+@media (max-width: 720px) { .topbar-search input { min-height: 44px; } }
