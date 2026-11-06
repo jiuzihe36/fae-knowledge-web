@@ -33810,7 +33810,7 @@
   "applications_domains": [
    "总线开关与隔离"
   ],
-  "function_detail": "四路模拟开关",
+  "function_detail": "四路 2 选 1 多路复用器（总线开关）",
   "ds_ver": "V1.0",
   "ds_date": "2025-01-30"
  },
@@ -34108,7 +34108,7 @@
   "applications_domains": [
    "总线开关与隔离"
   ],
-  "function_detail": "四路模拟开关",
+  "function_detail": "四路 2 选 1 多路复用器（总线开关）",
   "ds_ver": "V1.0",
   "ds_date": "2025-01-30"
  },
@@ -44994,7 +44994,7 @@
   "applications_domains": [
    "地址译码与片选"
   ],
-  "function_detail": "多路复用器",
+  "function_detail": "3-8 线译码器（反相输出）",
   "ds_ver": "V1.0",
   "ds_date": "2024-09-24"
  },
@@ -45180,7 +45180,7 @@
   "applications_domains": [
    "地址译码与片选"
   ],
-  "function_detail": "多路复用器",
+  "function_detail": "3-8 线译码器（反相输出）",
   "ds_ver": "V1.0",
   "ds_date": "2024-09-24"
  },
@@ -49005,11 +49005,12 @@
     "value_html": "<strong>7.7 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;总线双向收发",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "总线双向收发"
   ],
-  "function_detail": "八路缓冲器（三态输出）",
+  "function_detail": "八路收发器（三态输出）",
   "ds_ver": "V1.1",
   "ds_date": "2025-12-15"
  },
@@ -49212,11 +49213,12 @@
     "value_html": "<strong>7.7 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;总线双向收发",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "总线双向收发"
   ],
-  "function_detail": "八路缓冲器（三态输出）",
+  "function_detail": "八路收发器（三态输出）",
   "ds_ver": "V1.1",
   "ds_date": "2025-12-15"
  },
@@ -53206,7 +53208,7 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八与门",
+  "function_detail": "8 位移位寄存器（带输出锁存）",
   "ds_ver": "V0.9",
   "ds_date": "2024-10-11"
  },
@@ -53392,7 +53394,7 @@
   "applications_domains": [
    "串并转换/I/O 扩展"
   ],
-  "function_detail": "八与门",
+  "function_detail": "8 位移位寄存器（带输出锁存）",
   "ds_ver": "V0.9",
   "ds_date": "2024-10-11"
  },
@@ -58053,7 +58055,7 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入或门",
+  "function_detail": "四路2输入异或门",
   "ds_ver": "V1.1",
   "ds_date": "2025-12-15"
  },
@@ -58239,7 +58241,7 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入或门",
+  "function_detail": "四路2输入异或门",
   "ds_ver": "V1.1",
   "ds_date": "2025-12-15"
  },
@@ -70212,7 +70214,7 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入或门（施密特输入）",
+  "function_detail": "四路2输入异或门（施密特输入）",
   "ds_ver": "V1.1",
   "ds_date": "2025-12-15"
  },
@@ -70503,7 +70505,7 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入或门（施密特输入）",
+  "function_detail": "四路2输入异或门（施密特输入）",
   "ds_ver": "V1.1",
   "ds_date": "2025-12-15"
  },
@@ -78753,7 +78755,7 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "多路复用器（TTL输入）",
+  "function_detail": "3-8 线译码器（反相输出）",
   "ds_ver": "V1.0",
   "ds_date": "2024-09-24"
  },
@@ -78939,7 +78941,7 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "多路复用器（TTL输入）",
+  "function_detail": "3-8 线译码器（反相输出）",
   "ds_ver": "V1.0",
   "ds_date": "2024-09-24"
  },
@@ -82048,11 +82050,12 @@
     "value_html": "<strong>7.7 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;总线双向收发",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "总线双向收发"
   ],
-  "function_detail": "八路缓冲器（三态输出、TTL输入）",
+  "function_detail": "八路收发器（三态输出、TTL输入）",
   "ds_ver": "V1.1",
   "ds_date": "2025-12-15"
  },
@@ -82255,11 +82258,12 @@
     "value_html": "<strong>7.7 pF</strong>"
    }
   ],
-  "applications": "总线隔离（三态使能）",
+  "applications": "总线隔离（三态使能）;总线双向收发",
   "applications_domains": [
-   "总线隔离（三态使能）"
+   "总线隔离（三态使能）",
+   "总线双向收发"
   ],
-  "function_detail": "八路缓冲器（三态输出、TTL输入）",
+  "function_detail": "八路收发器（三态输出、TTL输入）",
   "ds_ver": "V1.1",
   "ds_date": "2025-12-15"
  },
@@ -86249,7 +86253,7 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "八与门（TTL输入）",
+  "function_detail": "8 位移位寄存器（带输出锁存）",
   "ds_ver": "V0.9",
   "ds_date": "2024-10-11"
  },
@@ -86435,7 +86439,7 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "八与门（TTL输入）",
+  "function_detail": "8 位移位寄存器（带输出锁存）",
   "ds_ver": "V0.9",
   "ds_date": "2024-10-11"
  },
@@ -90896,7 +90900,7 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "四路2输入或门（TTL输入）",
+  "function_detail": "四路2输入异或门（TTL输入）",
   "ds_ver": "V1.1",
   "ds_date": "2025-12-15"
  },
@@ -91082,7 +91086,7 @@
   "applications_domains": [
    "5V TTL 电平兼容"
   ],
-  "function_detail": "四路2输入或门（TTL输入）",
+  "function_detail": "四路2输入异或门（TTL输入）",
   "ds_ver": "V1.1",
   "ds_date": "2025-12-15"
  },
@@ -101010,7 +101014,7 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门",
+  "function_detail": "双2输入异或门",
   "ds_ver": "V1.0",
   "ds_date": "2026-03-15"
  },
@@ -101413,7 +101417,7 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门",
+  "function_detail": "双2输入异或门",
   "ds_ver": "V1.0",
   "ds_date": "2026-03-15"
  },
@@ -101816,7 +101820,7 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门",
+  "function_detail": "双2输入异或门",
   "ds_ver": "V1.0",
   "ds_date": "2026-03-15"
  },
@@ -102219,7 +102223,7 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门",
+  "function_detail": "双2输入异或门",
   "ds_ver": "V1.0",
   "ds_date": "2026-03-15"
  },
@@ -145931,7 +145935,7 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门",
+  "function_detail": "双2输入异或门",
   "ds_ver": "V1.1",
   "ds_date": "2026-03-10"
  },
@@ -146292,7 +146296,7 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门",
+  "function_detail": "双2输入异或门",
   "ds_ver": "V1.1",
   "ds_date": "2026-03-10"
  },
@@ -146653,7 +146657,7 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门",
+  "function_detail": "双2输入异或门",
   "ds_ver": "V1.1",
   "ds_date": "2026-03-10"
  },
@@ -147014,7 +147018,7 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门",
+  "function_detail": "双2输入异或门",
   "ds_ver": "V1.1",
   "ds_date": "2026-03-10"
  },
@@ -147375,7 +147379,7 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "双2输入或门",
+  "function_detail": "双2输入异或门",
   "ds_ver": "V1.1",
   "ds_date": "2026-03-10"
  },
@@ -167675,7 +167679,7 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入逻辑门",
+  "function_detail": "四路2输入异或门",
   "ds_ver": "V1.1",
   "ds_date": "2024-12-20"
  },
@@ -167889,7 +167893,7 @@
   "applications_domains": [
    "数据比较/校验"
   ],
-  "function_detail": "四路2输入逻辑门",
+  "function_detail": "四路2输入异或门",
   "ds_ver": "V1.1",
   "ds_date": "2024-12-20"
  },

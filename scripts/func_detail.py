@@ -50,16 +50,23 @@ def parse(title):
         core = '触发器'
     elif 'transceiver' in tl:
         core = '收发器'
+    elif 'decoder' in tl:
+        # 2026-11-06 修：标题常写 "3-to-8 line decoder/demultiplexer"，
+        # 旧顺序优先匹配 multiplexer → 138/139 被标成「多路复用器」
+        core = '译码器'
     elif 'multiplexer' in tl or 'mux' in tl:
         core = '多路复用器'
-    elif 'decoder' in tl:
-        core = '译码器'
+    elif 'shift register' in tl or 'shift-and-store' in tl or 'shift and store' in tl or 'shift register with' in tl:
+        # 2026-11-06 修："8-bit shift-and-store bus register" 里的 and 会被下方的 \band\b 误判成「与门」（4094 中招）
+        core = '移位寄存器'
     elif 'nand' in tl:
         core = '与非门'
     elif 'nor' in tl:
         core = '或非门'
-    elif 'xor' in tl:
-        core = '异或门' if 'xnor' not in tl else '异或非门'
+    elif 'xor' in tl or 'exclusive-or' in tl or 'exclusive or' in tl:
+        # 2026-11-06 修：规格书标题常写 "EXCLUSIVE-OR gate" 而不含 "xor" 字样，
+        # 旧逻辑会落到下面的 \bor\b 分支被误判成「或门」（86 系列 17 款全错）
+        core = '异或非门' if ('xnor' in tl or 'exclusive-nor' in tl or 'exclusive nor' in tl) else '异或门'
     elif re.search(r'\band\b', tl):
         core = '与门'
     elif re.search(r'\bor\b', tl):
