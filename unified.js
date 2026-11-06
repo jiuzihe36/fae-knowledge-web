@@ -781,6 +781,15 @@
       selRefresh();
     });
     document.addEventListener("click", function (e) {
+      var th = e.target.closest ? e.target.closest("th.sortable") : null;
+      if (th) {
+        e.preventDefault();
+        var k = th.getAttribute("data-sort");
+        if (SEL_SORT.key === k) SEL_SORT.dir = -SEL_SORT.dir;
+        else { SEL_SORT.key = k; SEL_SORT.dir = 1; }
+        selRefresh();
+        return;
+      }
       if (e.target.id === "selCsv") { e.preventDefault(); selExportCsv(); return; }
       if (e.target.id === "cmpOpen") { e.preventDefault(); cmpOpen(); return; }
       if (e.target.id === "cmpClear") { e.preventDefault(); cmpClear(); return; }
@@ -920,9 +929,46 @@
       }).join("") + '</tbody></table></div>';
   }
 
+  var SEL_SORT = { key: "", dir: 1 };
+
+  function selSortKey(p, key) {
+    if (key === "model") return p.model || "";
+    if (key === "fn") return (p.function_detail || p.function || "");
+    if (key === "series") return p.series || "";
+    if (key === "pkg") return p.package || "";
+    if (key === "vcc") {
+      var vs = String(p.voltage || "");
+      if (!vs || vs.indexOf("未标注") >= 0) return 999;   /* 未标注永远排最后 */
+      var m = vs.match(/([\d.]+)/);
+      return m ? parseFloat(m[1]) : 999;
+    }
+    if (key === "temp") return p.temp_range || "";
+    if (key === "line") return selLine(p.series);
+    return "";
+  }
+
+  function applySelSort(rows) {
+    if (!SEL_SORT.key) return rows;
+    var k = SEL_SORT.key, d = SEL_SORT.dir;
+    return rows.slice().sort(function (a, b) {
+      var x = selSortKey(a, k), y = selSortKey(b, k);
+      if (typeof x === "number" && typeof y === "number") return (x - y) * d;
+      return String(x).localeCompare(String(y), "zh-CN") * d;
+    });
+  }
+
   function selTableHtml(rows) {
     if (!rows.length) return '<div class="empty">没有匹配的型号，请放宽筛选条件</div>';
-    var head = '<thead><tr><th class="cmp-col">对比</th><th>型号</th><th>功能</th><th>系列</th><th>封装</th><th>工作电压</th><th>工作温度</th><th>产品线</th></tr></thead>';
+    rows = applySelSort(rows);
+    var _so = SEL_SORT.key ? (SEL_SORT.dir > 0 ? " ▲" : " ▼") : "";
+    var head = '<thead><tr><th class="cmp-col">对比</th>' +
+      '<th class="sortable" data-sort="model">型号' + (_so && SEL_SORT.key === "model" ? _so : "") + '</th>' +
+      '<th class="sortable" data-sort="fn">功能' + (_so && SEL_SORT.key === "fn" ? _so : "") + '</th>' +
+      '<th class="sortable" data-sort="series">系列' + (_so && SEL_SORT.key === "series" ? _so : "") + '</th>' +
+      '<th class="sortable" data-sort="pkg">封装' + (_so && SEL_SORT.key === "pkg" ? _so : "") + '</th>' +
+      '<th class="sortable" data-sort="vcc">工作电压' + (_so && SEL_SORT.key === "vcc" ? _so : "") + '</th>' +
+      '<th class="sortable" data-sort="temp">工作温度' + (_so && SEL_SORT.key === "temp" ? _so : "") + '</th>' +
+      '<th class="sortable" data-sort="line">产品线' + (_so && SEL_SORT.key === "line" ? _so : "") + '</th></tr></thead>';
     var body = rows.slice(0, 400).map(function (p) {
       return '<tr><td class="cmp-col"><input type="checkbox" class="cmp-ck" data-cmp="' + esc(p.model) + '"' +
         (CMP_SEL.indexOf(p.model) >= 0 ? ' checked' : '') + '></td>' +

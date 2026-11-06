@@ -2616,3 +2616,9 @@ body { background: var(--bg); }
 .guide-card em { font-size: 11.5px; opacity: .5; font-style: normal; }
 .muted { opacity: .6; font-size: 13px; }
 :root[data-theme="dark"] .guide-card:hover, :root:not([data-theme="light"]) .guide-card:hover { background: rgba(255, 255, 255, .05); }
+
+/* 选型表：表头可点排序（2026-11-06） */
+.sel-tbl th.sortable { cursor: pointer; user-select: none; white-space: nowrap; }
+.sel-tbl th.sortable:hover { background: rgba(0, 0, 0, .05); }
+:root[data-theme="dark"] .sel-tbl th.sortable:hover,
+:root:not([data-theme="light"]) .sel-tbl th.sortable:hover { background: rgba(255, 255, 255, .08); }
