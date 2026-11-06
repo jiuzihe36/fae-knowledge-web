@@ -5,7 +5,8 @@
   "latchup": "",
   "hbm_class": "",
   "cdm_class": "",
-  "latch_ma": ""
+  "latch_ma": "",
+  "note": "已全文核实：全文档确无 ESD/Latch-up 数据：唯一候选段 p4 Table 4 Absolute Maximum Ratings 仅含 VCC/VSEL/VA/Imax(含 peak)/TJ/TL/RθJA 七项，无 ESD 行；无 Reliability/Quality/Handling 段；修订记录仅提 Table 6 RFLAT 更新。"
  },
  "EM74AHC_AHCT1G00_Product_DS_V1.1.pdf": {
   "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 7000 V",
@@ -1341,7 +1342,8 @@
   "latchup": "",
   "hbm_class": "",
   "cdm_class": "",
-  "latch_ma": ""
+  "latch_ma": "",
+  "note": "已全文核实：全文档确无 ESD/Latch-up 数据：p4 Table 4 与 EL3157 同模板（VCC/VIN/VA/IA/TJ/TL/RθJA）。p1 仅声明 AEC-Q100 Grade 1 已认证，但正文未给任何 HBM/CDM/Latch-up 数值。"
  },
  "EMS23157_Product_DS_V1.3.pdf": {
   "hbm": "",
@@ -1349,7 +1351,8 @@
   "latchup": "",
   "hbm_class": "",
   "cdm_class": "",
-  "latch_ma": ""
+  "latch_ma": "",
+  "note": "已全文核实：全文档确无 ESD/Latch-up 数据：p4 Table 4 同样只有 7 项，无 ESD 行；11 页含 Tape and Reel 两页尺寸表，均无 ESD/闩锁内容；修订记录只涉及 marking、Table 6、Tape&Reel。"
  },
  "EMS2750_Product_DS_V1.1.pdf": {
   "hbm": "",
@@ -1357,7 +1360,8 @@
   "latchup": "",
   "hbm_class": "",
   "cdm_class": "",
-  "latch_ma": ""
+  "latch_ma": "",
+  "note": "已全文核实：全文档确无 ESD/Latch-up 数据：p4 Table 4 只有 7 项（VCC/VIN/VA/IA/TJ/TL/RθJA）；无 Reliability/Quality/Handling 段；修订记录仅 marking 与 Table 6。"
  },
  "EMS3157-Q100_Draft_DS_V0.92.pdf": {
   "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 2",
@@ -1376,12 +1380,13 @@
   "latch_ma": "200 mA"
  },
  "EMS3218_Draft_DS_V0.1.pdf": {
-  "hbm": "",
+  "hbm": "±4 kV (MUTE to GND / Lo,Ro to GND / Li,Ri to GND), ±5 kV (VCC to GND) — Absolute Maximum Ratings 表内 'ESD / ESD Capability' 行；未注明测试模型与标准（kV 量级按 HBM 归一）",
   "cdm": "",
   "latchup": "",
-  "hbm_class": "",
+  "hbm_class": "3A",
   "cdm_class": "",
-  "latch_ma": ""
+  "latch_ma": "",
+  "note": "原文仅标 'ESD Capability'，无 HBM/CDM/JESD22/JS-001 字样；Latch-up 未提及"
  },
  "EMS3412_Draft_DS_V0.1.pdf": {
   "hbm": "2 kV HBM",
@@ -1445,7 +1450,8 @@
   "latchup": "",
   "hbm_class": "",
   "cdm_class": "",
-  "latch_ma": ""
+  "latch_ma": "",
+  "note": "已全文核实：全文档确无 ESD/Latch-up 数据：p5 Table 4 经渲染核对仅 VCC/VIN/VA/IA(continuous+peak)/TJ/TL/RθJA，无 ESD 行；13 页中 p8-p12 为封装与载带尺寸图，修订记录无 ESD 条目。"
  },
  "EMS4000_Product_DS_V1.7.pdf": {
   "hbm": "HBM ESDA/JEDEC JS-001 Class 2",

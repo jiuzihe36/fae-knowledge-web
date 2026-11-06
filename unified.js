@@ -1231,7 +1231,8 @@
         var rl = d.reliability;
         html += '<h3 class="page-h3">可靠性：ESD 与 Latch-up</h3>';
         html += '<p class="page-note">数据取自各规格书 <b>Features / ESD protection</b> 段（' + rl.covered + ' / ' + rl.total + ' 款有明确数值）；' +
-          '「规格书未列」表示该份规格书未给出该项，<b>不代表无防护</b>。ESD 分档按 JEDEC：HBM Class 2 = 2–4 kV、Class 3A = 4–8 kV、Class 3B ≥ 8 kV；CDM Class C3 ≥ 500 V。</p>';
+          '「规格书未列」表示该份规格书<b>已逐份全文核实</b>确实未给出该项（不是抓取遗漏），<b>不代表无防护</b>——' +
+          'EnergyMath 这套模拟开关模板本身没有 Reliability/ESD 章节。ESD 分档按 JEDEC：HBM Class 2 = 2–4 kV、Class 3A = 4–8 kV、Class 3B ≥ 8 kV；CDM Class C3 ≥ 500 V。</p>';
         html += '<div class="rel-wrap">' +
           relTable("HBM（人体放电）", rl.hbm, tot) +
           relTable("CDM（器件充电）", rl.cdm, tot) +
