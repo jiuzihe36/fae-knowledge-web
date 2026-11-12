@@ -73,7 +73,17 @@
     DATA.products.forEach(function (p) { specs += (p.specs && p.specs.length) || 0; });
     if (el.statModels && n) el.statModels.textContent = n;
     if (el.statSpecs && specs) el.statSpecs.textContent = specs > 999 ? Math.round(specs / 1000) + "k" : specs;
-    if (el.meta) el.meta.textContent = "型号 " + n + " 款 · 参数 " + specs + " 条";
+    if (el.meta) el.meta.textContent = "型号 " + n + " 款" + (specs ? " · 参数 " + specs + " 条" : "");
+    /* specs 已拆块，products_lite 不再带参数 → 参数总数取 data/index.json 的 spec_total
+       （分块索引里本来就有全站口径，避免为了一个数字去拉 10 MB 的 products.json） */
+    if (!specs) {
+      loadJson("./data/index.json").then(function (ix) {
+        var st = ix && ix.spec_total;
+        if (!st) return;
+        if (el.statSpecs) el.statSpecs.textContent = st > 999 ? Math.round(st / 1000) + "k" : st;
+        if (el.meta) el.meta.textContent = "型号 " + n + " 款 · 参数 " + st + " 条";
+      });
+    }
     loadCatalog().then(function () {
       /* 默认展开最大类，避免打开只看到 3 行 */
       if (CATALOG && CATALOG.cats && CATALOG.cats.length) {
