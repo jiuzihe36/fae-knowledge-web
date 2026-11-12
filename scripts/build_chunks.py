@@ -61,7 +61,10 @@ INDEX_FIELDS = ("id", "model", "family", "series", "function", "function_detail"
                 "package", "voltage", "temp_range", "status", "line", "chunk",
                 # 2026-11-06：详情抽屉直接用这些字段渲染基础信息，
                 # 补进索引后首次开详情不再额外拉一次 374 KB 的 products_lite.json
-                "description", "source_label", "pin_image", "applications_domains")
+                "description", "source_label", "pin_image", "applications_domains",
+                # 2026-11-12：抽屉「逻辑类型 / 封装尺寸 / 规格书版本 / 版本更新日期」四行
+                # 一直显示「-」——这四个字段只在 products_lite 里，索引没带就等于没渲染
+                "logic_type", "package_size", "ds_ver", "ds_date")
 SAFE_MODEL = re.compile(r"^[A-Za-z0-9._-]+$")
 MAX_DETAIL = 8
 

@@ -100,6 +100,7 @@ def col_groups(header):
     if cols and re.search(r"unit|单位", cols[-1], re.I):
         cols = cols[:-1]
     out = []
+    last_fam = ""
     for c in cols:
         m = re.search(r"\b(min|typ|max)\b\.?$", c, re.I)
         if m:
@@ -112,8 +113,14 @@ def col_groups(header):
         fm = FAMILY_RE.match(label.replace(" ", ""))
         if fm:
             fam = fm.group(1).upper()
-        elif re.search(r"°C|℃", label):
+        elif label and (re.search(r"°C|℃", label) or re.match(r"^\s*-?\d+(\.\d+)?\s*[~–-]\s*\+?\d+", label)):
+            # 温度组名可能写成「-40~+85 ℃」也可能写成「-40~+85」（重建稿多用后者），两种都要能分组
             fam = label.replace(" ", "")
+        # 合并表头：温度/变体名只印在每组第一列，后续 Typ/Max 列标签为空 → 继承上一列
+        if not fam and label == "" and last_fam:
+            fam = last_fam
+        if fam:
+            last_fam = fam
         out.append((fam, role))
     return out
 
@@ -238,18 +245,24 @@ def parse_text_recommendations(body):
 
 def parse_entity(path):
     t = path.read_text(encoding="utf-8")
-    m = re.search(r"## 电气特性全集(.*?)(?=\n## (?!.*特性)|$)", t, re.S)
+    m = re.search(r"## 电气特性全集(.*?)(?=\n## |\Z)", t, re.S)   # 只切到下一个二级标题；旧写法 `(?=\n## (?!.*特性)|$)` 在 re.S 下 `.*特性` 会跨行匹配，边界失效→把「封装与订购号」「自检记录」整表吞进 specs
     if not m:
         return []
     sec = m.group(1)
     specs = []
     cur_kind = "电气特性"
+    cur_variant = ""
     cur_header = None
+    last_lead = ""      # 六列变体表续行沿用上一行的「符号 + 参数名」
     for raw in sec.split("\n"):
         line = raw.strip()
         if line.startswith("###"):
-            cur_kind = kind_of(line.lstrip("#").strip())
+            _title = line.lstrip("#").strip()
+            cur_kind = kind_of(_title)
+            _m = re.search(r'(EM74)?(AHCT|AHC|LVCH|LVC|HCT|HC)(?![A-Z])', _title)
+            cur_variant = (_m.group(2) if _m else "")
             cur_header = None
+            last_lead = ""
             continue
         if not line.startswith("|"):
             if line.lower().startswith("table"):
@@ -271,14 +284,22 @@ def parse_entity(path):
         if len(cells) < 2:
             continue
         sym = cells[0]
-        if sym in ("符号", "参数", "—", "-", ""):
+        is_cont = sym in ("符号", "参数", "—", "-", "")
+        if is_cont and not last_lead:
             continue
         ci = cond_index(cur_header, len(cells))
         ci = min(ci, len(cells) - 1)
         # param = 符号 + 参数名 + 条件；rest = 纯数值列（+ 末尾单位）
-        param = " ".join(x for x in cells[: ci + 1] if x not in ("—", "-", "")).strip()
+        if is_cont:
+            # 六列变体表的续行（`| — | — | IO = -24 mA; VCC = 3.0 V | 2.4 | — | — | 2.25 | — | V |`）：
+            # 沿用上一行的「符号 + 参数名」，条件取本行，否则整行会被丢掉（VOH 各电流档就没了）
+            cond = " ".join(x for x in cells[1: ci + 1] if x not in ("—", "-", "")).strip()
+            param = (last_lead + (" " + cond if cond else "")).strip()
+        else:
+            param = " ".join(x for x in cells[: ci + 1] if x not in ("—", "-", "")).strip()
+            last_lead = " ".join(x for x in cells[:2] if x not in ("—", "-", "")).strip()
         rest = cells[ci + 1:]
-        if not rest and len(cells) >= 3:
+        if not rest and len(cells) >= 3 and not is_cont:
             # 3 列表（符号 | 参数 | 值/限制），没有独立条件列 → 第 3 列就是值
             param = " ".join(x for x in cells[:2] if x not in ("—", "-", "")).strip()
             rest = cells[2:]
@@ -292,13 +313,41 @@ def parse_entity(path):
             continue
         param = fix_sub(param)
         value = fix_sub(value)
+        # 只有单位、没有数值的分组行（PDF 里只作条件引导）→ 写成 —，避免前端出现「 ns」
+        if re.fullmatch(r'\s*(ns|ps|μs|us|ms|V|mV|mA|μA|uA|nA|pF|nF|Ω|W|mW|MHz|kHz|Hz|dB|℃|%|ns/V|V/ns)\s*', value or ''):
+            value = "—"
         specs.append({
             "param": param[:180],
             "value": value[:220],
             "kind": cur_kind,
+            "variant": cur_variant,
             "param_html": sub_html(param[:180]),
             "value_html": "<strong>" + sub_html(value[:220]) + "</strong>",
         })
+    # 追加「## 电气特性补遗」：逐行 PDF 核对后补进来的参数（| 分类 | 参数 | 数值 | 依据 |）
+    m2 = re.search(r"## 电气特性补遗[^\n]*\n(.*?)(?=\n## |\Z)", t, re.S)
+    if m2:
+        for line in m2.group(1).splitlines():
+            line = line.strip()
+            if not line.startswith("|"):
+                continue
+            cells = split_row(line)
+            if len(cells) < 3:
+                continue
+            if any(k in cells[0] for k in ("分类", "kind")) or re.fullmatch(r"[\s\-:|]+", line):
+                continue
+            kind_raw, pname, pval = cells[0], cells[1], cells[2]
+            if not pname or not pval:
+                continue
+            k = kind_of(kind_raw) if kind_of(kind_raw) != "其他" else kind_raw
+            specs.append({
+                "param": pname[:180],
+                "value": pval[:220],
+                "kind": k,
+                "variant": cur_variant,
+                "param_html": sub_html(pname[:180]),
+                "value_html": "<strong>" + sub_html(pval[:220]) + "</strong>",
+            })
     return specs
 
 
@@ -317,6 +366,9 @@ def filter_variant(specs, model):
     fam = family_of(model)
     if not fam:
         return specs
+    # 行级变体标记（### 静态特性 · EM74AHCT 这种分节）优先：只留本变体行 + 无标记行
+    if any(s.get("variant") for s in specs):
+        specs = [s for s in specs if (not s.get("variant")) or s["variant"] == fam]
     out = []
     for s in specs:
         v = s.get("value") or ""
@@ -384,6 +436,15 @@ def main():
         specs = parse_entity(ef)
         if not specs:
             continue
+        # 去重：六列续行沿用上一行「符号+参数名」后，同一 (param,value,kind) 可能在两张块/两个温度块里
+        # 各出现一次，不去重抽屉里就会出现两行一模一样的参数（实测 200 款会命中）
+        _seen, _uniq = set(), []
+        for _s in specs:
+            _k = (_s["param"], _s["value"], _s["kind"], _s.get("variant", ""))   # 变体必须进 key，否则 AHCT 与 AHC 同值的行会被当重复删掉
+            if _k in _seen:
+                continue
+            _seen.add(_k); _uniq.append(_s)
+        specs = _uniq
         if len(samples) < 3:
             samples.append((ef.stem, len(plist[0].get("specs") or []), len(specs), specs[:3]))
         for p in plist:

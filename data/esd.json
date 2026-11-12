@@ -944,14 +944,6 @@
   "cdm_class": "C3",
   "latch_ma": "250 mA"
  },
- "EM74LVC125A_Product_DS_V1.3.pdf": {
-  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
-  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
-  "latchup": "Latch-up performance exceeds 250 mA",
-  "hbm_class": "3A",
-  "cdm_class": "C3",
-  "latch_ma": "250 mA"
- },
  "EM74LVC126A_Product_DS_V1.1.pdf": {
   "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
   "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
@@ -1588,5 +1580,21 @@
   "hbm_class": "2",
   "cdm_class": "C3",
   "latch_ma": "100 mA"
+ },
+ "EM74LVC125A_Product_DS_V1.4.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
+ },
+ "EM74LVC17A_Product_DS_V1.0.pdf": {
+  "hbm": "HBM ANSI/ESDA/JEDEC JS-001 Class 3A exceeds 6000 V",
+  "cdm": "CDM ANSI/ESDA/JEDEC JS-002 Class C3 exceeds 2000 V",
+  "latchup": "Latch-up performance exceeds 250 mA",
+  "hbm_class": "3A",
+  "cdm_class": "C3",
+  "latch_ma": "250 mA"
  }
 }
