@@ -235064,223 +235064,315 @@
   "specs": [
    {
     "param": "VCC supply voltage",
-    "value": "-0.3 ~ 6.5 V",
+    "value": "min=-0.3; max=6.5 V",
     "kind": "绝对最大额定值",
     "variant": "",
     "param_html": "V<sub>CC</sub> supply voltage",
-    "value_html": "<strong>-0.3 ~ 6.5 V</strong>"
+    "value_html": "<strong>min=-0.3; max=6.5 V</strong>"
    },
    {
-    "param": "VIN control input voltage",
-    "value": "-0.3 ~ 6.5 V",
+    "param": "VIN control Input Voltage",
+    "value": "min=-0.3; max=6.5 V",
     "kind": "绝对最大额定值",
     "variant": "",
-    "param_html": "VIN control input voltage",
-    "value_html": "<strong>-0.3 ~ 6.5 V</strong>"
+    "param_html": "VIN control Input Voltage",
+    "value_html": "<strong>min=-0.3; max=6.5 V</strong>"
    },
    {
     "param": "VA signal input voltage",
-    "value": "-0.3 ~ 6.5 V",
+    "value": "min=-0.3; max=6.5 V",
     "kind": "绝对最大额定值",
     "variant": "",
     "param_html": "VA signal input voltage",
-    "value_html": "<strong>-0.3 ~ 6.5 V</strong>"
+    "value_html": "<strong>min=-0.3; max=6.5 V</strong>"
    },
    {
-    "param": "IA 连续电流",
-    "value": "±100 mA",
+    "param": "IA continuous Current Through COM, NC, NO",
+    "value": "max=±100 mA",
     "kind": "绝对最大额定值",
     "variant": "",
-    "param_html": "IA 连续电流",
-    "value_html": "<strong>±100 mA</strong>"
+    "param_html": "IA continuous Current Through COM, NC, NO",
+    "value_html": "<strong>max=±100 mA</strong>"
    },
    {
-    "param": "IA peak 脉冲 (1ms, 50%)",
-    "value": "±200 mA",
+    "param": "IA peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)",
+    "value": "max=±200 mA",
     "kind": "绝对最大额定值",
     "variant": "",
-    "param_html": "IA peak 脉冲 (1ms, 50%)",
-    "value_html": "<strong>±200 mA</strong>"
+    "param_html": "IA peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)",
+    "value_html": "<strong>max=±200 mA</strong>"
    },
    {
-    "param": "TJ / TL 结温 / 引脚焊接温度10s",
-    "value": "150 / 260 ℃",
+    "param": "TJ junction Temperature under Bias",
+    "value": "max=150 ℃",
     "kind": "绝对最大额定值",
     "variant": "",
-    "param_html": "TJ / TL 结温 / 引脚焊接温度10s",
-    "value_html": "<strong>150 / 260 ℃</strong>"
+    "param_html": "TJ junction Temperature under Bias",
+    "value_html": "<strong>max=150 ℃</strong>"
+   },
+   {
+    "param": "TL lead Temperature (Soldering, 10 seconds)",
+    "value": "max=260 ℃",
+    "kind": "绝对最大额定值",
+    "variant": "",
+    "param_html": "TL lead Temperature (Soldering, 10 seconds)",
+    "value_html": "<strong>max=260 ℃</strong>"
    },
    {
     "param": "RθJA thermal resistance",
-    "value": "350 ℃/W",
+    "value": "350 · ℃/W",
     "kind": "绝对最大额定值",
     "variant": "",
     "param_html": "RθJA thermal resistance",
-    "value_html": "<strong>350 ℃/W</strong>"
+    "value_html": "<strong>350 · ℃/W</strong>"
    },
    {
     "param": "VCC supply voltage",
-    "value": "1.5–5.5 V",
+    "value": "min=1.5; max=5.5 V",
     "kind": "推荐工作条件",
+    "variant": "",
     "param_html": "V<sub>CC</sub> supply voltage",
-    "value_html": "<strong>1.5–5.5 V</strong>"
+    "value_html": "<strong>min=1.5; max=5.5 V</strong>"
    },
    {
-    "param": "control",
-    "value": "0–5.5 V",
+    "param": "VIN control input voltage",
+    "value": "min=0; max=5.5 V",
     "kind": "推荐工作条件",
-    "param_html": "control",
-    "value_html": "<strong>0–5.5 V</strong>"
+    "variant": "",
+    "param_html": "VIN control input voltage",
+    "value_html": "<strong>min=0; max=5.5 V</strong>"
    },
    {
     "param": "VA signal input voltage",
-    "value": "0–VCC",
+    "value": "min=0; max=VCC V",
     "kind": "推荐工作条件",
+    "variant": "",
     "param_html": "VA signal input voltage",
-    "value_html": "<strong>0–V<sub>CC</sub></strong>"
+    "value_html": "<strong>min=0; max=V<sub>CC</sub> V</strong>"
    },
    {
     "param": "Tamb ambient temperature",
-    "value": "-40~+125 ℃",
+    "value": "min=-40; max=125 ℃",
     "kind": "推荐工作条件",
+    "variant": "",
     "param_html": "Tamb ambient temperature",
-    "value_html": "<strong>-40~+125 ℃</strong>"
+    "value_html": "<strong>min=-40; max=125 ℃</strong>"
    },
    {
-    "param": "VIH VCC=3.4–5.5 V / 1.5–3.3 V",
-    "value": "1.6 / 1.4 V",
-    "kind": "静态",
+    "param": "VIH input logic high level VCC = 3.4 V to 5.5 V",
+    "value": "min=1.6 V",
+    "kind": "传输特性 / 阈值",
     "variant": "",
-    "param_html": "V<sub>IH</sub> V<sub>CC</sub>=3.4–5.5 V / 1.5–3.3 V",
-    "value_html": "<strong>1.6 / 1.4 V</strong>"
+    "param_html": "V<sub>IH</sub> input logic high level V<sub>CC</sub> = 3.4 V to 5.5 V",
+    "value_html": "<strong>min=1.6 V</strong>"
    },
    {
-    "param": "VIL VCC=3.4–5.5 V / 1.5–3.3 V",
-    "value": "0.6 / 0.4 V",
-    "kind": "静态",
+    "param": "VIH input logic high level VCC = 1.5 V to 3.3 V",
+    "value": "min=1.4 V",
+    "kind": "传输特性 / 阈值",
     "variant": "",
-    "param_html": "V<sub>IL</sub> V<sub>CC</sub>=3.4–5.5 V / 1.5–3.3 V",
-    "value_html": "<strong>0.6 / 0.4 V</strong>"
+    "param_html": "V<sub>IH</sub> input logic high level V<sub>CC</sub> = 1.5 V to 3.3 V",
+    "value_html": "<strong>min=1.4 V</strong>"
    },
    {
-    "param": "ICC IA=0, VSEL=0 或 VCC",
+    "param": "VIL input logic low level VCC = 3.4 V to 5.5 V",
+    "value": "max=0.6 V",
+    "kind": "传输特性 / 阈值",
+    "variant": "",
+    "param_html": "V<sub>IL</sub> input logic low level V<sub>CC</sub> = 3.4 V to 5.5 V",
+    "value_html": "<strong>max=0.6 V</strong>"
+   },
+   {
+    "param": "VIL input logic low level VCC = 1.5 V to 3.3 V",
+    "value": "max=0.4 V",
+    "kind": "传输特性 / 阈值",
+    "variant": "",
+    "param_html": "V<sub>IL</sub> input logic low level V<sub>CC</sub> = 1.5 V to 3.3 V",
+    "value_html": "<strong>max=0.4 V</strong>"
+   },
+   {
+    "param": "ICC supply current IA = 0, VSEL = 0 or VSEL = VCC",
     "value": "1.0 · μA",
     "kind": "静态",
     "variant": "",
-    "param_html": "ICC IA=0, VSEL=0 或 V<sub>CC</sub>",
+    "param_html": "ICC supply current IA = 0, VSEL = 0 or VSEL = V<sub>CC</sub>",
     "value_html": "<strong>1.0 · μA</strong>"
    },
    {
-    "param": "ΔICC VCC=2.5 或 4.2 V, VSEL=1.6 V",
+    "param": "ΔICC additional supply current IA = 0, VCC = 2.5 V or 4.2 V, VSEL = 1.6 V",
     "value": "3.0 · μA",
     "kind": "静态",
     "variant": "",
-    "param_html": "ΔICC V<sub>CC</sub>=2.5 或 4.2 V, VSEL=1.6 V",
+    "param_html": "ΔICC additional supply current IA = 0, V<sub>CC</sub> = 2.5 V or 4.2 V, VSEL = 1.6 V",
     "value_html": "<strong>3.0 · μA</strong>"
    },
    {
-    "param": "Ioff VA=5 V, VNC/VNO=0 V",
+    "param": "Ioff OFF-state switch leakage current from COM to NC (or NO) VA = 5 V, VNC or VNO = 0 V",
     "value": "±2.0 · μA",
     "kind": "静态",
     "variant": "",
-    "param_html": "Ioff VA=5 V, VNC/VNO=0 V",
+    "param_html": "Ioff OFF-state switch leakage current from COM to NC (or NO) VA = 5 V, VNC or VNO = 0 V",
     "value_html": "<strong>±2.0 · μA</strong>"
    },
    {
-    "param": "RON VCC=3.5 V, VA=0.8–2.0 V, IA=10 mA",
-    "value": "min=3.4; max=4.0 Ω",
+    "param": "RON on-resistance VCC = 3.5 V, VA = 0.8 V to 2.0 V, IA = 10 mA",
+    "value": "typ=3.4; max=4.0 Ω",
     "kind": "静态",
     "variant": "",
-    "param_html": "RON V<sub>CC</sub>=3.5 V, VA=0.8–2.0 V, IA=10 mA",
-    "value_html": "<strong>min=3.4; max=4.0 Ω</strong>"
+    "param_html": "RON on-resistance V<sub>CC</sub> = 3.5 V, VA = 0.8 V to 2.0 V, IA = 10 mA",
+    "value_html": "<strong>typ=3.4; max=4.0 Ω</strong>"
    },
    {
-    "param": "RON VCC=4.5 V, VA=0.8–2.3 V, IA=10 mA",
-    "value": "min=2.4; max=3.0 Ω",
+    "param": "RON on-resistance VCC = 4.5 V, VA = 0.8 V to 2.3 V, IA = 10 mA",
+    "value": "typ=2.4; max=3.0 Ω",
     "kind": "静态",
     "variant": "",
-    "param_html": "RON V<sub>CC</sub>=4.5 V, VA=0.8–2.3 V, IA=10 mA",
-    "value_html": "<strong>min=2.4; max=3.0 Ω</strong>"
+    "param_html": "RON on-resistance V<sub>CC</sub> = 4.5 V, VA = 0.8 V to 2.3 V, IA = 10 mA",
+    "value_html": "<strong>typ=2.4; max=3.0 Ω</strong>"
    },
    {
-    "param": "RON VCC=5.5 V, VA=0.8–2.6 V, IA=10 mA",
-    "value": "min=1.9; max=2.5 Ω",
+    "param": "RON on-resistance VCC = 5.5 V, VA = 0.8 V to 2.6 V, IA = 10 mA",
+    "value": "typ=1.9; max=2.5 Ω",
     "kind": "静态",
     "variant": "",
-    "param_html": "RON V<sub>CC</sub>=5.5 V, VA=0.8–2.6 V, IA=10 mA",
-    "value_html": "<strong>min=1.9; max=2.5 Ω</strong>"
+    "param_html": "RON on-resistance V<sub>CC</sub> = 5.5 V, VA = 0.8 V to 2.6 V, IA = 10 mA",
+    "value_html": "<strong>typ=1.9; max=2.5 Ω</strong>"
    },
    {
-    "param": "RFLAT VCC=3.5 / 4.5 / 5.5 V",
-    "value": "0.2 / 0.25 / 0.3 · 0.5 / 0.5 / 0.5 Ω",
+    "param": "RFLAT on-resistance flatness VCC = 3.5 V, VA = 0.8 V to 2.0 V, IA = 10 mA",
+    "value": "typ=0.2; max=0.5 Ω",
     "kind": "静态",
     "variant": "",
-    "param_html": "RFLAT V<sub>CC</sub>=3.5 / 4.5 / 5.5 V",
-    "value_html": "<strong>0.2 / 0.25 / 0.3 · 0.5 / 0.5 / 0.5 Ω</strong>"
+    "param_html": "RFLAT on-resistance flatness V<sub>CC</sub> = 3.5 V, VA = 0.8 V to 2.0 V, IA = 10 mA",
+    "value_html": "<strong>typ=0.2; max=0.5 Ω</strong>"
    },
    {
-    "param": "ΔRON 通道匹配 VCC=3.5 / 4.5 / 5.5 V",
-    "value": "min=0.1; max=0.2 Ω",
+    "param": "RFLAT on-resistance flatness VCC = 4.5 V, VA = 0.8 V to 2.3 V, IA = 10 mA",
+    "value": "typ=0.25; max=0.5 Ω",
     "kind": "静态",
     "variant": "",
-    "param_html": "ΔRON 通道匹配 V<sub>CC</sub>=3.5 / 4.5 / 5.5 V",
-    "value_html": "<strong>min=0.1; max=0.2 Ω</strong>"
+    "param_html": "RFLAT on-resistance flatness V<sub>CC</sub> = 4.5 V, VA = 0.8 V to 2.3 V, IA = 10 mA",
+    "value_html": "<strong>typ=0.25; max=0.5 Ω</strong>"
    },
    {
-    "param": "tON / tOFF VA=1.5 V, CL=50 pF, RL=50 Ω",
-    "value": "470 / 120 ns",
-    "kind": "动态",
+    "param": "RFLAT on-resistance flatness VCC = 5.5 V, VA = 0.8 V to 2.6 V, IA = 10 mA",
+    "value": "typ=0.3; max=0.5 Ω",
+    "kind": "静态",
     "variant": "",
-    "param_html": "tON / tOFF VA=1.5 V, CL=50 pF, RL=50 Ω",
-    "value_html": "<strong>470 / 120 ns</strong>"
+    "param_html": "RFLAT on-resistance flatness V<sub>CC</sub> = 5.5 V, VA = 0.8 V to 2.6 V, IA = 10 mA",
+    "value_html": "<strong>typ=0.3; max=0.5 Ω</strong>"
    },
    {
-    "param": "tBBM break-before-make",
-    "value": "600 ns",
-    "kind": "动态",
+    "param": "ΔRON on-resistance matching between channels VCC = 3.5 V, VA = 0.8 V to 2.0 V, IA = 10 mA",
+    "value": "typ=0.1; max=0.2 Ω",
+    "kind": "静态",
     "variant": "",
-    "param_html": "tBBM break-before-make",
-    "value_html": "<strong>600 ns</strong>"
+    "param_html": "ΔRON on-resistance matching between channels V<sub>CC</sub> = 3.5 V, VA = 0.8 V to 2.0 V, IA = 10 mA",
+    "value_html": "<strong>typ=0.1; max=0.2 Ω</strong>"
    },
    {
-    "param": "BW -3 dB, CL=0 pF",
-    "value": "800 MHz",
-    "kind": "动态",
+    "param": "ΔRON on-resistance matching between channels VCC = 4.5 V, VA = 0.8 V to 2.3 V, IA = 10 mA",
+    "value": "typ=0.1; max=0.2 Ω",
+    "kind": "静态",
     "variant": "",
-    "param_html": "BW -3 dB, CL=0 pF",
-    "value_html": "<strong>800 MHz</strong>"
+    "param_html": "ΔRON on-resistance matching between channels V<sub>CC</sub> = 4.5 V, VA = 0.8 V to 2.3 V, IA = 10 mA",
+    "value_html": "<strong>typ=0.1; max=0.2 Ω</strong>"
    },
    {
-    "param": "OIRR f=1 kHz / 10 kHz",
-    "value": "-81 / -80 dB",
-    "kind": "动态",
+    "param": "ΔRON on-resistance matching between channels VCC = 5.5 V, VA = 0.8 V to 2.6 V, IA = 10 mA",
+    "value": "typ=0.1; max=0.2 Ω",
+    "kind": "静态",
     "variant": "",
-    "param_html": "OIRR f=1 kHz / 10 kHz",
-    "value_html": "<strong>-81 / -80 dB</strong>"
+    "param_html": "ΔRON on-resistance matching between channels V<sub>CC</sub> = 5.5 V, VA = 0.8 V to 2.6 V, IA = 10 mA",
+    "value_html": "<strong>typ=0.1; max=0.2 Ω</strong>"
    },
    {
-    "param": "XTALK f=1 kHz / 10 kHz",
-    "value": "-83 / -82 dB",
+    "param": "tON turn-On Time VA = 1.5 V, CL = 50 pF, RL = 50 Ω",
+    "value": "typ=470 ns",
     "kind": "动态",
     "variant": "",
-    "param_html": "XTALK f=1 kHz / 10 kHz",
-    "value_html": "<strong>-83 / -82 dB</strong>"
+    "param_html": "tON turn-On Time VA = 1.5 V, CL = 50 pF, RL = 50 Ω",
+    "value_html": "<strong>typ=470 ns</strong>"
    },
    {
-    "param": "THD 20 Hz–20 kHz, VA=600 mVpp, RL=32 Ω",
-    "value": "-80 dB",
+    "param": "tOFF turn-Off Time VA = 1.5 V, CL = 50 pF, RL = 50 Ω",
+    "value": "typ=120 ns",
     "kind": "动态",
     "variant": "",
-    "param_html": "THD 20 Hz–20 kHz, VA=600 mVpp, RL=32 Ω",
-    "value_html": "<strong>-80 dB</strong>"
+    "param_html": "tOFF turn-Off Time VA = 1.5 V, CL = 50 pF, RL = 50 Ω",
+    "value_html": "<strong>typ=120 ns</strong>"
    },
    {
-    "param": "CON / COFF f=100 kHz",
-    "value": "12 / 4 pF",
+    "param": "tBBM break-before-make time VA = 1.5 V, CL = 50 pF, RL = 50 Ω",
+    "value": "typ=600 ns",
     "kind": "动态",
     "variant": "",
-    "param_html": "CON / COFF f=100 kHz",
-    "value_html": "<strong>12 / 4 pF</strong>"
+    "param_html": "tBBM break-before-make time VA = 1.5 V, CL = 50 pF, RL = 50 Ω",
+    "value_html": "<strong>typ=600 ns</strong>"
+   },
+   {
+    "param": "BW -3dB Bandwidth CL = 0 pF",
+    "value": "typ=800 MHz",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "BW -3dB Bandwidth CL = 0 pF",
+    "value_html": "<strong>typ=800 MHz</strong>"
+   },
+   {
+    "param": "OIRR off isolation f = 1 kHz",
+    "value": "typ=-81 dB",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "OIRR off isolation f = 1 kHz",
+    "value_html": "<strong>typ=-81 dB</strong>"
+   },
+   {
+    "param": "OIRR off isolation f = 10 kHz",
+    "value": "typ=-80 dB",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "OIRR off isolation f = 10 kHz",
+    "value_html": "<strong>typ=-80 dB</strong>"
+   },
+   {
+    "param": "XTALK crosstalk f = 1 kHz",
+    "value": "typ=-83 dB",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "XTALK crosstalk f = 1 kHz",
+    "value_html": "<strong>typ=-83 dB</strong>"
+   },
+   {
+    "param": "XTALK crosstalk f = 10 kHz",
+    "value": "typ=-82 dB",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "XTALK crosstalk f = 10 kHz",
+    "value_html": "<strong>typ=-82 dB</strong>"
+   },
+   {
+    "param": "THD total harmonic distortion f = 20 Hz to 20 kHz, VA = 600 mVpp, RL = 32 Ω",
+    "value": "typ=-80 dB",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "THD total harmonic distortion f = 20 Hz to 20 kHz, VA = 600 mVpp, RL = 32 Ω",
+    "value_html": "<strong>typ=-80 dB</strong>"
+   },
+   {
+    "param": "CON On Capacitance f = 100 kHz",
+    "value": "typ=12 pF",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "CON On Capacitance f = 100 kHz",
+    "value_html": "<strong>typ=12 pF</strong>"
+   },
+   {
+    "param": "COFF Off Capacitance f = 100 kHz",
+    "value": "typ=4 pF",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "COFF Off Capacitance f = 100 kHz",
+    "value_html": "<strong>typ=4 pF</strong>"
    }
   ],
   "applications": "通用模拟开关/多路复用",
@@ -245533,223 +245625,315 @@
   "specs": [
    {
     "param": "VCC supply voltage",
-    "value": "-0.3 ~ 6.5 V",
+    "value": "min=-0.3; max=6.5 V",
     "kind": "绝对最大额定值",
     "variant": "",
     "param_html": "V<sub>CC</sub> supply voltage",
-    "value_html": "<strong>-0.3 ~ 6.5 V</strong>"
+    "value_html": "<strong>min=-0.3; max=6.5 V</strong>"
    },
    {
     "param": "VIN control Input Voltage",
-    "value": "-0.3 ~ 6.5 V",
+    "value": "min=-0.3; max=6.5 V",
     "kind": "绝对最大额定值",
     "variant": "",
     "param_html": "VIN control Input Voltage",
-    "value_html": "<strong>-0.3 ~ 6.5 V</strong>"
+    "value_html": "<strong>min=-0.3; max=6.5 V</strong>"
    },
    {
     "param": "VA signal input voltage",
-    "value": "-0.3 ~ 6.5 V",
+    "value": "min=-0.3; max=6.5 V",
     "kind": "绝对最大额定值",
     "variant": "",
     "param_html": "VA signal input voltage",
-    "value_html": "<strong>-0.3 ~ 6.5 V</strong>"
+    "value_html": "<strong>min=-0.3; max=6.5 V</strong>"
    },
    {
-    "param": "IA 连续电流 (COM/NC/NO)",
-    "value": "±100 mA",
+    "param": "IA continuous Current Through COM, NC, NO",
+    "value": "max=±100 mA",
     "kind": "绝对最大额定值",
     "variant": "",
-    "param_html": "IA 连续电流 (COM/NC/NO)",
-    "value_html": "<strong>±100 mA</strong>"
+    "param_html": "IA continuous Current Through COM, NC, NO",
+    "value_html": "<strong>max=±100 mA</strong>"
    },
    {
-    "param": "IA peak 脉冲 (1ms, 50%)",
-    "value": "±200 mA",
+    "param": "IA peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)",
+    "value": "max=±200 mA",
     "kind": "绝对最大额定值",
     "variant": "",
-    "param_html": "IA peak 脉冲 (1ms, 50%)",
-    "value_html": "<strong>±200 mA</strong>"
+    "param_html": "IA peak Current Through COM, NC, NO (pulsed at 1ms 50% duty cycle)",
+    "value_html": "<strong>max=±200 mA</strong>"
    },
    {
-    "param": "TJ / TL 结温 / 引脚焊接温度10s",
-    "value": "150 / 260 ℃",
+    "param": "TJ junction Temperature under Bias",
+    "value": "max=150 ℃",
     "kind": "绝对最大额定值",
     "variant": "",
-    "param_html": "TJ / TL 结温 / 引脚焊接温度10s",
-    "value_html": "<strong>150 / 260 ℃</strong>"
+    "param_html": "TJ junction Temperature under Bias",
+    "value_html": "<strong>max=150 ℃</strong>"
+   },
+   {
+    "param": "TL lead Temperature (Soldering, 10 seconds)",
+    "value": "max=260 ℃",
+    "kind": "绝对最大额定值",
+    "variant": "",
+    "param_html": "TL lead Temperature (Soldering, 10 seconds)",
+    "value_html": "<strong>max=260 ℃</strong>"
    },
    {
     "param": "RθJA thermal resistance",
-    "value": "350 ℃/W",
+    "value": "350 · ℃/W",
     "kind": "绝对最大额定值",
     "variant": "",
     "param_html": "RθJA thermal resistance",
-    "value_html": "<strong>350 ℃/W</strong>"
+    "value_html": "<strong>350 · ℃/W</strong>"
    },
    {
     "param": "VCC supply voltage",
-    "value": "1.5–5.5 V",
+    "value": "min=1.5; max=5.5 V",
     "kind": "推荐工作条件",
+    "variant": "",
     "param_html": "V<sub>CC</sub> supply voltage",
-    "value_html": "<strong>1.5–5.5 V</strong>"
+    "value_html": "<strong>min=1.5; max=5.5 V</strong>"
    },
    {
-    "param": "VIN",
-    "value": "0–5.5 V",
+    "param": "VIN control input voltage",
+    "value": "min=0; max=5.5 V",
     "kind": "推荐工作条件",
-    "param_html": "VIN",
-    "value_html": "<strong>0–5.5 V</strong>"
+    "variant": "",
+    "param_html": "VIN control input voltage",
+    "value_html": "<strong>min=0; max=5.5 V</strong>"
    },
    {
     "param": "VA signal input voltage",
-    "value": "0–VCC",
+    "value": "min=0; max=VCC V",
     "kind": "推荐工作条件",
+    "variant": "",
     "param_html": "VA signal input voltage",
-    "value_html": "<strong>0–V<sub>CC</sub></strong>"
+    "value_html": "<strong>min=0; max=V<sub>CC</sub> V</strong>"
    },
    {
     "param": "Tamb ambient temperature",
-    "value": "-40~+125 ℃",
+    "value": "min=-40; max=125 ℃",
     "kind": "推荐工作条件",
+    "variant": "",
     "param_html": "Tamb ambient temperature",
-    "value_html": "<strong>-40~+125 ℃</strong>"
+    "value_html": "<strong>min=-40; max=125 ℃</strong>"
    },
    {
-    "param": "VIH VCC=3.4–5.5 V / 1.5–3.3 V",
-    "value": "1.6 / 1.4 V",
-    "kind": "静态",
+    "param": "VIH input logic high level VCC = 3.4 V to 5.5 V",
+    "value": "min=1.6 V",
+    "kind": "传输特性 / 阈值",
     "variant": "",
-    "param_html": "V<sub>IH</sub> V<sub>CC</sub>=3.4–5.5 V / 1.5–3.3 V",
-    "value_html": "<strong>1.6 / 1.4 V</strong>"
+    "param_html": "V<sub>IH</sub> input logic high level V<sub>CC</sub> = 3.4 V to 5.5 V",
+    "value_html": "<strong>min=1.6 V</strong>"
    },
    {
-    "param": "VIL VCC=3.4–5.5 V / 1.5–3.3 V",
-    "value": "0.6 / 0.4 V",
-    "kind": "静态",
+    "param": "VIH input logic high level VCC = 1.5 V to 3.3 V",
+    "value": "min=1.4 V",
+    "kind": "传输特性 / 阈值",
     "variant": "",
-    "param_html": "V<sub>IL</sub> V<sub>CC</sub>=3.4–5.5 V / 1.5–3.3 V",
-    "value_html": "<strong>0.6 / 0.4 V</strong>"
+    "param_html": "V<sub>IH</sub> input logic high level V<sub>CC</sub> = 1.5 V to 3.3 V",
+    "value_html": "<strong>min=1.4 V</strong>"
    },
    {
-    "param": "ICC IA=0, VSEL=0 或 VCC",
+    "param": "VIL input logic low level VCC = 3.4 V to 5.5 V",
+    "value": "max=0.6 V",
+    "kind": "传输特性 / 阈值",
+    "variant": "",
+    "param_html": "V<sub>IL</sub> input logic low level V<sub>CC</sub> = 3.4 V to 5.5 V",
+    "value_html": "<strong>max=0.6 V</strong>"
+   },
+   {
+    "param": "VIL input logic low level VCC = 1.5 V to 3.3 V",
+    "value": "max=0.4 V",
+    "kind": "传输特性 / 阈值",
+    "variant": "",
+    "param_html": "V<sub>IL</sub> input logic low level V<sub>CC</sub> = 1.5 V to 3.3 V",
+    "value_html": "<strong>max=0.4 V</strong>"
+   },
+   {
+    "param": "ICC supply current IA = 0, VSEL = 0 or VSEL = VCC",
     "value": "1.0 · μA",
     "kind": "静态",
     "variant": "",
-    "param_html": "ICC IA=0, VSEL=0 或 V<sub>CC</sub>",
+    "param_html": "ICC supply current IA = 0, VSEL = 0 or VSEL = V<sub>CC</sub>",
     "value_html": "<strong>1.0 · μA</strong>"
    },
    {
-    "param": "ΔICC IA=0, VCC=2.5 或 4.2 V, VSEL=1.6 V",
+    "param": "ΔICC additional supply current IA = 0, VCC = 2.5 V or 4.2 V, VSEL = 1.6 V",
     "value": "3.0 · μA",
     "kind": "静态",
     "variant": "",
-    "param_html": "ΔICC IA=0, V<sub>CC</sub>=2.5 或 4.2 V, VSEL=1.6 V",
+    "param_html": "ΔICC additional supply current IA = 0, V<sub>CC</sub> = 2.5 V or 4.2 V, VSEL = 1.6 V",
     "value_html": "<strong>3.0 · μA</strong>"
    },
    {
-    "param": "Ioff VA=5 V, VNC/VNO=0 V",
+    "param": "Ioff OFF-state switch leakage current from COM to NC (or NO) VA = 5 V, VNC or VNO = 0 V",
     "value": "±2.0 · μA",
     "kind": "静态",
     "variant": "",
-    "param_html": "Ioff VA=5 V, VNC/VNO=0 V",
+    "param_html": "Ioff OFF-state switch leakage current from COM to NC (or NO) VA = 5 V, VNC or VNO = 0 V",
     "value_html": "<strong>±2.0 · μA</strong>"
    },
    {
-    "param": "RON VCC=3.5 V, VA=0.8–2.0 V, IA=10 mA",
-    "value": "min=3.4; max=4.0 Ω",
+    "param": "RON on-resistance VCC = 3.5 V, VA = 0.8 V to 2.0 V, IA = 10 mA",
+    "value": "typ=3.4; max=4.0 Ω",
     "kind": "静态",
     "variant": "",
-    "param_html": "RON V<sub>CC</sub>=3.5 V, VA=0.8–2.0 V, IA=10 mA",
-    "value_html": "<strong>min=3.4; max=4.0 Ω</strong>"
+    "param_html": "RON on-resistance V<sub>CC</sub> = 3.5 V, VA = 0.8 V to 2.0 V, IA = 10 mA",
+    "value_html": "<strong>typ=3.4; max=4.0 Ω</strong>"
    },
    {
-    "param": "RON VCC=4.5 V, VA=0.8–2.3 V, IA=10 mA",
-    "value": "min=2.4; max=3.0 Ω",
+    "param": "RON on-resistance VCC = 4.5 V, VA = 0.8 V to 2.3 V, IA = 10 mA",
+    "value": "typ=2.4; max=3.0 Ω",
     "kind": "静态",
     "variant": "",
-    "param_html": "RON V<sub>CC</sub>=4.5 V, VA=0.8–2.3 V, IA=10 mA",
-    "value_html": "<strong>min=2.4; max=3.0 Ω</strong>"
+    "param_html": "RON on-resistance V<sub>CC</sub> = 4.5 V, VA = 0.8 V to 2.3 V, IA = 10 mA",
+    "value_html": "<strong>typ=2.4; max=3.0 Ω</strong>"
    },
    {
-    "param": "RON VCC=5.5 V, VA=0.8–2.6 V, IA=10 mA",
-    "value": "min=1.9; max=2.5 Ω",
+    "param": "RON on-resistance VCC = 5.5 V, VA = 0.8 V to 2.6 V, IA = 10 mA",
+    "value": "typ=1.9; max=2.5 Ω",
     "kind": "静态",
     "variant": "",
-    "param_html": "RON V<sub>CC</sub>=5.5 V, VA=0.8–2.6 V, IA=10 mA",
-    "value_html": "<strong>min=1.9; max=2.5 Ω</strong>"
+    "param_html": "RON on-resistance V<sub>CC</sub> = 5.5 V, VA = 0.8 V to 2.6 V, IA = 10 mA",
+    "value_html": "<strong>typ=1.9; max=2.5 Ω</strong>"
    },
    {
-    "param": "RFLAT VCC=3.5 / 4.5 / 5.5 V",
-    "value": "0.2 / 0.25 / 0.3 · 0.5 / 0.5 / 0.5 Ω",
+    "param": "RFLAT on-resistance flatness VCC = 3.5 V, VA = 0.8 V to 2.0 V, IA = 10 mA",
+    "value": "typ=0.2; max=0.5 Ω",
     "kind": "静态",
     "variant": "",
-    "param_html": "RFLAT V<sub>CC</sub>=3.5 / 4.5 / 5.5 V",
-    "value_html": "<strong>0.2 / 0.25 / 0.3 · 0.5 / 0.5 / 0.5 Ω</strong>"
+    "param_html": "RFLAT on-resistance flatness V<sub>CC</sub> = 3.5 V, VA = 0.8 V to 2.0 V, IA = 10 mA",
+    "value_html": "<strong>typ=0.2; max=0.5 Ω</strong>"
    },
    {
-    "param": "ΔRON 通道匹配 VCC=3.5 / 4.5 / 5.5 V",
-    "value": "min=0.1; max=0.2 Ω",
+    "param": "RFLAT on-resistance flatness VCC = 4.5 V, VA = 0.8 V to 2.3 V, IA = 10 mA",
+    "value": "typ=0.25; max=0.5 Ω",
     "kind": "静态",
     "variant": "",
-    "param_html": "ΔRON 通道匹配 V<sub>CC</sub>=3.5 / 4.5 / 5.5 V",
-    "value_html": "<strong>min=0.1; max=0.2 Ω</strong>"
+    "param_html": "RFLAT on-resistance flatness V<sub>CC</sub> = 4.5 V, VA = 0.8 V to 2.3 V, IA = 10 mA",
+    "value_html": "<strong>typ=0.25; max=0.5 Ω</strong>"
    },
    {
-    "param": "tON / tOFF VA=1.5 V, CL=50 pF, RL=50 Ω",
-    "value": "470 / 120 ns",
-    "kind": "动态",
+    "param": "RFLAT on-resistance flatness VCC = 5.5 V, VA = 0.8 V to 2.6 V, IA = 10 mA",
+    "value": "typ=0.3; max=0.5 Ω",
+    "kind": "静态",
     "variant": "",
-    "param_html": "tON / tOFF VA=1.5 V, CL=50 pF, RL=50 Ω",
-    "value_html": "<strong>470 / 120 ns</strong>"
+    "param_html": "RFLAT on-resistance flatness V<sub>CC</sub> = 5.5 V, VA = 0.8 V to 2.6 V, IA = 10 mA",
+    "value_html": "<strong>typ=0.3; max=0.5 Ω</strong>"
    },
    {
-    "param": "tBBM break-before-make",
-    "value": "600 ns",
-    "kind": "动态",
+    "param": "ΔRON on-resistance matching between channels VCC = 3.5 V, VA = 0.8 V to 2.0 V, IA = 10 mA",
+    "value": "typ=0.1; max=0.2 Ω",
+    "kind": "静态",
     "variant": "",
-    "param_html": "tBBM break-before-make",
-    "value_html": "<strong>600 ns</strong>"
+    "param_html": "ΔRON on-resistance matching between channels V<sub>CC</sub> = 3.5 V, VA = 0.8 V to 2.0 V, IA = 10 mA",
+    "value_html": "<strong>typ=0.1; max=0.2 Ω</strong>"
    },
    {
-    "param": "BW -3 dB, CL=0 pF",
-    "value": "800 MHz",
-    "kind": "动态",
+    "param": "ΔRON on-resistance matching between channels VCC = 4.5 V, VA = 0.8 V to 2.3 V, IA = 10 mA",
+    "value": "typ=0.1; max=0.2 Ω",
+    "kind": "静态",
     "variant": "",
-    "param_html": "BW -3 dB, CL=0 pF",
-    "value_html": "<strong>800 MHz</strong>"
+    "param_html": "ΔRON on-resistance matching between channels V<sub>CC</sub> = 4.5 V, VA = 0.8 V to 2.3 V, IA = 10 mA",
+    "value_html": "<strong>typ=0.1; max=0.2 Ω</strong>"
    },
    {
-    "param": "OIRR f=10 kHz / 240 MHz",
-    "value": "-80 / -31 dB",
-    "kind": "动态",
+    "param": "ΔRON on-resistance matching between channels VCC = 5.5 V, VA = 0.8 V to 2.6 V, IA = 10 mA",
+    "value": "typ=0.1; max=0.2 Ω",
+    "kind": "静态",
     "variant": "",
-    "param_html": "OIRR f=10 kHz / 240 MHz",
-    "value_html": "<strong>-80 / -31 dB</strong>"
+    "param_html": "ΔRON on-resistance matching between channels V<sub>CC</sub> = 5.5 V, VA = 0.8 V to 2.6 V, IA = 10 mA",
+    "value_html": "<strong>typ=0.1; max=0.2 Ω</strong>"
    },
    {
-    "param": "XTALK f=10 kHz / 240 MHz",
-    "value": "-82 / -26 dB",
+    "param": "tON turn-On Time VA = 1.5 V, CL = 50 pF, RL = 50 Ω",
+    "value": "typ=470 ns",
     "kind": "动态",
     "variant": "",
-    "param_html": "XTALK f=10 kHz / 240 MHz",
-    "value_html": "<strong>-82 / -26 dB</strong>"
+    "param_html": "tON turn-On Time VA = 1.5 V, CL = 50 pF, RL = 50 Ω",
+    "value_html": "<strong>typ=470 ns</strong>"
    },
    {
-    "param": "THD 20 Hz–20 kHz, VA=600 mVpp, RL=32 Ω",
-    "value": "-80 dB",
+    "param": "tOFF turn-Off Time VA = 1.5 V, CL = 50 pF, RL = 50 Ω",
+    "value": "typ=120 ns",
     "kind": "动态",
     "variant": "",
-    "param_html": "THD 20 Hz–20 kHz, VA=600 mVpp, RL=32 Ω",
-    "value_html": "<strong>-80 dB</strong>"
+    "param_html": "tOFF turn-Off Time VA = 1.5 V, CL = 50 pF, RL = 50 Ω",
+    "value_html": "<strong>typ=120 ns</strong>"
    },
    {
-    "param": "CON / COFF f=100 kHz",
-    "value": "12 / 4 pF",
+    "param": "tBBM break-before-make time VA = 1.5 V, CL = 50 pF, RL = 50 Ω",
+    "value": "typ=600 ns",
     "kind": "动态",
     "variant": "",
-    "param_html": "CON / COFF f=100 kHz",
-    "value_html": "<strong>12 / 4 pF</strong>"
+    "param_html": "tBBM break-before-make time VA = 1.5 V, CL = 50 pF, RL = 50 Ω",
+    "value_html": "<strong>typ=600 ns</strong>"
+   },
+   {
+    "param": "BW -3dB Bandwidth CL = 0 pF",
+    "value": "typ=800 MHz",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "BW -3dB Bandwidth CL = 0 pF",
+    "value_html": "<strong>typ=800 MHz</strong>"
+   },
+   {
+    "param": "OIRR off isolation f = 10 kHz",
+    "value": "typ=-80 dB",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "OIRR off isolation f = 10 kHz",
+    "value_html": "<strong>typ=-80 dB</strong>"
+   },
+   {
+    "param": "OIRR off isolation f = 240 MHz",
+    "value": "typ=-31 dB",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "OIRR off isolation f = 240 MHz",
+    "value_html": "<strong>typ=-31 dB</strong>"
+   },
+   {
+    "param": "XTALK crosstalk f = 10 kHz",
+    "value": "typ=-82 dB",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "XTALK crosstalk f = 10 kHz",
+    "value_html": "<strong>typ=-82 dB</strong>"
+   },
+   {
+    "param": "XTALK crosstalk f = 240 MHz",
+    "value": "typ=-26 dB",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "XTALK crosstalk f = 240 MHz",
+    "value_html": "<strong>typ=-26 dB</strong>"
+   },
+   {
+    "param": "THD total harmonic distortion f = 20 Hz to 20 kHz, VA = 600 mVpp, RL = 32 Ω",
+    "value": "typ=-80 dB",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "THD total harmonic distortion f = 20 Hz to 20 kHz, VA = 600 mVpp, RL = 32 Ω",
+    "value_html": "<strong>typ=-80 dB</strong>"
+   },
+   {
+    "param": "CON On Capacitance f = 100 kHz",
+    "value": "typ=12 pF",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "CON On Capacitance f = 100 kHz",
+    "value_html": "<strong>typ=12 pF</strong>"
+   },
+   {
+    "param": "COFF Off Capacitance f = 100 kHz",
+    "value": "typ=4 pF",
+    "kind": "动态",
+    "variant": "",
+    "param_html": "COFF Off Capacitance f = 100 kHz",
+    "value_html": "<strong>typ=4 pF</strong>"
    }
   ],
   "applications": "通用模拟开关/多路复用",
